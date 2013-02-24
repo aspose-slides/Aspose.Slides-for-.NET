@@ -38,7 +38,7 @@
           <Order>2</Order>
           <Folders>
             <Folder>
-              <Title>Opening Presentation</Title>
+              <Title>Opening a Presentation</Title>
               <Description>Examples to explain opening of a presentation directly from your code using Aspose.Slides.</Description>
               <FolderName>OpenPresentation</FolderName>
               <Order>1</Order>
@@ -68,6 +68,35 @@
                     <DisplayName>Opening a Presentation</DisplayName>
                     <Url>http://www.aspose.com/docs/display/slidesjava/Opening+a+Presentation</Url>
                   </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\simplePasswordProtected.ppt</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+            </Folder>
+            <Folder>
+              <Title>Saving a Presentation</Title>
+              <Description>Whether you are creating a presentation from scratch or want to modify an existing one, you would like to save your presentation after your work is finished. Using Aspose.Slides developers can either save their presentation as a file or stream. This example implements both of these approaches in detail.</Description>
+              <FolderName>SavePresentation</FolderName>
+              <Order>2</Order>
+              <Examples>
+                <Example>
+                  <Title>Save Presentation to File</Title>
+                  <Description>Developers can save presentations to files by calling the Write method of the Presentation class. For this, developers can simply pass the file name to the Write method exposed by Presentation class as a string as explained in the example.</Description>
+                  <FolderName>SavePresentationToFile</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Saving a Presentation</DisplayName>
+                    <Url>Saving+a+Presentation</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\demo.ppt</Path>
+                    </DataFile>
+                  </OutputFiles>
                   <Type>Console</Type>
                 </Example>
               </Examples>
