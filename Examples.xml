@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Data>
+  <Folders>
+    <Folder>
+      <Title>PowerPoint 97 - 2003 Format (PPT)</Title>
+      <Description>Examples for working with Microsoft PowerPoint 97-2003 documents</Description>
+      <FolderName>PowerPoint97_2003</FolderName>
+      <Order>1</Order>
+      <Folders>
+        <Folder>
+          <Title>Introduction</Title>
+          <Description>Examples introducing the use of Aspose.Slides in your application.</Description>
+          <FolderName>Introduction</FolderName>
+          <Order>1</Order>
+          <Examples>
+            <Example>
+              <Title>Hello World Application</Title>
+              <Description>Example for creating a PowerPoint file having Hello World text at a specified position of the slide.</Description>
+              <FolderName>HelloWorldApplication</FolderName>
+              <Order>1</Order>
+              <DocLink>
+                <DisplayName>Hello World Application using Aspose.Slides for .NET</DisplayName>
+                <Url>Hello+World+Application+using+Aspose.Slides+for+.NET</Url>
+              </DocLink>
+              <OutputFiles>
+                <DataFile>
+                  <Path>..\Data\hello.ppt</Path>
+                </DataFile>
+              </OutputFiles>
+              <Type>Console</Type>
+            </Example>
+          </Examples>
+        </Folder>
+        <Folder>
+          <Title>Working With Presentation</Title>
+          <Description>Examples related to opening, saving, managing properties, locking, printing of presentations and convesion to different formats are included in this section.</Description>
+          <FolderName>WorkingWithPresentation</FolderName>
+          <Order>2</Order>
+          <Folders>
+            <Folder>
+              <Title>Opening Presentation</Title>
+              <Description>Examples to explain opening of a presentation directly from your code using Aspose.Slides.</Description>
+              <FolderName>OpenPresentation</FolderName>
+              <Order>1</Order>
+              <Examples>
+                <Example>
+                  <Title>Open Simple Presentation</Title>
+                  <Description>Example for opening a simple presentation using Aspose.Slides</Description>
+                  <FolderName>OpenSimple</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Opening a Presentation</DisplayName>
+                    <Url>Opening+a+Presentation</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\simple.ppt</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Open Password Protected Presentation</Title>
+                  <Description>In this example, password protected presentation is accessed using LoadOptions class object to set the password and then the Presentation class to open the presentation.</Description>
+                  <FolderName>OpenWithPassword</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Opening a Presentation</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/slidesjava/Opening+a+Presentation</Url>
+                  </DocLink>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+            </Folder>
+          </Folders>
+        </Folder>
+      </Folders>
+    </Folder>
+    <Folder>
+      <Title>PowerPoint 2007 Format (PPTX)</Title>
+      <Description>Examples for working with Microsift PowerPoint 2007 Documents.</Description>
+      <FolderName>PowerPoint2007</FolderName>
+      <Order>2</Order>
+    </Folder>
+  </Folders>
+</Data>
