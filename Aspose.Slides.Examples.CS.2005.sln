@@ -1,26 +1,42 @@
 Microsoft Visual Studio Solution File, Format Version 9.00
 # Visual Studio 2005
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ProgrammersGuide", "ProgrammersGuide", "{9DEC8096-7365-4336-8861-7DD0560A4340}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PowerPoint2007", "PowerPoint2007", "{A7DF2CB1-869D-4297-8DBC-21AF549A9300}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WorkingWithPresentationEx", "WorkingWithPresentationEx", "{86F5B2F3-E060-47BB-8FC8-093026B0744A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConvertingPPTXtoPDF", "ProgrammersGuide\PowerPoint2007\WorkingWithPresentationEx\ConvertingPPTXtoPDF\CSharp\ConvertingPPTXtoPDF.csproj", "{4D397E32-C95A-41D1-BB04-0918D6F7D670}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WorkingWithSlidesInPresentationEx", "WorkingWithSlidesInPresentationEx", "{0C205A90-770C-486E-9EBE-8DB083FAD875}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreateSlideThumbnail", "ProgrammersGuide\PowerPoint2007\WorkingWithSlidesInPresentationEx\CreateSlideThumbnail\CSharp\CreateSlideThumbnail.csproj", "{7BC06465-A138-4A03-9B2D-E34FF90BF298}"
+EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PowerPoint97_2003", "PowerPoint97_2003", "{A1200BC1-E8B7-4517-B8CC-8E575758E80F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Introduction", "Introduction", "{AC59D1EF-6A0F-4769-A63A-7BCC1800171D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorldApplication", "PowerPoint97_2003\Introduction\HelloWorldApplication\CSharp\HelloWorldApplication.csproj", "{59150549-8594-4E73-9DA6-5926C3B761E6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorldApplication", "ProgrammersGuide\PowerPoint97_2003\Introduction\HelloWorldApplication\CSharp\HelloWorldApplication.csproj", "{59150549-8594-4E73-9DA6-5926C3B761E6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WorkingWithPresentation", "WorkingWithPresentation", "{AED03FE1-3B7C-4FE5-9875-0C00FF27C8D9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConvertingToPDFFile", "ProgrammersGuide\PowerPoint97_2003\WorkingWithPresentation\ConvertingToPDFFile\CSharp\ConvertingToPDFFile.csproj", "{1723C17F-FE80-4C46-81FF-68AD62668435}"
+EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OpenPresentation", "OpenPresentation", "{0F67D5E4-C9AE-47A8-B386-9C976E83C477}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenSimple", "PowerPoint97_2003\WorkingWithPresentation\OpenPresentation\OpenSimple\CSharp\OpenSimple.csproj", "{A6709B65-FC59-4D69-A566-503C0BBE32B1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenSimple", "ProgrammersGuide\PowerPoint97_2003\WorkingWithPresentation\OpenPresentation\OpenSimple\CSharp\OpenSimple.csproj", "{A6709B65-FC59-4D69-A566-503C0BBE32B1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenWithPassword", "PowerPoint97_2003\WorkingWithPresentation\OpenPresentation\OpenWithPassword\CSharp\OpenWithPassword.csproj", "{3D602AF0-1886-4D17-BB83-E379C1F7A6BE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenWithPassword", "ProgrammersGuide\PowerPoint97_2003\WorkingWithPresentation\OpenPresentation\OpenWithPassword\CSharp\OpenWithPassword.csproj", "{3D602AF0-1886-4D17-BB83-E379C1F7A6BE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SavePresentation", "SavePresentation", "{FF53F950-2BC5-4EBB-BC26-3C51855C7CB9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SavePresentationToFile", "PowerPoint97_2003\WorkingWithPresentation\SavePresentation\SavePresentationToFile\CSharp\SavePresentationToFile.csproj", "{DA848350-FC11-42DF-813A-9F3E374AA33A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SavePresentationToFile", "ProgrammersGuide\PowerPoint97_2003\WorkingWithPresentation\SavePresentation\SavePresentationToFile\CSharp\SavePresentationToFile.csproj", "{DA848350-FC11-42DF-813A-9F3E374AA33A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SavePresentationToStream", "PowerPoint97_2003\WorkingWithPresentation\SavePresentation\SavePresentationToStream\CSharp\SavePresentationToStream.csproj", "{407BBCCD-A105-4157-8C79-AB4A50D914E1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SavePresentationToStream", "ProgrammersGuide\PowerPoint97_2003\WorkingWithPresentation\SavePresentation\SavePresentationToStream\CSharp\SavePresentationToStream.csproj", "{407BBCCD-A105-4157-8C79-AB4A50D914E1}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PowerPoint2007", "PowerPoint2007", "{A7DF2CB1-869D-4297-8DBC-21AF549A9300}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WorkingWithSlides", "WorkingWithSlides", "{D60223FA-DD43-42D4-902A-CE84ED0A35A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreateSlideThumbnail", "ProgrammersGuide\PowerPoint97_2003\WorkingWithSlides\CreateSlideThumbnail\CSharp\CreateSlideThumbnail.csproj", "{4D3442F7-7885-496A-BF64-E8582701D8F1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -28,9 +44,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4D397E32-C95A-41D1-BB04-0918D6F7D670}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D397E32-C95A-41D1-BB04-0918D6F7D670}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D397E32-C95A-41D1-BB04-0918D6F7D670}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BC06465-A138-4A03-9B2D-E34FF90BF298}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BC06465-A138-4A03-9B2D-E34FF90BF298}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BC06465-A138-4A03-9B2D-E34FF90BF298}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{59150549-8594-4E73-9DA6-5926C3B761E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{59150549-8594-4E73-9DA6-5926C3B761E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{59150549-8594-4E73-9DA6-5926C3B761E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1723C17F-FE80-4C46-81FF-68AD62668435}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1723C17F-FE80-4C46-81FF-68AD62668435}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1723C17F-FE80-4C46-81FF-68AD62668435}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6709B65-FC59-4D69-A566-503C0BBE32B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A6709B65-FC59-4D69-A566-503C0BBE32B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6709B65-FC59-4D69-A566-503C0BBE32B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -43,19 +68,31 @@ Global
 		{407BBCCD-A105-4157-8C79-AB4A50D914E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{407BBCCD-A105-4157-8C79-AB4A50D914E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{407BBCCD-A105-4157-8C79-AB4A50D914E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D3442F7-7885-496A-BF64-E8582701D8F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D3442F7-7885-496A-BF64-E8582701D8F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D3442F7-7885-496A-BF64-E8582701D8F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{A7DF2CB1-869D-4297-8DBC-21AF549A9300} = {9DEC8096-7365-4336-8861-7DD0560A4340}
+		{86F5B2F3-E060-47BB-8FC8-093026B0744A} = {A7DF2CB1-869D-4297-8DBC-21AF549A9300}
+		{4D397E32-C95A-41D1-BB04-0918D6F7D670} = {86F5B2F3-E060-47BB-8FC8-093026B0744A}
+		{0C205A90-770C-486E-9EBE-8DB083FAD875} = {A7DF2CB1-869D-4297-8DBC-21AF549A9300}
+		{7BC06465-A138-4A03-9B2D-E34FF90BF298} = {0C205A90-770C-486E-9EBE-8DB083FAD875}
+		{A1200BC1-E8B7-4517-B8CC-8E575758E80F} = {9DEC8096-7365-4336-8861-7DD0560A4340}
 		{AC59D1EF-6A0F-4769-A63A-7BCC1800171D} = {A1200BC1-E8B7-4517-B8CC-8E575758E80F}
 		{59150549-8594-4E73-9DA6-5926C3B761E6} = {AC59D1EF-6A0F-4769-A63A-7BCC1800171D}
 		{AED03FE1-3B7C-4FE5-9875-0C00FF27C8D9} = {A1200BC1-E8B7-4517-B8CC-8E575758E80F}
+		{1723C17F-FE80-4C46-81FF-68AD62668435} = {AED03FE1-3B7C-4FE5-9875-0C00FF27C8D9}
 		{0F67D5E4-C9AE-47A8-B386-9C976E83C477} = {AED03FE1-3B7C-4FE5-9875-0C00FF27C8D9}
 		{A6709B65-FC59-4D69-A566-503C0BBE32B1} = {0F67D5E4-C9AE-47A8-B386-9C976E83C477}
 		{3D602AF0-1886-4D17-BB83-E379C1F7A6BE} = {0F67D5E4-C9AE-47A8-B386-9C976E83C477}
 		{FF53F950-2BC5-4EBB-BC26-3C51855C7CB9} = {AED03FE1-3B7C-4FE5-9875-0C00FF27C8D9}
 		{DA848350-FC11-42DF-813A-9F3E374AA33A} = {FF53F950-2BC5-4EBB-BC26-3C51855C7CB9}
 		{407BBCCD-A105-4157-8C79-AB4A50D914E1} = {FF53F950-2BC5-4EBB-BC26-3C51855C7CB9}
+		{D60223FA-DD43-42D4-902A-CE84ED0A35A6} = {A1200BC1-E8B7-4517-B8CC-8E575758E80F}
+		{4D3442F7-7885-496A-BF64-E8582701D8F1} = {D60223FA-DD43-42D4-902A-CE84ED0A35A6}
 	EndGlobalSection
 EndGlobal

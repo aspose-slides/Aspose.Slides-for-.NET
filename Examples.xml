@@ -2,117 +2,249 @@
 <Data>
   <Folders>
     <Folder>
-      <Title>PowerPoint 97 - 2003 Format (PPT)</Title>
-      <Description>Examples for working with Microsoft PowerPoint 97-2003 documents</Description>
-      <FolderName>PowerPoint97_2003</FolderName>
+      <Title>Programmers Guide</Title>
+      <Description>Programmers Guide provides code samples about key programming concepts to build .NET and other applications that use Aspose.Slides.</Description>
+      <FolderName>ProgrammersGuide</FolderName>
       <Order>1</Order>
       <Folders>
         <Folder>
-          <Title>Introduction</Title>
-          <Description>Examples introducing the use of Aspose.Slides in your application.</Description>
-          <FolderName>Introduction</FolderName>
-          <Order>1</Order>
-          <Examples>
-            <Example>
-              <Title>Hello World Application</Title>
-              <Description>Example for creating a PowerPoint file having Hello World text at a specified position of the slide.</Description>
-              <FolderName>HelloWorldApplication</FolderName>
-              <Order>1</Order>
-              <DocLink>
-                <DisplayName>Hello World Application using Aspose.Slides for .NET</DisplayName>
-                <Url>Hello+World+Application+using+Aspose.Slides+for+.NET</Url>
-              </DocLink>
-              <OutputFiles>
-                <DataFile>
-                  <Path>..\Data\hello.ppt</Path>
-                </DataFile>
-              </OutputFiles>
-              <Type>Console</Type>
-            </Example>
-          </Examples>
-        </Folder>
-        <Folder>
-          <Title>Working With Presentation</Title>
-          <Description>Examples related to opening, saving, managing properties, locking, printing of presentations and convesion to different formats are included in this section.</Description>
-          <FolderName>WorkingWithPresentation</FolderName>
+          <Title>PowerPoint 2007 Format (PPTX)</Title>
+          <Description>Examples for working with Microsift PowerPoint 2007 Documents.</Description>
+          <FolderName>PowerPoint2007</FolderName>
           <Order>2</Order>
           <Folders>
             <Folder>
-              <Title>Opening a Presentation</Title>
-              <Description>Examples to explain opening of a presentation directly from your code using Aspose.Slides.</Description>
-              <FolderName>OpenPresentation</FolderName>
+              <Title>Working With PresentationEx</Title>
+              <Description>Examples related to opening, saving, managing properties, locking, printing of presentations (PPTX format) and convesion to different formats are included in this section.</Description>
+              <FolderName>WorkingWithPresentationEx</FolderName>
               <Order>1</Order>
               <Examples>
                 <Example>
-                  <Title>Open Simple Presentation</Title>
-                  <Description>Example for opening a simple presentation using Aspose.Slides</Description>
-                  <FolderName>OpenSimple</FolderName>
+                  <Title>Converting PPTX to PDF</Title>
+                  <Description>PDF documents are widely being used as a standard format of exchanging documents between organizations, government sectors and common users etc. So, it may also be required by the developers to convert their presentation files to PDF documents. Realizing this possible requirement, Aspose.Slides for .NET has added the built-in support of converting presentations to PDF documents without using any other component. In this example, this conversion process is explained in detail.</Description>
+                  <FolderName>ConvertingPPTXtoPDF</FolderName>
                   <Order>1</Order>
                   <DocLink>
-                    <DisplayName>Opening a Presentation</DisplayName>
-                    <Url>Opening+a+Presentation</Url>
+                    <DisplayName>Converting PPTX to PDF</DisplayName>
+                    <Url>Converting+PPTX+to+PDF</Url>
                   </DocLink>
                   <InputFiles>
                     <DataFile>
-                      <Path>..\Data\simple.ppt</Path>
+                      <Path>..\Data\demo.pptx</Path>
                     </DataFile>
                   </InputFiles>
-                  <Type>Console</Type>
-                </Example>
-                <Example>
-                  <Title>Open Password Protected Presentation</Title>
-                  <Description>In this example, password protected presentation is accessed using LoadOptions class object to set the password and then the Presentation class to open the presentation.</Description>
-                  <FolderName>OpenWithPassword</FolderName>
-                  <Order>2</Order>
-                  <DocLink>
-                    <DisplayName>Opening a Presentation</DisplayName>
-                    <Url>http://www.aspose.com/docs/display/slidesjava/Opening+a+Presentation</Url>
-                  </DocLink>
-                  <InputFiles>
+                  <OutputFiles>
                     <DataFile>
-                      <Path>..\Data\simplePasswordProtected.ppt</Path>
+                      <Path>..\Data\demo1.pdf</Path>
                     </DataFile>
-                  </InputFiles>
+                    <DataFile>
+                      <Path>..\Data\demo2.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
                   <Type>Console</Type>
                 </Example>
               </Examples>
             </Folder>
             <Folder>
-              <Title>Saving a Presentation</Title>
-              <Description>Whether you are creating a presentation from scratch or want to modify an existing one, you would like to save your presentation after your work is finished. Using Aspose.Slides developers can either save their presentation as a file or stream. This example implements both of these approaches in detail.</Description>
-              <FolderName>SavePresentation</FolderName>
+              <Title>Working with Slides in PresentationEx</Title>
+              <Description>This section contains examples for addition, accessing, removal, cloning and managing slides of a PresentationEx (PPTX) presentations.</Description>
+              <FolderName>WorkingWithSlidesInPresentationEx</FolderName>
               <Order>2</Order>
               <Examples>
                 <Example>
-                  <Title>Save Presentation to File</Title>
-                  <Description>Developers can save presentations to files by calling the Write method of the Presentation class. For this, developers can simply pass the file name to the Write method exposed by Presentation class as a string as explained in the example.</Description>
-                  <FolderName>SavePresentationToFile</FolderName>
+                  <Title>Creating Slides Thumbnail Image</Title>
+                  <Description>Aspose.Slides for .NET is used to create presentation files containing slides. These slides can be viewed by opening presentation files using Microsoft PowerPoint. But sometimes, developers may need to view slides as images using their favorite image viewer. In such cases, Aspose.Slides for .NET help you generate thumbnail images of the slides. Using this feature is described in detail in this example.</Description>
+                  <FolderName>CreateSlideThumbnail</FolderName>
                   <Order>1</Order>
                   <DocLink>
-                    <DisplayName>Saving a Presentation</DisplayName>
-                    <Url>Saving+a+Presentation</Url>
+                    <DisplayName>Creating Slides Thumbnail Image</DisplayName>
+                    <Url>Creating+Slides+Thumbnail+Image</Url>
                   </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\demo.pptx</Path>
+                    </DataFile>
+                  </InputFiles>
                   <OutputFiles>
                     <DataFile>
-                      <Path>..\Data\demo.ppt</Path>
+                      <Path>..\Data\thumbnail.jpg</Path>
                     </DataFile>
                   </OutputFiles>
                   <Type>Console</Type>
                 </Example>
+              </Examples>
+            </Folder>
+          </Folders>
+        </Folder>
+        <Folder>
+          <Title>PowerPoint 97 - 2003 Format (PPT)</Title>
+          <Description>Examples for working with Microsoft PowerPoint 97-2003 documents</Description>
+          <FolderName>PowerPoint97_2003</FolderName>
+          <Order>1</Order>
+          <Folders>
+            <Folder>
+              <Title>Introduction</Title>
+              <Description>Examples introducing the use of Aspose.Slides in your application.</Description>
+              <FolderName>Introduction</FolderName>
+              <Order>1</Order>
+              <Examples>
                 <Example>
-                  <Title>Save Presentation to Stream</Title>
-                  <Description>It is possible to save a presentation to a stream by passing an output stream to the Write* method of the Presentation class. There are many types of streams to which a presentation can be saved but in this example the output stream of Http Response is used for the demonstration purpose. You can simply follow the steps below to do so:
+                  <Title>Hello World Application</Title>
+                  <Description>Example for creating a PowerPoint file having Hello World text at a specified position of the slide.</Description>
+                  <FolderName>HelloWorldApplication</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Hello World Application using Aspose.Slides for .NET</DisplayName>
+                    <Url>Hello+World+Application+using+Aspose.Slides+for+.NET</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\hello.ppt</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+            </Folder>
+            <Folder>
+              <Title>Working With Presentation</Title>
+              <Description>Examples related to opening, saving, managing properties, locking, printing of presentations (PPT format) and convesion to different formats are included in this section.</Description>
+              <FolderName>WorkingWithPresentation</FolderName>
+              <Order>2</Order>
+              <Examples>
+                <Example>
+                  <Title>Converting to PDF File</Title>
+                  <Description>PDF documents are widely used as a standard format of exchanging documents between organizations, government sectors and common users etc. So, it may also be required by the developers to convert their presentation files to PDF documents. Realizing this possible requirement, Aspose.Slides for .NET has added the built-in support of converting presentations to PDF documents without using any other component. This example explains the conversion of presentation to PDF using default and custom PDF options.</Description>
+                  <FolderName>ConvertingToPDFFile</FolderName>
+                  <Order>3</Order>
+                  <DocLink>
+                    <DisplayName>Converting to PDF File</DisplayName>
+                    <Url>Converting+to+PDF+File</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\demo.ppt</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\demo1.pdf</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\demo2.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+              <Folders>
+                <Folder>
+                  <Title>Opening a Presentation</Title>
+                  <Description>Examples to explain opening of a presentation directly from your code using Aspose.Slides.</Description>
+                  <FolderName>OpenPresentation</FolderName>
+                  <Order>1</Order>
+                  <Examples>
+                    <Example>
+                      <Title>Open Simple Presentation</Title>
+                      <Description>Example for opening a simple presentation using Aspose.Slides</Description>
+                      <FolderName>OpenSimple</FolderName>
+                      <Order>1</Order>
+                      <DocLink>
+                        <DisplayName>Opening a Presentation</DisplayName>
+                        <Url>Opening+a+Presentation</Url>
+                      </DocLink>
+                      <InputFiles>
+                        <DataFile>
+                          <Path>..\Data\simple.ppt</Path>
+                        </DataFile>
+                      </InputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Open Password Protected Presentation</Title>
+                      <Description>In this example, password protected presentation is accessed using LoadOptions class object to set the password and then the Presentation class to open the presentation.</Description>
+                      <FolderName>OpenWithPassword</FolderName>
+                      <Order>2</Order>
+                      <DocLink>
+                        <DisplayName>Opening a Presentation</DisplayName>
+                        <Url>http://www.aspose.com/docs/display/slidesjava/Opening+a+Presentation</Url>
+                      </DocLink>
+                      <InputFiles>
+                        <DataFile>
+                          <Path>..\Data\simplePasswordProtected.ppt</Path>
+                        </DataFile>
+                      </InputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                  </Examples>
+                </Folder>
+                <Folder>
+                  <Title>Saving a Presentation</Title>
+                  <Description>Whether you are creating a presentation from scratch or want to modify an existing one, you would like to save your presentation after your work is finished. Using Aspose.Slides developers can either save their presentation as a file or stream. This example implements both of these approaches in detail.</Description>
+                  <FolderName>SavePresentation</FolderName>
+                  <Order>2</Order>
+                  <Examples>
+                    <Example>
+                      <Title>Save Presentation to File</Title>
+                      <Description>Developers can save presentations to files by calling the Write method of the Presentation class. For this, developers can simply pass the file name to the Write method exposed by Presentation class as a string as explained in the example.</Description>
+                      <FolderName>SavePresentationToFile</FolderName>
+                      <Order>1</Order>
+                      <DocLink>
+                        <DisplayName>Saving a Presentation</DisplayName>
+                        <Url>Saving+a+Presentation</Url>
+                      </DocLink>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\demo.ppt</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Save Presentation to Stream</Title>
+                      <Description>It is possible to save a presentation to a stream by passing an output stream to the Write* method of the Presentation class. There are many types of streams to which a presentation can be saved but in this example the output stream of Http Response is used for the demonstration purpose. You can simply follow the steps below to do so:
 
 - Set the Content Type of Http Response
 - Append the Header to contain the file name
 - Write the presentation to the Stream
 - Close the Http Response</Description>
-                  <FolderName>SavePresentationToStream</FolderName>
-                  <Order>2</Order>
+                      <FolderName>SavePresentationToStream</FolderName>
+                      <Order>2</Order>
+                      <DocLink>
+                        <DisplayName>Saving a Presentation</DisplayName>
+                        <Url>Saving+a+Presentation</Url>
+                      </DocLink>
+                      <Type>Console</Type>
+                    </Example>
+                  </Examples>
+                </Folder>
+              </Folders>
+            </Folder>
+            <Folder>
+              <Title>Working With Slides</Title>
+              <Description>This sectiion contains examples related to addition, removal, cloning, managing transitions and accessing attributes etc. of the slides in a presentation using Aspose.Slides.</Description>
+              <FolderName>WorkingWithSlides</FolderName>
+              <Order>3</Order>
+              <Examples>
+                <Example>
+                  <Title>Creating Slide Thumbnail Image</Title>
+                  <Description>Spose.Slides for .NET is used to create presentation files containing slides. These slides can be viewed by opening presentation files using MS PowerPoint . But sometimes, developers may also need to view these slides as images using their favorite image viewers. In such cases, Aspose.Slides for .NET provides the feature to generate thumbnail images of the slides. The usage of this feature is described in this example in detail.</Description>
+                  <FolderName>CreateSlideThumbnail</FolderName>
+                  <Order>1</Order>
                   <DocLink>
-                    <DisplayName>Saving a Presentation</DisplayName>
-                    <Url>Saving+a+Presentation</Url>
+                    <DisplayName>Creating Slide Thumbnail Image</DisplayName>
+                    <Url>Creating+Slide+Thumbnail+Image</Url>
                   </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\demo.ppt</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\thumbnail.jpg</Path>
+                    </DataFile>
+                  </OutputFiles>
                   <Type>Console</Type>
                 </Example>
               </Examples>
@@ -120,12 +252,6 @@
           </Folders>
         </Folder>
       </Folders>
-    </Folder>
-    <Folder>
-      <Title>PowerPoint 2007 Format (PPTX)</Title>
-      <Description>Examples for working with Microsift PowerPoint 2007 Documents.</Description>
-      <FolderName>PowerPoint2007</FolderName>
-      <Order>2</Order>
     </Folder>
   </Folders>
 </Data>
