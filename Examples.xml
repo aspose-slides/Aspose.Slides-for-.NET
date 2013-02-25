@@ -99,6 +99,22 @@
                   </OutputFiles>
                   <Type>Console</Type>
                 </Example>
+                <Example>
+                  <Title>Save Presentation to Stream</Title>
+                  <Description>It is possible to save a presentation to a stream by passing an output stream to the Write* method of the Presentation class. There are many types of streams to which a presentation can be saved but in this example the output stream of Http Response is used for the demonstration purpose. You can simply follow the steps below to do so:
+
+- Set the Content Type of Http Response
+- Append the Header to contain the file name
+- Write the presentation to the Stream
+- Close the Http Response</Description>
+                  <FolderName>SavePresentationToStream</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Saving a Presentation</DisplayName>
+                    <Url>Saving+a+Presentation</Url>
+                  </DocLink>
+                  <Type>Console</Type>
+                </Example>
               </Examples>
             </Folder>
           </Folders>
