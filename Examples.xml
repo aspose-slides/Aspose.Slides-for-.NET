@@ -14,7 +14,7 @@
           <Order>2</Order>
           <Folders>
             <Folder>
-              <Title>Working With PresentationEx</Title>
+              <Title>Working with PresentationEx</Title>
               <Description>Examples related to opening, saving, managing properties, locking, printing of presentations (PPTX format) and convesion to different formats are included in this section.</Description>
               <FolderName>WorkingWithPresentationEx</FolderName>
               <Order>1</Order>
@@ -74,6 +74,56 @@
                 </Example>
               </Examples>
             </Folder>
+            <Folder>
+              <Title>Working with ShapesEx</Title>
+              <Description>This section contains examples related to addition, formatting, rotating and accessing attributes of shapes in a presentationEx using Aspose.Slides.</Description>
+              <FolderName>WorkingWithShapesEx</FolderName>
+              <Order>3</Order>
+              <Examples>
+                <Example>
+                  <Title>Adding Picture Frame to SlideEx</Title>
+                  <Description>Picture frame is also one of the shapes offered by Aspose.Slides for .NET. Adding picture frame to a slide is bit trickier than simple shapes. A picture frame is like a picture in a frame. You can add any desired picture to your slide as a picture frame. In this example addition of picture frame to a slide is done.</Description>
+                  <FolderName>AddPictureFrameToSlideEx</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Adding Picture Frame to SlideEx</DisplayName>
+                    <Url>Adding+Picture+Frame+to+SlideEx</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\asp.jpg</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\RectPicFrame.pptx</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Filling ShapesEx with Picture</Title>
+                  <Description>If a developer needs to fill a shape with an image of his own choice then Aspose.Slides gives full freedom to its users to fill a shape with any desired image. In this example, filling a shape with a picture is performed using Aspose.Slides in a very easy way.</Description>
+                  <FolderName>FillShapeExWithPicture</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Filling ShapesEx with Picture</DisplayName>
+                    <Url>Filling+ShapesEx+with+Picture</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\asp.jpg</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\RectShpPic.pptx</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+            </Folder>
           </Folders>
         </Folder>
         <Folder>
@@ -107,7 +157,7 @@
               </Examples>
             </Folder>
             <Folder>
-              <Title>Working With Presentation</Title>
+              <Title>Working with Presentation</Title>
               <Description>Examples related to opening, saving, managing properties, locking, printing of presentations (PPT format) and convesion to different formats are included in this section.</Description>
               <FolderName>WorkingWithPresentation</FolderName>
               <Order>2</Order>
@@ -221,7 +271,7 @@
               </Folders>
             </Folder>
             <Folder>
-              <Title>Working With Slides</Title>
+              <Title>Working with Slides</Title>
               <Description>This sectiion contains examples related to addition, removal, cloning, managing transitions and accessing attributes etc. of the slides in a presentation using Aspose.Slides.</Description>
               <FolderName>WorkingWithSlides</FolderName>
               <Order>3</Order>
@@ -243,6 +293,38 @@
                   <OutputFiles>
                     <DataFile>
                       <Path>..\Data\thumbnail.jpg</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+            </Folder>
+            <Folder>
+              <Title>Working with Shapes</Title>
+              <Description>This section contains examples related to addition, formatting, rotating and accessing attributes of shapes in a presentation using Aspose.Slides.</Description>
+              <FolderName>WorkingWithShapes</FolderName>
+              <Order>4</Order>
+              <Examples>
+                <Example>
+                  <Title>Filling Shapes with Picture</Title>
+                  <Description>If a developer needs to fill a shape with an image of his own choice, Aspose.Slides gives full freedom to its users to fill a shape with any desired image. In this topic, we will discuss how to achieve this.</Description>
+                  <FolderName>FillShapeWithPicture</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Filling Shapes with Picture</DisplayName>
+                    <Url>Filling+Shapes+with+Picture</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\demo.ppt</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\demo.jpg</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\modified.ppt</Path>
                     </DataFile>
                   </OutputFiles>
                   <Type>Console</Type>
