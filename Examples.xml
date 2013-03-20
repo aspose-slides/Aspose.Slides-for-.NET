@@ -43,6 +43,173 @@
                   </OutputFiles>
                   <Type>Console</Type>
                 </Example>
+                <Example>
+                  <Title>Saving a PresentationEx</Title>
+                  <Description>The PresentationEx class holds the contents of a presentation. Whether you are creating a presentation from scratch or modifying an existing one, you want to save your presentation when you're finished. With Aspose.Slides developers can either save presentation as a file or stream. Both of these approaches are discussed in detail in this example.
+
+This example explains how to save a presentation in different ways:
+
+- Save to file.
+- Save to stream.
+- Save with password protection.
+- Saving a password protected presentation with read access to document properties.
+- Save as read only.
+- Remove write protection.</Description>
+                  <FolderName>SavingAPresentationEx</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Saving a PresentationEx</DisplayName>
+                    <Url>Saving+a+PresentationEx</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\toFile.pptx</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\toStream.pptx</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\passwordProtected.pptx</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\passwordProtectedReadOnlyProperties.pptx</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\readOnlyPresentation.pptx</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\writeProtectionRemoved.pptx</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Managing PresentationEx Properties</Title>
+                  <Description>Microsoft PowerPoint 2007 provides a feature to add some properties to the presentation files. These document properties allow some useful information to be stored along with the documents (presentation files). There are two kinds of document properties as follows:
+
+- System Defined (Built-in) Properties
+- User Defined (Custom) Properties
+
+Built-in properties contain general information about the document like document title, author's name, document statistics and so on. Custom properties are those ones, which are defined by the users as Name/Value pairs, where both name and value are defined by the user. Using Aspose.Slides, developers can access and modify the values of built-in properties as well as custom properties. Aspose.Slides provides a class DocumentPropertiesEx that represents the document properties associated with a PPTX presentation file through PresentationEx.DocumentProperties property.
+Developers can use DocumentProperties property exposed by PresentationEx object to access the document properties of the PPTX presentation files as described in this example.</Description>
+                  <FolderName>ManagePresentationExProperties</FolderName>
+                  <Order>3</Order>
+                  <DocLink>
+                    <DisplayName>Managing PresentationEx Properties</DisplayName>
+                    <Url>Managing+PresentationEx+Properties</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\demo.pptx</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\updatedProperties.pptx</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\updatedCustomProperties.pptx</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Converting PPTX with Notes to Tiff</Title>
+                  <Description>TIFF is one of several widely used image formats that Aspose.Slides supports for converting a presentation with notes to images. You can also generate slide thumbnails in the Notes Slide view. This example shows how to generate TIFF images of a presentation in Notes Slide view.</Description>
+                  <FolderName>ConvertPPTXWithNotesToTiff</FolderName>
+                  <Order>4</Order>
+                  <DocLink>
+                    <DisplayName>Converting PPTX with Notes to Tiff</DisplayName>
+                    <Url>Converting+PPTX+with+Notes+to+Tiff</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\TestNotes.pptx</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\TestNotes.tiff</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Converting PPTX to TIFF</Title>
+                  <Description>TIFF format is known by its flexibility to accommodate multipage images and data. Keeping in view the importance and popularity of TIFF format, Aspose.Slides provides the support for converting PPTX presentations into TIFF document.
+
+This example explains how different tiff export options work:
+
+- Converting PPTX Presentation to TIFF with default size.
+- Converting PPTX Presentation to TIFF with custom size.</Description>
+                  <FolderName>ConverPPTXToTIFF</FolderName>
+                  <Order>5</Order>
+                  <DocLink>
+                    <DisplayName>Converting PPTX to TIFF</DisplayName>
+                    <Url>Converting+PPTX+to+TIFF</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\demo.pptx</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\demo.tiff</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\demoCustomSize.tiff</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Converting PPTX to XPS</Title>
+                  <Description>XPS format is also widely used for exchange of data. Aspose.Slides takes care of its importance and provides the built-in support for converting a presentation into XPS document.
+
+The Save method exposed by PresentationEx class can be used to convert the whole presentation into XPS document. Further, XpsOptions class exposes SaveMetafileAsPng property that can be set to true or false as per requirement. This example shows how to convert a PPTX presentation into XPS document with and without using options provided by XpsOptions class.</Description>
+                  <FolderName>ConvertPPTXToXPS</FolderName>
+                  <Order>6</Order>
+                  <DocLink>
+                    <DisplayName>Converting PPTX to XPS</DisplayName>
+                    <Url>Converting+PPTX+to+XPS</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\demo.pptx</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\output.xps</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\outputWithXPSOptions.xps</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Converting PPTX to HTML</Title>
+                  <Description>HTML is one of several widely used format for exchanging data. Aspose.Slides provides support for converting a presentation to HTML. This examples shows you how to do this using Aspose.Slides.</Description>
+                  <FolderName>ConvertPPTXToHTML</FolderName>
+                  <Order>7</Order>
+                  <DocLink>
+                    <DisplayName>Converting PPTX to HTML</DisplayName>
+                    <Url>Converting+PPTX+to+HTML</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\demo.pptx</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\demo.html</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
               </Examples>
             </Folder>
             <Folder>
@@ -184,6 +351,137 @@
                       <Path>..\Data\demo2.pdf</Path>
                     </DataFile>
                   </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Managing Presentation Properties</Title>
+                  <Description>Microsoft PowerPoint provides the feature to add some properties to the presentation files. These document properties allow some useful information to be stored along with the documents (presentation files). There are two kinds of document properties as follows:
+
+- System Defined (Built-in) Properties
+- User Defined (Custom) Properties
+
+Built-in properties contain general information about the document like document title, author's name etc . Custom properties are defined by the users as Name/Value pairs, where both name and value are defined by the user. Using Aspose.Slides, developers can access and modify the values of the built-in as well as custom properties. This example focuses on setting up the properties of a presentation using Aspose.Slides</Description>
+                  <FolderName>ManagingPresentationProperties</FolderName>
+                  <Order>4</Order>
+                  <DocLink>
+                    <DisplayName>Managing Presentation Properties</DisplayName>
+                    <Url>Managing+Presentation+Properties</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\demo.ppt</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\modified.ppt</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\DemoProps.ppt</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Locking a Presentation</Title>
+                  <Description>A presentation is composed of slides and each slide may have a number of elements. In general, every element of the slide is considered as a shape. Aspose.Slides provides a unique feature of locking the shape. In this way, whole presentation may be locked and hence can’t be edited unless it is unlocked through Aspose.Slides.
+
+The Shape class exposes a Protection property that can be used to apply ten different types of locking mechanism as defined by ShapeProtection enumerator. The following sequence of steps is required to lock all the shapes in a presentation.
+
+- Create an instance of Presentation class to load a presentation that is to be locked
+- Loop through the presentation to access all the Slides in the presentation
+- Loop through all the Shapes in each Slide
+- Lock each Shape element using the Protection property exposed by Shape object
+- Finally, write the PPT file using the Write method exposed by Presentation object</Description>
+                  <FolderName>LockingAPresentation</FolderName>
+                  <Order>5</Order>
+                  <DocLink>
+                    <DisplayName>Locking a Presentation</DisplayName>
+                    <Url>Locking+a+Presentation</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\demo.ppt</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\demoLock.ppt</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Converting to TIFF File</Title>
+                  <Description>TIFF format is known by its flexibility to accommodate multipage images and data. Keeping in view the importance and popularity of TIFF format, Aspose.Slides provides the support for converting presentations into TIFF document.
+
+The Save method exposed by Presentation class can be called by developers to convert the whole presentation into TIFF document. Further, Tiff Options class exposes ImageSize property enabling the developer to define the size of the image if required. This example shows how to convert a presentation into TIFF document with default options and with customized image size using TiffOptions class.</Description>
+                  <FolderName>ConvertingToTIFFFile</FolderName>
+                  <Order>6</Order>
+                  <DocLink>
+                    <DisplayName>Converting to TIFF File</DisplayName>
+                    <Url>Converting+to+TIFF+File</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\demo.ppt</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\demo1.tiff</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\demo2.tiff</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Converting to XPS File</Title>
+                  <Description>XPS format is also widely used for exchange of data, therefore Aspose.Slides takes care of its importance and provides the built-in support for converting a presentation into XPS document.
+
+The Save method exposed by Presentation class that can be used to convert the whole presentation into XPS document. Further, Xps Options class exposes SaveMetafileAsPng property that can be set to true or false as per requirement. This example shows how to convert a presentation into XPS document with and without using options provided by XpsOptions class.</Description>
+                  <FolderName>ConvertingToXPSFile</FolderName>
+                  <Order>7</Order>
+                  <DocLink>
+                    <DisplayName>Converting to XPS File</DisplayName>
+                    <Url>Converting+to+XPS+File</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\demo.ppt</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\demo1.xps</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\demo2.xps</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Printing a Presentation</Title>
+                  <Description>Aspose.Slides provides four overloads methods for printing of the presentations. These methods are flexible enough to print the presentation to the default printer or to any of the available printer with customized settings. You only need to select the appropriate print method according to the requirement.
+
+Printing of the presentation to the default printer is quite simple in Aspose.Slides. Perform the following steps in order to print the presentation to default printer:
+
+- Create an instance of Presentation class to load a presentation that is to be printed
+- Call the Print method with no parameters as exposed by the Presentation object</Description>
+                  <FolderName>PrintingAPresentation</FolderName>
+                  <Order>8</Order>
+                  <DocLink>
+                    <DisplayName>Printing a Presentation</DisplayName>
+                    <Url>Printing+a+Presentation</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\demo.ppt</Path>
+                    </DataFile>
+                  </InputFiles>
                   <Type>Console</Type>
                 </Example>
               </Examples>
