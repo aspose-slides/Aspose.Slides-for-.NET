@@ -43,9 +43,9 @@ namespace SavePresentationToStream
             pres.Slides.RemoveAt(0);
             
             //Accessing the output stream of Http Response
-            System.IO.Stream st = new FileStream(dataDir + "output.ppt", FileMode.OpenOrCreate);// this.Response.OutputStream;
+            System.IO.Stream st = new FileStream(dataDir + "output.ppt", FileMode.OpenOrCreate);
 
-            //Saving the presentation to the output stream of Http Response
+            //Saving the presentation to the output stream
             pres.Write(st);
             st.Close();
 
