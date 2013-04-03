@@ -562,6 +562,11 @@ Printing of the presentation to the default printer is quite simple in Aspose.Sl
                         <DisplayName>Saving a Presentation</DisplayName>
                         <Url>Saving+a+Presentation</Url>
                       </DocLink>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\output.ppt</Path>
+                        </DataFile>
+                      </OutputFiles>
                       <Type>Console</Type>
                     </Example>
                   </Examples>
