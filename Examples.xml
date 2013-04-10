@@ -620,6 +620,23 @@ Printing of the presentation to the default printer is quite simple in Aspose.Sl
                       <Path>..\Data\demo.ppt</Path>
                     </DataFile>
                   </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\BodySlide.ppt</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\DoubleBodySlide.ppt</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\EmptySlide.ppt</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\HeaderSlide.ppt</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\TitleSlide.ppt</Path>
+                    </DataFile>
+                  </OutputFiles>
                   <Type>Console</Type>
                 </Example>
                 <Example>
@@ -636,6 +653,11 @@ Printing of the presentation to the default printer is quite simple in Aspose.Sl
                       <Path>..\Data\demo.ppt</Path>
                     </DataFile>
                   </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\modified.ppt</Path>
+                    </DataFile>
+                  </OutputFiles>
                   <Type>Console</Type>
                 </Example>
                 <Example>
@@ -655,6 +677,11 @@ Printing of the presentation to the default printer is quite simple in Aspose.Sl
                       <Path>..\Data\demo.ppt</Path>
                     </DataFile>
                   </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\modified.ppt</Path>
+                    </DataFile>
+                  </OutputFiles>
                   <Type>Console</Type>
                 </Example>
                 <Example>
@@ -678,6 +705,14 @@ This article explains how to clone presentation slides in different ways:
                       <Path>..\Data\demo.ppt</Path>
                     </DataFile>
                   </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\CloneSlide1.ppt</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\CloneSlide2.ppt</Path>
+                    </DataFile>
+                  </OutputFiles>
                   <Type>Console</Type>
                 </Example>
               </Examples>
