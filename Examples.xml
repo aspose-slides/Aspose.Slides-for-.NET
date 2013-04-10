@@ -600,6 +600,86 @@ Printing of the presentation to the default printer is quite simple in Aspose.Sl
                   </OutputFiles>
                   <Type>Console</Type>
                 </Example>
+                <Example>
+                  <Title>Adding Slides to Presentation</Title>
+                  <Description>Each PowerPoint presentation file contains one Main Master slide and other Normal slides. It means that a presentation file contains at least one or more slides. It is important to know that presentation files without slides are not supported by Aspose.Slides for .NET. Each slide has specific position and a unique Id. The slide Id can range from 0 to 255 for master slides and from 256 to 65535 for normal slides. Aspose.Slides for .NET provides many ways to add and manage slides. In this topic, we will discuss all possible ways to add slides to a presentation.
+
+1: Add Empty Slide to Presentation
+2: Add Body Slide to Presentation
+3: Add Double Body Slide to Presentation
+4: Add Header Slide to Presentation
+5: Add Title Slide to Presentation</Description>
+                  <FolderName>AddingSlidesToPresentation</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Adding Slides to Presentation</DisplayName>
+                    <Url>Adding+Slides+to+Presentation</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\demo.ppt</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Changing the Position of a Slide</Title>
+                  <Description>If you create a presentation using MS PowerPoint , you would have experienced , when ever you add a new slide to your presentation, it is appended at the end of the presentation by default. Using MS PowerPoint , you can drag a selected slide to any other position of the presentation. Aspose.Slides for .NET also allow developers to change the position of a slide within the presentation.</Description>
+                  <FolderName>ChangingPositionOfSlide</FolderName>
+                  <Order>3</Order>
+                  <DocLink>
+                    <DisplayName>Changing the Position of a Slide</DisplayName>
+                    <Url>Changing+the+Position+of+a+Slide</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\demo.ppt</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Removing Slides from a Presentation</Title>
+                  <Description>Sometimes, developers may need to remove a slide from the presentation due to any reason. Aspose.Slides for .NET offers few methods to do so. In this topic, we will explore these methods to accomplish this task. Presentation class encapsulates the SlideCollection class that acts as a repository of all slides that are the part of the presentation. Developers can remove a slide from this SlideCollection in two ways:
+
+1: Using Slide Reference
+2: Using Slide Index</Description>
+                  <FolderName>RemovingSlidesFromPresentation</FolderName>
+                  <Order>4</Order>
+                  <DocLink>
+                    <DisplayName>Removing Slides from a Presentation</DisplayName>
+                    <Url>Removing+Slides+from+a+Presentation</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\demo.ppt</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Cloning a Slide</Title>
+                  <Description>Cloning is the process of making an exact copy or replica of something. Aspose.Slides for .NET also makes it possible to make a copy or clone any slide and then insert s that cloned slide to the current or any other opened presentation. The process of slide cloning creates a new slide that can be modified by developers without changing the original slide. In this topic, we will learn how to perform slide cloning. 
+This article explains how to clone presentation slides in different ways:
+
+1: Cloning in same Presentation
+2: Cloning in another Presentation</Description>
+                  <FolderName>CloningASlide</FolderName>
+                  <Order>5</Order>
+                  <DocLink>
+                    <DisplayName>Cloning a Slide</DisplayName>
+                    <Url>Cloning+a+Slide</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\demo2.ppt</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\demo.ppt</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <Type>Console</Type>
+                </Example>
               </Examples>
             </Folder>
             <Folder>
