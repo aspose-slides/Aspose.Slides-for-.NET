@@ -210,6 +210,43 @@ The Save method exposed by PresentationEx class can be used to convert the whole
                   </OutputFiles>
                   <Type>Console</Type>
                 </Example>
+                <Example>
+                  <Title>Opening a PresentationEx</Title>
+                  <Description>Using Aspose.Slides for .NET, developers can not only create PowerPoint 2007 presentations from scratch but also access or modify the existing ones. In this topic, we will discuss the simplest approach to open and access an existing presentation.</Description>
+                  <FolderName>OpeningPresentationEx</FolderName>
+                  <Order>8</Order>
+                  <DocLink>
+                    <DisplayName>Opening a PresentationEx</DisplayName>
+                    <Url>Opening+a+PresentationEx</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\demo.pptx</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Accessing OpenDocument Presentation</Title>
+                  <Description>Aspose.Slides for .NET now facilitates the developers to access the OpenDocument Presentations (ODP) using PresentationEx class in read only mode. However, you can save the presentation in PPTX format.</Description>
+                  <FolderName>AccessingOpenDocumentPresentation</FolderName>
+                  <Order>9</Order>
+                  <DocLink>
+                    <DisplayName>Accessing OpenDocument Presentation</DisplayName>
+                    <Url>Accessing+OpenDocument+Presentation</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\demo.odp</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\Aspose.pptx</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
               </Examples>
             </Folder>
             <Folder>
@@ -235,6 +272,22 @@ The Save method exposed by PresentationEx class can be used to convert the whole
                   <OutputFiles>
                     <DataFile>
                       <Path>..\Data\thumbnail.jpg</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Adding Slides to PresentationEx</Title>
+                  <Description>Before talking about adding slides to the presentation files, let us discuss some facts about the slides. Each PowerPoin t presentation file contains Master / Layout slide and other Normal slides. It means that a presentation file contains at least one or more slides. It is important to know that presentation files without slides are not supported by Aspose.Slides for .NET. Each slide has unique Id and all the Normal Slides are arranged in an order specified by the zero based index.</Description>
+                  <FolderName>AddingSlidesToPresentationEx</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Adding Slides to PresentationEx</DisplayName>
+                    <Url>Adding+Slides+to+PresentationEx</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\EmptySlide.pptx</Path>
                     </DataFile>
                   </OutputFiles>
                   <Type>Console</Type>
@@ -711,6 +764,30 @@ This article explains how to clone presentation slides in different ways:
                     </DataFile>
                     <DataFile>
                       <Path>..\Data\CloneSlide2.ppt</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Setting the Background Color</Title>
+                  <Description>In this example, we will see how to set the background color of a slide. We know that Aspose.Slides for .NET may contain two types of slides: Master Slide and Normal Slide . It is possible to change the background colors of both types of slides.</Description>
+                  <FolderName>SettingBackgroundColor</FolderName>
+                  <Order>6</Order>
+                  <DocLink>
+                    <DisplayName>Setting the Background Color</DisplayName>
+                    <Url>Setting+the+Background+Color</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\demo.ppt</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\MasterSlide.ppt</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\NormalSlide.ppt</Path>
                     </DataFile>
                   </OutputFiles>
                   <Type>Console</Type>
