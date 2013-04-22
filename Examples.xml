@@ -292,6 +292,48 @@ The Save method exposed by PresentationEx class can be used to convert the whole
                   </OutputFiles>
                   <Type>Console</Type>
                 </Example>
+                <Example>
+                  <Title>Removing Slides from a PresentationEx</Title>
+                  <Description>Sometimes, developers may need to remove a slide from the presentation due to any reason. Aspose.Slides for .NET offers few methods to do so. In this topic, we will explore these methods to accomplish this task.</Description>
+                  <FolderName>RemovingSlidesFromPresentationEx</FolderName>
+                  <Order>3</Order>
+                  <DocLink>
+                    <DisplayName>Removing Slides from a PresentationEx</DisplayName>
+                    <Url>Removing+Slides+from+a+PresentationEx</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\demo.pptx</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\modified.pptx</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Cloning Slides in PresentationEx</Title>
+                  <Description>Cloning is the process of making an exact copy or replica of something. Aspose.Slides for .NET also makes it possible to make a copy or clone of any slide and then insert s that cloned slide to the current or any other opened presentation. The process of slide cloning creates a new slide that can be modified by developers without changing the original slide. In this topic, we will learn how to perform slide cloning.</Description>
+                  <FolderName>CloningSlidesInPresentationEx</FolderName>
+                  <Order>4</Order>
+                  <DocLink>
+                    <DisplayName>Cloning Slides in PresentationEx</DisplayName>
+                    <Url>Cloning+Slides+in+PresentationEx</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\demo.pptx</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\demo_cloned.pptx</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
               </Examples>
             </Folder>
             <Folder>
