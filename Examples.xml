@@ -834,7 +834,247 @@ This article explains how to clone presentation slides in different ways:
                   </OutputFiles>
                   <Type>Console</Type>
                 </Example>
+                <Example>
+                  <Title>Setting the Background Color to a Gradient</Title>
+                  <Description>Gradient is a graphic effect consisting of a gradual change in color. It is great for creating depth and highlights to sections of the images. It is possible to apply gradient effect on the background of a slide using Aspose.Slides for .NET that will be explained in the remaining discussion of this topic.</Description>
+                  <FolderName>SettingBackgroundColorToGradient</FolderName>
+                  <Order>7</Order>
+                  <DocLink>
+                    <DisplayName>Setting the Background Color to a Gradient</DisplayName>
+                    <Url>Setting+the+Background+Color+to+a+Gradient</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\demo.ppt</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\modified.ppt</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Setting the Background to a Pattern</Title>
+                  <Description>Aspose.Slides provides feature to applu a pattern style on the background of a slide. Aspose.Slides offer many  types of pattern styles that can be used by developers.</Description>
+                  <FolderName>SettingBackgroundToPattern</FolderName>
+                  <Order>8</Order>
+                  <DocLink>
+                    <DisplayName>Setting the Background to a Pattern</DisplayName>
+                    <Url>Setting+the+Background+to+a+Pattern</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\demo.ppt</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\modified.ppt</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Setting the Background to an Image</Title>
+                  <Description>Sometimes, developers may need to use an image as the background of the slide. To fulfill such development needs, Aspose.Slides for .NET also provides functionality to fill the slide background with any image</Description>
+                  <FolderName>SettingBackgroundToImage</FolderName>
+                  <Order>9</Order>
+                  <DocLink>
+                    <DisplayName>Setting the Background to an Image</DisplayName>
+                    <Url>Setting+the+Background+to+an+Image</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\demo.ppt</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\logo.jpg</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\modified.ppt</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Creating Shape Thumbnail Image</Title>
+                  <Description>Sometimes, developers may need to create images of one shape only or render only a few shapes on the slide. In such cases, Aspose.Slides for .NET can help you to generate thumbnail images using GetThumbnail function with special parameters.</Description>
+                  <FolderName>CreatingShapeThumbnailImage</FolderName>
+                  <Order>10</Order>
+                  <DocLink>
+                    <DisplayName>Creating Shape Thumbnail Image</DisplayName>
+                    <Url>Creating+Shape+Thumbnail+Image</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\demo.ppt</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\demo0.gif</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\demo1.gif</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Managing Slide Transitions</Title>
+                  <Description>Aspose.Slides for .NET allows developers to manage or customize the slide transition effects of the slides. This example demonstrates about controlling slide transitions with a great ease using Aspose.Slides for .NET</Description>
+                  <FolderName>ManagingSlideTransitions</FolderName>
+                  <Order>11</Order>
+                  <DocLink>
+                    <DisplayName>Managing Slide Transitions</DisplayName>
+                    <Url>Managing+Slide+Transitions</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\demo.ppt</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\modified.ppt</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Applying Custom Color Scheme to Presentation Slides</Title>
+                  <Description>Aspose;Slides provide the feature to set the master custom color schemes for the presentation that will be applied on the slides inside presentation.</Description>
+                  <FolderName>ApplyingCustomColorSchemeToSlides</FolderName>
+                  <Order>12</Order>
+                  <DocLink>
+                    <DisplayName>Applying Custom Color Scheme to Presentation Slides</DisplayName>
+                    <Url>Applying+Custom+Color+Scheme+to+Presentation+Slides</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\demo.ppt</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\modified.ppt</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Adding Line Shape to Slide</Title>
+                  <Description>Aspose.Slides for .NET supports adding different kinds of shapes to the slides. In this example, we will add lines to the slides. Using Aspose.Slides for .NET , developers can not only create simple lines , but also some fancy lines can be drawn on the slides.</Description>
+                  <FolderName>AddingLineShapeToSlide</FolderName>
+                  <Order>14</Order>
+                  <DocLink>
+                    <DisplayName>Adding Line Shape to Slide</DisplayName>
+                    <Url>Adding+Line+Shape+to+Slide</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\demo.ppt</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\modified.ppt</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Adding Ellipse Shape to Slide</Title>
+                  <Description>Aspose.Pdf allows adding ellipse shapes to slides. Aspose.Slides provides an easier set of APIs to draw different kinds of shapes with just a few lines of code.</Description>
+                  <FolderName>AddingEllipseShapetoSlide</FolderName>
+                  <Order>15</Order>
+                  <DocLink>
+                    <DisplayName>Adding Ellipse Shape to Slide</DisplayName>
+                    <Url>Adding+Ellipse+Shape+to+Slide</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\demo.ppt</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\modified.ppt</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Adding Rectangle Shape to Slide</Title>
+                  <Description>Using Aspose.Slides, developers can add simple or formatted rectangles to their slides.</Description>
+                  <FolderName>AddingRectangleShapeToSlide</FolderName>
+                  <Order>16</Order>
+                  <DocLink>
+                    <DisplayName>Adding Rectangle Shape to Slide</DisplayName>
+                    <Url>Adding+Rectangle+Shape+to+Slide</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\demo.ppt</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\modified.ppt</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
               </Examples>
+              <Folders>
+                <Folder>
+                  <Title>Working with PPT Slide Comments</Title>
+                  <Description>Slide comment is like an annotation in PDF file or a note that one can attach with a slide. Slide comments are generally used while revierwing the slides in PowerPoint. However, they can also serve as a useful utility for highlighting some thing important in presentation slide and giving the needed explanation for that. This section covers the feature of adding the slide comments and accessing them in a particular slide.
+
+1: Adding Slide Comments
+2: Accessing Slide Comments</Description>
+                  <FolderName>WorkingWithPPTSlideComments</FolderName>
+                  <Order>13</Order>
+                  <Examples>
+                    <Example>
+                      <Title>Adding Slide Comments</Title>
+                      <Description>In Aspose.Slides for .NET, the PPT slide comment collection is included in every Slide class. The CommentCollection class is used to hold the particular slide comments. The Comment class include information like author who added slide comment, his initials, time of creation, the position of slide comment on slide and the comment text. The CommentAuthor class is used to add the authors for slide comments on presentation level. The Presentation class holds the collection of authors for presentation in CommentAuthors class.</Description>
+                      <FolderName>AddingSlideComments</FolderName>
+                      <Order>1</Order>
+                      <DocLink>
+                        <DisplayName>Working with PPT Slide Comments</DisplayName>
+                        <Url>Working+with+PPT+Slide+Comments</Url>
+                      </DocLink>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\Comments.ppt</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Accessing Slide Comments</Title>
+                      <Description>Aspose.Slides provides the feature to access the existing slide comments and modify the comments.</Description>
+                      <FolderName>AccessingSlideComments</FolderName>
+                      <Order>2</Order>
+                      <DocLink>
+                        <DisplayName>Accessing Slide Comments</DisplayName>
+                        <Url>Working+with+PPT+Slide+Comments</Url>
+                      </DocLink>
+                      <InputFiles>
+                        <DataFile>
+                          <Path>..\Data\Comments.ppt</Path>
+                        </DataFile>
+                      </InputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                  </Examples>
+                </Folder>
+              </Folders>
             </Folder>
             <Folder>
               <Title>Working with Shapes</Title>
