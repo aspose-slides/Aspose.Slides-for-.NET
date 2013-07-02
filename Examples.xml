@@ -1106,7 +1106,226 @@ This article explains how to clone presentation slides in different ways:
                   </OutputFiles>
                   <Type>Console</Type>
                 </Example>
+                <Example>
+                  <Title>Formatting Lines of the Shapes</Title>
+                  <Description>It is possible to change the format settings of the lines with which a shape is obtained. For example, you can change the width of the line, modify the color of the line, apply different kinds of styles on the lines etc.</Description>
+                  <FolderName>FormattingLinesOfShapes</FolderName>
+                  <Order>3</Order>
+                  <DocLink>
+                    <DisplayName>Formatting Lines of the Shapes</DisplayName>
+                    <Url>Formatting+Lines+of+the+Shapes</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\demo.ppt</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\modified.ppt</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Filling Shapes with Pattern</Title>
+                  <Description>This example demonstrates how to fill shapes in more attractive styles using patterns. Aspose.Slides for .NET offers more than 45 pre-defined pattern styles that can be used by developers to enrich their presentations.</Description>
+                  <FolderName>FillingShapesWithPattern</FolderName>
+                  <Order>5</Order>
+                  <DocLink>
+                    <DisplayName>Filling Shapes with Pattern</DisplayName>
+                    <Url>Filling+Shapes+with+Pattern</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\demo.ppt</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\modified.ppt</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Filling Shapes with Texture</Title>
+                  <Description>Like gradient and pattern effects, texture styles are also used to fill shapes with different kinds of effects. Aspose.Slides for .NET offers more than 20 pre-defined texture styles that can be used by developers in their presentations.</Description>
+                  <FolderName>FillingShapesWithTexture</FolderName>
+                  <Order>6</Order>
+                  <DocLink>
+                    <DisplayName>Filling Shapes with Texture</DisplayName>
+                    <Url>Filling+Shapes+with+Texture</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\demo.ppt</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\modified.ppt</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
               </Examples>
+              <Folders>
+                <Folder>
+                  <Title>Applying Animations on Shapes</Title>
+                  <Description>Animation is one of the most important parts of the presentations that make them more attractive and meaningful. Aspose.Slides for .NET also allows developers to apply different kinds of animation effects on different kinds of shapes. There are more than 60 pre-defined animation effects provided by Aspose.Slides for .NET. 
+
+This section includes the following examples:
+
+1: Applying Animation Effects
+2: Controlling Animation Order</Description>
+                  <FolderName>ApplyingAnimationsOnShapes</FolderName>
+                  <Order>2</Order>
+                  <Examples>
+                    <Example>
+                      <Title>Applying Animation Effects</Title>
+                      <Description>In this example, we have added a rectangle shape to the slide with the Spiral effect applied on it.</Description>
+                      <FolderName>ApplyingAnimationEffects</FolderName>
+                      <Order>1</Order>
+                      <DocLink>
+                        <DisplayName>Applying Animations on Shapes</DisplayName>
+                        <Url>Applying+Animations+on+Shapes</Url>
+                      </DocLink>
+                      <InputFiles>
+                        <DataFile>
+                          <Path>..\Data\demo.ppt</Path>
+                        </DataFile>
+                      </InputFiles>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\modified.ppt</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Controlling Animation Order</Title>
+                      <Description>In the example, we have added rectangle and ellipse shapes to the slide. Further, we have changed their animation order after applying animation effects on both shapes.</Description>
+                      <FolderName>ControllingAnimationOrder</FolderName>
+                      <Order>2</Order>
+                      <DocLink>
+                        <DisplayName>Applying Animations on Shapes</DisplayName>
+                        <Url>Applying+Animations+on+Shapes</Url>
+                      </DocLink>
+                      <InputFiles>
+                        <DataFile>
+                          <Path>..\Data\demo.ppt</Path>
+                        </DataFile>
+                      </InputFiles>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\modified.ppt</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                  </Examples>
+                </Folder>
+                <Folder>
+                  <Title>Filling Shapes with Gradient</Title>
+                  <Description>This section includes:
+
+1: Using Color Types in Gradient to Fill Shapes
+2: Controlling Degree of Gradient
+3: Adjusting Gradient Fill Angle
+4: Applying Different Gradient Styles</Description>
+                  <FolderName>FillingShapesWithGradient</FolderName>
+                  <Order>4</Order>
+                  <Examples>
+                    <Example>
+                      <Title>Using Color Types in Gradient to Fill Shapes</Title>
+                      <Description>Developers can create gradient effects with One Color or Two Colors to fill shapes using Aspose.Slides for .NET . If developers use One Color to create the gradient effect , the shape is filled with a gradient from the foreground color of the shape to black, white or a shade of gray. 
+
+However, in the case of Two Colors, the shape's fill is faded from one color to the other. If you want to fill your shape with a gradient of Two Colors, you would need to set the foreground color of the shape as the first color and background color as the second one.</Description>
+                      <FolderName>UsingColorTypesInGradientToFillShapes</FolderName>
+                      <Order>1</Order>
+                      <DocLink>
+                        <DisplayName>Filling Shapes with Gradient</DisplayName>
+                        <Url>Filling+Shapes+with+Gradient</Url>
+                      </DocLink>
+                      <InputFiles>
+                        <DataFile>
+                          <Path>..\Data\demo.ppt</Path>
+                        </DataFile>
+                      </InputFiles>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\modified.ppt</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Controlling Degree of Gradient</Title>
+                      <Description>Degree of gradient is only used when a developer wants to use One Color type of gradient. Using Gradient Degree, developers can define the color to which the gradient color will be faded. Gradient Degree is configured by using an integer value ranging from 0 to 20. Each number represents a color.</Description>
+                      <FolderName>ControllingDegreeOfGradient</FolderName>
+                      <Order>2</Order>
+                      <DocLink>
+                        <DisplayName>Filling Shapes with Gradient</DisplayName>
+                        <Url>Filling+Shapes+with+Gradient</Url>
+                      </DocLink>
+                      <InputFiles>
+                        <DataFile>
+                          <Path>..\Data\demo.ppt</Path>
+                        </DataFile>
+                      </InputFiles>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\modified.ppt</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Adjusting Gradient Fill Angle</Title>
+                      <Description>The Gradient Fill Angle is used to adjust the angle at which a gradient is filled. Gradient Fill Angle can be configured by using an integer value ranging from 0 to 179. By default, the fill angle for a gradient is 0, which starts filling the shape from its top and then goes straight down.</Description>
+                      <FolderName>AdjustingGradientFillAngle</FolderName>
+                      <Order>3</Order>
+                      <DocLink>
+                        <DisplayName>Filling Shapes with Gradient</DisplayName>
+                        <Url>Filling+Shapes+with+Gradient</Url>
+                      </DocLink>
+                      <InputFiles>
+                        <DataFile>
+                          <Path>..\Data\demo.ppt</Path>
+                        </DataFile>
+                      </InputFiles>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\modified.ppt</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Applying Different Gradient Styles</Title>
+                      <Description>Developers can use 8 different types of gradient styles (offered by Aspose.Slides for .NET ) to apply interesting effects to their gradients. There are two basic gradient styles: From Centerand From Corner. From Center style applies the gradient from the center of the shape whereas the From Corner style fades the gradient from one corner of the shape to the other.</Description>
+                      <FolderName>ApplyingDifferentGradientStyles</FolderName>
+                      <Order>4</Order>
+                      <DocLink>
+                        <DisplayName>Filling Shapes with Gradient</DisplayName>
+                        <Url>Filling+Shapes+with+Gradient</Url>
+                      </DocLink>
+                      <InputFiles>
+                        <DataFile>
+                          <Path>..\Data\demo.ppt</Path>
+                        </DataFile>
+                      </InputFiles>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\modified.ppt</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                  </Examples>
+                </Folder>
+              </Folders>
             </Folder>
           </Folders>
         </Folder>

@@ -104,8 +104,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddingEllipseShapetoSlide",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddingRectangleShapeToSlide", "ProgrammersGuide\PowerPoint97_2003\WorkingWithSlides\AddingRectangleShapeToSlide\CSharp\AddingRectangleShapeToSlide.csproj", "{46224BF3-1E8F-4BAA-A8D7-46E86BA163E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindingShapeInSlide", "ProgrammersGuide\PowerPoint97_2003\WorkingWithSlides\FindingShapeInSlide\CSharp\FindingShapeInSlide.csproj", "{AC9D22E0-7B82-4936-895C-5E1AFD68973F}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WorkingWithPPTSlideComments", "WorkingWithPPTSlideComments", "{68E717AE-703B-475B-B76A-76E26D140229}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddingSlideComments", "ProgrammersGuide\PowerPoint97_2003\WorkingWithSlides\WorkingWithPPTSlideComments\AddingSlideComments\CSharp\AddingSlideComments.csproj", "{C8511A9A-6043-4F87-8A3A-D61F432306FF}"
@@ -115,6 +113,28 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WorkingWithShapes", "WorkingWithShapes", "{301953B0-F196-4304-BC2B-40749FBC5B25}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FillShapeWithPicture", "ProgrammersGuide\PowerPoint97_2003\WorkingWithShapes\FillShapeWithPicture\CSharp\FillShapeWithPicture.csproj", "{14412A49-79DD-4BCA-B29E-B79264A6279B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormattingLinesOfShapes", "ProgrammersGuide\PowerPoint97_2003\WorkingWithShapes\FormattingLinesOfShapes\CSharp\FormattingLinesOfShapes.csproj", "{E1FD5368-77D6-4972-8CAB-111FD1D5C414}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FillingShapesWithPattern", "ProgrammersGuide\PowerPoint97_2003\WorkingWithShapes\FillingShapesWithPattern\CSharp\FillingShapesWithPattern.csproj", "{E71AD17F-F6D6-4F4E-8996-7EC61EF58EA2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FillingShapesWithTexture", "ProgrammersGuide\PowerPoint97_2003\WorkingWithShapes\FillingShapesWithTexture\CSharp\FillingShapesWithTexture.csproj", "{75C6F5EE-AD00-458B-A38F-88A389F71777}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApplyingAnimationsOnShapes", "ApplyingAnimationsOnShapes", "{F531B610-81BB-4059-BE3C-D57E6C85AE73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplyingAnimationEffects", "ProgrammersGuide\PowerPoint97_2003\WorkingWithShapes\ApplyingAnimationsOnShapes\ApplyingAnimationEffects\CSharp\ApplyingAnimationEffects.csproj", "{584ACF15-9D41-46B1-BD17-D851723F5427}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControllingAnimationOrder", "ProgrammersGuide\PowerPoint97_2003\WorkingWithShapes\ApplyingAnimationsOnShapes\ControllingAnimationOrder\CSharp\ControllingAnimationOrder.csproj", "{AF8EDCA3-DED0-49DD-917D-528F3ABC2603}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FillingShapesWithGradient", "FillingShapesWithGradient", "{678DF3E4-7DA4-4973-8E6D-B36238958D74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingColorTypesInGradientToFillShapes", "ProgrammersGuide\PowerPoint97_2003\WorkingWithShapes\FillingShapesWithGradient\UsingColorTypesInGradientToFillShapes\CSharp\UsingColorTypesInGradientToFillShapes.csproj", "{4F6491AF-D02F-448F-B5AF-B3C482ED7F20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControllingDegreeOfGradient", "ProgrammersGuide\PowerPoint97_2003\WorkingWithShapes\FillingShapesWithGradient\ControllingDegreeOfGradient\CSharp\ControllingDegreeOfGradient.csproj", "{24BABD45-9557-443E-BB74-AACCDE508DDD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdjustingGradientFillAngle", "ProgrammersGuide\PowerPoint97_2003\WorkingWithShapes\FillingShapesWithGradient\AdjustingGradientFillAngle\CSharp\AdjustingGradientFillAngle.csproj", "{A7E5296C-EACB-4860-8616-5F0D5F325223}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplyingDifferentGradientStyles", "ProgrammersGuide\PowerPoint97_2003\WorkingWithShapes\FillingShapesWithGradient\ApplyingDifferentGradientStyles\CSharp\ApplyingDifferentGradientStyles.csproj", "{08783C04-6DD0-4B69-AB3D-728447552A2B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -245,9 +265,6 @@ Global
 		{46224BF3-1E8F-4BAA-A8D7-46E86BA163E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{46224BF3-1E8F-4BAA-A8D7-46E86BA163E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46224BF3-1E8F-4BAA-A8D7-46E86BA163E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AC9D22E0-7B82-4936-895C-5E1AFD68973F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AC9D22E0-7B82-4936-895C-5E1AFD68973F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AC9D22E0-7B82-4936-895C-5E1AFD68973F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8511A9A-6043-4F87-8A3A-D61F432306FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C8511A9A-6043-4F87-8A3A-D61F432306FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8511A9A-6043-4F87-8A3A-D61F432306FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -257,6 +274,33 @@ Global
 		{14412A49-79DD-4BCA-B29E-B79264A6279B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{14412A49-79DD-4BCA-B29E-B79264A6279B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{14412A49-79DD-4BCA-B29E-B79264A6279B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1FD5368-77D6-4972-8CAB-111FD1D5C414}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1FD5368-77D6-4972-8CAB-111FD1D5C414}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1FD5368-77D6-4972-8CAB-111FD1D5C414}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E71AD17F-F6D6-4F4E-8996-7EC61EF58EA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E71AD17F-F6D6-4F4E-8996-7EC61EF58EA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E71AD17F-F6D6-4F4E-8996-7EC61EF58EA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75C6F5EE-AD00-458B-A38F-88A389F71777}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75C6F5EE-AD00-458B-A38F-88A389F71777}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75C6F5EE-AD00-458B-A38F-88A389F71777}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{584ACF15-9D41-46B1-BD17-D851723F5427}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{584ACF15-9D41-46B1-BD17-D851723F5427}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{584ACF15-9D41-46B1-BD17-D851723F5427}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF8EDCA3-DED0-49DD-917D-528F3ABC2603}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF8EDCA3-DED0-49DD-917D-528F3ABC2603}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF8EDCA3-DED0-49DD-917D-528F3ABC2603}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F6491AF-D02F-448F-B5AF-B3C482ED7F20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F6491AF-D02F-448F-B5AF-B3C482ED7F20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F6491AF-D02F-448F-B5AF-B3C482ED7F20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24BABD45-9557-443E-BB74-AACCDE508DDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24BABD45-9557-443E-BB74-AACCDE508DDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24BABD45-9557-443E-BB74-AACCDE508DDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7E5296C-EACB-4860-8616-5F0D5F325223}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7E5296C-EACB-4860-8616-5F0D5F325223}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7E5296C-EACB-4860-8616-5F0D5F325223}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08783C04-6DD0-4B69-AB3D-728447552A2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08783C04-6DD0-4B69-AB3D-728447552A2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08783C04-6DD0-4B69-AB3D-728447552A2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -313,11 +357,21 @@ Global
 		{B4B9D3B1-22E8-4672-848C-018124F322CD} = {D60223FA-DD43-42D4-902A-CE84ED0A35A6}
 		{23132334-07EC-4CD1-85CB-0060ACED4398} = {D60223FA-DD43-42D4-902A-CE84ED0A35A6}
 		{46224BF3-1E8F-4BAA-A8D7-46E86BA163E5} = {D60223FA-DD43-42D4-902A-CE84ED0A35A6}
-		{AC9D22E0-7B82-4936-895C-5E1AFD68973F} = {D60223FA-DD43-42D4-902A-CE84ED0A35A6}
 		{68E717AE-703B-475B-B76A-76E26D140229} = {D60223FA-DD43-42D4-902A-CE84ED0A35A6}
 		{C8511A9A-6043-4F87-8A3A-D61F432306FF} = {68E717AE-703B-475B-B76A-76E26D140229}
 		{16F0DAFF-B045-4A8A-81AA-BC26BC86C8DD} = {68E717AE-703B-475B-B76A-76E26D140229}
 		{301953B0-F196-4304-BC2B-40749FBC5B25} = {A1200BC1-E8B7-4517-B8CC-8E575758E80F}
 		{14412A49-79DD-4BCA-B29E-B79264A6279B} = {301953B0-F196-4304-BC2B-40749FBC5B25}
+		{E1FD5368-77D6-4972-8CAB-111FD1D5C414} = {301953B0-F196-4304-BC2B-40749FBC5B25}
+		{E71AD17F-F6D6-4F4E-8996-7EC61EF58EA2} = {301953B0-F196-4304-BC2B-40749FBC5B25}
+		{75C6F5EE-AD00-458B-A38F-88A389F71777} = {301953B0-F196-4304-BC2B-40749FBC5B25}
+		{F531B610-81BB-4059-BE3C-D57E6C85AE73} = {301953B0-F196-4304-BC2B-40749FBC5B25}
+		{584ACF15-9D41-46B1-BD17-D851723F5427} = {F531B610-81BB-4059-BE3C-D57E6C85AE73}
+		{AF8EDCA3-DED0-49DD-917D-528F3ABC2603} = {F531B610-81BB-4059-BE3C-D57E6C85AE73}
+		{678DF3E4-7DA4-4973-8E6D-B36238958D74} = {301953B0-F196-4304-BC2B-40749FBC5B25}
+		{4F6491AF-D02F-448F-B5AF-B3C482ED7F20} = {678DF3E4-7DA4-4973-8E6D-B36238958D74}
+		{24BABD45-9557-443E-BB74-AACCDE508DDD} = {678DF3E4-7DA4-4973-8E6D-B36238958D74}
+		{A7E5296C-EACB-4860-8616-5F0D5F325223} = {678DF3E4-7DA4-4973-8E6D-B36238958D74}
+		{08783C04-6DD0-4B69-AB3D-728447552A2B} = {678DF3E4-7DA4-4973-8E6D-B36238958D74}
 	EndGlobalSection
 EndGlobal
