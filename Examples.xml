@@ -384,7 +384,172 @@ The Save method exposed by PresentationEx class can be used to convert the whole
                   </OutputFiles>
                   <Type>Console</Type>
                 </Example>
+                <Example>
+                  <Title>Finding a Shape in a SlideEx</Title>
+                  <Description>All shapes added to the slides have some Alt Text. We suggest developers to use alternative text for finding a specific shape. You can use MS PowerPoint to define the alternative text for objects which you are planning to change in the future.</Description>
+                  <FolderName>FindingShapeInSlideEx</FolderName>
+                  <Order>3</Order>
+                  <DocLink>
+                    <DisplayName>Finding a Shape in a SlideEx</DisplayName>
+                    <Url>Finding+a+Shape+in+a+SlideEx</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\demo.pptx</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Applying Animations on Shapes inside SlideEx</Title>
+                  <Description>Animation is one of the most important parts of the presentations that make them more attractive and meaningful. Aspose.Slides also allows developers to apply different kinds of animation effects on different kinds of shapes. There is a separate namespace Aspose.Slides.Pptx.Animation that provides classes to handle the animations on PPTX presentations. In this exampl, we will show how to apply animation effects on shapes.</Description>
+                  <FolderName>ApplyingAnimationsOnShapesInsideSlideEx</FolderName>
+                  <Order>5</Order>
+                  <DocLink>
+                    <DisplayName>Ing Animations on Shapes inside SlideEx</DisplayName>
+                    <Url>Applying+Animations+on+Shapes+inside+SlideEx</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\AnimExample.pptx</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
               </Examples>
+              <Folders>
+                <Folder>
+                  <Title>Adding Line Shape to SlideEx</Title>
+                  <Description>Aspose.Slides for .NET supports adding different kinds of shapes to the slides. In this section, we will see how to add lines to the slides. Using Aspose.Slides for .NET , developers can not only create simple lines , but some fancy lines can also be drawn on the slides.
+
+This section includes:
+
+1: Adding Plain Line to Slide
+2: Adding Arrow Shaped Line to Slide</Description>
+                  <FolderName>AddingLineShapeToSlideEx</FolderName>
+                  <Order>4</Order>
+                  <Examples>
+                    <Example>
+                      <Title>Adding Plain Line to Slide</Title>
+                      <Description>To add a simple plain line to a selected slide of the presentation, please follow the steps below:
+ 
+1: Create an instance of PresentationEx class
+2: Obtain the reference of a slide by using its Index
+3: Add an AutoShape of Line type using AddAutoShape method exposed by ShapesEx object
+4: Write the modified presentation as a PPTX file
+ 
+In the example given below, we have added a line to the first slide of the presentation.</Description>
+                      <FolderName>AddingPlainLineToSlide</FolderName>
+                      <Order>1</Order>
+                      <DocLink>
+                        <DisplayName>Adding Line Shape to SlideEx</DisplayName>
+                        <Url>Adding+Line+Shape+to+SlideEx</Url>
+                      </DocLink>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\LineShape1.pptx</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Adding Arrow Shaped Line to Slide</Title>
+                      <Description>Aspose.Slides allows developers to configure some properties of the line to make it look more appealing. In this example, we will create an arrow shaped line using Aspose.Slides.</Description>
+                      <FolderName>AddingArrowShapedLineToSlide</FolderName>
+                      <Order>2</Order>
+                      <DocLink>
+                        <DisplayName>Adding Line Shape to SlideEx</DisplayName>
+                        <Url>Adding+Line+Shape+to+SlideEx</Url>
+                      </DocLink>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\LineShape.pptx</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                  </Examples>
+                </Folder>
+              </Folders>
+            </Folder>
+            <Folder>
+              <Title>Working with Charts</Title>
+              <Description>This section includes the following examples:
+
+
+1: Creating a Chart from Scratch
+2: Updating an Existing Chart
+3: Setting Pie Chart Sector Colors
+4: Formatting Chart Entities
+5: Adding Chart Trend Lines
+6: Setting Number Format for Chart Data Cell</Description>
+              <FolderName>WorkingWithCharts</FolderName>
+              <Order>4</Order>
+              <Examples>
+                <Example>
+                  <Title>Updating an Existing Chart</Title>
+                  <Description>Aspose.Slides for .NET also facilitates developers to update PowerPoint charts generated through Aspose.Slides or PowerPoint. This topic explains how developers can modify existing charts in slides using Aspose.Slides for .NET.</Description>
+                  <FolderName>UpdatingAnExistingChart</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Updating an Existing Chart</DisplayName>
+                    <Url>Updating+an+Existing+Chart</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\AsposeChart.pptx</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\AsposeChartMoodified.pptx</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+              <Folders>
+                <Folder>
+                  <Title>Creating a Chart from Scratch</Title>
+                  <Description>Aspose.Slides for .NET lets developers add custom charts into slides from scratch. This section includes how to create normal and scatter charts with multiple series from scratch using Aspose.Slides for .NET.</Description>
+                  <FolderName>CreatingChartFromScratch</FolderName>
+                  <Order>1</Order>
+                  <Examples>
+                    <Example>
+                      <Title>Creating Normal Charts</Title>
+                      <Description>Aspose.Slides for .NET has provided the simplest API for creating charts in an easy way.</Description>
+                      <FolderName>CreatingNormalCharts</FolderName>
+                      <Order>1</Order>
+                      <DocLink>
+                        <DisplayName>Creating a Chart from Scratch</DisplayName>
+                        <Url>Creating+a+Chart+from+Scratch</Url>
+                      </DocLink>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\AsposeChart.pptx</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Creating Scattered Chart</Title>
+                      <Description>This example shows how to use Aspose.Slides is used to create a scatter chart with different series markers.</Description>
+                      <FolderName>CreatingScatteredChart</FolderName>
+                      <Order>2</Order>
+                      <DocLink>
+                        <DisplayName>Creating a Chart from Scratch</DisplayName>
+                        <Url>Creating+a+Chart+from+Scratch</Url>
+                      </DocLink>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\AsposeSeriesChart.pptx</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                  </Examples>
+                </Folder>
+              </Folders>
             </Folder>
           </Folders>
         </Folder>
