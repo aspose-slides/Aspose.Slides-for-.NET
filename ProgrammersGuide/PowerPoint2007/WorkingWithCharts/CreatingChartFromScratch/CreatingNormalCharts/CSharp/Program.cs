@@ -21,6 +21,11 @@ namespace CreatingNormalCharts
             // The path to the documents directory.
             string dataDir = Path.GetFullPath("../../../Data/");
 
+            // Create directory if it is not already present.
+            bool IsExists = System.IO.Directory.Exists(dataDir);
+            if (!IsExists)
+                System.IO.Directory.CreateDirectory(dataDir);
+            
             //Instantiate PresentationEx class that represents PPTX file
             PresentationEx pres = new PresentationEx();
 

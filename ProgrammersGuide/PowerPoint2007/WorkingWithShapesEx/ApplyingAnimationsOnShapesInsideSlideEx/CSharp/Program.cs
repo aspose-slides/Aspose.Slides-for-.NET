@@ -21,6 +21,11 @@ namespace ApplyingAnimationsOnShapesInsideSlideEx
             // The path to the documents directory.
             string dataDir = Path.GetFullPath("../../../Data/");
 
+            // Create directory if it is not already present.
+            bool IsExists = System.IO.Directory.Exists(dataDir);
+            if (!IsExists)
+                System.IO.Directory.CreateDirectory(dataDir);
+
             //Instantiate PrseetationEx class that represents the PPTX
             PresentationEx pres = new PresentationEx();
             SlideEx sld = pres.Slides[0];

@@ -20,6 +20,11 @@ namespace CreatingScatteredChart
             // The path to the documents directory.
             string dataDir = Path.GetFullPath("../../../Data/");
 
+            // Create directory if it is not already present.
+            bool IsExists = System.IO.Directory.Exists(dataDir);
+            if (!IsExists)
+                System.IO.Directory.CreateDirectory(dataDir);
+            
             PresentationEx pres = new PresentationEx();
 
             SlideEx slide = pres.Slides[0];
