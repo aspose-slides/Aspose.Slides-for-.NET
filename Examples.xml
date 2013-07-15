@@ -507,6 +507,73 @@ In the example given below, we have added a line to the first slide of the prese
                   </OutputFiles>
                   <Type>Console</Type>
                 </Example>
+                <Example>
+                  <Title>Formatting Chart Entities</Title>
+                  <Description>Aspose.Slides for .NET lets developers add custom charts to their slides from scratch. This example explains how to format different chart entities including chart category and value axis.</Description>
+                  <FolderName>FormattingChartEntities</FolderName>
+                  <Order>3</Order>
+                  <DocLink>
+                    <DisplayName>Formatting Chart Entities</DisplayName>
+                    <Url>Formatting+Chart+Entities</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\ChartAxis.pptx</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Setting Pie Chart Sector Colors</Title>
+                  <Description>Aspose.Slides for .NET lets developers add custom charts to their slides from scratch. This example explains how to create a pie chart and set different colors for its sectors.</Description>
+                  <FolderName>SettingPieChartSectorColors</FolderName>
+                  <Order>4</Order>
+                  <DocLink>
+                    <DisplayName>Setting Pie Chart Sector Colors</DisplayName>
+                    <Url>Setting+Pie+Chart+Sector+Colors</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\AsposeChart.pptx</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Adding Chart Trend Lines</Title>
+                  <Description>Aspose.Slides for .NET lets developers add the trend lines for the chart by adding them from scratch. This example demonstrates how to add different chart trend lines.</Description>
+                  <FolderName>AddingChartTrendLines</FolderName>
+                  <Order>5</Order>
+                  <DocLink>
+                    <DisplayName>Adding Chart Trend Lines</DisplayName>
+                    <Url>Adding+Chart+Trend+Lines</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\TrendLines.pptx</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Setting Number Format for Chart Data Cell</Title>
+                  <Description>Aspose.Slides for .NET lets developers to set chart data cell number. This example demonstrates how to set the chart data number format and possible options.</Description>
+                  <FolderName>SettingNumberFormatForChartDataCell</FolderName>
+                  <Order>6</Order>
+                  <DocLink>
+                    <DisplayName>Setting Number Format for Chart Data Cell</DisplayName>
+                    <Url>Setting+Number+Format+for+Chart+Data+Cell</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\PresetNumberFormat.pptx</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\CustomNumberFormat.pptx</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
               </Examples>
               <Folders>
                 <Folder>
@@ -550,6 +617,55 @@ In the example given below, we have added a line to the first slide of the prese
                   </Examples>
                 </Folder>
               </Folders>
+            </Folder>
+            <Folder>
+              <Title>Working with TablesEx</Title>
+              <Description>This section includes the following examples: 
+
+
+1: Creating a Table from Scratch in SlideEx
+2: Accessing an Existing Table in SlideEx</Description>
+              <FolderName>WorkingWithTablesEx</FolderName>
+              <Order>5</Order>
+              <Examples>
+                <Example>
+                  <Title>Creating a Table from Scratch in SlideEx</Title>
+                  <Description>Aspose.Slides for .NET also facilitates developers to add custom tables in their slides from scratch. This example demonstrates how can developers create and add tables to their slides using Aspose.Slides for .NET.</Description>
+                  <FolderName>CreatingTableFromScratchInSlideEx</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Creating a Table from Scratch in SlideEx</DisplayName>
+                    <Url>Creating+a+Table+from+Scratch+in+SlideEx</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\table.pptx</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Accessing an Existing Table in SlideEx</Title>
+                  <Description>Aspose.Slides for .NET allows developers to not only add custom tables in their slides but also access or manage the existing ones. This example demonstrates accessing a table that already exists in a slide.</Description>
+                  <FolderName>AccessingAnExistingTableInSlideEx</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Accessing an Existing Table in SlideEx</DisplayName>
+                    <Url>Accessing+an+Existing+Table+in+SlideEx</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\table.pptx</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\table_updated.pptx</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
             </Folder>
           </Folders>
         </Folder>
