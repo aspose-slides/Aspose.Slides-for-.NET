@@ -667,6 +667,80 @@ In the example given below, we have added a line to the first slide of the prese
                 </Example>
               </Examples>
             </Folder>
+            <Folder>
+              <Title>Working with Text in PresentationEx</Title>
+              <Description>This section includes the following topics: 
+
+1: Replacing Text in a Placeholder
+2: Creating a TextBox on SlideEx
+3: Creating TextBox with Hyperlink
+4: Applying Shadow Effects on SlideEx Text
+5: Managing Paragraphs Alignment
+6: Managing Font Related Properties
+7: Managing Font Family of Text
+8: Managing Multiple Paragraphs having Multiple Portions
+9: Managing Paragraph Bullets in PPTX
+10: Importing and Exporting HTML Text in PPTX
+11: Using Custom Fonts without Installing them
+12: Using Default Fonts for Rendering Presentation</Description>
+              <FolderName>WorkingWithTextInPresentationEx</FolderName>
+              <Order>6</Order>
+              <Examples>
+                <Example>
+                  <Title>Replacing Text in a Placeholder</Title>
+                  <Description>Using Aspose.Slides, developers can also find and modify a specific Placeholder present in a slide. In this topic, we are going to demonstrate with the help of an example that how the text contained inside a Placeholder can be replaced or modified using Aspose.Slides.</Description>
+                  <FolderName>ReplacingTextInPlaceholder</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Replacing Text in a Placeholder</DisplayName>
+                    <Url>Replacing+Text+in+a+Placeholder</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\demo.pptx</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\output.pptx</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Creating a TextBox on SlideEx</Title>
+                  <Description>Using Aspose.Slides, developers can create TextBox on a Slide in the Presentation. All you have to do is to add an AutoShape of Rectangle type and call the AddTextFrame method exposed by AutoShapeEX object.</Description>
+                  <FolderName>CreatingTextBoxOnSlideEx</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Creating a TextBox on SlideEx</DisplayName>
+                    <Url>Creating+a+TextBox+on+SlideEx</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\output.pptx</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Creating TextBox with Hyperlink</Title>
+                  <Description>In this example, we will create a TextBox with a Hyperlink. You will have to instantiate HyperlinkEx class and assign it to the desired portion of the TextFrame associated with the TextBox.</Description>
+                  <FolderName>CreatingTextBoxWithHyperlink</FolderName>
+                  <Order>3</Order>
+                  <DocLink>
+                    <DisplayName>Creating TextBox with Hyperlink</DisplayName>
+                    <Url>Creating+TextBox+with+Hyperlink</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\output.pptx</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+            </Folder>
           </Folders>
         </Folder>
         <Folder>
