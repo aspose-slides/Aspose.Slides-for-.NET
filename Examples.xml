@@ -739,6 +739,96 @@ In the example given below, we have added a line to the first slide of the prese
                   </OutputFiles>
                   <Type>Console</Type>
                 </Example>
+                <Example>
+                  <Title>Managing Paragraphs Alignment</Title>
+                  <Description>Text formatting is one of the key elements while creating any kind of documents or presentations. We know that Aspose.Slides supports adding text to slides but in this example, we will see that how can we control the alignment of the text paragraphs in a slide.</Description>
+                  <FolderName>ManagingParagraphsAlignment</FolderName>
+                  <Order>4</Order>
+                  <DocLink>
+                    <DisplayName>Managing Paragraphs Alignment</DisplayName>
+                    <Url>Managing+Paragraphs+Alignment</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\demo.pptx</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\output.pptx</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Applying Shadow Effects on SlideEx Text</Title>
+                  <Description>Aspose.Slides provides OuterShadow class in order to apply shadow effects on the text carried by TextFrame. This class provides a number of properties for handling the shadow effects.</Description>
+                  <FolderName>ApplyingShadowEffects</FolderName>
+                  <Order>5</Order>
+                  <DocLink>
+                    <DisplayName>Applying Shadow Effects on SlideEx Text</DisplayName>
+                    <Url>Applying+Shadow+Effects+on+SlideEx+Text</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\output.pptx</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Managing Font Related Properties</Title>
+                  <Description>Presentations usually contain both text and images. The text can be formatted in various way, either to highlight specific sections and words, or to conform with corporate styles. Text formatting helps users vary the look and feel of the presentation content. This example shows how to use Aspose.Slides to configure the font properties of paragraphs of text on slides.</Description>
+                  <FolderName>ManagingFontRelatedProperties</FolderName>
+                  <Order>6</Order>
+                  <DocLink>
+                    <DisplayName>Managing Font Related Properties</DisplayName>
+                    <Url>Managing+Font+Related+Properties</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\demo.pptx</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\output.pptx</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Managing Font Family of Text</Title>
+                  <Description>This example shows how to use Aspose.Slides to create a textbox with some text and then define a particular font, and various other properties of the font family category.</Description>
+                  <FolderName>ManagingFontFamilyOfText</FolderName>
+                  <Order>7</Order>
+                  <DocLink>
+                    <DisplayName>Managing Font Family of Text</DisplayName>
+                    <Url>Managing+Font+Family+of+Text</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\output.pptx</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Managing Multiple Paragraphs having Multiple Portions</Title>
+                  <Description>A TextFameEx object can have one or more Paragraphs (every paragraph is created through a carriage return), that is a collection of ParagraphEx objects. Furthermore, a ParagraphEx object can have one or more Portions (a collection of PortionEx objects. A PortionEx object manages text and its formatting properties. So, it means that ParagraphEx object has capacity to handle text with different formatting properties through its underlying PortionEx objects.</Description>
+                  <FolderName>ManagingMultipleParagraphs</FolderName>
+                  <Order>8</Order>
+                  <DocLink>
+                    <DisplayName>Managing Multiple Paragraphs having Multiple Portions</DisplayName>
+                    <Url>Managing+Multiple+Paragraphs+having+Multiple+Portions</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\output.pptx</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
               </Examples>
             </Folder>
           </Folders>
