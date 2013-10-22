@@ -1614,6 +1614,96 @@ This article explains how to clone presentation slides in different ways:
                   </OutputFiles>
                   <Type>Console</Type>
                 </Example>
+                <Example>
+                  <Title>Filling Shapes with Solid Color</Title>
+                  <Description>In this example, we will demonstrate how developers can fill their shapes with solid colors. A solid color is in fact a plain color without any kind of effects like gradient, pattern, texture etc. Aspose.Slides for .NET provides the simplest API to perform this task.</Description>
+                  <FolderName>FillingShapesSolidColor</FolderName>
+                  <Order>7</Order>
+                  <DocLink>
+                    <DisplayName>Filling Shapes with Solid Color</DisplayName>
+                    <Url>Filling+Shapes+with+Solid+Color</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\demo.ppt</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\modified.ppt</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Rotating Shapes</Title>
+                  <Description>In this example, we will demonstrate how developers can rotate the shapes using Aspose.Slides for .NET.</Description>
+                  <FolderName>RotatingShapes</FolderName>
+                  <Order>8</Order>
+                  <DocLink>
+                    <DisplayName>Rotating Shapes</DisplayName>
+                    <Url>Rotating+Shapes</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\demo.ppt</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\modified.ppt</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Adding Audio Frames to Slides</Title>
+                  <Description>Aspose.Slides for .NET allows developers to add audio files in their slides. These audio files are embedded in the slides as Audio Frames. An Audio Frame contains the embedded audio file.</Description>
+                  <FolderName>AddingAudioFramesToSlides</FolderName>
+                  <Order>10</Order>
+                  <DocLink>
+                    <DisplayName>Adding Audio Frames to Slides</DisplayName>
+                    <Url>Adding+Audio+Frame+to+Slide</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\chimes.wav</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\demo.ppt</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\modified.ppt</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Adding Video Frame to Slide</Title>
+                  <Description>Developers can also add and play video files in the slides to enrich their presentations. Aspose.Slides for .NET supports adding Video Frames to the slides that make it possible for developers to add videos to their presentations</Description>
+                  <FolderName>AddingVideoFrameToSlide</FolderName>
+                  <Order>11</Order>
+                  <DocLink>
+                    <DisplayName>Adding Video Frame to Slide</DisplayName>
+                    <Url>Adding+Video+Frame+to+Slide</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\demo.avi</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\demo.ppt</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\modified.ppt</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
               </Examples>
               <Folders>
                 <Folder>
@@ -1759,6 +1849,62 @@ However, in the case of Two Colors, the shape's fill is faded from one color to 
                       <InputFiles>
                         <DataFile>
                           <Path>..\Data\demo.ppt</Path>
+                        </DataFile>
+                      </InputFiles>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\modified.ppt</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                  </Examples>
+                </Folder>
+                <Folder>
+                  <Title>Adding Picture Frame to Slide</Title>
+                  <Description>Picture frame is also one of the shapes offered by Aspose.Slides for .NET . Adding picture frame to a slide is a bit trickier than simple shapes. A picture frame is like a picture in the frame. You can add any desired picture to your slide as a picture frame.</Description>
+                  <FolderName>AddingPictureFrame</FolderName>
+                  <Order>9</Order>
+                  <Examples>
+                    <Example>
+                      <Title>Adding Simple Picture Frames to Slide</Title>
+                      <Description>In this example, we will demonstrate how to add a simple picture frame to a slide using Aspose.Slides.</Description>
+                      <FolderName>AddSimplePictureFrames</FolderName>
+                      <Order>1</Order>
+                      <DocLink>
+                        <DisplayName>Adding Picture Frame to Slide</DisplayName>
+                        <Url>Adding+Picture+Frame+to+Slide</Url>
+                      </DocLink>
+                      <InputFiles>
+                        <DataFile>
+                          <Path>..\Data\demo.ppt</Path>
+                        </DataFile>
+                        <DataFile>
+                          <Path>..\Data\asp.jpg</Path>
+                        </DataFile>
+                      </InputFiles>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\modified.ppt</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Controlling Picture Frame Formatting</Title>
+                      <Description>We can also control the formatting of a picture frame according to our desire. There are many formatting settings that can be applied on a picture frame using Aspose.Slides.</Description>
+                      <FolderName>ControllingFrameFormatting</FolderName>
+                      <Order>2</Order>
+                      <DocLink>
+                        <DisplayName>Adding Picture Frame to Slide</DisplayName>
+                        <Url>Adding+Picture+Frame+to+Slide</Url>
+                      </DocLink>
+                      <InputFiles>
+                        <DataFile>
+                          <Path>..\Data\demo.ppt</Path>
+                        </DataFile>
+                        <DataFile>
+                          <Path>..\Data\asp.jpg</Path>
                         </DataFile>
                       </InputFiles>
                       <OutputFiles>

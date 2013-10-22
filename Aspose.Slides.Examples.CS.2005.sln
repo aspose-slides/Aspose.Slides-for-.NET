@@ -172,6 +172,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FillingShapesWithPattern", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FillingShapesWithTexture", "ProgrammersGuide\PowerPoint97_2003\WorkingWithShapes\FillingShapesWithTexture\CSharp\FillingShapesWithTexture.csproj", "{75C6F5EE-AD00-458B-A38F-88A389F71777}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FillingShapesSolidColor", "ProgrammersGuide\PowerPoint97_2003\WorkingWithShapes\FillingShapesSolidColor\CSharp\FillingShapesSolidColor.csproj", "{01B33CA3-AA23-4C59-BE19-C6B9EC3D4800}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RotatingShapes", "ProgrammersGuide\PowerPoint97_2003\WorkingWithShapes\RotatingShapes\CSharp\RotatingShapes.csproj", "{D8503E5D-53BB-4D06-BFD0-C80148160107}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddingAudioFramesToSlides", "ProgrammersGuide\PowerPoint97_2003\WorkingWithShapes\AddingAudioFramesToSlides\CSharp\AddingAudioFramesToSlides.csproj", "{92F0D7DF-5D72-4113-B3E2-2ED96C81C38C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddingVideoFrameToSlide", "ProgrammersGuide\PowerPoint97_2003\WorkingWithShapes\AddingVideoFrameToSlide\CSharp\AddingVideoFrameToSlide.csproj", "{76793B51-51D1-4342-873C-155CA9D76938}"
+EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApplyingAnimationsOnShapes", "ApplyingAnimationsOnShapes", "{F531B610-81BB-4059-BE3C-D57E6C85AE73}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplyingAnimationEffects", "ProgrammersGuide\PowerPoint97_2003\WorkingWithShapes\ApplyingAnimationsOnShapes\ApplyingAnimationEffects\CSharp\ApplyingAnimationEffects.csproj", "{584ACF15-9D41-46B1-BD17-D851723F5427}"
@@ -187,6 +195,12 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdjustingGradientFillAngle", "ProgrammersGuide\PowerPoint97_2003\WorkingWithShapes\FillingShapesWithGradient\AdjustingGradientFillAngle\CSharp\AdjustingGradientFillAngle.csproj", "{A7E5296C-EACB-4860-8616-5F0D5F325223}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplyingDifferentGradientStyles", "ProgrammersGuide\PowerPoint97_2003\WorkingWithShapes\FillingShapesWithGradient\ApplyingDifferentGradientStyles\CSharp\ApplyingDifferentGradientStyles.csproj", "{08783C04-6DD0-4B69-AB3D-728447552A2B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AddingPictureFrame", "AddingPictureFrame", "{13810B4C-8FA1-4C52-A611-09E8FB5E1CF3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddSimplePictureFrames", "ProgrammersGuide\PowerPoint97_2003\WorkingWithShapes\AddingPictureFrame\AddSimplePictureFrames\CSharp\AddSimplePictureFrames.csproj", "{AABEDA0A-F678-41F7-A6FF-BC89A210A259}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControllingFrameFormatting", "ProgrammersGuide\PowerPoint97_2003\WorkingWithShapes\AddingPictureFrame\ControllingFrameFormatting\CSharp\ControllingFrameFormatting.csproj", "{2E6E0C6D-4ABB-47B3-B6E8-85687607BFF8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -398,6 +412,18 @@ Global
 		{75C6F5EE-AD00-458B-A38F-88A389F71777}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{75C6F5EE-AD00-458B-A38F-88A389F71777}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{75C6F5EE-AD00-458B-A38F-88A389F71777}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01B33CA3-AA23-4C59-BE19-C6B9EC3D4800}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01B33CA3-AA23-4C59-BE19-C6B9EC3D4800}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01B33CA3-AA23-4C59-BE19-C6B9EC3D4800}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8503E5D-53BB-4D06-BFD0-C80148160107}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8503E5D-53BB-4D06-BFD0-C80148160107}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8503E5D-53BB-4D06-BFD0-C80148160107}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92F0D7DF-5D72-4113-B3E2-2ED96C81C38C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92F0D7DF-5D72-4113-B3E2-2ED96C81C38C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92F0D7DF-5D72-4113-B3E2-2ED96C81C38C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76793B51-51D1-4342-873C-155CA9D76938}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76793B51-51D1-4342-873C-155CA9D76938}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76793B51-51D1-4342-873C-155CA9D76938}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{584ACF15-9D41-46B1-BD17-D851723F5427}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{584ACF15-9D41-46B1-BD17-D851723F5427}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{584ACF15-9D41-46B1-BD17-D851723F5427}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -416,6 +442,12 @@ Global
 		{08783C04-6DD0-4B69-AB3D-728447552A2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{08783C04-6DD0-4B69-AB3D-728447552A2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{08783C04-6DD0-4B69-AB3D-728447552A2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AABEDA0A-F678-41F7-A6FF-BC89A210A259}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AABEDA0A-F678-41F7-A6FF-BC89A210A259}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AABEDA0A-F678-41F7-A6FF-BC89A210A259}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E6E0C6D-4ABB-47B3-B6E8-85687607BFF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E6E0C6D-4ABB-47B3-B6E8-85687607BFF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E6E0C6D-4ABB-47B3-B6E8-85687607BFF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -506,6 +538,10 @@ Global
 		{E1FD5368-77D6-4972-8CAB-111FD1D5C414} = {301953B0-F196-4304-BC2B-40749FBC5B25}
 		{E71AD17F-F6D6-4F4E-8996-7EC61EF58EA2} = {301953B0-F196-4304-BC2B-40749FBC5B25}
 		{75C6F5EE-AD00-458B-A38F-88A389F71777} = {301953B0-F196-4304-BC2B-40749FBC5B25}
+		{01B33CA3-AA23-4C59-BE19-C6B9EC3D4800} = {301953B0-F196-4304-BC2B-40749FBC5B25}
+		{D8503E5D-53BB-4D06-BFD0-C80148160107} = {301953B0-F196-4304-BC2B-40749FBC5B25}
+		{92F0D7DF-5D72-4113-B3E2-2ED96C81C38C} = {301953B0-F196-4304-BC2B-40749FBC5B25}
+		{76793B51-51D1-4342-873C-155CA9D76938} = {301953B0-F196-4304-BC2B-40749FBC5B25}
 		{F531B610-81BB-4059-BE3C-D57E6C85AE73} = {301953B0-F196-4304-BC2B-40749FBC5B25}
 		{584ACF15-9D41-46B1-BD17-D851723F5427} = {F531B610-81BB-4059-BE3C-D57E6C85AE73}
 		{AF8EDCA3-DED0-49DD-917D-528F3ABC2603} = {F531B610-81BB-4059-BE3C-D57E6C85AE73}
@@ -514,5 +550,8 @@ Global
 		{24BABD45-9557-443E-BB74-AACCDE508DDD} = {678DF3E4-7DA4-4973-8E6D-B36238958D74}
 		{A7E5296C-EACB-4860-8616-5F0D5F325223} = {678DF3E4-7DA4-4973-8E6D-B36238958D74}
 		{08783C04-6DD0-4B69-AB3D-728447552A2B} = {678DF3E4-7DA4-4973-8E6D-B36238958D74}
+		{13810B4C-8FA1-4C52-A611-09E8FB5E1CF3} = {301953B0-F196-4304-BC2B-40749FBC5B25}
+		{AABEDA0A-F678-41F7-A6FF-BC89A210A259} = {13810B4C-8FA1-4C52-A611-09E8FB5E1CF3}
+		{2E6E0C6D-4ABB-47B3-B6E8-85687607BFF8} = {13810B4C-8FA1-4C52-A611-09E8FB5E1CF3}
 	EndGlobalSection
 EndGlobal
