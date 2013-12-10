@@ -1,4 +1,4 @@
-#Aspose.Slides for .NET Examples Repository
+##Aspose.Slides for .NET Examples Repository
 
 This package contains C# and VB.NET Example Projects for [Aspose.Slides for .NET](http://www.aspose.com/categories/.net-components/aspose.slides-for-.net/default.aspx).
 
@@ -19,6 +19,16 @@ Using Aspose.Slides for .NET in your project gives you the following benefits:
 + Minimal Learning Curve
 
 These examples provide helpful demonstrations and code when using Aspose.Slides for .NET .
+<br/><br/>
+<p align="center">
+  <a title="Download Examples Dashboard" href="http://www.aspose.com/community/files/72/java-components/aspose-examples-for-java/default.aspx">
+	<img src="https://raw.github.com/AsposeExamples/java-examples-dashboard/master/images/downloadDasboard-Button-Large.png" />
+  </a>
+  &nbsp;
+  <a title="Download Examples ZIP" href="https://github.com/asposeslides/Aspose_Slides_NET/archive/master.zip">
+	<img src="https://raw.github.com/AsposeExamples/java-examples-dashboard/master/images/downloadZip-Button-Large.png" />
+  </a>
+</p>
 
 ##What's Included in this Examples Repository?
 
