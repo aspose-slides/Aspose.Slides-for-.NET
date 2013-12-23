@@ -1704,6 +1704,64 @@ This article explains how to clone presentation slides in different ways:
                   </OutputFiles>
                   <Type>Console</Type>
                 </Example>
+                <Example>
+                  <Title>Creating Connectors</Title>
+                  <Description>Very important and useful feature of MS PowerPoint to draw diagrams and schemes is connectors. Aspose.Slides for .NET also supports creating Connectors on a slide that make it possible for developers to create presentations with diagrams easily.</Description>
+                  <FolderName>CreatingConnectors</FolderName>
+                  <Order>13</Order>
+                  <DocLink>
+                    <DisplayName>Creating Connectors</DisplayName>
+                    <Url>Creating+Connectors</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\output.ppt</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Creating a Table from Scratch</Title>
+                  <Description>Aspose.Slides for .NET also facilitates developers to add custom tables in their slides from scratch. This is one of the newest features added in Aspose.Slides for .NET since last few versions. In this topic, we will explain that how developers can create and add tables to their slides using Aspose.Slides for .NET .</Description>
+                  <FolderName>CreateTableFromScratch</FolderName>
+                  <Order>14</Order>
+                  <DocLink>
+                    <DisplayName>Creating a Table from Scratch</DisplayName>
+                    <Url>Creating+a+Table+from+Scratch</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\demo.ppt</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\modified.ppt</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Accessing an Existing Table</Title>
+                  <Description>Aspose.Slides for .NET allows developers to not only add custom tables in their slides but also access or manage the existing ones. In this example, we will see about accessing a table that already exists in a slide.</Description>
+                  <FolderName>AccessExistingTable</FolderName>
+                  <Order>15</Order>
+                  <DocLink>
+                    <DisplayName>Accessing an Existing Table</DisplayName>
+                    <Url>Accessing+an+Existing+Table</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\demo.ppt</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\modified.ppt</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
               </Examples>
               <Folders>
                 <Folder>
@@ -1916,7 +1974,256 @@ However, in the case of Two Colors, the shape's fill is faded from one color to 
                     </Example>
                   </Examples>
                 </Folder>
+                <Folder>
+                  <Title>Working with OLE Object Frames</Title>
+                  <Description>This section contains the following examples:
+
+- Add an embedded OLE frame.
+- Add a linked OLE frame.
+- Accessing OLE frame inside slide.</Description>
+                  <FolderName>WorkingWithOLEFrames</FolderName>
+                  <Order>12</Order>
+                  <Examples>
+                    <Example>
+                      <Title>Add an embedded OLE frame</Title>
+                      <Description>Suppose that you have created a Microsoft Excel chart and want to embed that chart object in a slide as an OLE object frame using Aspose.Slides for .NET. Follow the steps below:
+ 
+- Create an instance of hte Presentation class.
+- Obtain the reference of a slide by position.
+- Open the Excel file containing Microsoft Excel chart object and save it as a byte array.
+- Add the OLE object frame to the slide containing the byte array and other information about the OLE object.
+- Write the modified presentation as a PPT file.</Description>
+                      <FolderName>AddEmbeddedFrame</FolderName>
+                      <Order>1</Order>
+                      <DocLink>
+                        <DisplayName>Working with OLE Object Frames</DisplayName>
+                        <Url>Working+with+OLE+Object+Frames</Url>
+                      </DocLink>
+                      <InputFiles>
+                        <DataFile>
+                          <Path>..\Data\demo.ppt</Path>
+                        </DataFile>
+                        <DataFile>
+                          <Path>..\Data\book1.xls</Path>
+                        </DataFile>
+                      </InputFiles>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\modified.ppt</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Add a linked OLE frame</Title>
+                      <Description>You have created a Microsoft Excel chart, or an Excel worksheet in an Excel file and want to add it as a linked OLE object frame using Aspose.Slides for .NET. Use the steps below:
+
+- Create an instance of the Presentation class.
+- Obtain the reference of a slide by position.
+- Add the linked OLE frame by giving the file reference.
+- Set the image for the Linked OLE frame. •Optionally, replace and type of OLE frame object.
+- Optionally, replace link path without changing the object's type.
+- Write the modified presentation as a PPT file.</Description>
+                      <FolderName>AddLinkedOLE</FolderName>
+                      <Order>2</Order>
+                      <DocLink>
+                        <DisplayName>Working with OLE Object Frames</DisplayName>
+                        <Url>Working+with+OLE+Object+Frames</Url>
+                      </DocLink>
+                      <InputFiles>
+                        <DataFile>
+                          <Path>..\Data\book1.xls</Path>
+                        </DataFile>
+                        <DataFile>
+                          <Path>..\Data\logo.jpg</Path>
+                        </DataFile>
+                      </InputFiles>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\modified.ppt</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Accessing an OLE Object Frame from a Slide</Title>
+                      <Description>If an OLE object is already embedded in a slide, you can access that object easily using Aspose.Slides for .NET. Please follow the steps below to find or access an OLE object from a slide:
+ 
+- Create an instance of the Presentation class.
+- Obtain the reference of a slide by using position.
+- Find the OLE object (embedded in the slide) through its alt. text.
+- Once the object is found, typecast it object to an OLE object frame. This was the desired OLE object frame.
+- Once the OLE object frame is accessed, you can perform any operation on it.</Description>
+                      <FolderName>AccessingOLEFrame</FolderName>
+                      <Order>3</Order>
+                      <DocLink>
+                        <DisplayName>Working with OLE Object Frames</DisplayName>
+                        <Url>Working+with+OLE+Object+Frames</Url>
+                      </DocLink>
+                      <InputFiles>
+                        <DataFile>
+                          <Path>..\Data\demo.ppt</Path>
+                        </DataFile>
+                      </InputFiles>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\book1.xls</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                  </Examples>
+                </Folder>
               </Folders>
+            </Folder>
+            <Folder>
+              <Title>Working with Text</Title>
+              <Description>This section includes the following examples:
+
+- Replacing Text on a PlaceHolder
+- Managing Multiple Paragraphs with Multiple Portions
+- Managing Paragraph Alignment
+- Managing Paragraph Bullets
+- Managing Paragraph Indent
+- Managing Paragraph Font Properties
+- Managing Font Family of the Text
+- Tabs and EffectiveTabs</Description>
+              <FolderName>WorkingWithText</FolderName>
+              <Order>5</Order>
+              <Examples>
+                <Example>
+                  <Title>Replacing Text on a PlaceHolder</Title>
+                  <Description>Using Aspose.Slides for .NET , developers can also find and modify a specific Placeholder present in a slide. In this example, we are going to demonstrate that how the text contained inside a Placeholder can be replaced or modified using Aspose.Slides for .NET .</Description>
+                  <FolderName>ReplacingTextPlaceHolder</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Replacing Text on a PlaceHolder</DisplayName>
+                    <Url>Replacing+Text+on+a+PlaceHolder</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\demo.ppt</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\modified.ppt</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Managing Multiple Paragraphs with Multiple Portions</Title>
+                  <Description>In this example, we will see how we can manage multiple paragraphs with multiple portions using Aspose.Slides.</Description>
+                  <FolderName>MultiParaMultiPortions</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Managing Multiple Paragraphs with Multiple Portions</DisplayName>
+                    <Url>Managing+Multiple+Paragraphs+with+Multiple+Portions</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\modified.ppt</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Managing Paragraph Alignment</Title>
+                  <Description>Text formatting is one of the key elements while creating any kind of documents or presentations. We know that Aspose.Slides for .NET supports adding text to slides but in this example, we will see that how we can con trol the alignment of the text Paragraphs in a slide.</Description>
+                  <FolderName>ParagraphAlignment</FolderName>
+                  <Order>3</Order>
+                  <DocLink>
+                    <DisplayName>Managing Paragraph Alignment</DisplayName>
+                    <Url>Managing+Paragraph+Alignment</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\demo.ppt</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\modified.ppt</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Managing Paragraph Bullets</Title>
+                  <Description>This example illustrate that how we can manage paragraph bullets. Bullets are more useful where the something is to be described in steps</Description>
+                  <FolderName>ParagraphBullets</FolderName>
+                  <Order>4</Order>
+                  <DocLink>
+                    <DisplayName>Managing Paragraph Bullets</DisplayName>
+                    <Url>Managing+Paragraph+Bullets</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\demo.ppt</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\modified.ppt</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Managing Paragraph Indent</Title>
+                  <Description>This example will illustrate that how we can manage paragraph indent. We will see how developers can use this feature of Aspose.Slides API.</Description>
+                  <FolderName>ManagingParagraphIndent</FolderName>
+                  <Order>5</Order>
+                  <DocLink>
+                    <DisplayName>Managing Paragraph Indent</DisplayName>
+                    <Url>Managing+Paragraph+Indent</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\output.ppt</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Managing Paragraph Font Properties</Title>
+                  <Description>Font settings provide the basic way of decorating the text paragraphs. Different kinds of fonts with different settings always give a variant look and feel to the content. Presentations also contain text and this text content can be made attractive and more colorful by changing its font properties. In this example. we will use Aspose.Slides to configure the font properties of the text paragraphs in slides.</Description>
+                  <FolderName>ManagingFontProperties</FolderName>
+                  <Order>6</Order>
+                  <DocLink>
+                    <DisplayName>Managing Paragraph Font Properties</DisplayName>
+                    <Url>Managing+Paragraph+Font+Properties</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\demo.ppt</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\modified.ppt</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Managing Font Family of the Text</Title>
+                  <Description>In this example, we will use Aspose.Slides to create a TextBox with some text and further define a particular font and various other properties that fall in the category of font family for the text</Description>
+                  <FolderName>ManagingFontFamily</FolderName>
+                  <Order>7</Order>
+                  <DocLink>
+                    <DisplayName>Managing Font Family of the Text</DisplayName>
+                    <Url>Managing+Font+Family+of+the+Text</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\output.ppt</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
             </Folder>
           </Folders>
         </Folder>
