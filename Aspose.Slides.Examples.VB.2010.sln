@@ -1,0 +1,36 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ProgrammersGuide", "ProgrammersGuide", "{9DEC8096-7365-4336-8861-7DD0560A4340}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WorkingWithPresentation", "WorkingWithPresentation", "{AED03FE1-3B7C-4FE5-9875-0C00FF27C8D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConvertingPPTToPPTX", "ProgrammersGuide\WorkingWithPresentation\ConvertingPPTToPPTX\VisualBasic\ConvertingPPTToPPTX.vbproj", "{AC244D1C-EDF9-45D2-B7E6-2A1A6231479D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccessingOpenDocument", "ProgrammersGuide\WorkingWithPresentation\AccessingOpenDocument\VisualBasic\AccessingOpenDocument.vbproj", "{7564D8FC-5F04-4437-B131-4BA457CC119A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AC244D1C-EDF9-45D2-B7E6-2A1A6231479D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC244D1C-EDF9-45D2-B7E6-2A1A6231479D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC244D1C-EDF9-45D2-B7E6-2A1A6231479D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7564D8FC-5F04-4437-B131-4BA457CC119A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7564D8FC-5F04-4437-B131-4BA457CC119A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7564D8FC-5F04-4437-B131-4BA457CC119A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F70B285-676F-49B2-B557-67DB27DDEDB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F70B285-676F-49B2-B557-67DB27DDEDB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F70B285-676F-49B2-B557-67DB27DDEDB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AED03FE1-3B7C-4FE5-9875-0C00FF27C8D9} = {9DEC8096-7365-4336-8861-7DD0560A4340}
+		{AC244D1C-EDF9-45D2-B7E6-2A1A6231479D} = {AED03FE1-3B7C-4FE5-9875-0C00FF27C8D9}
+		{7564D8FC-5F04-4437-B131-4BA457CC119A} = {AED03FE1-3B7C-4FE5-9875-0C00FF27C8D9}
+		{3F70B285-676F-49B2-B557-67DB27DDEDB9} = {AED03FE1-3B7C-4FE5-9875-0C00FF27C8D9}
+	EndGlobalSection
+EndGlobal

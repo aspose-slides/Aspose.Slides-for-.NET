@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Data>
+  <Folders>
+    <Folder>
+      <Title>Programmers Guide</Title>
+      <Description>Programmers Guide provides code samples about key programming concepts to build .NET and other applications that use Aspose.Slides.</Description>
+      <FolderName>ProgrammersGuide</FolderName>
+      <Order>1</Order>
+      <Folders>
+        <Folder>
+          <Title>Working with Presentation</Title>
+          <Description>This section includes the following examples: 
+
+- Opening a Presentation
+- Saving a Presentation
+- Managing Presentation Properties
+- Converting PPT to PPTX
+- Accessing OpenDocument Presentation
+- Converting Presentation to PDF
+- Converting Presentation to TIFF
+- Converting Presentation to XPS
+- Converting Presentation to HTML
+- Converting Presentation with Notes to Tiff
+- Printing a Presentation</Description>
+          <FolderName>WorkingWithPresentation</FolderName>
+          <Order>1</Order>
+          <Examples>
+            <Example>
+              <Title>Converting PPT to PPTX</Title>
+              <Description>Aspose.Slides for .NET now facilitates the developers to access the PPT using Presentation class instance and converting that to respective PPTX format. In this example, we will convert PPT file to PPTX using Aspose.Slides for .NET</Description>
+              <FolderName>ConvertingPPTToPPTX</FolderName>
+              <Order>1</Order>
+              <DocLink>
+                <DisplayName>Converting PPT to PPTX</DisplayName>
+                <Url>Converting+PPT+to+PPTX</Url>
+              </DocLink>
+              <InputFiles>
+                <DataFile>
+                  <Path>..\Data\Presentation1.ppt</Path>
+                </DataFile>
+              </InputFiles>
+              <OutputFiles>
+                <DataFile>
+                  <Path>..\Data\Aspose.pptx</Path>
+                </DataFile>
+              </OutputFiles>
+              <Type>Console</Type>
+            </Example>
+            <Example>
+              <Title>Accessing OpenDocument Presentation</Title>
+              <Description>Aspose.Slides for .NET now facilitates the developers to access the OpenDocument Presentations (ODP) using Presentation class in read only mode. However, you can save the presentation in PPTX or PPT format.</Description>
+              <FolderName>AccessingOpenDocument</FolderName>
+              <Order>2</Order>
+              <DocLink>
+                <DisplayName>Accessing OpenDocument Presentation</DisplayName>
+                <Url>Accessing+OpenDocument+Presentation</Url>
+              </DocLink>
+              <InputFiles>
+                <DataFile>
+                  <Path>..\Data\Source.odp</Path>
+                </DataFile>
+              </InputFiles>
+              <OutputFiles>
+                <DataFile>
+                  <Path>..\Data\Aspose.pptx</Path>
+                </DataFile>
+              </OutputFiles>
+              <Type>Console</Type>
+            </Example>
+            <Example>
+              <Title>Converting Presentation to PDF</Title>
+              <Description>PDF documents are widely used as a standard format of exchanging documents between organizations, government sectors and individuals. It's a popular format so developers are often asked to convert Microsoft PowerPoint presentation files to PDF documents. Realizing this possible requirement, Aspose.Slides for .NET supports converting presentations to PDF documents without using any other component.</Description>
+              <FolderName>ConvertingToPDF</FolderName>
+              <Order>3</Order>
+              <DocLink>
+                <DisplayName>Converting Presentation to PDF</DisplayName>
+                <Url>Converting+Presentation+to+PDF</Url>
+              </DocLink>
+              <InputFiles>
+                <DataFile>
+                  <Path>..\Data\Aspose.pptx</Path>
+                </DataFile>
+              </InputFiles>
+              <OutputFiles>
+                <DataFile>
+                  <Path>..\Data\output.pdf</Path>
+                </DataFile>
+              </OutputFiles>
+              <Type>Console</Type>
+            </Example>
+          </Examples>
+        </Folder>
+      </Folders>
+    </Folder>
+  </Folders>
+</Data>
