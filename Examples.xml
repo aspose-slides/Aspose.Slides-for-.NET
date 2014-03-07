@@ -88,7 +88,498 @@
               </OutputFiles>
               <Type>Console</Type>
             </Example>
+            <Example>
+              <Title>Converting Presentation to HTML</Title>
+              <Description>HTML is one of several widely used format for exchanging data. Aspose.Slides for .NET provides support for converting a presentation to HTML which is an embedded SVG.</Description>
+              <FolderName>ConvertingPresentationToHTML</FolderName>
+              <Order>9</Order>
+              <DocLink>
+                <DisplayName>Converting Presentation to HTML</DisplayName>
+                <Url>Converting+Presentation+to+HTML</Url>
+              </DocLink>
+              <InputFiles>
+                <DataFile>
+                  <Path>..\Data\Aspose.pptx</Path>
+                </DataFile>
+              </InputFiles>
+              <OutputFiles>
+                <DataFile>
+                  <Path>..\Data\demo.html</Path>
+                </DataFile>
+              </OutputFiles>
+              <Type>Console</Type>
+            </Example>
+            <Example>
+              <Title>Converting Presentation with Notes to Tiff</Title>
+              <Description>TIFF is one of several widely used image formats that Aspose.Slides for .NET supports for converting a presentation with notes to images. You can also generate slide thumbnails in the Notes Slide view.</Description>
+              <FolderName>ConvertingPresentationWithNotesToTiff</FolderName>
+              <Order>10</Order>
+              <DocLink>
+                <DisplayName>Converting Presentation with Notes to Tiff</DisplayName>
+                <Url>Converting+Presentation+with+Notes+to+Tiff</Url>
+              </DocLink>
+              <InputFiles>
+                <DataFile>
+                  <Path>..\Data\Aspose.pptx</Path>
+                </DataFile>
+              </InputFiles>
+              <OutputFiles>
+                <DataFile>
+                  <Path>..\Data\TestNotes.tiff</Path>
+                </DataFile>
+              </OutputFiles>
+              <Type>Console</Type>
+            </Example>
           </Examples>
+          <Folders>
+            <Folder>
+              <Title>Opening a Presentation</Title>
+              <Description>Using Aspose.Slides for .NET, developers can not only create PowerPoint presentations from scratch but also access or modify the existing ones. In this section, we will discuss the simplest approach to open and access an existing presentation.
+
+    - Opening a Presentation.
+    - Opening a Password Protected Presentation.
+    - Accessing the Document Properties of a Password Protected Presentation without Password.</Description>
+              <FolderName>OpeningAPresentation</FolderName>
+              <Order>4</Order>
+              <Examples>
+                <Example>
+                  <Title>Opening a Presentation</Title>
+                  <Description>Aspose.Slides for .NET provides Presentation class that is used to open an existing presentation. It offers few overloaded constructors and we can make use of one of the suitable constructors of Presentation class to create its object based on an existing presentation.In the example given below, we have passed the name of the presentation file (to be opened) to the constructor of Presentation class. After the file is opened, we get the total number of slides present in the presentation.</Description>
+                  <FolderName>OpeningaPresentation</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Opening a Presentation</DisplayName>
+                    <Url>Opening+a+Presentation</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\Aspose.pptx</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Opening a Password Protected Presentation</Title>
+                  <Description>Aspose.Slides for .NET provides facility to open password protected presentation using Presentation class. It offers few overloaded constructors and we can make use of one of the suitable constructors of Presentation class to create its object based on an existing presentation.In the example given below, we are accessing the password protected presentation. We will using LoadOptions class object to set the access password and then will use Presentation class to open presentation.</Description>
+                  <FolderName>OpeningPasswordPresentation</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Opening a Presentation</DisplayName>
+                    <Url>Opening+a+Presentation</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\Aspose.pptx</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Accessing the Document Properties of a Password Protected Presentation without Password.</Title>
+                  <Description>Aspose.Slides for .NET provides facility to access the Document Properties of the presentation in password protected presentation without supplying password using Presentation class. It offers few overloaded constructors and we can make use of one of the suitable constructors of Presentation class to create its object based on an existing presentation.In the example given below, we are accessing the Document Properties of a password protected presentation. We will using LoadOptions class object to set the presentation access properties.</Description>
+                  <FolderName>AccessingDocumentProperties</FolderName>
+                  <Order>3</Order>
+                  <DocLink>
+                    <DisplayName>Opening a Presentation</DisplayName>
+                    <Url>Opening+a+Presentation</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\demoPassDocument.pptx</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+            </Folder>
+            <Folder>
+              <Title>Saving a Presentation</Title>
+              <Description>The Presentation class holds the contents of a presentation. Whether you are creating a presentation from scratch or modifying an existing one, you want to save your presentation when you're finished.
+
+    - Save to file.
+    - Save with password protection.
+    - Saving a password protected presentation with read access to document properties.
+    - Save as read only.
+    - Remove write protection.</Description>
+              <FolderName>SavingAPresentation</FolderName>
+              <Order>5</Order>
+              <Examples>
+                <Example>
+                  <Title>Save to file</Title>
+                  <Description>Save a presentation to files by calling the Presentation class Write method. Simply pass the file name to the Write method as a string.</Description>
+                  <FolderName>SaveToFile</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Saving a Presentation</DisplayName>
+                    <Url>Saving+a+Presentation</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\Saved.pptx</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Save with password protection</Title>
+                  <Description>It's possible to save presentations with password protection. The presentation class exposes the Encrypt method which sets the password for the presentation. To do this, simply pass the password to the Encrypt method and then use the Write method exposed by the Presentation class as a string to save the presentation.</Description>
+                  <FolderName>SaveWithPasswordProtection</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Saving a Presentation</DisplayName>
+                    <Url>Saving+a+Presentation</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\demoPass.pptx</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Saving a Password Protected Presentation with Read Access to Document Properties</Title>
+                  <Description>It's possible to save presentations with password protection. But in that case access to the presentation's document properties is also prohibited. Aspose.Slides offers a mechanism for password protecting a presentation but still being able to access the document properties in PowerPoint. The Presentation exposes the EncryptDocumentProperties property that takes a Boolean value to allow or disallow access to the document properties in password protected mode. By default, its value is set to true.</Description>
+                  <FolderName>SavingAPresentationProperties</FolderName>
+                  <Order>3</Order>
+                  <DocLink>
+                    <DisplayName>Saving a Presentation</DisplayName>
+                    <Url>Saving+a+Presentation</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\demoPassDocument.pptx</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Save As Read Only</Title>
+                  <Description>Developers can now save presentations with write protection to allow the presentation to be read in read only mode. The Presentation class exposes the SetWriteProtection(string Password) method with which it is possible to save the presentation in read only mode by applying write protection on it. To do so, call the method and set the write protection password.</Description>
+                  <FolderName>SaveAsReadOnly</FolderName>
+                  <Order>4</Order>
+                  <DocLink>
+                    <DisplayName>Saving a Presentation</DisplayName>
+                    <Url>Saving+a+Presentation</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\demoWriteProtected.pptx</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Removing Write Protection from a Presentation</Title>
+                  <Description>Spose.Slides for .NET provides a facility for accessing write protected presentation through the Presentation class. The IsWriteProtected property identifies whether a presentation is write protected or not. Then if it is write protected, the protection can be removed using the RemoveWriteProtection() method.</Description>
+                  <FolderName>RemovingWriteProtection</FolderName>
+                  <Order>5</Order>
+                  <DocLink>
+                    <DisplayName>Saving a Presentation</DisplayName>
+                    <Url>Saving+a+Presentation</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\demoWriteProtected.pptx</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\newDemo.pptx</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+            </Folder>
+            <Folder>
+              <Title>Managing Presentation Properties</Title>
+              <Description>Microsoft PowerPoint provides a feature to add some properties to the presentation files. These document properties allow some useful information to be stored along with the documents (presentation files). There are two kinds of document properties as follows:
+
+    - System Defined (Built-in) Properties
+
+    - User Defined (Custom) Properties
+
+Built-in properties contain general information about the document like document title, author's name, document statistics and so on. Custom properties are those ones, which are defined by the users as Name/Value pairs, where both name and value are defined by the user. Using Aspose.Slides for .NET, developers can access and modify the values of built-in properties as well as custom properties.</Description>
+              <FolderName>ManagingPresentationProperties</FolderName>
+              <Order>6</Order>
+              <Examples>
+                <Example>
+                  <Title>Accessing Built-in Properties</Title>
+                  <Description>These properties as exposed by IDocumentProperties object.</Description>
+                  <FolderName>AccessingBuiltinProperties</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Managing Presentation Properties</DisplayName>
+                    <Url>Managing+Presentation+Properties</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\Aspose.pptx</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Modifying Built-in Properties</Title>
+                  <Description>Modifying the built-in properties of presentation files is as easy as that of accessing them. You can simply assign a string value to any desired property and the property value would be modified. In the example given below, we have demonstrated that how we can modify the built-in document properties of the presentation file.</Description>
+                  <FolderName>ModifyingBuiltinProperties</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Managing Presentation Properties</DisplayName>
+                    <Url>Managing+Presentation+Properties</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\Aspose.pptx</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\DocProps.pptx</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Accessing and Modifying Custom Properties</Title>
+                  <Description>Aspose.Slides for .NET also allows developers to access the values of custom properties. An example is given below that shows how can you access and modify all of these custom properties for a presentation.</Description>
+                  <FolderName>AccessingModifyingProperties</FolderName>
+                  <Order>3</Order>
+                  <DocLink>
+                    <DisplayName>Managing Presentation Properties</DisplayName>
+                    <Url>Managing+Presentation+Properties</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\Aspose.pptx</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\CustomDemoModified.pptx</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+            </Folder>
+            <Folder>
+              <Title>Converting Presentation to TIFF</Title>
+              <Description>TIFF format is known by its flexibility to accommodate multipage images and data. Keeping in view the importance and popularity of TIFF format, Aspose.Slides for .NET provides the support for converting presentations into TIFF document.
+
+There are two different tiff export options:
+
+- Converting Presentation to TIFF with default size.
+- Converting Presentation to TIFF with custom size.</Description>
+              <FolderName>ConvertingPresentationToTIFF</FolderName>
+              <Order>7</Order>
+              <Examples>
+                <Example>
+                  <Title>Converting Presentation to TIFF with default size</Title>
+                  <Description>Aspose.Slides helps you convert a presentation into TIFF document with default options.</Description>
+                  <FolderName>ConvertingWithDefaultSize</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Converting Presentation to TIFF</DisplayName>
+                    <Url>Converting+Presentation+to+TIFF</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\Aspose.pptx</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\demo.tiff</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Converting Presentation to TIFF with custom size</Title>
+                  <Description>You can convert a presentation into TIFF document with customized image size using TiffOptions class.</Description>
+                  <FolderName>ConvertingWithCustomSize</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Converting Presentation to TIFF</DisplayName>
+                    <Url>Converting+Presentation+to+TIFF</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\Aspose.pptx</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\demo.tiff</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+            </Folder>
+            <Folder>
+              <Title>Converting Presentation to XPS</Title>
+              <Description>The Save method exposed by Presentation class can be used to convert the whole presentation into XPS document. 
+Further, XpsOptions class exposes SaveMetafileAsPng property that can be set to true or false as per requirement.</Description>
+              <FolderName>ConvertingPresentationToXPS</FolderName>
+              <Order>8</Order>
+              <Examples>
+                <Example>
+                  <Title>Converting Presentation to XPS without XpsOptions</Title>
+                  <Description>You can convert a presentation into XPS document without using options provided by XpsOptions class.</Description>
+                  <FolderName>ConvertingWithoutXpsOptions</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Converting Presentation to XPS</DisplayName>
+                    <Url>Converting+Presentation+to+XPS</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\Aspose.pptx</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\demo.xps</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Converting Presentation to XPS with XpsOptions</Title>
+                  <Description>You can convert a presentation into XPS document using options provided by XpsOptions class.</Description>
+                  <FolderName>ConvertingWiithXpsOptions</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Converting Presentation to XPS</DisplayName>
+                    <Url>Converting+Presentation+to+XPS</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\Aspose.pptx</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\demo.xps</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+            </Folder>
+          </Folders>
+        </Folder>
+        <Folder>
+          <Title>Working With Slides in Presentation</Title>
+          <Description>This section includes the following examples:
+
+- Adding Slides to Presentation
+- Accessing Slides of a Presentation
+- Removing Slides from a Presentation
+- Cloning Slides in Presentation
+- Changing the Position of a Slide
+- Setting the Background Color to Slides
+- Setting the Background Color to a Gradient to Slides
+- Setting the Image as Background to Slides
+- Creating Slides Thumbnail Image
+- Managing Slides Transitions
+- Creating Slides SVG Image
+- Working with Slide Comments
+- Managing Slide Transitions</Description>
+          <FolderName>WorkingWithSlidesInPresentation</FolderName>
+          <Order>2</Order>
+          <Examples>
+            <Example>
+              <Title>Adding Slides To Presentation</Title>
+              <Description>Each PowerPoint presentation file contains Master / Layout slide and other Normal slides. It means that a presentation file contains at least one or more slides. It is important to know that presentation files without slides are not supported by Aspose.Slides for .NET. Each slide has unique Id and all the Normal Slides are arranged in an order specified by the zero based index.</Description>
+              <FolderName>AddingSlidesToPresentation</FolderName>
+              <Order>1</Order>
+              <DocLink>
+                <DisplayName>Adding Slides To Presentation</DisplayName>
+                <Url>Adding+Slides+to+Presentation</Url>
+              </DocLink>
+              <OutputFiles>
+                <DataFile>
+                  <Path>..\Data\EmptySlide.pptx</Path>
+                </DataFile>
+              </OutputFiles>
+              <Type>Console</Type>
+            </Example>
+            <Example>
+              <Title>Accessing Slides of A Presentation</Title>
+              <Description>Each slide in a presentation has a unique Id. On the other hand, all the slides in the presentation are arranged in the order of the slide position starting from 0, that is, slide at position 1 will be accessible through 0 index of ISlideCollection associated with a Presentation object.</Description>
+              <FolderName>AccessingSlidesOfAPresentation</FolderName>
+              <Order>2</Order>
+              <DocLink>
+                <DisplayName>Accessing Slides of A Presentation</DisplayName>
+                <Url>Accessing+Slides+of+a+Presentation</Url>
+              </DocLink>
+              <InputFiles>
+                <DataFile>
+                  <Path>..\Data\Aspose.pptx</Path>
+                </DataFile>
+              </InputFiles>
+              <Type>Console</Type>
+            </Example>
+          </Examples>
+          <Folders>
+            <Folder>
+              <Title>Removing Slides From A Presentation</Title>
+              <Description>Presentation class encapsulates a ISlideCollection that acts as a repository of all slides that are the part of the presentation. You can remove a slide from this Slides collection in two ways:
+
+- Using Slide Reference
+
+- Using Slide Index</Description>
+              <FolderName>RemovingSlidesFromAPresentation</FolderName>
+              <Order>3</Order>
+              <Examples>
+                <Example>
+                  <Title>Using Slide Reference</Title>
+                  <Description>In this example, we will see how we can remove a slide using a slide reference.</Description>
+                  <FolderName>UsingSlideReference</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Removing Slides from a Presentation</DisplayName>
+                    <Url>Removing+Slides+from+a+Presentation</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\Aspose.pptx</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\modified.pptx</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Using Slide Index</Title>
+                  <Description>In this example, we will see how we can remove a slide using its index position in the slides collection of the presentation,</Description>
+                  <FolderName>UsingSlideIndex</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Removing Slides from a Presentation</DisplayName>
+                    <Url>Removing+Slides+from+a+Presentation</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\Aspose.pptx</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\modified.pptx</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+            </Folder>
+          </Folders>
         </Folder>
       </Folders>
     </Folder>
