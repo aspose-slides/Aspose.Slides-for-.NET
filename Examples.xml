@@ -523,6 +523,93 @@ Further, XpsOptions class exposes SaveMetafileAsPng property that can be set to 
               </InputFiles>
               <Type>Console</Type>
             </Example>
+            <Example>
+              <Title>Changing the Position of a Slide</Title>
+              <Description>Using MS PowerPoint, you can drag a selected slide to any other position of the presentation. Aspose.Slides for .NET also allows to change the position of a slide within the presentation.</Description>
+              <FolderName>ChangingPositionOfASlide</FolderName>
+              <Order>5</Order>
+              <DocLink>
+                <DisplayName>Changing the Position of a Slide</DisplayName>
+                <Url>Changing+the+Position+of+a+Slide</Url>
+              </DocLink>
+              <InputFiles>
+                <DataFile>
+                  <Path>..\Data\Aspose.pptx</Path>
+                </DataFile>
+              </InputFiles>
+              <OutputFiles>
+                <DataFile>
+                  <Path>..\Data\Aspose_out.pptx</Path>
+                </DataFile>
+              </OutputFiles>
+              <Type>Console</Type>
+            </Example>
+            <Example>
+              <Title>Setting the Background Color to a Gradient to Slides</Title>
+              <Description>Gradient is a graphic effect consisting of a gradual change in color. It is great for creating depth and highlights to sections of the images. It is possible to apply gradient effect on the background of a slide using Aspose.Slides for .NET.</Description>
+              <FolderName>SettingBackgroundColorToGradientToSlides</FolderName>
+              <Order>7</Order>
+              <DocLink>
+                <DisplayName>Setting the Background Color to a Gradient to Slides</DisplayName>
+                <Url>Setting+the+Background+Color+to+a+Gradient+to+Slides</Url>
+              </DocLink>
+              <InputFiles>
+                <DataFile>
+                  <Path>..\Data\Aspose.pptx</Path>
+                </DataFile>
+              </InputFiles>
+              <OutputFiles>
+                <DataFile>
+                  <Path>..\Data\ContentBG_Grad.pptx</Path>
+                </DataFile>
+              </OutputFiles>
+              <Type>Console</Type>
+            </Example>
+            <Example>
+              <Title>Setting the Image as Background to Slides</Title>
+              <Description>You can fill the slide background with any image using Aspose.Slides for .NET.</Description>
+              <FolderName>SettingImageAsBackgroundToSlides</FolderName>
+              <Order>8</Order>
+              <DocLink>
+                <DisplayName>Setting the Image as Background to Slides</DisplayName>
+                <Url>Setting+the+Image+as+Background+to+Slides</Url>
+              </DocLink>
+              <InputFiles>
+                <DataFile>
+                  <Path>..\Data\Aspose.pptx</Path>
+                </DataFile>
+                <DataFile>
+                  <Path>..\Data\Tulips.jpg</Path>
+                </DataFile>
+              </InputFiles>
+              <OutputFiles>
+                <DataFile>
+                  <Path>..\Data\ContentBG_Img.pptx</Path>
+                </DataFile>
+              </OutputFiles>
+              <Type>Console</Type>
+            </Example>
+            <Example>
+              <Title>Creating Slides SVG Image</Title>
+              <Description>Aspose.Slides for .NET is used to create presentation files, complete with slides. These slides can be viewed by opening presentations using Microsoft PowerPoint. But sometimes, developers may also need to view slides as SVG images in their favorite image viewer. In such cases, Aspose.Slides for .NET lets you export an individual slide to an SVG image.</Description>
+              <FolderName>CreatingSlidesSVGImage</FolderName>
+              <Order>11</Order>
+              <DocLink>
+                <DisplayName>Creating Slides SVG Image</DisplayName>
+                <Url>Creating+Slides+SVG+Image</Url>
+              </DocLink>
+              <InputFiles>
+                <DataFile>
+                  <Path>..\Data\Aspose.pptx</Path>
+                </DataFile>
+              </InputFiles>
+              <OutputFiles>
+                <DataFile>
+                  <Path>..\Data\Aspose.svg</Path>
+                </DataFile>
+              </OutputFiles>
+              <Type>Console</Type>
+            </Example>
           </Examples>
           <Folders>
             <Folder>
@@ -575,6 +662,604 @@ Further, XpsOptions class exposes SaveMetafileAsPng property that can be set to 
                       <Path>..\Data\modified.pptx</Path>
                     </DataFile>
                   </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+            </Folder>
+            <Folder>
+              <Title>Cloning Slides in Presentation</Title>
+              <Description>Cloning is the process of making an exact copy or replica of something. Aspose.Slides for .NET makes it possible to make a copy or clone of any slide and then insert s that cloned slide to the current or any other opened presentation. The process of slide cloning creates a new slide that can be modified by developers without changing the original slide.</Description>
+              <FolderName>CloningSlidesinPresentation</FolderName>
+              <Order>4</Order>
+              <Examples>
+                <Example>
+                  <Title>Within the Same Presentation from One Position to the End</Title>
+                  <Description>You can clone a slide and then use it within the same presentation file at the end of the existing slides using the AddClone method.</Description>
+                  <FolderName>WithinSamePresentationfromOnePositiontoEnd</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Cloning Slides in Presentation</DisplayName>
+                    <Url>Cloning+Slides+in+Presentation</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\Aspose.pptx</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\Aspose_cloned.pptx</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>From One Position to Another within the Same Presentation</Title>
+                  <Description>You can clone a slide and then use it within the same presentation file but at a different position by using the InsertClone method.</Description>
+                  <FolderName>FromOnePositiontoAnotherwithinSamePresentation</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Cloning Slides in Presentation</DisplayName>
+                    <Url>Cloning+Slides+in+Presentation</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\Aspose.pptx</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\Aspose_clone.pptx</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>In Another Presentation at the End of the Existing Slides</Title>
+                  <Description>You can clone a slide (from the zero index of the source presentation) to the end of the destination presentation.</Description>
+                  <FolderName>InAnotherPresentationatEndofExistingSlides</FolderName>
+                  <Order>3</Order>
+                  <DocLink>
+                    <DisplayName>Cloning Slides in Presentation</DisplayName>
+                    <Url>Cloning+Slides+in+Presentation</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\Aspose.pptx</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\Aspose_out.pptx</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>In Another Presentation at the Specified Position</Title>
+                  <Description>You can clone the desired slide from the source presentation to the specified position in destination presentation using InsertClone method.</Description>
+                  <FolderName>InAnotherPresentationatSpecifiedPosition</FolderName>
+                  <Order>4</Order>
+                  <DocLink>
+                    <DisplayName>Cloning Slides in Presentation</DisplayName>
+                    <Url>Cloning+Slides+in+Presentation</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\Aspose.pptx</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\Aspose_out.pptx</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>In Another Presentation with Master Slide from Source Presentation at the End of the Existing Slides</Title>
+                  <Description>You can clone a slide with master slide from one presentation from and use it in another presentation. For that,  you need to clone the desired master slide from source presentation to destination presentation first. Then you need to use that master slide for cloning slide with master slide.</Description>
+                  <FolderName>AnotherPresentationWithMaster</FolderName>
+                  <Order>5</Order>
+                  <DocLink>
+                    <DisplayName>Cloning Slides in Presentation</DisplayName>
+                    <Url>http://docs.aspose.com:8082/docs/display/slidesnet/Cloning+Slides+in+Presentation</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\Aspose.pptx</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\Aspose_out.pptx</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+            </Folder>
+            <Folder>
+              <Title>Setting the Background Color to Slides</Title>
+              <Description>Aspose.Slides for .NET may contain two types of slides: Master Slide &amp; Normal Slide.You can change the background colors of both types of the slides.</Description>
+              <FolderName>SettingtheBackgroundColortoSlides</FolderName>
+              <Order>6</Order>
+              <Examples>
+                <Example>
+                  <Title>Setting the Background Color of a Master Slide</Title>
+                  <Description>A Master Slide is like a template that contains all formatting settings, which are applied on all other normal slides contained inside the presentation. Iif you change the background color of the master slide, all normal slides in the presentation would receive the same background color settings.</Description>
+                  <FolderName>SettingBackgroundMaster</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Setting the Background Color to Slides</DisplayName>
+                    <Url>Setting+the+Background+Color+to+Slides</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\Aspose.pptx</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Setting the Background Color of a Normal Slide</Title>
+                  <Description>A Normal Slide is that one that inherits its format settings from the master slide. If you want to modify its background settings, you can modify the slide settings and get the desired results.</Description>
+                  <FolderName>SettingBackgroundNormal</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Setting the Background Color to Slides</DisplayName>
+                    <Url>Setting+the+Background+Color+to+Slides</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\ContentBG.pptx</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+            </Folder>
+            <Folder>
+              <Title>Creating Slides Thumbnail Image</Title>
+              <Description>Aspose.Slides for .NET is used to create presentation files containing slides. These slides can be viewed by opening presentation files using Microsoft PowerPoint. But sometimes, developers may need to view slides as images using their favorite image viewer. In such cases, Aspose.Slides for .NET help you generate thumbnail images of the slides.</Description>
+              <FolderName>CreatingSlidesThumbnailImage</FolderName>
+              <Order>9</Order>
+              <Examples>
+                <Example>
+                  <Title>Generating a Thumbnail from a Slide</Title>
+                  <Description>To generate the thumbnail of any desired slide using Aspose.Slides for .NET:
+
+- Create an instance of the Presentation class.
+- Obtain the reference of any desired slide by using its ID or index.
+- Get the thumbnail image of the referenced slide on a specified scale.
+- Save the thumbnail image in any desired image format.</Description>
+                  <FolderName>GeneratingThumbnailFromSlide</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Creating Slides Thumbnail Image</DisplayName>
+                    <Url>Creating+Slides+Thumbnail+Image</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\Aspose.pptx</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\Thumbnail.jpg</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Generating a Thumbnail from a Slide with User Defined Dimensions</Title>
+                  <Description>To generate the thumbnail of any desired slide using Aspose.Slides for .NET:
+
+- Create an instance of the Presentation class.
+- Obtain the reference of any desired slide by using its ID or index.
+- Get the X and Y scaling factors based on user defined X and Y dimensions.
+- Get the thumbnail image of the referenced slide on a specified scale.
+- Save the thumbnail image in any desired image format.</Description>
+                  <FolderName>GeneratThumbnailDimensions</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Creating Slides Thumbnail Image</DisplayName>
+                    <Url>Creating+Slides+Thumbnail+Image</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\Aspose.pptx</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\Thumbnail.jpg</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Generating a Thumbnail from a Slide in Notes Slides View</Title>
+                  <Description>To generate the thumbnail of any desired slide in Notes Slide View using Aspose.Slides for .NET:
+
+- Create an instance of the Presentation class.
+- Obtain the reference of any desired slide by using its ID or index.
+- Get the thumbnail image of the referenced slide on a specified scale in Notes Slide view.
+- Save the thumbnail image in any desired image format.</Description>
+                  <FolderName>GeneratingThumbnailSlideNotes</FolderName>
+                  <Order>3</Order>
+                  <DocLink>
+                    <DisplayName>Creating Slides Thumbnail Image</DisplayName>
+                    <Url>Creating+Slides+Thumbnail+Image</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\Aspose.pptx</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\Notes_tnail.jpg</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+            </Folder>
+            <Folder>
+              <Title>Managing Slides Transitions</Title>
+              <Description>Aspose.Slides for .NET also allows developers to manage or customize the slide transition effects of the slides such as:
+
+- Managing Simple Slide Transitions
+- Managing Better Slide Transitions</Description>
+              <FolderName>ManagingSlidesTransitions</FolderName>
+              <Order>10</Order>
+              <Examples>
+                <Example>
+                  <Title>Managing Simple Slide Transitions</Title>
+                  <Description>Using Aspose.Slides for .NET, you can not only apply different slide transition effects on the slides, but also customize the behavior of these transition effects.</Description>
+                  <FolderName>ManagingSimpleSlideTransitions</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Managing Slides Transitions</DisplayName>
+                    <Url>Managing+Slides+Transitions</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\Aspose.pptx</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\SampleTransition.pptx</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Managing Better Slide Transitions</Title>
+                  <Description>You can apply better and controlled transition effects on the slide.</Description>
+                  <FolderName>ManagingBetterSlideTransitions</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Managing Slides Transitions</DisplayName>
+                    <Url>Managing+Slides+Transitions</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\Aspose.pptx</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\SampleTransition.pptx</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+            </Folder>
+          </Folders>
+        </Folder>
+        <Folder>
+          <Title>Working With Shapes</Title>
+          <Description>This section includes the following topics:
+
+ - Adding Line Shape to Slide
+ - Finding a Shape in a Slide
+ - Applying Animations on Shapes inside Slide
+ - Formatting Lines of the Shapes
+ - Filling Shapes with Gradient
+ - Filling Shapes with Pattern
+ - Filling Shapes with Picture
+ - Filling Shapes with Solid Color
+ - Rotating Shapes
+ - Adding Picture Frame to Slide
+ - Adding Audio Frame to Slide
+ - Adding Video Frame to Slide
+ - Working with OLE Object Frames
+ - Adding Ellipse Shape to Slide
+ - Adding Rectangle Shape to Slide
+ - Adding an Embedded Video Frame to Slide</Description>
+          <FolderName>WorkingWithShapes</FolderName>
+          <Order>3</Order>
+          <Examples>
+            <Example>
+              <Title>Finding A Shape In A Slide</Title>
+              <Description>PowerPoint Presentation files do not have any way to identify shapes on a slide except an internal unique Id. It seems to be difficult for developers to find a shape using its internal unique Id.
+In this example, we will see how we can find a shape in a slide using Aspose.Slides for .NET.</Description>
+              <FolderName>FindingShapeInSlide</FolderName>
+              <Order>2</Order>
+              <DocLink>
+                <DisplayName>Finding a Shape in a Slide</DisplayName>
+                <Url>Finding+a+Shape+in+a+Slide</Url>
+              </DocLink>
+              <Type>Console</Type>
+            </Example>
+            <Example>
+              <Title>Applying Animations On Shapes Inside Slide</Title>
+              <Description>Animation is one of the most important parts of the presentations that make them more attractive and meaningful. Aspose.Slides for .NET also allows developers to apply different kinds of animation effects on different kinds of shapes. There is a separate namespace Aspose.Slides.Pptx.Animation that provides classes to handle the animations on PPTX presentations.</Description>
+              <FolderName>AnimationsOnShapes</FolderName>
+              <Order>3</Order>
+              <DocLink>
+                <DisplayName>Applying Animations on Shapes inside Slide</DisplayName>
+                <Url>Applying+Animations+on+Shapes+inside+Slide</Url>
+              </DocLink>
+              <OutputFiles>
+                <DataFile>
+                  <Path>..\Data\AnimExample.pptx</Path>
+                </DataFile>
+              </OutputFiles>
+              <Type>Console</Type>
+            </Example>
+            <Example>
+              <Title>Filling Shapes With Gradient</Title>
+              <Description>In this example, we will see how we can fill the shapes with the gradient of two colors using Aspose.Slides for .NET.</Description>
+              <FolderName>FillingShapesGradient</FolderName>
+              <Order>5</Order>
+              <DocLink>
+                <DisplayName>Filling Shapes with Gradient</DisplayName>
+                <Url>Filling+Shapes+with+Gradient</Url>
+              </DocLink>
+              <OutputFiles>
+                <DataFile>
+                  <Path>..\Data\EllipseShpGrad.pptx</Path>
+                </DataFile>
+              </OutputFiles>
+              <Type>Console</Type>
+            </Example>
+            <Example>
+              <Title>Filling Shapes With Pattern</Title>
+              <Description>You can use the patterns to fill the shapes in more attractive styles. Aspose.Slides for .NET offers more than 45 pre-defined pattern styles that can be used by developers to enrich their presentations.</Description>
+              <FolderName>FillingShapesPattern</FolderName>
+              <Order>6</Order>
+              <DocLink>
+                <DisplayName>Filling Shapes with Pattern</DisplayName>
+                <Url>Filling+Shapes+with+Pattern</Url>
+              </DocLink>
+              <OutputFiles>
+                <DataFile>
+                  <Path>..\Data\RectShpPatt.pptx</Path>
+                </DataFile>
+              </OutputFiles>
+              <Type>Console</Type>
+            </Example>
+            <Example>
+              <Title>Filling Shapes With Picture</Title>
+              <Description>In this example, we will see how we can fill the shapes with picture using Aspose.Slides for .NET.</Description>
+              <FolderName>FillingShapesPicture</FolderName>
+              <Order>7</Order>
+              <DocLink>
+                <DisplayName>Filling Shapes with Picture</DisplayName>
+                <Url>Filling+Shapes+with+Picture</Url>
+              </DocLink>
+              <InputFiles>
+                <DataFile>
+                  <Path>..\Data\Tulips.jpg</Path>
+                </DataFile>
+              </InputFiles>
+              <OutputFiles>
+                <DataFile>
+                  <Path>..\Data\RectShpPic.pptx</Path>
+                </DataFile>
+              </OutputFiles>
+              <Type>Console</Type>
+            </Example>
+            <Example>
+              <Title>Rotating Shapes</Title>
+              <Description>In this example, we will see how we can rotate the shapes in the presntation using Aspose.Slides for .NET.</Description>
+              <FolderName>RotatingShapes</FolderName>
+              <Order>8</Order>
+              <DocLink>
+                <DisplayName>Rotating Shapes</DisplayName>
+                <Url>Rotating+Shapes</Url>
+              </DocLink>
+              <OutputFiles>
+                <DataFile>
+                  <Path>..\Data\RectShpRot.pptx</Path>
+                </DataFile>
+              </OutputFiles>
+              <Type>Console</Type>
+            </Example>
+            <Example>
+              <Title>Adding Audio Frame To Slide</Title>
+              <Description>An Audio Frame contains the embedded audio file. In this example, we will see how we can embed audio frames in the slides using Aspose.Slides for .NET.</Description>
+              <FolderName>AddingAudioFrame</FolderName>
+              <Order>10</Order>
+              <DocLink>
+                <DisplayName>Adding Audio Frame to Slide</DisplayName>
+                <Url>Adding+Audio+Frame+to+Slide</Url>
+              </DocLink>
+              <Type>Console</Type>
+            </Example>
+            <Example>
+              <Title>Adding Video Frame To Slide</Title>
+              <Description>Developers can also add and play video files in the slides to enrich their presentations. Aspose.Slides for .NET supports adding Video Frames to the slides that make it possible for developers to add videos to their presentations.</Description>
+              <FolderName>AddingVideoFrame</FolderName>
+              <Order>11</Order>
+              <DocLink>
+                <DisplayName>Adding Video Frame to Slide</DisplayName>
+                <Url>Adding+Video+Frame+to+Slide</Url>
+              </DocLink>
+              <Type>Console</Type>
+            </Example>
+          </Examples>
+          <Folders>
+            <Folder>
+              <Title>Adding Line Shape To Slide</Title>
+              <Description>Aspose.Slides for .NET supports adding different kinds of shapes to the slides. In this topic, we will start working with shapes by adding lines to the slides. Using Aspose.Slides for .NET , developers can not only create simple lines , but some fancy lines can also be drawn on the slides.</Description>
+              <FolderName>AddingLineShapeToSlide</FolderName>
+              <Order>1</Order>
+              <Examples>
+                <Example>
+                  <Title>Adding Plain Line To Slide</Title>
+                  <Description>In this example, we will see how we can add a simple plain line to a selected slide of the presentation using Aspose,Slides for .NET.</Description>
+                  <FolderName>AddingPlainLineToSlide</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Adding Line Shape to Slide</DisplayName>
+                    <Url>Adding+Line+Shape+to+Slide</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\LineShape1.pptx</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Adding Arrow Shaped Line To Slide</Title>
+                  <Description>Aspose.Slides for .NET  allows developers to configure some properties of the line to make it look more appealing. In this example, we will see how we can add arrow shaped line to the slide using Aspose.Slides for .NET.</Description>
+                  <FolderName>AddingArrowShapedLine</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Adding Line Shape to Slide</DisplayName>
+                    <Url>Adding+Line+Shape+to+Slide</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\LineShape2.pptx</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+            </Folder>
+            <Folder>
+              <Title>Formatting Lines Of The Shapes</Title>
+              <Description>This section includes the following topics:
+ - Formatting the Lines of Shapes
+ - Formatting the Join Styles</Description>
+              <FolderName>FormattingLines</FolderName>
+              <Order>4</Order>
+              <Examples>
+                <Example>
+                  <Title>Formatting The Lines Of Shapes</Title>
+                  <Description>Using Aspose.Slides for .NET, you can change the format settings of the lines with which a shape is obtained. For example, you can change the width of the line, modify the color of the line, apply different kinds of styles on the lines etc.</Description>
+                  <FolderName>FormattingLines</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Formatting Lines of the Shapes</DisplayName>
+                    <Url>Formatting+Lines+of+the+Shapes</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\RectShpLn.pptx</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>FormattingThe Join Styles</Title>
+                  <Description>In this example, we will see how we can format the join styles using Aspose.Slides for .NET.</Description>
+                  <FolderName>FormattingJoinStyles</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Formatting Lines of the Shapes</DisplayName>
+                    <Url>Formatting+Lines+of+the+Shapes</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\RectShpLnJoin.pptx</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+            </Folder>
+            <Folder>
+              <Title>Adding Picture Frame To Slide</Title>
+              <Description>Picture frame is also one of the shapes offered by Aspose.Slides for .NET . Adding picture frame to a slide is bit trickier than simple shapes. A picture frame is like a picture in a frame. You can add any desired picture to your slide as a picture frame.</Description>
+              <FolderName>AddingPictureFrame</FolderName>
+              <Order>9</Order>
+              <Examples>
+                <Example>
+                  <Title>Adding Simple Picture Frames To Slides</Title>
+                  <Description>In this example, we will see how we can add simple picture frames to the slides using Aspose.Slides for .NET.</Description>
+                  <FolderName>AddingSimplePictureFrames</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Adding Picture Frame to Slide</DisplayName>
+                    <Url>Adding+Picture+Frame+to+Slide</Url>
+                  </DocLink>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Controlling Picture Frame Formatting</Title>
+                  <Description>In this example, we will see how we can control the formatting of a picture frame according to the requirement using Aspose.Slides for .NET.</Description>
+                  <FolderName>ControllingPictureFrameFormatting</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Adding Picture Frame to Slide</DisplayName>
+                    <Url>Adding+Picture+Frame+to+Slide</Url>
+                  </DocLink>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+            </Folder>
+            <Folder>
+              <Title>Working With OLE Object Frames</Title>
+              <Description>OLE stands for Object Linking &amp; Embedding . It's a Microsoft technology that allows objects created in one application to be embedded in another application. Aspose.Slides for .NET supports adding OLE Objects to the slides in the form of OLE Object Frames.
+
+This article explains different examples of working with Ole frames:
+
+ - Adding an OLE Object Frame to a Slide
+ - Accessing an OLE Object Frame from a Slide
+ - Changing an OLE Object data from a Slide</Description>
+              <FolderName>OLEObjectFrames</FolderName>
+              <Order>12</Order>
+              <Examples>
+                <Example>
+                  <Title>Adding An OLE Object Frame To A Slide</Title>
+                  <Description>In this example, we will see how we can add an OLE object frame to a slide using Aspose.Slides for .NET.</Description>
+                  <FolderName>AddingOLEObjectFrame</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Working With OLE Object Frames</DisplayName>
+                    <Url>Working+with+OLE+Object+Frames</Url>
+                  </DocLink>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Accessing An OLE Object Frame From A Slide</Title>
+                  <Description>In this example, we will see how we can access an OLE object frame from a slide using Aspose.Slides for .NET.</Description>
+                  <FolderName>AccessingOLEObjectFrame</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Working with OLE Object Frames</DisplayName>
+                    <Url>Working+with+OLE+Object+Frames</Url>
+                  </DocLink>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Changing An OLE Object Data From A Slide</Title>
+                  <Description>In this example, we will see how we can change an OLE object data from a slide using Aspose.Slides for .NET.</Description>
+                  <FolderName>ChangingOLEObjectData</FolderName>
+                  <Order>3</Order>
+                  <DocLink>
+                    <DisplayName>Working with OLE Object Frames</DisplayName>
+                    <Url>Working+with+OLE+Object+Frames</Url>
+                  </DocLink>
                   <Type>Console</Type>
                 </Example>
               </Examples>

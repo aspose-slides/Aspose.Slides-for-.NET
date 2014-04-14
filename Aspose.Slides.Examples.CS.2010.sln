@@ -10,6 +10,142 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccessingOpenDocument", "Pr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConvertingToPDF", "ProgrammersGuide\WorkingWithPresentation\ConvertingToPDF\CSharp\ConvertingToPDF.csproj", "{3F70B285-676F-49B2-B557-67DB27DDEDB9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConvertingPresentationToHTML", "ProgrammersGuide\WorkingWithPresentation\ConvertingPresentationToHTML\CSharp\ConvertingPresentationToHTML.csproj", "{184DFCE4-F8CD-49C3-B4A8-A41672CB4A7F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConvertingPresentationWithNotesToTiff", "ProgrammersGuide\WorkingWithPresentation\ConvertingPresentationWithNotesToTiff\CSharp\ConvertingPresentationWithNotesToTiff.csproj", "{3D03D1FA-35B0-4F3E-9FA8-3DD3F295F49B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OpeningAPresentation", "OpeningAPresentation", "{8200B87E-ABB0-445A-AF88-719C66315854}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpeningaPresentation", "ProgrammersGuide\WorkingWithPresentation\OpeningAPresentation\OpeningaPresentation\CSharp\OpeningaPresentation.csproj", "{9DF956F1-C219-48F1-BC74-27921055F873}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpeningPasswordPresentation", "ProgrammersGuide\WorkingWithPresentation\OpeningAPresentation\OpeningPasswordPresentation\CSharp\OpeningPasswordPresentation.csproj", "{214CCB69-AD46-4F3A-88CA-1AB8A18F7AA5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccessingDocumentProperties", "ProgrammersGuide\WorkingWithPresentation\OpeningAPresentation\AccessingDocumentProperties\CSharp\AccessingDocumentProperties.csproj", "{B490984F-8008-47F6-B04F-A2527FBC4DE2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SavingAPresentation", "SavingAPresentation", "{1D808FC8-1B26-4016-99D8-E93CE2E3960B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaveToFile", "ProgrammersGuide\WorkingWithPresentation\SavingAPresentation\SaveToFile\CSharp\SaveToFile.csproj", "{38A6FB2F-ABCA-4ED2-BCB2-68E3CF28119C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaveWithPasswordProtection", "ProgrammersGuide\WorkingWithPresentation\SavingAPresentation\SaveWithPasswordProtection\CSharp\SaveWithPasswordProtection.csproj", "{03DAFF4E-F490-491B-AF09-FE8248094439}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SavingAPresentationProperties", "ProgrammersGuide\WorkingWithPresentation\SavingAPresentation\SavingAPresentationProperties\CSharp\SavingAPresentationProperties.csproj", "{AC670C96-F5F5-4473-9D20-B5A052E7A81F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaveAsReadOnly", "ProgrammersGuide\WorkingWithPresentation\SavingAPresentation\SaveAsReadOnly\CSharp\SaveAsReadOnly.csproj", "{D3FACE5F-C639-48A5-832D-92C839F078DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemovingWriteProtection", "ProgrammersGuide\WorkingWithPresentation\SavingAPresentation\RemovingWriteProtection\CSharp\RemovingWriteProtection.csproj", "{EFEFCD69-13E0-43C3-BFFC-974846D17B2D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ManagingPresentationProperties", "ManagingPresentationProperties", "{91DD0B0F-473A-4910-A1FD-012157098F93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccessingBuiltinProperties", "ProgrammersGuide\WorkingWithPresentation\ManagingPresentationProperties\AccessingBuiltinProperties\CSharp\AccessingBuiltinProperties.csproj", "{C5718BDB-AE24-4BA8-B514-14EE052489CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModifyingBuiltinProperties", "ProgrammersGuide\WorkingWithPresentation\ManagingPresentationProperties\ModifyingBuiltinProperties\CSharp\ModifyingBuiltinProperties.csproj", "{BF63384D-71DF-4D51-85B4-E124DDF3C079}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccessingModifyingProperties", "ProgrammersGuide\WorkingWithPresentation\ManagingPresentationProperties\AccessingModifyingProperties\CSharp\AccessingModifyingProperties.csproj", "{05AD8F27-1B79-486C-9649-FBB22F74478B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ConvertingPresentationToTIFF", "ConvertingPresentationToTIFF", "{0744DDAD-3242-47E0-B324-50482F4F2AAC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConvertingWithDefaultSize", "ProgrammersGuide\WorkingWithPresentation\ConvertingPresentationToTIFF\ConvertingWithDefaultSize\CSharp\ConvertingWithDefaultSize.csproj", "{B0FA7C63-A2B8-4BF0-B350-89A31058A039}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConvertingWithCustomSize", "ProgrammersGuide\WorkingWithPresentation\ConvertingPresentationToTIFF\ConvertingWithCustomSize\CSharp\ConvertingWithCustomSize.csproj", "{7DAE506D-71F4-4E91-A04A-203FC720D614}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ConvertingPresentationToXPS", "ConvertingPresentationToXPS", "{6AFD1A86-C27F-4A06-BD1A-651B56D0DD86}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConvertingWithoutXpsOptions", "ProgrammersGuide\WorkingWithPresentation\ConvertingPresentationToXPS\ConvertingWithoutXpsOptions\CSharp\ConvertingWithoutXpsOptions.csproj", "{CD95CC11-B161-4158-BAC6-072C9772D65D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConvertingWiithXpsOptions", "ProgrammersGuide\WorkingWithPresentation\ConvertingPresentationToXPS\ConvertingWiithXpsOptions\CSharp\ConvertingWiithXpsOptions.csproj", "{A58F8B2D-1652-440E-BE75-CA9E09E37B70}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WorkingWithSlidesInPresentation", "WorkingWithSlidesInPresentation", "{DC231317-49AB-4C12-AE25-6C9CCEDFEFBE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddingSlidesToPresentation", "ProgrammersGuide\WorkingWithSlidesInPresentation\AddingSlidesToPresentation\CSharp\AddingSlidesToPresentation.csproj", "{6192905E-2033-4148-A4F0-77A31FB069A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccessingSlidesOfAPresentation", "ProgrammersGuide\WorkingWithSlidesInPresentation\AccessingSlidesOfAPresentation\CSharp\AccessingSlidesOfAPresentation.csproj", "{9D3559C8-F372-403D-9180-5F9819B32E8E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChangingPositionOfASlide", "ProgrammersGuide\WorkingWithSlidesInPresentation\ChangingPositionOfASlide\CSharp\ChangingPositionOfASlide.csproj", "{9F11B66E-3720-47EE-BD2F-CDEE3746DE7F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SettingBackgroundColorToGradientToSlides", "ProgrammersGuide\WorkingWithSlidesInPresentation\SettingBackgroundColorToGradientToSlides\CSharp\SettingBackgroundColorToGradientToSlides.csproj", "{F933A489-0415-414E-B130-BBEC1147B673}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SettingImageAsBackgroundToSlides", "ProgrammersGuide\WorkingWithSlidesInPresentation\SettingImageAsBackgroundToSlides\CSharp\SettingImageAsBackgroundToSlides.csproj", "{5AD95C75-1CD9-4B1F-8DC7-3B95A19EA49C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreatingSlidesSVGImage", "ProgrammersGuide\WorkingWithSlidesInPresentation\CreatingSlidesSVGImage\CSharp\CreatingSlidesSVGImage.csproj", "{32A6CADE-69FE-4D0F-89CC-9CD33BACEEC5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RemovingSlidesFromAPresentation", "RemovingSlidesFromAPresentation", "{40FFF66E-3B0F-4B5E-9410-C4E12E94DE80}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingSlideReference", "ProgrammersGuide\WorkingWithSlidesInPresentation\RemovingSlidesFromAPresentation\UsingSlideReference\CSharp\UsingSlideReference.csproj", "{60A44F9B-5D2F-4537-81DA-C1480161C672}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingSlideIndex", "ProgrammersGuide\WorkingWithSlidesInPresentation\RemovingSlidesFromAPresentation\UsingSlideIndex\CSharp\UsingSlideIndex.csproj", "{565969B6-85EC-412C-8DE0-ABC89DA33927}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CloningSlidesinPresentation", "CloningSlidesinPresentation", "{008661DC-56B2-414F-9914-FF3A2C02FB8D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WithinSamePresentationfromOnePositiontoEnd", "ProgrammersGuide\WorkingWithSlidesInPresentation\CloningSlidesinPresentation\WithinSamePresentationfromOnePositiontoEnd\CSharp\WithinSamePresentationfromOnePositiontoEnd.csproj", "{D4C9C9DC-29CD-41CF-9A3F-691AE6865828}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FromOnePositiontoAnotherwithinSamePresentation", "ProgrammersGuide\WorkingWithSlidesInPresentation\CloningSlidesinPresentation\FromOnePositiontoAnotherwithinSamePresentation\CSharp\FromOnePositiontoAnotherwithinSamePresentation.csproj", "{690A6E72-C8F6-46A2-A7B7-408FB9940DB8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InAnotherPresentationatEndofExistingSlides", "ProgrammersGuide\WorkingWithSlidesInPresentation\CloningSlidesinPresentation\InAnotherPresentationatEndofExistingSlides\CSharp\InAnotherPresentationatEndofExistingSlides.csproj", "{D03E4C9B-3D81-437C-A420-EDAC487293AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InAnotherPresentationatSpecifiedPosition", "ProgrammersGuide\WorkingWithSlidesInPresentation\CloningSlidesinPresentation\InAnotherPresentationatSpecifiedPosition\CSharp\InAnotherPresentationatSpecifiedPosition.csproj", "{41D728F9-7841-4E0A-AF57-BC893C1AC987}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnotherPresentationWithMaster", "ProgrammersGuide\WorkingWithSlidesInPresentation\CloningSlidesinPresentation\AnotherPresentationWithMaster\CSharp\AnotherPresentationWithMaster.csproj", "{72A6FC04-C1E6-47B2-B05D-45C991171656}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SettingtheBackgroundColortoSlides", "SettingtheBackgroundColortoSlides", "{ECBA81BB-02FA-4F46-8F07-0AB093A78CD4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SettingBackgroundMaster", "ProgrammersGuide\WorkingWithSlidesInPresentation\SettingtheBackgroundColortoSlides\SettingBackgroundMaster\CSharp\SettingBackgroundMaster.csproj", "{32C35FFE-7A2F-417C-A1D4-045DA2D188CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SettingBackgroundNormal", "ProgrammersGuide\WorkingWithSlidesInPresentation\SettingtheBackgroundColortoSlides\SettingBackgroundNormal\CSharp\SettingBackgroundNormal.csproj", "{572C355F-A962-44B3-A25E-EAAA8CBEABBA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CreatingSlidesThumbnailImage", "CreatingSlidesThumbnailImage", "{633C847E-1C6E-44CB-BE39-4CF70F45A7E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeneratingThumbnailFromSlide", "ProgrammersGuide\WorkingWithSlidesInPresentation\CreatingSlidesThumbnailImage\GeneratingThumbnailFromSlide\CSharp\GeneratingThumbnailFromSlide.csproj", "{94753039-70E6-4EC5-A9DC-A0500E461D98}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeneratThumbnailDimensions", "ProgrammersGuide\WorkingWithSlidesInPresentation\CreatingSlidesThumbnailImage\GeneratThumbnailDimensions\CSharp\GeneratThumbnailDimensions.csproj", "{C6A77DD1-1486-4E17-B76F-AB0A2327C628}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeneratingThumbnailSlideNotes", "ProgrammersGuide\WorkingWithSlidesInPresentation\CreatingSlidesThumbnailImage\GeneratingThumbnailSlideNotes\CSharp\GeneratingThumbnailSlideNotes.csproj", "{F79F8E5A-E62B-43A0-A6CF-6AC01DC15F55}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ManagingSlidesTransitions", "ManagingSlidesTransitions", "{BD2623CA-E534-441D-8E97-5337B22507CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagingSimpleSlideTransitions", "ProgrammersGuide\WorkingWithSlidesInPresentation\ManagingSlidesTransitions\ManagingSimpleSlideTransitions\CSharp\ManagingSimpleSlideTransitions.csproj", "{5E7D7593-B408-4432-992B-8C24526A0044}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagingBetterSlideTransitions", "ProgrammersGuide\WorkingWithSlidesInPresentation\ManagingSlidesTransitions\ManagingBetterSlideTransitions\CSharp\ManagingBetterSlideTransitions.csproj", "{C4A83A2A-EB51-4394-A775-4688D1EE809B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WorkingWithShapes", "WorkingWithShapes", "{843750F0-0E07-4C22-A4CD-AB5BF4E94D43}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindingShapeInSlide", "ProgrammersGuide\WorkingWithShapes\FindingShapeInSlide\CSharp\FindingShapeInSlide.csproj", "{B4827478-98F9-466F-B8FD-4951B6A0F7F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimationsOnShapes", "ProgrammersGuide\WorkingWithShapes\AnimationsOnShapes\CSharp\AnimationsOnShapes.csproj", "{F6C8A4AA-9502-45F8-A71D-5CFFAE9CC1B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FillingShapesGradient", "ProgrammersGuide\WorkingWithShapes\FillingShapesGradient\CSharp\FillingShapesGradient.csproj", "{4EEAF37D-3649-48A8-BDEA-9551741A5788}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FillingShapesPattern", "ProgrammersGuide\WorkingWithShapes\FillingShapesPattern\CSharp\FillingShapesPattern.csproj", "{1A312705-D475-4479-99C1-F72232DC7F4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FillingShapesPicture", "ProgrammersGuide\WorkingWithShapes\FillingShapesPicture\CSharp\FillingShapesPicture.csproj", "{194007D1-C870-4A76-9B6A-5E25A47A9230}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RotatingShapes", "ProgrammersGuide\WorkingWithShapes\RotatingShapes\CSharp\RotatingShapes.csproj", "{A6B655D5-72C9-4A18-B4E9-2F7593574E70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddingAudioFrame", "ProgrammersGuide\WorkingWithShapes\AddingAudioFrame\CSharp\AddingAudioFrame.csproj", "{CCF3008B-C636-412D-9F17-0AA403B5C427}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddingVideoFrame", "ProgrammersGuide\WorkingWithShapes\AddingVideoFrame\CSharp\AddingVideoFrame.csproj", "{75880CEB-344E-4442-825B-3F721BC1CC4B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AddingLineShapeToSlide", "AddingLineShapeToSlide", "{0B51CD9E-34C8-42FD-962C-78FE5422773B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddingPlainLineToSlide", "ProgrammersGuide\WorkingWithShapes\AddingLineShapeToSlide\AddingPlainLineToSlide\CSharp\AddingPlainLineToSlide.csproj", "{6ADC5D86-7C22-49BE-B360-A204227079CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddingArrowShapedLine", "ProgrammersGuide\WorkingWithShapes\AddingLineShapeToSlide\AddingArrowShapedLine\CSharp\AddingArrowShapedLine.csproj", "{C2FEA37B-62B5-4C11-BA40-0BAB392885AA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FormattingLines", "FormattingLines", "{5AF54FC4-218D-41F0-BB2B-A6EBD2CE24C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormattingLines", "ProgrammersGuide\WorkingWithShapes\FormattingLines\FormattingLines\CSharp\FormattingLines.csproj", "{17EB675F-6C6D-4B90-A1A3-FF9EC2506E0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormattingJoinStyles", "ProgrammersGuide\WorkingWithShapes\FormattingLines\FormattingJoinStyles\CSharp\FormattingJoinStyles.csproj", "{13995CC7-DA49-4676-BB07-82F4CB4E30BE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AddingPictureFrame", "AddingPictureFrame", "{7AC2D633-0C10-4146-9DF7-F6CBE0775C2B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControllingPictureFrameFormatting", "ProgrammersGuide\WorkingWithShapes\AddingPictureFrame\ControllingPictureFrameFormatting\CSharp\ControllingPictureFrameFormatting.csproj", "{72ABFD53-239C-41BC-9334-C1D6D6AC9E43}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OLEObjectFrames", "OLEObjectFrames", "{DB918CAD-366E-4094-9FA9-302BEB0CE004}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccessingOLEObjectFrame", "ProgrammersGuide\WorkingWithShapes\OLEObjectFrames\AccessingOLEObjectFrame\CSharp\AccessingOLEObjectFrame.csproj", "{2FF2C259-D11D-47D0-8471-38A452879724}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChangingOLEObjectData", "ProgrammersGuide\WorkingWithShapes\OLEObjectFrames\ChangingOLEObjectData\CSharp\ChangingOLEObjectData.csproj", "{C3C18C8C-A7E3-44F9-B456-28F7BCA70C31}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +161,162 @@ Global
 		{3F70B285-676F-49B2-B557-67DB27DDEDB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3F70B285-676F-49B2-B557-67DB27DDEDB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F70B285-676F-49B2-B557-67DB27DDEDB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{184DFCE4-F8CD-49C3-B4A8-A41672CB4A7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{184DFCE4-F8CD-49C3-B4A8-A41672CB4A7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{184DFCE4-F8CD-49C3-B4A8-A41672CB4A7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D03D1FA-35B0-4F3E-9FA8-3DD3F295F49B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D03D1FA-35B0-4F3E-9FA8-3DD3F295F49B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D03D1FA-35B0-4F3E-9FA8-3DD3F295F49B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DF956F1-C219-48F1-BC74-27921055F873}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DF956F1-C219-48F1-BC74-27921055F873}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DF956F1-C219-48F1-BC74-27921055F873}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{214CCB69-AD46-4F3A-88CA-1AB8A18F7AA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{214CCB69-AD46-4F3A-88CA-1AB8A18F7AA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{214CCB69-AD46-4F3A-88CA-1AB8A18F7AA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B490984F-8008-47F6-B04F-A2527FBC4DE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B490984F-8008-47F6-B04F-A2527FBC4DE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B490984F-8008-47F6-B04F-A2527FBC4DE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38A6FB2F-ABCA-4ED2-BCB2-68E3CF28119C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38A6FB2F-ABCA-4ED2-BCB2-68E3CF28119C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38A6FB2F-ABCA-4ED2-BCB2-68E3CF28119C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03DAFF4E-F490-491B-AF09-FE8248094439}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03DAFF4E-F490-491B-AF09-FE8248094439}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03DAFF4E-F490-491B-AF09-FE8248094439}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC670C96-F5F5-4473-9D20-B5A052E7A81F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC670C96-F5F5-4473-9D20-B5A052E7A81F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC670C96-F5F5-4473-9D20-B5A052E7A81F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3FACE5F-C639-48A5-832D-92C839F078DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3FACE5F-C639-48A5-832D-92C839F078DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3FACE5F-C639-48A5-832D-92C839F078DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFEFCD69-13E0-43C3-BFFC-974846D17B2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFEFCD69-13E0-43C3-BFFC-974846D17B2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFEFCD69-13E0-43C3-BFFC-974846D17B2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5718BDB-AE24-4BA8-B514-14EE052489CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5718BDB-AE24-4BA8-B514-14EE052489CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5718BDB-AE24-4BA8-B514-14EE052489CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF63384D-71DF-4D51-85B4-E124DDF3C079}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF63384D-71DF-4D51-85B4-E124DDF3C079}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF63384D-71DF-4D51-85B4-E124DDF3C079}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05AD8F27-1B79-486C-9649-FBB22F74478B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05AD8F27-1B79-486C-9649-FBB22F74478B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05AD8F27-1B79-486C-9649-FBB22F74478B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0FA7C63-A2B8-4BF0-B350-89A31058A039}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0FA7C63-A2B8-4BF0-B350-89A31058A039}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0FA7C63-A2B8-4BF0-B350-89A31058A039}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DAE506D-71F4-4E91-A04A-203FC720D614}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DAE506D-71F4-4E91-A04A-203FC720D614}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DAE506D-71F4-4E91-A04A-203FC720D614}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD95CC11-B161-4158-BAC6-072C9772D65D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD95CC11-B161-4158-BAC6-072C9772D65D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD95CC11-B161-4158-BAC6-072C9772D65D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A58F8B2D-1652-440E-BE75-CA9E09E37B70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A58F8B2D-1652-440E-BE75-CA9E09E37B70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A58F8B2D-1652-440E-BE75-CA9E09E37B70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6192905E-2033-4148-A4F0-77A31FB069A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6192905E-2033-4148-A4F0-77A31FB069A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6192905E-2033-4148-A4F0-77A31FB069A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D3559C8-F372-403D-9180-5F9819B32E8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D3559C8-F372-403D-9180-5F9819B32E8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D3559C8-F372-403D-9180-5F9819B32E8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F11B66E-3720-47EE-BD2F-CDEE3746DE7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F11B66E-3720-47EE-BD2F-CDEE3746DE7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F11B66E-3720-47EE-BD2F-CDEE3746DE7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F933A489-0415-414E-B130-BBEC1147B673}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F933A489-0415-414E-B130-BBEC1147B673}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F933A489-0415-414E-B130-BBEC1147B673}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AD95C75-1CD9-4B1F-8DC7-3B95A19EA49C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AD95C75-1CD9-4B1F-8DC7-3B95A19EA49C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AD95C75-1CD9-4B1F-8DC7-3B95A19EA49C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32A6CADE-69FE-4D0F-89CC-9CD33BACEEC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32A6CADE-69FE-4D0F-89CC-9CD33BACEEC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32A6CADE-69FE-4D0F-89CC-9CD33BACEEC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60A44F9B-5D2F-4537-81DA-C1480161C672}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60A44F9B-5D2F-4537-81DA-C1480161C672}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60A44F9B-5D2F-4537-81DA-C1480161C672}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{565969B6-85EC-412C-8DE0-ABC89DA33927}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{565969B6-85EC-412C-8DE0-ABC89DA33927}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{565969B6-85EC-412C-8DE0-ABC89DA33927}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4C9C9DC-29CD-41CF-9A3F-691AE6865828}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4C9C9DC-29CD-41CF-9A3F-691AE6865828}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4C9C9DC-29CD-41CF-9A3F-691AE6865828}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{690A6E72-C8F6-46A2-A7B7-408FB9940DB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{690A6E72-C8F6-46A2-A7B7-408FB9940DB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{690A6E72-C8F6-46A2-A7B7-408FB9940DB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D03E4C9B-3D81-437C-A420-EDAC487293AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D03E4C9B-3D81-437C-A420-EDAC487293AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D03E4C9B-3D81-437C-A420-EDAC487293AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41D728F9-7841-4E0A-AF57-BC893C1AC987}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41D728F9-7841-4E0A-AF57-BC893C1AC987}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41D728F9-7841-4E0A-AF57-BC893C1AC987}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72A6FC04-C1E6-47B2-B05D-45C991171656}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72A6FC04-C1E6-47B2-B05D-45C991171656}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72A6FC04-C1E6-47B2-B05D-45C991171656}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32C35FFE-7A2F-417C-A1D4-045DA2D188CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32C35FFE-7A2F-417C-A1D4-045DA2D188CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32C35FFE-7A2F-417C-A1D4-045DA2D188CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{572C355F-A962-44B3-A25E-EAAA8CBEABBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{572C355F-A962-44B3-A25E-EAAA8CBEABBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{572C355F-A962-44B3-A25E-EAAA8CBEABBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94753039-70E6-4EC5-A9DC-A0500E461D98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94753039-70E6-4EC5-A9DC-A0500E461D98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94753039-70E6-4EC5-A9DC-A0500E461D98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6A77DD1-1486-4E17-B76F-AB0A2327C628}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6A77DD1-1486-4E17-B76F-AB0A2327C628}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6A77DD1-1486-4E17-B76F-AB0A2327C628}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F79F8E5A-E62B-43A0-A6CF-6AC01DC15F55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F79F8E5A-E62B-43A0-A6CF-6AC01DC15F55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F79F8E5A-E62B-43A0-A6CF-6AC01DC15F55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E7D7593-B408-4432-992B-8C24526A0044}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E7D7593-B408-4432-992B-8C24526A0044}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E7D7593-B408-4432-992B-8C24526A0044}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4A83A2A-EB51-4394-A775-4688D1EE809B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4A83A2A-EB51-4394-A775-4688D1EE809B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4A83A2A-EB51-4394-A775-4688D1EE809B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4827478-98F9-466F-B8FD-4951B6A0F7F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4827478-98F9-466F-B8FD-4951B6A0F7F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4827478-98F9-466F-B8FD-4951B6A0F7F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6C8A4AA-9502-45F8-A71D-5CFFAE9CC1B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6C8A4AA-9502-45F8-A71D-5CFFAE9CC1B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6C8A4AA-9502-45F8-A71D-5CFFAE9CC1B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EEAF37D-3649-48A8-BDEA-9551741A5788}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EEAF37D-3649-48A8-BDEA-9551741A5788}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EEAF37D-3649-48A8-BDEA-9551741A5788}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A312705-D475-4479-99C1-F72232DC7F4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A312705-D475-4479-99C1-F72232DC7F4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A312705-D475-4479-99C1-F72232DC7F4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{194007D1-C870-4A76-9B6A-5E25A47A9230}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{194007D1-C870-4A76-9B6A-5E25A47A9230}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{194007D1-C870-4A76-9B6A-5E25A47A9230}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6B655D5-72C9-4A18-B4E9-2F7593574E70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6B655D5-72C9-4A18-B4E9-2F7593574E70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6B655D5-72C9-4A18-B4E9-2F7593574E70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCF3008B-C636-412D-9F17-0AA403B5C427}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCF3008B-C636-412D-9F17-0AA403B5C427}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCF3008B-C636-412D-9F17-0AA403B5C427}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75880CEB-344E-4442-825B-3F721BC1CC4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75880CEB-344E-4442-825B-3F721BC1CC4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75880CEB-344E-4442-825B-3F721BC1CC4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6ADC5D86-7C22-49BE-B360-A204227079CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6ADC5D86-7C22-49BE-B360-A204227079CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6ADC5D86-7C22-49BE-B360-A204227079CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2FEA37B-62B5-4C11-BA40-0BAB392885AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2FEA37B-62B5-4C11-BA40-0BAB392885AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2FEA37B-62B5-4C11-BA40-0BAB392885AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17EB675F-6C6D-4B90-A1A3-FF9EC2506E0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17EB675F-6C6D-4B90-A1A3-FF9EC2506E0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17EB675F-6C6D-4B90-A1A3-FF9EC2506E0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13995CC7-DA49-4676-BB07-82F4CB4E30BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13995CC7-DA49-4676-BB07-82F4CB4E30BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13995CC7-DA49-4676-BB07-82F4CB4E30BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72ABFD53-239C-41BC-9334-C1D6D6AC9E43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72ABFD53-239C-41BC-9334-C1D6D6AC9E43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72ABFD53-239C-41BC-9334-C1D6D6AC9E43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FF2C259-D11D-47D0-8471-38A452879724}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FF2C259-D11D-47D0-8471-38A452879724}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FF2C259-D11D-47D0-8471-38A452879724}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3C18C8C-A7E3-44F9-B456-28F7BCA70C31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3C18C8C-A7E3-44F9-B456-28F7BCA70C31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3C18C8C-A7E3-44F9-B456-28F7BCA70C31}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -34,5 +326,73 @@ Global
 		{AC244D1C-EDF9-45D2-B7E6-2A1A6231479D} = {AED03FE1-3B7C-4FE5-9875-0C00FF27C8D9}
 		{7564D8FC-5F04-4437-B131-4BA457CC119A} = {AED03FE1-3B7C-4FE5-9875-0C00FF27C8D9}
 		{3F70B285-676F-49B2-B557-67DB27DDEDB9} = {AED03FE1-3B7C-4FE5-9875-0C00FF27C8D9}
+		{184DFCE4-F8CD-49C3-B4A8-A41672CB4A7F} = {AED03FE1-3B7C-4FE5-9875-0C00FF27C8D9}
+		{3D03D1FA-35B0-4F3E-9FA8-3DD3F295F49B} = {AED03FE1-3B7C-4FE5-9875-0C00FF27C8D9}
+		{8200B87E-ABB0-445A-AF88-719C66315854} = {AED03FE1-3B7C-4FE5-9875-0C00FF27C8D9}
+		{9DF956F1-C219-48F1-BC74-27921055F873} = {8200B87E-ABB0-445A-AF88-719C66315854}
+		{214CCB69-AD46-4F3A-88CA-1AB8A18F7AA5} = {8200B87E-ABB0-445A-AF88-719C66315854}
+		{B490984F-8008-47F6-B04F-A2527FBC4DE2} = {8200B87E-ABB0-445A-AF88-719C66315854}
+		{1D808FC8-1B26-4016-99D8-E93CE2E3960B} = {AED03FE1-3B7C-4FE5-9875-0C00FF27C8D9}
+		{38A6FB2F-ABCA-4ED2-BCB2-68E3CF28119C} = {1D808FC8-1B26-4016-99D8-E93CE2E3960B}
+		{03DAFF4E-F490-491B-AF09-FE8248094439} = {1D808FC8-1B26-4016-99D8-E93CE2E3960B}
+		{AC670C96-F5F5-4473-9D20-B5A052E7A81F} = {1D808FC8-1B26-4016-99D8-E93CE2E3960B}
+		{D3FACE5F-C639-48A5-832D-92C839F078DE} = {1D808FC8-1B26-4016-99D8-E93CE2E3960B}
+		{EFEFCD69-13E0-43C3-BFFC-974846D17B2D} = {1D808FC8-1B26-4016-99D8-E93CE2E3960B}
+		{91DD0B0F-473A-4910-A1FD-012157098F93} = {AED03FE1-3B7C-4FE5-9875-0C00FF27C8D9}
+		{C5718BDB-AE24-4BA8-B514-14EE052489CD} = {91DD0B0F-473A-4910-A1FD-012157098F93}
+		{BF63384D-71DF-4D51-85B4-E124DDF3C079} = {91DD0B0F-473A-4910-A1FD-012157098F93}
+		{05AD8F27-1B79-486C-9649-FBB22F74478B} = {91DD0B0F-473A-4910-A1FD-012157098F93}
+		{0744DDAD-3242-47E0-B324-50482F4F2AAC} = {AED03FE1-3B7C-4FE5-9875-0C00FF27C8D9}
+		{B0FA7C63-A2B8-4BF0-B350-89A31058A039} = {0744DDAD-3242-47E0-B324-50482F4F2AAC}
+		{7DAE506D-71F4-4E91-A04A-203FC720D614} = {0744DDAD-3242-47E0-B324-50482F4F2AAC}
+		{6AFD1A86-C27F-4A06-BD1A-651B56D0DD86} = {AED03FE1-3B7C-4FE5-9875-0C00FF27C8D9}
+		{CD95CC11-B161-4158-BAC6-072C9772D65D} = {6AFD1A86-C27F-4A06-BD1A-651B56D0DD86}
+		{A58F8B2D-1652-440E-BE75-CA9E09E37B70} = {6AFD1A86-C27F-4A06-BD1A-651B56D0DD86}
+		{DC231317-49AB-4C12-AE25-6C9CCEDFEFBE} = {9DEC8096-7365-4336-8861-7DD0560A4340}
+		{6192905E-2033-4148-A4F0-77A31FB069A8} = {DC231317-49AB-4C12-AE25-6C9CCEDFEFBE}
+		{9D3559C8-F372-403D-9180-5F9819B32E8E} = {DC231317-49AB-4C12-AE25-6C9CCEDFEFBE}
+		{9F11B66E-3720-47EE-BD2F-CDEE3746DE7F} = {DC231317-49AB-4C12-AE25-6C9CCEDFEFBE}
+		{F933A489-0415-414E-B130-BBEC1147B673} = {DC231317-49AB-4C12-AE25-6C9CCEDFEFBE}
+		{5AD95C75-1CD9-4B1F-8DC7-3B95A19EA49C} = {DC231317-49AB-4C12-AE25-6C9CCEDFEFBE}
+		{32A6CADE-69FE-4D0F-89CC-9CD33BACEEC5} = {DC231317-49AB-4C12-AE25-6C9CCEDFEFBE}
+		{40FFF66E-3B0F-4B5E-9410-C4E12E94DE80} = {DC231317-49AB-4C12-AE25-6C9CCEDFEFBE}
+		{60A44F9B-5D2F-4537-81DA-C1480161C672} = {40FFF66E-3B0F-4B5E-9410-C4E12E94DE80}
+		{565969B6-85EC-412C-8DE0-ABC89DA33927} = {40FFF66E-3B0F-4B5E-9410-C4E12E94DE80}
+		{008661DC-56B2-414F-9914-FF3A2C02FB8D} = {DC231317-49AB-4C12-AE25-6C9CCEDFEFBE}
+		{D4C9C9DC-29CD-41CF-9A3F-691AE6865828} = {008661DC-56B2-414F-9914-FF3A2C02FB8D}
+		{690A6E72-C8F6-46A2-A7B7-408FB9940DB8} = {008661DC-56B2-414F-9914-FF3A2C02FB8D}
+		{D03E4C9B-3D81-437C-A420-EDAC487293AD} = {008661DC-56B2-414F-9914-FF3A2C02FB8D}
+		{41D728F9-7841-4E0A-AF57-BC893C1AC987} = {008661DC-56B2-414F-9914-FF3A2C02FB8D}
+		{72A6FC04-C1E6-47B2-B05D-45C991171656} = {008661DC-56B2-414F-9914-FF3A2C02FB8D}
+		{ECBA81BB-02FA-4F46-8F07-0AB093A78CD4} = {DC231317-49AB-4C12-AE25-6C9CCEDFEFBE}
+		{32C35FFE-7A2F-417C-A1D4-045DA2D188CD} = {ECBA81BB-02FA-4F46-8F07-0AB093A78CD4}
+		{572C355F-A962-44B3-A25E-EAAA8CBEABBA} = {ECBA81BB-02FA-4F46-8F07-0AB093A78CD4}
+		{633C847E-1C6E-44CB-BE39-4CF70F45A7E7} = {DC231317-49AB-4C12-AE25-6C9CCEDFEFBE}
+		{94753039-70E6-4EC5-A9DC-A0500E461D98} = {633C847E-1C6E-44CB-BE39-4CF70F45A7E7}
+		{C6A77DD1-1486-4E17-B76F-AB0A2327C628} = {633C847E-1C6E-44CB-BE39-4CF70F45A7E7}
+		{F79F8E5A-E62B-43A0-A6CF-6AC01DC15F55} = {633C847E-1C6E-44CB-BE39-4CF70F45A7E7}
+		{BD2623CA-E534-441D-8E97-5337B22507CF} = {DC231317-49AB-4C12-AE25-6C9CCEDFEFBE}
+		{5E7D7593-B408-4432-992B-8C24526A0044} = {BD2623CA-E534-441D-8E97-5337B22507CF}
+		{C4A83A2A-EB51-4394-A775-4688D1EE809B} = {BD2623CA-E534-441D-8E97-5337B22507CF}
+		{843750F0-0E07-4C22-A4CD-AB5BF4E94D43} = {9DEC8096-7365-4336-8861-7DD0560A4340}
+		{B4827478-98F9-466F-B8FD-4951B6A0F7F9} = {843750F0-0E07-4C22-A4CD-AB5BF4E94D43}
+		{F6C8A4AA-9502-45F8-A71D-5CFFAE9CC1B3} = {843750F0-0E07-4C22-A4CD-AB5BF4E94D43}
+		{4EEAF37D-3649-48A8-BDEA-9551741A5788} = {843750F0-0E07-4C22-A4CD-AB5BF4E94D43}
+		{1A312705-D475-4479-99C1-F72232DC7F4C} = {843750F0-0E07-4C22-A4CD-AB5BF4E94D43}
+		{194007D1-C870-4A76-9B6A-5E25A47A9230} = {843750F0-0E07-4C22-A4CD-AB5BF4E94D43}
+		{A6B655D5-72C9-4A18-B4E9-2F7593574E70} = {843750F0-0E07-4C22-A4CD-AB5BF4E94D43}
+		{CCF3008B-C636-412D-9F17-0AA403B5C427} = {843750F0-0E07-4C22-A4CD-AB5BF4E94D43}
+		{75880CEB-344E-4442-825B-3F721BC1CC4B} = {843750F0-0E07-4C22-A4CD-AB5BF4E94D43}
+		{0B51CD9E-34C8-42FD-962C-78FE5422773B} = {843750F0-0E07-4C22-A4CD-AB5BF4E94D43}
+		{6ADC5D86-7C22-49BE-B360-A204227079CF} = {0B51CD9E-34C8-42FD-962C-78FE5422773B}
+		{C2FEA37B-62B5-4C11-BA40-0BAB392885AA} = {0B51CD9E-34C8-42FD-962C-78FE5422773B}
+		{5AF54FC4-218D-41F0-BB2B-A6EBD2CE24C5} = {843750F0-0E07-4C22-A4CD-AB5BF4E94D43}
+		{17EB675F-6C6D-4B90-A1A3-FF9EC2506E0A} = {5AF54FC4-218D-41F0-BB2B-A6EBD2CE24C5}
+		{13995CC7-DA49-4676-BB07-82F4CB4E30BE} = {5AF54FC4-218D-41F0-BB2B-A6EBD2CE24C5}
+		{7AC2D633-0C10-4146-9DF7-F6CBE0775C2B} = {843750F0-0E07-4C22-A4CD-AB5BF4E94D43}
+		{72ABFD53-239C-41BC-9334-C1D6D6AC9E43} = {7AC2D633-0C10-4146-9DF7-F6CBE0775C2B}
+		{DB918CAD-366E-4094-9FA9-302BEB0CE004} = {843750F0-0E07-4C22-A4CD-AB5BF4E94D43}
+		{2FF2C259-D11D-47D0-8471-38A452879724} = {DB918CAD-366E-4094-9FA9-302BEB0CE004}
+		{C3C18C8C-A7E3-44F9-B456-28F7BCA70C31} = {DB918CAD-366E-4094-9FA9-302BEB0CE004}
 	EndGlobalSection
 EndGlobal
