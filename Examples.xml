@@ -532,16 +532,6 @@ Further, XpsOptions class exposes SaveMetafileAsPng property that can be set to 
                 <DisplayName>Changing the Position of a Slide</DisplayName>
                 <Url>Changing+the+Position+of+a+Slide</Url>
               </DocLink>
-              <InputFiles>
-                <DataFile>
-                  <Path>..\Data\Aspose.pptx</Path>
-                </DataFile>
-              </InputFiles>
-              <OutputFiles>
-                <DataFile>
-                  <Path>..\Data\Aspose_out.pptx</Path>
-                </DataFile>
-              </OutputFiles>
               <Type>Console</Type>
             </Example>
             <Example>
@@ -553,16 +543,6 @@ Further, XpsOptions class exposes SaveMetafileAsPng property that can be set to 
                 <DisplayName>Setting the Background Color to a Gradient to Slides</DisplayName>
                 <Url>Setting+the+Background+Color+to+a+Gradient+to+Slides</Url>
               </DocLink>
-              <InputFiles>
-                <DataFile>
-                  <Path>..\Data\Aspose.pptx</Path>
-                </DataFile>
-              </InputFiles>
-              <OutputFiles>
-                <DataFile>
-                  <Path>..\Data\ContentBG_Grad.pptx</Path>
-                </DataFile>
-              </OutputFiles>
               <Type>Console</Type>
             </Example>
             <Example>
@@ -574,19 +554,6 @@ Further, XpsOptions class exposes SaveMetafileAsPng property that can be set to 
                 <DisplayName>Setting the Image as Background to Slides</DisplayName>
                 <Url>Setting+the+Image+as+Background+to+Slides</Url>
               </DocLink>
-              <InputFiles>
-                <DataFile>
-                  <Path>..\Data\Aspose.pptx</Path>
-                </DataFile>
-                <DataFile>
-                  <Path>..\Data\Tulips.jpg</Path>
-                </DataFile>
-              </InputFiles>
-              <OutputFiles>
-                <DataFile>
-                  <Path>..\Data\ContentBG_Img.pptx</Path>
-                </DataFile>
-              </OutputFiles>
               <Type>Console</Type>
             </Example>
             <Example>
@@ -598,16 +565,6 @@ Further, XpsOptions class exposes SaveMetafileAsPng property that can be set to 
                 <DisplayName>Creating Slides SVG Image</DisplayName>
                 <Url>Creating+Slides+SVG+Image</Url>
               </DocLink>
-              <InputFiles>
-                <DataFile>
-                  <Path>..\Data\Aspose.pptx</Path>
-                </DataFile>
-              </InputFiles>
-              <OutputFiles>
-                <DataFile>
-                  <Path>..\Data\Aspose.svg</Path>
-                </DataFile>
-              </OutputFiles>
               <Type>Console</Type>
             </Example>
           </Examples>
@@ -681,16 +638,6 @@ Further, XpsOptions class exposes SaveMetafileAsPng property that can be set to 
                     <DisplayName>Cloning Slides in Presentation</DisplayName>
                     <Url>Cloning+Slides+in+Presentation</Url>
                   </DocLink>
-                  <InputFiles>
-                    <DataFile>
-                      <Path>..\Data\Aspose.pptx</Path>
-                    </DataFile>
-                  </InputFiles>
-                  <OutputFiles>
-                    <DataFile>
-                      <Path>..\Data\Aspose_cloned.pptx</Path>
-                    </DataFile>
-                  </OutputFiles>
                   <Type>Console</Type>
                 </Example>
                 <Example>
@@ -702,16 +649,6 @@ Further, XpsOptions class exposes SaveMetafileAsPng property that can be set to 
                     <DisplayName>Cloning Slides in Presentation</DisplayName>
                     <Url>Cloning+Slides+in+Presentation</Url>
                   </DocLink>
-                  <InputFiles>
-                    <DataFile>
-                      <Path>..\Data\Aspose.pptx</Path>
-                    </DataFile>
-                  </InputFiles>
-                  <OutputFiles>
-                    <DataFile>
-                      <Path>..\Data\Aspose_clone.pptx</Path>
-                    </DataFile>
-                  </OutputFiles>
                   <Type>Console</Type>
                 </Example>
                 <Example>
@@ -723,16 +660,6 @@ Further, XpsOptions class exposes SaveMetafileAsPng property that can be set to 
                     <DisplayName>Cloning Slides in Presentation</DisplayName>
                     <Url>Cloning+Slides+in+Presentation</Url>
                   </DocLink>
-                  <InputFiles>
-                    <DataFile>
-                      <Path>..\Data\Aspose.pptx</Path>
-                    </DataFile>
-                  </InputFiles>
-                  <OutputFiles>
-                    <DataFile>
-                      <Path>..\Data\Aspose_out.pptx</Path>
-                    </DataFile>
-                  </OutputFiles>
                   <Type>Console</Type>
                 </Example>
                 <Example>
@@ -744,37 +671,17 @@ Further, XpsOptions class exposes SaveMetafileAsPng property that can be set to 
                     <DisplayName>Cloning Slides in Presentation</DisplayName>
                     <Url>Cloning+Slides+in+Presentation</Url>
                   </DocLink>
-                  <InputFiles>
-                    <DataFile>
-                      <Path>..\Data\Aspose.pptx</Path>
-                    </DataFile>
-                  </InputFiles>
-                  <OutputFiles>
-                    <DataFile>
-                      <Path>..\Data\Aspose_out.pptx</Path>
-                    </DataFile>
-                  </OutputFiles>
                   <Type>Console</Type>
                 </Example>
                 <Example>
                   <Title>In Another Presentation with Master Slide from Source Presentation at the End of the Existing Slides</Title>
                   <Description>You can clone a slide with master slide from one presentation from and use it in another presentation. For that,  you need to clone the desired master slide from source presentation to destination presentation first. Then you need to use that master slide for cloning slide with master slide.</Description>
-                  <FolderName>AnotherPresentationWithMaster</FolderName>
+                  <FolderName>InAnotherPresentationWithMasterSlideFromSourcePresentationattheEndoftheExistingSlides</FolderName>
                   <Order>5</Order>
                   <DocLink>
                     <DisplayName>Cloning Slides in Presentation</DisplayName>
-                    <Url>http://docs.aspose.com:8082/docs/display/slidesnet/Cloning+Slides+in+Presentation</Url>
+                    <Url>Cloning+Slides+in+Presentation</Url>
                   </DocLink>
-                  <InputFiles>
-                    <DataFile>
-                      <Path>..\Data\Aspose.pptx</Path>
-                    </DataFile>
-                  </InputFiles>
-                  <OutputFiles>
-                    <DataFile>
-                      <Path>..\Data\Aspose_out.pptx</Path>
-                    </DataFile>
-                  </OutputFiles>
                   <Type>Console</Type>
                 </Example>
               </Examples>
@@ -788,33 +695,23 @@ Further, XpsOptions class exposes SaveMetafileAsPng property that can be set to 
                 <Example>
                   <Title>Setting the Background Color of a Master Slide</Title>
                   <Description>A Master Slide is like a template that contains all formatting settings, which are applied on all other normal slides contained inside the presentation. Iif you change the background color of the master slide, all normal slides in the presentation would receive the same background color settings.</Description>
-                  <FolderName>SettingBackgroundMaster</FolderName>
+                  <FolderName>SettingBackgroundColorOfAMasterSlide</FolderName>
                   <Order>1</Order>
                   <DocLink>
                     <DisplayName>Setting the Background Color to Slides</DisplayName>
                     <Url>Setting+the+Background+Color+to+Slides</Url>
                   </DocLink>
-                  <OutputFiles>
-                    <DataFile>
-                      <Path>..\Data\Aspose.pptx</Path>
-                    </DataFile>
-                  </OutputFiles>
                   <Type>Console</Type>
                 </Example>
                 <Example>
                   <Title>Setting the Background Color of a Normal Slide</Title>
                   <Description>A Normal Slide is that one that inherits its format settings from the master slide. If you want to modify its background settings, you can modify the slide settings and get the desired results.</Description>
-                  <FolderName>SettingBackgroundNormal</FolderName>
+                  <FolderName>SettingBackgroundColorOfANormalSlide</FolderName>
                   <Order>2</Order>
                   <DocLink>
                     <DisplayName>Setting the Background Color to Slides</DisplayName>
                     <Url>Setting+the+Background+Color+to+Slides</Url>
                   </DocLink>
-                  <OutputFiles>
-                    <DataFile>
-                      <Path>..\Data\ContentBG.pptx</Path>
-                    </DataFile>
-                  </OutputFiles>
                   <Type>Console</Type>
                 </Example>
               </Examples>
@@ -839,16 +736,6 @@ Further, XpsOptions class exposes SaveMetafileAsPng property that can be set to 
                     <DisplayName>Creating Slides Thumbnail Image</DisplayName>
                     <Url>Creating+Slides+Thumbnail+Image</Url>
                   </DocLink>
-                  <InputFiles>
-                    <DataFile>
-                      <Path>..\Data\Aspose.pptx</Path>
-                    </DataFile>
-                  </InputFiles>
-                  <OutputFiles>
-                    <DataFile>
-                      <Path>..\Data\Thumbnail.jpg</Path>
-                    </DataFile>
-                  </OutputFiles>
                   <Type>Console</Type>
                 </Example>
                 <Example>
@@ -860,22 +747,12 @@ Further, XpsOptions class exposes SaveMetafileAsPng property that can be set to 
 - Get the X and Y scaling factors based on user defined X and Y dimensions.
 - Get the thumbnail image of the referenced slide on a specified scale.
 - Save the thumbnail image in any desired image format.</Description>
-                  <FolderName>GeneratThumbnailDimensions</FolderName>
+                  <FolderName>GeneratingThumbnailFromSlideWithUserDefinedDimensions</FolderName>
                   <Order>2</Order>
                   <DocLink>
                     <DisplayName>Creating Slides Thumbnail Image</DisplayName>
                     <Url>Creating+Slides+Thumbnail+Image</Url>
                   </DocLink>
-                  <InputFiles>
-                    <DataFile>
-                      <Path>..\Data\Aspose.pptx</Path>
-                    </DataFile>
-                  </InputFiles>
-                  <OutputFiles>
-                    <DataFile>
-                      <Path>..\Data\Thumbnail.jpg</Path>
-                    </DataFile>
-                  </OutputFiles>
                   <Type>Console</Type>
                 </Example>
                 <Example>
@@ -886,22 +763,12 @@ Further, XpsOptions class exposes SaveMetafileAsPng property that can be set to 
 - Obtain the reference of any desired slide by using its ID or index.
 - Get the thumbnail image of the referenced slide on a specified scale in Notes Slide view.
 - Save the thumbnail image in any desired image format.</Description>
-                  <FolderName>GeneratingThumbnailSlideNotes</FolderName>
+                  <FolderName>GeneratingThumbnailFromSlideInNotesSlidesView</FolderName>
                   <Order>3</Order>
                   <DocLink>
                     <DisplayName>Creating Slides Thumbnail Image</DisplayName>
                     <Url>Creating+Slides+Thumbnail+Image</Url>
                   </DocLink>
-                  <InputFiles>
-                    <DataFile>
-                      <Path>..\Data\Aspose.pptx</Path>
-                    </DataFile>
-                  </InputFiles>
-                  <OutputFiles>
-                    <DataFile>
-                      <Path>..\Data\Notes_tnail.jpg</Path>
-                    </DataFile>
-                  </OutputFiles>
                   <Type>Console</Type>
                 </Example>
               </Examples>
@@ -924,16 +791,6 @@ Further, XpsOptions class exposes SaveMetafileAsPng property that can be set to 
                     <DisplayName>Managing Slides Transitions</DisplayName>
                     <Url>Managing+Slides+Transitions</Url>
                   </DocLink>
-                  <InputFiles>
-                    <DataFile>
-                      <Path>..\Data\Aspose.pptx</Path>
-                    </DataFile>
-                  </InputFiles>
-                  <OutputFiles>
-                    <DataFile>
-                      <Path>..\Data\SampleTransition.pptx</Path>
-                    </DataFile>
-                  </OutputFiles>
                   <Type>Console</Type>
                 </Example>
                 <Example>
@@ -945,16 +802,6 @@ Further, XpsOptions class exposes SaveMetafileAsPng property that can be set to 
                     <DisplayName>Managing Slides Transitions</DisplayName>
                     <Url>Managing+Slides+Transitions</Url>
                   </DocLink>
-                  <InputFiles>
-                    <DataFile>
-                      <Path>..\Data\Aspose.pptx</Path>
-                    </DataFile>
-                  </InputFiles>
-                  <OutputFiles>
-                    <DataFile>
-                      <Path>..\Data\SampleTransition.pptx</Path>
-                    </DataFile>
-                  </OutputFiles>
                   <Type>Console</Type>
                 </Example>
               </Examples>
@@ -999,17 +846,12 @@ In this example, we will see how we can find a shape in a slide using Aspose.Sli
             <Example>
               <Title>Applying Animations On Shapes Inside Slide</Title>
               <Description>Animation is one of the most important parts of the presentations that make them more attractive and meaningful. Aspose.Slides for .NET also allows developers to apply different kinds of animation effects on different kinds of shapes. There is a separate namespace Aspose.Slides.Pptx.Animation that provides classes to handle the animations on PPTX presentations.</Description>
-              <FolderName>AnimationsOnShapes</FolderName>
+              <FolderName>ApplyingAnimationsOnShapesInsideSlide</FolderName>
               <Order>3</Order>
               <DocLink>
                 <DisplayName>Applying Animations on Shapes inside Slide</DisplayName>
                 <Url>Applying+Animations+on+Shapes+inside+Slide</Url>
               </DocLink>
-              <OutputFiles>
-                <DataFile>
-                  <Path>..\Data\AnimExample.pptx</Path>
-                </DataFile>
-              </OutputFiles>
               <Type>Console</Type>
             </Example>
             <Example>
@@ -1021,11 +863,6 @@ In this example, we will see how we can find a shape in a slide using Aspose.Sli
                 <DisplayName>Filling Shapes with Gradient</DisplayName>
                 <Url>Filling+Shapes+with+Gradient</Url>
               </DocLink>
-              <OutputFiles>
-                <DataFile>
-                  <Path>..\Data\EllipseShpGrad.pptx</Path>
-                </DataFile>
-              </OutputFiles>
               <Type>Console</Type>
             </Example>
             <Example>
@@ -1037,11 +874,6 @@ In this example, we will see how we can find a shape in a slide using Aspose.Sli
                 <DisplayName>Filling Shapes with Pattern</DisplayName>
                 <Url>Filling+Shapes+with+Pattern</Url>
               </DocLink>
-              <OutputFiles>
-                <DataFile>
-                  <Path>..\Data\RectShpPatt.pptx</Path>
-                </DataFile>
-              </OutputFiles>
               <Type>Console</Type>
             </Example>
             <Example>
@@ -1053,16 +885,6 @@ In this example, we will see how we can find a shape in a slide using Aspose.Sli
                 <DisplayName>Filling Shapes with Picture</DisplayName>
                 <Url>Filling+Shapes+with+Picture</Url>
               </DocLink>
-              <InputFiles>
-                <DataFile>
-                  <Path>..\Data\Tulips.jpg</Path>
-                </DataFile>
-              </InputFiles>
-              <OutputFiles>
-                <DataFile>
-                  <Path>..\Data\RectShpPic.pptx</Path>
-                </DataFile>
-              </OutputFiles>
               <Type>Console</Type>
             </Example>
             <Example>
@@ -1074,11 +896,6 @@ In this example, we will see how we can find a shape in a slide using Aspose.Sli
                 <DisplayName>Rotating Shapes</DisplayName>
                 <Url>Rotating+Shapes</Url>
               </DocLink>
-              <OutputFiles>
-                <DataFile>
-                  <Path>..\Data\RectShpRot.pptx</Path>
-                </DataFile>
-              </OutputFiles>
               <Type>Console</Type>
             </Example>
             <Example>
@@ -1103,6 +920,28 @@ In this example, we will see how we can find a shape in a slide using Aspose.Sli
               </DocLink>
               <Type>Console</Type>
             </Example>
+            <Example>
+              <Title>Adding an Embedded Video Frame To Slide</Title>
+              <Description>Developers can also embed and play video files in the slides to enrich their presentations. Aspose.Slides for .NET supports adding Embedded Video Frames to the slides that make it possible for developers to add videos to their presentations.</Description>
+              <FolderName>EmbeddedVideoFrame</FolderName>
+              <Order>15</Order>
+              <DocLink>
+                <DisplayName>Adding an Embedded Video Frame to Slide</DisplayName>
+                <Url>Adding+an+Embedded+Video+Frame+to+Slide</Url>
+              </DocLink>
+              <Type>Console</Type>
+            </Example>
+            <Example>
+              <Title>Calculating Connector Line Angle</Title>
+              <Description>In this example, we will see how we can calculate the angle of connector line added in slide using Aspose.Slides for .NET.</Description>
+              <FolderName>ConnectorLineAngle</FolderName>
+              <Order>16</Order>
+              <DocLink>
+                <DisplayName>Calculating Connector Line Angle</DisplayName>
+                <Url>Calculating+Connector+Line+Angle</Url>
+              </DocLink>
+              <Type>Console</Type>
+            </Example>
           </Examples>
           <Folders>
             <Folder>
@@ -1120,27 +959,17 @@ In this example, we will see how we can find a shape in a slide using Aspose.Sli
                     <DisplayName>Adding Line Shape to Slide</DisplayName>
                     <Url>Adding+Line+Shape+to+Slide</Url>
                   </DocLink>
-                  <OutputFiles>
-                    <DataFile>
-                      <Path>..\Data\LineShape1.pptx</Path>
-                    </DataFile>
-                  </OutputFiles>
                   <Type>Console</Type>
                 </Example>
                 <Example>
                   <Title>Adding Arrow Shaped Line To Slide</Title>
                   <Description>Aspose.Slides for .NET  allows developers to configure some properties of the line to make it look more appealing. In this example, we will see how we can add arrow shaped line to the slide using Aspose.Slides for .NET.</Description>
-                  <FolderName>AddingArrowShapedLine</FolderName>
+                  <FolderName>AddingArrowShapedLineToSlide</FolderName>
                   <Order>2</Order>
                   <DocLink>
                     <DisplayName>Adding Line Shape to Slide</DisplayName>
                     <Url>Adding+Line+Shape+to+Slide</Url>
                   </DocLink>
-                  <OutputFiles>
-                    <DataFile>
-                      <Path>..\Data\LineShape2.pptx</Path>
-                    </DataFile>
-                  </OutputFiles>
                   <Type>Console</Type>
                 </Example>
               </Examples>
@@ -1162,11 +991,6 @@ In this example, we will see how we can find a shape in a slide using Aspose.Sli
                     <DisplayName>Formatting Lines of the Shapes</DisplayName>
                     <Url>Formatting+Lines+of+the+Shapes</Url>
                   </DocLink>
-                  <OutputFiles>
-                    <DataFile>
-                      <Path>..\Data\RectShpLn.pptx</Path>
-                    </DataFile>
-                  </OutputFiles>
                   <Type>Console</Type>
                 </Example>
                 <Example>
@@ -1178,11 +1002,6 @@ In this example, we will see how we can find a shape in a slide using Aspose.Sli
                     <DisplayName>Formatting Lines of the Shapes</DisplayName>
                     <Url>Formatting+Lines+of+the+Shapes</Url>
                   </DocLink>
-                  <OutputFiles>
-                    <DataFile>
-                      <Path>..\Data\RectShpLnJoin.pptx</Path>
-                    </DataFile>
-                  </OutputFiles>
                   <Type>Console</Type>
                 </Example>
               </Examples>
@@ -1259,6 +1078,883 @@ This article explains different examples of working with Ole frames:
                   <DocLink>
                     <DisplayName>Working with OLE Object Frames</DisplayName>
                     <Url>Working+with+OLE+Object+Frames</Url>
+                  </DocLink>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+            </Folder>
+            <Folder>
+              <Title>Adding Ellipse Shape To Slide</Title>
+              <Description>Aspose.Slides for .NET provides an easier set of APIs to draw different kinds of shapes with just a few lines of code. This section includes the following topics:
+
+ - Adding Simple Ellipse in the Slide
+ - Adding Formatted Ellipse to the Slide</Description>
+              <FolderName>AddingEllipseShape</FolderName>
+              <Order>13</Order>
+              <Examples>
+                <Example>
+                  <Title>Adding Simple Ellipse in the Slide</Title>
+                  <Description>In this example, we will see how we can add a simple ellipse to the first slide using Aspose.Slides for .NET.</Description>
+                  <FolderName>SimpleEllipse</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Adding Ellipse Shape to Slide</DisplayName>
+                    <Url>Adding+Ellipse+Shape+to+Slide</Url>
+                  </DocLink>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Adding Formatted Ellipse in the Slide</Title>
+                  <Description>In this example, we will see how we can add a formatted ellipse to the first slide of the presentation using Aspose.Slides for .NET.</Description>
+                  <FolderName>FormattedEllipse</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Adding Ellipse Shape to Slide</DisplayName>
+                    <Url>Adding+Ellipse+Shape+to+Slide</Url>
+                  </DocLink>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+            </Folder>
+            <Folder>
+              <Title>Adding Rectangle Shape to Slide</Title>
+              <Description>This section includes the following topics:
+
+ - Adding Simple Rectangle in the Slide
+ - Adding Formatted Rectangle to Slide</Description>
+              <FolderName>RectangleShape</FolderName>
+              <Order>14</Order>
+              <Examples>
+                <Example>
+                  <Title>Adding Simple Rectangle in the Slide</Title>
+                  <Description>In this example, we will see how we can add simple rectangle to the first slide of the presentation using Aspose.Slides for .NET.</Description>
+                  <FolderName>SimpleRectangle</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Adding Rectangle Shape to Slide</DisplayName>
+                    <Url>Adding+Rectangle+Shape+to+Slide</Url>
+                  </DocLink>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Adding Formatted Rectangle To Slide</Title>
+                  <Description>In this example, we will see how we can add the formatted rectangle to the slide using Aspose.Slides for ,NET.</Description>
+                  <FolderName>FormattedRectangle</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Adding Rectangle Shape to Slide</DisplayName>
+                    <Url>Adding+Rectangle+Shape+to+Slide</Url>
+                  </DocLink>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+            </Folder>
+          </Folders>
+        </Folder>
+        <Folder>
+          <Title>Working with Charts</Title>
+          <Description>This section includes the following topics: 
+
+ - Creating a Chart from Scratch
+ - Updating an Existing Chart
+ - Setting Pie Chart Sector Colors
+ - Formatting Chart Entities
+ - Adding Chart Trend Lines
+ - Setting Number Format for Chart Data Cell</Description>
+          <FolderName>WorkingWithCharts</FolderName>
+          <Order>4</Order>
+          <Examples>
+            <Example>
+              <Title>Updating An Existing Chart</Title>
+              <Description>In this example, we will see how we can update the existing charts charts generated through Aspose.Slides or PowerPoint using Aspose.Slides for .NET.s</Description>
+              <FolderName>ExistingChart</FolderName>
+              <Order>2</Order>
+              <DocLink>
+                <DisplayName>Updating an Existing Chart</DisplayName>
+                <Url>Updating+an+Existing+Chart</Url>
+              </DocLink>
+              <InputFiles>
+                <DataFile>
+                  <Path>..\Data\AsposeChart.pptx</Path>
+                </DataFile>
+              </InputFiles>
+              <OutputFiles>
+                <DataFile>
+                  <Path>..\Data\AsposeChartModified.pptx</Path>
+                </DataFile>
+              </OutputFiles>
+              <Type>Console</Type>
+            </Example>
+            <Example>
+              <Title>Formatting Chart Entities</Title>
+              <Description>In this example, we will see how we can format different chart entities including chart category and value axis using Aspose.Slides for .NET.</Description>
+              <FolderName>ChartEntities</FolderName>
+              <Order>3</Order>
+              <DocLink>
+                <DisplayName>Formatting Chart Entities</DisplayName>
+                <Url>Formatting+Chart+Entities</Url>
+              </DocLink>
+              <OutputFiles>
+                <DataFile>
+                  <Path>..\Data\FormattedChart.pptx</Path>
+                </DataFile>
+              </OutputFiles>
+              <Type>Console</Type>
+            </Example>
+            <Example>
+              <Title>Adding Chart Trend Lines</Title>
+              <Description>In this example, we will see how we can add the trend lines for the chart using Aspose.Slides for .NET.</Description>
+              <FolderName>ChartTrendLines</FolderName>
+              <Order>4</Order>
+              <DocLink>
+                <DisplayName>Adding Chart Trend Lines</DisplayName>
+                <Url>Adding+Chart+Trend+Lines</Url>
+              </DocLink>
+              <OutputFiles>
+                <DataFile>
+                  <Path>..\Data\ChartTrendLines.pptx</Path>
+                </DataFile>
+              </OutputFiles>
+              <Type>Console</Type>
+            </Example>
+            <Example>
+              <Title>Setting Number Format For Chart Data Cell</Title>
+              <Description>In this example, we will see how we can set the chart data number format using Aspose.Slides for .NET.</Description>
+              <FolderName>NumberFormat</FolderName>
+              <Order>5</Order>
+              <DocLink>
+                <DisplayName>Setting Number Format for Chart Data Cell</DisplayName>
+                <Url>Setting+Number+Format+for+Chart+Data+Cell</Url>
+              </DocLink>
+              <OutputFiles>
+                <DataFile>
+                  <Path>..\Data\PresetNumberFormat.pptx</Path>
+                </DataFile>
+              </OutputFiles>
+              <Type>Console</Type>
+            </Example>
+          </Examples>
+          <Folders>
+            <Folder>
+              <Title>Creating A Chart From Scratch</Title>
+              <Description>Aspose.Slides for .NET allows the developers to add custom charts into slides from scratch. It allows to create normal and scatter charts with multiple series from scratch. This topic includes the following examples:
+
+ - Creating Normal Charts
+ - Creating Scattered Chart with multiple series and different series markers</Description>
+              <FolderName>ChartFromScratch</FolderName>
+              <Order>1</Order>
+              <Examples>
+                <Example>
+                  <Title>Creating Normal Charts</Title>
+                  <Description>In this example, we will see how we can create normal charts using Aspose.Slides for .NET.</Description>
+                  <FolderName>NormalCharts</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Creating a Chart from Scratch</DisplayName>
+                    <Url>Creating+a+Chart+from+Scratch</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\AsposeChart.pptx</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Creating Scattered Chart With Multiple Series And Different Series Markers</Title>
+                  <Description>In this example, we will see how we can create a scattered chart with different series markers using Aspose.Slides for .NET.</Description>
+                  <FolderName>ScatteredChart</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Creating a Chart from Scratch</DisplayName>
+                    <Url>Creating+a+Chart+from+Scratch</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\AsposeChart.pptx</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+            </Folder>
+          </Folders>
+        </Folder>
+        <Folder>
+          <Title>Working With Tables</Title>
+          <Description>This section includes the following topics: 
+
+ - Creating a Table from Scratch in Slide
+ - Accessing an Existing Table in Slide
+ - Cells numbering used in MS PowerPoint and Aspose.Slides for .NET
+ - Removing Row Or Column in Table</Description>
+          <FolderName>WorkingWithTables</FolderName>
+          <Order>5</Order>
+          <Examples>
+            <Example>
+              <Title>Accessing An Existing Table In Slide</Title>
+              <Description>In this example, we will see how we can access a table that already exists in a slide using Aspose.Slides for .NET</Description>
+              <FolderName>ExistingTable</FolderName>
+              <Order>2</Order>
+              <DocLink>
+                <DisplayName>Accessing an Existing Table in Slide</DisplayName>
+                <Url>Accessing+an+Existing+Table+in+Slide</Url>
+              </DocLink>
+              <InputFiles>
+                <DataFile>
+                  <Path>..\Data\table.pptx</Path>
+                </DataFile>
+              </InputFiles>
+              <OutputFiles>
+                <DataFile>
+                  <Path>..\Data\table1.pptx</Path>
+                </DataFile>
+              </OutputFiles>
+              <Type>Console</Type>
+            </Example>
+            <Example>
+              <Title>Removing Row Or Column In Table</Title>
+              <Description>In this example, we will see how we can remove the columns or rows belonging to the tables using Aspose.Slides for .NET</Description>
+              <FolderName>RemovingRowColumn</FolderName>
+              <Order>3</Order>
+              <DocLink>
+                <DisplayName>Removing Row Or Column in Table</DisplayName>
+                <Url>Removing+Row+Or+Column+in+Table</Url>
+              </DocLink>
+              <OutputFiles>
+                <DataFile>
+                  <Path>..\Data\TestTable.pptx</Path>
+                </DataFile>
+              </OutputFiles>
+              <Type>Console</Type>
+            </Example>
+          </Examples>
+          <Folders>
+            <Folder>
+              <Title>Creating A Table From Scratch In Slide</Title>
+              <Description>This section includes the following topics: 
+
+ - Creating Table from Scratch
+ - Remove Table Borders</Description>
+              <FolderName>TableFromScratch</FolderName>
+              <Order>1</Order>
+              <Examples>
+                <Example>
+                  <Title>Creating Table From Scratch</Title>
+                  <Description>In this example, we will see how we can create a table from scratch using Aspose.Slides for .NET.</Description>
+                  <FolderName>FromScratch</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Creating a Table from Scratch in Slide</DisplayName>
+                    <Url>Creating+a+Table+from+Scratch+in+Slide</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\table.pptx</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Removing Table Cells Border</Title>
+                  <Description>In this example, we will see how we can remove the borders from table cells using Aspose.Slides for .NET.</Description>
+                  <FolderName>CellsBorder</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Creating a Table from Scratch in Slide</DisplayName>
+                    <Url>Creating+a+Table+from+Scratch+in+Slide</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\table.pptx</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+            </Folder>
+          </Folders>
+        </Folder>
+        <Folder>
+          <Title>Working With Text In Presentation</Title>
+          <Description>This section includes the following topics: 
+
+ - Replacing Text in a Placeholder
+ - Creating a TextBox on Slide
+ - Creating TextBox with Hyperlink
+ - Applying Shadow Effects on Slide Text
+ - Managing Paragraphs Alignment
+ - Managing Font Related Properties
+ - Managing Font Family of Text
+ - Managing Multiple Paragraphs having Multiple Portions
+ - Managing Paragraph Bullets in PPTX
+ - Importing and Exporting HTML Text in PPTX
+ - Using Custom Fonts without Installing them
+ - Using Default Fonts for Rendering Presentation
+ - Managing Paragraph Indent
+ - Tabs and EffectiveTabs in Presentation</Description>
+          <FolderName>TextInPresentation</FolderName>
+          <Order>6</Order>
+          <Examples>
+            <Example>
+              <Title>Replacing Text In A Placeholder</Title>
+              <Description>In this example, we will see how the text contained inside a Placeholder can be replaced or modified using Aspose.Slides for .NET.</Description>
+              <FolderName>ReplacingText</FolderName>
+              <Order>1</Order>
+              <DocLink>
+                <DisplayName>Replacing Text in a Placeholder</DisplayName>
+                <Url>Replacing+Text+in+a+Placeholder</Url>
+              </DocLink>
+              <InputFiles>
+                <DataFile>
+                  <Path>..\Data\Aspose.pptx</Path>
+                </DataFile>
+              </InputFiles>
+              <OutputFiles>
+                <DataFile>
+                  <Path>..\Data\output.pptx</Path>
+                </DataFile>
+              </OutputFiles>
+              <Type>Console</Type>
+            </Example>
+            <Example>
+              <Title>Creating A TextBox On Slide</Title>
+              <Description>In this example, we will see how we can create a textbox on slides using Aspose.Slides for .NET.</Description>
+              <FolderName>TextBoxOnSlide</FolderName>
+              <Order>2</Order>
+              <DocLink>
+                <DisplayName>Creating a TextBox on Slide</DisplayName>
+                <Url>Creating+a+TextBox+on+Slide</Url>
+              </DocLink>
+              <OutputFiles>
+                <DataFile>
+                  <Path>..\Data\TextBox.pptx</Path>
+                </DataFile>
+              </OutputFiles>
+              <Type>Console</Type>
+            </Example>
+            <Example>
+              <Title>Creating TextBox With Hyperlink</Title>
+              <Description>In this example, we will see how we can create a TextBox with Hyperlink by using Aspose.Slides for .NET.</Description>
+              <FolderName>TextBoxHyperlink</FolderName>
+              <Order>3</Order>
+              <DocLink>
+                <DisplayName>Creating TextBox with Hyperlink</DisplayName>
+                <Url>Creating+TextBox+with+Hyperlink</Url>
+              </DocLink>
+              <OutputFiles>
+                <DataFile>
+                  <Path>..\Data\hLinkPPTX.pptx</Path>
+                </DataFile>
+              </OutputFiles>
+              <Type>Console</Type>
+            </Example>
+            <Example>
+              <Title>Applying Shadow Effects On Slide Text</Title>
+              <Description>In this example, we will see how we can apply shadow effects on the text in a PPTX presentation using Aspose.Slides for .NET.</Description>
+              <FolderName>ShadowEffects</FolderName>
+              <Order>4</Order>
+              <DocLink>
+                <DisplayName>Applying Shadow Effects on Slide Text</DisplayName>
+                <Url>Applying+Shadow+Effects+on+Slide+Text</Url>
+              </DocLink>
+              <OutputFiles>
+                <DataFile>
+                  <Path>..\Data\pres.pptx</Path>
+                </DataFile>
+              </OutputFiles>
+              <Type>Console</Type>
+            </Example>
+            <Example>
+              <Title>Managing Paragraphs Alignment</Title>
+              <Description>In this example, we will see how we can control the alignment of the text paragraphs in a slide using Aspose.Slides for .NET.</Description>
+              <FolderName>ParagraphsAlignment</FolderName>
+              <Order>5</Order>
+              <DocLink>
+                <DisplayName>Managing Paragraphs Alignment</DisplayName>
+                <Url>Managing+Paragraphs+Alignment</Url>
+              </DocLink>
+              <InputFiles>
+                <DataFile>
+                  <Path>..\Data\Aspose.pptx</Path>
+                </DataFile>
+              </InputFiles>
+              <OutputFiles>
+                <DataFile>
+                  <Path>..\Data\Centeralign.pptx</Path>
+                </DataFile>
+              </OutputFiles>
+              <Type>Console</Type>
+            </Example>
+            <Example>
+              <Title>Managing Font Related Properties</Title>
+              <Description>Presentations usually contain both text and images. The text can be formatted in various way, either to highlight specific sections and words, or to conform with corporate styles. Text formatting helps users vary the look and feel of the presentation content.</Description>
+              <FolderName>FontProperties</FolderName>
+              <Order>6</Order>
+              <DocLink>
+                <DisplayName>Managing Font Related Properties</DisplayName>
+                <Url>Managing+Font+Related+Properties</Url>
+              </DocLink>
+              <InputFiles>
+                <DataFile>
+                  <Path>..\Data\Aspose.pptx</Path>
+                </DataFile>
+              </InputFiles>
+              <OutputFiles>
+                <DataFile>
+                  <Path>..\Data\WelcomeFont.pptx</Path>
+                </DataFile>
+              </OutputFiles>
+              <Type>Console</Type>
+            </Example>
+            <Example>
+              <Title>Managing Font Family Of Text</Title>
+              <Description>In this example, we will see how we can create a textbox with some text and then define a particular font, and various other properties of the font family category using Aspose.Slides for .NET.</Description>
+              <FolderName>FontFamily</FolderName>
+              <Order>7</Order>
+              <DocLink>
+                <DisplayName>Managing Font Family of Text</DisplayName>
+                <Url>Managing+Font+Family+of+Text</Url>
+              </DocLink>
+              <OutputFiles>
+                <DataFile>
+                  <Path>..\Data\pptxFont.pptx</Path>
+                </DataFile>
+              </OutputFiles>
+              <Type>Console</Type>
+            </Example>
+            <Example>
+              <Title>Managing Multiple Paragraphs Having Multiple Portions</Title>
+              <Description>An   ITextFame object can have one or more Paragraphs (every paragraph is created through a carriage return), that is a collection of IParagraph objects. Furthermore, an  IParagraph object can have one or more Portions (a collection of IPortion objects. An  IPortion object manages text and its formatting properties. So, it means that IParagraph object has capacity to handle text with different formatting properties through its underlying IPortion objects.</Description>
+              <FolderName>MultipleParagraphs</FolderName>
+              <Order>8</Order>
+              <DocLink>
+                <DisplayName>Managing Multiple Paragraphs having Multiple Portions</DisplayName>
+                <Url>Managing+Multiple+Paragraphs+having+Multiple+Portions</Url>
+              </DocLink>
+              <OutputFiles>
+                <DataFile>
+                  <Path>..\Data\multiParaPort.pptx</Path>
+                </DataFile>
+              </OutputFiles>
+              <Type>Console</Type>
+            </Example>
+            <Example>
+              <Title>Managing Paragraph Bullets In PPTX</Title>
+              <Description>Bullets are more useful where the something is to be described in steps. Moreover, text looks well organized with the use of bullets. Bulleted paragraphs are always easier to read and understand.</Description>
+              <FolderName>ParagraphBullets</FolderName>
+              <Order>9</Order>
+              <DocLink>
+                <DisplayName>Managing Paragraph Bullets in PPTX</DisplayName>
+                <Url>Managing+Paragraph+Bullets+in+PPTX</Url>
+              </DocLink>
+              <OutputFiles>
+                <DataFile>
+                  <Path>..\Data\Bullet.pptx</Path>
+                </DataFile>
+              </OutputFiles>
+              <Type>Console</Type>
+            </Example>
+            <Example>
+              <Title>Using Custom Fonts Without Installing Them</Title>
+              <Description>In this example, we will see how we can load fonts from custom directories without installing them using Aspose.Slides for .NET.</Description>
+              <FolderName>CustomFonts</FolderName>
+              <Order>11</Order>
+              <DocLink>
+                <DisplayName>Using Custom Fonts without Installing them</DisplayName>
+                <Url>Using+Custom+Fonts+without+Installing+them</Url>
+              </DocLink>
+              <Type>Console</Type>
+            </Example>
+            <Example>
+              <Title>Using Default Fonts For Rendering Presentation</Title>
+              <Description>In this example, we will see how we can set the default font fore rendering the presentation to PDF, XPS or thumbnails using Aspose.Slides for .NET.</Description>
+              <FolderName>DefaultFonts</FolderName>
+              <Order>12</Order>
+              <DocLink>
+                <DisplayName>Using Default Fonts for Rendering Presentation</DisplayName>
+                <Url>Using+Default+Fonts+for+Rendering+Presentation</Url>
+              </DocLink>
+              <Type>Console</Type>
+            </Example>
+            <Example>
+              <Title>Managing Paragraph Indent</Title>
+              <Description>In this example, we will see how we can manage the paragraph indent using Aspose.Slides for .NET.</Description>
+              <FolderName>ParagraphIndent</FolderName>
+              <Order>13</Order>
+              <DocLink>
+                <DisplayName>Managing Paragraph Indent</DisplayName>
+                <Url>Managing+Paragraph+Indent</Url>
+              </DocLink>
+              <OutputFiles>
+                <DataFile>
+                  <Path>..\Data\InOutDent.pptx</Path>
+                </DataFile>
+              </OutputFiles>
+              <Type>Console</Type>
+            </Example>
+          </Examples>
+          <Folders>
+            <Folder>
+              <Title>Importing and Exporting HTML Text in PPTX</Title>
+              <Description>This section includes the following topics: 
+
+ - Importing HTML Text in Paragraphs 
+ - Exporting Paragraphs Text to HTML</Description>
+              <FolderName>HTMLText</FolderName>
+              <Order>10</Order>
+              <Examples>
+                <Example>
+                  <Title>Importing HTML Text In Paragraphs</Title>
+                  <Description>In this example, we will see how we can import the HTML text in paragraphs using Aspose.Slides for .NET.</Description>
+                  <FolderName>ImportingHTMLText</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Importing HTML Text in Paragraphs</DisplayName>
+                    <Url>Importing+and+Exporting+HTML+Text+in+PPTX</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\file.html</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\output.pptx</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Exporting Paragraphs Text To HTML</Title>
+                  <Description>In this example, we will see how we can export the paragraph text to HTML using Aspose.Slides for .NET.</Description>
+                  <FolderName>ExportingParagraphText</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Exporting Paragraphs Text to HTML</DisplayName>
+                    <Url>Importing+and+Exporting+HTML+Text+in+PPTX</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input.pptx</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\output.html</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+            </Folder>
+          </Folders>
+        </Folder>
+        <Folder>
+          <Title>Working With SmartArt In Presentation</Title>
+          <Description>This section includes the following topics: 
+
+ - Add and Access the SmartArt shape
+ - Managing SmartArt Style and Color Layouts
+ - Accessing SmartArt Nodes and Child Nodes
+ - Add and Remove SmartArt Nodes and Child Nodes
+ - Checking Assistant Nodes in SmartArt Shapes</Description>
+          <FolderName>SmartArtInPresentation</FolderName>
+          <Order>7</Order>
+          <Folders>
+            <Folder>
+              <Title>Add and Access the SmartArt Shape</Title>
+              <Description>This section includes the following topics: 
+
+ - Creating a SmartArt Shape
+ - Accessing the SmartArt shape in slide</Description>
+              <FolderName>AddAccessSmartArt</FolderName>
+              <Order>1</Order>
+              <Examples>
+                <Example>
+                  <Title>Creating A SmartArt Shape</Title>
+                  <Description>In this example, we will see how we can create a SmartArt shape using Aspose.Slides for .NET.</Description>
+                  <FolderName>CreatingSmartArtShape</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Add and Access the SmartArt shape</DisplayName>
+                    <Url>Add+and+Access+the+SmartArt+shape</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\SimpleSmartArt.pptx</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Accessing The SmartArt Shape In Slide</Title>
+                  <Description>In this example, we will see how we can access the SmartArt shapes added in presentation slide using Aspose.Slides for .NET.</Description>
+                  <FolderName>AccessingSmartArtShape</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Add and Access the SmartArt shape</DisplayName>
+                    <Url>Add+and+Access+the+SmartArt+shape</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\SimpleSmartArt.pptx</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+            </Folder>
+            <Folder>
+              <Title>Managing SmartArt Style and Color Layouts</Title>
+              <Description>This section includes the following topics: 
+
+ - Accessing SmartArt Shape Layout type
+ - Changing SmartArt Shape Style
+ - Changing SmartArt Shape Color Style</Description>
+              <FolderName>ManagingSmartArtStyle</FolderName>
+              <Order>2</Order>
+              <Examples>
+                <Example>
+                  <Title>Accessing SmartArt Shape With Particular Layout Type</Title>
+                  <Description>In this example, we will see how we can access the SmartArt shape with particular layout type using Aspose.Slides for .NET.</Description>
+                  <FolderName>AccessingSmartArt</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Managing SmartArt Style and Color Layouts</DisplayName>
+                    <Url>Managing+SmartArt+Style+and+Color+Layouts</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\SimpleSmartArt.pptx</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Changing SmartArt Shape Style</Title>
+                  <Description>In this example, we will see how we can change the SmartArt shape style using Aspose.Slides for .NET.</Description>
+                  <FolderName>ChangingSmartArt</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Managing SmartArt Style and Color Layouts</DisplayName>
+                    <Url>Managing+SmartArt+Style+and+Color+Layouts</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\SimpleSmartArt.pptx</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\ChangeSmartArtStyle.pptx</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Changing SmartArt Shape Color Style</Title>
+                  <Description>In this example, we will see how we can change SmartArt shape color style using Aspose.Slides for .NET.</Description>
+                  <FolderName>SmartArtColorStyle</FolderName>
+                  <Order>3</Order>
+                  <DocLink>
+                    <DisplayName>Managing SmartArt Style and Color Layouts</DisplayName>
+                    <Url>Managing+SmartArt+Style+and+Color+Layouts</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\SimpleSmartArt.pptx</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\ChangeSmartArtColorStyle.pptx</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+            </Folder>
+            <Folder>
+              <Title>Accessing SmartArt Nodes and Child Nodes</Title>
+              <Description>This section includes the following topics: 
+
+ - Accessing SmartArt Shape Nodes
+ - Accessing SmartArt Shape Child Nodes
+ - Accessing SmartArt Shape Child Node at Specific Position</Description>
+              <FolderName>AccessSmartArtNodes</FolderName>
+              <Order>3</Order>
+              <Examples>
+                <Example>
+                  <Title>Accessing SmartArt Shape Nodes</Title>
+                  <Description>In this example, we will see how we can access nodes inside SmartArt shape using Aspose.Slides for .NET.</Description>
+                  <FolderName>AccessSmartArt</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Accessing SmartArt Nodes and Child Nodes</DisplayName>
+                    <Url>Accessing+SmartArt+Nodes+and+Child+Nodes</Url>
+                  </DocLink>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Accessing SmartArt Shape Child Nodes</Title>
+                  <Description>In this example, we will see how we can access the child nodes belonging to respective nodes of SmartArt shape.</Description>
+                  <FolderName>AccessChildNodes</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Accessing SmartArt Nodes and Child Nodes</DisplayName>
+                    <Url>Accessing+SmartArt+Nodes+and+Child+Nodes</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\SimpleSmartArt.pptx</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Accessing SmartArt Shape Child Node At Specific Position</Title>
+                  <Description>In this example, we will see how we can access the child nodes at some particular position belonging to respective nodes of SmartArt shape.</Description>
+                  <FolderName>ChildNodeSpecificPosition</FolderName>
+                  <Order>3</Order>
+                  <DocLink>
+                    <DisplayName>Accessing SmartArt Nodes and Child Nodes</DisplayName>
+                    <Url>Accessing+SmartArt+Nodes+and+Child+Nodes</Url>
+                  </DocLink>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+            </Folder>
+            <Folder>
+              <Title>Add And Remove SmartArt Nodes And Child Nodes</Title>
+              <Description>This section includes the following topics:
+
+ - Adding SmartArt Shape Nodes
+ - Adding SmartArt Shape Node at Specific Position
+ - Remove SmartArt Shape Node
+ - Remove SmartArt Shape Node at Specific Position</Description>
+              <FolderName>AddRemoveNodes</FolderName>
+              <Order>4</Order>
+              <Examples>
+                <Example>
+                  <Title>Adding SmartArt Shape Nodes</Title>
+                  <Description>In this example, we will see how we can add node and child node inside SmartArt shape using Aspose.Slides for .NET.</Description>
+                  <FolderName>AddingNodes</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Add and Remove SmartArt Nodes and Child Nodes</DisplayName>
+                    <Url>Add+and+Remove+SmartArt+Nodes+and+Child+Nodes</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\SimpleSmartArt.pptx</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\AddSmartArtNode.pptx</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Adding SmartArt Shape Node At Specific Position</Title>
+                  <Description>In this example, we will see how we can add the child nodes belonging to respective nodes of SmartArt shape at particular position using Aspose.Slides for .NET.</Description>
+                  <FolderName>NodeAtSpecificPosition</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Add and Remove SmartArt Nodes and Child Nodes</DisplayName>
+                    <Url>Add+and+Remove+SmartArt+Nodes+and+Child+Nodes</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\AddSmartArtNodeByPosition.pptx</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Remove SmartArt Shape Node</Title>
+                  <Description>In this example, we will see how we can remove the nodes inside SmartArt shape using Aspose.Slides for .NET.</Description>
+                  <FolderName>RemoveNode</FolderName>
+                  <Order>3</Order>
+                  <DocLink>
+                    <DisplayName>Add and Remove SmartArt Nodes and Child Nodes</DisplayName>
+                    <Url>Add+and+Remove+SmartArt+Nodes+and+Child+Nodes</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\SimpleSmartArt.pptx</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\RemoveSmartArtNode.pptx</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Remove SmartArt Shape Node At Specific Position</Title>
+                  <Description>In this example, we will see how we can remove the nodes inside SmartArt shape at particular position using Aspose.Slides for .NET.</Description>
+                  <FolderName>RemoveNodeSpecificPosition</FolderName>
+                  <Order>4</Order>
+                  <DocLink>
+                    <DisplayName>Add and Remove SmartArt Nodes and Child Nodes</DisplayName>
+                    <Url>Add+and+Remove+SmartArt+Nodes+and+Child+Nodes</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\SimpleSmartArt.pptx</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\RemoveSmartArtNodeByPosition.pptx</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+            </Folder>
+            <Folder>
+              <Title>Checking Assistant Nodes In SmartArt Shapes</Title>
+              <Description>This section includes the following topics:
+
+ - Checking Assistant Node in SmartArt Shape
+ - Checking SmartArt Node level</Description>
+              <FolderName>CheckAssistantNodes</FolderName>
+              <Order>5</Order>
+              <Examples>
+                <Example>
+                  <Title>Checking Assistant Node In SmartArt Shape</Title>
+                  <Description>In this example, we will see how we can identify assistant nodes in the SmartArt nodes collection and changing them using Aspose.Slides for .NET.</Description>
+                  <FolderName>AssistantNode</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Checking Assistant Nodes in SmartArt Shapes</DisplayName>
+                    <Url>Checking+Assistant+Nodes+in+SmartArt+Shapes</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\SimpleSmartArt.pptx</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\ChangeAssitantNode.pptx</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Checking SmartArt Node Level</Title>
+                  <Description>In this example, we will see how we can access the nodes of SmartArt shape at particular level using Aspose.Slides for .NET.</Description>
+                  <FolderName>SmartArtNodeLevel</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Checking Assistant Nodes in SmartArt Shapes</DisplayName>
+                    <Url>Checking+Assistant+Nodes+in+SmartArt+Shapes</Url>
                   </DocLink>
                   <Type>Console</Type>
                 </Example>
