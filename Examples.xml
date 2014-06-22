@@ -565,6 +565,16 @@ Further, XpsOptions class exposes SaveMetafileAsPng property that can be set to 
                 <DisplayName>Creating Slides SVG Image</DisplayName>
                 <Url>Creating+Slides+SVG+Image</Url>
               </DocLink>
+              <InputFiles>
+                <DataFile>
+                  <Path>..\Data\Aspose.pptx</Path>
+                </DataFile>
+              </InputFiles>
+              <OutputFiles>
+                <DataFile>
+                  <Path>..\Data\Aspose.svg</Path>
+                </DataFile>
+              </OutputFiles>
               <Type>Console</Type>
             </Example>
           </Examples>
@@ -753,6 +763,16 @@ Further, XpsOptions class exposes SaveMetafileAsPng property that can be set to 
                     <DisplayName>Creating Slides Thumbnail Image</DisplayName>
                     <Url>Creating+Slides+Thumbnail+Image</Url>
                   </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\Aspose.pptx</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\Thumbnail2.jpg</Path>
+                    </DataFile>
+                  </OutputFiles>
                   <Type>Console</Type>
                 </Example>
                 <Example>
@@ -769,6 +789,16 @@ Further, XpsOptions class exposes SaveMetafileAsPng property that can be set to 
                     <DisplayName>Creating Slides Thumbnail Image</DisplayName>
                     <Url>Creating+Slides+Thumbnail+Image</Url>
                   </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\Aspose.pptx</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\Notes_tnail.jpg</Path>
+                    </DataFile>
+                  </OutputFiles>
                   <Type>Console</Type>
                 </Example>
               </Examples>
@@ -791,6 +821,16 @@ Further, XpsOptions class exposes SaveMetafileAsPng property that can be set to 
                     <DisplayName>Managing Slides Transitions</DisplayName>
                     <Url>Managing+Slides+Transitions</Url>
                   </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\Aspose.pptx</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\SampleTransition.pptx</Path>
+                    </DataFile>
+                  </OutputFiles>
                   <Type>Console</Type>
                 </Example>
                 <Example>
@@ -802,6 +842,16 @@ Further, XpsOptions class exposes SaveMetafileAsPng property that can be set to 
                     <DisplayName>Managing Slides Transitions</DisplayName>
                     <Url>Managing+Slides+Transitions</Url>
                   </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\Aspose.pptx</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\SampleTransition.pptx</Path>
+                    </DataFile>
+                  </OutputFiles>
                   <Type>Console</Type>
                 </Example>
               </Examples>
@@ -841,6 +891,11 @@ In this example, we will see how we can find a shape in a slide using Aspose.Sli
                 <DisplayName>Finding a Shape in a Slide</DisplayName>
                 <Url>Finding+a+Shape+in+a+Slide</Url>
               </DocLink>
+              <InputFiles>
+                <DataFile>
+                  <Path>..\Data\SamplePres.pptx</Path>
+                </DataFile>
+              </InputFiles>
               <Type>Console</Type>
             </Example>
             <Example>
@@ -852,6 +907,11 @@ In this example, we will see how we can find a shape in a slide using Aspose.Sli
                 <DisplayName>Applying Animations on Shapes inside Slide</DisplayName>
                 <Url>Applying+Animations+on+Shapes+inside+Slide</Url>
               </DocLink>
+              <InputFiles>
+                <DataFile>
+                  <Path>..\Data\AnimExample.pptx</Path>
+                </DataFile>
+              </InputFiles>
               <Type>Console</Type>
             </Example>
             <Example>
@@ -907,6 +967,16 @@ In this example, we will see how we can find a shape in a slide using Aspose.Sli
                 <DisplayName>Adding Audio Frame to Slide</DisplayName>
                 <Url>Adding+Audio+Frame+to+Slide</Url>
               </DocLink>
+              <InputFiles>
+                <DataFile>
+                  <Path>..\Data\sampleaudio.wav</Path>
+                </DataFile>
+              </InputFiles>
+              <OutputFiles>
+                <DataFile>
+                  <Path>..\Data\AudioFrameEmbed.pptx</Path>
+                </DataFile>
+              </OutputFiles>
               <Type>Console</Type>
             </Example>
             <Example>
@@ -918,6 +988,16 @@ In this example, we will see how we can find a shape in a slide using Aspose.Sli
                 <DisplayName>Adding Video Frame to Slide</DisplayName>
                 <Url>Adding+Video+Frame+to+Slide</Url>
               </DocLink>
+              <InputFiles>
+                <DataFile>
+                  <Path>..\Data\video1.avi</Path>
+                </DataFile>
+              </InputFiles>
+              <OutputFiles>
+                <DataFile>
+                  <Path>..\Data\VideoFrame.pptx</Path>
+                </DataFile>
+              </OutputFiles>
               <Type>Console</Type>
             </Example>
             <Example>
@@ -929,6 +1009,16 @@ In this example, we will see how we can find a shape in a slide using Aspose.Sli
                 <DisplayName>Adding an Embedded Video Frame to Slide</DisplayName>
                 <Url>Adding+an+Embedded+Video+Frame+to+Slide</Url>
               </DocLink>
+              <InputFiles>
+                <DataFile>
+                  <Path>..\Data\Wildlife.wmv</Path>
+                </DataFile>
+              </InputFiles>
+              <OutputFiles>
+                <DataFile>
+                  <Path>..\Data\VideoFrame.pptx</Path>
+                </DataFile>
+              </OutputFiles>
               <Type>Console</Type>
             </Example>
             <Example>
@@ -970,6 +1060,11 @@ In this example, we will see how we can find a shape in a slide using Aspose.Sli
                     <DisplayName>Adding Line Shape to Slide</DisplayName>
                     <Url>Adding+Line+Shape+to+Slide</Url>
                   </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\LineShape2.pptx</Path>
+                    </DataFile>
+                  </InputFiles>
                   <Type>Console</Type>
                 </Example>
               </Examples>
@@ -1021,6 +1116,16 @@ In this example, we will see how we can find a shape in a slide using Aspose.Sli
                     <DisplayName>Adding Picture Frame to Slide</DisplayName>
                     <Url>Adding+Picture+Frame+to+Slide</Url>
                   </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\aspose-logo.jpg</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\RectPicFrame.pptx</Path>
+                    </DataFile>
+                  </OutputFiles>
                   <Type>Console</Type>
                 </Example>
                 <Example>
@@ -1032,6 +1137,16 @@ In this example, we will see how we can find a shape in a slide using Aspose.Sli
                     <DisplayName>Adding Picture Frame to Slide</DisplayName>
                     <Url>Adding+Picture+Frame+to+Slide</Url>
                   </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\aspose-logo.jpg</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\RectPicFrameFormat.pptx</Path>
+                    </DataFile>
+                  </OutputFiles>
                   <Type>Console</Type>
                 </Example>
               </Examples>
@@ -1057,6 +1172,16 @@ This article explains different examples of working with Ole frames:
                     <DisplayName>Working With OLE Object Frames</DisplayName>
                     <Url>Working+with+OLE+Object+Frames</Url>
                   </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\book1.xlsx</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\OleEmbed.pptx</Path>
+                    </DataFile>
+                  </OutputFiles>
                   <Type>Console</Type>
                 </Example>
                 <Example>
@@ -1068,6 +1193,16 @@ This article explains different examples of working with Ole frames:
                     <DisplayName>Working with OLE Object Frames</DisplayName>
                     <Url>Working+with+OLE+Object+Frames</Url>
                   </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\OleEmbed.pptx</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\excelFromOLE.xlsx</Path>
+                    </DataFile>
+                  </OutputFiles>
                   <Type>Console</Type>
                 </Example>
                 <Example>
@@ -1079,6 +1214,16 @@ This article explains different examples of working with Ole frames:
                     <DisplayName>Working with OLE Object Frames</DisplayName>
                     <Url>Working+with+OLE+Object+Frames</Url>
                   </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\OleEmbed.pptx</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\OleEdit.pptx</Path>
+                    </DataFile>
+                  </OutputFiles>
                   <Type>Console</Type>
                 </Example>
               </Examples>
@@ -1101,6 +1246,11 @@ This article explains different examples of working with Ole frames:
                     <DisplayName>Adding Ellipse Shape to Slide</DisplayName>
                     <Url>Adding+Ellipse+Shape+to+Slide</Url>
                   </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\EllipseShp1.pptx</Path>
+                    </DataFile>
+                  </OutputFiles>
                   <Type>Console</Type>
                 </Example>
                 <Example>
@@ -1112,6 +1262,11 @@ This article explains different examples of working with Ole frames:
                     <DisplayName>Adding Ellipse Shape to Slide</DisplayName>
                     <Url>Adding+Ellipse+Shape+to+Slide</Url>
                   </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\EllipseShp2.pptx</Path>
+                    </DataFile>
+                  </OutputFiles>
                   <Type>Console</Type>
                 </Example>
               </Examples>
@@ -1134,6 +1289,11 @@ This article explains different examples of working with Ole frames:
                     <DisplayName>Adding Rectangle Shape to Slide</DisplayName>
                     <Url>Adding+Rectangle+Shape+to+Slide</Url>
                   </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\RectShp1.pptx</Path>
+                    </DataFile>
+                  </OutputFiles>
                   <Type>Console</Type>
                 </Example>
                 <Example>
@@ -1145,6 +1305,11 @@ This article explains different examples of working with Ole frames:
                     <DisplayName>Adding Rectangle Shape to Slide</DisplayName>
                     <Url>Adding+Rectangle+Shape+to+Slide</Url>
                   </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\RectShp2.pptx</Path>
+                    </DataFile>
+                  </OutputFiles>
                   <Type>Console</Type>
                 </Example>
               </Examples>
@@ -1556,32 +1721,34 @@ This article explains different examples of working with Ole frames:
               <Type>Console</Type>
             </Example>
             <Example>
-              <Title>Using Custom Fonts Without Installing Them</Title>
-              <Description>In this example, we will see how we can load fonts from custom directories without installing them using Aspose.Slides for .NET.</Description>
-              <FolderName>CustomFonts</FolderName>
-              <Order>11</Order>
-              <DocLink>
-                <DisplayName>Using Custom Fonts without Installing them</DisplayName>
-                <Url>Using+Custom+Fonts+without+Installing+them</Url>
-              </DocLink>
-              <Type>Console</Type>
-            </Example>
-            <Example>
               <Title>Using Default Fonts For Rendering Presentation</Title>
               <Description>In this example, we will see how we can set the default font fore rendering the presentation to PDF, XPS or thumbnails using Aspose.Slides for .NET.</Description>
               <FolderName>DefaultFonts</FolderName>
-              <Order>12</Order>
+              <Order>11</Order>
               <DocLink>
                 <DisplayName>Using Default Fonts for Rendering Presentation</DisplayName>
                 <Url>Using+Default+Fonts+for+Rendering+Presentation</Url>
               </DocLink>
+              <InputFiles>
+                <DataFile>
+                  <Path>..\Data\Aspose.pptx</Path>
+                </DataFile>
+              </InputFiles>
+              <OutputFiles>
+                <DataFile>
+                  <Path>..\Data\output.png</Path>
+                </DataFile>
+                <DataFile>
+                  <Path>..\Data\output.xps</Path>
+                </DataFile>
+              </OutputFiles>
               <Type>Console</Type>
             </Example>
             <Example>
               <Title>Managing Paragraph Indent</Title>
               <Description>In this example, we will see how we can manage the paragraph indent using Aspose.Slides for .NET.</Description>
               <FolderName>ParagraphIndent</FolderName>
-              <Order>13</Order>
+              <Order>12</Order>
               <DocLink>
                 <DisplayName>Managing Paragraph Indent</DisplayName>
                 <Url>Managing+Paragraph+Indent</Url>
@@ -1956,6 +2123,11 @@ This article explains different examples of working with Ole frames:
                     <DisplayName>Checking Assistant Nodes in SmartArt Shapes</DisplayName>
                     <Url>Checking+Assistant+Nodes+in+SmartArt+Shapes</Url>
                   </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\SimpleSmartArt.pptx</Path>
+                    </DataFile>
+                  </InputFiles>
                   <Type>Console</Type>
                 </Example>
               </Examples>

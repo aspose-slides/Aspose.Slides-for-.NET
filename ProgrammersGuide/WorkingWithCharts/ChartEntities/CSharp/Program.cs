@@ -10,8 +10,8 @@ using System.IO;
 using Aspose.Slides;
 using System.Drawing;
 using Aspose.Slides.Export;
-using Aspose.Slides.Charts.TextFormat;
 using Aspose.Slides.Charts;
+using Aspose.Slides.Charts.TextFormat;
 
 namespace ChartEntities
 {

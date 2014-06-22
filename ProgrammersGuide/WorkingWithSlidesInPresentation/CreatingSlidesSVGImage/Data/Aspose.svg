@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10in" height="7.5in" viewBox="0 0 720 540" version="1.1">
+  <g text-rendering="geometricPrecision" xml:space="preserve" transform="scale(1,1)">
+<rect x="0" y="0" width="720" height="540" fill="#ffffff" />
+<g transform="matrix(1, 0, 0, 1, 55.1999969, 51.6000061)">
+  <text font-family="Calibri" font-size="13.5pt" fill="#ff0000"><tspan x="0" y="16.848" textLength="9">•</tspan>
+<tspan x="27" y="16.848" textLength="62.625">Text Box</tspan>
+<tspan x="0" y="38.447998" textLength="9" fill="#953735">•</tspan>
+<tspan x="27" y="38.447998" textLength="62" fill="#953735">Hi There</tspan>
+</text>
+</g>
+<g transform="matrix(1, 0, 0, 1, 115.2, 153.6)">
+  <text font-family="Calibri" font-size="36pt" fill="#558ed5"><tspan x="0" y="44.928" textLength="431.875">Aspose.Slides for .NET</tspan>
+</text>
+</g>
+<path fill="#4f81bd" d="M183 317.9L432 317.9 432 443.9 183 443.9z" />
+<path stroke-width="2" stroke="#385d8a" fill="none" d="M183 317.9L432 317.9 432 443.9 183 443.9z" />
+<path fill="#4f81bd" d="M480 365.1C480 320.4 520.3 284.1 570 284.1L570 284.1C619.7 284.1 660 320.4 660 365.1 660 365.1 660 365.1 660 365.1L660 365.1C660 409.9 619.7 446.1 570 446.1L570 446.1C520.3 446.1 480 409.9 480 365.1 480 365.1 480 365.1 480 365.1z" />
+<path stroke-width="2" stroke="#385d8a" fill="none" d="M480 365.1C480 320.4 520.3 284.1 570 284.1L570 284.1C619.7 284.1 660 320.4 660 365.1 660 365.1 660 365.1 660 365.1L660 365.1C660 409.9 619.7 446.1 570 446.1L570 446.1C520.3 446.1 480 409.9 480 365.1 480 365.1 480 365.1 480 365.1z" />
+<g transform="matrix(1, 0, 0, 1, 114.799988, 211.799988)">
+  <text font-family="Calibri" font-weight="bold" font-size="24pt" fill="#ff9999" opacity="0.4"><tspan x="138.341232" y="15.0483208" textLength="213.75">Evaluation only.</tspan>
+<tspan x="-72.97127" y="72.64832" textLength="636.375">Created with Aspose.Slides for .NET 2.0 14.1.2.0</tspan>
+<tspan x="1.9037323" y="130.248322" textLength="486.625">Copyright 2004-2014 Aspose Pty Ltd.</tspan>
+</text>
+</g>
+<text font-family="Arial" font-weight="bold" font-size="18pt" fill="#ffd8cf" opacity="0.75"><tref xlink:href="#tp_0" x="268.973541" y="230.629776" fill="#000000" opacity="0.38" textLength="183.75"/><tref xlink:href="#tp_1" x="83.598526" y="257.4423" fill="#000000" opacity="0.38" textLength="554.5"/><tref xlink:href="#tp_2" x="149.473526" y="284.2548" fill="#000000" opacity="0.38" textLength="422.75"/></text>
+<text font-family="Arial" font-weight="bold" font-size="18pt" fill="#ffd8cf" opacity="0.75"><tspan x="268.125" y="229.78125" textLength="183.75" id="tp_0">Evaluation only.</tspan>
+<tspan x="82.75" y="256.59375" textLength="554.5" id="tp_1">Created with Aspose.Slides for .NET 2.0 14.4.0.0.</tspan>
+<tspan x="148.625" y="283.40625" textLength="422.75" id="tp_2">Copyright 2004-2014 Aspose Pty Ltd.</tspan>
+</text>
+</g>
+</svg>

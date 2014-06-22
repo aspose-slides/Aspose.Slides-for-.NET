@@ -12,7 +12,6 @@ Imports System.IO
 Imports Aspose.Slides
 Imports System.Drawing
 Imports Aspose.Slides.Export
-Imports Aspose.Slides.Charts.TextFormat
 Imports Aspose.Slides.Charts
 
 Namespace ChartEntities
