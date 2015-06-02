@@ -15,5 +15,12 @@ Directory | Description
 --------- | -----------
 [Examples](https://github.com/asposeslides/Aspose_Slides_NET/tree/master/Examples)  | A collection of .NET examples that help you learn how to use product features.
 
+## Resources
 
++ **Website:** [www.aspose.com](http://www.aspose.com)
++ **Product Home:** [Aspose.Slides for .NET](http://www.aspose.com/.net/powerpoint-component.aspx)
++ **Download:** [Download Aspose.Slides for .NET](http://www.aspose.com/community/files/51/.net-components/aspose.slides-for-.net/default.aspx)
++ **Documentation:** [Aspose.Slides for .NET Documentation](http://www.aspose.com/docs/display/slidesnet/Home)
++ **Forum:** [Aspose.Slides for .NET Forum](http://www.aspose.com/community/forums/aspose.slides-product-family/75/showforum.aspx)
++ **Blog:** [Aspose.Slides for .NET Blog](http://www.aspose.com/blogs/aspose-products/aspose-slides-product-family.html)
 
