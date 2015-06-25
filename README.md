@@ -14,6 +14,7 @@ Aspose.Slides for .NET is a unique PowerPoint management component that enables 
 Directory | Description
 --------- | -----------
 [Examples](https://github.com/asposeslides/Aspose_Slides_NET/tree/master/Examples)  | A collection of .NET examples that help you learn how to use product features.
+[Plugins](Plugins)  | Standalone Plugins that will demonstrate one or multiple features on Aspose.Slides for .NET
 
 ## Resources
 
