@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{51A69899-7BF1-4AD6-8C21-01136329EAFB}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CSharp</RootNamespace>
+    <AssemblyName>CSharp</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aspose.Cells">
+      <HintPath>..\packages\Aspose.Cells.8.5.0\lib\net20\Aspose.Cells.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.Slides, Version=15.5.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Aspose.Slides.NET.15.5.0\lib\net2.0\Aspose.Slides.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ProgrammersGuide\Shapes\ChangeOLEObjectData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RunExamples.cs" />
+    <Compile Include="ProgrammersGuide\Charts\ChartEntities.cs" />
+    <Compile Include="ProgrammersGuide\Charts\NormalCharts.cs" />
+    <Compile Include="ProgrammersGuide\Charts\ScatteredChart.cs" />
+    <Compile Include="ProgrammersGuide\Charts\ChartTrendLines.cs" />
+    <Compile Include="ProgrammersGuide\Charts\ExistingChart.cs" />
+    <Compile Include="ProgrammersGuide\Charts\NumberFormat.cs" />
+    <Compile Include="ProgrammersGuide\Presentations\AccessOpenDoc.cs" />
+    <Compile Include="ProgrammersGuide\Presentations\PPTtoPPTX.cs" />
+    <Compile Include="ProgrammersGuide\Presentations\Convert_HTML.cs" />
+    <Compile Include="ProgrammersGuide\Presentations\Convert_Tiff_Custom.cs" />
+    <Compile Include="ProgrammersGuide\Presentations\Convert_Tiff_Default.cs" />
+    <Compile Include="ProgrammersGuide\Presentations\Convert_XPS_Options.cs" />
+    <Compile Include="ProgrammersGuide\Presentations\Convert_XPS.cs" />
+    <Compile Include="ProgrammersGuide\Presentations\ConvertWithNoteToTiff.cs" />
+    <Compile Include="ProgrammersGuide\Presentations\ConvertToPDF.cs" />
+    <Compile Include="ProgrammersGuide\Presentations\AccessBuiltinProperties.cs" />
+    <Compile Include="ProgrammersGuide\Presentations\AccessModifyingProperties.cs" />
+    <Compile Include="ProgrammersGuide\Presentations\ModifyBuiltinProperties.cs" />
+    <Compile Include="ProgrammersGuide\Presentations\AccessProperties.cs" />
+    <Compile Include="ProgrammersGuide\Presentations\OpenPresentation.cs" />
+    <Compile Include="ProgrammersGuide\Presentations\OpenPasswordPresentation.cs" />
+    <Compile Include="ProgrammersGuide\Presentations\RemoveWriteProtection.cs" />
+    <Compile Include="ProgrammersGuide\Presentations\SaveAsReadOnly.cs" />
+    <Compile Include="ProgrammersGuide\Presentations\SaveToFile.cs" />
+    <Compile Include="ProgrammersGuide\Presentations\SaveWithPassword.cs" />
+    <Compile Include="ProgrammersGuide\Presentations\SaveProperties.cs" />
+    <Compile Include="ProgrammersGuide\Shapes\AddAudioFrame.cs" />
+    <Compile Include="ProgrammersGuide\Shapes\FormattedEllipse.cs" />
+    <Compile Include="ProgrammersGuide\Shapes\SimpleEllipse.cs" />
+    <Compile Include="ProgrammersGuide\Shapes\AddArrowShapedLineToSlide.cs" />
+    <Compile Include="ProgrammersGuide\Shapes\AddArrowShapedLine.cs" />
+    <Compile Include="ProgrammersGuide\Shapes\AddPlainLineToSlide.cs" />
+    <Compile Include="ProgrammersGuide\Shapes\AddSimplePictureFrames.cs" />
+    <Compile Include="ProgrammersGuide\Shapes\PictureFrameFormatting.cs" />
+    <Compile Include="ProgrammersGuide\Shapes\AddVideoFrame.cs" />
+    <Compile Include="ProgrammersGuide\Shapes\AnimationsOnShapes.cs" />
+    <Compile Include="ProgrammersGuide\Shapes\ConnectorLineAngle.cs" />
+    <Compile Include="ProgrammersGuide\Shapes\EmbeddedVideoFrame.cs" />
+    <Compile Include="ProgrammersGuide\Shapes\FillShapesGradient.cs" />
+    <Compile Include="ProgrammersGuide\Shapes\FillShapesPattern.cs" />
+    <Compile Include="ProgrammersGuide\Shapes\FillShapesPicture.cs" />
+    <Compile Include="ProgrammersGuide\Shapes\FindShapeInSlide.cs" />
+    <Compile Include="ProgrammersGuide\Shapes\FormatJoinStyles.cs" />
+    <Compile Include="ProgrammersGuide\Shapes\FormatLines.cs" />
+    <Compile Include="ProgrammersGuide\Shapes\AccessOLEObjectFrame.cs" />
+    <Compile Include="ProgrammersGuide\Shapes\AddOLEObjectFrame.cs" />
+    <Compile Include="ProgrammersGuide\Shapes\FormattedRectangle.cs" />
+    <Compile Include="ProgrammersGuide\Shapes\SimpleRectangle.cs" />
+    <Compile Include="ProgrammersGuide\Shapes\RotatingShapes.cs" />
+    <Compile Include="ProgrammersGuide\Slides-Presentation\AccessSlides.cs" />
+    <Compile Include="ProgrammersGuide\Slides-Presentation\AddSlides.cs" />
+    <Compile Include="ProgrammersGuide\Slides-Presentation\ChangePosition.cs" />
+    <Compile Include="ProgrammersGuide\Slides-Presentation\CloneToAnotherPresentationWithMaster.cs" />
+    <Compile Include="ProgrammersGuide\Slides-Presentation\CloneWithInSamePresentation.cs" />
+    <Compile Include="ProgrammersGuide\Slides-Presentation\CloneAtEndOfAnother.cs" />
+    <Compile Include="ProgrammersGuide\Slides-Presentation\CloneAtEndOfAnotherSpecificPosition.cs" />
+    <Compile Include="ProgrammersGuide\Slides-Presentation\CloneWithinSamePresentationToEnd.cs" />
+    <Compile Include="ProgrammersGuide\Slides-Presentation\CreateSlidesSVGImage.cs" />
+    <Compile Include="ProgrammersGuide\Slides-Presentation\ThumbnailFromSlideInNotes.cs" />
+    <Compile Include="ProgrammersGuide\Slides-Presentation\ThumbnailWithUserDefinedDimensions.cs" />
+    <Compile Include="ProgrammersGuide\Slides-Presentation\ThumbnailFromSlide.cs" />
+    <Compile Include="ProgrammersGuide\Slides-Presentation\BetterSlideTransitions.cs" />
+    <Compile Include="ProgrammersGuide\Slides-Presentation\SimpleSlideTransitions.cs" />
+    <Compile Include="ProgrammersGuide\Slides-Presentation\RemoveSlideUsingIndex.cs" />
+    <Compile Include="ProgrammersGuide\Slides-Presentation\RemoveSlideUsingReference.cs" />
+    <Compile Include="ProgrammersGuide\Slides-Presentation\SetBackgroundToGradient.cs" />
+    <Compile Include="ProgrammersGuide\Slides-Presentation\SetImageAsBackground.cs" />
+    <Compile Include="ProgrammersGuide\Slides-Presentation\SetSlideBackgroundMaster.cs" />
+    <Compile Include="ProgrammersGuide\Slides-Presentation\SetSlideBackgroundNormal.cs" />
+    <Compile Include="ProgrammersGuide\SmartArts\AccessChildNodes.cs" />
+    <Compile Include="ProgrammersGuide\SmartArts\AccessSmartArt.cs" />
+    <Compile Include="ProgrammersGuide\SmartArts\AccessChildNodeSpecificPosition.cs" />
+    <Compile Include="ProgrammersGuide\SmartArts\AccessSmartArtShape.cs" />
+    <Compile Include="ProgrammersGuide\SmartArts\CreateSmartArtShape.cs" />
+    <Compile Include="ProgrammersGuide\SmartArts\AddNodes.cs" />
+    <Compile Include="ProgrammersGuide\SmartArts\AddNodesSpecificPosition.cs" />
+    <Compile Include="ProgrammersGuide\SmartArts\RemoveNodeSpecificPosition.cs" />
+    <Compile Include="ProgrammersGuide\SmartArts\RemoveNode.cs" />
+    <Compile Include="ProgrammersGuide\SmartArts\AssistantNode.cs" />
+    <Compile Include="ProgrammersGuide\SmartArts\SmartArtNodeLevel.cs" />
+    <Compile Include="ProgrammersGuide\Tables\UpdateExistingTable.cs" />
+    <Compile Include="ProgrammersGuide\Tables\RemovingRowColumn.cs" />
+    <Compile Include="ProgrammersGuide\Tables\TableWithCellBorders.cs" />
+    <Compile Include="ProgrammersGuide\Tables\TableFromScratch.cs" />
+    <Compile Include="ProgrammersGuide\Text\DefaultFonts.cs" />
+    <Compile Include="ProgrammersGuide\Text\FontFamily.cs" />
+    <Compile Include="ProgrammersGuide\Text\FontProperties.cs" />
+    <Compile Include="ProgrammersGuide\Text\ExportingHTMLText.cs" />
+    <Compile Include="ProgrammersGuide\Text\ImportingHTMLText.cs" />
+    <Compile Include="ProgrammersGuide\Text\MultipleParagraphs.cs" />
+    <Compile Include="ProgrammersGuide\Text\ParagraphBullets.cs" />
+    <Compile Include="ProgrammersGuide\Text\ParagraphIndent.cs" />
+    <Compile Include="ProgrammersGuide\Text\ParagraphsAlignment.cs" />
+    <Compile Include="ProgrammersGuide\Text\ReplacingText.cs" />
+    <Compile Include="ProgrammersGuide\Text\ShadowEffects.cs" />
+    <Compile Include="ProgrammersGuide\Text\TextBoxHyperlink.cs" />
+    <Compile Include="ProgrammersGuide\Text\TextBoxOnSlideProgram.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="ProgrammersGuide\Charts\Data\ChartEntities.pptx" />
+    <None Include="ProgrammersGuide\Charts\Data\ExistingChart.pptx" />
+    <None Include="ProgrammersGuide\Presentations\Data\AccessOpenDoc.odp" />
+    <None Include="ProgrammersGuide\Presentations\Data\PPTtoPPTX.ppt" />
+    <None Include="ProgrammersGuide\Presentations\Data\Convert_HTML.pptx" />
+    <None Include="ProgrammersGuide\Presentations\Data\Convert_Tiff_Custom.pptx" />
+    <None Include="ProgrammersGuide\Presentations\Data\Convert_Tiff_Default.pptx" />
+    <None Include="ProgrammersGuide\Presentations\Data\Convert_XPS_Options.pptx" />
+    <None Include="ProgrammersGuide\Presentations\Data\Convert_XPS.pptx" />
+    <None Include="ProgrammersGuide\Presentations\Data\ConvertWithNoteToTiff.pptx" />
+    <None Include="ProgrammersGuide\Presentations\Data\ConvertToPDF.pptx" />
+    <None Include="ProgrammersGuide\Presentations\Data\AccessBuiltin Properties.pptx" />
+    <None Include="ProgrammersGuide\Presentations\Data\AccessModifyingProperties.pptx" />
+    <None Include="ProgrammersGuide\Presentations\Data\ModifyBuiltinProperties.pptx" />
+    <None Include="ProgrammersGuide\Presentations\Data\AccessProperties.pptx" />
+    <None Include="ProgrammersGuide\Presentations\Data\OpenPresentation.pptx" />
+    <None Include="ProgrammersGuide\Presentations\Data\OpenPasswordPresentation.pptx" />
+    <None Include="ProgrammersGuide\Presentations\Data\RemoveWriteProtection.pptx" />
+    <None Include="ProgrammersGuide\Presentations\Data\SaveProperties.pptx" />
+    <None Include="ProgrammersGuide\Shapes\Data\ConnectorLineAngle.pptx" />
+    <None Include="ProgrammersGuide\Shapes\Data\FindingShapeInSlide.pptx" />
+    <None Include="ProgrammersGuide\Shapes\Data\excelFromOLE.xlsx" />
+    <None Include="ProgrammersGuide\Shapes\Data\AccessingOLEObjectFrame.pptx" />
+    <None Include="ProgrammersGuide\Shapes\Data\book1.xlsx" />
+    <None Include="ProgrammersGuide\Shapes\Data\ChangeOLEObjectData.pptx" />
+    <None Include="ProgrammersGuide\Slides-Presentation\Data\AccessSlides.pptx" />
+    <None Include="ProgrammersGuide\Slides-Presentation\Data\ChangePosition.pptx" />
+    <None Include="ProgrammersGuide\Slides-Presentation\Data\CloneToAnotherPresentationWithMaster.pptx" />
+    <None Include="ProgrammersGuide\Slides-Presentation\Data\CloneWithInSamePresentation.pptx" />
+    <None Include="ProgrammersGuide\Slides-Presentation\Data\CloneAtEndOfAnother.pptx" />
+    <None Include="ProgrammersGuide\Slides-Presentation\Data\CloneAtEndOfAnotherSpecificPosition.pptx" />
+    <None Include="ProgrammersGuide\Slides-Presentation\Data\CloneWithinSamePresentationToEnd.pptx" />
+    <None Include="ProgrammersGuide\Slides-Presentation\Data\ThumbnailFromSlideInNotes.pptx" />
+    <None Include="ProgrammersGuide\Slides-Presentation\Data\ThumbnailWithUserDefinedDimensions.pptx" />
+    <None Include="ProgrammersGuide\Slides-Presentation\Data\ThumbnailFromSlide.pptx" />
+    <None Include="ProgrammersGuide\Slides-Presentation\Data\SimpleSlideTransitions.pptx" />
+    <None Include="ProgrammersGuide\Slides-Presentation\Data\BetterSlideTransitions.pptx" />
+    <None Include="ProgrammersGuide\Slides-Presentation\Data\RemoveSlideUsingIndex.pptx" />
+    <None Include="ProgrammersGuide\Slides-Presentation\Data\RemoveSlideUsingReference.pptx" />
+    <None Include="ProgrammersGuide\Slides-Presentation\Data\SetBackgroundToGradient.pptx" />
+    <None Include="ProgrammersGuide\Slides-Presentation\Data\SetImageAsBackground.pptx" />
+    <None Include="ProgrammersGuide\Slides-Presentation\Data\SetSlideBackgroundMaster.pptx" />
+    <None Include="ProgrammersGuide\SmartArts\Data\AccessChildNodes.pptx" />
+    <None Include="ProgrammersGuide\SmartArts\Data\AccessSmartArt.pptx" />
+    <None Include="ProgrammersGuide\SmartArts\Data\AccessSmartArtShape.pptx" />
+    <None Include="ProgrammersGuide\SmartArts\Data\CreatingSmartArtShape.pptx" />
+    <None Include="ProgrammersGuide\SmartArts\Data\AddNodes.pptx" />
+    <None Include="ProgrammersGuide\SmartArts\Data\RemoveNodeSpecificPosition.pptx" />
+    <None Include="ProgrammersGuide\SmartArts\Data\RemoveNode.pptx" />
+    <None Include="ProgrammersGuide\SmartArts\Data\AssistantNode.pptx" />
+    <None Include="ProgrammersGuide\SmartArts\Data\SmartArtNodeLevel.pptx" />
+    <None Include="ProgrammersGuide\Tables\Data\UpdateExistingTable.pptx" />
+    <None Include="ProgrammersGuide\Tables\Data\RemovingRowColumn.pptx" />
+    <None Include="ProgrammersGuide\Text\Data\DefaultFonts.pptx" />
+    <None Include="ProgrammersGuide\Text\Data\FontProperties.pptx" />
+    <None Include="ProgrammersGuide\Text\Data\ExportingHTMLText.pptx" />
+    <None Include="ProgrammersGuide\Text\Data\ReplacingText.pptx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ProgrammersGuide\Shapes\Data\AddAudioFrame.wav" />
+    <Content Include="ProgrammersGuide\Shapes\Data\aspose-logo.jpg" />
+    <Content Include="ProgrammersGuide\Shapes\Data\Tulips.jpg" />
+    <Content Include="ProgrammersGuide\Slides-Presentation\Data\Aspose.svg" />
+    <Content Include="ProgrammersGuide\Slides-Presentation\Data\Tulips.jpg" />
+    <Content Include="ProgrammersGuide\Text\Data\file.html" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
