@@ -13,7 +13,7 @@ namespace Aspose.Slides
         {
             string ImageFilePath = @"E:\Aspose\Aspose Vs VSTO\Aspose.Slides Vs VSTO Presentations v 1.1\Sample Files\AddPicture.jpg";
             
-            //Instantiate Prseetation class that represents the PPTX
+            //Instantiate Prsentation class that represents the PPTX
             Presentation pres = new Presentation();
 
             //Get the first slide
