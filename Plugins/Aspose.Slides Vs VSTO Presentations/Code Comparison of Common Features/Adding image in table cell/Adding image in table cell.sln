@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VSTO Presentation", "VSTO Presentation\VSTO Presentation.csproj", "{F572F42C-EC1B-4A36-AEDD-330CE15DE13D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aspose.Slides", "Aspose.Slides\Aspose.Slides.csproj", "{96303086-A03D-4814-A8F4-693974AA4883}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F572F42C-EC1B-4A36-AEDD-330CE15DE13D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F572F42C-EC1B-4A36-AEDD-330CE15DE13D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F572F42C-EC1B-4A36-AEDD-330CE15DE13D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F572F42C-EC1B-4A36-AEDD-330CE15DE13D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96303086-A03D-4814-A8F4-693974AA4883}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96303086-A03D-4814-A8F4-693974AA4883}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96303086-A03D-4814-A8F4-693974AA4883}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96303086-A03D-4814-A8F4-693974AA4883}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
