@@ -11,7 +11,7 @@ Imports System.Runtime.InteropServices
 <Assembly: AssemblyConfiguration("")> 
 <Assembly: AssemblyCompany("")> 
 <Assembly: AssemblyProduct("VisualBasic")> 
-<Assembly: AssemblyCopyright("Copyright ©  2015")>
+<Assembly: AssemblyCopyright("Copyright ï¿½  2015")>
 <Assembly: AssemblyTrademark("")>
 <Assembly: AssemblyCulture("")>
 
