@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenXml Presentation", "OpenXml Presentation\OpenXml Presentation.csproj", "{E64F771A-0F93-4538-BA1C-3B07138FEB7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aspose Slides", "Aspose Slides\Aspose Slides.csproj", "{07037BF2-9D01-4EF0-AEE0-A679E59DC177}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E64F771A-0F93-4538-BA1C-3B07138FEB7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E64F771A-0F93-4538-BA1C-3B07138FEB7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E64F771A-0F93-4538-BA1C-3B07138FEB7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E64F771A-0F93-4538-BA1C-3B07138FEB7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07037BF2-9D01-4EF0-AEE0-A679E59DC177}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07037BF2-9D01-4EF0-AEE0-A679E59DC177}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07037BF2-9D01-4EF0-AEE0-A679E59DC177}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07037BF2-9D01-4EF0-AEE0-A679E59DC177}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
