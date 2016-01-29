@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conversion PPT to PPTX", "Conversion PPT to PPTX\Conversion PPT to PPTX.csproj", "{3C26FD93-94D3-4273-80CB-0C0ACD642A7B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Converting to PDF", "Converting to PDF\Converting to PDF.csproj", "{5B0B07EA-0333-496E-BC87-861EA1732EBC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Converting to XPS", "Converting to XPS\Converting to XPS.csproj", "{7F0925F8-2D44-485D-ABD8-2A71DCD67830}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Converting to HTML", "Converting to HTML\Converting to HTML.csproj", "{FC4B1ECE-15BB-460A-B88F-D220B616D719}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C26FD93-94D3-4273-80CB-0C0ACD642A7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C26FD93-94D3-4273-80CB-0C0ACD642A7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C26FD93-94D3-4273-80CB-0C0ACD642A7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C26FD93-94D3-4273-80CB-0C0ACD642A7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B0B07EA-0333-496E-BC87-861EA1732EBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B0B07EA-0333-496E-BC87-861EA1732EBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B0B07EA-0333-496E-BC87-861EA1732EBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B0B07EA-0333-496E-BC87-861EA1732EBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F0925F8-2D44-485D-ABD8-2A71DCD67830}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F0925F8-2D44-485D-ABD8-2A71DCD67830}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F0925F8-2D44-485D-ABD8-2A71DCD67830}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F0925F8-2D44-485D-ABD8-2A71DCD67830}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC4B1ECE-15BB-460A-B88F-D220B616D719}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC4B1ECE-15BB-460A-B88F-D220B616D719}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC4B1ECE-15BB-460A-B88F-D220B616D719}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC4B1ECE-15BB-460A-B88F-D220B616D719}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
