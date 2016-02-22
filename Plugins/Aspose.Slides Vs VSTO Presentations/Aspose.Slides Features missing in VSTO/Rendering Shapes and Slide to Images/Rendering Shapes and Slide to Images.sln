@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rendering Individual Shapes as Images", "Rendering Individual Shapes as Images\Rendering Individual Shapes as Images.csproj", "{06D178A1-7368-4311-9EDA-76B74E24591F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Getting Image from Shape on Slides", "Getting Image from Shape on Slides\Getting Image from Shape on Slides.csproj", "{66560BF4-CAE7-4119-BDEF-DA2CF2B1920C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{06D178A1-7368-4311-9EDA-76B74E24591F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06D178A1-7368-4311-9EDA-76B74E24591F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06D178A1-7368-4311-9EDA-76B74E24591F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06D178A1-7368-4311-9EDA-76B74E24591F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66560BF4-CAE7-4119-BDEF-DA2CF2B1920C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66560BF4-CAE7-4119-BDEF-DA2CF2B1920C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66560BF4-CAE7-4119-BDEF-DA2CF2B1920C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66560BF4-CAE7-4119-BDEF-DA2CF2B1920C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
