@@ -8,7 +8,6 @@ This section contains the following Examples
 * [Converting to XPS](Converting to XPS)
 * [Creating Slide SVG Image](Creating Slide SVG Image)
 * [Export media files into html](Export media files into html)
-* [OpenDocument Presentation](OpenDocument Presentation)
 * [Presentation Locking](Presentation Locking)
 * [Rendering Shapes and Slide to Images](Rendering Shapes and Slide to Images)
 * [Slide Thumbnail to JPEG](Slide Thumbnail to JPEG)
