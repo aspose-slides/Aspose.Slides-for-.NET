@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conversion from PPt to PPtx format", "Conversion from PPt to PPtx format\Conversion from PPt to PPtx format.csproj", "{344C4019-448E-4BCB-983E-CE92F3AD1BCC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conversion from PPt to PPtx format", "PPT to PPTX\PPT to PPTX.csproj", "{344C4019-448E-4BCB-983E-CE92F3AD1BCC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
