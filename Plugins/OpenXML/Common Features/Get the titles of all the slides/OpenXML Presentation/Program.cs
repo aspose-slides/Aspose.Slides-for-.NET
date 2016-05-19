@@ -1,20 +1,22 @@
 ﻿// Copyright (c) Aspose 2002-2014. All Rights Reserved.
 
+using DocumentFormat.OpenXml.Packaging;
+using DocumentFormat.OpenXml.Presentation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using DocumentFormat.OpenXml.Packaging;
-using DocumentFormat.OpenXml.Presentation;
 using D = DocumentFormat.OpenXml.Drawing;
 
-namespace OpenXML_Presentation
+namespace Aspose.Plugins.AsposeVSOpenXML
 {
     class Program
     {
         static void Main(string[] args)
         {
-            foreach (string s in GetSlideTitles("Get the titles of all the slides.pptx"))
+            string FilePath = @"..\..\..\..\Sample Files\";
+            string FileName = FilePath + "Get the titles of all the slides.pptx";
+            foreach (string s in GetSlideTitles(FileName))
                 Console.WriteLine(s);
             Console.ReadKey();
         }

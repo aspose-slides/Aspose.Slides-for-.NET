@@ -1,22 +1,21 @@
 ﻿using Aspose.Slides;
 using Aspose.Slides.Export;
 using Aspose.Slides.SlideShow;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Managing_Slides_Transitions
+/*
+This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Slides for .NET API reference when the project is build. Please check https://docs.nuget.org/consume/nuget-faq for more information. If you do not wish to use NuGet, you can manually download Aspose.Slides for .NET API from http://www.aspose.com/downloads, install it and then add its reference to this project. For any issues, questions or suggestions please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
+*/
+namespace Aspose.Plugins.AsposeVSOpenXML
 {
     class Program
     {
         static void Main(string[] args)
         {
-            string Path = @"E:\Aspose\Aspose Vs OpenXML\Files\";
-
+            string FilePath = @"..\..\..\Sample Files\";
+            string FileName = FilePath + "Managing Slides Transitions.pptx";
+            
             //Instantiate Presentation class that represents a presentation file
-            using (Presentation pres = new Presentation(Path + "Sample.pptx"))
+            using (Presentation pres = new Presentation(FileName))
             {
 
                 //Apply circle type transition on slide 1
@@ -29,7 +28,7 @@ namespace Managing_Slides_Transitions
                 pres.Slides[2].SlideShowTransition.Type = TransitionType.Zoom;
 
                 //Write the presentation to disk
-                pres.Save(Path + "SampleTransition.pptx", SaveFormat.Pptx);
+                pres.Save(FileName, SaveFormat.Pptx);
 
             }
         }

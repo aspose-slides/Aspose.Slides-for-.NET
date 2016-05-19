@@ -2,12 +2,18 @@
 
 using Aspose.Slides;
 
-namespace Aspose_Slides
+/*
+This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Slides for .NET API reference when the project is build. Please check https://docs.nuget.org/consume/nuget-faq for more information. If you do not wish to use NuGet, you can manually download Aspose.Slides for .NET API from http://www.aspose.com/downloads, install it and then add its reference to this project. For any issues, questions or suggestions please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
+*/
+namespace Aspose.Plugins.AsposeVSOpenXML
 {
     class Program
     {
         static void Main(string[] args)
         {
+            string FilePath = @"..\..\..\..\Sample Files\";
+            string FileName = FilePath + "Adding Slide to Presentation.pptx";
+            
             //Instantiate PresentationEx class that represents the PPT file
             Presentation pres = new Presentation();
 
@@ -15,34 +21,12 @@ namespace Aspose_Slides
             //presentation from default constructor
             //Adding an empty slide to the presentation and getting the reference of
             //that empty slide
-            Slide slide = pres.AddEmptySlide();
+            ISlide slide = pres.Slides.AddEmptySlide(pres.LayoutSlides[0]);
 
-            slide = pres.GetSlideByPosition(2);
-
-            //Get the font index for Arial 
-            //It is always 0 if you create presentation from
-            //default constructor
-            int arialFontIndex = 0;
-
-            //Add a textbox
-            //To add it, we will first add a rectangle
-            Shape shp = slide.Shapes.AddRectangle(1200, 800, 3200, 370);
-
-            //Hide its line
-            shp.LineFormat.ShowLines = false;
-
-            //Then add a textframe inside it
-            TextFrame tf = shp.AddTextFrame("");
-
-            //Set a text
-            tf.Text = "Text added dynamically";
-            Portion port = tf.Paragraphs[0].Portions[0];
-            port.FontIndex = arialFontIndex;
-            port.FontBold = true;
-            port.FontHeight = 32;
+            
 
             //Write the output to disk
-            pres.Write("outAspose.ppt");
+            pres.Save(FileName,Aspose.Slides.Export.SaveFormat.Pptx);
 
         }
     }

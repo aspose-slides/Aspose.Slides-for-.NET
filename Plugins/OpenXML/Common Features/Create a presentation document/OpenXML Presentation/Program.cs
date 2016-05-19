@@ -7,14 +7,15 @@ using DocumentFormat.OpenXml.Presentation;
 using D = DocumentFormat.OpenXml.Drawing;
 using P = DocumentFormat.OpenXml.Presentation;
 
-namespace OpenXML_Presentation
+namespace Aspose.Plugins.AsposeVSOpenXML
 {
     class Program
     {
         static void Main(string[] args)
         {
-            string filepath = "Create a presentation document.pptx";
-            CreatePresentation(filepath);
+            string FilePath = @"..\..\..\..\Sample Files\";
+            string FileName = FilePath + "Create a presentation document.pptx";
+            CreatePresentation(FileName);
         }
         public static void CreatePresentation(string filepath)
         {

@@ -1,21 +1,22 @@
 ﻿// Copyright (c) Aspose 2002-2014. All Rights Reserved.
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using DocumentFormat.OpenXml;
 using DocumentFormat.OpenXml.Packaging;
 using DocumentFormat.OpenXml.Presentation;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 
-namespace OpenXML_Presentation
+namespace Aspose.Plugins.AsposeVSOpenXML
 {
     class Program
     {
         static void Main(string[] args)
         {
-            string fileName = "Delete all the comments by an author.pptx";
+            string FilePath = @"..\..\..\..\Sample Files\";
+            string FileName = FilePath + "Delete all the comments by an author.pptx";
             string author = "Zeeshan Shafqat";
-            DeleteCommentsByAuthorInPresentation(fileName, author);
+            DeleteCommentsByAuthorInPresentation(FileName, author);
         }
         // Remove all the comments in the slides by a certain author.
         public static void DeleteCommentsByAuthorInPresentation(string fileName, string author)

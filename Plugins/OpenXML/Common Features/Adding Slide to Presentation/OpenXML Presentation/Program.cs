@@ -1,17 +1,20 @@
 ﻿// Copyright (c) Aspose 2002-2014. All Rights Reserved.
 
-using System;
 using DocumentFormat.OpenXml.Packaging;
 using DocumentFormat.OpenXml.Presentation;
+using System;
 using Drawing = DocumentFormat.OpenXml.Drawing;
 
-namespace OpenXML_Presentation
+namespace Aspose.Plugins.AsposeVSOpenXML
 {
     class Program
     {
         static void Main(string[] args)
         {
-            InsertNewSlide("Sample.pptx", 1, "My new slide");
+            string FilePath = @"..\..\..\..\Sample Files\";
+            string FileName = FilePath + "Adding Slide to Presentation.pptx";
+
+            InsertNewSlide(FileName, 1, "My new slide");
         }
         // Insert a slide into the specified presentation.
         public static void InsertNewSlide(string presentationFile, int position, string slideTitle)

@@ -1,28 +1,29 @@
 ﻿// Copyright (c) Aspose 2002-2014. All Rights Reserved.
 
+using DocumentFormat.OpenXml;
+using DocumentFormat.OpenXml.Packaging;
+using DocumentFormat.OpenXml.Presentation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using DocumentFormat.OpenXml;
-using DocumentFormat.OpenXml.Packaging;
-using DocumentFormat.OpenXml.Presentation;
 using A = DocumentFormat.OpenXml.Drawing;
 
 
-namespace OpenXML_Presentation
+namespace Aspose.Plugins.AsposeVSOpenXML
 {
     class Program
     {
         static void Main(string[] args)
         {
-            string file = "Get all the text in a slide.pptx";
-            int numberOfSlides = CountSlides(file);
+            string FilePath = @"..\..\..\..\Sample Files\";
+            string FileName = FilePath + "Get all the text in a slide.pptx";
+            int numberOfSlides = CountSlides(FileName);
             System.Console.WriteLine("Number of slides = {0}", numberOfSlides);
             string slideText;
             for (int i = 0; i < numberOfSlides; i++)
             {
-                GetSlideIdAndText(out slideText, file, i);
+                GetSlideIdAndText(out slideText, FileName, i);
                 System.Console.WriteLine("Slide #{0} contains: {1}", i + 1, slideText);
             }
             System.Console.ReadKey();

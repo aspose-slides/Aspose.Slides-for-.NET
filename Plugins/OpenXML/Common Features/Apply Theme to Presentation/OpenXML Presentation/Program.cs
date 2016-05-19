@@ -3,19 +3,20 @@ using DocumentFormat.OpenXml.Presentation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace OpenXML_Presentation
+namespace Aspose.Plugins.AsposeVSOpenXML
 {
     class Program
     {
         static void Main(string[] args)
         {
-            string presentationFile = @"E:\Aspose\Aspose Vs OpenXML\Aspose.Slides Vs OpenXML Presentation v1.1\Sample Files\My Sheet.pptx";
-            string themePresentation = @"E:\Aspose\Aspose Vs OpenXML\Aspose.Slides Vs OpenXML Presentation v1.1\Sample Files\My Theme.pptx";
-            ApplyThemeToPresentation(presentationFile, themePresentation);
+            string FilePath = @"..\..\..\..\Sample Files\";
+            string FileName = FilePath + "Apply Theme to Presentation.pptx";
+            string ThemeFileName = FilePath + "Theme.pptx";
+
+            ApplyThemeToPresentation(FileName, ThemeFileName);
         }
+
         // Apply a new theme to the presentation. 
         public static void ApplyThemeToPresentation(string presentationFile, string themePresentation)
         {
