@@ -1,24 +1,29 @@
 ﻿// Copyright (c) Aspose 2002-2014. All Rights Reserved.
 
-using Aspose.Slides.Pptx;
+using Aspose.Slides;
 
-namespace Aspose_Slides
+/*
+This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Slides for .NET API reference when the project is build. Please check https://docs.nuget.org/consume/nuget-faq for more information. If you do not wish to use NuGet, you can manually download Aspose.Slides for .NET API from http://www.aspose.com/downloads, install it and then add its reference to this project. For any issues, questions or suggestions please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
+*/
+namespace Aspose.Plugins.AsposeVSOpenXML
 {
     class Program
     {
         static void Main(string[] args)
         {
-            DeleteSlide("Delete a slide.pptx", 2);
+            string FilePath = @"..\..\..\..\Sample Files\";
+            string FileName = FilePath + "Delete a slide.pptx";
+            DeleteSlide(FileName, 1);
         }
         
         public static void DeleteSlide(string presentationFile, int slideIndex)
         {
             //Instantiate a PresentationEx object that represents a PPTX file
-            using (PresentationEx pres = new PresentationEx(presentationFile))
+            using (Presentation pres = new Presentation(presentationFile))
             {
 
                 //Accessing a slide using its index in the slides collection
-                SlideEx slide = pres.Slides[slideIndex];
+                ISlide slide = pres.Slides[slideIndex];
 
 
                 //Removing a slide using its reference
@@ -26,7 +31,7 @@ namespace Aspose_Slides
 
 
                 //Writing the presentation as a PPTX file
-                pres.Write(presentationFile);
+                pres.Save(presentationFile,Aspose.Slides.Export.SaveFormat.Pptx);
             }
         }
     }

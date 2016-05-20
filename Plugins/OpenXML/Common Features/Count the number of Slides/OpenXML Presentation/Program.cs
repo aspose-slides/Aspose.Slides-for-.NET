@@ -1,17 +1,19 @@
 ﻿// Copyright (c) Aspose 2002-2014. All Rights Reserved.
 
+using DocumentFormat.OpenXml.Packaging;
 using System;
 using System.Linq;
-using DocumentFormat.OpenXml.Packaging;
 
-namespace OpenXML_Presentation
+namespace Aspose.Plugins.AsposeVSOpenXML
 {
     class Program
     {
         static void Main(string[] args)
         {
+            string FilePath = @"..\..\..\..\Sample Files\";
+            string FileName = FilePath + "Count the number of slides.pptx";
             Console.WriteLine("Number of slides = {0}",
-                CountSlides("Count the number of slides.pptx"));
+                CountSlides(FileName));
             Console.ReadKey();
         }
         // Get the presentation object and pass it to the next CountSlides method.

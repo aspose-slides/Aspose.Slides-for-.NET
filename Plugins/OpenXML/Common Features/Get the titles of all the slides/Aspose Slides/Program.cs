@@ -1,16 +1,21 @@
 ﻿// Copyright (c) Aspose 2002-2014. All Rights Reserved.
 
+using Aspose.Slides;
 using System;
 using System.Collections.Generic;
-using Aspose.Slides.Pptx;
 
-namespace Aspose_Slides
+/*
+This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Slides for .NET API reference when the project is build. Please check https://docs.nuget.org/consume/nuget-faq for more information. If you do not wish to use NuGet, you can manually download Aspose.Slides for .NET API from http://www.aspose.com/downloads, install it and then add its reference to this project. For any issues, questions or suggestions please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
+*/
+namespace Aspose.Plugins.AsposeVSOpenXML
 {
     class Program
     {
         static void Main(string[] args)
         {
-            foreach (string s in GetSlideTitles("Get the titles of all the slides.pptx"))
+            string FilePath = @"..\..\..\..\Sample Files\";
+            string FileName = FilePath + "Get the titles of all the slides.pptx";
+            foreach (string s in GetSlideTitles(FileName))
                 Console.WriteLine(s);
             Console.ReadKey();
         }
@@ -21,21 +26,21 @@ namespace Aspose_Slides
             List<string> texts = new List<string>();
 
             //Instantiate PresentationEx class that represents PPTX
-            using (PresentationEx pres = new PresentationEx(presentationFile))
+            using (Presentation pres = new Presentation(presentationFile))
             {
 
                 //Access all the slides
-                foreach (SlideEx sld in pres.Slides)
+                foreach (ISlide sld in pres.Slides)
                 {
 
                     //Iterate through shapes to find the placeholder
-                    foreach (ShapeEx shp in sld.Shapes)
+                    foreach (Shape shp in sld.Shapes)
                         if (shp.Placeholder != null)
                         {
                             if (IsTitleShape(shp))
                             {
                                 //get the text of placeholder
-                                texts.Add(((AutoShapeEx)shp).TextFrame.Text);
+                                texts.Add(((AutoShape)shp).TextFrame.Text);
                             }
                         }
                 }
@@ -45,12 +50,12 @@ namespace Aspose_Slides
             return texts;
         }
         // Determines whether the shape is a title shape.
-        private static bool IsTitleShape(ShapeEx shape)
+        private static bool IsTitleShape(Shape shape)
         {
             switch (shape.Placeholder.Type)
             {
-                case PlaceholderTypeEx.Title:
-                case PlaceholderTypeEx.CenteredTitle:
+                case PlaceholderType.Title:
+                case PlaceholderType.CenteredTitle:
                     return true;
                 default:
                     return false;

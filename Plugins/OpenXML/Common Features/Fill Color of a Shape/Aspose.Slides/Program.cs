@@ -1,18 +1,19 @@
-﻿using Aspose.Slides.Export;
-using System;
-using System.Collections.Generic;
+﻿using Aspose.Slides;
+using Aspose.Slides.Export;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Aspose.Slides
+/*
+This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Slides for .NET API reference when the project is build. Please check https://docs.nuget.org/consume/nuget-faq for more information. If you do not wish to use NuGet, you can manually download Aspose.Slides for .NET API from http://www.aspose.com/downloads, install it and then add its reference to this project. For any issues, questions or suggestions please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
+*/
+namespace Aspose.Plugins.AsposeVSOpenXML
 {
     class Program
     {
         static void Main(string[] args)
         {
-            string docName = @"E:\Aspose\Aspose Vs OpenXML\Aspose.Slides Vs OpenXML Presentation v1.1\Sample Files\fill color of a shape.pptx";
+            string FilePath = @"..\..\..\..\Sample Files\";
+            string FileName = FilePath + "Fill color of a shape.pptx";
+
             //Instantiate PrseetationEx class that represents the PPTX 
             using (Presentation pres = new Presentation())
             {
@@ -29,7 +30,7 @@ namespace Aspose.Slides
                 shp.FillFormat.SolidFillColor.Color = Color.Yellow;
 
                 //Write the PPTX file to disk
-                pres.Save(docName, SaveFormat.Pptx);
+                pres.Save(FileName, SaveFormat.Pptx);
             }
         }
     }

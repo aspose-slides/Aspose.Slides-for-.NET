@@ -1,21 +1,17 @@
 ﻿using DocumentFormat.OpenXml;
 using DocumentFormat.OpenXml.Packaging;
 using DocumentFormat.OpenXml.Presentation;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Drawing = DocumentFormat.OpenXml.Drawing;
 
-namespace OpenXML_Presentation
+namespace Aspose.Plugins.AsposeVSOpenXML
 {
     class Program
     {
         static void Main(string[] args)
         {
-            string docName = @"E:\Aspose\Aspose Vs OpenXML\Aspose.Slides Vs OpenXML Presentation v1.1\Sample Files\fill color of a shape.pptx";
-            SetPPTShapeColor(docName);
+            string FilePath = @"..\..\..\..\Sample Files\";
+            string FileName = FilePath + "Fill color of a shape.pptx";
+            SetPPTShapeColor(FileName);
         }
         // Change the fill color of a shape.
         // The test file must have a filled shape as the first shape on the first slide.

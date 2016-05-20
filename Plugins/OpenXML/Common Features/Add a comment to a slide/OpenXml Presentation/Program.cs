@@ -1,17 +1,20 @@
 ﻿// Copyright (c) Aspose 2002-2014. All Rights Reserved.
 
-using System;
-using System.Linq;
 using DocumentFormat.OpenXml.Packaging;
 using DocumentFormat.OpenXml.Presentation;
+using System;
+using System.Linq;
 
-namespace OpenXml_Presentation
+namespace Aspose.Plugins.AsposeVSOpenXML
 {
     class Program
     {
         static void Main(string[] args)
         {
-            AddCommentToPresentation("Sample.pptx",
+            string FilePath = @"..\..\..\..\Sample Files\";
+            string FileName = FilePath + "Add a comment to a slide.pptx";
+            
+            AddCommentToPresentation(FileName,
             "Zeeshan", "MZ",
             "This is my programmatically added comment.");
 

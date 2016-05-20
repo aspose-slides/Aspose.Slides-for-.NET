@@ -1,19 +1,17 @@
 ﻿using DocumentFormat.OpenXml.Packaging;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Drawing = DocumentFormat.OpenXml.Drawing;
 
-namespace OpenXML_Presentation
+namespace Aspose.Plugins.AsposeVSOpenXML
 {
     class Program
     {
         static void Main(string[] args)
         {
-            string fileName = @"E:\Aspose\Aspose Vs OpenXML\Aspose.Slides Vs OpenXML Presentation v1.1\Sample Files\Get all the External Eyperlinks.pptx";
-            foreach (string s in GetAllExternalHyperlinksInPresentation(fileName))
+            string FilePath = @"..\..\..\..\Sample Files\";
+            string FileName = FilePath + "Get all the External Eyperlinks.pptx";
+            foreach (string s in GetAllExternalHyperlinksInPresentation(FileName))
                 Console.WriteLine(s);
         }
         // Returns all the external hyperlinks in the slides of a presentation.

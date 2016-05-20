@@ -1,17 +1,19 @@
 ﻿// Copyright (c) Aspose 2002-2014. All Rights Reserved.
 
-using System;
-using System.Linq;
 using DocumentFormat.OpenXml.Packaging;
 using DocumentFormat.OpenXml.Presentation;
+using System;
+using System.Linq;
 
-namespace OpenXML_Presentation
+namespace Aspose.Plugins.AsposeVSOpenXML
 {
     class Program
     {
         static void Main(string[] args)
         {
-            MoveSlide("Move a slide to a new position.pptx", 0, 1);
+            string FilePath = @"..\..\..\..\Sample Files\";
+            string FileName = FilePath + "Move a slide to a new position.pptx";
+            MoveSlide(FileName, 1, 2);
         }
         // Counting the slides in the presentation.
         public static int CountSlides(string presentationFile)

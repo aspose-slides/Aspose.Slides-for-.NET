@@ -1,18 +1,20 @@
 ﻿// Copyright (c) Aspose 2002-2014. All Rights Reserved.
 
+using DocumentFormat.OpenXml.Packaging;
+using DocumentFormat.OpenXml.Presentation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using DocumentFormat.OpenXml.Packaging;
-using DocumentFormat.OpenXml.Presentation;
 
-namespace OpenXML_Presentation
+namespace Aspose.Plugins.AsposeVSOpenXML
 {
     class Program
     {
         static void Main(string[] args)
         {
-            DeleteSlide("Delete a slide.pptx", 2);
+            string FilePath = @"..\..\..\..\Sample Files\";
+            string FileName = FilePath + "Delete a slide.pptx";
+            DeleteSlide(FileName, 1);
         }
         // Get the presentation object and pass it to the next DeleteSlide method.
         public static void DeleteSlide(string presentationFile, int slideIndex)

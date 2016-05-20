@@ -1,0 +1,242 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Add a comment to a slide", "Add a comment to a slide", "{86658EFE-5507-422D-BD89-4EF18A4585AD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Adding Slide to Presentation", "Adding Slide to Presentation", "{30A31946-D560-47DA-AA18-388AE0A41500}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Apply Theme to Presentation", "Apply Theme to Presentation", "{5924DAA7-A1D2-4105-A399-00F259E383B6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Count the number of Slides", "Count the number of Slides", "{457051FC-EA2D-46C6-805B-E56CC45A2ECB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Create a presentation document", "Create a presentation document", "{BF36626F-EB70-42AF-B8E6-8070BD29A4FE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Delete a slide", "Delete a slide", "{0CA9F7D1-0717-4577-ACC7-E2D6B0BAA260}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Delete all the comments by an author", "Delete all the comments by an author", "{47AC7CC8-95B2-4C6A-B514-A9A8AA789B17}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Fill Color of a Shape", "Fill Color of a Shape", "{C57B70B9-5487-4423-9F69-62FD30BFE8D6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Get all the External Hyperlinks", "Get all the External Hyperlinks", "{7D412CF4-B36C-4FF0-98C7-09B0144E8C18}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Get all the text in a slide", "Get all the text in a slide", "{680D96A8-5230-46A4-A99D-BA3D0208AEAB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Get all the text in all slides", "Get all the text in all slides", "{A6E4373A-3BBC-4B0E-83CF-A3AB21080D93}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Get the titles of all the slides", "Get the titles of all the slides", "{45D73435-CCC1-4480-AAAC-0C4533CFBC74}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Move a Paragraph", "Move a Paragraph", "{C32DB390-F489-4CAA-B627-02774F7E117C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Move a slide to a new position", "Move a slide to a new position", "{922DE106-E6F0-4A5C-A785-07BE1EB26CB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aspose Slides", "Add a comment to a slide\Aspose Slides\Aspose Slides.csproj", "{07037BF2-9D01-4EF0-AEE0-A679E59DC177}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenXml Presentation", "Add a comment to a slide\OpenXml Presentation\OpenXml Presentation.csproj", "{E64F771A-0F93-4538-BA1C-3B07138FEB7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aspose Slides", "Adding Slide to Presentation\Aspose Slides\Aspose Slides.csproj", "{F926C00B-F996-4945-9748-678191AC8143}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenXML Presentation", "Adding Slide to Presentation\OpenXML Presentation\OpenXML Presentation.csproj", "{D7EB18EF-BEAD-4F85-BE8A-865E465A597E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aspose.Slides", "Apply Theme to Presentation\Aspose.Slides\Aspose.Slides.csproj", "{5B9A8791-85FF-4CD2-B494-F7DDC6BC777B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenXML Presentation", "Apply Theme to Presentation\OpenXML Presentation\OpenXML Presentation.csproj", "{295EB9B5-B3D9-4CEB-BAB2-459E3749FB4D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aspose Slides", "Count the number of Slides\Aspose Slides\Aspose Slides.csproj", "{44E7463F-3B61-4E60-AFD0-6A7D4E0155F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenXML Presentation", "Count the number of Slides\OpenXML Presentation\OpenXML Presentation.csproj", "{D7AAD34D-EDA1-4A88-8BBE-005208CAC1FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aspose Slides", "Create a presentation document\Aspose Slides\Aspose Slides.csproj", "{51028C0D-AC76-45DF-8634-D62652200250}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenXML Presentation", "Create a presentation document\OpenXML Presentation\OpenXML Presentation.csproj", "{7E25EC61-CFD9-4FC5-BAE2-A7FE3C41C8FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aspose Slides", "Delete a slide\Aspose Slides\Aspose Slides.csproj", "{AB84E07F-A9D3-431E-810C-AB9652739BB5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenXML Presentation", "Delete a slide\OpenXML Presentation\OpenXML Presentation.csproj", "{33C4B43D-77FE-4D71-9010-720A068D3C46}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aspose Slides", "Delete all the comments by an author\Aspose Slides\Aspose Slides.csproj", "{160F29DE-7EE4-4AFA-A93C-D31CC1D1514E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenXML Presentation", "Delete all the comments by an author\OpenXML Presentation\OpenXML Presentation.csproj", "{CB1D3414-EE72-4D4C-A31E-DB8E15FC3969}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aspose.Slides", "Fill Color of a Shape\Aspose.Slides\Aspose.Slides.csproj", "{478108F5-6FA9-4C2F-A336-7F66ABC9DFFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenXML Presentation", "Fill Color of a Shape\OpenXML Presentation\OpenXML Presentation.csproj", "{F0171667-8CF3-4D3C-BFDE-9B2571A3CB32}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aspose.Slides", "Get all the External Hyperlinks\Aspose.Slides\Aspose.Slides.csproj", "{96A1B7A4-0159-4E19-9CAE-8137B09F9AE2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenXML Presentation", "Get all the External Hyperlinks\OpenXML Presentation\OpenXML Presentation.csproj", "{3D1351EB-C6FB-4D80-B1A2-4076863DA149}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aspose Slides", "Get all the text in a slide\Aspose Slides\Aspose Slides.csproj", "{13A514EB-26C5-462F-AB5D-B02F69A4B932}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenXML Presentation", "Get all the text in a slide\OpenXML Presentation\OpenXML Presentation.csproj", "{06D62BB2-B8B8-44A6-A528-E8F0958FE976}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aspose Slides", "Get all the text in all slides\Aspose Slides\Aspose Slides.csproj", "{A0D0CF65-C4FE-4C4F-91A9-5192EA935916}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenXML Presentation", "Get all the text in all slides\OpenXML Presentation\OpenXML Presentation.csproj", "{D5DC818E-4277-4971-ADCC-08ADFC83B9C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aspose Slides", "Get the titles of all the slides\Aspose Slides\Aspose Slides.csproj", "{5BA9CE79-FA5D-4CCD-8A9B-50DDC39FB096}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenXML Presentation", "Get the titles of all the slides\OpenXML Presentation\OpenXML Presentation.csproj", "{86F5FD5B-875C-45E1-80DB-F54CEEFD88C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aspose.Slides", "Move a Paragraph\Aspose.Slides\Aspose.Slides.csproj", "{3EC4F68D-5B5B-4FAE-8D16-BADF5BECE39D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenXML Presentation", "Move a Paragraph\OpenXML Presentation\OpenXML Presentation.csproj", "{C86E977B-E188-444B-8996-ABFC0BF301DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aspose Slides", "Move a slide to a new position\Aspose Slides\Aspose Slides.csproj", "{19AE7783-9ACE-4737-A525-0F2765B35F0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenXML Presentation", "Move a slide to a new position\OpenXML Presentation\OpenXML Presentation.csproj", "{0FCA1E3B-2AA8-43AA-8051-5CD743DD3AFF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{07037BF2-9D01-4EF0-AEE0-A679E59DC177}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07037BF2-9D01-4EF0-AEE0-A679E59DC177}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07037BF2-9D01-4EF0-AEE0-A679E59DC177}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07037BF2-9D01-4EF0-AEE0-A679E59DC177}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E64F771A-0F93-4538-BA1C-3B07138FEB7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E64F771A-0F93-4538-BA1C-3B07138FEB7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E64F771A-0F93-4538-BA1C-3B07138FEB7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E64F771A-0F93-4538-BA1C-3B07138FEB7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F926C00B-F996-4945-9748-678191AC8143}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F926C00B-F996-4945-9748-678191AC8143}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F926C00B-F996-4945-9748-678191AC8143}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F926C00B-F996-4945-9748-678191AC8143}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7EB18EF-BEAD-4F85-BE8A-865E465A597E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7EB18EF-BEAD-4F85-BE8A-865E465A597E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7EB18EF-BEAD-4F85-BE8A-865E465A597E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7EB18EF-BEAD-4F85-BE8A-865E465A597E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B9A8791-85FF-4CD2-B494-F7DDC6BC777B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B9A8791-85FF-4CD2-B494-F7DDC6BC777B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B9A8791-85FF-4CD2-B494-F7DDC6BC777B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B9A8791-85FF-4CD2-B494-F7DDC6BC777B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{295EB9B5-B3D9-4CEB-BAB2-459E3749FB4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{295EB9B5-B3D9-4CEB-BAB2-459E3749FB4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{295EB9B5-B3D9-4CEB-BAB2-459E3749FB4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{295EB9B5-B3D9-4CEB-BAB2-459E3749FB4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44E7463F-3B61-4E60-AFD0-6A7D4E0155F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44E7463F-3B61-4E60-AFD0-6A7D4E0155F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44E7463F-3B61-4E60-AFD0-6A7D4E0155F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44E7463F-3B61-4E60-AFD0-6A7D4E0155F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7AAD34D-EDA1-4A88-8BBE-005208CAC1FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7AAD34D-EDA1-4A88-8BBE-005208CAC1FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7AAD34D-EDA1-4A88-8BBE-005208CAC1FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7AAD34D-EDA1-4A88-8BBE-005208CAC1FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51028C0D-AC76-45DF-8634-D62652200250}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51028C0D-AC76-45DF-8634-D62652200250}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51028C0D-AC76-45DF-8634-D62652200250}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51028C0D-AC76-45DF-8634-D62652200250}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E25EC61-CFD9-4FC5-BAE2-A7FE3C41C8FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E25EC61-CFD9-4FC5-BAE2-A7FE3C41C8FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E25EC61-CFD9-4FC5-BAE2-A7FE3C41C8FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E25EC61-CFD9-4FC5-BAE2-A7FE3C41C8FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB84E07F-A9D3-431E-810C-AB9652739BB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB84E07F-A9D3-431E-810C-AB9652739BB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB84E07F-A9D3-431E-810C-AB9652739BB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB84E07F-A9D3-431E-810C-AB9652739BB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33C4B43D-77FE-4D71-9010-720A068D3C46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33C4B43D-77FE-4D71-9010-720A068D3C46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33C4B43D-77FE-4D71-9010-720A068D3C46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33C4B43D-77FE-4D71-9010-720A068D3C46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{160F29DE-7EE4-4AFA-A93C-D31CC1D1514E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{160F29DE-7EE4-4AFA-A93C-D31CC1D1514E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{160F29DE-7EE4-4AFA-A93C-D31CC1D1514E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{160F29DE-7EE4-4AFA-A93C-D31CC1D1514E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB1D3414-EE72-4D4C-A31E-DB8E15FC3969}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB1D3414-EE72-4D4C-A31E-DB8E15FC3969}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB1D3414-EE72-4D4C-A31E-DB8E15FC3969}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB1D3414-EE72-4D4C-A31E-DB8E15FC3969}.Release|Any CPU.Build.0 = Release|Any CPU
+		{478108F5-6FA9-4C2F-A336-7F66ABC9DFFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{478108F5-6FA9-4C2F-A336-7F66ABC9DFFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{478108F5-6FA9-4C2F-A336-7F66ABC9DFFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{478108F5-6FA9-4C2F-A336-7F66ABC9DFFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0171667-8CF3-4D3C-BFDE-9B2571A3CB32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0171667-8CF3-4D3C-BFDE-9B2571A3CB32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0171667-8CF3-4D3C-BFDE-9B2571A3CB32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0171667-8CF3-4D3C-BFDE-9B2571A3CB32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96A1B7A4-0159-4E19-9CAE-8137B09F9AE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96A1B7A4-0159-4E19-9CAE-8137B09F9AE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96A1B7A4-0159-4E19-9CAE-8137B09F9AE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96A1B7A4-0159-4E19-9CAE-8137B09F9AE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D1351EB-C6FB-4D80-B1A2-4076863DA149}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D1351EB-C6FB-4D80-B1A2-4076863DA149}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D1351EB-C6FB-4D80-B1A2-4076863DA149}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D1351EB-C6FB-4D80-B1A2-4076863DA149}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13A514EB-26C5-462F-AB5D-B02F69A4B932}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13A514EB-26C5-462F-AB5D-B02F69A4B932}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13A514EB-26C5-462F-AB5D-B02F69A4B932}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13A514EB-26C5-462F-AB5D-B02F69A4B932}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06D62BB2-B8B8-44A6-A528-E8F0958FE976}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06D62BB2-B8B8-44A6-A528-E8F0958FE976}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06D62BB2-B8B8-44A6-A528-E8F0958FE976}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06D62BB2-B8B8-44A6-A528-E8F0958FE976}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0D0CF65-C4FE-4C4F-91A9-5192EA935916}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0D0CF65-C4FE-4C4F-91A9-5192EA935916}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0D0CF65-C4FE-4C4F-91A9-5192EA935916}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0D0CF65-C4FE-4C4F-91A9-5192EA935916}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5DC818E-4277-4971-ADCC-08ADFC83B9C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5DC818E-4277-4971-ADCC-08ADFC83B9C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5DC818E-4277-4971-ADCC-08ADFC83B9C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5DC818E-4277-4971-ADCC-08ADFC83B9C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BA9CE79-FA5D-4CCD-8A9B-50DDC39FB096}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BA9CE79-FA5D-4CCD-8A9B-50DDC39FB096}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BA9CE79-FA5D-4CCD-8A9B-50DDC39FB096}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BA9CE79-FA5D-4CCD-8A9B-50DDC39FB096}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86F5FD5B-875C-45E1-80DB-F54CEEFD88C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86F5FD5B-875C-45E1-80DB-F54CEEFD88C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86F5FD5B-875C-45E1-80DB-F54CEEFD88C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86F5FD5B-875C-45E1-80DB-F54CEEFD88C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EC4F68D-5B5B-4FAE-8D16-BADF5BECE39D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EC4F68D-5B5B-4FAE-8D16-BADF5BECE39D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EC4F68D-5B5B-4FAE-8D16-BADF5BECE39D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EC4F68D-5B5B-4FAE-8D16-BADF5BECE39D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C86E977B-E188-444B-8996-ABFC0BF301DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C86E977B-E188-444B-8996-ABFC0BF301DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C86E977B-E188-444B-8996-ABFC0BF301DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C86E977B-E188-444B-8996-ABFC0BF301DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19AE7783-9ACE-4737-A525-0F2765B35F0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19AE7783-9ACE-4737-A525-0F2765B35F0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19AE7783-9ACE-4737-A525-0F2765B35F0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19AE7783-9ACE-4737-A525-0F2765B35F0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FCA1E3B-2AA8-43AA-8051-5CD743DD3AFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FCA1E3B-2AA8-43AA-8051-5CD743DD3AFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FCA1E3B-2AA8-43AA-8051-5CD743DD3AFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FCA1E3B-2AA8-43AA-8051-5CD743DD3AFF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{07037BF2-9D01-4EF0-AEE0-A679E59DC177} = {86658EFE-5507-422D-BD89-4EF18A4585AD}
+		{E64F771A-0F93-4538-BA1C-3B07138FEB7A} = {86658EFE-5507-422D-BD89-4EF18A4585AD}
+		{F926C00B-F996-4945-9748-678191AC8143} = {30A31946-D560-47DA-AA18-388AE0A41500}
+		{D7EB18EF-BEAD-4F85-BE8A-865E465A597E} = {30A31946-D560-47DA-AA18-388AE0A41500}
+		{5B9A8791-85FF-4CD2-B494-F7DDC6BC777B} = {5924DAA7-A1D2-4105-A399-00F259E383B6}
+		{295EB9B5-B3D9-4CEB-BAB2-459E3749FB4D} = {5924DAA7-A1D2-4105-A399-00F259E383B6}
+		{44E7463F-3B61-4E60-AFD0-6A7D4E0155F1} = {457051FC-EA2D-46C6-805B-E56CC45A2ECB}
+		{D7AAD34D-EDA1-4A88-8BBE-005208CAC1FE} = {457051FC-EA2D-46C6-805B-E56CC45A2ECB}
+		{51028C0D-AC76-45DF-8634-D62652200250} = {BF36626F-EB70-42AF-B8E6-8070BD29A4FE}
+		{7E25EC61-CFD9-4FC5-BAE2-A7FE3C41C8FA} = {BF36626F-EB70-42AF-B8E6-8070BD29A4FE}
+		{AB84E07F-A9D3-431E-810C-AB9652739BB5} = {0CA9F7D1-0717-4577-ACC7-E2D6B0BAA260}
+		{33C4B43D-77FE-4D71-9010-720A068D3C46} = {0CA9F7D1-0717-4577-ACC7-E2D6B0BAA260}
+		{160F29DE-7EE4-4AFA-A93C-D31CC1D1514E} = {47AC7CC8-95B2-4C6A-B514-A9A8AA789B17}
+		{CB1D3414-EE72-4D4C-A31E-DB8E15FC3969} = {47AC7CC8-95B2-4C6A-B514-A9A8AA789B17}
+		{478108F5-6FA9-4C2F-A336-7F66ABC9DFFF} = {C57B70B9-5487-4423-9F69-62FD30BFE8D6}
+		{F0171667-8CF3-4D3C-BFDE-9B2571A3CB32} = {C57B70B9-5487-4423-9F69-62FD30BFE8D6}
+		{96A1B7A4-0159-4E19-9CAE-8137B09F9AE2} = {7D412CF4-B36C-4FF0-98C7-09B0144E8C18}
+		{3D1351EB-C6FB-4D80-B1A2-4076863DA149} = {7D412CF4-B36C-4FF0-98C7-09B0144E8C18}
+		{13A514EB-26C5-462F-AB5D-B02F69A4B932} = {680D96A8-5230-46A4-A99D-BA3D0208AEAB}
+		{06D62BB2-B8B8-44A6-A528-E8F0958FE976} = {680D96A8-5230-46A4-A99D-BA3D0208AEAB}
+		{A0D0CF65-C4FE-4C4F-91A9-5192EA935916} = {A6E4373A-3BBC-4B0E-83CF-A3AB21080D93}
+		{D5DC818E-4277-4971-ADCC-08ADFC83B9C7} = {A6E4373A-3BBC-4B0E-83CF-A3AB21080D93}
+		{5BA9CE79-FA5D-4CCD-8A9B-50DDC39FB096} = {45D73435-CCC1-4480-AAAC-0C4533CFBC74}
+		{86F5FD5B-875C-45E1-80DB-F54CEEFD88C5} = {45D73435-CCC1-4480-AAAC-0C4533CFBC74}
+		{3EC4F68D-5B5B-4FAE-8D16-BADF5BECE39D} = {C32DB390-F489-4CAA-B627-02774F7E117C}
+		{C86E977B-E188-444B-8996-ABFC0BF301DB} = {C32DB390-F489-4CAA-B627-02774F7E117C}
+		{19AE7783-9ACE-4737-A525-0F2765B35F0A} = {922DE106-E6F0-4A5C-A785-07BE1EB26CB0}
+		{0FCA1E3B-2AA8-43AA-8051-5CD743DD3AFF} = {922DE106-E6F0-4A5C-A785-07BE1EB26CB0}
+	EndGlobalSection
+EndGlobal
