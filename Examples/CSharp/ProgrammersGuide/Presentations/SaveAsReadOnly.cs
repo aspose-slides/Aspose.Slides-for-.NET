@@ -24,15 +24,15 @@ namespace CSharp.Presentations
                 System.IO.Directory.CreateDirectory(dataDir);
 
             //Instantiate a Presentation object that represents a PPT file
-            Presentation pres = new Presentation();
+            Presentation presentation = new Presentation();
 
             //....do some work here.....
 
             //Setting Write protection Password
-            pres.ProtectionManager.SetWriteProtection("test");
+            presentation.ProtectionManager.SetWriteProtection("test");
 
             //Save your presentation to a file
-            pres.Save(dataDir + "demoWriteProtected.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
+            presentation.Save(dataDir + "WriteProtected.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
 
         }
     }

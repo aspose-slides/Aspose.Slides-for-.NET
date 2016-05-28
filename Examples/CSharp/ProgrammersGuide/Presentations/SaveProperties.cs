@@ -18,24 +18,19 @@ namespace CSharp.Presentations
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Presentations();
 
-            // Create directory if it is not already present.
-            bool IsExists = System.IO.Directory.Exists(dataDir);
-            if (!IsExists)
-                System.IO.Directory.CreateDirectory(dataDir);
-
             //Instantiate a Presentation object that represents a PPT file
-            Presentation pres = new Presentation();
+            Presentation presentation = new Presentation();
 
             //....do some work here.....
 
             //Setting access to document properties in password protected mode
-            pres.ProtectionManager.EncryptDocumentProperties = false;
+            presentation.ProtectionManager.EncryptDocumentProperties = false;
 
             //Setting Password
-            pres.ProtectionManager.Encrypt("pass");
+            presentation.ProtectionManager.Encrypt("pass");
 
             //Save your presentation to a file
-            pres.Save(dataDir + "demoPassDocument.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
+            presentation.Save(dataDir + "Password Protected Presentation.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
         }
     }
 }

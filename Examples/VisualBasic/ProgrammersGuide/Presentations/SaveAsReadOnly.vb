@@ -33,7 +33,6 @@ Namespace VisualBasic.Presentations
 
             'Save your presentation to a file
             pres.Save(dataDir & "demoWriteProtected.pptx", Aspose.Slides.Export.SaveFormat.Pptx)
-
         End Sub
     End Class
 End Namespace

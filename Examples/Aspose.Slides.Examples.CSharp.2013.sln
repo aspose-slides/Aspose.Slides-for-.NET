@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 13.00
+# Visual Studio 2013
+VisualStudioVersion = 13.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp", "CSharp\CSharp.csproj", "{51A69899-7BF1-4AD6-8C21-01136329EAFB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{51A69899-7BF1-4AD6-8C21-01136329EAFB}.Debug|x86.ActiveCfg = Debug|x86
+		{51A69899-7BF1-4AD6-8C21-01136329EAFB}.Debug|x86.Build.0 = Debug|x86
+		{51A69899-7BF1-4AD6-8C21-01136329EAFB}.Release|x86.ActiveCfg = Release|x86
+		{51A69899-7BF1-4AD6-8C21-01136329EAFB}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -24,12 +24,12 @@ namespace CSharp.Presentations
                 System.IO.Directory.CreateDirectory(dataDir);
 
             //Instantiate a Presentation object that represents a PPT file
-            Presentation pres = new Presentation();
+            Presentation presentation= new Presentation();
 
             //...do some work here...
 
             //Save your presentation to a file
-            pres.Save(dataDir + "Saved.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
+            presentation.Save(dataDir + "Saved.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
         }
     }
 }

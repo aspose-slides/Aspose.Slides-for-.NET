@@ -32,7 +32,7 @@ namespace CSharp.Shapes
                 ISlide sld = pres.Slides[0];
 
                 //Embedd vide inside presentation
-                IVideo vid = pres.Videos.AddVideo(new FileStream(dataDir+ "Wildlife.wmv", FileMode.Open));
+                IVideo vid = pres.Videos.AddVideo(new FileStream(dataDir+ "Wildlife.mp4", FileMode.Open));
 
                 //Add Video Frame
                 IVideoFrame vf = sld.Shapes.AddVideoFrame(50, 150, 300, 350, vid);

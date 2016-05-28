@@ -21,7 +21,7 @@ Namespace VisualBasic.Presentations
             Dim pres As New Presentation(dataDir & "ConvertToPDF.pptx")
 
             'Save the presentation to PDF with default options
-            pres.Save(dataDir & "output.pdf", Aspose.Slides.Export.SaveFormat.Pdf)
+            pres.Save(dataDir & "PDFUsingDefaultOptions.pdf", Aspose.Slides.Export.SaveFormat.Pdf)
 
         End Sub
     End Class

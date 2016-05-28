@@ -19,16 +19,15 @@ namespace CSharp.Presentations
             string dataDir = RunExamples.GetDataDir_Presentations();
 
             //Opening the presentation file
-            Presentation pres = new Presentation(dataDir + "RemoveWriteProtection.pptx");
-
+            Presentation presentation = new Presentation(dataDir + "RemoveWriteProtection.pptx");
 
             //Checking if presentation is write protected
-            if (pres.ProtectionManager.IsWriteProtected)
-                //Removing Write protection
-                pres.ProtectionManager.RemoveWriteProtection();
+            if (presentation.ProtectionManager.IsWriteProtected)
+                //Removing Write protection                
+                presentation.ProtectionManager.RemoveWriteProtection();
 
             //Saving presentation
-            pres.Save(dataDir + "newDemo.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
+            presentation.Save(dataDir + "File_Without_WriteProtection.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
         }
     }
 }

@@ -8,6 +8,7 @@
 using System.IO;
 
 using Aspose.Slides;
+using Aspose.Slides.Export;
 
 namespace CSharp.Presentations
 {
@@ -15,24 +16,26 @@ namespace CSharp.Presentations
     {
         public static void Run()
         {
+            // For complete examples and data files, please go to https://github.com/aspose-slides/Aspose.Slides-for-.NET
+
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Presentations();
 
-            //Instantiate the Presentation class that represents the Presentation
-            Presentation pres = new Presentation(dataDir + "ModifyBuiltinProperties.pptx");
+            // Instantiate the Presentation class that represents the Presentation
+            Presentation presentation = new Presentation(dataDir + "ModifyBuiltinProperties.pptx");
 
-            //Create a reference to IDocumentProperties object associated with Presentation
-            IDocumentProperties dp = pres.DocumentProperties;
+            // Create a reference to IDocumentProperties object associated with Presentation
+            IDocumentProperties documentProperties = presentation.DocumentProperties;
 
             //Set the builtin properties
-            dp.Author = "Aspose.Slides for .NET";
-            dp.Title = "Modifying Presentation Properties";
-            dp.Subject = "Aspose Subject";
-            dp.Comments = "Aspose Description";
-            dp.Manager = "Aspose Manager";
+            documentProperties.Author = "Aspose.Slides for .NET";
+            documentProperties.Title = "Modifying Presentation Properties";
+            documentProperties.Subject = "Aspose Subject";
+            documentProperties.Comments = "Aspose Description";
+            documentProperties.Manager = "Aspose Manager";
 
             //Save your presentation to a file
-            pres.Save(dataDir + "DocProps.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
+            presentation.Save(dataDir + "DocumentProperties.pptx", SaveFormat.Pptx);
             
         }
     }

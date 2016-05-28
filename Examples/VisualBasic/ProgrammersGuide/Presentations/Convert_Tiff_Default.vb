@@ -18,10 +18,10 @@ Namespace VisualBasic.Presentations
             Dim dataDir As String = RunExamples.GetDataDir_Presentations()
 
             'Instantiate a Presentation object that represents a presentation file
-            Using pres As New Presentation(dataDir & "Convert_Tiff_Default.pptx")
+            Using presentation As New Presentation(dataDir & "Convert_Tiff_Default.pptx")
 
                 'Saving the presentation to TIFF document
-                pres.Save(dataDir & "demo.tiff", Aspose.Slides.Export.SaveFormat.Tiff)
+                presentation.Save(dataDir & "Tiff_out.tiff", Aspose.Slides.Export.SaveFormat.Tiff)
             End Using
         End Sub
     End Class

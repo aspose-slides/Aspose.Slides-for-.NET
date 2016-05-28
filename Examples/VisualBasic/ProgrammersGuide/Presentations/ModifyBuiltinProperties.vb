@@ -31,7 +31,7 @@ Namespace VisualBasic.Presentations
             dp.Manager = "Aspose Manager"
 
             'Save your presentation to a file
-            pres.Save(dataDir & "DocProps.pptx", Aspose.Slides.Export.SaveFormat.Pptx)
+            pres.Save(dataDir & "Updated_Document_Properties.pptx", Aspose.Slides.Export.SaveFormat.Pptx)
 
         End Sub
     End Class

@@ -18,17 +18,17 @@ namespace CSharp.Presentations
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Presentations();
 
-            //Accessing the Document Properties of a Password Protected Presentation without Password
-            //creating instance of load options to set the presentation access password
-            Aspose.Slides.LoadOptions loadOptions = new Aspose.Slides.LoadOptions();
+            // Accessing the Document Properties of a Password Protected Presentation without Password
+            // creating instance of load options to set the presentation access password
+            LoadOptions loadOptions = new LoadOptions();
 
-            //Setting the access password to null
+            // Setting the access password to null
             loadOptions.Password = null;
 
-            //Setting the access to document properties
+            // Setting the access to document properties
             loadOptions.OnlyLoadDocumentProperties = true;
 
-            //Opening the presentation file by passing the file path and load options to the constructor of Presentation class
+            // Opening the presentation file by passing the file path and load options to the constructor of Presentation class
             Presentation pres = new Presentation(dataDir + "AccessProperties.pptx", loadOptions);
 
             //Getting Document Properties

@@ -22,7 +22,7 @@ Namespace VisualBasic.Presentations
             Dim loadOptions As New Aspose.Slides.LoadOptions()
 
             'Setting the access password to null
-            loadOptions.Password = Nothing
+            loadOptions.Password = "Password"
 
             'Setting the access to document properties
             loadOptions.OnlyLoadDocumentProperties = True

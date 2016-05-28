@@ -1,10 +1,16 @@
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Text;
+/*
+This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Slides for .NET API reference 
+when the project is build. Please check https://docs.nuget.org/consume/nuget-faq for more information. 
+If you do not wish to use NuGet, you can manually download Aspose.Slides for .NET API from http://www.aspose.com/downloads, 
+install it and then add its reference to this project. For any issues, questions or suggestions 
+please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
+*/
 
+using System;
+using System.IO;
 using CSharp.Charts;
 using CSharp.Presentations;
+using CSharp.ProgrammersGuide.Presentations;
 using CSharp.Shapes;
 using CSharp.Slides;
 using CSharp.SmartArts;
@@ -20,6 +26,9 @@ namespace CSharp
         {
             Console.WriteLine("Open RunExamples.cs. In Main() method, Un-comment the example that you want to run");
             Console.WriteLine("=====================================================");
+
+
+
             // Un-comment the one you want to try out
 
             // =====================================================
@@ -28,13 +37,13 @@ namespace CSharp
             // =====================================================
             // =====================================================
 
-            ChartEntities.Run();
+            //ChartEntities.Run();
             //ChartTrendLines.Run();
             //ExistingChart.Run();
             //NormalCharts.Run();
             //NumberFormat.Run();
             //ScatteredChart.Run();
-            
+
 
             //// =====================================================
             //// =====================================================
@@ -44,25 +53,42 @@ namespace CSharp
 
             //AccessBuiltinProperties.Run();
             //AccessModifyingProperties.Run();
+            //AddCustomDocumentProperties.Run();
             //AccessOpenDoc.Run();
             //AccessProperties.Run();
             //ConvertToPDF.Run();
+            //CustomOptionsPDFConversion.Run();
+            //ConvertPresentationToPasswordProtectedPDF.Run();
+            //ConvertSpecificSlideToPDF.Run();
+            //ConvertSlidesToPdfNotes.Run();
+            //PresentationToTIFFWithDefaultSize.Run();
+            //PresentationToTIFFWithCustomImagePixelFormat.Run();
             //ConvertWithNoteToTiff.Run();
             //Convert_HTML.Run();
+            //ConvertIndividualSlide.Run();
             //Convert_Tiff_Custom.Run();
             //Convert_Tiff_Default.Run();
             //Convert_XPS.Run();
             //Convert_XPS_Options.Run();
             //ModifyBuiltinProperties.Run();
-            //OpenPasswordPresentation.Run();
             //OpenPresentation.Run();
+            //OpenPasswordPresentation.Run();
             //PPTtoPPTX.Run();
             //RemoveWriteProtection.Run();
             //SaveAsReadOnly.Run();
             //SaveProperties.Run();
             //SaveToFile.Run();
+            //SaveToStream.Run();
             //SaveWithPassword.Run();
-
+            //SaveAsPredefinedViewType.Run();
+            //VerifyingPresentationWithoutloading.Run();
+            //ExportMediaFilestohtml.Run();
+            //GetFileFormat.Run();
+            //ConvetToSWF.Run();
+            //ConversionToTIFFNotes.Run();
+            //ConvertNotesSlideViewToPDF.Run();
+            //CreateNewPresentation.Run();
+           
             //// =====================================================
             //// =====================================================
             //// Shapes
@@ -171,10 +197,16 @@ namespace CSharp
             //TextBoxHyperlink.Run();
             //TextBoxOnSlideProgram.Run();
 
-            
+
             // Stop before exiting
             Console.WriteLine("\n\nProgram Finished. Press any key to exit....");
             Console.ReadKey();
+        }
+
+        protected void Page_Load(object sender, EventArgs e)
+        {
+
+
         }
 
         public static String GetDataDir_Charts()
@@ -194,7 +226,7 @@ namespace CSharp
 
         public static String GetDataDir_Slides_Presentations()
         {
-            return Path.GetFullPath("../../ProgrammersGuide/Slides-Presentations/Data/");
+            return Path.GetFullPath("../../ProgrammersGuide/Slides-Presentation/Data/");
         }
 
         public static String GetDataDir_SmartArts()

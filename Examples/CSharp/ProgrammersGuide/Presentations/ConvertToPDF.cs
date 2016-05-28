@@ -1,13 +1,16 @@
 //////////////////////////////////////////////////////////////////////////
-// Copyright 2001-2015 Aspose Pty Ltd. All Rights Reserved.
+// Copyright 2001-2016 Aspose Pty Ltd. All Rights Reserved.
 //
 // This file is part of Aspose.Slides. The source code in this file
 // is only intended as a supplement to the documentation, and is provided
 // "as is", without warranty of any kind, either expressed or implied.
 //////////////////////////////////////////////////////////////////////////
+ 
+
 using System.IO;
 
 using Aspose.Slides;
+using Aspose.Slides.Export;
 
 namespace CSharp.Presentations
 {
@@ -18,11 +21,11 @@ namespace CSharp.Presentations
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Presentations();
 
-            //Instantiate a Presentation object that represents a presentation file
-            Presentation pres = new Presentation(dataDir + "ConvertToPDF.pptx");
+            // Instantiate a Presentation object that represents a presentation file
+            Presentation presentation = new Presentation(dataDir + "ConvertToPDF.pptx");
             
             //Save the presentation to PDF with default options
-            pres.Save(dataDir + "output.pdf", Aspose.Slides.Export.SaveFormat.Pdf);
+            presentation.Save(dataDir + "output.pdf", SaveFormat.Pdf);
                         
         }
     }

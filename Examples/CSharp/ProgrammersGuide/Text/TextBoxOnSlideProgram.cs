@@ -50,8 +50,7 @@ namespace CSharp.Text
 
                 //Save the presentation to disk
                 pres.Save(dataDir + "TextBox.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
-            }
- 
+            } 
         }
     }
 }

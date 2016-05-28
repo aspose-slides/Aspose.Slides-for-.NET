@@ -6,14 +6,18 @@
 ' "as is", without warranty of any kind, either expressed or implied.
 '////////////////////////////////////////////////////////////////////////
 
+Imports System.Drawing
 Imports Microsoft.VisualBasic
 Imports System.IO
+Imports System.Runtime.InteropServices.ComTypes
 
 Imports Aspose.Slides
+Imports Aspose.Slides.Export
 
 Namespace VisualBasic.Presentations
     Public Class AccessBuiltinProperties
         Public Shared Sub Run()
+
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Presentations()
 

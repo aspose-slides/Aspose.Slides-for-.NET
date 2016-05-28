@@ -10,10 +10,12 @@ Imports Microsoft.VisualBasic
 Imports System.IO
 
 Imports Aspose.Slides
+Imports Aspose.Slides.Export
 
 Namespace VisualBasic.Presentations
     Public Class AccessModifyingProperties
         Public Shared Sub Run()
+
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Presentations()
 
@@ -35,7 +37,8 @@ Namespace VisualBasic.Presentations
             Next i
 
             'Save your presentation to a file
-            pres.Save(dataDir & "CustomDemoModified.pptx", Aspose.Slides.Export.SaveFormat.Pptx)
+            pres.Save(dataDir & "CustomDemoModified.pptx", SaveFormat.Pptx)
+
         End Sub
     End Class
 End Namespace
