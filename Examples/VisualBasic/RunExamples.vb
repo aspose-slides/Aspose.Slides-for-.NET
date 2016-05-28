@@ -3,6 +3,7 @@ Imports System
 Imports System.Collections.Generic
 Imports System.IO
 Imports System.Text
+Imports ProgrammersGuide.Presentations
 
 Imports VisualBasic.Charts
 Imports VisualBasic.Presentations
@@ -26,12 +27,12 @@ Namespace VisualBasic
             ' =====================================================
             ' =====================================================
 
-            ChartEntities.Run()
-            'ChartTrendLines.Run();
-            'ExistingChart.Run();
-            'NormalCharts.Run();
-            'NumberFormat.Run();
-            'ScatteredChart.Run();
+            'ChartEntities.Run()
+            'ChartTrendLines.Run()
+            'ExistingChart.Run()
+            'NormalCharts.Run()
+            'NumberFormat.Run()
+            'ScatteredChart.Run()
 
 
             '// =====================================================
@@ -40,26 +41,41 @@ Namespace VisualBasic
             '// =====================================================
             '// =====================================================
 
-            'AccessBuiltinProperties.Run();
-            'AccessModifyingProperties.Run();
-            'AccessOpenDoc.Run();
-            'AccessProperties.Run();
-            'ConvertToPDF.Run();
-            'ConvertWithNoteToTiff.Run();
-            'Convert_HTML.Run();
-            'Convert_Tiff_Custom.Run();
-            'Convert_Tiff_Default.Run();
-            'Convert_XPS.Run();
-            'Convert_XPS_Options.Run();
-            'ModifyBuiltinProperties.Run();
-            'OpenPasswordPresentation.Run();
-            'OpenPresentation.Run();
-            'PPTtoPPTX.Run();
-            'RemoveWriteProtection.Run();
-            'SaveAsReadOnly.Run();
-            'SaveProperties.Run();
-            'SaveToFile.Run();
-            'SaveWithPassword.Run();
+            AccessBuiltinProperties.Run()
+            'AccessModifyingProperties.Run()
+            'AccessOpenDoc.Run()
+            'AccessProperties.Run()
+            'ConvertToPDF.Run()
+            'ConvertPDFwithCustomOptions.Run()
+            'ConvertToPasswordProtectedPDF.Run()
+            'ConvertSpecificSlideToPDF.Run()
+            'ConvertSlidesToPdfNotes.Run()
+            'ConvertWithNoteToTiff.Run()
+            'Convert_HTML.Run()
+            'ConvertIndividualSlide.Run()
+            'Convert_Tiff_Custom.Run()
+            'Convert_Tiff_Default.Run()
+            'ConvertToTIFFWithCustomImagePixelFormat.Run()
+            'Convert_XPS.Run()
+            'Convert_XPS_Options.Run()
+            'ModifyBuiltinProperties.Run()
+            'OpenPasswordPresentation.Run()
+            'VerifyingPresentationWithoutloading.Run()
+            'OpenPresentation.Run()
+            'PPTtoPPTX.Run()
+            'RemoveWriteProtection.Run()
+            'SaveAsReadOnly.Run()
+            'SaveProperties.Run()
+            'SaveToFile.Run()
+            'SaveToStream.Run()
+            'SaveWithPassword.Run()
+            'SaveAsPredefinedViewType.Run()
+            'GetFileFormat.Run()
+            'ExportMediaFilestohtml.Run()
+            'AddCustomDocumentProperties.Run()
+            'ConvetToSWF.Run()
+            'ConversionToTIFFNotes.Run()
+            'ConvertNotesSlideViewToPDF.Run()
 
             '// =====================================================
             '// =====================================================

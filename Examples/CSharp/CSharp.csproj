@@ -36,16 +36,35 @@
     <Reference Include="Aspose.Cells">
       <HintPath>..\packages\Aspose.Cells.8.5.0\lib\net20\Aspose.Cells.dll</HintPath>
     </Reference>
-    <Reference Include="Aspose.Slides, Version=15.5.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Aspose.Slides.NET.15.5.0\lib\net2.0\Aspose.Slides.dll</HintPath>
+    <Reference Include="Aspose.Slides, Version=16.4.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Slides.NET.16.4.0\lib\net2.0\Aspose.Slides.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ProgrammersGuide\Presentations\AddCustomDocumentProperties.cs" />
+    <Compile Include="ProgrammersGuide\Presentations\ConversionToTIFFNotes.cs" />
+    <Compile Include="ProgrammersGuide\Presentations\ConvertIndividualSlide.cs" />
+    <Compile Include="ProgrammersGuide\Presentations\ConvertNotesSlideViewToPDF.cs" />
+    <Compile Include="ProgrammersGuide\Presentations\ConvertSlidesToPdfNotes.cs" />
+    <Compile Include="ProgrammersGuide\Presentations\ConvertPresentationToPasswordProtectedPDF.cs" />
+    <Compile Include="ProgrammersGuide\Presentations\ConvertSpecificSlideToPDF.cs" />
+    <Compile Include="ProgrammersGuide\Presentations\ConvetToSWF.cs" />
+    <Compile Include="ProgrammersGuide\Presentations\CreateNewPresentation.cs" />
+    <Compile Include="ProgrammersGuide\Presentations\CustomOptionsPDFConversion.cs" />
+    <Compile Include="ProgrammersGuide\Presentations\ExportMediaFilestohtml.cs" />
+    <Compile Include="ProgrammersGuide\Presentations\GetFileFormat.cs" />
+    <Compile Include="ProgrammersGuide\Presentations\PresentationToTIFFWithCustomImagePixelFormat.cs" />
+    <Compile Include="ProgrammersGuide\Presentations\PresentationToTIFFWithDefaultSize.cs" />
+    <Compile Include="ProgrammersGuide\Presentations\SaveAsPredefinedViewType.cs" />
+    <Compile Include="ProgrammersGuide\Presentations\SaveToStream.cs" />
+    <Compile Include="ProgrammersGuide\Presentations\SetZoom.cs" />
+    <Compile Include="ProgrammersGuide\Presentations\VerifyingPresentationWithoutloading.cs" />
     <Compile Include="ProgrammersGuide\Shapes\ChangeOLEObjectData.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -154,6 +173,7 @@
     <None Include="ProgrammersGuide\Charts\Data\ChartEntities.pptx" />
     <None Include="ProgrammersGuide\Charts\Data\ExistingChart.pptx" />
     <None Include="ProgrammersGuide\Presentations\Data\AccessOpenDoc.odp" />
+    <None Include="ProgrammersGuide\Presentations\Data\DemoFile.pptx" />
     <None Include="ProgrammersGuide\Presentations\Data\PPTtoPPTX.ppt" />
     <None Include="ProgrammersGuide\Presentations\Data\Convert_HTML.pptx" />
     <None Include="ProgrammersGuide\Presentations\Data\Convert_Tiff_Custom.pptx" />
@@ -212,6 +232,7 @@
   <ItemGroup>
     <Content Include="ProgrammersGuide\Shapes\Data\AddAudioFrame.wav" />
     <Content Include="ProgrammersGuide\Shapes\Data\aspose-logo.jpg" />
+    <Content Include="ProgrammersGuide\Shapes\Data\sampleaudio.wav" />
     <Content Include="ProgrammersGuide\Shapes\Data\Tulips.jpg" />
     <Content Include="ProgrammersGuide\Slides-Presentation\Data\Aspose.svg" />
     <Content Include="ProgrammersGuide\Slides-Presentation\Data\Tulips.jpg" />

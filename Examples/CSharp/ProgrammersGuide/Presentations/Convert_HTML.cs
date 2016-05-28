@@ -19,16 +19,14 @@ namespace CSharp.Presentations
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Presentations();
 
-
             //Instantiate a Presentation object that represents a presentation file
-            using (Presentation pres = new Presentation(dataDir + "Convert_HTML.pptx"))
+            using (Presentation presentation = new Presentation(dataDir + "Convert_HTML.pptx"))
             {
-
                 HtmlOptions htmlOpt = new HtmlOptions();
                 htmlOpt.HtmlFormatter = HtmlFormatter.CreateDocumentFormatter("", false);
 
                 //Saving the presentation to HTML
-                pres.Save(dataDir + "demo.html", Aspose.Slides.Export.SaveFormat.Html, htmlOpt);
+                presentation.Save(dataDir + "demo.html", Aspose.Slides.Export.SaveFormat.Html, htmlOpt);
             }
         }
     }

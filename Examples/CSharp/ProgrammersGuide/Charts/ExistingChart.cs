@@ -21,9 +21,9 @@ namespace CSharp.Charts
             string dataDir = RunExamples.GetDataDir_Charts();
 
             //Instantiate Presentation class that represents PPTX file//Instantiate Presentation class that represents PPTX file
-            Presentation pres = new Presentation(dataDir + "AsposeChart.pptx");
+            Presentation pres = new Presentation(dataDir + "ExistingChart.pptx");
 
-            //Access first slide
+            //Access first slideMarker
             ISlide sld = pres.Slides[0];
 
             // Add chart with default data

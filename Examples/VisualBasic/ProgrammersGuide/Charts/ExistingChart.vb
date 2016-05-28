@@ -20,7 +20,7 @@ Namespace VisualBasic.Charts
             Dim dataDir As String = RunExamples.GetDataDir_Charts()
 
             'Instantiate Presentation class that represents PPTX file//Instantiate Presentation class that represents PPTX file
-            Dim pres As New Presentation(dataDir & "AsposeChart.pptx")
+            Dim pres As New Presentation(dataDir & "ExistingChart.pptx")
 
             'Access first slide
             Dim sld As ISlide = pres.Slides(0)

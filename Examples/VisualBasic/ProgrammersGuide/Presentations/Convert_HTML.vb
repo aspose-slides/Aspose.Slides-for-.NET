@@ -18,15 +18,14 @@ Namespace VisualBasic.Presentations
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Presentations()
 
-
-            'Instantiate a Presentation object that represents a presentation file
-            Using pres As New Presentation(dataDir & "Convert_HTML.pptx")
+            ' Instantiate a Presentation object that represents a presentation file
+            Using presentation As New Presentation(dataDir & "Convert_HTML.pptx")
 
                 Dim htmlOpt As New HtmlOptions()
                 htmlOpt.HtmlFormatter = HtmlFormatter.CreateDocumentFormatter("", False)
 
-                'Saving the presentation to HTML
-                pres.Save(dataDir & "demo.html", Aspose.Slides.Export.SaveFormat.Html, htmlOpt)
+                ' Saving the presentation to HTML
+                presentation.Save(dataDir & "demo.html", Aspose.Slides.Export.SaveFormat.Html, htmlOpt)
             End Using
         End Sub
     End Class

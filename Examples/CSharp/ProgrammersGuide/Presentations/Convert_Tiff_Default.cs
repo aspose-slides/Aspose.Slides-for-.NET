@@ -23,7 +23,7 @@ namespace CSharp.Presentations
             {
 
                 //Saving the presentation to TIFF document
-                pres.Save(dataDir + "demo.tiff", Aspose.Slides.Export.SaveFormat.Tiff);
+                pres.Save(dataDir + "Tiff_out.tiff", Aspose.Slides.Export.SaveFormat.Tiff);
             }
         }
     }

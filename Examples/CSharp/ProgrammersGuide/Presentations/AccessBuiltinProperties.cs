@@ -22,23 +22,23 @@ namespace CSharp.Presentations
             Presentation pres = new Presentation(dataDir + "AccessBuiltin Properties.pptx");
 
             //Create a reference to IDocumentProperties object associated with Presentation
-            IDocumentProperties dp = pres.DocumentProperties;
+            IDocumentProperties documentProperties = pres.DocumentProperties;
 
             //Display the builtin properties
-            System.Console.WriteLine("Category : " + dp.Category);
-            System.Console.WriteLine("Current Status : " + dp.ContentStatus);
-            System.Console.WriteLine("Creation Date : " + dp.CreatedTime);
-            System.Console.WriteLine("Author : " + dp.Author);
-            System.Console.WriteLine("Description : " + dp.Comments);
-            System.Console.WriteLine("KeyWords : " + dp.Keywords);
-            System.Console.WriteLine("Last Modified By : " + dp.LastSavedBy);
-            System.Console.WriteLine("Supervisor : " + dp.Manager);
-            System.Console.WriteLine("Modified Date : " + dp.LastSavedTime);
-            System.Console.WriteLine("Presentation Format : " + dp.PresentationFormat);
-            System.Console.WriteLine("Last Print Date : " + dp.LastPrinted);
-            System.Console.WriteLine("Is Shared between producers : " + dp.SharedDoc);
-            System.Console.WriteLine("Subject : " + dp.Subject);
-            System.Console.WriteLine("Title : " + dp.Title);
+            System.Console.WriteLine("Category : " + documentProperties.Category);
+            System.Console.WriteLine("Current Status : " + documentProperties.ContentStatus);
+            System.Console.WriteLine("Creation Date : " + documentProperties.CreatedTime);
+            System.Console.WriteLine("Author : " + documentProperties.Author);
+            System.Console.WriteLine("Description : " + documentProperties.Comments);
+            System.Console.WriteLine("KeyWords : " + documentProperties.Keywords);
+            System.Console.WriteLine("Last Modified By : " + documentProperties.LastSavedBy);
+            System.Console.WriteLine("Supervisor : " + documentProperties.Manager);
+            System.Console.WriteLine("Modified Date : " + documentProperties.LastSavedTime);
+            System.Console.WriteLine("Presentation Format : " + documentProperties.PresentationFormat);
+            System.Console.WriteLine("Last Print Date : " + documentProperties.LastPrinted);
+            System.Console.WriteLine("Is Shared between producers : " + documentProperties.SharedDoc);
+            System.Console.WriteLine("Subject : " + documentProperties.Subject);
+            System.Console.WriteLine("Title : " + documentProperties.Title);
             
         }
     }

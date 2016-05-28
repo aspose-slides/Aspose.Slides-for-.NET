@@ -21,7 +21,7 @@ Namespace VisualBasic.Presentations
             Using pres As New Presentation(dataDir & "Convert_XPS.pptx")
 
                 'Saving the presentation to TIFF document
-                pres.Save(dataDir & "demo.xps", Aspose.Slides.Export.SaveFormat.Xps)
+                pres.Save(dataDir & "XPS_Output_Without_XPSOption.xps", Export.SaveFormat.Xps)
             End Using
         End Sub
     End Class

@@ -25,7 +25,7 @@ namespace CSharp.Shapes
                 System.IO.Directory.CreateDirectory(dataDir);
 
             //Instantiate a Presentation class that represents the presentation file
-            using (Presentation p = new Presentation(dataDir + "FindShapeInSlide.pptx"))
+            using (Presentation p = new Presentation(dataDir + "FindingShapeInSlide.pptx"))
             {
 
                 ISlide slide = p.Slides[0];
@@ -44,8 +44,6 @@ namespace CSharp.Shapes
             //Iterating through all shapes inside the slide
             for (int i = 0; i < slide.Shapes.Count; i++)
             {
-
-
                 //If the alternative text of the slide matches with the required one then
                 //return the shape
                 if (slide.Shapes[i].AlternativeText.CompareTo(alttext) == 0)

@@ -18,17 +18,17 @@ Namespace VisualBasic.Presentations
             Dim dataDir As String = RunExamples.GetDataDir_Presentations()
 
             'Opening the presentation file
-            Dim pres As New Presentation(dataDir & "RemoveWriteProtection.pptx")
+            Dim presentation As New Presentation(dataDir & "RemoveWriteProtection.pptx")
 
 
             'Checking if presentation is write protected
-            If pres.ProtectionManager.IsWriteProtected Then
+            If presentation.ProtectionManager.IsWriteProtected Then
                 'Removing Write protection
-                pres.ProtectionManager.RemoveWriteProtection()
+                presentation.ProtectionManager.RemoveWriteProtection()
             End If
 
             'Saving presentation
-            pres.Save(dataDir & "newDemo.pptx", Aspose.Slides.Export.SaveFormat.Pptx)
+            presentation.Save(dataDir & "newDemo.pptx", Aspose.Slides.Export.SaveFormat.Pptx)
         End Sub
     End Class
 End Namespace

@@ -8,6 +8,7 @@
 using System.IO;
 
 using Aspose.Slides;
+using Aspose.Slides.Export;
 
 namespace CSharp.Presentations
 {
@@ -18,12 +19,11 @@ namespace CSharp.Presentations
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Presentations();
 
-            //Instantiate a Presentation object that represents a presentation file
+            // Instantiate a Presentation object that represents a presentation file
             using (Presentation pres = new Presentation(dataDir + "Convert_XPS.pptx"))
             {
-
-                //Saving the presentation to TIFF document
-                pres.Save(dataDir + "demo.xps", Aspose.Slides.Export.SaveFormat.Xps);
+                // Saving the presentation to XPS document
+                pres.Save(dataDir + "XPS_Output_Without_XPSOption.xps", SaveFormat.Xps);
             }
         }
     }

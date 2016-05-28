@@ -19,7 +19,7 @@ namespace CSharp.Shapes
             string dataDir = RunExamples.GetDataDir_Shapes();
 
             //Load the PPTX to Presentation object
-            Presentation pres = new Presentation(dataDir+ "AccessOLEObjectFrame.pptx");
+            Presentation pres = new Presentation(dataDir + "AccessingOLEObjectFrame.pptx");
 
             //Access the first slide
             ISlide sld = pres.Slides[0];
