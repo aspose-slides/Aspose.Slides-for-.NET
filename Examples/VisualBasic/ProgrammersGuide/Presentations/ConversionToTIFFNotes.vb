@@ -13,7 +13,7 @@ Namespace VisualBasic.Presentations
     Public Class ConversionToTIFFNotes
         Public Shared Sub Run()
 
-            ' Loading a presentation
+            ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Presentations()
 
             ' Instanciate the Presentation class

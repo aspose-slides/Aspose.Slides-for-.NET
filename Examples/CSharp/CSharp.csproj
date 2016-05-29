@@ -63,6 +63,7 @@
     <Compile Include="ProgrammersGuide\Presentations\PresentationToTIFFWithDefaultSize.cs" />
     <Compile Include="ProgrammersGuide\Presentations\SaveAsPredefinedViewType.cs" />
     <Compile Include="ProgrammersGuide\Presentations\SaveToStream.cs" />
+    <Compile Include="ProgrammersGuide\Presentations\SetSlideNumber.cs" />
     <Compile Include="ProgrammersGuide\Presentations\SetZoom.cs" />
     <Compile Include="ProgrammersGuide\Presentations\VerifyingPresentationWithoutloading.cs" />
     <Compile Include="ProgrammersGuide\Shapes\ChangeOLEObjectData.cs">

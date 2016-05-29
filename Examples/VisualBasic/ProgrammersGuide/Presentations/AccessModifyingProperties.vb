@@ -27,13 +27,13 @@ Namespace VisualBasic.Presentations
 
 
             'Access and modify custom properties
-            For i As Integer = 0 To dp.Count - 1
+            For i As Integer = 0 To dp.CountOfCustomProperties - 1
                 'Display names and values of custom properties
-                System.Console.WriteLine("Custom Property Name : " & dp.GetPropertyName(i))
-                System.Console.WriteLine("Custom Property Value : " & dp(dp.GetPropertyName(i)))
+                System.Console.WriteLine("Custom Property Name : " & dp.GetCustomPropertyName(i))
+                System.Console.WriteLine("Custom Property Value : " & dp.GetCustomPropertyName(i))
 
                 'Modify values of custom properties
-                dp(dp.GetPropertyName(i)) = "New Value " & (i + 1)
+                dp(dp.GetCustomPropertyName(i)) = "New Value " & (i + 1)
             Next i
 
             'Save your presentation to a file

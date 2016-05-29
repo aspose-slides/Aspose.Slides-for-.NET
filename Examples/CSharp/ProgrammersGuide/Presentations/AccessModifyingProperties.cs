@@ -28,11 +28,11 @@ namespace CSharp.Presentations
             for (int i = 0; i < documentProperties.CountOfCustomProperties; i++)
             {
                 //Display names and values of custom properties
-                System.Console.WriteLine("Custom Property Name : " + documentProperties.GetPropertyName(i));
-                System.Console.WriteLine("Custom Property Value : " + documentProperties[documentProperties.GetPropertyName(i)]);
+                System.Console.WriteLine("Custom Property Name : " + documentProperties.GetCustomPropertyName(i));
+                System.Console.WriteLine("Custom Property Value : " + documentProperties[documentProperties.GetCustomPropertyName(i)]);
 
                 //Modify values of custom properties
-                documentProperties[documentProperties.GetPropertyName(i)] = "New Value " + (i + 1);
+                documentProperties[documentProperties.GetCustomPropertyName(i)] = "New Value " + (i + 1);
             }
 
             //Save your presentation to a file

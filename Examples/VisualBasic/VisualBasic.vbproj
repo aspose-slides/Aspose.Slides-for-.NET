@@ -59,10 +59,13 @@
     <Compile Include="ProgrammersGuide\Presentations\ConvertToPasswordProtectedPDF.vb" />
     <Compile Include="ProgrammersGuide\Presentations\ConvertToTIFFWithCustomImagePixelFormat.vb" />
     <Compile Include="ProgrammersGuide\Presentations\ConvetToSWF.vb" />
+    <Compile Include="ProgrammersGuide\Presentations\CreateNewPresentation.vb" />
     <Compile Include="ProgrammersGuide\Presentations\ExportMediaFilestohtml.vb" />
     <Compile Include="ProgrammersGuide\Presentations\GetFileFormat.vb" />
     <Compile Include="ProgrammersGuide\Presentations\SaveAsPredefinedViewType.vb" />
     <Compile Include="ProgrammersGuide\Presentations\SaveToStream.vb" />
+    <Compile Include="ProgrammersGuide\Presentations\SetSlideNumber.vb" />
+    <Compile Include="ProgrammersGuide\Presentations\SetZoom.vb" />
     <Compile Include="ProgrammersGuide\Presentations\VerifyingPresentationWithoutloading.vb" />
     <Compile Include="RunExamples.vb" />
     <Compile Include="ProgrammersGuide\Charts\ChartEntities.vb" />

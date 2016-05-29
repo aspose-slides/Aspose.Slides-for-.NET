@@ -26,7 +26,7 @@ namespace CSharp.ProgrammersGuide.Presentations
                 presentation.ViewProperties.SlideViewProperties.Scale = 100; //zoom value in percentages for slide view
                 presentation.ViewProperties.NotesViewProperties.Scale = 100; //zoom value in percentages for notes view 
 
-                presentation.Save(dataDir + "NewPresentation.pptx", SaveFormat.Pptx);
+                presentation.Save(dataDir + "Zoom.pptx", SaveFormat.Pptx);
             }
         }
     }

@@ -35,7 +35,7 @@ Namespace VisualBasic.SmartArts
 
                         If node.ChildNodes.Count >= 2 Then
                             'Removing the child node at position 1
-                            CType(node.ChildNodes, SmartArtNodeCollection).RemoveNodeByPosition(1)
+                            CType(node.ChildNodes, SmartArtNodeCollection).RemoveNode(1)
                         End If
 
                     End If

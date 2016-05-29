@@ -76,6 +76,9 @@ Namespace VisualBasic
             'ConvetToSWF.Run()
             'ConversionToTIFFNotes.Run()
             'ConvertNotesSlideViewToPDF.Run()
+            'CreateNewPresentation.Run()
+            'SetSlideNumber.Run()
+            'SetZoom.Run()
 
             '// =====================================================
             '// =====================================================
@@ -143,7 +146,7 @@ Namespace VisualBasic
             '// =====================================================
 
             'AccessChildNodes.Run();
-            'AccessChildNodeSpecificPosition.Run();
+            'AccessChildNodeSpecificPosition.Run()
             'AccessSmartArt.Run();
             'AccessSmartArtShape.Run();
             'AddNodes.Run();
