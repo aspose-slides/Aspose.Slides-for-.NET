@@ -13,8 +13,9 @@ Namespace VisualBasic.Presentations
     Public Class ConvetToSWF
         Public Shared Sub Run()
 
-            ' Loading a presentation
+            ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Presentations()
+
             'Instantiate a Presentation object that represents a presentation file
             Using pres As New Presentation(dataDir + "HelloWorld.pptx")
                 Dim swfOptions As New SwfOptions()

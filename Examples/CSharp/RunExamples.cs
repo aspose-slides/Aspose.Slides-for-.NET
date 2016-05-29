@@ -88,7 +88,9 @@ namespace CSharp
             //ConversionToTIFFNotes.Run();
             //ConvertNotesSlideViewToPDF.Run();
             //CreateNewPresentation.Run();
-           
+            //SetZoom.Run();
+            //SetSlideNumber.Run();
+
             //// =====================================================
             //// =====================================================
             //// Shapes

@@ -39,12 +39,11 @@ Namespace VisualBasic.SmartArts
 
             'Accessing the child node at position 1 in parent node
             Dim position As Integer = 1
-            Dim chNode As SmartArtNode = CType((CType(node.ChildNodes, SmartArtNodeCollection)).GetNodeByPosition(position), SmartArtNode)
+            Dim chNode As SmartArtNode = CType((CType(node.ChildNodes, SmartArtNodeCollection)).Item(position), SmartArtNode)
 
             'Printing the SmartArt child node parameters
             Dim outString As String = String.Format("j = {0}, Text = {1},  Level = {2}, Position = {3}", position, chNode.TextFrame.Text, chNode.Level, chNode.Position)
             Console.WriteLine(outString)
-
 
         End Sub
     End Class

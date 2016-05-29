@@ -46,8 +46,8 @@ namespace CSharp.Slides
                     //Clone the desired slide from the source presentation with the desired master to the end of the
                     //collection of slides in the destination presentation
                     ISlideCollection slds = destPres.Slides;
-                    slds.AddClone(SourceSlide, iSlide);
-                    //Clone the desired master slide from the source presentation to the collection of masters in the//destination presentation
+                    slds.AddClone(SourceSlide, iSlide,true);
+                    //Clone the desired master slide from the source presentation to the collection of masters in the //destination presentation
                     //Save the destination presentation to disk
                     destPres.Save(dataDir + "Aspose_out.pptx", SaveFormat.Pptx);
 

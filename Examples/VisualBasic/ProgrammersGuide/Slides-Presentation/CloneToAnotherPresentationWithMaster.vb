@@ -43,10 +43,10 @@ Namespace VisualBasic.Slides
                     'Clone the desired slide from the source presentation with the desired master to the end of the
                     'collection of slides in the destination presentation
                     Dim slds As ISlideCollection = destPres.Slides
-                    slds.AddClone(SourceSlide, iSlide)
+                    slds.AddClone(SourceSlide, iSlide, True)
                     'Clone the desired master slide from the source presentation to the collection of masters in the//destination presentation
                     'Save the destination presentation to disk
-                    destPres.Save(dataDir & "Aspose_out.pptx", SaveFormat.Pptx)
+                    destPres.Save(dataDir & "Output_CloneToAnotherPresentationWithMaster.pptx", SaveFormat.Pptx)
 
                 End Using
             End Using
