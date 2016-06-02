@@ -11,6 +11,8 @@ using System.IO;
 using CSharp.Charts;
 using CSharp.Presentations;
 using CSharp.ProgrammersGuide.Presentations;
+using CSharp.ProgrammersGuide.Rendering;
+using CSharp.ProgrammersGuide.Shapes;
 using CSharp.Shapes;
 using CSharp.Slides;
 using CSharp.SmartArts;
@@ -88,8 +90,8 @@ namespace CSharp
             //ConversionToTIFFNotes.Run();
             //ConvertNotesSlideViewToPDF.Run();
             //CreateNewPresentation.Run();
-            //SetZoom.Run();
-            //SetSlideNumber.Run();
+
+
 
             //// =====================================================
             //// =====================================================
@@ -121,7 +123,21 @@ namespace CSharp
             //RotatingShapes.Run();
             //SimpleEllipse.Run();
             //SimpleRectangle.Run();
-
+            //AddRelativeScaleHeightPictureFrame.Run();
+            //CreateShapeThumbnail.Run();
+            //CreateBoundsShapeThumbnail.Run();
+            //CreateScalingFactorThumbnail.Run();
+            //CreateSmartArtChildNoteThumbnail.Run();
+            //CreateGroupShape.Run();
+            //AccessingAltTextinGroupshapes.Run();
+            //CloneShapes.Run();
+            //SetAlternativeText.Run();
+            //RemoveShape.Run();
+            //Hidingshapes.Run();
+            //ChangeShapeOrder.Run();
+            //ConnectShapesUsingConnectors.Run();
+            //ConnectShapeUsingConnectionSite.Run();
+            //ApplyBevelEffects.Run();
 
             //// =====================================================
             //// =====================================================
@@ -152,6 +168,17 @@ namespace CSharp
 
             //// =====================================================
             //// =====================================================
+            //// Rendering a Slide
+            //// =====================================================
+            //// =====================================================
+
+            //SetZoom.Run();
+            //SetSlideNumber.Run();
+            //DefaultPrinterPrinting.Run();
+            //SpecificPrinterPrinting.Run();
+
+            //// =====================================================
+            //// =====================================================
             //// Smart Arts
             //// =====================================================
             //// =====================================================
@@ -178,6 +205,13 @@ namespace CSharp
             //TableFromScratch.Run();
             //TableWithCellBorders.Run();
             //UpdateExistingTable.Run();
+            //AddImageinsideTableCell.Run();
+            //CloningInTable.Run();
+            //VerticallyAlignText.Run();
+            //StandardTables.Run();
+            //MergeCells.Run();
+            //MergeCell.Run();
+            //CellSplit.Run();
 
             //// =====================================================
             //// =====================================================
@@ -198,8 +232,7 @@ namespace CSharp
             //ShadowEffects.Run();
             //TextBoxHyperlink.Run();
             //TextBoxOnSlideProgram.Run();
-
-
+             
             // Stop before exiting
             Console.WriteLine("\n\nProgram Finished. Press any key to exit....");
             Console.ReadKey();
@@ -220,6 +253,12 @@ namespace CSharp
         {
             return Path.GetFullPath("../../ProgrammersGuide/Presentations/Data/");
         }
+
+        public static String GetDataDir_Rendering()
+        {
+            return Path.GetFullPath("../../ProgrammersGuide/Rendering/Data/");
+        }
+
 
         public static String GetDataDir_Shapes()
         {

@@ -63,12 +63,34 @@
     <Compile Include="ProgrammersGuide\Presentations\PresentationToTIFFWithDefaultSize.cs" />
     <Compile Include="ProgrammersGuide\Presentations\SaveAsPredefinedViewType.cs" />
     <Compile Include="ProgrammersGuide\Presentations\SaveToStream.cs" />
-    <Compile Include="ProgrammersGuide\Presentations\SetSlideNumber.cs" />
-    <Compile Include="ProgrammersGuide\Presentations\SetZoom.cs" />
+    <Compile Include="ProgrammersGuide\Rendering\SetSlideNumber.cs" />
+    <Compile Include="ProgrammersGuide\Rendering\SetZoom.cs" />
     <Compile Include="ProgrammersGuide\Presentations\VerifyingPresentationWithoutloading.cs" />
+    <Compile Include="ProgrammersGuide\Rendering\DefaultPrinterPrinting.cs" />
+    <Compile Include="ProgrammersGuide\Rendering\SpecificPrinterPrinting.cs" />
+    <Compile Include="ProgrammersGuide\Shapes\AccessingAltTextinGroupshapes.cs" />
+    <Compile Include="ProgrammersGuide\Shapes\AddRelativeScaleHeightPictureFrame.cs" />
+    <Compile Include="ProgrammersGuide\Shapes\ApplyBevelEffects.cs" />
     <Compile Include="ProgrammersGuide\Shapes\ChangeOLEObjectData.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="ProgrammersGuide\Shapes\CloneShapes.cs" />
+    <Compile Include="ProgrammersGuide\Shapes\ConnectShapesUsingConnectors.cs" />
+    <Compile Include="ProgrammersGuide\Shapes\ConnectShapeUsingConnectionSite.cs" />
+    <Compile Include="ProgrammersGuide\Shapes\CreateBoundsShapeThumbnail.cs" />
+    <Compile Include="ProgrammersGuide\Shapes\CreateGroupShape.cs" />
+    <Compile Include="ProgrammersGuide\Shapes\CreateScalingFactorThumbnail.cs" />
+    <Compile Include="ProgrammersGuide\Shapes\CreateShapeThumbnail.cs" />
+    <Compile Include="ProgrammersGuide\Shapes\CreateSmartArtChildNoteThumbnail.cs" />
+    <Compile Include="ProgrammersGuide\Shapes\Hidingshapes.cs" />
+    <Compile Include="ProgrammersGuide\Shapes\SetAlternativeText.cs" />
+    <Compile Include="ProgrammersGuide\Tables\AddImageinsideTableCell.cs" />
+    <Compile Include="ProgrammersGuide\Tables\CellSplit.cs" />
+    <Compile Include="ProgrammersGuide\Tables\CloningInTable.cs" />
+    <Compile Include="ProgrammersGuide\Tables\MergeCell.cs" />
+    <Compile Include="ProgrammersGuide\Tables\MergeCells.cs" />
+    <Compile Include="ProgrammersGuide\Tables\StandardTables.cs" />
+    <Compile Include="ProgrammersGuide\Tables\VerticallyAlignText.cs" />
     <Compile Include="RunExamples.cs" />
     <Compile Include="ProgrammersGuide\Charts\ChartEntities.cs" />
     <Compile Include="ProgrammersGuide\Charts\NormalCharts.cs" />
@@ -191,6 +213,8 @@
     <None Include="ProgrammersGuide\Presentations\Data\OpenPasswordPresentation.pptx" />
     <None Include="ProgrammersGuide\Presentations\Data\RemoveWriteProtection.pptx" />
     <None Include="ProgrammersGuide\Presentations\Data\SaveProperties.pptx" />
+    <None Include="ProgrammersGuide\Rendering\Data\Print.ppt" />
+    <None Include="ProgrammersGuide\Shapes\Data\AltText.pptx" />
     <None Include="ProgrammersGuide\Shapes\Data\ConnectorLineAngle.pptx" />
     <None Include="ProgrammersGuide\Shapes\Data\FindingShapeInSlide.pptx" />
     <None Include="ProgrammersGuide\Shapes\Data\excelFromOLE.xlsx" />
@@ -231,10 +255,12 @@
     <None Include="ProgrammersGuide\Text\Data\ReplacingText.pptx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ProgrammersGuide\Shapes\ChangeShapeOrder.cs" />
     <Content Include="ProgrammersGuide\Shapes\Data\AddAudioFrame.wav" />
     <Content Include="ProgrammersGuide\Shapes\Data\aspose-logo.jpg" />
     <Content Include="ProgrammersGuide\Shapes\Data\sampleaudio.wav" />
     <Content Include="ProgrammersGuide\Shapes\Data\Tulips.jpg" />
+    <Compile Include="ProgrammersGuide\Shapes\RemoveShape.cs" />
     <Content Include="ProgrammersGuide\Slides-Presentation\Data\Aspose.svg" />
     <Content Include="ProgrammersGuide\Slides-Presentation\Data\Tulips.jpg" />
     <Content Include="ProgrammersGuide\Text\Data\file.html" />
