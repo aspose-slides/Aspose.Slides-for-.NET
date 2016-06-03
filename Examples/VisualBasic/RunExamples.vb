@@ -75,10 +75,12 @@ Namespace VisualBasic
             'GetFileFormat.Run()
             'ExportMediaFilestohtml.Run()
             'AddCustomDocumentProperties.Run()
-            'ConvetToSWF.Run()
             'ConversionToTIFFNotes.Run()
             'ConvertNotesSlideViewToPDF.Run()
             'CreateNewPresentation.Run()
+            'ConvetToSWF.Run()
+            GetRectangularCoordinatesofParagraph.Run()
+            GetPositionCoordinatesofPortion.Run()
 
             '// =====================================================
             '// =====================================================

@@ -59,6 +59,8 @@
     <Compile Include="ProgrammersGuide\Presentations\CustomOptionsPDFConversion.cs" />
     <Compile Include="ProgrammersGuide\Presentations\ExportMediaFilestohtml.cs" />
     <Compile Include="ProgrammersGuide\Presentations\GetFileFormat.cs" />
+    <Compile Include="ProgrammersGuide\Presentations\GetPositionCoordinatesofPortion.cs" />
+    <Compile Include="ProgrammersGuide\Presentations\GetRectangularCoordinatesofParagraph.cs" />
     <Compile Include="ProgrammersGuide\Presentations\PresentationToTIFFWithCustomImagePixelFormat.cs" />
     <Compile Include="ProgrammersGuide\Presentations\PresentationToTIFFWithDefaultSize.cs" />
     <Compile Include="ProgrammersGuide\Presentations\SaveAsPredefinedViewType.cs" />
@@ -213,6 +215,7 @@
     <None Include="ProgrammersGuide\Presentations\Data\OpenPasswordPresentation.pptx" />
     <None Include="ProgrammersGuide\Presentations\Data\RemoveWriteProtection.pptx" />
     <None Include="ProgrammersGuide\Presentations\Data\SaveProperties.pptx" />
+    <None Include="ProgrammersGuide\Presentations\Data\Shapes.pptx" />
     <None Include="ProgrammersGuide\Rendering\Data\Print.ppt" />
     <None Include="ProgrammersGuide\Shapes\Data\AltText.pptx" />
     <None Include="ProgrammersGuide\Shapes\Data\ConnectorLineAngle.pptx" />
