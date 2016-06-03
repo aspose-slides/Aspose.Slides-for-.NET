@@ -51,6 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ProgrammersGuide\Presentations\AddCustomDocumentProperties.vb" />
+    <Compile Include="ProgrammersGuide\Presentations\AddRelativeScaleHeightPictureFrame.vb" />
     <Compile Include="ProgrammersGuide\Presentations\ConversionToTIFFNotes.vb" />
     <Compile Include="ProgrammersGuide\Presentations\ConvertIndividualSlide.vb" />
     <Compile Include="ProgrammersGuide\Presentations\ConvertPDFwithCustomOptions.vb" />
@@ -59,14 +60,36 @@
     <Compile Include="ProgrammersGuide\Presentations\ConvertToPasswordProtectedPDF.vb" />
     <Compile Include="ProgrammersGuide\Presentations\ConvertToTIFFWithCustomImagePixelFormat.vb" />
     <Compile Include="ProgrammersGuide\Presentations\ConvetToSWF.vb" />
+    <Compile Include="ProgrammersGuide\Presentations\CreateBoundsShapeThumbnail.vb" />
     <Compile Include="ProgrammersGuide\Presentations\CreateNewPresentation.vb" />
+    <Compile Include="ProgrammersGuide\Presentations\CreateShapeThumbnail.vb" />
+    <Compile Include="ProgrammersGuide\Rendering\DefaultPrinterPrinting.vb" />
+    <Compile Include="ProgrammersGuide\Rendering\SpecificPrinterPrinting.vb" />
+    <Compile Include="ProgrammersGuide\Shapes\AccessingAltTextinGroupshapes.vb" />
+    <Compile Include="ProgrammersGuide\Shapes\ApplyBevelEffects.vb" />
+    <Compile Include="ProgrammersGuide\Shapes\ChangeShapeOrder.vb" />
+    <Compile Include="ProgrammersGuide\Shapes\CloneShapes.vb" />
+    <Compile Include="ProgrammersGuide\Shapes\ConnectShapesUsingConnectors.vb" />
+    <Compile Include="ProgrammersGuide\Shapes\ConnectShapeUsingConnectionSite.vb" />
+    <Compile Include="ProgrammersGuide\Shapes\CreateGroupShape.vb" />
+    <Compile Include="ProgrammersGuide\Shapes\CreateScalingFactorThumbnail.vb" />
+    <Compile Include="ProgrammersGuide\Shapes\CreateSmartArtChildNoteThumbnail.vb" />
     <Compile Include="ProgrammersGuide\Presentations\ExportMediaFilestohtml.vb" />
     <Compile Include="ProgrammersGuide\Presentations\GetFileFormat.vb" />
     <Compile Include="ProgrammersGuide\Presentations\SaveAsPredefinedViewType.vb" />
     <Compile Include="ProgrammersGuide\Presentations\SaveToStream.vb" />
-    <Compile Include="ProgrammersGuide\Presentations\SetSlideNumber.vb" />
-    <Compile Include="ProgrammersGuide\Presentations\SetZoom.vb" />
+    <Compile Include="ProgrammersGuide\Rendering\SetSlideNumber.vb" />
+    <Compile Include="ProgrammersGuide\Rendering\SetZoom.vb" />
     <Compile Include="ProgrammersGuide\Presentations\VerifyingPresentationWithoutloading.vb" />
+    <Compile Include="ProgrammersGuide\Shapes\Hidingshapes.vb" />
+    <Compile Include="ProgrammersGuide\Shapes\RemoveShape.vb" />
+    <Compile Include="ProgrammersGuide\Shapes\SetAlternativeText.vb" />
+    <Compile Include="ProgrammersGuide\Tables\AddImageinsideTableCell.vb" />
+    <Compile Include="ProgrammersGuide\Tables\CellSplit.vb" />
+    <Compile Include="ProgrammersGuide\Tables\CloningInTable.vb" />
+    <Compile Include="ProgrammersGuide\Tables\MergeCell.vb" />
+    <Compile Include="ProgrammersGuide\Tables\StandardTables.vb" />
+    <Compile Include="ProgrammersGuide\Tables\VerticallyAlignText.vb" />
     <Compile Include="RunExamples.vb" />
     <Compile Include="ProgrammersGuide\Charts\ChartEntities.vb" />
     <Compile Include="ProgrammersGuide\Charts\NormalCharts.vb" />
@@ -193,6 +216,7 @@
     <None Include="ProgrammersGuide\Presentations\Data\RemoveWriteProtection.pptx" />
     <None Include="ProgrammersGuide\Presentations\Data\SaveProperties.pptx" />
     <None Include="ProgrammersGuide\Presentations\Data\SelectedSlides.pptx" />
+    <None Include="ProgrammersGuide\Rendering\Data\Print.ppt" />
     <None Include="ProgrammersGuide\Shapes\Data\ConnectorLineAngle.pptx" />
     <None Include="ProgrammersGuide\Shapes\Data\FindingShapeInSlide.pptx" />
     <None Include="ProgrammersGuide\Shapes\Data\excelFromOLE.xlsx" />
@@ -239,6 +263,7 @@
     <Content Include="ProgrammersGuide\Shapes\Data\Tulips.jpg" />
     <Content Include="ProgrammersGuide\Slides-Presentation\Data\Aspose.svg" />
     <Content Include="ProgrammersGuide\Slides-Presentation\Data\Tulips.jpg" />
+    <Compile Include="ProgrammersGuide\Tables\MergeCells.vb" />
     <Content Include="ProgrammersGuide\Text\Data\file.html" />
   </ItemGroup>
   <ItemGroup />

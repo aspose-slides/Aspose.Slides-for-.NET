@@ -25,7 +25,7 @@ Namespace VisualBasic.Shapes
             End If
 
             'Instantiate a Presentation class that represents the presentation file
-            Using p As New Presentation(dataDir & "FindShapeInSlide.pptx")
+            Using p As New Presentation(dataDir & "FindingShapeInSlide.pptx")
 
                 Dim slide As ISlide = p.Slides(0)
                 'alternative text of the shape to be found

@@ -3,10 +3,12 @@ Imports System
 Imports System.Collections.Generic
 Imports System.IO
 Imports System.Text
+Imports CSharp.Tables
 Imports ProgrammersGuide.Presentations
 
 Imports VisualBasic.Charts
 Imports VisualBasic.Presentations
+Imports VisualBasic.Rendering
 Imports VisualBasic.Shapes
 Imports VisualBasic.Slides
 Imports VisualBasic.SmartArts
@@ -41,7 +43,7 @@ Namespace VisualBasic
             '// =====================================================
             '// =====================================================
 
-            AccessBuiltinProperties.Run()
+            'AccessBuiltinProperties.Run()
             'AccessModifyingProperties.Run()
             'AccessOpenDoc.Run()
             'AccessProperties.Run()
@@ -77,8 +79,6 @@ Namespace VisualBasic
             'ConversionToTIFFNotes.Run()
             'ConvertNotesSlideViewToPDF.Run()
             'CreateNewPresentation.Run()
-            'SetSlideNumber.Run()
-            'SetZoom.Run()
 
             '// =====================================================
             '// =====================================================
@@ -86,31 +86,45 @@ Namespace VisualBasic
             '// =====================================================
             '// =====================================================
 
-            'AccessOLEObjectFrame.Run();
-            'AddArrowShapedLine.Run();
-            'AddArrowShapedLineToSlide.Run();
-            'AddAudioFrame.Run();
-            'AddOLEObjectFrame.Run();
-            'AddPlainLineToSlide.Run();
-            'AddSimplePictureFrames.Run();
-            'AddVideoFrame.Run();
-            'AnimationsOnShapes.Run();
-            'ChangeOLEObjectData.Run();
-            'ConnectorLineAngle.Run();
-            'EmbeddedVideoFrame.Run();
-            'FillShapesGradient.Run();
-            'FillShapesPattern.Run();
-            'FillShapesPicture.Run();
-            'FindShapeInSlide.Run();
-            'FormatJoinStyles.Run();
-            'FormatLines.Run();
-            'FormattedEllipse.Run();
-            'FormattedRectangle.Run();
-            'PictureFrameFormatting.Run();
-            'RotatingShapes.Run();
-            'SimpleEllipse.Run();
-            'SimpleRectangle.Run();
-
+            'AccessOLEObjectFrame.Run()
+            'AddArrowShapedLine.Run()
+            'AddArrowShapedLineToSlide.Run()
+            'AddAudioFrame.Run()
+            'AddOLEObjectFrame.Run()
+            'AddPlainLineToSlide.Run()
+            'AddSimplePictureFrames.Run()
+            'AddVideoFrame.Run()
+            'AnimationsOnShapes.Run()
+            'ChangeOLEObjectData.Run()
+            'ConnectorLineAngle.Run()
+            'EmbeddedVideoFrame.Run()
+            'FillShapesGradient.Run()
+            'FillShapesPattern.Run()
+            'FillShapesPicture.Run()
+            'FindShapeInSlide.Run()
+            'FormatJoinStyles.Run()
+            'FormatLines.Run()
+            'FormattedEllipse.Run()
+            'FormattedRectangle.Run()
+            'PictureFrameFormatting.Run()
+            'RotatingShapes.Run()
+            'SimpleEllipse.Run()
+            'SimpleRectangle.Run()
+            'AddRelativeScaleHeightPictureFrame.Run()
+            'CreateShapeThumbnail.Run()
+            'CreateBoundsShapeThumbnail.Run()
+            'CreateSmartArtChildNoteThumbnail.Run()
+            'CreateScalingFactorThumbnail.Run()
+            'CreateGroupShape.Run()
+            'AccessingAltTextinGroupshapes.Run()
+            'CloneShapes.Run()
+            'SettAlternativeText.Run()
+            'RemoveShape.Run()
+            'Hidingshapes.Run()
+            'ChangeShapeOrder.Run()
+            'ConnectShapesUsingConnectors.Run()
+            'ConnectShapeUsingConnectionSite.Run()
+            'ApplyBevelEffects.Run()
 
             '// =====================================================
             '// =====================================================
@@ -141,6 +155,17 @@ Namespace VisualBasic
 
             '// =====================================================
             '// =====================================================
+            '// Rendering
+            '// =====================================================
+            '// =====================================================
+
+            'SetZoom.Run()
+            'SetSlideNumber.Run()
+            'DefaultPrinterPrinting.Run()
+            'SpecificPrinterPrinting.Run()
+
+            '// =====================================================
+            '// =====================================================
             '// Smart Arts
             '// =====================================================
             '// =====================================================
@@ -163,10 +188,18 @@ Namespace VisualBasic
             '// =====================================================
             '// =====================================================
 
-            'RemovingRowColumn.Run();
-            'TableFromScratch.Run();
-            'TableWithCellBorders.Run();
-            'UpdateExistingTable.Run();
+            'RemovingRowColumn.Run()
+            'TableFromScratch.Run()
+            'TableWithCellBorders.Run()
+            'UpdateExistingTable.Run()
+            'AddImageinsideTableCell.Run()
+            'CloningInTable.Run()
+            'VerticallyAlignText.Run()
+            'StandardTables.Run()
+            'MergeCells.Run()
+            'MergeCell.Run()
+            'CellSplit.Run()
+
 
             '// =====================================================
             '// =====================================================
@@ -204,6 +237,10 @@ Namespace VisualBasic
 
         Public Shared Function GetDataDir_Shapes() As String
             Return Path.GetFullPath("../../ProgrammersGuide/Shapes/Data/")
+        End Function
+
+        Public Shared Function GetDataDir_Rendering() As String
+            Return Path.GetFullPath("../../ProgrammersGuide/Rendering/Data/")
         End Function
 
         Public Shared Function GetDataDir_Slides_Presentations() As String

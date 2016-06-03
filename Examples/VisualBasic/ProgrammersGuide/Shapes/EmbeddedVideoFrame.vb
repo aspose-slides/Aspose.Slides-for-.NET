@@ -31,7 +31,7 @@ Namespace VisualBasic.Shapes
                 Dim sld As ISlide = pres.Slides(0)
 
                 'Embedd vide inside presentation
-                Dim vid As IVideo = pres.Videos.AddVideo(New FileStream(dataDir & "Wildlife.wmv", FileMode.Open))
+                Dim vid As IVideo = pres.Videos.AddVideo(New FileStream(dataDir & "Wildlife.mp4", FileMode.Open))
 
                 'Add Video Frame
                 Dim vf As IVideoFrame = sld.Shapes.AddVideoFrame(50, 150, 300, 350, vid)
