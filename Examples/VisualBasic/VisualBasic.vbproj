@@ -63,6 +63,8 @@
     <Compile Include="ProgrammersGuide\Presentations\CreateBoundsShapeThumbnail.vb" />
     <Compile Include="ProgrammersGuide\Presentations\CreateNewPresentation.vb" />
     <Compile Include="ProgrammersGuide\Presentations\CreateShapeThumbnail.vb" />
+    <Compile Include="ProgrammersGuide\Presentations\GetPositionCoordinatesofPortion.vb" />
+    <Compile Include="ProgrammersGuide\Presentations\GetRectangularCoordinatesofParagraph.vb" />
     <Compile Include="ProgrammersGuide\Rendering\DefaultPrinterPrinting.vb" />
     <Compile Include="ProgrammersGuide\Rendering\SpecificPrinterPrinting.vb" />
     <Compile Include="ProgrammersGuide\Shapes\AccessingAltTextinGroupshapes.vb" />

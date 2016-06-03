@@ -85,12 +85,13 @@ namespace CSharp
             //SaveAsPredefinedViewType.Run();
             //VerifyingPresentationWithoutloading.Run();
             //ExportMediaFilestohtml.Run();
-            //GetFileFormat.Run();
-            //ConvetToSWF.Run();
+            //GetFileFormat.Run();          
             //ConversionToTIFFNotes.Run();
             //ConvertNotesSlideViewToPDF.Run();
-            //CreateNewPresentation.Run();
-
+            //CreateNewPresentation.Run();           
+            //ConvetToSWF.Run();
+            //GetRectangularCoordinatesofParagraph.Run();
+            //GetPositionCoordinatesofPortion.Run();
 
 
             //// =====================================================

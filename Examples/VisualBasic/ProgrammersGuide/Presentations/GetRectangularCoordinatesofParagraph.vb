@@ -4,31 +4,24 @@
 'install it and then add its reference to this project. For any issues, questions or suggestions 
 'please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
 
-Imports System
-Imports System.IO
+Imports System.Drawing
 Imports Aspose.Slides
 Imports Aspose.Slides.Export
 
 Namespace VisualBasic.Presentations
-    Public Class ConvetToSWF
+    Public Class GetRectangularCoordinatesofParagraph
         Public Shared Sub Run()
 
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Presentations()
 
-            ' Instantiate a Presentation object that represents a presentation file
-            Using pres As New Presentation(dataDir + "HelloWorld.pptx")
-                Dim swfOptions As New SwfOptions()
-                swfOptions.ViewerIncluded = False
+            Using pres As New Presentation(dataDir + "Shapes.pptx")
+                Dim shape As IAutoShape = DirectCast(pres.Slides(0).Shapes(0), IAutoShape)
+                Dim textFrame = DirectCast(shape.TextFrame, ITextFrame)
 
-                ' Saving presentation
-                pres.Save(dataDir + "SaveAsSwf.swf", SaveFormat.Swf, swfOptions)
-
-                swfOptions.ViewerIncluded = True
-
-                ' Saving notes pages
-                pres.Save(dataDir + "SaveNotes.swf", SaveFormat.SwfNotes, swfOptions)
+                Dim rect As RectangleF = DirectCast(textFrame.Paragraphs(0), Paragraph).GetRect()
             End Using
+
         End Sub
     End Class
 End Namespace
