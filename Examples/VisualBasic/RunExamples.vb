@@ -79,8 +79,8 @@ Namespace VisualBasic
             'ConvertNotesSlideViewToPDF.Run()
             'CreateNewPresentation.Run()
             'ConvetToSWF.Run()
-            GetRectangularCoordinatesofParagraph.Run()
-            GetPositionCoordinatesofPortion.Run()
+            'GetRectangularCoordinatesofParagraph.Run()
+            'GetPositionCoordinatesofPortion.Run()
 
             '// =====================================================
             '// =====================================================
