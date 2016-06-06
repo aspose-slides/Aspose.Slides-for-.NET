@@ -1,11 +1,3 @@
-/*
-This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Slides for .NET API reference 
-when the project is build. Please check https://docs.nuget.org/consume/nuget-faq for more information. 
-If you do not wish to use NuGet, you can manually download Aspose.Slides for .NET API from http://www.aspose.com/downloads, 
-install it and then add its reference to this project. For any issues, questions or suggestions 
-please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
-*/
-
 using System;
 using System.IO;
 using CSharp.Charts;
@@ -28,8 +20,6 @@ namespace CSharp
         {
             Console.WriteLine("Open RunExamples.cs. In Main() method, Un-comment the example that you want to run");
             Console.WriteLine("=====================================================");
-
-
 
             // Un-comment the one you want to try out
 
@@ -85,10 +75,10 @@ namespace CSharp
             //SaveAsPredefinedViewType.Run();
             //VerifyingPresentationWithoutloading.Run();
             //ExportMediaFilestohtml.Run();
-            //GetFileFormat.Run();          
+            //GetFileFormat.Run();
             //ConversionToTIFFNotes.Run();
             //ConvertNotesSlideViewToPDF.Run();
-            //CreateNewPresentation.Run();           
+            //CreateNewPresentation.Run();
             //ConvetToSWF.Run();
             //GetRectangularCoordinatesofParagraph.Run();
             //GetPositionCoordinatesofPortion.Run();
@@ -173,10 +163,10 @@ namespace CSharp
             //// =====================================================
             //// =====================================================
 
-            //SetZoom.Run();
-            //SetSlideNumber.Run();
-            //DefaultPrinterPrinting.Run();
-            //SpecificPrinterPrinting.Run();
+            SetZoom.Run();
+            SetSlideNumber.Run();
+            DefaultPrinterPrinting.Run();
+            SpecificPrinterPrinting.Run();
 
             //// =====================================================
             //// =====================================================
