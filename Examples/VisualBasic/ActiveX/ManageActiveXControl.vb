@@ -10,7 +10,7 @@ Imports Aspose.Slides
 'please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
 '
 
-Namespace VisualBasic.Charts
+Namespace VisualBasic.ActiveX
     Public Class ManageActiveXControl
         Public Shared Sub Run()
             ' The path to the documents directory.
