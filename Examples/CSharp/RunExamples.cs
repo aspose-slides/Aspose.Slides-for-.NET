@@ -311,55 +311,78 @@ namespace CSharp
 
         }
 
-        public static String GetDataDir_Charts()
-        {
-            return Path.GetFullPath("../../Charts/Data/");
-        }
-
-        public static String GetDataDir_VBA()
-        {
-            return Path.GetFullPath("../../VBA/Data/");
-        }
-
         public static String GetDataDir_ActiveX()
         {
-            return Path.GetFullPath("../../ActiveX/Data/");
+            return Path.GetFullPath(GetDataDir_Data() + "ActiveX/");
         }
-
-
+        public static String GetDataDir_Charts()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "Charts/");
+        }
+        public static String GetDataDir_VBA()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "VBA/");
+        }
         public static String GetDataDir_Presentations()
         {
-            return Path.GetFullPath("../../Presentations/Data/");
+            return Path.GetFullPath(GetDataDir_Data() + "Presentations/");
         }
 
         public static String GetDataDir_Rendering()
         {
-            return Path.GetFullPath("../../Rendering-Printing/Data/");
+            return Path.GetFullPath(GetDataDir_Data() + "Rendering-Printing/");
         }
 
         public static String GetDataDir_Shapes()
         {
-            return Path.GetFullPath("../../Shapes/Data/");
+            return Path.GetFullPath(GetDataDir_Data() + "Shapes/");
         }
 
         public static String GetDataDir_Slides_Presentations()
         {
-            return Path.GetFullPath("../../Slides/Data/");
+            return Path.GetFullPath(GetDataDir_Data() + "Slides/");
         }
 
         public static String GetDataDir_SmartArts()
         {
-            return Path.GetFullPath("../../SmartArts/Data/");
+            return Path.GetFullPath(GetDataDir_Data() + "SmartArts/");
         }
 
         public static String GetDataDir_Tables()
         {
-            return Path.GetFullPath("../../Tables/Data/");
+            return Path.GetFullPath(GetDataDir_Data() + "Tables/");
         }
 
         public static String GetDataDir_Text()
         {
-            return Path.GetFullPath("../../Text/Data/");
+            return Path.GetFullPath(GetDataDir_Data() + "Text/");
         }
+
+        public static String GetDataDir_Video()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "Video/");
+        }
+
+        private static string GetDataDir_Data()
+        {
+            var parent = Directory.GetParent(Directory.GetCurrentDirectory()).Parent;
+            string startDirectory = null;
+            if (parent != null)
+            {
+                var directoryInfo = parent.Parent;
+                if (directoryInfo != null)
+                {
+                    startDirectory = directoryInfo.FullName;
+                }
+            }
+            else
+            {
+                startDirectory = parent.FullName;
+            }
+            return startDirectory != null ? Path.Combine(startDirectory, "Data\\") : null;
+        }
+
+
+
     }
 }

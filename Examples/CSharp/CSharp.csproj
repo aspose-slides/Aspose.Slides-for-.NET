@@ -254,85 +254,14 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="ActiveX\Data\ActiveX.pptm" />
-    <None Include="ActiveX\Data\template.pptx" />
     <None Include="app.config" />
     <None Include="packages.config" />
-    <None Include="Charts\Data\ChartEntities.pptx" />
-    <None Include="Charts\Data\ExistingChart.pptx" />
-    <None Include="Presentations\Data\AccessOpenDoc.odp" />
-    <None Include="Presentations\Data\DemoFile.pptx" />
-    <None Include="Presentations\Data\PPTtoPPTX.ppt" />
-    <None Include="Presentations\Data\Convert_HTML.pptx" />
-    <None Include="Presentations\Data\Convert_Tiff_Custom.pptx" />
-    <None Include="Presentations\Data\Convert_Tiff_Default.pptx" />
-    <None Include="Presentations\Data\Convert_XPS_Options.pptx" />
-    <None Include="Presentations\Data\Convert_XPS.pptx" />
-    <None Include="Presentations\Data\ConvertWithNoteToTiff.pptx" />
-    <None Include="Presentations\Data\ConvertToPDF.pptx" />
-    <None Include="Presentations\Data\AccessBuiltin Properties.pptx" />
-    <None Include="Presentations\Data\AccessModifyingProperties.pptx" />
-    <None Include="Presentations\Data\ModifyBuiltinProperties.pptx" />
-    <None Include="Presentations\Data\AccessProperties.pptx" />
-    <None Include="Presentations\Data\OpenPresentation.pptx" />
-    <None Include="Presentations\Data\OpenPasswordPresentation.pptx" />
-    <None Include="Presentations\Data\RemoveWriteProtection.pptx" />
-    <None Include="Presentations\Data\SaveProperties.pptx" />
-    <None Include="Rendering-Printing\Data\Print.ppt" />
-    <None Include="Shapes\Data\AltText.pptx" />
-    <None Include="Shapes\Data\ConnectorLineAngle.pptx" />
-    <None Include="Shapes\Data\FindingShapeInSlide.pptx" />
-    <None Include="Shapes\Data\excelFromOLE.xlsx" />
-    <None Include="Shapes\Data\AccessingOLEObjectFrame.pptx" />
-    <None Include="Shapes\Data\book1.xlsx" />
-    <None Include="Shapes\Data\ChangeOLEObjectData.pptx" />
-    <None Include="Slides\Data\AccessSlides.pptx" />
-    <None Include="Slides\Data\ChangePosition.pptx" />
-    <None Include="Slides\Data\CloneToAnotherPresentationWithMaster.pptx" />
-    <None Include="Slides\Data\CloneWithInSamePresentation.pptx" />
-    <None Include="Slides\Data\CloneAtEndOfAnother.pptx" />
-    <None Include="Slides\Data\CloneAtEndOfAnotherSpecificPosition.pptx" />
-    <None Include="Slides\Data\CloneWithinSamePresentationToEnd.pptx" />
-    <None Include="Slides\Data\ThumbnailFromSlideInNotes.pptx" />
-    <None Include="Slides\Data\ThumbnailWithUserDefinedDimensions.pptx" />
-    <None Include="Slides\Data\ThumbnailFromSlide.pptx" />
-    <None Include="Slides\Data\SimpleSlideTransitions.pptx" />
-    <None Include="Slides\Data\BetterSlideTransitions.pptx" />
-    <None Include="Slides\Data\RemoveSlideUsingIndex.pptx" />
-    <None Include="Slides\Data\RemoveSlideUsingReference.pptx" />
-    <None Include="Slides\Data\SetBackgroundToGradient.pptx" />
-    <None Include="Slides\Data\SetImageAsBackground.pptx" />
-    <None Include="Slides\Data\SetSlideBackgroundMaster.pptx" />
-    <None Include="SmartArts\Data\AccessChildNodes.pptx" />
-    <None Include="SmartArts\Data\AccessSmartArt.pptx" />
-    <None Include="SmartArts\Data\AccessSmartArtShape.pptx" />
-    <None Include="SmartArts\Data\CreatingSmartArtShape.pptx" />
-    <None Include="SmartArts\Data\AddNodes.pptx" />
-    <None Include="SmartArts\Data\RemoveNodeSpecificPosition.pptx" />
-    <None Include="SmartArts\Data\RemoveNode.pptx" />
-    <None Include="SmartArts\Data\AssistantNode.pptx" />
-    <None Include="SmartArts\Data\SmartArtNodeLevel.pptx" />
-    <None Include="Tables\Data\UpdateExistingTable.pptx" />
-    <None Include="Tables\Data\RemovingRowColumn.pptx" />
-    <None Include="Text\Data\DefaultFonts.pptx" />
-    <None Include="Text\Data\FontProperties.pptx" />
-    <None Include="Text\Data\ExportingHTMLText.pptx" />
-    <None Include="Text\Data\ReplacingText.pptx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Shapes\ChangeShapeOrder.cs" />
-    <Content Include="Shapes\Data\AddAudioFrame.wav" />
-    <Content Include="Shapes\Data\aspose-logo.jpg" />
-    <Content Include="Shapes\Data\sampleaudio.wav" />
-    <Content Include="Shapes\Data\Tulips.jpg" />
     <Compile Include="Shapes\RemoveShape.cs" />
-    <Content Include="Slides\Data\Aspose.svg" />
-    <Content Include="Slides\Data\Tulips.jpg" />
-    <Content Include="Text\Data\file.html" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="VBA\Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

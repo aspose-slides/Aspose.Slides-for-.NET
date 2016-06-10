@@ -14,7 +14,7 @@ Namespace VisualBasic.Rendering
         Public Shared Sub Run()
 
             ' The path to the documents directory.
-            Dim dataDir As String = RunExamples.GetDataDir_Presentations()
+            Dim dataDir As String = RunExamples.GetDataDir_Rendering()
 
             ' Instantiate a Presentation object that represents a presentation file
             Using presentation As New Presentation()

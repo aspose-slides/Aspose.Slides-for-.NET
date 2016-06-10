@@ -16,6 +16,7 @@ namespace CSharp.Charts
         {
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ActiveX();
+            string dataVideo = RunExamples.GetDataDir_Video();
 
             // Instantiate Presentation class that represents PPTX file
             Presentation presentation = new Presentation(dataDir + "template.pptx");
@@ -30,7 +31,7 @@ namespace CSharp.Charts
             newPresentation.Slides.InsertClone(0, presentation.Slides[0]);
 
             // Access the Media Player ActiveX control and set the video path
-            newPresentation.Slides[0].Controls[0].Properties["URL"] = dataDir + "Wildlife.mp4";
+            newPresentation.Slides[0].Controls[0].Properties["URL"] = dataVideo + "Wildlife.mp4";
 
             // Save the Presentation
             newPresentation.Save(dataDir + "LinkingVideoActiveXControl.pptx", Aspose.Slides.Export.SaveFormat.Pptx);

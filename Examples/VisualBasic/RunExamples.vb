@@ -30,7 +30,7 @@ Namespace VisualBasic
             '// =====================================================
             '// =====================================================
 
-            'ManageActiveXControl.Run()
+            ManageActiveXControl.Run()
             'LinkingVideoActiveXControl.Run()
 
             ' =====================================================
@@ -301,45 +301,61 @@ Namespace VisualBasic
             Console.ReadKey()
         End Sub
 
-        Public Shared Function GetDataDir_ActiveX() As String
-            Return Path.GetFullPath("../../ActiveX/Data/")
+
+        Public Shared Function GetDataDir_ActiveX() As [String]
+            Return Path.GetFullPath(GetDataDir_Data() & Convert.ToString("ActiveX/"))
+        End Function
+        Public Shared Function GetDataDir_Charts() As [String]
+            Return Path.GetFullPath(GetDataDir_Data() & Convert.ToString("Charts/"))
+        End Function
+        Public Shared Function GetDataDir_VBA() As [String]
+            Return Path.GetFullPath(GetDataDir_Data() & Convert.ToString("VBA/"))
+        End Function
+        Public Shared Function GetDataDir_Presentations() As [String]
+            Return Path.GetFullPath(GetDataDir_Data() & Convert.ToString("Presentations/"))
         End Function
 
-        Public Shared Function GetDataDir_VBA() As String
-            Return Path.GetFullPath("../../VBA/Data/")
+        Public Shared Function GetDataDir_Rendering() As [String]
+            Return Path.GetFullPath(GetDataDir_Data() & Convert.ToString("Rendering-Printing/"))
         End Function
 
-
-        Public Shared Function GetDataDir_Charts() As String
-            Return Path.GetFullPath("../../Charts/Data/")
+        Public Shared Function GetDataDir_Shapes() As [String]
+            Return Path.GetFullPath(GetDataDir_Data() & Convert.ToString("Shapes/"))
         End Function
 
-        Public Shared Function GetDataDir_Presentations() As String
-            Return Path.GetFullPath("../../Presentations/Data/")
+        Public Shared Function GetDataDir_Slides_Presentations() As [String]
+            Return Path.GetFullPath(GetDataDir_Data() & Convert.ToString("Slides/"))
         End Function
 
-        Public Shared Function GetDataDir_Shapes() As String
-            Return Path.GetFullPath("../../Shapes/Data/")
+        Public Shared Function GetDataDir_SmartArts() As [String]
+            Return Path.GetFullPath(GetDataDir_Data() & Convert.ToString("SmartArts/"))
         End Function
 
-        Public Shared Function GetDataDir_Rendering() As String
-            Return Path.GetFullPath("../../Rendering-Printing/Data/")
+        Public Shared Function GetDataDir_Tables() As [String]
+            Return Path.GetFullPath(GetDataDir_Data() & Convert.ToString("Tables/"))
         End Function
 
-        Public Shared Function GetDataDir_Slides_Presentations() As String
-            Return Path.GetFullPath("../../Slides/Data/")
+        Public Shared Function GetDataDir_Text() As [String]
+            Return Path.GetFullPath(GetDataDir_Data() & Convert.ToString("Text/"))
         End Function
 
-        Public Shared Function GetDataDir_SmartArts() As String
-            Return Path.GetFullPath("../../SmartArts/Data/")
+        Public Shared Function GetDataDir_Video() As [String]
+            Return Path.GetFullPath(GetDataDir_Data() & Convert.ToString("Video/"))
         End Function
 
-        Public Shared Function GetDataDir_Tables() As String
-            Return Path.GetFullPath("../../Tables/Data/")
+        Private Shared Function GetDataDir_Data() As String
+            Dim parent = Directory.GetParent(Directory.GetCurrentDirectory()).Parent
+            Dim startDirectory As String = Nothing
+            If parent IsNot Nothing Then
+                Dim directoryInfo = parent.Parent
+                If directoryInfo IsNot Nothing Then
+                    startDirectory = directoryInfo.FullName
+                End If
+            Else
+                startDirectory = parent.FullName
+            End If
+            Return If(startDirectory IsNot Nothing, Path.Combine(startDirectory, "Data\"), Nothing)
         End Function
 
-        Public Shared Function GetDataDir_Text() As String
-            Return Path.GetFullPath("../../Text/Data/")
-        End Function
     End Class
 End Namespace

@@ -16,7 +16,7 @@ namespace CSharp.ProgrammersGuide.Rendering.Printing
         public static void Run()
         {
             // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir_Presentations();
+            string dataDir = RunExamples.GetDataDir_Rendering();
 
             // Instantiate a Presentation object that represents a presentation file
             using (Presentation presentation = new Presentation())

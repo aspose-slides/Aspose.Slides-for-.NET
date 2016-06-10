@@ -20,7 +20,7 @@ Namespace VisualBasic.Shapes
             Dim dataDir As String = RunExamples.GetDataDir_Shapes()
 
             'Load the PPTX to Presentation object
-            Dim pres As New Presentation(dataDir & "AccessOLEObjectFrame.pptx")
+            Dim pres As New Presentation(dataDir & "AccessingOLEObjectFrame.pptx")
 
             'Access the first slide
             Dim sld As ISlide = pres.Slides(0)

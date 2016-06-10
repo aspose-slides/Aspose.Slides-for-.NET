@@ -18,7 +18,7 @@ namespace CSharp.Shapes
         {
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Shapes();
-
+            string videoDir = RunExamples.GetDataDir_Video();
 
             // Create directory if it is not already present.
             bool IsExists = System.IO.Directory.Exists(dataDir);
@@ -32,7 +32,7 @@ namespace CSharp.Shapes
                 ISlide sld = pres.Slides[0];
 
                 //Embedd vide inside presentation
-                IVideo vid = pres.Videos.AddVideo(new FileStream(dataDir+ "Wildlife.mp4", FileMode.Open));
+                IVideo vid = pres.Videos.AddVideo(new FileStream(videoDir + "Wildlife.mp4", FileMode.Open));
 
                 //Add Video Frame
                 IVideoFrame vf = sld.Shapes.AddVideoFrame(50, 150, 300, 350, vid);

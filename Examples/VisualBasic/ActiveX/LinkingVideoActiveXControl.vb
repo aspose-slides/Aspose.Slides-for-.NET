@@ -14,6 +14,7 @@ Namespace VisualBasic.Charts
         Public Shared Sub Run()
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_ActiveX()
+            Dim dataVideo As String = RunExamples.GetDataDir_Video()
 
             ' Instantiate Presentation class that represents PPTX file
             Dim presentation As New Presentation(dataDir & Convert.ToString("template.pptx"))
@@ -28,7 +29,7 @@ Namespace VisualBasic.Charts
             newPresentation.Slides.InsertClone(0, presentation.Slides(0))
 
             ' Access the Media Player ActiveX control and set the video path
-            newPresentation.Slides(0).Controls(0).Properties("URL") = dataDir & Convert.ToString("Wildlife.mp4")
+            newPresentation.Slides(0).Controls(0).Properties("URL") = dataVideo & Convert.ToString("Wildlife.mp4")
 
             ' Save the Presentation
             newPresentation.Save(dataDir & Convert.ToString("LinkingVideoActiveXControl.pptx"), Aspose.Slides.Export.SaveFormat.Pptx)
