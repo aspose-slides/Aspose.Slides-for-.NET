@@ -1,15 +1,18 @@
+
 using System;
 using System.IO;
 using CSharp.Charts;
 using CSharp.Presentations;
 using CSharp.ProgrammersGuide.Presentations;
-using CSharp.ProgrammersGuide.Rendering;
+using CSharp.ProgrammersGuide.Rendering.Printing;
 using CSharp.ProgrammersGuide.Shapes;
+using CSharp.ProgrammersGuide.SmartArts;
 using CSharp.Shapes;
 using CSharp.Slides;
 using CSharp.SmartArts;
 using CSharp.Tables;
 using CSharp.Text;
+using CSharp.VBA;
 
 namespace CSharp
 {
@@ -23,6 +26,15 @@ namespace CSharp
 
             // Un-comment the one you want to try out
 
+            //// =====================================================
+            //// =====================================================
+            //// ActiveX
+            //// =====================================================
+            //// =====================================================
+
+            //ManageActiveXControl.Run();
+            //LinkingVideoActiveXControl.Run();
+
             // =====================================================
             // =====================================================
             // Charts
@@ -35,7 +47,25 @@ namespace CSharp
             //NormalCharts.Run();
             //NumberFormat.Run();
             //ScatteredChart.Run();
-
+            //PieChart.Run();
+            //ChangeChartCategoryAxis.Run();
+            //DisplayChartLabels.Run();
+            //AddErrorBars.Run();
+            //AddCustomError.Run();
+            //AnimatingSeries.Run();
+            //AnimatingSeriesElements.Run();
+            //AnimatingCategoriesElements.Run();
+            //SetChartSeriesOverlap.Run();
+            //SetAutomaticSeriesFillColor.Run();
+            //SetCategoryAxisLabelDistance.Run();
+            //SetlegendCustomOptions.Run();
+            //SetDataLabelsPercentageSign.Run();
+            //DoughnutChartHole.Run();
+            //ManagePropertiesCharts.Run();
+            //SetGapWidth.Run();
+            //AutomaticChartSeriescolor.Run();
+            //DisplayPercentageAsLabels.Run();
+            //SecondPlotOptionsforCharts.Run();
 
             //// =====================================================
             //// =====================================================
@@ -82,7 +112,6 @@ namespace CSharp
             //ConvetToSWF.Run();
             //GetRectangularCoordinatesofParagraph.Run();
             //GetPositionCoordinatesofPortion.Run();
-
 
             //// =====================================================
             //// =====================================================
@@ -156,17 +185,32 @@ namespace CSharp
             //ThumbnailFromSlide.Run();
             //ThumbnailFromSlideInNotes.Run();
             //ThumbnailWithUserDefinedDimensions.Run();
+            //AccessSlidebyIndex.Run();
+            //AccessSlidebyID.Run();
+            //CloneAnotherPresentationAtSpecifiedPosition.Run();
+            //ManagSimpleSlideTransitions.Run();
+            //ManagingBetterSlideTransitions.Run();
+            //AddSlideComments.Run();
+            //AccessSlideComments.Run();
+            //RemoveHyperlinks.Run();
+            //AddLayoutSlides.Run();
+            //SetSizeAndType.Run();
+            //SetPDFPageSize.Run();
+            //RemoveNotesAtSpecificSlide.Run();
+            //RemoveNotesFromAllSlides.Run();
+            //ExtractVideo.Run();
+            //SetTransitionEffects.Run();
 
             //// =====================================================
             //// =====================================================
-            //// Rendering a Slide
+            //// Rendering - Printing a Slide
             //// =====================================================
             //// =====================================================
 
-            SetZoom.Run();
-            SetSlideNumber.Run();
-            DefaultPrinterPrinting.Run();
-            SpecificPrinterPrinting.Run();
+            //SetZoom.Run();
+            //SetSlideNumber.Run();
+            //DefaultPrinterPrinting.Run();
+            //SpecificPrinterPrinting.Run();
 
             //// =====================================================
             //// =====================================================
@@ -185,6 +229,15 @@ namespace CSharp
             //RemoveNode.Run();
             //RemoveNodeSpecificPosition.Run();
             //SmartArtNodeLevel.Run();
+            //AccessSmartArtParticularLayout.Run();
+            //ChangSmartArtShapeStyle.Run();
+            //ChangeSmartArtShapeColorStyle.Run();
+            //FillFormatSmartArtShapeNode.Run();
+            //ChangeTextOnSmartArtNode.Run();
+            //ChangeSmartArtLayout.Run();
+            //CheckSmartArtHiddenProperty.Run();
+            //ChangeSmartArtState.Run();
+            //OrganizeChartLayoutType.Run();
 
             //// =====================================================
             //// =====================================================
@@ -223,10 +276,33 @@ namespace CSharp
             //ShadowEffects.Run();
             //TextBoxHyperlink.Run();
             //TextBoxOnSlideProgram.Run();
-             
+            //ApplyInnerShadow.Run();
+            //ManageParagraphFontProperties.Run();
+            //SetTextFontProperties.Run();
+            //ReplaceFontsExplicitly.Run();
+            //RuleBasedFontsReplacement.Run();
+            //SetAutofitOftextframe.Run();
+            //SetAnchorOfTextFrame.Run();
+            //RotatingText.Run();
+            //LineSpacing.Run();
+            //ApplyOuterShadow.Run();
+            //CustomRotationAngleTextframe.Run();
+
+
+            //// =====================================================
+            //// =====================================================
+            //// VBA Macros
+            //// =====================================================
+            //// =====================================================
+
+            //AddVBAMacros.Run();
+            //RemoveVBAMacros.Run();
+
             // Stop before exiting
             Console.WriteLine("\n\nProgram Finished. Press any key to exit....");
             Console.ReadKey();
+
+
         }
 
         protected void Page_Load(object sender, EventArgs e)
@@ -235,45 +311,78 @@ namespace CSharp
 
         }
 
+        public static String GetDataDir_ActiveX()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "ActiveX/");
+        }
         public static String GetDataDir_Charts()
         {
-            return Path.GetFullPath("../../ProgrammersGuide/Charts/Data/");
+            return Path.GetFullPath(GetDataDir_Data() + "Charts/");
         }
-
+        public static String GetDataDir_VBA()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "VBA/");
+        }
         public static String GetDataDir_Presentations()
         {
-            return Path.GetFullPath("../../ProgrammersGuide/Presentations/Data/");
+            return Path.GetFullPath(GetDataDir_Data() + "Presentations/");
         }
 
         public static String GetDataDir_Rendering()
         {
-            return Path.GetFullPath("../../ProgrammersGuide/Rendering/Data/");
+            return Path.GetFullPath(GetDataDir_Data() + "Rendering-Printing/");
         }
-
 
         public static String GetDataDir_Shapes()
         {
-            return Path.GetFullPath("../../ProgrammersGuide/Shapes/Data/");
+            return Path.GetFullPath(GetDataDir_Data() + "Shapes/");
         }
 
         public static String GetDataDir_Slides_Presentations()
         {
-            return Path.GetFullPath("../../ProgrammersGuide/Slides-Presentation/Data/");
+            return Path.GetFullPath(GetDataDir_Data() + "Slides/");
         }
 
         public static String GetDataDir_SmartArts()
         {
-            return Path.GetFullPath("../../ProgrammersGuide/SmartArts/Data/");
+            return Path.GetFullPath(GetDataDir_Data() + "SmartArts/");
         }
 
         public static String GetDataDir_Tables()
         {
-            return Path.GetFullPath("../../ProgrammersGuide/Tables/Data/");
+            return Path.GetFullPath(GetDataDir_Data() + "Tables/");
         }
 
         public static String GetDataDir_Text()
         {
-            return Path.GetFullPath("../../ProgrammersGuide/Text/Data/");
+            return Path.GetFullPath(GetDataDir_Data() + "Text/");
         }
+
+        public static String GetDataDir_Video()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "Video/");
+        }
+
+        private static string GetDataDir_Data()
+        {
+            var parent = Directory.GetParent(Directory.GetCurrentDirectory()).Parent;
+            string startDirectory = null;
+            if (parent != null)
+            {
+                var directoryInfo = parent.Parent;
+                if (directoryInfo != null)
+                {
+                    startDirectory = directoryInfo.FullName;
+                }
+            }
+            else
+            {
+                startDirectory = parent.FullName;
+            }
+            return startDirectory != null ? Path.Combine(startDirectory, "Data\\") : null;
+        }
+
+
+
     }
 }

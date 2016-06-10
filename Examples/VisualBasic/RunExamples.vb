@@ -23,6 +23,16 @@ Namespace VisualBasic
             Console.WriteLine("=====================================================")
             ' Un-comment the one you want to try out
 
+
+            '// =====================================================
+            '// =====================================================
+            '//  Active X
+            '// =====================================================
+            '// =====================================================
+
+            ManageActiveXControl.Run()
+            'LinkingVideoActiveXControl.Run()
+
             ' =====================================================
             ' =====================================================
             ' Charts
@@ -35,7 +45,25 @@ Namespace VisualBasic
             'NormalCharts.Run()
             'NumberFormat.Run()
             'ScatteredChart.Run()
-
+            'PieChart.Run()
+            'ChangeChartCategoryAxis.Run()
+            'DisplayChartLabels.Run()
+            'AddErrorBars.Run()
+            'AddCustomError.Run()
+            'AnimatingSeries.Run()
+            'AnimatingSeriesElements.Run()
+            'AnimatingCategoriesElements.Run()
+            'SetChartSeriesOverlap.Run()
+            'SetAutomaticSeriesFillColor.Run()
+            'SetCategoryAxisLabelDistance.Run()
+            'SetlegendCustomOptions.Run()
+            'SetDataLabelsPercentageSign.Run()
+            'DoughnutChartHole.Run()
+            'ManagePropertiesCharts.Run()
+            'SetGapWidth.Run()
+            'AutomaticChartSeriescolor.Run()
+            'DisplayPercentageAsLabels.Run()
+            'SecondPlotOptionsforCharts.Run()
 
             '// =====================================================
             '// =====================================================
@@ -130,7 +158,7 @@ Namespace VisualBasic
 
             '// =====================================================
             '// =====================================================
-            '// Slides in Presentation
+            '// Slides  
             '// =====================================================
             '// =====================================================
 
@@ -154,6 +182,21 @@ Namespace VisualBasic
             'ThumbnailFromSlide.Run()
             'ThumbnailFromSlideInNotes.Run()
             'ThumbnailWithUserDefinedDimensions.Run()
+            'AccessSlidebyIndex.Run()
+            'AccessSlidebyID.Run()
+            'CloneAnotherPresentationAtSpecifiedPosition.Run()
+            'ManagSimpleSlideTransitions.Run()
+            'ManagingBetterSlideTransitions.Run()
+            'AddSlideComments.Run()
+            'AccessSlideComments.Run()
+            'RemoveHyperlinks.Run()
+            'AddLayoutSlides.Run()
+            'SettSizeAndType.Run()
+            'SetPDFPageSize.Run()
+            'RemoveNotesAtSpecificSlide.Run()
+            'RemoveNotesFromAllSlides.Run()
+            'ExtractVideo.Run()
+            'SetTransitionEffects.Run()
 
             '// =====================================================
             '// =====================================================
@@ -172,17 +215,26 @@ Namespace VisualBasic
             '// =====================================================
             '// =====================================================
 
-            'AccessChildNodes.Run();
+            'AccessChildNodes.Run()
             'AccessChildNodeSpecificPosition.Run()
-            'AccessSmartArt.Run();
-            'AccessSmartArtShape.Run();
-            'AddNodes.Run();
-            'AddNodesSpecificPosition.Run();
-            'AssistantNode.Run();
-            'CreateSmartArtShape.Run();
-            'RemoveNode.Run();
-            'RemoveNodeSpecificPosition.Run();
-            'SmartArtNodeLevel.Run();
+            'AccessSmartArt.Run()
+            'AccessSmartArtShape.Run()
+            'AddNodes.Run()
+            'AddNodesSpecificPosition.Run()
+            'AssistantNode.Run()
+            'CreateSmartArtShape.Run()
+            'RemoveNode.Run()
+            'RemoveNodeSpecificPosition.Run()
+            'SmartArtNodeLevel.Run()
+            'AccessSmartArtParticularLayout.Run()
+            'ChangSmartArtShapeStyle.Run()
+            'ChangeSmartArtShapeColorStyle.Run()
+            'FillFormatSmartArtShapeNode.Run()
+            'ChangeTextOnSmartArtNode.Run()
+            'ChangeSmartArtLayout.Run()
+            'CheckSmartArtHiddenProperty.Run()
+            'ChangeSmartArtState.Run()
+            'OrganizeChartLayoutType.Run()
 
             '// =====================================================
             '// =====================================================
@@ -209,19 +261,39 @@ Namespace VisualBasic
             '// =====================================================
             '// =====================================================
 
-            'DefaultFonts.Run();
-            'ExportingHTMLText.Run();
-            'FontFamily.Run();
-            'FontProperties.Run();
-            'ImportingHTMLText.Run();
-            'MultipleParagraphs.Run();
-            'ParagraphBullets.Run();
-            'ParagraphIndent.Run();
-            'ParagraphsAlignment.Run();
-            'ReplacingText.Run();
-            'ShadowEffects.Run();
-            'TextBoxHyperlink.Run();
-            'TextBoxOnSlideProgram.Run();
+            'DefaultFonts.Run()
+            'ExportingHTMLText.Run()
+            'FontFamily.Run()
+            'FontProperties.Run()
+            'ImportingHTMLText.Run()
+            'MultipleParagraphs.Run()
+            'ParagraphBullets.Run()
+            'ParagraphIndent.Run()
+            'ParagraphsAlignment.Run()
+            'ReplacingText.Run()
+            'ShadowEffects.Run()
+            'TextBoxHyperlink.Run()
+            'TextBoxOnSlideProgram.Run()
+            'ApplyInnerShadow.Run()
+            'ManagParagraphFontProperties.Run()
+            'SetTextFontProperties.Run()
+            'ReplaceFontsExplicitly.Run()
+            'RuleBasedFontsReplacement.Run()
+            'SetAutofitOftextframe.Run()
+            'SetAnchorOfTextFrame.Run()
+            'RotatingText.Run()
+            'LineSpacing.Run()
+            'ApplyOuterShadow.Run()
+            'CustomRotationAngleTextframe.Run()
+             
+            '// =====================================================
+            '// =====================================================
+            '// Working With VBA
+            '// =====================================================
+            '// =====================================================
+
+            'AddVBAMacros.Run()
+            'RemoveVBAMacros.Run()
 
 
             ' Stop before exiting
@@ -229,36 +301,61 @@ Namespace VisualBasic
             Console.ReadKey()
         End Sub
 
-        Public Shared Function GetDataDir_Charts() As String
-            Return Path.GetFullPath("../../ProgrammersGuide/Charts/Data/")
+
+        Public Shared Function GetDataDir_ActiveX() As [String]
+            Return Path.GetFullPath(GetDataDir_Data() & Convert.ToString("ActiveX/"))
+        End Function
+        Public Shared Function GetDataDir_Charts() As [String]
+            Return Path.GetFullPath(GetDataDir_Data() & Convert.ToString("Charts/"))
+        End Function
+        Public Shared Function GetDataDir_VBA() As [String]
+            Return Path.GetFullPath(GetDataDir_Data() & Convert.ToString("VBA/"))
+        End Function
+        Public Shared Function GetDataDir_Presentations() As [String]
+            Return Path.GetFullPath(GetDataDir_Data() & Convert.ToString("Presentations/"))
         End Function
 
-        Public Shared Function GetDataDir_Presentations() As String
-            Return Path.GetFullPath("../../ProgrammersGuide/Presentations/Data/")
+        Public Shared Function GetDataDir_Rendering() As [String]
+            Return Path.GetFullPath(GetDataDir_Data() & Convert.ToString("Rendering-Printing/"))
         End Function
 
-        Public Shared Function GetDataDir_Shapes() As String
-            Return Path.GetFullPath("../../ProgrammersGuide/Shapes/Data/")
+        Public Shared Function GetDataDir_Shapes() As [String]
+            Return Path.GetFullPath(GetDataDir_Data() & Convert.ToString("Shapes/"))
         End Function
 
-        Public Shared Function GetDataDir_Rendering() As String
-            Return Path.GetFullPath("../../ProgrammersGuide/Rendering/Data/")
+        Public Shared Function GetDataDir_Slides_Presentations() As [String]
+            Return Path.GetFullPath(GetDataDir_Data() & Convert.ToString("Slides/"))
         End Function
 
-        Public Shared Function GetDataDir_Slides_Presentations() As String
-            Return Path.GetFullPath("../../ProgrammersGuide/Slides-Presentations/Data/")
+        Public Shared Function GetDataDir_SmartArts() As [String]
+            Return Path.GetFullPath(GetDataDir_Data() & Convert.ToString("SmartArts/"))
         End Function
 
-        Public Shared Function GetDataDir_SmartArts() As String
-            Return Path.GetFullPath("../../ProgrammersGuide/SmartArts/Data/")
+        Public Shared Function GetDataDir_Tables() As [String]
+            Return Path.GetFullPath(GetDataDir_Data() & Convert.ToString("Tables/"))
         End Function
 
-        Public Shared Function GetDataDir_Tables() As String
-            Return Path.GetFullPath("../../ProgrammersGuide/Tables/Data/")
+        Public Shared Function GetDataDir_Text() As [String]
+            Return Path.GetFullPath(GetDataDir_Data() & Convert.ToString("Text/"))
         End Function
 
-        Public Shared Function GetDataDir_Text() As String
-            Return Path.GetFullPath("../../ProgrammersGuide/Text/Data/")
+        Public Shared Function GetDataDir_Video() As [String]
+            Return Path.GetFullPath(GetDataDir_Data() & Convert.ToString("Video/"))
         End Function
+
+        Private Shared Function GetDataDir_Data() As String
+            Dim parent = Directory.GetParent(Directory.GetCurrentDirectory()).Parent
+            Dim startDirectory As String = Nothing
+            If parent IsNot Nothing Then
+                Dim directoryInfo = parent.Parent
+                If directoryInfo IsNot Nothing Then
+                    startDirectory = directoryInfo.FullName
+                End If
+            Else
+                startDirectory = parent.FullName
+            End If
+            Return If(startDirectory IsNot Nothing, Path.Combine(startDirectory, "Data\"), Nothing)
+        End Function
+
     End Class
 End Namespace
