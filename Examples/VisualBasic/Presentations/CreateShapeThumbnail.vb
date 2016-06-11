@@ -16,18 +16,16 @@ Namespace VisualBasic.Shapes
             Dim dataDir As String = RunExamples.GetDataDir_Shapes()
 
             ' Instantiate a Presentation class that represents the presentation file
-            Using p As New Presentation(dataDir + "HelloWorld.pptx")
+            Using presentation As New Presentation(dataDir + "HelloWorld.pptx")
 
                 ' Create a full scale image
-                Using bitmap As Bitmap = p.Slides(0).Shapes(0).GetThumbnail()
+                Using bitmap As Bitmap = presentation.Slides(0).Shapes(0).GetThumbnail()
 
                     ' Save the image to disk in PNG format
                     bitmap.Save(dataDir + "Shape_thumbnail.png", ImageFormat.Png)
-
                 End Using
 
             End Using
-
         End Sub
     End Class
 End Namespace

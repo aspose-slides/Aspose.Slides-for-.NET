@@ -68,6 +68,7 @@
     <Compile Include="Charts\SetDataLabelsPercentageSign.cs" />
     <Compile Include="Charts\SetGapWidth.cs" />
     <Compile Include="Charts\SetlegendCustomOptions.cs" />
+    <Compile Include="Charts\SetMarkerOptions.cs" />
     <Compile Include="Presentations\AddCustomDocumentProperties.cs" />
     <Compile Include="Presentations\ConversionToTIFFNotes.cs" />
     <Compile Include="Presentations\ConvertIndividualSlide.cs" />
@@ -99,6 +100,7 @@
     <Compile Include="Shapes\ChangeOLEObjectData.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Shapes\FillShapeswithSolidColor.cs" />
     <Compile Include="Slides\AccessSlidebyID.cs" />
     <Compile Include="Slides\AccessSlidebyIndex.cs" />
     <Compile Include="Slides\AccessSlideComments.cs" />
@@ -140,6 +142,7 @@
     <Compile Include="Tables\MergeCells.cs" />
     <Compile Include="Tables\StandardTables.cs" />
     <Compile Include="Tables\VerticallyAlignText.cs" />
+    <Compile Include="Text\UseCustomFonts.cs" />
     <Compile Include="VBA\AddVBAMacros.cs" />
     <Compile Include="Text\ApplyInnerShadow.cs" />
     <Compile Include="Text\ApplyOuterShadow.cs" />

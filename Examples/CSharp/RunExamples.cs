@@ -66,6 +66,7 @@ namespace CSharp
             //AutomaticChartSeriescolor.Run();
             //DisplayPercentageAsLabels.Run();
             //SecondPlotOptionsforCharts.Run();
+            //SetMarkerOptions.Run();
 
             //// =====================================================
             //// =====================================================
@@ -135,6 +136,7 @@ namespace CSharp
             //FillShapesPattern.Run();
             //FillShapesPicture.Run();
             //FindShapeInSlide.Run();
+            //FillShapeswithSolidColor.Run();
             //FormatJoinStyles.Run();
             //FormatLines.Run();
             //FormattedEllipse.Run();
@@ -287,7 +289,7 @@ namespace CSharp
             //LineSpacing.Run();
             //ApplyOuterShadow.Run();
             //CustomRotationAngleTextframe.Run();
-
+            //UseCustomFonts.Run(); 
 
             //// =====================================================
             //// =====================================================

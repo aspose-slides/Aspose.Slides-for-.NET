@@ -68,6 +68,7 @@
     <Compile Include="Charts\SetDataLabelsPercentageSign.vb" />
     <Compile Include="Charts\SetGapWidth.vb" />
     <Compile Include="Charts\SetlegendCustomOptions.vb" />
+    <Compile Include="Charts\SetMarkerOptions.vb" />
     <Compile Include="Presentations\AddCustomDocumentProperties.vb" />
     <Compile Include="Presentations\AddRelativeScaleHeightPictureFrame.vb" />
     <Compile Include="Presentations\AutomaticChartSeriescolor.vb" />
@@ -121,6 +122,7 @@
     <Compile Include="Shapes\FillShapesGradient.vb" />
     <Compile Include="Shapes\FillShapesPattern.vb" />
     <Compile Include="Shapes\FillShapesPicture.vb" />
+    <Compile Include="Shapes\FillShapeswithSolidColor.vb" />
     <Compile Include="Shapes\FindShapeInSlide.vb" />
     <Compile Include="Shapes\FormatJoinStyles.vb" />
     <Compile Include="Shapes\FormatLines.vb" />
@@ -163,6 +165,7 @@
     <Compile Include="Tables\MergeCell.vb" />
     <Compile Include="Tables\StandardTables.vb" />
     <Compile Include="Tables\VerticallyAlignText.vb" />
+    <Compile Include="Text\UseCustomFonts.vb" />
     <Compile Include="VBA\AddVBAMacros.vb" />
     <Compile Include="Text\ApplyInnerShadow.vb" />
     <Compile Include="Text\ApplyOuterShadow.vb" />
