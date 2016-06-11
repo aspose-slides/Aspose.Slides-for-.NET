@@ -3,11 +3,10 @@ Imports System
 Imports System.Collections.Generic
 Imports System.IO
 Imports System.Text
-Imports CSharp.Tables
-Imports ProgrammersGuide.Presentations
-
-Imports VisualBasic.Charts
+Imports ActiveX
 Imports VisualBasic.Presentations
+Imports VisualBasic.ActiveX
+Imports VisualBasic.Charts
 Imports VisualBasic.Rendering
 Imports VisualBasic.Shapes
 Imports VisualBasic.Slides

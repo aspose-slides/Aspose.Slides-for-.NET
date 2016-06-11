@@ -3,10 +3,10 @@ using System;
 using System.IO;
 using CSharp.Charts;
 using CSharp.Presentations;
-using CSharp.ProgrammersGuide.Presentations;
-using CSharp.ProgrammersGuide.Rendering.Printing;
-using CSharp.ProgrammersGuide.Shapes;
-using CSharp.ProgrammersGuide.SmartArts;
+using CSharp.Presentations;
+using CSharp.Rendering.Printing;
+using CSharp.Shapes;
+using CSharp.SmartArts;
 using CSharp.Shapes;
 using CSharp.Slides;
 using CSharp.SmartArts;
@@ -32,7 +32,7 @@ namespace CSharp
             //// =====================================================
             //// =====================================================
 
-            //ManageActiveXControl.Run();
+            ManageActiveXControl.Run();
             //LinkingVideoActiveXControl.Run();
 
             // =====================================================
