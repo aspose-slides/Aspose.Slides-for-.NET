@@ -20,11 +20,10 @@ namespace CSharp.Shapes
             string dataDir = RunExamples.GetDataDir_Shapes();
 
             // Instantiate a Presentation class that represents the presentation file
-            using (Presentation p = new Presentation(dataDir + "HelloWorld.pptx"))
+            using (Presentation presentation = new Presentation(dataDir + "HelloWorld.pptx"))
             {
-
                 // Create a full scale image
-                using (Bitmap bitmap = p.Slides[0].Shapes[0].GetThumbnail())
+                using (Bitmap bitmap = presentation.Slides[0].Shapes[0].GetThumbnail())
                 {
                     //Save the image to disk in PNG format
                     bitmap.Save(dataDir + "Shape_thumbnail.png", ImageFormat.Png);

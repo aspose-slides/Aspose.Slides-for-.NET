@@ -63,6 +63,7 @@ Namespace VisualBasic
             'AutomaticChartSeriescolor.Run()
             'DisplayPercentageAsLabels.Run()
             'SecondPlotOptionsforCharts.Run()
+            'SetMarkerOptions.Run()
 
             '// =====================================================
             '// =====================================================
@@ -130,6 +131,7 @@ Namespace VisualBasic
             'FillShapesGradient.Run()
             'FillShapesPattern.Run()
             'FillShapesPicture.Run()
+            'FillShapeswithSolidColor.Run()
             'FindShapeInSlide.Run()
             'FormatJoinStyles.Run()
             'FormatLines.Run()
@@ -284,6 +286,7 @@ Namespace VisualBasic
             'LineSpacing.Run()
             'ApplyOuterShadow.Run()
             'CustomRotationAngleTextframe.Run()
+            'UseCustomFonts.Run()
              
             '// =====================================================
             '// =====================================================
