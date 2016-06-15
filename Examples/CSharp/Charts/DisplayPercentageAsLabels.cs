@@ -11,7 +11,7 @@ install it and then add its reference to this project. For any issues, questions
 please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
 */
 
-namespace CSharp.Charts
+namespace Aspose.Slides.Examples.CSharp.Charts
 {
     public class DisplayPercentageAsLabels
     {
@@ -28,8 +28,7 @@ namespace CSharp.Charts
             IChart chart = slide.Shapes.AddChart(ChartType.StackedColumn, 20, 20, 400, 400);
             IChartSeries series = chart.ChartData.Series[0];
             IChartCategory cat;
-            double total_value = 0.0f;
-
+          
             double[] total_for_Cat = new double[chart.ChartData.Categories.Count];
 
             for (int k = 0; k < chart.ChartData.Categories.Count; k++)

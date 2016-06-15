@@ -9,7 +9,7 @@ Imports Aspose.Slides
 'please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
 
 
-Namespace VisualBasic.Presentations
+Namespace Aspose.Slides.Examples.VisualBasic.Presentations
     Public Class CreateNewPresentation
         Public Shared Sub Run()
 

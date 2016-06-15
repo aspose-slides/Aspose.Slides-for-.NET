@@ -9,7 +9,7 @@ Imports Aspose.Slides
 'please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
 
 
-Namespace VisualBasic.Shapes
+Namespace Aspose.Slides.Examples.VisualBasic.Shapes
     Public Class ApplyBevelEffects
         Public Shared Sub Run()
 

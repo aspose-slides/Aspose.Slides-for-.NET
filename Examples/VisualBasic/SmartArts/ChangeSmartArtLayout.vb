@@ -11,7 +11,7 @@ Imports Aspose.Slides
 'please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
 '
 
-Namespace VisualBasic.SmartArts
+Namespace Aspose.Slides.Examples.VisualBasic.SmartArts
     Class ChangeSmartArtLayout
         Public Shared Sub Run()
             'ExStart:ChangeSmartArtLayout

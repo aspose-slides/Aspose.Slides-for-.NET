@@ -11,7 +11,7 @@ install it and then add its reference to this project. For any issues, questions
 please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
 */
 
-namespace CSharp.Shapes
+namespace Aspose.Slides.Examples.CSharp.Shapes
 {
     class CreateSmartArtChildNoteThumbnail
     {

@@ -1,16 +1,12 @@
-//////////////////////////////////////////////////////////////////////////
-// Copyright 2001-2015 Aspose Pty Ltd. All Rights Reserved.
-//
-// This file is part of Aspose.Slides. The source code in this file
-// is only intended as a supplement to the documentation, and is provided
-// "as is", without warranty of any kind, either expressed or implied.
-//////////////////////////////////////////////////////////////////////////
+ 
 using System.IO;
 
 using Aspose.Slides;
-using Aspose.Slides.SmartArt;
+using Aspose.Slides.Examples.CSharp;
+using AsposeSmartArts = Aspose.Slides.SmartArt;
 
-namespace CSharp.SmartArts
+namespace Aspose.Slides.Examples.CSharp.SmartArts
+
 {
     public class AddNodes
     {
@@ -27,20 +23,20 @@ namespace CSharp.SmartArts
             {
 
                 //Check if shape is of SmartArt type
-                if (shape is SmartArt)
+                if (shape is AsposeSmartArts.SmartArt)
                 {
 
                     //Typecast shape to SmartArt
-                    SmartArt smart = (SmartArt)shape;
+                    AsposeSmartArts.SmartArt smart = (AsposeSmartArts.SmartArt)shape;
 
                     //Adding a new SmartArt Node
-                    SmartArtNode TemNode = (SmartArtNode)smart.AllNodes.AddNode();
+                    AsposeSmartArts.SmartArtNode TemNode = (AsposeSmartArts.SmartArtNode)smart.AllNodes.AddNode();
 
                     //Adding text
                     TemNode.TextFrame.Text = "Test";
 
                     //Adding new child node in parent node. It  will be added in the end of collection
-                    SmartArtNode newNode = (SmartArtNode)TemNode.ChildNodes.AddNode();
+                    AsposeSmartArts.SmartArtNode newNode = (AsposeSmartArts.SmartArtNode)TemNode.ChildNodes.AddNode();
 
                     //Adding text
                     newNode.TextFrame.Text = "New Node Added";

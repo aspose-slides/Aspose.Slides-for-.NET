@@ -11,7 +11,7 @@ Imports Aspose.Slides
 'please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
 '
 
-Namespace VisualBasic.Text
+Namespace Aspose.Slides.Examples.VisualBasic.VBA
     Class AddVBAMacros
         Public Shared Sub Run()
             ' The path to the documents directory.

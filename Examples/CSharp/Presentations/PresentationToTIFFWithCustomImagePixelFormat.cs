@@ -1,14 +1,4 @@
-﻿/*
-//////////////////////////////////////////////////////////////////////////
-// Copyright 2001-2016 Aspose Pty Ltd. All Rights Reserved.
-//
-// This file is part of Aspose.Slides. The source code in this file
-// is only intended as a supplement to the documentation, and is provided
-// "as is", without warranty of any kind, either expressed or implied.
-//////////////////////////////////////////////////////////////////////////
-*/
-
-using Aspose.Slides.Export;
+﻿using Aspose.Slides.Export;
 using Aspose.Slides;
 
 /*
@@ -19,7 +9,7 @@ install it and then add its reference to this project. For any issues, questions
 please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
 */
 
-namespace CSharp.Presentations
+namespace Aspose.Slides.Examples.CSharp.Presentations
 {
     class PresentationToTIFFWithCustomImagePixelFormat
     {

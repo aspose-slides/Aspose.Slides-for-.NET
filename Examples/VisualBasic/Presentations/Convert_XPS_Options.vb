@@ -1,17 +1,11 @@
-'////////////////////////////////////////////////////////////////////////
-' Copyright 2001-2015 Aspose Pty Ltd. All Rights Reserved.
-'
-' This file is part of Aspose.Slides. The source code in this file
-' is only intended as a supplement to the documentation, and is provided
-' "as is", without warranty of any kind, either expressed or implied.
-'////////////////////////////////////////////////////////////////////////
+
 
 Imports Microsoft.VisualBasic
 Imports System.IO
 
 Imports Aspose.Slides
 
-Namespace VisualBasic.Presentations
+Namespace Aspose.Slides.Examples.VisualBasic.Presentations
     Public Class Convert_XPS_Options
         Public Shared Sub Run()
 
