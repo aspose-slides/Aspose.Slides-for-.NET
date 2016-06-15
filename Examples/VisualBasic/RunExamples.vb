@@ -3,22 +3,21 @@ Imports System
 Imports System.Collections.Generic
 Imports System.IO
 Imports System.Text
-Imports ActiveX
-Imports VisualBasic.Presentations
-Imports VisualBasic.ActiveX
-Imports VisualBasic.Charts
-Imports VisualBasic.Rendering
-Imports VisualBasic.Shapes
-Imports VisualBasic.Slides
-Imports VisualBasic.SmartArts
-Imports VisualBasic.Tables
-Imports VisualBasic.Text
+Imports Aspose.Slides.Examples.VisualBasic.ActiveX
+Imports Aspose.Slides.Examples.VisualBasic.Presentations
+Imports Aspose.Slides.Examples.VisualBasic.Charts
+Imports Aspose.Slides.Examples.VisualBasic.Rendering.Printing
+Imports Aspose.Slides.Examples.VisualBasic.Shapes
+Imports Aspose.Slides.Examples.VisualBasic.Slides
+Imports Aspose.Slides.Examples.VisualBasic.SmartArts
+Imports Aspose.Slides.Examples.VisualBasic.Tables
+Imports Aspose.Slides.Examples.VisualBasic.Text
 
-Namespace VisualBasic
+Namespace Aspose.Slides.Examples.VisualBasic
     Friend Class RunExamples
         <STAThread()> _
         Public Shared Sub Main()
-            Console.WriteLine("Open RunExamples.cs. In Main() method, Un-comment the example that you want to run")
+            Console.WriteLine("Open RunExamples.vb." & vbLf & "In Main() method, Un-comment the example that you want to run")
             Console.WriteLine("=====================================================")
             ' Un-comment the one you want to try out
 
@@ -287,7 +286,7 @@ Namespace VisualBasic
             'ApplyOuterShadow.Run()
             'CustomRotationAngleTextframe.Run()
             'UseCustomFonts.Run()
-             
+
             '// =====================================================
             '// =====================================================
             '// Working With VBA

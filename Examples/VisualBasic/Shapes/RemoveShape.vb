@@ -8,7 +8,7 @@ Imports Aspose.Slides
 'install it and then add its reference to this project. For any issues, questions or suggestions 
 'please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
 
-Namespace VisualBasic.Shapes
+Namespace Aspose.Slides.Examples.VisualBasic.Shapes
     Public Class RemoveShape
         Public Shared Sub Run()
             ' For complete examples and data files, please go to https://github.com/aspose-slides/Aspose.Slides-for-.NET            ' The path to the documents directory.

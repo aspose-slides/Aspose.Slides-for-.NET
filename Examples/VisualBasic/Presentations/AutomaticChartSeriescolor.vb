@@ -13,7 +13,7 @@ Imports Aspose.Slides
 '
 
 
-Namespace VisualBasic.Charts
+Namespace Aspose.Slides.Examples.VisualBasic.Charts
     Public Class AutomaticChartSeriescolor
         Public Shared Sub Run()
             ' The path to the documents directory.

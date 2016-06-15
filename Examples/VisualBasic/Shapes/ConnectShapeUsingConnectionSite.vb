@@ -8,7 +8,7 @@ Imports System.Drawing
 Imports Aspose.Slides
 Imports Aspose.Slides.Export
 
-Namespace VisualBasic.Shapes
+Namespace Aspose.Slides.Examples.VisualBasic.Shapes
     Public Class ConnectShapeUsingConnectionSite
         Public Shared Sub Run()
 

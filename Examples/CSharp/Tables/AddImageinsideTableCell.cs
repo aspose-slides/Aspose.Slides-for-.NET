@@ -9,7 +9,7 @@ If you do not wish to use NuGet, you can manually download Aspose.Slides for .NE
 install it and then add its reference to this project. For any issues, questions or suggestions 
 please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
 */
-namespace CSharp.Tables
+namespace Aspose.Slides.Examples.CSharp.Tables
 {
     public class AddImageinsideTableCell
     {

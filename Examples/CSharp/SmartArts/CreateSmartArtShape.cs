@@ -1,16 +1,8 @@
-//////////////////////////////////////////////////////////////////////////
-// Copyright 2001-2015 Aspose Pty Ltd. All Rights Reserved.
-//
-// This file is part of Aspose.Slides. The source code in this file
-// is only intended as a supplement to the documentation, and is provided
-// "as is", without warranty of any kind, either expressed or implied.
-//////////////////////////////////////////////////////////////////////////
 using System.IO;
-
 using Aspose.Slides;
 using Aspose.Slides.SmartArt;
 
-namespace CSharp.SmartArts
+namespace Aspose.Slides.Examples.CSharp.SmartArts
 {
     public class CreateSmartArtShape
     {
@@ -19,7 +11,7 @@ namespace CSharp.SmartArts
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_SmartArts();
 
-// Create directory if it is not already present.
+            // Create directory if it is not already present.
             bool IsExists = System.IO.Directory.Exists(dataDir);
             if (!IsExists)
                 System.IO.Directory.CreateDirectory(dataDir);

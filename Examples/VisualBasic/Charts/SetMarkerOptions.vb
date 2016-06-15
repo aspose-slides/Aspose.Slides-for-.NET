@@ -12,7 +12,7 @@ Imports Aspose.Slides
 'please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
 '
 
-Namespace VisualBasic.Charts
+Namespace Aspose.Slides.Examples.VisualBasic.Charts
     Public Class SetMarkerOptions
         Public Shared Sub Run()
 

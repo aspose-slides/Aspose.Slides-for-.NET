@@ -1,19 +1,11 @@
-'////////////////////////////////////////////////////////////////////////
-' Copyright 2001-2015 Aspose Pty Ltd. All Rights Reserved.
-'
-' This file is part of Aspose.Slides. The source code in this file
-' is only intended as a supplement to the documentation, and is provided
-' "as is", without warranty of any kind, either expressed or implied.
-'////////////////////////////////////////////////////////////////////////
-
 Imports Microsoft.VisualBasic
 Imports System.IO
 
 Imports Aspose.Slides
-Imports Aspose.Slides.SmartArt
+Imports AsposeSlides = Aspose.Slides.SmartArt
 Imports System
 
-Namespace VisualBasic.SmartArts
+Namespace Aspose.Slides.Examples.VisualBasic.SmartArts
     Public Class AssistantNode
         Public Shared Sub Run()
             ' The path to the documents directory.
@@ -24,12 +16,12 @@ Namespace VisualBasic.SmartArts
                 'Traverse through every shape inside first slide
                 For Each shape As IShape In pres.Slides(0).Shapes
                     'Check if shape is of SmartArt type
-                    If TypeOf shape Is ISmartArt Then
+                    If TypeOf shape Is AsposeSlides.ISmartArt Then
                         'Typecast shape to SmartArtEx
-                        Dim smart As ISmartArt = CType(shape, SmartArt)
+                        Dim smart As AsposeSlides.ISmartArt = CType(shape, AsposeSlides.SmartArt)
                         'Traversing through all nodes of SmartArt shape
 
-                        For Each node As ISmartArtNode In smart.AllNodes
+                        For Each node As AsposeSlides.ISmartArtNode In smart.AllNodes
                             Dim tc As String = node.TextFrame.Text
                             'Check if node is Assitant node
                             If node.IsAssistant Then

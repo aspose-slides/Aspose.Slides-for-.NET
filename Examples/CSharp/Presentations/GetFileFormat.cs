@@ -9,7 +9,7 @@ please feel free to contact us using http://www.aspose.com/community/forums/defa
 */
 
 
-namespace CSharp.Presentations
+namespace Aspose.Slides.Examples.CSharp.Presentations
 {
     class GetFileFormat
     {

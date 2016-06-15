@@ -9,7 +9,7 @@ Imports Aspose.Slides
 'install it and then add its reference to this project. For any issues, questions or suggestions 
 'please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
 
-Namespace VisualBasic.Tables
+Namespace Aspose.Slides.Examples.VisualBasic.Tables
     Public Class StandardTables
         Public Shared Sub Run()
 

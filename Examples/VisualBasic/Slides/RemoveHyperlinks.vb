@@ -10,7 +10,7 @@ Imports Aspose.Slides
 'please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
 '
 
-Namespace VisualBasic.Slides
+Namespace Aspose.Slides.Examples.VisualBasic.Slides
     Class RemoveHyperlinks
         Public Shared Sub Run()
             ' The path to the documents directory.

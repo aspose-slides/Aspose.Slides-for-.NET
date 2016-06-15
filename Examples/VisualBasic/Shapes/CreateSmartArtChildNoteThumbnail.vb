@@ -8,7 +8,7 @@ Imports Aspose.Slides
 'install it and then add its reference to this project. For any issues, questions or suggestions 
 'please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
 
-Namespace VisualBasic.Shapes
+Namespace Aspose.Slides.Examples.VisualBasic.Shapes
     Public Class CreateSmartArtChildNoteThumbnail
         Public Shared Sub Run()
 

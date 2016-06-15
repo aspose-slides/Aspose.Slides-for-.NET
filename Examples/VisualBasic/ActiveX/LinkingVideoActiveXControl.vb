@@ -1,6 +1,5 @@
 ﻿Imports System
 Imports Aspose.Slides
-Imports VisualBasic
 
 '
 'This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Slides for .NET API reference 
@@ -10,7 +9,7 @@ Imports VisualBasic
 'please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
 '
 
-Namespace ActiveX
+Namespace Aspose.Slides.Examples.VisualBasic.ActiveX
     Public Class LinkingVideoActiveXControl
         Public Shared Sub Run()
             ' The path to the documents directory.

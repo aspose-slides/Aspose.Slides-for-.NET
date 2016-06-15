@@ -1,16 +1,10 @@
-//////////////////////////////////////////////////////////////////////////
-// Copyright 2001-2015 Aspose Pty Ltd. All Rights Reserved.
-//
-// This file is part of Aspose.Slides. The source code in this file
-// is only intended as a supplement to the documentation, and is provided
-// "as is", without warranty of any kind, either expressed or implied.
-//////////////////////////////////////////////////////////////////////////
 using System.IO;
 
 using Aspose.Slides;
-using Aspose.Slides.SmartArt;
+using Aspose.Slides.Examples.CSharp;
+using AsposeSlides = Aspose.Slides.SmartArt;
 
-namespace CSharp.SmartArts
+namespace Aspose.Slides.Examples.CSharp.SmartArts
 {
     public class RemoveNodeSpecificPosition
     {
@@ -27,30 +21,28 @@ namespace CSharp.SmartArts
             {
 
                 //Check if shape is of SmartArt type
-                if (shape is SmartArt)
+                if (shape is AsposeSlides.SmartArt)
                 {
                     //Typecast shape to SmartArt
-                    SmartArt smart = (SmartArt)shape;
+                    AsposeSlides.SmartArt smart = (AsposeSlides.SmartArt)shape;
 
                     if (smart.AllNodes.Count > 0)
                     {
                         //Accessing SmartArt node at index 0
-                        ISmartArtNode node = smart.AllNodes[0];
+                        AsposeSlides.ISmartArtNode node = smart.AllNodes[0];
 
                         if (node.ChildNodes.Count >= 2)
                         {
                             //Removing the child node at position 1
-                            ((SmartArtNodeCollection)node.ChildNodes).RemoveNodeByPosition(1);
+                            ((AsposeSlides.SmartArtNodeCollection)node.ChildNodes).RemoveNode(1);
                         }
 
                     }
                 }
-
             }
 
             //Save Presentation
-            pres.Save(dataDir+ "RemoveSmartArtNodeByPosition.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
-            
+            pres.Save(dataDir + "RemoveSmartArtNodeByPosition.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
         }
     }
 }

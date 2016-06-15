@@ -1,30 +1,28 @@
-
 using System;
 using System.IO;
-using CSharp.Charts;
-using CSharp.Presentations;
-using CSharp.Presentations;
-using CSharp.Rendering.Printing;
-using CSharp.Shapes;
-using CSharp.SmartArts;
-using CSharp.Shapes;
-using CSharp.Slides;
-using CSharp.SmartArts;
-using CSharp.Tables;
-using CSharp.Text;
-using CSharp.VBA;
+using Aspose.Slides.Examples.CSharp.ActiveX;
+using Aspose.Slides.Examples.CSharp.Charts;
+using Aspose.Slides.Examples.CSharp.Presentations;
+using Aspose.Slides.Examples.CSharp.Rendering.Printing;
+using Aspose.Slides.Examples.CSharp.Shapes;
+using Aspose.Slides.Examples.CSharp.SmartArts;
+using Aspose.Slides.Examples.CSharp.Slides;
+using Aspose.Slides.Examples.CSharp.Tables;
+using Aspose.Slides.Examples.CSharp.Text;
+using Aspose.Slides.Examples.CSharp.VBA;
 
-namespace CSharp
+
+namespace Aspose.Slides.Examples.CSharp
 {
     class RunExamples
     {
         [STAThread]
         public static void Main()
         {
-            Console.WriteLine("Open RunExamples.cs. In Main() method, Un-comment the example that you want to run");
+            Console.WriteLine("Open RunExamples.cs. \nIn Main() method uncomment the example that you want to run.");
             Console.WriteLine("=====================================================");
 
-            // Un-comment the one you want to try out
+            // Uncomment the one you want to try out
 
             //// =====================================================
             //// =====================================================
@@ -32,7 +30,7 @@ namespace CSharp
             //// =====================================================
             //// =====================================================
 
-            ManageActiveXControl.Run();
+            ManageActiveXControl.Run();         
             //LinkingVideoActiveXControl.Run();
 
             // =====================================================

@@ -12,7 +12,7 @@ Imports Aspose.Slides.Animation
 'please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
 '
 
-Namespace VisualBasic.Charts
+Namespace Aspose.Slides.Examples.VisualBasic.Charts
     Public Class AnimatingCategoriesElements
         Public Shared Sub Run()
             ' The path to the documents directory.
