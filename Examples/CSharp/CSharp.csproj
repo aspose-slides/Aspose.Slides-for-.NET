@@ -38,8 +38,8 @@
       <HintPath>..\packages\Aspose.Cells.8.8.2\lib\net40\Aspose.Cells.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Aspose.Slides, Version=16.4.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Slides.NET.16.4.0\lib\net4.0-client\Aspose.Slides.dll</HintPath>
+    <Reference Include="Aspose.Slides, Version=16.5.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Slides.NET.16.5.0\lib\net4.0-client\Aspose.Slides.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -76,6 +76,7 @@
     <Compile Include="Presentations\ConvertSlidesToPdfNotes.cs" />
     <Compile Include="Presentations\ConvertPresentationToPasswordProtectedPDF.cs" />
     <Compile Include="Presentations\ConvertSpecificSlideToPDF.cs" />
+    <Compile Include="Presentations\ConvertToPDFWithHiddenSlides.cs" />
     <Compile Include="Presentations\ConvetToSWF.cs" />
     <Compile Include="Presentations\CreateNewPresentation.cs" />
     <Compile Include="Presentations\CustomOptionsPDFConversion.cs" />
@@ -142,6 +143,7 @@
     <Compile Include="Tables\MergeCells.cs" />
     <Compile Include="Tables\StandardTables.cs" />
     <Compile Include="Tables\VerticallyAlignText.cs" />
+    <Compile Include="Text\ManageParagraphPictureBulletsInPPT.cs" />
     <Compile Include="Text\UseCustomFonts.cs" />
     <Compile Include="VBA\AddVBAMacros.cs" />
     <Compile Include="Text\ApplyInnerShadow.cs" />

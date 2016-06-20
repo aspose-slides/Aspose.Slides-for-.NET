@@ -76,6 +76,7 @@ Namespace Aspose.Slides.Examples.VisualBasic
             'AccessProperties.Run()
             'ConvertToPDF.Run()
             'ConvertPDFwithCustomOptions.Run()
+            'ConvertToPDFWithHiddenSlides.Run()
             'ConvertToPasswordProtectedPDF.Run()
             'ConvertSpecificSlideToPDF.Run()
             'ConvertSlidesToPdfNotes.Run()
@@ -286,6 +287,7 @@ Namespace Aspose.Slides.Examples.VisualBasic
             'ApplyOuterShadow.Run()
             'CustomRotationAngleTextframe.Run()
             'UseCustomFonts.Run()
+            'ManageParagraphPictureBulletsInPPT.Run()
 
             '// =====================================================
             '// =====================================================
