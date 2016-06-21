@@ -77,7 +77,8 @@ namespace Aspose.Slides.Examples.CSharp
             //AddCustomDocumentProperties.Run();
             //AccessOpenDoc.Run();
             //AccessProperties.Run();
-            //ConvertToPDF.Run();
+            //ConvertToPDF.Run();                                  
+            //ConvertToPDFWithHiddenSlides.Run();
             //CustomOptionsPDFConversion.Run();
             //ConvertPresentationToPasswordProtectedPDF.Run();
             //ConvertSpecificSlideToPDF.Run();
@@ -111,6 +112,7 @@ namespace Aspose.Slides.Examples.CSharp
             //ConvetToSWF.Run();
             //GetRectangularCoordinatesofParagraph.Run();
             //GetPositionCoordinatesofPortion.Run();
+          
 
             //// =====================================================
             //// =====================================================
@@ -288,6 +290,7 @@ namespace Aspose.Slides.Examples.CSharp
             //ApplyOuterShadow.Run();
             //CustomRotationAngleTextframe.Run();
             //UseCustomFonts.Run(); 
+            //ManageParagraphPictureBulletsInPPT.Run();
 
             //// =====================================================
             //// =====================================================
