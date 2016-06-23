@@ -1,6 +1,5 @@
 using System.IO;
 using Aspose.Slides;
-using AsposeSlides = Aspose.Slides.SmartArt;
 using System;
 
 namespace Aspose.Slides.Examples.CSharp.SmartArts
@@ -19,13 +18,13 @@ namespace Aspose.Slides.Examples.CSharp.SmartArts
                 foreach (IShape shape in pres.Slides[0].Shapes)
                 {
                     //Check if shape is of SmartArt type
-                    if (shape is AsposeSlides.ISmartArt)
+                    if (shape is Aspose.Slides.SmartArt.ISmartArt)
                     {
                         //Typecast shape to SmartArtEx
-                        AsposeSlides.ISmartArt smart = (AsposeSlides.SmartArt)shape;
+                        Aspose.Slides.SmartArt.ISmartArt smart = (Aspose.Slides.SmartArt.SmartArt)shape;
                         //Traversing through all nodes of SmartArt shape
 
-                        foreach (AsposeSlides.ISmartArtNode node in smart.AllNodes)
+                        foreach (Aspose.Slides.SmartArt.ISmartArtNode node in smart.AllNodes)
                         {
                             String tc = node.TextFrame.Text;
                             //Check if node is Assitant node

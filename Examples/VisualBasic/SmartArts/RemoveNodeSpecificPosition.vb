@@ -1,8 +1,6 @@
 Imports Microsoft.VisualBasic
 Imports System.IO
-
 Imports Aspose.Slides
- Imports AsposeSlides = Aspose.Slides.SmartArt
 
 Namespace Aspose.Slides.Examples.VisualBasic.SmartArts
     Public Class RemoveNodeSpecificPosition
@@ -17,17 +15,17 @@ Namespace Aspose.Slides.Examples.VisualBasic.SmartArts
             For Each shape As IShape In pres.Slides(0).Shapes
 
                 'Check if shape is of SmartArt type
-                If TypeOf shape Is AsposeSlides.SmartArt Then
+                If TypeOf shape Is Aspose.Slides.SmartArt.SmartArt Then
                     'Typecast shape to SmartArt
-                    Dim smart As AsposeSlides.SmartArt = CType(shape, AsposeSlides.SmartArt)
+                    Dim smart As Aspose.Slides.SmartArt.SmartArt = CType(shape, Aspose.Slides.SmartArt.SmartArt)
 
                     If smart.AllNodes.Count > 0 Then
                         'Accessing SmartArt node at index 0
-                        Dim node As AsposeSlides.ISmartArtNode = smart.AllNodes(0)
+                        Dim node As Aspose.Slides.SmartArt.ISmartArtNode = smart.AllNodes(0)
 
                         If node.ChildNodes.Count >= 2 Then
                             'Removing the child node at position 1
-                            CType(node.ChildNodes, AsposeSlides.SmartArtNodeCollection).RemoveNode(1)
+                            CType(node.ChildNodes, Aspose.Slides.SmartArt.SmartArtNodeCollection).RemoveNode(1)
                         End If
 
                     End If

@@ -21,7 +21,6 @@ namespace Aspose.Slides.Examples.CSharp.Text
             //Instantiate a Presentation class that represents a PPTX file
             using (Presentation pres = new Presentation())
             {
-
                 //Accessing first slide
                 ISlide slide = pres.Slides[0];
 

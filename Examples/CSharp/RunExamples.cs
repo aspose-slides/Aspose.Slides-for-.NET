@@ -30,7 +30,7 @@ namespace Aspose.Slides.Examples.CSharp
             //// =====================================================
             //// =====================================================
 
-            ManageActiveXControl.Run();         
+            //ManageActiveXControl.Run();         
             //LinkingVideoActiveXControl.Run();
 
             // =====================================================

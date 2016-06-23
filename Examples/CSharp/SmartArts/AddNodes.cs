@@ -1,10 +1,6 @@
- 
-using System.IO;
-
+ using System.IO;
 using Aspose.Slides;
 using Aspose.Slides.Examples.CSharp;
-using AsposeSmartArts = Aspose.Slides.SmartArt;
-
 namespace Aspose.Slides.Examples.CSharp.SmartArts
 
 {
@@ -23,20 +19,20 @@ namespace Aspose.Slides.Examples.CSharp.SmartArts
             {
 
                 //Check if shape is of SmartArt type
-                if (shape is AsposeSmartArts.SmartArt)
+                if (shape is Aspose.Slides.SmartArt.SmartArt)
                 {
 
                     //Typecast shape to SmartArt
-                    AsposeSmartArts.SmartArt smart = (AsposeSmartArts.SmartArt)shape;
+                    Aspose.Slides.SmartArt.SmartArt smart = (Aspose.Slides.SmartArt.SmartArt)shape;
 
                     //Adding a new SmartArt Node
-                    AsposeSmartArts.SmartArtNode TemNode = (AsposeSmartArts.SmartArtNode)smart.AllNodes.AddNode();
+                    Aspose.Slides.SmartArt.SmartArtNode TemNode = (Aspose.Slides.SmartArt.SmartArtNode)smart.AllNodes.AddNode();
 
                     //Adding text
                     TemNode.TextFrame.Text = "Test";
 
                     //Adding new child node in parent node. It  will be added in the end of collection
-                    AsposeSmartArts.SmartArtNode newNode = (AsposeSmartArts.SmartArtNode)TemNode.ChildNodes.AddNode();
+                    Aspose.Slides.SmartArt.SmartArtNode newNode = (Aspose.Slides.SmartArt.SmartArtNode)TemNode.ChildNodes.AddNode();
 
                     //Adding text
                     newNode.TextFrame.Text = "New Node Added";
