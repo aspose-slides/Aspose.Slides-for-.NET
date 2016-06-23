@@ -1,8 +1,6 @@
 using System.IO;
-
 using Aspose.Slides;
 using Aspose.Slides.Examples.CSharp;
-using AsposeSlides = Aspose.Slides.SmartArt;
 
 namespace Aspose.Slides.Examples.CSharp.SmartArts
 {
@@ -19,22 +17,21 @@ namespace Aspose.Slides.Examples.CSharp.SmartArts
             //Traverse through every shape inside first slide
             foreach (IShape shape in pres.Slides[0].Shapes)
             {
-
                 //Check if shape is of SmartArt type
-                if (shape is AsposeSlides.SmartArt)
+                if (shape is Aspose.Slides.SmartArt.SmartArt)
                 {
                     //Typecast shape to SmartArt
-                    AsposeSlides.SmartArt smart = (AsposeSlides.SmartArt)shape;
+                    Aspose.Slides.SmartArt.SmartArt smart = (Aspose.Slides.SmartArt.SmartArt)shape;
 
                     if (smart.AllNodes.Count > 0)
                     {
                         //Accessing SmartArt node at index 0
-                        AsposeSlides.ISmartArtNode node = smart.AllNodes[0];
+                        Aspose.Slides.SmartArt.ISmartArtNode node = smart.AllNodes[0];
 
                         if (node.ChildNodes.Count >= 2)
                         {
                             //Removing the child node at position 1
-                            ((AsposeSlides.SmartArtNodeCollection)node.ChildNodes).RemoveNode(1);
+                            ((Aspose.Slides.SmartArt.SmartArtNodeCollection)node.ChildNodes).RemoveNode(1);
                         }
 
                     }

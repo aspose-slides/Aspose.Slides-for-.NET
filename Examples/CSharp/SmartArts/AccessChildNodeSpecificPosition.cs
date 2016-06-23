@@ -31,13 +31,12 @@ namespace Aspose.Slides.Examples.CSharp.SmartArts
 
             //Accessing the child node at position 1 in parent node
             int position = 1;
-            SmartArtNode chNode = (SmartArtNode)((SmartArtNodeCollection)node.ChildNodes).GetNodeByPosition(position);
+            SmartArtNode chNode = (SmartArtNode)node.ChildNodes[position]; 
 
             //Printing the SmartArt child node parameters
             string outString = string.Format("j = {0}, Text = {1},  Level = {2}, Position = {3}", position, chNode.TextFrame.Text, chNode.Level, chNode.Position);
             Console.WriteLine(outString);
-            
-            
+                        
         }
     }
 }

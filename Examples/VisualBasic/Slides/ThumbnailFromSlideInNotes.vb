@@ -24,9 +24,8 @@ Namespace Aspose.Slides.Examples.VisualBasic.Slides
                 Dim ScaleX As Single = CSng(1.0 / pres.SlideSize.Size.Width) * desiredX
                 Dim ScaleY As Single = CSng(1.0 / pres.SlideSize.Size.Height) * desiredY
 
-
                 'Create a full scale image
-                Dim bmp As Bitmap = sld.NotesSlide.GetThumbnail(ScaleX, ScaleY)
+                Dim bmp As Bitmap = sld.NotesSlideManager.NotesSlide.GetThumbnail(ScaleX, ScaleY)
 
                 'Save the image to disk in JPEG format
                 bmp.Save(dataDir & "Notes_tnail.jpg", System.Drawing.Imaging.ImageFormat.Jpeg)

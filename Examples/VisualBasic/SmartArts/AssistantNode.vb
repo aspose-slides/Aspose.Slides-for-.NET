@@ -1,8 +1,6 @@
 Imports Microsoft.VisualBasic
 Imports System.IO
-
 Imports Aspose.Slides
-Imports AsposeSlides = Aspose.Slides.SmartArt
 Imports System
 
 Namespace Aspose.Slides.Examples.VisualBasic.SmartArts
@@ -16,12 +14,12 @@ Namespace Aspose.Slides.Examples.VisualBasic.SmartArts
                 'Traverse through every shape inside first slide
                 For Each shape As IShape In pres.Slides(0).Shapes
                     'Check if shape is of SmartArt type
-                    If TypeOf shape Is AsposeSlides.ISmartArt Then
+                    If TypeOf shape Is Aspose.Slides.SmartArt.ISmartArt Then
                         'Typecast shape to SmartArtEx
-                        Dim smart As AsposeSlides.ISmartArt = CType(shape, AsposeSlides.SmartArt)
+                        Dim smart As Aspose.Slides.SmartArt.ISmartArt = CType(shape, Aspose.Slides.SmartArt.SmartArt)
                         'Traversing through all nodes of SmartArt shape
 
-                        For Each node As AsposeSlides.ISmartArtNode In smart.AllNodes
+                        For Each node As Aspose.Slides.SmartArt.ISmartArtNode In smart.AllNodes
                             Dim tc As String = node.TextFrame.Text
                             'Check if node is Assitant node
                             If node.IsAssistant Then
