@@ -12,6 +12,7 @@ Imports Aspose.Slides.Examples.VisualBasic.Slides
 Imports Aspose.Slides.Examples.VisualBasic.SmartArts
 Imports Aspose.Slides.Examples.VisualBasic.Tables
 Imports Aspose.Slides.Examples.VisualBasic.Text
+Imports Aspose.Slides.Examples.VisualBasic.VBA
 
 Namespace Aspose.Slides.Examples.VisualBasic
     Friend Class RunExamples
