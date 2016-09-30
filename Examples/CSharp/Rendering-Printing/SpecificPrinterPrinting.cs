@@ -1,4 +1,5 @@
-﻿using Aspose.Slides;
+﻿using System;
+using Aspose.Slides;
 
 /*
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Slides for .NET API reference 
@@ -17,11 +18,22 @@ namespace Aspose.Slides.Examples.CSharp.Rendering.Printing
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Rendering();
 
-            // Load the presentation
-            Presentation presentation = new Presentation(dataDir + "Print.ppt");
+            try
+            {
 
-            // Call the print method to print whole presentation to the desired printer
-            presentation.Print("LaserJet1100");
+                // Load the presentation
+                Presentation presentation = new Presentation(dataDir + "Print.ppt");
+
+                // Call the print method to print whole presentation to the desired printer
+                presentation.Print("Please set your printer name here");
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message + "\nPlease set printer name as string parameter to the Presentation Print method");
+                       
+            }
+
         }
     }
 }

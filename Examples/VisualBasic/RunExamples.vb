@@ -29,7 +29,7 @@ Namespace Aspose.Slides.Examples.VisualBasic
             '// =====================================================
             '// =====================================================
 
-            ManageActiveXControl.Run()
+            'ManageActiveXControl.Run()
             'LinkingVideoActiveXControl.Run()
 
             ' =====================================================

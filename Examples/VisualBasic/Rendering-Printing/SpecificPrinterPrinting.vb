@@ -1,4 +1,5 @@
-﻿Imports Aspose.Slides
+﻿Imports System
+Imports Aspose.Slides
 
 'This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Slides for .NET API reference 
 'when the project is build. Please check https://docs.nuget.org/consume/nuget-faq for more information. 
@@ -11,14 +12,27 @@ Namespace Aspose.Slides.Examples.VisualBasic.Rendering.Printing
     Public Class SpecificPrinterPrinting
         Public Shared Sub Run()
 
-            ' The path to the documents directory.
-            Dim dataDir As String = RunExamples.GetDataDir_Rendering()
+            Try
 
-            ' Load the presentation
-            Dim presentation As Presentation = New Presentation(dataDir + "Print.ppt")
+                ' The path to the documents directory.
+                Dim dataDir As String = RunExamples.GetDataDir_Rendering()
 
-            ' Call the print method to print whole presentation to the default printer
-            presentation.Print("LaserJet1100")
+                ' Load the presentation
+                Dim presentation As New Presentation(dataDir + "Print.ppt")
+
+                ' Call the print method to print whole presentation to the desired printer
+                presentation.Print("Please set your printer name here")
+            Catch ex As Exception
+                Console.WriteLine(ex.Message & "Please set printer name as string parameter to the Presentation Print method ")
+            End Try
+
+            '=======================================================
+            'Service provided by Telerik (www.telerik.com)
+            'Conversion powered by NRefactory.
+            'Twitter: @telerik
+            'Facebook: facebook.com/telerik
+            '=======================================================
+
 
         End Sub
     End Class
