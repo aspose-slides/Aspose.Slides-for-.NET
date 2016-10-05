@@ -18,10 +18,10 @@ namespace Aspose.Slides.Examples.CSharp.Text
             if (!IsExists)
                 System.IO.Directory.CreateDirectory(dataDir);
 
-            //Instantiate Presentation Class
+            // Instantiate Presentation Class
             Presentation pres = new Presentation();
 
-            //Get first slide
+            // Get first slide
             ISlide sld = pres.Slides[0];
 
             //Add a Rectangle Shape
@@ -30,15 +30,15 @@ namespace Aspose.Slides.Examples.CSharp.Text
             //Add TextFrame to the Rectangle
             ITextFrame tf = rect.AddTextFrame("This is first line \rThis is second line \rThis is third line");
 
-            //Set the text to fit the shape
+            // Set the text to fit the shape
             tf.TextFrameFormat.AutofitType = TextAutofitType.Shape;
 
-            //Hide the lines of the Rectangle
+            // Hide the lines of the Rectangle
             rect.LineFormat.FillFormat.FillType = FillType.Solid;
 
-            //Get first Paragraph in the TextFrame and set its Indent
+            // Get first Paragraph in the TextFrame and set its Indent
             IParagraph para1 = tf.Paragraphs[0];
-            //Setting paragraph bullet style and symbol
+            // Setting paragraph bullet style and symbol
             para1.ParagraphFormat.Bullet.Type = BulletType.Symbol;
             para1.ParagraphFormat.Bullet.Char = Convert.ToChar(8226);
             para1.ParagraphFormat.Alignment = TextAlignment.Left;
@@ -46,7 +46,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
             para1.ParagraphFormat.Depth = 2;
             para1.ParagraphFormat.Indent = 30;
 
-            //Get second Paragraph in the TextFrame and set its Indent
+            // Get second Paragraph in the TextFrame and set its Indent
             IParagraph para2 = tf.Paragraphs[1];
             para2.ParagraphFormat.Bullet.Type = BulletType.Symbol;
             para2.ParagraphFormat.Bullet.Char = Convert.ToChar(8226);
@@ -54,7 +54,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
             para2.ParagraphFormat.Depth = 2;
             para2.ParagraphFormat.Indent = 40;
 
-            //Get third Paragraph in the TextFrame and set its Indent
+            // Get third Paragraph in the TextFrame and set its Indent
             IParagraph para3 = tf.Paragraphs[2];
             para3.ParagraphFormat.Bullet.Type = BulletType.Symbol;
             para3.ParagraphFormat.Bullet.Char = Convert.ToChar(8226);
@@ -63,7 +63,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
             para3.ParagraphFormat.Indent = 50;
 
             //Write the Presentation to disk
-            pres.Save(dataDir+ "InOutDent.pptx", SaveFormat.Pptx);
+            pres.Save(dataDir + "InOutDent_out.pptx", SaveFormat.Pptx);
             
         }
     }

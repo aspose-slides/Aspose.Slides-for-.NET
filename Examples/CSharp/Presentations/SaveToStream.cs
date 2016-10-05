@@ -18,7 +18,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Presentations();
 
-            //Instantiate a Presentation object that represents a PPT file
+            // Instantiate a Presentation object that represents a PPT file
             using (Presentation presentation = new Presentation())
             {
 
@@ -27,7 +27,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations
                 //add text to shape
                 shape.TextFrame.Text = "This demo shows how to Create PowerPoint file and save it to Stream.";
 
-                FileStream toStream = new FileStream(dataDir + "Save_As_Stream.pptx", FileMode.Create);
+                FileStream toStream = new FileStream(dataDir + "Save_As_Stream_out.pptx", FileMode.Create);
                 presentation.Save(toStream, Aspose.Slides.Export.SaveFormat.Pptx);
                 toStream.Close();
             }

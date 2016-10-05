@@ -27,7 +27,7 @@ namespace Aspose.Slides.Examples.CSharp.Tables
             table.Columns.RemoveAt(1, false);
 
 
-            pres.Save(dataDir + "TestTable.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
+            pres.Save(dataDir + "TestTable_out.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
 
 
         }

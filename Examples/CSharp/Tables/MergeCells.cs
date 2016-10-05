@@ -61,7 +61,7 @@ namespace Aspose.Slides.Examples.CSharp.Tables
                 // Merging cells (1, 2) x (2, 2)
                 tbl.MergeCells(tbl[1, 2], tbl[2, 2], false);
 
-                presentation.Save(dataDir + "MergeCells.pptx", SaveFormat.Pptx);
+                presentation.Save(dataDir + "MergeCells_out.pptx", SaveFormat.Pptx);
             }
          }
     }

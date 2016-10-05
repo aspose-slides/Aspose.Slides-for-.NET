@@ -22,7 +22,7 @@ namespace  Aspose.Slides.Examples.CSharp.Charts
             // Create an instance of Presentation class
             Presentation presentation = new Presentation();
 
-            //Get reference of the slide
+            // Get reference of the slide
             ISlide slide = presentation.Slides[0];
 
             // Add a clustered column chart on the slide
@@ -35,7 +35,7 @@ namespace  Aspose.Slides.Examples.CSharp.Charts
             chart.Legend.Height = 100 / chart.Height;
 
             // Write presentation to disk
-            presentation.Save(dataDir + "Legend.pptx",  SaveFormat.Pptx);
+            presentation.Save(dataDir + "Legend_out.pptx", SaveFormat.Pptx);
         }
     }
 }

@@ -30,7 +30,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations
                 opts.SaveMetafilesAsPng = true;
 
                 // Save the presentation to XPS document
-                pres.Save(dataDir + "XPS_With_Options.xps", SaveFormat.Xps, opts);
+                pres.Save(dataDir + "XPS_With_Options_out.xps", SaveFormat.Xps, opts);
             }
         }
     }

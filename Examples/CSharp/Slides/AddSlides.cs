@@ -28,8 +28,8 @@ namespace Aspose.Slides.Examples.CSharp.Slides
 
                 }
 
-                //Save the PPTX file to the Disk
-                pres.Save(dataDir + "EmptySlide.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
+                // Save the PPTX file to the Disk
+                pres.Save(dataDir + "EmptySlide_out.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
 
             }
         }

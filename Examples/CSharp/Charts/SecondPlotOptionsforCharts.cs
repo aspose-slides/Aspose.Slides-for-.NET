@@ -32,7 +32,7 @@ namespace Aspose.Slides.Examples.CSharp.Charts
             chart.ChartData.Series[0].ParentSeriesGroup.PieSplitPosition = 53;
 
             // Write presentation to disk
-            presentation.Save(dataDir + "SecondPlotOptionsforCharts.pptx", SaveFormat.Pptx);
+            presentation.Save(dataDir + "SecondPlotOptionsforCharts_out.pptx", SaveFormat.Pptx);
         }
     }
 }

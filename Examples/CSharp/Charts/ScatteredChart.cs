@@ -22,13 +22,13 @@ namespace Aspose.Slides.Examples.CSharp.Charts
 
             ISlide slide = pres.Slides[0];
 
-            //Creating the default chart
+            // Creating the default chart
             IChart chart = slide.Shapes.AddChart(ChartType.ScatterWithSmoothLines, 0, 0, 400, 400);
 
-            //Getting the default chart data worksheet index
+            // Getting the default chart data worksheet index
             int defaultWorksheetIndex = 0;
 
-            //Getting the chart data worksheet
+            // Getting the chart data worksheet
             IChartDataWorkbook fact = chart.ChartData.ChartDataWorkbook;
 
             //Delete demo series
@@ -38,7 +38,7 @@ namespace Aspose.Slides.Examples.CSharp.Charts
             chart.ChartData.Series.Add(fact.GetCell(defaultWorksheetIndex, 1, 1, "Series 1"), chart.Type);
             chart.ChartData.Series.Add(fact.GetCell(defaultWorksheetIndex, 1, 3, "Series 2"), chart.Type);
 
-            //Take first chart series
+            // Take first chart series
             IChartSeries series = chart.ChartData.Series[0];
 
             //Add new point (1:3) there.
@@ -47,14 +47,14 @@ namespace Aspose.Slides.Examples.CSharp.Charts
             //Add new point (2:10)
             series.DataPoints.AddDataPointForScatterSeries(fact.GetCell(defaultWorksheetIndex, 3, 1, 2), fact.GetCell(defaultWorksheetIndex, 3, 2, 10));
 
-            //Edit the type of series
+            // Edit the type of series
             series.Type = ChartType.ScatterWithStraightLinesAndMarkers;
 
-            //Changing the chart series marker
+            // Changing the chart series marker
             series.Marker.Size = 10;
             series.Marker.Symbol = MarkerStyleType.Star;
 
-            //Take second chart series
+            // Take second chart series
             series = chart.ChartData.Series[1];
 
             //Add new point (5:2) there.
@@ -69,11 +69,11 @@ namespace Aspose.Slides.Examples.CSharp.Charts
             //Add new point (5:1)
             series.DataPoints.AddDataPointForScatterSeries(fact.GetCell(defaultWorksheetIndex, 5, 3, 5), fact.GetCell(defaultWorksheetIndex, 5, 4, 1));
 
-            //Changing the chart series marker
+            // Changing the chart series marker
             series.Marker.Size = 10;
             series.Marker.Symbol = MarkerStyleType.Circle;
 
-            pres.Save(dataDir + "AsposeChart.pptx", SaveFormat.Pptx);
+            pres.Save(dataDir + "AsposeChart_out.pptx", SaveFormat.Pptx);
 
 
         }

@@ -23,10 +23,10 @@ namespace Aspose.Slides.Examples.CSharp.Rendering.Printing
             {
                 // Setting View Properties of Presentation
 
-                presentation.ViewProperties.SlideViewProperties.Scale = 100; //zoom value in percentages for slide view
-                presentation.ViewProperties.NotesViewProperties.Scale = 100; //zoom value in percentages for notes view 
+                presentation.ViewProperties.SlideViewProperties.Scale = 100; // Zoom value in percentages for slide view
+                presentation.ViewProperties.NotesViewProperties.Scale = 100; // Zoom value in percentages for notes view 
 
-                presentation.Save(dataDir + "Zoom.pptx", SaveFormat.Pptx);
+                presentation.Save(dataDir + "Zoom_out.pptx", SaveFormat.Pptx);
             }
         }
     }

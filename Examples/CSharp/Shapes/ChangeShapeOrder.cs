@@ -30,7 +30,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
             portion.Text="Watermark Text Watermark Text Watermark Text";
             shp3 = slide.Shapes.AddAutoShape(ShapeType.Triangle, 200, 365, 400, 150);
             slide.Shapes.Reorder(2, shp3);
-            presentation1.Save(dataDir + "Reshape.pptx", SaveFormat.Pptx);
+            presentation1.Save(dataDir + "Reshape_out.pptx", SaveFormat.Pptx);
 
         }
     }

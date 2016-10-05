@@ -10,10 +10,10 @@ namespace Aspose.Slides.Examples.CSharp.Presentations
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Presentations();
 
-            //Instanciate the Presentation class that represents the PPTX
+            // Instanciate the Presentation class that represents the PPTX
             Presentation presentation = new Presentation(dataDir + "AccessModifyingProperties.pptx");
 
-            //Create a reference to DocumentProperties object associated with Prsentation
+            // Create a reference to DocumentProperties object associated with Prsentation
             IDocumentProperties documentProperties = presentation.DocumentProperties;
 
             //Access and modify custom properties
@@ -23,12 +23,12 @@ namespace Aspose.Slides.Examples.CSharp.Presentations
                 System.Console.WriteLine("Custom Property Name : " + documentProperties.GetCustomPropertyName(i));
                 System.Console.WriteLine("Custom Property Value : " + documentProperties[documentProperties.GetCustomPropertyName(i)]);
 
-                //Modify values of custom properties
+                // Modify values of custom properties
                 documentProperties[documentProperties.GetCustomPropertyName(i)] = "New Value " + (i + 1);
             }
 
-            //Save your presentation to a file
-            presentation.Save(dataDir + "CustomDemoModified.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
+            // Save your presentation to a file
+            presentation.Save(dataDir + "CustomDemoModified_out.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
         }
     }
 }

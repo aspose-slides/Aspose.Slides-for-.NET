@@ -31,7 +31,7 @@ namespace Aspose.Slides.Examples.CSharp.Charts
                 }
 
                 // Write the presentation file to disk
-                presentation.Save(dataDir + "SetChartSeriesOverlap.pptx", SaveFormat.Pptx);
+                presentation.Save(dataDir + "SetChartSeriesOverlap_out.pptx", SaveFormat.Pptx);
             }
         }
     }

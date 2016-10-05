@@ -73,7 +73,7 @@ namespace Aspose.Slides.Examples.CSharp.Charts
             series.Marker.Size = 15;
 
             // Write presentation to disk
-            presentation.Save(dataDir + "MarkOptions.pptx", SaveFormat.Pptx);
+            presentation.Save(dataDir + "MarkOptions_out.pptx", SaveFormat.Pptx);
         }
     }
 }

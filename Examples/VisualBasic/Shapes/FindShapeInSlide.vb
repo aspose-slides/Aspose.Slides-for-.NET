@@ -16,11 +16,11 @@ Namespace Aspose.Slides.Examples.VisualBasic.Shapes
                 System.IO.Directory.CreateDirectory(dataDir)
             End If
 
-            'Instantiate a Presentation class that represents the presentation file
+            ' Instantiate a Presentation class that represents the presentation file
             Using p As New Presentation(dataDir & "FindingShapeInSlide.pptx")
 
                 Dim slide As ISlide = p.Slides(0)
-                'alternative text of the shape to be found
+                ' Alternative text of the shape to be found
                 Dim shape As IShape = FindShape(slide, "Shape1")
                 If shape IsNot Nothing Then
                     Console.WriteLine("Shape Name: " & shape.Name)
@@ -28,14 +28,14 @@ Namespace Aspose.Slides.Examples.VisualBasic.Shapes
             End Using
         End Sub
 
-        'Method implementation to find a shape in a slide using its alternative text
+        ' Method implementation to find a shape in a slide using its alternative text
         Public Shared Function FindShape(ByVal slide As ISlide, ByVal alttext As String) As IShape
-            'Iterating through all shapes inside the slide
+            ' Iterating through all shapes inside the slide
             For i As Integer = 0 To slide.Shapes.Count - 1
 
 
-                'If the alternative text of the slide matches with the required one then
-                'return the shape
+                ' If the alternative text of the slide matches with the required one then
+                ' Return the shape
                 If slide.Shapes(i).AlternativeText.CompareTo(alttext) = 0 Then
                     Return slide.Shapes(i)
                 End If

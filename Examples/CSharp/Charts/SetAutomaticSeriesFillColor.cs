@@ -31,7 +31,7 @@ namespace Aspose.Slides.Examples.CSharp.Charts
                 }
 
                 // Write the presentation file to disk
-                presentation.Save(dataDir + "AutoFillSeries.pptx", SaveFormat.Pptx);
+                presentation.Save(dataDir + "AutoFillSeries_out.pptx", SaveFormat.Pptx);
             }
         }
     }

@@ -17,21 +17,21 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
             if (!IsExists)
                 System.IO.Directory.CreateDirectory(dataDir);
 
-            //Instantiate PrseetationEx class that represents the PPTX
+            // Instantiate PrseetationEx class that represents the PPTX
             using (Presentation pres = new Presentation())
             {
 
-                //Get the first slide
+                // Get the first slide
                 ISlide sld = pres.Slides[0];
 
                 //Add autoshape of rectangle type
                 IShape shp = sld.Shapes.AddAutoShape(ShapeType.Rectangle, 50, 150, 75, 150);
 
-                //Rotate the shape to 90 degree
+                // Rotate the shape to 90 degree
                 shp.Rotation = 90;
 
                 //Write the PPTX file to disk
-                pres.Save(dataDir + "RectShpRot.pptx", SaveFormat.Pptx);
+                pres.Save(dataDir + "RectShpRot_out.pptx", SaveFormat.Pptx);
             }
         }
     }

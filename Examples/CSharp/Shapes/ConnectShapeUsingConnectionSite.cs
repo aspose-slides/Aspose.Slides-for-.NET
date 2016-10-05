@@ -48,7 +48,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
                 }
 
                 // Save presentation
-                presentation.Save(dataDir + "Connecting_Shape_on_desired_connection_site.pptx", SaveFormat.Pptx);
+                presentation.Save(dataDir + "Connecting_Shape_on_desired_connection_site_out.pptx", SaveFormat.Pptx);
             }
 
         }

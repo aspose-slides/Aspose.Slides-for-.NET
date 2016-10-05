@@ -16,20 +16,18 @@ Namespace Aspose.Slides.Examples.VisualBasic.Shapes
                 System.IO.Directory.CreateDirectory(dataDir)
             End If
 
-            'Instantiate Prseetation class that represents the PPTX
+            ' Instantiate Prseetation class that represents the PPTX
             Using pres As New Presentation()
 
-                'Get the first slide
+                ' Get the first slide
                 Dim sld As ISlide = pres.Slides(0)
 
-                'Add autoshape of ellipse type
+                ' Add autoshape of ellipse type
                 sld.Shapes.AddAutoShape(ShapeType.Ellipse, 50, 150, 150, 50)
 
                 'Write the PPTX file to disk
-                pres.Save(dataDir & "EllipseShp1.pptx", SaveFormat.Pptx)
+                pres.Save(dataDir & "EllipseShp1_out.pptx", SaveFormat.Pptx)
             End Using
-
-
         End Sub
     End Class
 End Namespace

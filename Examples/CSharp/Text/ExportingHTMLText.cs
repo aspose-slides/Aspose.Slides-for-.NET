@@ -20,7 +20,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
             string dataDir = RunExamples.GetDataDir_Text();
 
 
-            //Load the presentation file
+            // Load the presentation file
             using (Presentation pres = new Presentation(dataDir + "ExportingHTMLText.pptx"))
             {
 
@@ -34,7 +34,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
                 IAutoShape ashape = (IAutoShape)slide.Shapes[index];
 
                 // Extracting first paragraph as HTML
-                StreamWriter sw = new StreamWriter(dataDir + "output.html", false, Encoding.UTF8);
+                StreamWriter sw = new StreamWriter(dataDir + "output_out.html", false, Encoding.UTF8);
 
                 //Writing Paragraphs data to HTML by providing paragraph starting index, total paragraphs to be copied
                 sw.Write(ashape.TextFrame.Paragraphs.ExportToHtml(0, ashape.TextFrame.Paragraphs.Count, null));

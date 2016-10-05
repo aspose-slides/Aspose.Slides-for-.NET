@@ -17,18 +17,18 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
             if (!IsExists)
                 System.IO.Directory.CreateDirectory(dataDir);
 
-            //Instantiate Prseetation class that represents the PPTX
+            // Instantiate Prseetation class that represents the PPTX
             using (Presentation pres = new Presentation())
             {
 
-                //Get the first slide
+                // Get the first slide
                 ISlide sld = pres.Slides[0];
 
                 //Add autoshape of ellipse type
                 sld.Shapes.AddAutoShape(ShapeType.Ellipse, 50, 150, 150, 50);
 
                 //Write the PPTX file to disk
-                pres.Save(dataDir+ "EllipseShp1.pptx", SaveFormat.Pptx);
+                pres.Save(dataDir + "EllipseShp1_out.pptx", SaveFormat.Pptx);
             }
 
  

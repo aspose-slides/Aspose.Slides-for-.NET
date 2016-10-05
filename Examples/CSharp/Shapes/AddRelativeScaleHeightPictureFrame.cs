@@ -35,7 +35,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
                 pf.RelativeScaleWidth = 1.35f;
 
                 // Save presentation
-                presentation.Save(dataDir + "Adding Picture Frame with Relative Scale.pptx", SaveFormat.Pptx);
+                presentation.Save(dataDir + "Adding Picture Frame with Relative Scale_out.pptx", SaveFormat.Pptx);
             }
            
 

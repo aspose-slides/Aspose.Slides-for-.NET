@@ -13,7 +13,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Text();
 
-            //Instantiate a Presentation object that represents a PPTX file//Instantiate a Presentation object that represents a PPTX file
+            // Instantiate a Presentation object that represents a PPTX file// Instantiate a Presentation object that represents a PPTX file
             using (Presentation pres = new Presentation(dataDir + "FontProperties.pptx"))
             {
 
@@ -40,22 +40,22 @@ namespace Aspose.Slides.Examples.CSharp.Text
                 port1.PortionFormat.LatinFont = fd1;
                 port2.PortionFormat.LatinFont = fd2;
 
-                //Set font to Bold
+                // Set font to Bold
                 port1.PortionFormat.FontBold = NullableBool.True;
                 port2.PortionFormat.FontBold = NullableBool.True;
 
-                //Set font to Italic
+                // Set font to Italic
                 port1.PortionFormat.FontItalic = NullableBool.True;
                 port2.PortionFormat.FontItalic = NullableBool.True;
 
-                //Set font color
+                // Set font color
                 port1.PortionFormat.FillFormat.FillType = FillType.Solid;
                 port1.PortionFormat.FillFormat.SolidFillColor.Color = Color.Purple;
                 port2.PortionFormat.FillFormat.FillType = FillType.Solid;
                 port2.PortionFormat.FillFormat.SolidFillColor.Color = Color.Peru;
 
                 //Write the PPTX to disk
-                pres.Save(dataDir + "WelcomeFont.pptx", SaveFormat.Pptx);
+                pres.Save(dataDir + "WelcomeFont_out.pptx", SaveFormat.Pptx);
             }
 
 

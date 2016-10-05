@@ -18,10 +18,10 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Shapes();
 
-            //Instantiate Presentation class that represents PPTX file
+            // Instantiate Presentation class that represents PPTX file
             Presentation pres = new Presentation(dataDir + "AltText.pptx");
 
-            //Get the first slide
+            // Get the first slide
             ISlide sld = pres.Slides[0];
 
             for (int i = 0; i < sld.Shapes.Count; i++)

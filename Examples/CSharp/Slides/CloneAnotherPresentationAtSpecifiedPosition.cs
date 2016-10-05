@@ -33,7 +33,7 @@ namespace Aspose.Slides.Examples.CSharp.Slides
 
                     // ExEnd:CloneAnotherPresentationAtSpecifiedPosition
                     // Write the destination presentation to disk
-                    destPres.Save(dataDir + "CloneAnotherPresentationAtSpecifiedPosition.pptx", SaveFormat.Pptx);
+                    destPres.Save(dataDir + "CloneAnotherPresentationAtSpecifiedPosition_out.pptx", SaveFormat.Pptx);
                 }
             }
         }

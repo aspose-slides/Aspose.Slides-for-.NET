@@ -17,11 +17,11 @@ namespace Aspose.Slides.Examples.CSharp.Text
             if (!IsExists)
                 System.IO.Directory.CreateDirectory(dataDir);
 
-            //Instantiate a PPTX class
+            // Instantiate a PPTX class
             using (Presentation pres = new Presentation())
             {
 
-                //Get reference of the slide
+                // Get reference of the slide
                 ISlide sld = pres.Slides[0];
 
                 //Add an AutoShape of Rectangle type
@@ -44,7 +44,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
                 shadow.ShadowColor.PresetColor = PresetColor.Black;
 
                 //Write the presentation to disk
-                pres.Save(dataDir + "pres.pptx", SaveFormat.Pptx);
+                pres.Save(dataDir + "pres_out.pptx", SaveFormat.Pptx);
             }
 
         }

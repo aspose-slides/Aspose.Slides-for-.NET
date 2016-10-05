@@ -16,7 +16,7 @@ namespace Aspose.Slides.Examples.CSharp.SmartArts
     {
         public static void Run()
         {
-            //ExStart:AccessSmartArtParticularLayout
+            // ExStart:AccessSmartArtParticularLayout
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_SmartArts();
 
@@ -25,13 +25,13 @@ namespace Aspose.Slides.Examples.CSharp.SmartArts
                 // Traverse through every shape inside first slide
                 foreach (IShape shape in presentation.Slides[0].Shapes)
                 {
-                    //Check if shape is of SmartArt type
+                    // Check if shape is of SmartArt type
                     if (shape is ISmartArt)
                     {
-                        //Typecast shape to SmartArtEx
+                        // Typecast shape to SmartArtEx
                         ISmartArt smart = (ISmartArt) shape;
 
-                        //Checking SmartArt Layout
+                        // Checking SmartArt Layout
                         if (smart.Layout == SmartArtLayoutType.BasicBlockList)
                         {
                             Console.WriteLine("Do some thing here....");

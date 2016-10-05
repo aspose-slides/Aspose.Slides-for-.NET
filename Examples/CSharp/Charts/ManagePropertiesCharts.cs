@@ -64,7 +64,7 @@ namespace Aspose.Slides.Examples.CSharp.Charts
             series.ParentSeriesGroup.Overlap = 100;         
 
             // Write presentation to disk
-            presentation.Save(dataDir + "Rotation3D.pptx", SaveFormat.Pptx);
+            presentation.Save(dataDir + "Rotation3D_out.pptx", SaveFormat.Pptx);
 
         }
     }

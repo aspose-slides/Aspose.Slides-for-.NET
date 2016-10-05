@@ -15,7 +15,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations
             using (Presentation pres = new Presentation(dataDir + "Convert_XPS.pptx"))
             {
                 // Saving the presentation to XPS document
-                pres.Save(dataDir + "XPS_Output_Without_XPSOption.xps", SaveFormat.Xps);
+                pres.Save(dataDir + "XPS_Output_Without_XPSOption_out.xps", SaveFormat.Xps);
             }
         }
     }

@@ -26,7 +26,7 @@ namespace Aspose.Slides.Examples.CSharp.Charts
             chart.ChartData.SeriesGroups[0].DoughnutHoleSize = 90;
 
             // Write presentation to disk
-            presentation.Save(dataDir + "DoughnutHoleSize.pptx", SaveFormat.Pptx);
+            presentation.Save(dataDir + "DoughnutHoleSize_out.pptx", SaveFormat.Pptx);
 
         }
     }

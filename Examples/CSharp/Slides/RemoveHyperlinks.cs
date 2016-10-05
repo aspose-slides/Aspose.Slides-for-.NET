@@ -24,12 +24,12 @@ namespace Aspose.Slides.Examples.CSharp.Slides
             // Instantiate Presentation class
             Presentation presentation = new Presentation(dataDir + "Hyperlink.pptx");
 
-            //Removing the hyperlinks from presentation
+            // Removing the hyperlinks from presentation
             presentation.HyperlinkQueries.RemoveAllHyperlinks();
 
             // ExEnd:RemoveHyperlinks
             //Writing the presentation as a PPTX file
-            presentation.Save(dataDir + "RemovedHyperlink.pptx",  SaveFormat.Pptx);
+            presentation.Save(dataDir + "RemovedHyperlink_out.pptx", SaveFormat.Pptx);
         }
     }
 }

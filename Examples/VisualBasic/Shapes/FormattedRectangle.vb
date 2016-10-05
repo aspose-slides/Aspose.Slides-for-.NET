@@ -31,7 +31,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Shapes
                 shp.LineFormat.Width = 5
 
                 ' Write the PPTX file to disk
-                pres.Save(dataDir & "RectShp2.pptx", Aspose.Slides.Export.SaveFormat.Pptx)
+                pres.Save(dataDir & "RectShp2_out.pptx", Aspose.Slides.Export.SaveFormat.Pptx)
 
             End Using
 

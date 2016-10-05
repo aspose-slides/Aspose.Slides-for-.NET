@@ -16,11 +16,11 @@ namespace Aspose.Slides.Examples.CSharp.Text
             if (!IsExists)
                 System.IO.Directory.CreateDirectory(dataDir);
             
-            //Instantiate PresentationEx//Instantiate PresentationEx
+            // Instantiate PresentationEx// Instantiate PresentationEx
             using (Presentation pres = new Presentation())
             {
 
-                //Get the first slide
+                // Get the first slide
                 ISlide sld = pres.Slides[0];
 
                 //Add an AutoShape of Rectangle type
@@ -32,17 +32,17 @@ namespace Aspose.Slides.Examples.CSharp.Text
                 //Accessing the text frame
                 ITextFrame txtFrame = ashp.TextFrame;
 
-                //Create the Paragraph object for text frame
+                // Create the Paragraph object for text frame
                 IParagraph para = txtFrame.Paragraphs[0];
 
-                //Create Portion object for paragraph
+                // Create Portion object for paragraph
                 IPortion portion = para.Portions[0];
 
-                //Set Text
+                // Set Text
                 portion.Text = "Aspose TextBox";
 
-                //Save the presentation to disk
-                pres.Save(dataDir + "TextBox.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
+                // Save the presentation to disk
+                pres.Save(dataDir + "TextBox_out.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
             } 
         }
     }

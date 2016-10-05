@@ -17,7 +17,7 @@ namespace Aspose.Slides.Examples.CSharp.SmartArts
             if (!IsExists)
                 System.IO.Directory.CreateDirectory(dataDir);
 
-            //Instantiate the presentation
+            // Instantiate the presentation
             Presentation pres = new Presentation();
 
             //Accessing the first slide
@@ -33,7 +33,7 @@ namespace Aspose.Slides.Examples.CSharp.SmartArts
             int position = 1;
             SmartArtNode chNode = (SmartArtNode)node.ChildNodes[position]; 
 
-            //Printing the SmartArt child node parameters
+            // Printing the SmartArt child node parameters
             string outString = string.Format("j = {0}, Text = {1},  Level = {2}, Position = {3}", position, chNode.TextFrame.Text, chNode.Level, chNode.Position);
             Console.WriteLine(outString);
                         

@@ -28,7 +28,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations
                 pdfOptions.Password = "password";
 
                 // Save the presentation to password protected PDF
-                presentation.Save(dataDir + "PasswordProtectedPDF.pdf", SaveFormat.Pdf, pdfOptions);
+                presentation.Save(dataDir + "PasswordProtectedPDF_out.pdf", SaveFormat.Pdf, pdfOptions);
             }
         } 
     }

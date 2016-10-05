@@ -7,9 +7,9 @@ Imports Aspose.Slides
 '
 'This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Slides for .NET API reference 
 'when the project is build. Please check https://docs.nuget.org/consume/nuget-faq for more information. 
-'If you do not wish to use NuGet, you can manually download Aspose.Slides for .NET API from http://www.aspose.com/downloads, 
-'install it and then add its reference to this project. For any issues, questions or suggestions 
-'please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
+' If you do not wish to use NuGet, you can manually download Aspose.Slides for .NET API from http://www.aspose.com/downloads, 
+' Install it and then add its reference to this project. For any issues, questions or suggestions 
+' Please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
 '
 
 Namespace Aspose.Slides.Examples.VisualBasic.Charts
@@ -34,21 +34,21 @@ Namespace Aspose.Slides.Examples.VisualBasic.Charts
             chart.ChartData.Series.Clear()
             Dim defaultWorksheetIndex As Integer = 0
 
-            'Getting the chart data worksheet
+            ' Getting the chart data worksheet
             Dim workbook As IChartDataWorkbook = chart.ChartData.ChartDataWorkbook
 
-            'Add new series
+            ' Add new series
             Dim series As IChartSeries = chart.ChartData.Series.Add(workbook.GetCell(defaultWorksheetIndex, 0, 1, "Reds"), chart.Type)
             series.DataPoints.AddDataPointForBarSeries(workbook.GetCell(defaultWorksheetIndex, 1, 1, 0.3))
             series.DataPoints.AddDataPointForBarSeries(workbook.GetCell(defaultWorksheetIndex, 2, 1, 0.5))
             series.DataPoints.AddDataPointForBarSeries(workbook.GetCell(defaultWorksheetIndex, 3, 1, 0.8))
             series.DataPoints.AddDataPointForBarSeries(workbook.GetCell(defaultWorksheetIndex, 4, 1, 0.65))
 
-            'Setting the fill color of series
+            ' Setting the fill color of series
             series.Format.Fill.FillType = FillType.Solid
             series.Format.Fill.SolidFillColor.Color = Color.Red
 
-            'Setting LabelFormat properties
+            ' Setting LabelFormat properties
             series.Labels.DefaultDataLabelFormat.ShowValue = True
             series.Labels.DefaultDataLabelFormat.IsNumberFormatLinkedToSource = False
             series.Labels.DefaultDataLabelFormat.NumberFormat = "0.0%"
@@ -75,7 +75,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Charts
             series2.Labels.DefaultDataLabelFormat.TextFormat.PortionFormat.FillFormat.SolidFillColor.Color = Color.White
 
             ' Write presentation to disk
-            presentation.Save(dataDir & Convert.ToString("SetDataLabelsPercentageSign.pptx"), SaveFormat.Pptx)
+            presentation.Save(dataDir & Convert.ToString("SetDataLabelsPercentageSign_out.pptx"), SaveFormat.Pptx)
 
         End Sub
     End Class

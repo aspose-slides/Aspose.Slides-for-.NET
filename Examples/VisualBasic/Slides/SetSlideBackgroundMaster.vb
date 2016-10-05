@@ -17,16 +17,16 @@ Namespace Aspose.Slides.Examples.VisualBasic.Slides
                 System.IO.Directory.CreateDirectory(dataDir)
             End If
 
-            'Instantiate the Presentation class that represents the presentation file
+            ' Instantiate the Presentation class that represents the presentation file
             Using pres As New Presentation()
 
-                'Set the background color of the Master ISlide to Forest Green
+                ' Set the background color of the Master ISlide to Forest Green
                 pres.Masters(0).Background.Type = BackgroundType.OwnBackground
                 pres.Masters(0).Background.FillFormat.FillType = FillType.Solid
                 pres.Masters(0).Background.FillFormat.SolidFillColor.Color = Color.ForestGreen
 
                 'Write the presentation to disk
-                pres.Save(dataDir & "SetSlideBackgroundMaster.pptx", SaveFormat.Pptx)
+                pres.Save(dataDir & "SetSlideBackgroundMaster_out.pptx", SaveFormat.Pptx)
 
             End Using
 

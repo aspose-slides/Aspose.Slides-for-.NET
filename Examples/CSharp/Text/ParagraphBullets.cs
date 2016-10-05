@@ -19,7 +19,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
             if (!IsExists)
                 System.IO.Directory.CreateDirectory(dataDir);
 
-            //Creating a presenation instance
+            // Creating a presenation instance
             using (Presentation pres = new Presentation())
             {
 
@@ -33,51 +33,51 @@ namespace Aspose.Slides.Examples.CSharp.Text
                 //Accessing the text frame of created autoshape
                 ITextFrame txtFrm = aShp.TextFrame;
 
-                //Removing the default exisiting paragraph
+                // Removing the default exisiting paragraph
                 txtFrm.Paragraphs.RemoveAt(0);
 
-                //Creating a paragraph
+                // Creating a paragraph
                 Paragraph para = new Paragraph();
 
-                //Setting paragraph bullet style and symbol
+                // Setting paragraph bullet style and symbol
                 para.ParagraphFormat.Bullet.Type = BulletType.Symbol;
                 para.ParagraphFormat.Bullet.Char = Convert.ToChar(8226);
 
-                //Setting paragraph text
+                // Setting paragraph text
                 para.Text = "Welcome to Aspose.Slides";
 
-                //Setting bullet indent
+                // Setting bullet indent
                 para.ParagraphFormat.Indent = 25;
 
-                //Setting bullet color
+                // Setting bullet color
                 para.ParagraphFormat.Bullet.Color.ColorType = ColorType.RGB;
                 para.ParagraphFormat.Bullet.Color.Color = Color.Black;
                 para.ParagraphFormat.Bullet.IsBulletHardColor = NullableBool.True; // set IsBulletHardColor to true to use own bullet color
 
-                //Setting Bullet Height
+                // Setting Bullet Height
                 para.ParagraphFormat.Bullet.Height = 100;
 
                 //Adding Paragraph to text frame
                 txtFrm.Paragraphs.Add(para);
 
-                //Creating second paragraph
+                // Creating second paragraph
                 Paragraph para2 = new Paragraph();
 
-                //Setting paragraph bullet type and style
+                // Setting paragraph bullet type and style
                 para2.ParagraphFormat.Bullet.Type = BulletType.Numbered;
                 para2.ParagraphFormat.Bullet.NumberedBulletStyle = NumberedBulletStyle.BulletCircleNumWDBlackPlain;
 
                 //Adding paragraph text
                 para2.Text = "This is numbered bullet";
 
-                //Setting bullet indent
+                // Setting bullet indent
                 para2.ParagraphFormat.Indent = 25;
 
                 para2.ParagraphFormat.Bullet.Color.ColorType = ColorType.RGB;
                 para2.ParagraphFormat.Bullet.Color.Color = Color.Black;
                 para2.ParagraphFormat.Bullet.IsBulletHardColor = NullableBool.True; // set IsBulletHardColor to true to use own bullet color
 
-                //Setting Bullet Height
+                // Setting Bullet Height
                 para2.ParagraphFormat.Bullet.Height = 100;
 
                 //Adding Paragraph to text frame
@@ -85,7 +85,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
 
 
                 //Writing the presentation as a PPTX file
-                pres.Save(dataDir + "Bullet.pptx", SaveFormat.Pptx);
+                pres.Save(dataDir + "Bullet_out.pptx", SaveFormat.Pptx);
 
             }
 

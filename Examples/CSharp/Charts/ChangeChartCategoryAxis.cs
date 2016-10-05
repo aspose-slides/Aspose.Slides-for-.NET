@@ -26,7 +26,7 @@ namespace Aspose.Slides.Examples.CSharp.Charts
                 chart.Axes.HorizontalAxis.IsAutomaticMajorUnit = false;
                 chart.Axes.HorizontalAxis.MajorUnit = 1;
                 chart.Axes.HorizontalAxis.MajorUnitScale = TimeUnitType.Months;
-                presentation.Save(dataDir + "ChangeChartCategoryAxis.pptx", SaveFormat.Pptx);
+                presentation.Save(dataDir + "ChangeChartCategoryAxis_out.pptx", SaveFormat.Pptx);
             }
         }
     }

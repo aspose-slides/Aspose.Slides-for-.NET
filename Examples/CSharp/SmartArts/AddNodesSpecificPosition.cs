@@ -18,7 +18,7 @@ namespace Aspose.Slides.Examples.CSharp.SmartArts
             if (!IsExists)
                 System.IO.Directory.CreateDirectory(dataDir);
 
-            //Creating a presentation instance
+            // Creating a presentation instance
             Presentation pres = new Presentation();
 
             //Access the presentation slide
@@ -36,8 +36,8 @@ namespace Aspose.Slides.Examples.CSharp.SmartArts
             //Add Text
             chNode.TextFrame.Text = "Sample Text Added";
 
-            //Save Presentation
-            pres.Save(dataDir+ "AddSmartArtNodeByPosition.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
+            // Save Presentation
+            pres.Save(dataDir + "AddSmartArtNodeByPosition_out.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
             
             
         }

@@ -25,7 +25,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations
                 int[] slides = { 1, 3};
 
                 // Save the presentation to PDF
-                presentation.Save(dataDir+"RequiredSelectedSlides.pdf", slides, SaveFormat.Pdf);
+                presentation.Save(dataDir + "RequiredSelectedSlides_out.pdf", slides, SaveFormat.Pdf);
             }
         } 
     }

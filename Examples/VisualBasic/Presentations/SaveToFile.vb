@@ -15,13 +15,13 @@ Namespace Aspose.Slides.Examples.VisualBasic.Presentations
                 System.IO.Directory.CreateDirectory(dataDir)
             End If
 
-            'Instantiate a Presentation object that represents a PPT file
+            ' Instantiate a Presentation object that represents a PPT file
             Dim pres As New Presentation()
 
             '...do some work here...
 
-            'Save your presentation to a file
-            pres.Save(dataDir & "Saved.pptx", Aspose.Slides.Export.SaveFormat.Pptx)
+            ' Save your presentation to a file
+            pres.Save(dataDir & "Saved_out.pptx", Aspose.Slides.Export.SaveFormat.Pptx)
         End Sub
     End Class
 End Namespace

@@ -26,12 +26,12 @@ namespace Aspose.Slides.Examples.CSharp.Presentations
                 swfOptions.ViewerIncluded = false;
 
                 // Saving presentation
-                presentation.Save(dataDir+ "SaveAsSwf.swf", SaveFormat.Swf, swfOptions);
+                presentation.Save(dataDir + "SaveAsSwf_out.swf", SaveFormat.Swf, swfOptions);
 
                 swfOptions.ViewerIncluded = true;
 
                 // Saving notes pages
-                presentation.Save(dataDir+ "SaveNotes.swf", SaveFormat.SwfNotes, swfOptions);
+                presentation.Save(dataDir + "SaveNotes_out.swf", SaveFormat.SwfNotes, swfOptions);
             }
         } 
     }

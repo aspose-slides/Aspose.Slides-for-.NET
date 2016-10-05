@@ -33,7 +33,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
 
             // ExEnd:ReplaceFontsExplicitly
             // Save the presentation
-            presentation.Save(dataDir + "UpdatedFont.pptx", SaveFormat.Pptx);
+            presentation.Save(dataDir + "UpdatedFont_out.pptx", SaveFormat.Pptx);
         }
     }
 }

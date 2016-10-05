@@ -39,7 +39,7 @@ namespace Aspose.Slides.Examples.CSharp.Charts
                 errBarX.HasEndCap = true;
 
                 // Saving presentation
-                presentation.Save(dataDir + "ErrorBars.pptx", SaveFormat.Pptx);
+                presentation.Save(dataDir + "ErrorBars_out.pptx", SaveFormat.Pptx);
             }
         }
     }

@@ -11,18 +11,18 @@ namespace Aspose.Slides.Examples.CSharp.SmartArts
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_SmartArts();
 
-            //Load the desired the presentation//Load the desired the presentation
+            // Load the desired the presentation// Load the desired the presentation
             Presentation pres = new Presentation(dataDir+ "AddNodes.pptx");
 
-            //Traverse through every shape inside first slide
+            // Traverse through every shape inside first slide
             foreach (IShape shape in pres.Slides[0].Shapes)
             {
 
-                //Check if shape is of SmartArt type
+                // Check if shape is of SmartArt type
                 if (shape is Aspose.Slides.SmartArt.SmartArt)
                 {
 
-                    //Typecast shape to SmartArt
+                    // Typecast shape to SmartArt
                     Aspose.Slides.SmartArt.SmartArt smart = (Aspose.Slides.SmartArt.SmartArt)shape;
 
                     //Adding a new SmartArt Node
@@ -40,8 +40,8 @@ namespace Aspose.Slides.Examples.CSharp.SmartArts
                 }
             }
 
-            //Saving Presentation
-            pres.Save(dataDir+ "AddSmartArtNode.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
+            // Saving Presentation
+            pres.Save(dataDir + "AddSmartArtNode_out.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
             
             
         }

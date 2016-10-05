@@ -9,22 +9,22 @@ Namespace Aspose.Slides.Examples.VisualBasic.Text
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Text()
 
-            'Instantiate Presentation class that represents PPTX//Instantiate Presentation class that represents PPTX
+            ' Instantiate Presentation class that represents PPTX//Instantiate Presentation class that represents PPTX
             Using pres As New Presentation(dataDir & "ReplacingText.pptx")
 
-                'Access first slide
+                ' Access first slide
                 Dim sld As ISlide = pres.Slides(0)
 
-                'Iterate through shapes to find the placeholder
+                ' Iterate through shapes to find the placeholder
                 For Each shp As IShape In sld.Shapes
                     If shp.Placeholder IsNot Nothing Then
-                        'Change the text of each placeholder
+                        ' Change the text of each placeholder
                         CType(shp, IAutoShape).TextFrame.Text = "This is Placeholder"
                     End If
                 Next shp
 
-                'Save the PPTX to Disk
-                pres.Save(dataDir & "output.pptx", Aspose.Slides.Export.SaveFormat.Pptx)
+                ' Save the PPTX to Disk
+                pres.Save(dataDir & "output_out.pptx", Aspose.Slides.Export.SaveFormat.Pptx)
             End Using
 
         End Sub

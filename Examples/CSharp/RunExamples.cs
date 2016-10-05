@@ -23,14 +23,14 @@ namespace Aspose.Slides.Examples.CSharp
             Console.WriteLine("=====================================================");
 
             // Uncomment the one you want to try out
-
+          
             //// =====================================================
             //// =====================================================
             //// ActiveX
             //// =====================================================
             //// =====================================================
 
-            //ManageActiveXControl.Run();         
+            //ManageActiveXControl.Run();
             //LinkingVideoActiveXControl.Run();
 
             // =====================================================
@@ -66,18 +66,19 @@ namespace Aspose.Slides.Examples.CSharp
             //SecondPlotOptionsforCharts.Run();
             //SetMarkerOptions.Run();
 
-            //// =====================================================
+            // =====================================================
             //// =====================================================
             //// Presentations
             //// =====================================================
             //// =====================================================
 
             //AccessBuiltinProperties.Run();
+            //ManageEmbeddedFonts.Run();
             //AccessModifyingProperties.Run();
             //AddCustomDocumentProperties.Run();
             //AccessOpenDoc.Run();
             //AccessProperties.Run();
-            //ConvertToPDF.Run();                                  
+            //ConvertToPDF.Run();
             //ConvertToPDFWithHiddenSlides.Run();
             //CustomOptionsPDFConversion.Run();
             //ConvertPresentationToPasswordProtectedPDF.Run();
@@ -289,7 +290,7 @@ namespace Aspose.Slides.Examples.CSharp
             //LineSpacing.Run();
             //ApplyOuterShadow.Run();
             //CustomRotationAngleTextframe.Run();
-            //UseCustomFonts.Run(); 
+            //UseCustomFonts.Run();
             //ManageParagraphPictureBulletsInPPT.Run();
 
             //// =====================================================
@@ -384,8 +385,5 @@ namespace Aspose.Slides.Examples.CSharp
             }
             return startDirectory != null ? Path.Combine(startDirectory, "Data\\") : null;
         }
-
-
-
     }
 }

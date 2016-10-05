@@ -31,7 +31,7 @@ namespace Aspose.Slides.Examples.CSharp.Slides
 
             // ExEnd:SetPDFPageSize
             // Save presentation to disk
-            presentation.Save(dataDir + "SetPDFPageSize.pdf", SaveFormat.Pdf, opts);
+            presentation.Save(dataDir + "SetPDFPageSize_out.pdf", SaveFormat.Pdf, opts);
         }
     }
 }

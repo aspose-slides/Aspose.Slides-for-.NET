@@ -19,10 +19,10 @@ namespace Aspose.Slides.Examples.CSharp.Tables
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Tables();
 
-            //Create an instance of Presentation class
+            // Create an instance of Presentation class
             Presentation presentation = new Presentation();
 
-            //Get the first slide 
+            // Get the first slide 
             ISlide slide = presentation.Slides[0];
 
             //Define columns with widths and rows with heights
@@ -53,7 +53,7 @@ namespace Aspose.Slides.Examples.CSharp.Tables
             cell.TextVerticalType = TextVerticalType.Vertical270;
 
             // Save Presentation
-            presentation.Save(dataDir +  "Vertical_Align_Text.pptx", SaveFormat.Pptx);
+            presentation.Save(dataDir +  "Vertical_Align_Text_out.pptx", SaveFormat.Pptx);
 
          }
     }

@@ -18,16 +18,16 @@ namespace Aspose.Slides.Examples.CSharp.VBA
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_VBA();
 
-            //ExStart:RemoveVBAMacros
+            // ExStart:RemoveVBAMacros
             // Instantiate Presentation
             using (Presentation presentation = new Presentation(dataDir + "VBA.pptm"))
             {
                 //Access the Vba module and remove 
                 presentation.VbaProject.Modules.Remove(presentation.VbaProject.Modules[0]);
 
-                //ExEnd:RemoveVBAMacros
+                // ExEnd:RemoveVBAMacros
                 // Save Presentation
-                presentation.Save(dataDir + "RemovedVBAMacros.pptm", SaveFormat.Pptm);
+                presentation.Save(dataDir + "RemovedVBAMacros_out.pptm", SaveFormat.Pptm);
             }
         }
     }

@@ -65,7 +65,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
 
                 // ExEnd:ManagParagraphFontProperties
                 // Write the PPTX to disk 
-                presentation.Save(dataDir + "ManagParagraphFontProperties.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
+                presentation.Save(dataDir + "ManagParagraphFontProperties_out.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
             }
         }
     }

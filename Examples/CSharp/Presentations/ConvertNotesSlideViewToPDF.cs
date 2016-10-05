@@ -21,8 +21,8 @@ namespace Aspose.Slides.Examples.CSharp.Presentations
             // Instantiate a Presentation object that represents a presentation file
             using (Presentation presentation = new Presentation(dataDir + "NotesFile.pptx"))
             {
-                //Saving the presentation to PDF notes
-                presentation.Save(dataDir + "Pdf_Notes.tiff", SaveFormat.PdfNotes);
+                // Saving the presentation to PDF notes
+                presentation.Save(dataDir + "Pdf_Notes_out.tiff", SaveFormat.PdfNotes);
             }
         } 
     }

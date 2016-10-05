@@ -19,7 +19,7 @@ namespace Aspose.Slides.Examples.CSharp.VBA
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_VBA();
 
-            //ExStart:AddVBAMacros
+            // ExStart:AddVBAMacros
             // Instantiate Presentation
             using (Presentation presentation = new Presentation())
             {
@@ -44,9 +44,9 @@ namespace Aspose.Slides.Examples.CSharp.VBA
                 presentation.VbaProject.References.Add(stdoleReference);
                 presentation.VbaProject.References.Add(officeReference);
 
-                //ExStart:AddVBAMacros
+                // ExStart:AddVBAMacros
                 // Save Presentation
-                presentation.Save(dataDir + "AddVBAMacros.pptm", SaveFormat.Pptm);
+                presentation.Save(dataDir + "AddVBAMacros_out.pptm", SaveFormat.Pptm);
             }
         }
     }

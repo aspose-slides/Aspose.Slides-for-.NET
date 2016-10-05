@@ -15,33 +15,32 @@ Namespace Aspose.Slides.Examples.VisualBasic.Text
                 System.IO.Directory.CreateDirectory(dataDir)
             End If
 
-            'Instantiate a Presentation class that represents a PPTX
+            ' Instantiate a Presentation class that represents a PPTX
             Dim pptxPresentation As New Presentation()
 
-            'Get first slide
+            ' Get first slide
             Dim slide As ISlide = pptxPresentation.Slides(0)
 
-            'Add an AutoShape of Rectangle Type
+            ' Add an AutoShape of Rectangle Type
             Dim pptxShape As IShape = slide.Shapes.AddAutoShape(ShapeType.Rectangle, 150, 150, 150, 50)
 
-            'Cast the shape to AutoShape
+            ' Cast the shape to AutoShape
             Dim pptxAutoShape As IAutoShape = CType(pptxShape, IAutoShape)
 
-            'Access ITextFrame associated with the AutoShape
+            ' Access ITextFrame associated with the AutoShape
             pptxAutoShape.AddTextFrame("")
 
             Dim ITextFrame As ITextFrame = pptxAutoShape.TextFrame
 
-            'Add some text to the frame
+            ' Add some text to the frame
             ITextFrame.Paragraphs(0).Portions(0).Text = "Aspose.Slides"
 
-            'Set Hyperlink for the portion text
+            ' Set Hyperlink for the portion text
             Dim HypMan As IHyperlinkManager = ITextFrame.Paragraphs(0).Portions(0).PortionFormat.HyperlinkManager
             HypMan.SetExternalHyperlinkClick("http://www.aspose.com")
 
-
-            'Save the PPTX Presentation
-            pptxPresentation.Save(dataDir & "hLinkPPTX.pptx", Aspose.Slides.Export.SaveFormat.Pptx)
+            ' Save the PPTX Presentation
+            pptxPresentation.Save(dataDir & "hLinkPPTX_out.pptx", Aspose.Slides.Export.SaveFormat.Pptx)
 
         End Sub
     End Class

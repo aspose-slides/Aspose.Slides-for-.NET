@@ -22,9 +22,9 @@ namespace Aspose.Slides.Examples.CSharp.Presentations
                 HtmlOptions htmlOptions = new HtmlOptions();
                 htmlOptions.HtmlFormatter = HtmlFormatter.CreateCustomFormatter(new CustomFormattingController());
 
-                //Saving File              
+                // Saving File              
                 for (int i = 0; i < presentation.Slides.Count; i++)
-                    presentation.Save(dataDir + "Individual Slide" + (i + 1) + ".html", new int[] { i + 1 }, SaveFormat.Html, htmlOptions);
+                    presentation.Save(dataDir + "Individual Slide" + (i + 1) + "_out.html", new int[] { i + 1 }, SaveFormat.Html, htmlOptions);
             }
         }
 

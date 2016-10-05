@@ -23,7 +23,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations
             using (Presentation pres = new Presentation(dataDir + "Media File.pptx"))
             {
                 string path = dataDir;
-                const string fileName = "ExportMediaFiles.html";
+                const string fileName = "ExportMediaFiles_out.html";
                 const string baseUri = "http://www.example.com/";
 
                 VideoPlayerHtmlController controller = new VideoPlayerHtmlController(path: path, fileName: fileName, baseUri: baseUri);

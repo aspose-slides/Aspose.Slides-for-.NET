@@ -30,7 +30,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Shapes
                 audioFrame.Volume = AudioVolumeMode.Loud
 
                 ' Write the PPTX file to disk
-                presentation.Save(dataDir & "AudioFrameEmbed.pptx", SaveFormat.Pptx)
+                presentation.Save(dataDir & "AudioFrameEmbed_out.pptx", SaveFormat.Pptx)
 
             End Using
         End Sub

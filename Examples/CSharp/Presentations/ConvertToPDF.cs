@@ -14,8 +14,8 @@ namespace Aspose.Slides.Examples.CSharp.Presentations
             // Instantiate a Presentation object that represents a presentation file
             Presentation presentation = new Presentation(dataDir + "ConvertToPDF.pptx");
             
-            //Save the presentation to PDF with default options
-            presentation.Save(dataDir + "output.pdf", SaveFormat.Pdf);
+            // Save the presentation to PDF with default options
+            presentation.Save(dataDir + "output_out.pdf", SaveFormat.Pdf);
                         
         }
     }

@@ -16,7 +16,7 @@ namespace Aspose.Slides.Examples.CSharp.SmartArts
     {
         public static void Run()
         {
-            //ExStart:OrganizeChartLayoutType
+            // ExStart:OrganizeChartLayoutType
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_SmartArts();
 
@@ -28,9 +28,9 @@ namespace Aspose.Slides.Examples.CSharp.SmartArts
                 // Get or Set the organization chart type 
                 smart.Nodes[0].OrganizationChartLayout = OrganizationChartLayoutType.LeftHanging;
 
-                //ExEnd:OrganizeChartLayoutType
+                // ExEnd:OrganizeChartLayoutType
                 // Saving Presentation
-                presentation.Save(dataDir + "OrganizeChartLayoutType.pptx", SaveFormat.Pptx);
+                presentation.Save(dataDir + "OrganizeChartLayoutType_out.pptx", SaveFormat.Pptx);
             }
         }
     }

@@ -47,7 +47,7 @@ namespace Aspose.Slides.Examples.CSharp.Charts
                 ((Sequence)slide.Timeline.MainSequence).AddEffect(chart, EffectChartMinorGroupingType.ByElementInSeries, 2, 3, EffectType.Appear, EffectSubtype.None, EffectTriggerType.AfterPrevious);
 
                 // Write the presentation file to disk 
-                presentation.Save(dataDir + "AnimatingSeriesElements.pptx", SaveFormat.Pptx);
+                presentation.Save(dataDir + "AnimatingSeriesElements_out.pptx", SaveFormat.Pptx);
             }
 
         }

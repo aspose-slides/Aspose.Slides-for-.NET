@@ -27,7 +27,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
 
             // Do Some work and perform presentation/slides rendering
             using (Presentation presentation = new Presentation(dataDir + "DefaultFonts.pptx"))
-                presentation.Save(dataDir + "NewFonts.pptx", SaveFormat.Pptx);
+                presentation.Save(dataDir + "NewFonts_out.pptx", SaveFormat.Pptx);
 
             // Clear Font Cachce
             FontsLoader.ClearCache();

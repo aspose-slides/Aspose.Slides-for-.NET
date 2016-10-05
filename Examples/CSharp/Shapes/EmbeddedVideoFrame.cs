@@ -17,28 +17,28 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
             bool IsExists = System.IO.Directory.Exists(dataDir);
             if (!IsExists)
                 System.IO.Directory.CreateDirectory(dataDir);
-            //Instantiate Presentation class that represents the PPTX
+            // Instantiate Presentation class that represents the PPTX
             using (Presentation pres = new Presentation())
             {
 
-                //Get the first slide
+                // Get the first slide
                 ISlide sld = pres.Slides[0];
 
-                //Embedd vide inside presentation
+                // Embedd vide inside presentation
                 IVideo vid = pres.Videos.AddVideo(new FileStream(videoDir + "Wildlife.mp4", FileMode.Open));
 
-                //Add Video Frame
+                // Add Video Frame
                 IVideoFrame vf = sld.Shapes.AddVideoFrame(50, 150, 300, 350, vid);
 
-                //Set video to Video Frame
+                // Set video to Video Frame
                 vf.EmbeddedVideo = vid;
 
-                //Set Play Mode and Volume of the Video
+                // Set Play Mode and Volume of the Video
                 vf.PlayMode = VideoPlayModePreset.Auto;
                 vf.Volume = AudioVolumeMode.Loud;
 
-                //Write the PPTX file to disk
-                pres.Save(dataDir+ "VideoFrame.pptx", SaveFormat.Pptx);
+                // Write the PPTX file to disk
+                pres.Save(dataDir + "VideoFrame_out.pptx", SaveFormat.Pptx);
             }
 
             

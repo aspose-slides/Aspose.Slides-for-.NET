@@ -34,7 +34,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations
                 */
 
                 // Save the presentation to TIFF with specified image size
-                presentation.Save(dataDir + "Tiff_With_Custom_Image_Pixel_Format.tiff", SaveFormat.Tiff, options);
+                presentation.Save(dataDir + "Tiff_With_Custom_Image_Pixel_Format_out.tiff", SaveFormat.Tiff, options);
             }
         }
     }

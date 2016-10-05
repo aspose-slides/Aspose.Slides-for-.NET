@@ -25,10 +25,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Tables
 
             table.Rows.RemoveAt(1, False)
             table.Columns.RemoveAt(1, False)
-
-
-            pres.Save(dataDir & "TestTable.pptx", Aspose.Slides.Export.SaveFormat.Pptx)
-
+            pres.Save(dataDir & "TestTable_out.pptx", Aspose.Slides.Export.SaveFormat.Pptx)
 
         End Sub
     End Class

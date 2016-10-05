@@ -77,7 +77,7 @@ namespace Aspose.Slides.Examples.CSharp.Charts
             series.Format.Fill.SolidFillColor.Color = Color.Gray;
 
             // Save presentation with chart
-            presentation.Save(dataDir + "AutomaticColor.pptx", SaveFormat.Pptx);
+            presentation.Save(dataDir + "AutomaticColor_out.pptx", SaveFormat.Pptx);
 
         }
     }

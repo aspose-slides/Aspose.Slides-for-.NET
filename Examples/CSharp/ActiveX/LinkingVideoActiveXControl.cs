@@ -34,7 +34,7 @@ namespace Aspose.Slides.Examples.CSharp.ActiveX
             newPresentation.Slides[0].Controls[0].Properties["URL"] = dataVideo + "Wildlife.mp4";
 
             // Save the Presentation
-            newPresentation.Save(dataDir + "LinkingVideoActiveXControl.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
+            newPresentation.Save(dataDir + "LinkingVideoActiveXControl_out.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
         }
     }
 }

@@ -17,23 +17,23 @@ Namespace Aspose.Slides.Examples.VisualBasic.SmartArts
                 System.IO.Directory.CreateDirectory(dataDir)
             End If
 
-            'Instantiate the presentation
+            ' Instantiate the presentation
             Dim pres As New Presentation()
 
-            'Accessing the first slide
+            ' Accessing the first slide
             Dim slide As ISlide = pres.Slides(0)
 
-            'Adding the SmartArt shape in first slide
+            ' Adding the SmartArt shape in first slide
             Dim smart As ISmartArt = slide.Shapes.AddSmartArt(0, 0, 400, 400, SmartArtLayoutType.StackedList)
 
-            'Accessing the SmartArt  node at index 0
+            ' Accessing the SmartArt  node at index 0
             Dim node As ISmartArtNode = smart.AllNodes(0)
 
-            'Accessing the child node at position 1 in parent node
+            ' Accessing the child node at position 1 in parent node
             Dim position As Integer = 1
             Dim chNode As SmartArtNode = DirectCast(node.ChildNodes(position), SmartArtNode)
 
-            'Printing the SmartArt child node parameters
+            ' Printing the SmartArt child node parameters
             Dim outString As String = String.Format("j = {0}, Text = {1},  Level = {2}, Position = {3}", position, chNode.TextFrame.Text, chNode.Level, chNode.Position)
             Console.WriteLine(outString)
 

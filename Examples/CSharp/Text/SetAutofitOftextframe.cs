@@ -19,7 +19,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Text();
 
-            //ExStart:SetAutofitOftextframe
+            // ExStart:SetAutofitOftextframe
             // Create an instance of Presentation class
             Presentation presentation = new Presentation();
 
@@ -46,9 +46,9 @@ namespace Aspose.Slides.Examples.CSharp.Text
             portion.PortionFormat.FillFormat.FillType = FillType.Solid;
             portion.PortionFormat.FillFormat.SolidFillColor.Color = Color.Black;
 
-            //ExEnd:SetAutofitOftextframe
+            // ExEnd:SetAutofitOftextframe
             // Save Presentation
-            presentation.Save(dataDir + "formatText.pptx", SaveFormat.Pptx); 
+            presentation.Save(dataDir + "formatText_out.pptx", SaveFormat.Pptx); 
         }
     }
 }

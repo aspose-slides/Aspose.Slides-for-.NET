@@ -31,7 +31,7 @@ namespace Aspose.Slides.Examples.CSharp.Charts
             ch.Axes.HorizontalAxis.LabelOffset = 500;
 
             // Write the presentation file to disk
-            presentation.Save(dataDir + "SetCategoryAxisLabelDistance.pptx", SaveFormat.Pptx);
+            presentation.Save(dataDir + "SetCategoryAxisLabelDistance_out.pptx", SaveFormat.Pptx);
         }
     }
 }

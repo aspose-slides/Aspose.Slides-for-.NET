@@ -13,7 +13,7 @@ namespace Aspose.Slides.Examples.CSharp.Slides
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Slides_Presentations();
 
-            //Instantiate Presentation class that represents a presentation file
+            // Instantiate Presentation class that represents a presentation file
             using (Presentation pres = new Presentation(dataDir + "BetterSlideTransitions.pptx"))
             {
 
@@ -21,7 +21,7 @@ namespace Aspose.Slides.Examples.CSharp.Slides
                 pres.Slides[0].SlideShowTransition.Type = TransitionType.Circle;
 
 
-                //Set the transition time of 3 seconds
+                // Set the transition time of 3 seconds
                 pres.Slides[0].SlideShowTransition.AdvanceOnClick = true;
                 pres.Slides[0].SlideShowTransition.AdvanceAfterTime = 3000;
 
@@ -29,7 +29,7 @@ namespace Aspose.Slides.Examples.CSharp.Slides
                 pres.Slides[1].SlideShowTransition.Type = TransitionType.Comb;
 
 
-                //Set the transition time of 5 seconds
+                // Set the transition time of 5 seconds
                 pres.Slides[1].SlideShowTransition.AdvanceOnClick = true;
                 pres.Slides[1].SlideShowTransition.AdvanceAfterTime = 5000;
 
@@ -37,12 +37,12 @@ namespace Aspose.Slides.Examples.CSharp.Slides
                 pres.Slides[2].SlideShowTransition.Type = TransitionType.Zoom;
 
 
-                //Set the transition time of 7 seconds
+                // Set the transition time of 7 seconds
                 pres.Slides[2].SlideShowTransition.AdvanceOnClick = true;
                 pres.Slides[2].SlideShowTransition.AdvanceAfterTime = 7000;
 
                 //Write the presentation to disk
-                pres.Save(dataDir + "SampleTransition.pptx", SaveFormat.Pptx);
+                pres.Save(dataDir + "SampleTransition_out.pptx", SaveFormat.Pptx);
 
             }
         }

@@ -17,15 +17,15 @@ Namespace Aspose.Slides.Examples.VisualBasic.Slides
                 System.IO.Directory.CreateDirectory(dataDir)
             End If
 
-            'Instantiate the Presentation class that represents the presentation file
+            ' Instantiate the Presentation class that represents the presentation file
             Using pres As New Presentation()
 
-                'Set the background color of the first ISlide to Blue
+                ' Set the background color of the first ISlide to Blue
                 pres.Slides(0).Background.Type = BackgroundType.OwnBackground
                 pres.Slides(0).Background.FillFormat.FillType = FillType.Solid
                 pres.Slides(0).Background.FillFormat.SolidFillColor.Color = Color.Blue
 
-                pres.Save(dataDir & "ContentBG.pptx", SaveFormat.Pptx)
+                pres.Save(dataDir & "ContentBG_out.pptx", SaveFormat.Pptx)
 
             End Using
         End Sub

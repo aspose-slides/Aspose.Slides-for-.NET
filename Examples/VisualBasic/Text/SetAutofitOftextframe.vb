@@ -6,9 +6,9 @@ Imports Aspose.Slides
 '
 'This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Slides for .NET API reference 
 'when the project is build. Please check https://docs.nuget.org/consume/nuget-faq for more information. 
-'If you do not wish to use NuGet, you can manually download Aspose.Slides for .NET API from http://www.aspose.com/downloads, 
-'install it and then add its reference to this project. For any issues, questions or suggestions 
-'please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
+' If you do not wish to use NuGet, you can manually download Aspose.Slides for .NET API from http://www.aspose.com/downloads, 
+' Install it and then add its reference to this project. For any issues, questions or suggestions 
+' Please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
 '
 Namespace Aspose.Slides.Examples.VisualBasic.Text
     Class SetAutofitOftextframe
@@ -16,7 +16,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Text
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Text()
 
-            'ExStart:SetAutofitOftextframe
+            ' ExStart:SetAutofitOftextframe
             ' Create an instance of Presentation class
             Dim presentation As New Presentation()
 
@@ -43,9 +43,9 @@ Namespace Aspose.Slides.Examples.VisualBasic.Text
             portion.PortionFormat.FillFormat.FillType = FillType.Solid
             portion.PortionFormat.FillFormat.SolidFillColor.Color = Color.Black
 
-            'ExEnd:SetAutofitOftextframe
+            ' ExEnd:SetAutofitOftextframe
             ' Save Presentation
-            presentation.Save(dataDir & Convert.ToString("formatText.pptx"), SaveFormat.Pptx)
+            presentation.Save(dataDir & Convert.ToString("formatText_out.pptx"), SaveFormat.Pptx)
         End Sub
     End Class
 End Namespace

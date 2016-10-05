@@ -17,11 +17,11 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
             if (!IsExists)
                 System.IO.Directory.CreateDirectory(dataDir);
 
-            //Instantiate PresentationEx class that represents the PPTX file
+            // Instantiate PresentationEx class that represents the PPTX file
             using (Presentation pres = new Presentation())
             {
 
-                //Get the first slide
+                // Get the first slide
                 ISlide sld = pres.Slides[0];
 
                 //Add an autoshape of type line
@@ -43,7 +43,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
                 shp.LineFormat.FillFormat.SolidFillColor.Color = Color.Maroon;
 
                 //Write the PPTX to Disk
-                pres.Save(dataDir + "LineShape2.pptx", SaveFormat.Pptx);
+                pres.Save(dataDir + "LineShape2_out.pptx", SaveFormat.Pptx);
             }
 
         }

@@ -67,7 +67,7 @@ namespace Aspose.Slides.Examples.CSharp.Tables
                 table[1, 1].SplitByWidth(table[2, 1].Width / 2);
 
                 //Write PPTX to Disk
-                presentation.Save(dataDir + "CellSplit.pptx", SaveFormat.Pptx);
+                presentation.Save(dataDir + "CellSplit_out.pptx", SaveFormat.Pptx);
 
             }
          }

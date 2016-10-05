@@ -19,7 +19,7 @@ namespace Aspose.Slides.Examples.CSharp.Charts
             if (!IsExists)
                 System.IO.Directory.CreateDirectory(dataDir);
 
-            //Instantiate Presentation class that represents PPTX file
+            // Instantiate Presentation class that represents PPTX file
             Presentation pres = new Presentation();
 
             //Access first slide
@@ -28,20 +28,20 @@ namespace Aspose.Slides.Examples.CSharp.Charts
             // Add chart with default data
             IChart chart = sld.Shapes.AddChart(ChartType.ClusteredColumn, 0, 0, 500, 500);
 
-            //Setting chart Title
-            //chart.ChartTitle.TextFrameForOverriding.Text = "Sample Title";
+            // Setting chart Title
+            // Chart.ChartTitle.TextFrameForOverriding.Text = "Sample Title";
             chart.ChartTitle.AddTextFrameForOverriding("Sample Title");
             chart.ChartTitle.TextFrameForOverriding.TextFrameFormat.CenterText = NullableBool.True;
             chart.ChartTitle.Height = 20;
             chart.HasTitle = true;
 
-            //Set first series to Show Values
+            // Set first series to Show Values
             chart.ChartData.Series[0].Labels.DefaultDataLabelFormat.ShowValue = true;
 
-            //Setting the index of chart data sheet
+            // Setting the index of chart data sheet
             int defaultWorksheetIndex = 0;
 
-            //Getting the chart data worksheet
+            // Getting the chart data worksheet
             IChartDataWorkbook fact = chart.ChartData.ChartDataWorkbook;
 
             //Delete default generated series and categories
@@ -59,47 +59,47 @@ namespace Aspose.Slides.Examples.CSharp.Charts
             chart.ChartData.Categories.Add(fact.GetCell(defaultWorksheetIndex, 2, 0, "Caetegoty 2"));
             chart.ChartData.Categories.Add(fact.GetCell(defaultWorksheetIndex, 3, 0, "Caetegoty 3"));
 
-            //Take first chart series
+            // Take first chart series
             IChartSeries series = chart.ChartData.Series[0];
 
-            //Now populating series data
+            // Now populating series data
 
             series.DataPoints.AddDataPointForBarSeries(fact.GetCell(defaultWorksheetIndex, 1, 1, 20));
             series.DataPoints.AddDataPointForBarSeries(fact.GetCell(defaultWorksheetIndex, 2, 1, 50));
             series.DataPoints.AddDataPointForBarSeries(fact.GetCell(defaultWorksheetIndex, 3, 1, 30));
 
-            //Setting fill color for series
+            // Setting fill color for series
             series.Format.Fill.FillType = FillType.Solid;
             series.Format.Fill.SolidFillColor.Color = Color.Red;
 
 
-            //Take second chart series
+            // Take second chart series
             series = chart.ChartData.Series[1];
 
-            //Now populating series data
+            // Now populating series data
             series.DataPoints.AddDataPointForBarSeries(fact.GetCell(defaultWorksheetIndex, 1, 2, 30));
             series.DataPoints.AddDataPointForBarSeries(fact.GetCell(defaultWorksheetIndex, 2, 2, 10));
             series.DataPoints.AddDataPointForBarSeries(fact.GetCell(defaultWorksheetIndex, 3, 2, 60));
 
-            //Setting fill color for series
+            // Setting fill color for series
             series.Format.Fill.FillType = FillType.Solid;
             series.Format.Fill.SolidFillColor.Color = Color.Green;
 
-            //first label will be show Category name
+            // First label will be show Category name
             IDataLabel lbl = series.DataPoints[0].Label;
             lbl.DataLabelFormat.ShowCategoryName = true;
 
             lbl = series.DataPoints[1].Label;
             lbl.DataLabelFormat.ShowSeriesName = true;
 
-            //Show value for third label
+            // Show value for third label
             lbl = series.DataPoints[2].Label;
             lbl.DataLabelFormat.ShowValue = true;
             lbl.DataLabelFormat.ShowSeriesName = true;
             lbl.DataLabelFormat.Separator = "/";
                         
-            //Save presentation with chart
-            pres.Save(dataDir + "AsposeChart.pptx", SaveFormat.Pptx);
+            // Save presentation with chart
+            pres.Save(dataDir + "AsposeChart_out.pptx", SaveFormat.Pptx);
 
         }
     }

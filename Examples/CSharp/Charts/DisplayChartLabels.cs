@@ -25,7 +25,7 @@ namespace Aspose.Slides.Examples.CSharp.Charts
                 chart.ChartData.Series[0].Labels.DefaultDataLabelFormat.ShowValue = true;
                 chart.ChartData.Series[0].Labels.DefaultDataLabelFormat.ShowLabelAsDataCallout = true;
                 chart.ChartData.Series[0].Labels[2].DataLabelFormat.ShowLabelAsDataCallout = false;
-                presentation.Save(dataDir + "DisplayChartLabels.pptx", SaveFormat.Pptx);
+                presentation.Save(dataDir + "DisplayChartLabels_out.pptx", SaveFormat.Pptx);
             }
         }
     }

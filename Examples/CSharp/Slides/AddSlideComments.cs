@@ -50,7 +50,7 @@ namespace Aspose.Slides.Examples.CSharp.Slides
                 // Accessin the comment at index 0 for slide 1
                 String str = Comments[0].Text;
 
-                presentation.Save(dataDir + "Comments.pptx", SaveFormat.Pptx);
+                presentation.Save(dataDir + "Comments_out.pptx", SaveFormat.Pptx);
 
                 if (Comments.GetLength(0) > 0)
                 {

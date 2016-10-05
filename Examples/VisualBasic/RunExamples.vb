@@ -20,8 +20,8 @@ Namespace Aspose.Slides.Examples.VisualBasic
         Public Shared Sub Main()
             Console.WriteLine("Open RunExamples.vb." & vbLf & "In Main() method, Un-comment the example that you want to run")
             Console.WriteLine("=====================================================")
-            ' Un-comment the one you want to try out
 
+            ' Un-comment the one you want to try out
 
             '// =====================================================
             '// =====================================================
@@ -89,6 +89,7 @@ Namespace Aspose.Slides.Examples.VisualBasic
             'ConvertToTIFFWithCustomImagePixelFormat.Run()
             'Convert_XPS.Run()
             'Convert_XPS_Options.Run()
+            'ManageEmbeddedFonts.Run()
             'ModifyBuiltinProperties.Run()
             'OpenPasswordPresentation.Run()
             'VerifyingPresentationWithoutloading.Run()
@@ -227,7 +228,6 @@ Namespace Aspose.Slides.Examples.VisualBasic
             'CreateSmartArtShape.Run()
             'RemoveNode.Run()
             'RemoveNodeSpecificPosition.Run()
-            'SmartArtNodeLevel.Run()
             'AccessSmartArtParticularLayout.Run()
             'ChangSmartArtShapeStyle.Run()
             'ChangeSmartArtShapeColorStyle.Run()

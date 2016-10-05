@@ -17,13 +17,13 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
             if (!IsExists)
                 System.IO.Directory.CreateDirectory(dataDir);
 
-            //Instantiate Prseetation class that represents the PPTX
+            // Instantiate Prseetation class that represents the PPTX
             Presentation pres = new Presentation();
 
             //Access the first slide
             ISlide sld = pres.Slides[0];
 
-            //Load an cel file to stream
+            // Load an cel file to stream
             FileStream fs = new FileStream(dataDir+ "book1.xlsx", FileMode.Open, FileAccess.Read);
             MemoryStream mstream = new MemoryStream();
             byte[] buf = new byte[4096];
@@ -40,7 +40,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
             IOleObjectFrame oof = sld.Shapes.AddOleObjectFrame(0, 0, pres.SlideSize.Size.Width, pres.SlideSize.Size.Height, "Excel.Sheet.12", mstream.ToArray());
 
             //Write the PPTX to disk
-            pres.Save(dataDir+ "OleEmbed.pptx", SaveFormat.Pptx);
+            pres.Save(dataDir + "OleEmbed_out.pptx", SaveFormat.Pptx);
             
             
         }

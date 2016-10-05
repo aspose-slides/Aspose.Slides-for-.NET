@@ -19,10 +19,10 @@ namespace Aspose.Slides.Examples.CSharp.Charts
             if (!IsExists)
                 System.IO.Directory.CreateDirectory(dataDir);
 
-            //Creating empty presentation
+            // Creating empty presentation
             Presentation pres = new Presentation();
 
-            //Creating a clustered column chart
+            // Creating a clustered column chart
             IChart chart = pres.Slides[0].Shapes.AddChart(ChartType.ClusteredColumn, 20, 20, 500, 400);
 
             //Adding ponential trend line for chart series 1
@@ -59,8 +59,8 @@ namespace Aspose.Slides.Examples.CSharp.Charts
             tredLinePower.TrendlineType = TrendlineType.Power;
             tredLinePower.Backward = 1;
 
-            //Saving presentation
-            pres.Save(dataDir + "ChartTrendLines.pptx", SaveFormat.Pptx);
+            // Saving presentation
+            pres.Save(dataDir + "ChartTrendLines_out.pptx", SaveFormat.Pptx);
  
         }
     }

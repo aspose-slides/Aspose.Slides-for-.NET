@@ -40,7 +40,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
                 groupShape.Frame = new ShapeFrame(100, 300, 500, 40, NullableBool.False, NullableBool.False, 0);
 
                 // Write the PPTX file to disk 
-                pres.Save(dataDir + "GroupShape.pptx", SaveFormat.Pptx);
+                pres.Save(dataDir + "GroupShape_out.pptx", SaveFormat.Pptx);
             }
         }
     }

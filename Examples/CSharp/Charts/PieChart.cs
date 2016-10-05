@@ -120,7 +120,7 @@ namespace Aspose.Slides.Examples.CSharp.Charts
             chart.ChartData.SeriesGroups[0].FirstSliceAngle = 180;
 
             // Save presentation with chart
-            presentation.Save(dataDir + "PieChart.pptx", SaveFormat.Pptx);
+            presentation.Save(dataDir + "PieChart_out.pptx", SaveFormat.Pptx);
         }
     }
 }

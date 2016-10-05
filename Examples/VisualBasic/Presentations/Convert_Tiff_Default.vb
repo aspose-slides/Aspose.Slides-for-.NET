@@ -9,10 +9,10 @@ Namespace Aspose.Slides.Examples.VisualBasic.Presentations
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Presentations()
 
-            'Instantiate a Presentation object that represents a presentation file
+            ' Instantiate a Presentation object that represents a presentation file
             Using presentation As New Presentation(dataDir & "Convert_Tiff_Default.pptx")
 
-                'Saving the presentation to TIFF document
+                ' Saving the presentation to TIFF document
                 presentation.Save(dataDir & "Tiff_out.tiff", Aspose.Slides.Export.SaveFormat.Tiff)
             End Using
         End Sub

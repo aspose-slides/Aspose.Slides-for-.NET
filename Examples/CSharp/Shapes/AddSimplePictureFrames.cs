@@ -17,14 +17,14 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
             if (!IsExists)
                 System.IO.Directory.CreateDirectory(dataDir);
 
-            //Instantiate Prseetation class that represents the PPTX
+            // Instantiate Prseetation class that represents the PPTX
             using (Presentation pres = new Presentation())
             {
 
-                //Get the first slide
+                // Get the first slide
                 ISlide sld = pres.Slides[0];
 
-                //Instantiate the ImageEx class
+                // Instantiate the ImageEx class
                 System.Drawing.Image img = (System.Drawing.Image)new Bitmap(dataDir+ "aspose-logo.jpg");
                 IPPImage imgx = pres.Images.AddImage(img);
 
@@ -32,7 +32,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
                 sld.Shapes.AddPictureFrame(ShapeType.Rectangle, 50, 150, imgx.Width, imgx.Height, imgx);
 
                 //Write the PPTX file to disk
-                pres.Save(dataDir+ "RectPicFrame.pptx", SaveFormat.Pptx);
+                pres.Save(dataDir + "RectPicFrame_out.pptx", SaveFormat.Pptx);
             }
 
             

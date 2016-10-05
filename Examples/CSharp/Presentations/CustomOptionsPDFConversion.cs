@@ -24,7 +24,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations
             // Instantiate a Presentation object that represents a presentation file
             using (Presentation pres = new Presentation(dataDir + "ConvertToPDF.pptx"))
             {
-                //Instantiate the PdfOptions class
+                // Instantiate the PdfOptions class
                 PdfOptions pdfOptions = new PdfOptions();
 
                 // Set Jpeg Quality
@@ -40,7 +40,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations
                 pdfOptions.Compliance = PdfCompliance.Pdf15;
 
                 // Save the presentation to PDF with specified options
-                pres.Save(dataDir + "Custom_Option_Pdf_Conversion.pdf", SaveFormat.Pdf, pdfOptions);
+                pres.Save(dataDir + "Custom_Option_Pdf_Conversion_out.pdf", SaveFormat.Pdf, pdfOptions);
             }
         }
     }

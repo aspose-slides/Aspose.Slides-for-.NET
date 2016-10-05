@@ -11,13 +11,13 @@ namespace Aspose.Slides.Examples.CSharp.Slides
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Slides_Presentations();
 
-            //Instantiate Presentation class to load the source presentation file
+            // Instantiate Presentation class to load the source presentation file
             using (Presentation pres = new Presentation(dataDir + "ChangePosition.pptx"))
             {
-                //Get the slide whose position is to be changed
+                // Get the slide whose position is to be changed
                 ISlide sld = pres.Slides[0];
 
-                //Set the new position for the slide
+                // Set the new position for the slide
                 sld.SlideNumber = 2;
 
                 //Write the presentation to disk

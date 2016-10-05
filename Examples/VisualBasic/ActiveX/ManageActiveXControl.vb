@@ -5,9 +5,9 @@ Imports Aspose.Slides
 '
 'This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Slides for .NET API reference 
 'when the project is build. Please check https://docs.nuget.org/consume/nuget-faq for more information. 
-'If you do not wish to use NuGet, you can manually download Aspose.Slides for .NET API from http://www.aspose.com/downloads, 
-'install it and then add its reference to this project. For any issues, questions or suggestions 
-'please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
+' If you do not wish to use NuGet, you can manually download Aspose.Slides for .NET API from http://www.aspose.com/downloads, 
+' Install it and then add its reference to this project. For any issues, questions or suggestions 
+' Please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
 '
 
 Namespace Aspose.Slides.Examples.VisualBasic.ActiveX
@@ -30,7 +30,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.ActiveX
                 Dim newText As String = "Changed text"
                 control.Properties("Value") = newText
 
-                ' changing substitute image. Powerpoint will replace this image during activeX activation, so sometime it's OK to leave image unchanged.
+                ' changing substitute image. Powerpoint will replace this image during activeX activation, so sometime it' S OK to leave image unchanged.
 
                 Dim image As New Bitmap(CInt(control.Frame.Width), CInt(control.Frame.Height))
                 Dim graphics__1 As Graphics = Graphics.FromImage(image)
@@ -100,13 +100,13 @@ Namespace Aspose.Slides.Examples.VisualBasic.ActiveX
             Next
 
             ' Save the presentation with Edited ActiveX Controls
-            presentation.Save(dataDir & Convert.ToString("withActiveX-edited.pptm"), Aspose.Slides.Export.SaveFormat.Pptm)
+            presentation.Save(dataDir & Convert.ToString("withActiveX-edited_out.pptm"), Aspose.Slides.Export.SaveFormat.Pptm)
 
             ' Now removing controls
             slide.Controls.Clear()
 
             ' Saving the presentation with cleared ActiveX controls
-            presentation.Save(dataDir & Convert.ToString("withActiveX.cleared.pptm"), Aspose.Slides.Export.SaveFormat.Pptm)
+            presentation.Save(dataDir & Convert.ToString("withActiveX.cleared_out.pptm"), Aspose.Slides.Export.SaveFormat.Pptm)
 
         End Sub
     End Class

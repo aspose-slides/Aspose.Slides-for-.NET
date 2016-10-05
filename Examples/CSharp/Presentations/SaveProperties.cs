@@ -11,19 +11,19 @@ namespace Aspose.Slides.Examples.CSharp.Presentations
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Presentations();
 
-            //Instantiate a Presentation object that represents a PPT file
+            // Instantiate a Presentation object that represents a PPT file
             Presentation presentation = new Presentation();
 
             //....do some work here.....
 
-            //Setting access to document properties in password protected mode
+            // Setting access to document properties in password protected mode
             presentation.ProtectionManager.EncryptDocumentProperties = false;
 
-            //Setting Password
+            // Setting Password
             presentation.ProtectionManager.Encrypt("pass");
 
-            //Save your presentation to a file
-            presentation.Save(dataDir + "Password Protected Presentation.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
+            // Save your presentation to a file
+            presentation.Save(dataDir + "Password Protected Presentation_out.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
         }
     }
 }

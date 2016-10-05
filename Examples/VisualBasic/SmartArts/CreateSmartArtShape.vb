@@ -15,17 +15,17 @@ Namespace Aspose.Slides.Examples.VisualBasic.SmartArts
             If (Not IsExists) Then
                 System.IO.Directory.CreateDirectory(dataDir)
             End If
-            'Instantiate the presentation
+            ' Instantiate the presentation
             Using pres As New Presentation()
 
-                'Access the presentation slide
+                ' Access the presentation slide
                 Dim slide As ISlide = pres.Slides(0)
 
-                'Add Smart Art Shape
+                ' Add Smart Art Shape
                 Dim smart As ISmartArt = slide.Shapes.AddSmartArt(0, 0, 400, 400, SmartArtLayoutType.BasicBlockList)
 
-                'Saving presentation
-                pres.Save(dataDir & "SimpleSmartArt.pptx", Aspose.Slides.Export.SaveFormat.Pptx)
+                ' Saving presentation
+                pres.Save(dataDir & "SimpleSmartArt_out.pptx", Aspose.Slides.Export.SaveFormat.Pptx)
             End Using
         End Sub
     End Class
