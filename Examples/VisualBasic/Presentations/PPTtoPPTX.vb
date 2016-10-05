@@ -15,7 +15,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Presentations
             Dim presentation As New Presentation(dataDir & "PPTtoPPTX.ppt")
 
             ' Saving the PPTX presentation to PPTX format
-            presentation.Save(dataDir & "PPTtoPPTX.pptx", SaveFormat.Pptx)
+            presentation.Save(dataDir & "PPTtoPPTX_out.pptx", SaveFormat.Pptx)
 
         End Sub
     End Class

@@ -5,6 +5,7 @@ classes/
 generated/
 *.suo
 bin/
+*_out*
 * Out*
 *_out_*
 * out*

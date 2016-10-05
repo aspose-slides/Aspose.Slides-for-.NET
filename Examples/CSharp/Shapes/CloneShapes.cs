@@ -18,7 +18,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Shapes();
 
-            //Instantiate Presentation class
+            // Instantiate Presentation class
             using (Presentation srcPres = new Presentation(dataDir + "Source Frame.pptx"))
             {
                 IShapeCollection sourceShapes = srcPres.Slides[0].Shapes;
@@ -30,7 +30,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
                 destShapes.InsertClone(0, sourceShapes[0], 50, 150);
 
                 //Write the PPTX file to disk
-                srcPres.Save(dataDir+ "CloneShape.pptx", SaveFormat.Pptx);
+                srcPres.Save(dataDir + "CloneShape_out.pptx", SaveFormat.Pptx);
 
             }
             

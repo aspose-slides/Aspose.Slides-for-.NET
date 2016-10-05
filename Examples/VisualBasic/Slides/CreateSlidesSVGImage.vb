@@ -9,22 +9,22 @@ Namespace Aspose.Slides.Examples.VisualBasic.Slides
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Slides_Presentations()
 
-            'Instantiate a Presentation class that represents the presentation file
+            ' Instantiate a Presentation class that represents the presentation file
 
             Using pres As New Presentation(dataDir & "CreateSlidesSVGImage.pptx")
 
-                'Access the first slide
+                ' Access the first slide
                 Dim sld As ISlide = pres.Slides(0)
 
-                'Create a memory stream object
+                ' Create a memory stream object
                 Dim SvgStream As New MemoryStream()
 
-                'Generate SVG image of slide and save in memory stream
+                ' Generate SVG image of slide and save in memory stream
                 sld.WriteAsSvg(SvgStream)
                 SvgStream.Position = 0
 
-                'Save memory stream to file
-                Using fileStream As Stream = System.IO.File.OpenWrite(dataDir & "Aspose.svg")
+                ' Save memory stream to file
+                Using fileStream As Stream = System.IO.File.OpenWrite(dataDir & "Aspose5_out.svg")
                     Dim buffer(8 * 1024 - 1) As Byte
                     Dim len As Integer
                     len = SvgStream.Read(buffer, 0, buffer.Length)

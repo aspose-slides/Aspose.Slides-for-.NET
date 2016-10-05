@@ -18,16 +18,16 @@ namespace Aspose.Slides.Examples.CSharp.Slides
             if (!IsExists)
                 System.IO.Directory.CreateDirectory(dataDir);
 
-            //Instantiate the Presentation class that represents the presentation file
+            // Instantiate the Presentation class that represents the presentation file
             using (Presentation pres = new Presentation())
             {
 
-                //Set the background color of the first ISlide to Blue
+                // Set the background color of the first ISlide to Blue
                 pres.Slides[0].Background.Type = BackgroundType.OwnBackground;
                 pres.Slides[0].Background.FillFormat.FillType = FillType.Solid;
                 pres.Slides[0].Background.FillFormat.SolidFillColor.Color = Color.Blue;
 
-                pres.Save(dataDir + "ContentBG.pptx", SaveFormat.Pptx);
+                pres.Save(dataDir + "ContentBG_out.pptx", SaveFormat.Pptx);
 
             }
         }

@@ -70,8 +70,8 @@ namespace Aspose.Slides.Examples.CSharp.Slides
                 // Adding empty slide with added layout slide 
                 presentation.Slides.InsertEmptySlide(0, layoutSlide);
 
-                //Save presentation    
-                presentation.Save(dataDir + "AddLayoutSlides.pptx", SaveFormat.Pptx);
+                // Save presentation    
+                presentation.Save(dataDir + "AddLayoutSlides_out.pptx", SaveFormat.Pptx);
             }
         }
     }

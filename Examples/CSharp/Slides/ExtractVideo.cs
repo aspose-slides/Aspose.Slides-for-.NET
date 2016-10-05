@@ -34,7 +34,7 @@ namespace Aspose.Slides.Examples.CSharp.Slides
                         int ss = type.LastIndexOf('/');
                         type = type.Remove(0, type.LastIndexOf('/') + 1);
                         Byte[] buffer = vf.EmbeddedVideo.BinaryData;
-                        using (FileStream stream = new FileStream(dataDir + "NewVideo." + type, FileMode.Create, FileAccess.Write, FileShare.Read))
+                        using (FileStream stream = new FileStream(dataDir + "NewVideo_out." + type, FileMode.Create, FileAccess.Write, FileShare.Read))
                         {
                             // ExEnd:RemoveNotesFromAllSlides                            
                             stream.Write(buffer, 0, buffer.Length);

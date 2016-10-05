@@ -58,7 +58,7 @@ namespace Aspose.Slides.Examples.CSharp.Charts
             series.ParentSeriesGroup.GapWidth = 50;
 
             // Save presentation with chart
-            presentation.Save(dataDir + "GapWidth.pptx", SaveFormat.Pptx);
+            presentation.Save(dataDir + "GapWidth_out.pptx", SaveFormat.Pptx);
         }
     }
 }

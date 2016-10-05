@@ -15,7 +15,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Presentations
             Dim pres As New Presentation(dataDir & "AccessOpenDoc.odp")
 
             ' Saving the ODP presentation to PPTX format
-            pres.Save(dataDir & "AccessOpenDoc.pptx", SaveFormat.Pptx)
+            pres.Save(dataDir & "AccessOpenDoc_out.pptx", SaveFormat.Pptx)
 
         End Sub
     End Class

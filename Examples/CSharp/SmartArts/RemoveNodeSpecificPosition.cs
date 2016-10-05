@@ -11,16 +11,16 @@ namespace Aspose.Slides.Examples.CSharp.SmartArts
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_SmartArts();
 
-            //Load the desired the presentation             
+            // Load the desired the presentation             
             Presentation pres = new Presentation(dataDir + "RemoveNodeSpecificPosition.pptx");
 
-            //Traverse through every shape inside first slide
+            // Traverse through every shape inside first slide
             foreach (IShape shape in pres.Slides[0].Shapes)
             {
-                //Check if shape is of SmartArt type
+                // Check if shape is of SmartArt type
                 if (shape is Aspose.Slides.SmartArt.SmartArt)
                 {
-                    //Typecast shape to SmartArt
+                    // Typecast shape to SmartArt
                     Aspose.Slides.SmartArt.SmartArt smart = (Aspose.Slides.SmartArt.SmartArt)shape;
 
                     if (smart.AllNodes.Count > 0)
@@ -30,7 +30,7 @@ namespace Aspose.Slides.Examples.CSharp.SmartArts
 
                         if (node.ChildNodes.Count >= 2)
                         {
-                            //Removing the child node at position 1
+                            // Removing the child node at position 1
                             ((Aspose.Slides.SmartArt.SmartArtNodeCollection)node.ChildNodes).RemoveNode(1);
                         }
 
@@ -38,8 +38,8 @@ namespace Aspose.Slides.Examples.CSharp.SmartArts
                 }
             }
 
-            //Save Presentation
-            pres.Save(dataDir + "RemoveSmartArtNodeByPosition.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
+            // Save Presentation
+            pres.Save(dataDir + "RemoveSmartArtNodeByPosition_out.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
         }
     }
 }

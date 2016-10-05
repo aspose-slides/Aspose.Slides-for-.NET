@@ -16,20 +16,20 @@ Namespace Aspose.Slides.Examples.VisualBasic.Tables
                 System.IO.Directory.CreateDirectory(dataDir)
             End If
 
-            'Instantiate Presentation class that represents PPTX file
+            ' Instantiate Presentation class that represents PPTX file
             Using pres As New Presentation()
 
-                'Access first slide
+                ' Access first slide
                 Dim sld As ISlide = pres.Slides(0)
 
-                'Define columns with widths and rows with heights
+                ' Define columns with widths and rows with heights
                 Dim dblCols() As Double = {50, 50, 50}
                 Dim dblRows() As Double = {50, 30, 30, 30, 30}
 
-                'Add table shape to slide
+                ' Add table shape to slide
                 Dim tbl As ITable = sld.Shapes.AddTable(100, 50, dblCols, dblRows)
 
-                'Set border format for each cell
+                ' Set border format for each cell
                 For Each row As IRow In tbl.Rows
                     For Each cell As ICell In row
                         cell.BorderTop.FillFormat.FillType = FillType.Solid
@@ -51,14 +51,14 @@ Namespace Aspose.Slides.Examples.VisualBasic.Tables
                 Next row
 
 
-                'Merge cells 1 & 2 of row 1
+                ' Merge cells 1 & 2 of row 1
                 tbl.MergeCells(tbl(0, 0), tbl(1, 0), False)
 
-                'Add text to the merged cell
+                ' Add text to the merged cell
                 tbl(0, 0).TextFrame.Text = "Merged Cells"
 
                 'Write PPTX to Disk
-                pres.Save(dataDir & "table.pptx", Aspose.Slides.Export.SaveFormat.Pptx)
+                pres.Save(dataDir & "TableFromScratch_out.pptx", Aspose.Slides.Export.SaveFormat.Pptx)
             End Using
 
         End Sub

@@ -23,7 +23,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations
             // Opening the presentation file by passing the file path and load options to the constructor of Presentation class
             Presentation pres = new Presentation(dataDir + "AccessProperties.pptx", loadOptions);
 
-            //Getting Document Properties
+            // Getting Document Properties
             IDocumentProperties docProps = pres.DocumentProperties;
 
             System.Console.WriteLine("Name of Application : " + docProps.NameOfApplication);

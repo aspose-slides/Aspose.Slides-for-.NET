@@ -33,7 +33,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
             Bitmap bmp = node.Shapes[0].GetThumbnail();
 
             // Save thumbnail
-            bmp.Save(dataDir + "SmartArt_ChildNote_Thumbnail.jpeg", ImageFormat.Jpeg);
+            bmp.Save(dataDir + "SmartArt_ChildNote_Thumbnail_out.jpeg", ImageFormat.Jpeg);
         }
     }
 }

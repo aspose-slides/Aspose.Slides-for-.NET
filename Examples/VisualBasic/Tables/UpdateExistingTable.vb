@@ -9,27 +9,27 @@ Namespace Aspose.Slides.Examples.VisualBasic.Tables
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Tables()
 
-            'Instantiate Presentation class that represents PPTX//Instantiate Presentation class that represents PPTX
+            ' Instantiate Presentation class that represents PPTX//Instantiate Presentation class that represents PPTX
             Using pres As New Presentation(dataDir & "UpdateExistingTable.pptx")
 
-                'Access the first slide
+                ' Access the first slide
                 Dim sld As ISlide = pres.Slides(0)
 
-                'Initialize null TableEx
+                ' Initialize null TableEx
                 Dim tbl As ITable = Nothing
 
-                'Iterate through the shapes and set a reference to the table found
+                ' Iterate through the shapes and set a reference to the table found
                 For Each shp As IShape In sld.Shapes
                     If TypeOf shp Is ITable Then
                         tbl = CType(shp, ITable)
                     End If
                 Next shp
 
-                'Set the text of the first column of second row
+                ' Set the text of the first column of second row
                 tbl(0, 1).TextFrame.Text = "New"
 
                 'Write the PPTX to Disk
-                pres.Save(dataDir & "table1.pptx", Aspose.Slides.Export.SaveFormat.Pptx)
+                pres.Save(dataDir & "table1_out.pptx", Aspose.Slides.Export.SaveFormat.Pptx)
             End Using
 
         End Sub

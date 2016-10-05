@@ -13,13 +13,13 @@ Namespace Aspose.Slides.Examples.VisualBasic.Presentations
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Presentations()
 
-            'Instantiate the Presentation class that represents the presentation
+            ' Instantiate the Presentation class that represents the presentation
             Dim pres As New Presentation(dataDir & "AccessBuiltin Properties.pptx")
 
-            'Create a reference to IDocumentProperties object associated with Presentation
+            ' Create a reference to IDocumentProperties object associated with Presentation
             Dim dp As IDocumentProperties = pres.DocumentProperties
 
-            'Display the builtin properties
+            ' Display the builtin properties
             System.Console.WriteLine("Category : " & dp.Category)
             System.Console.WriteLine("Current Status : " & dp.ContentStatus)
             System.Console.WriteLine("Creation Date : " & dp.CreatedTime)

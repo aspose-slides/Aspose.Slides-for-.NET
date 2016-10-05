@@ -17,11 +17,11 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
             if (!IsExists)
                 System.IO.Directory.CreateDirectory(dataDir);
 
-            //Instantiate Prseetation class that represents the PPTX//Instantiate Prseetation class that represents the PPTX
+            // Instantiate Prseetation class that represents the PPTX// Instantiate Prseetation class that represents the PPTX
             using (Presentation pres = new Presentation())
             {
 
-                //Get the first slide
+                // Get the first slide
                 ISlide sld = pres.Slides[0];
 
                 //Add autoshape of ellipse type
@@ -31,7 +31,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
                 shp.FillFormat.FillType = FillType.Gradient;
                 shp.FillFormat.GradientFormat.GradientShape = GradientShape.Linear;
 
-                //Set the Gradient Direction
+                // Set the Gradient Direction
                 shp.FillFormat.GradientFormat.GradientDirection = GradientDirection.FromCorner2;
 
                 //Add two Gradiant Stops
@@ -39,7 +39,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
                 shp.FillFormat.GradientFormat.GradientStops.Add((float)0, PresetColor.Red);
 
                 //Write the PPTX file to disk
-                pres.Save(dataDir + "EllipseShpGrad.pptx", SaveFormat.Pptx);
+                pres.Save(dataDir + "EllipseShpGrad_out.pptx", SaveFormat.Pptx);
             }
             
         }

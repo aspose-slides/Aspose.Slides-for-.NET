@@ -19,7 +19,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
 
             OleObjectFrame ole = null;
 
-            //Traversing all shapes for Ole frame
+            // Traversing all shapes for Ole frame
             foreach (IShape shape in slide.Shapes)
             {
                 if (shape is OleObjectFrame)
@@ -30,7 +30,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
 
             if (ole != null)
             {
-                //Reading object data in Workbook
+                // Reading object data in Workbook
                 Aspose.Cells.Workbook Wb;
 
                 using (System.IO.MemoryStream msln = new System.IO.MemoryStream(ole.ObjectData))
@@ -39,7 +39,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
 
                     using (System.IO.MemoryStream msout = new System.IO.MemoryStream())
                     {
-                        //Modifying the workbook data
+                        // Modifying the workbook data
                         Wb.Worksheets[0].Cells[0, 4].PutValue("E");
                         Wb.Worksheets[0].Cells[1, 4].PutValue(12);
                         Wb.Worksheets[0].Cells[2, 4].PutValue(14);
@@ -49,14 +49,14 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
 
                         Wb.Save(msout, so1);
 
-                        //Changing Ole frame object data
+                        // Changing Ole frame object data
                         msout.Position = 0;
                         ole.ObjectData = msout.ToArray();
                     }
                 }
             }
 
-            pres.Save(dataDir+ "OleEdit.pptx", SaveFormat.Pptx);
+            pres.Save(dataDir + "OleEdit_out.pptx", SaveFormat.Pptx);
 
  
             

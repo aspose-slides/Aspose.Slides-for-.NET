@@ -37,13 +37,16 @@
     <DefineTrace>true</DefineTrace>
     <ErrorReport>prompt</ErrorReport>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Aspose.Slides.Examples.VisualBasic.RunExamples</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Cells, Version=8.8.2.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Cells.8.8.2\lib\net40\Aspose.Cells.dll</HintPath>
+    <Reference Include="Aspose.Cells, Version=9.0.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Cells.9.0.0\lib\net40\Aspose.Cells.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Aspose.Slides, Version=16.5.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Slides.NET.16.5.0\lib\net4.0-client\Aspose.Slides.dll</HintPath>
+    <Reference Include="Aspose.Slides, Version=16.8.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Slides.NET.16.8.0\lib\net4.0-client\Aspose.Slides.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -80,6 +83,7 @@
     <Compile Include="Presentations\ConvertToPasswordProtectedPDF.vb" />
     <Compile Include="Presentations\ConvertToPDFWithHiddenSlides.vb" />
     <Compile Include="Presentations\ConvertToTIFFWithCustomImagePixelFormat.vb" />
+    <Compile Include="Presentations\ManageEmbeddedFonts.vb" />
     <Compile Include="Presentations\ConvetToSWF.vb" />
     <Compile Include="Presentations\CreateBoundsShapeThumbnail.vb" />
     <Compile Include="Presentations\CreateNewPresentation.vb" />
@@ -238,7 +242,6 @@
     <Compile Include="SmartArts\RemoveNodeSpecificPosition.vb" />
     <Compile Include="SmartArts\RemoveNode.vb" />
     <Compile Include="SmartArts\AssistantNode.vb" />
-    <Compile Include="SmartArts\SmartArtNodeLevel.vb" />
     <Compile Include="Tables\UpdateExistingTable.vb" />
     <Compile Include="Tables\RemovingRowColumn.vb" />
     <Compile Include="Tables\TableWithCellBorders.vb" />

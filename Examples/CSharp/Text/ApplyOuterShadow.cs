@@ -18,7 +18,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Text();
 
-            //ExStart:ApplyOuterShadow
+            // ExStart:ApplyOuterShadow
             // Create an instance of Presentation class
             Presentation presentation = new Presentation();
             
@@ -51,9 +51,9 @@ namespace Aspose.Slides.Examples.CSharp.Text
             // Set Scheme Color
             ef.InnerShadowEffect.ShadowColor.SchemeColor = SchemeColor.Accent1;
 
-            //ExEnd:ApplyOuterShadow
+            // ExEnd:ApplyOuterShadow
             // Save Presentation
-            presentation.Save(dataDir + "WordArt.pptx", SaveFormat.Pptx);
+            presentation.Save(dataDir + "WordArt_out.pptx", SaveFormat.Pptx);
 
         }
     }

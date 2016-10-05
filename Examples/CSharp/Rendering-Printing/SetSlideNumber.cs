@@ -27,7 +27,7 @@ namespace Aspose.Slides.Examples.CSharp.Rendering.Printing
                 // Set the slide number
                 presentation.FirstSlideNumber=10;
 
-                presentation.Save(dataDir + "Set_Slide_Number.pptx", SaveFormat.Pptx);
+                presentation.Save(dataDir + "Set_Slide_Number_out.pptx", SaveFormat.Pptx);
             }
  
 

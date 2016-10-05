@@ -77,7 +77,7 @@ namespace Aspose.Slides.Examples.CSharp.Charts
             series2.Labels.DefaultDataLabelFormat.TextFormat.PortionFormat.FillFormat.SolidFillColor.Color = Color.White;
 
             // Write presentation to disk
-            presentation.Save(dataDir + "SetDataLabelsPercentageSign.pptx", SaveFormat.Pptx);
+            presentation.Save(dataDir + "SetDataLabelsPercentageSign_out.pptx", SaveFormat.Pptx);
 
         }
     }

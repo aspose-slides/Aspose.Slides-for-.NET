@@ -25,7 +25,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Presentations
             presentation.ProtectionManager.Encrypt("pass")
 
             ' Save your presentation to a file
-            presentation.Save(dataDir & "Saving_Password_Protected_Presentation.pptx", Export.SaveFormat.Pptx)
+            presentation.Save(dataDir & "Saving_Password_Protected_Presentation_out.pptx", Export.SaveFormat.Pptx)
 
         End Sub
     End Class

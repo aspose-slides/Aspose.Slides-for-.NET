@@ -24,14 +24,14 @@ Namespace Aspose.Slides.Examples.VisualBasic.Shapes
             Next shape
 
             If ole IsNot Nothing Then
-                'Reading object data in Workbook
+                ' Reading object data in Workbook
                 Dim Wb As Aspose.Cells.Workbook
 
                 Using msln As New System.IO.MemoryStream(ole.ObjectData)
                     Wb = New Aspose.Cells.Workbook(msln)
 
                     Using msout As New System.IO.MemoryStream()
-                        'Modifying the workbook data
+                        ' Modifying the workbook data
                         Wb.Worksheets(0).Cells(0, 4).PutValue("E")
                         Wb.Worksheets(0).Cells(1, 4).PutValue(12)
                         Wb.Worksheets(0).Cells(2, 4).PutValue(14)
@@ -41,17 +41,14 @@ Namespace Aspose.Slides.Examples.VisualBasic.Shapes
 
                         Wb.Save(msout, so1)
 
-                        'Changing Ole frame object data
+                        ' Changing Ole frame object data
                         msout.Position = 0
                         ole.ObjectData = msout.ToArray()
                     End Using
                 End Using
             End If
 
-            pres.Save(dataDir & "OleEdit.pptx", SaveFormat.Pptx)
-
-
-
+            pres.Save(dataDir & "OleEdit_out.pptx", SaveFormat.Pptx)
         End Sub
     End Class
 End Namespace

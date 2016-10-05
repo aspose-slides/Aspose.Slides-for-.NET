@@ -15,7 +15,7 @@ namespace Aspose.Slides.Examples.CSharp.Tables
     {
         public static void Run()
         {
-            // For complete examples and data files, please go to https://github.com/aspose-slides/Aspose.Slides-for-.NET
+            // For complete examples and data files, please go to https:// Github.com/aspose-slides/Aspose.Slides-for-.NET
 
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Tables();
@@ -61,7 +61,7 @@ namespace Aspose.Slides.Examples.CSharp.Tables
                 table[0, 0].TextFrame.Text = "Merged Cells";
 
                 // Write PPTX to Disk
-                presentation.Save(dataDir + "table.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
+                presentation.Save(dataDir + "table_out.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
             }
         }
     }

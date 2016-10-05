@@ -22,7 +22,7 @@ namespace Aspose.Slides.Examples.CSharp.Slides
 
             // ExStart:AccessSlideComments
             // Instantiate Presentation class
-            using (Presentation presentation = new Presentation(dataDir + "Comments.pptx"))
+            using (Presentation presentation = new Presentation(dataDir + "Comments1.pptx"))
             {
                 foreach (var commentAuthor in presentation.CommentAuthors)
                 {

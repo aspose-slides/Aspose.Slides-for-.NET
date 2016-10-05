@@ -21,7 +21,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations
             // Instantiate the Presentation class
             Presentation presentation = new Presentation();
 
-            //Getting Document Properties
+            // Getting Document Properties
             IDocumentProperties documentProperties = presentation.DocumentProperties;
 
             // Adding Custom properties
@@ -36,7 +36,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations
             documentProperties.RemoveCustomProperty(getPropertyName);
 
             // Saving presentation
-            presentation.Save(dataDir + "CustomDocumentProperties.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
+            presentation.Save(dataDir + "CustomDocumentProperties_out.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
 
         }
     }

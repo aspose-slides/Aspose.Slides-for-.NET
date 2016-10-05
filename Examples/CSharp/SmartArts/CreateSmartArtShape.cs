@@ -15,7 +15,7 @@ namespace Aspose.Slides.Examples.CSharp.SmartArts
             bool IsExists = System.IO.Directory.Exists(dataDir);
             if (!IsExists)
                 System.IO.Directory.CreateDirectory(dataDir);
-            //Instantiate the presentation
+            // Instantiate the presentation
             using (Presentation pres = new Presentation())
             {
 
@@ -25,8 +25,8 @@ namespace Aspose.Slides.Examples.CSharp.SmartArts
                 //Add Smart Art Shape
                 ISmartArt smart = slide.Shapes.AddSmartArt(0, 0, 400, 400, SmartArtLayoutType.BasicBlockList);
 
-                //Saving presentation
-                pres.Save(dataDir + "SimpleSmartArt.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
+                // Saving presentation
+                pres.Save(dataDir + "SimpleSmartArt_out.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
             }
         }
     }

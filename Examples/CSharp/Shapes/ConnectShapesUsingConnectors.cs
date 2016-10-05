@@ -41,7 +41,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
                 connector.Reroute();
 
                 // Saving presenation
-                input.Save(dataDir + "Connecting shapes using connectors.pptx", SaveFormat.Pptx);
+                input.Save(dataDir + "Connecting shapes using connectors_out.pptx", SaveFormat.Pptx);
             }
         }
     }

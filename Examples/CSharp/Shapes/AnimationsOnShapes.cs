@@ -19,12 +19,12 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
             if (!IsExists)
                 System.IO.Directory.CreateDirectory(dataDir);
 
-            //Instantiate PrseetationEx class that represents the PPTX
+            // Instantiate PrseetationEx class that represents the PPTX
             using (Presentation pres = new Presentation())
             {
                 ISlide sld = pres.Slides[0];
 
-                //Now create effect "PathFootball" for existing shape from scratch.
+                // Now create effect "PathFootball" for existing shape from scratch.
                 IAutoShape ashp = sld.Shapes.AddAutoShape(ShapeType.Rectangle, 150, 150, 250, 25);
 
                 ashp.AddTextFrame("Animated TextBox");
@@ -33,16 +33,16 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
                 pres.Slides[0].Timeline.MainSequence.AddEffect(ashp, EffectType.PathFootball,
                                        EffectSubtype.None, EffectTriggerType.AfterPrevious);
 
-                //Create some kind of "button".
+                // Create some kind of "button".
                 IShape shapeTrigger = pres.Slides[0].Shapes.AddAutoShape(ShapeType.Bevel, 10, 10, 20, 20);
 
-                //Create sequence of effects for this button.
+                // Create sequence of effects for this button.
                 ISequence seqInter = pres.Slides[0].Timeline.InteractiveSequences.Add(shapeTrigger);
 
-                //Create custom user path. Our object will be moved only after "button" click.
+                // Create custom user path. Our object will be moved only after "button" click.
                 IEffect fxUserPath = seqInter.AddEffect(ashp, EffectType.PathUser, EffectSubtype.None, EffectTriggerType.OnClick);
 
-                //Created path is empty so we should add commands for moving.
+                // Created path is empty so we should add commands for moving.
                 IMotionEffect motionBhv = ((IMotionEffect)fxUserPath.Behaviors[0]);
 
                 PointF[] pts = new PointF[1];
@@ -53,7 +53,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
                 motionBhv.Path.Add(MotionCommandPathType.End, null, MotionPathPointsType.Auto, false);
 
                 //Write the presentation as PPTX to disk
-                pres.Save(dataDir + "AnimExample.pptx", SaveFormat.Pptx);
+                pres.Save(dataDir + "AnimExample_out.pptx", SaveFormat.Pptx);
 
             }
         }

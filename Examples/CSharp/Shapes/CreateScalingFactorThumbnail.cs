@@ -26,7 +26,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
                 using (Bitmap bitmap = p.Slides[0].Shapes[0].GetThumbnail(ShapeThumbnailBounds.Shape, 1, 1))
                 {
                     // Save the image to disk in PNG format
-                    bitmap.Save(dataDir + "Scaling Factor Thumbnail.png", ImageFormat.Png);
+                    bitmap.Save(dataDir + "Scaling Factor Thumbnail_out.png", ImageFormat.Png);
                 }
             }
 

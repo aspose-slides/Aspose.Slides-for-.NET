@@ -19,10 +19,10 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Shapes();
 
-             //Create Presentation object
+             // Create Presentation object
             Presentation pres = new Presentation();
             
-            //Get the first slide
+            // Get the first slide
             ISlide sld = pres.Slides[0];
 
             //Add autoshape of rectangle type
@@ -39,8 +39,8 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
                     }
             }
 
-            //Save presentation to disk
-            pres.Save(dataDir + "RemoveShape.pptx", SaveFormat.Pptx);
+            // Save presentation to disk
+            pres.Save(dataDir + "RemoveShape_out.pptx", SaveFormat.Pptx);
 
         }
     }

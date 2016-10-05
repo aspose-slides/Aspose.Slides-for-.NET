@@ -9,10 +9,10 @@ Namespace Aspose.Slides.Examples.VisualBasic.Slides
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Slides_Presentations()
 
-            'Instantiate a Presentation object that represents a presentation file
+            ' Instantiate a Presentation object that represents a presentation file
             Using pres As New Presentation(dataDir & "AccessSlides.pptx")
 
-                'Accessing a slide using its slide index
+                ' Accessing a slide using its slide index
                 Dim slide As ISlide = pres.Slides(0)
 
                 System.Console.WriteLine("Slide Number: " & slide.SlideNumber)

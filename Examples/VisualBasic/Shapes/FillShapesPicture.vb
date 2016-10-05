@@ -34,7 +34,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Shapes
                 iShape.FillFormat.PictureFillFormat.Picture.Image = imgx
 
                 ' Write the PPTX file to disk
-                presentation.Save(dataDir & "RectShpPic.pptx", SaveFormat.Pptx)
+                presentation.Save(dataDir & "RectShpPic_out.pptx", SaveFormat.Pptx)
 
             End Using
 

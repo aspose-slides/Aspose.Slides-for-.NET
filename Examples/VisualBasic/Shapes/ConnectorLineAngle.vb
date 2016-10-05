@@ -1,7 +1,3 @@
-Imports Microsoft.VisualBasic
-Imports System.IO
-
-Imports Aspose.Slides
 Imports System
 
 Namespace Aspose.Slides.Examples.VisualBasic.Shapes

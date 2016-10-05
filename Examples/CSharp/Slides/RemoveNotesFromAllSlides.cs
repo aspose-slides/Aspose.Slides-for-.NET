@@ -22,7 +22,7 @@ namespace Aspose.Slides.Examples.CSharp.Slides
             // Instantiate a Presentation object that represents a presentation file 
             Presentation presentation = new Presentation(dataDir + "AccessSlides.pptx");
 
-            //Removing notes of all slides
+            // Removing notes of all slides
             INotesSlideManager mgr = null;
             for (int i = 0; i < presentation.Slides.Count; i++)
             {
@@ -32,7 +32,7 @@ namespace Aspose.Slides.Examples.CSharp.Slides
 
             // ExEnd:RemoveNotesFromAllSlides
             // Save presentation to disk
-            presentation.Save(dataDir + "RemoveNotesFromAllSlides.pptx", SaveFormat.Pptx);
+            presentation.Save(dataDir + "RemoveNotesFromAllSlides_out.pptx", SaveFormat.Pptx);
         }
     }
 }

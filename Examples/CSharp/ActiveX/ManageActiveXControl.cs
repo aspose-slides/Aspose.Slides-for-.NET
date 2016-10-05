@@ -116,14 +116,14 @@ namespace Aspose.Slides.Examples.CSharp.ActiveX
             }
 
             // Save the presentation with Edited ActiveX Controls
-            presentation.Save(dataDir + "withActiveX-edited.pptm", Aspose.Slides.Export.SaveFormat.Pptm);
+            presentation.Save(dataDir + "withActiveX-edited_out.pptm", Aspose.Slides.Export.SaveFormat.Pptm);
 
 
             // Now removing controls
             slide.Controls.Clear();
 
             // Saving the presentation with cleared ActiveX controls
-            presentation.Save(dataDir +  "withActiveX.cleared.pptm", Aspose.Slides.Export.SaveFormat.Pptm);
+            presentation.Save(dataDir + "withActiveX.cleared_out.pptm", Aspose.Slides.Export.SaveFormat.Pptm);
 
         }
     }

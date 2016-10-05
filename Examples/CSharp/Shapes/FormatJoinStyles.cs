@@ -17,11 +17,11 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
             if (!IsExists)
                 System.IO.Directory.CreateDirectory(dataDir);
 
-            //Instantiate Prseetation class that represents the PPTX
+            // Instantiate Prseetation class that represents the PPTX
             using (Presentation pres = new Presentation())
             {
 
-                //Get the first slide
+                // Get the first slide
                 ISlide sld = pres.Slides[0];
 
                 //Add three autoshapes of rectangle type
@@ -31,7 +31,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
 
                 IShape shp3 = sld.Shapes.AddAutoShape(ShapeType.Rectangle, 50, 250, 150, 75);
 
-                //Set the fill color of the rectangle shape
+                // Set the fill color of the rectangle shape
                 shp1.FillFormat.FillType = FillType.Solid;
                 shp1.FillFormat.SolidFillColor.Color = Color.Black;
                 shp2.FillFormat.FillType = FillType.Solid;
@@ -39,12 +39,12 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
                 shp3.FillFormat.FillType = FillType.Solid;
                 shp3.FillFormat.SolidFillColor.Color = Color.Black;
 
-                //Set the line width
+                // Set the line width
                 shp1.LineFormat.Width = 15;
                 shp2.LineFormat.Width = 15;
                 shp3.LineFormat.Width = 15;
 
-                //Set the color of the line of rectangle
+                // Set the color of the line of rectangle
                 shp1.LineFormat.FillFormat.FillType = FillType.Solid;
                 shp1.LineFormat.FillFormat.SolidFillColor.Color = Color.Blue;
                 shp2.LineFormat.FillFormat.FillType = FillType.Solid;
@@ -52,7 +52,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
                 shp3.LineFormat.FillFormat.FillType = FillType.Solid;
                 shp3.LineFormat.FillFormat.SolidFillColor.Color = Color.Blue;
 
-                //Set the Join Style
+                // Set the Join Style
                 shp1.LineFormat.JoinStyle = LineJoinStyle.Miter;
                 shp2.LineFormat.JoinStyle = LineJoinStyle.Bevel;
                 shp3.LineFormat.JoinStyle = LineJoinStyle.Round;
@@ -63,7 +63,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
                 ((IAutoShape)shp3).TextFrame.Text = "This is Round Join Style";
 
                 //Write the PPTX file to disk
-                pres.Save(dataDir + "RectShpLnJoin.pptx", SaveFormat.Pptx);
+                pres.Save(dataDir + "RectShpLnJoin_out.pptx", SaveFormat.Pptx);
             }
         }
     }

@@ -10,12 +10,12 @@ namespace Aspose.Slides.Examples.CSharp.Presentations
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Presentations();
 
-            //Instantiate a Presentation object that represents a presentation file
+            // Instantiate a Presentation object that represents a presentation file
             using (Presentation pres = new Presentation(dataDir + "ConvertWithNoteToTiff.pptx"))
             {
 
-                //Saving the presentation to TIFF notes
-                pres.Save(dataDir + "TestNotes.tiff", Aspose.Slides.Export.SaveFormat.TiffNotes);
+                // Saving the presentation to TIFF notes
+                pres.Save(dataDir + "TestNotes_out.tiff", Aspose.Slides.Export.SaveFormat.TiffNotes);
             }
         }
     }

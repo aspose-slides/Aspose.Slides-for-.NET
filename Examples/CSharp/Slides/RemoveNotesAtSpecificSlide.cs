@@ -28,7 +28,7 @@ namespace Aspose.Slides.Examples.CSharp.Slides
 
             // ExEnd:RemoveNotesAtSpecificSlide
             // Save presentation to disk
-            presentation.Save(dataDir + "RemoveNotesAtSpecificSlide.pptx", SaveFormat.Pptx);
+            presentation.Save(dataDir + "RemoveNotesAtSpecificSlide_out.pptx", SaveFormat.Pptx);
         }
     }
 }

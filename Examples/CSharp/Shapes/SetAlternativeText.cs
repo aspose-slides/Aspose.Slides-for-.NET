@@ -41,8 +41,8 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
                 }
             }
 
-            //Save presentation to disk
-            pres.Save(dataDir + "Set_AlternativeText.pptx", SaveFormat.Pptx);
+            // Save presentation to disk
+            pres.Save(dataDir + "Set_AlternativeText_out.pptx", SaveFormat.Pptx);
 
         }
     }

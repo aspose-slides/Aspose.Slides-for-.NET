@@ -11,7 +11,7 @@ namespace Aspose.Slides.Examples.CSharp.Slides
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Slides_Presentations();
 
-            //Instantiate the Presentation class that represents the presentation file
+            // Instantiate the Presentation class that represents the presentation file
             using (Presentation pres = new Presentation(dataDir + "SetBackgroundToGradient.pptx"))
             {
 
@@ -21,7 +21,7 @@ namespace Aspose.Slides.Examples.CSharp.Slides
                 pres.Slides[0].Background.FillFormat.GradientFormat.TileFlip = TileFlip.FlipBoth;
 
                 //Write the presentation to disk
-                pres.Save(dataDir + "ContentBG_Grad.pptx", SaveFormat.Pptx);
+                pres.Save(dataDir + "ContentBG_Grad_out.pptx", SaveFormat.Pptx);
             }
  
         }

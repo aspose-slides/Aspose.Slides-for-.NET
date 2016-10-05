@@ -4,9 +4,9 @@ Imports Aspose.Slides
 
 'This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Slides for .NET API reference 
 'when the project is build. Please check https://docs.nuget.org/consume/nuget-faq for more information. 
-'If you do not wish to use NuGet, you can manually download Aspose.Slides for .NET API from http://www.aspose.com/downloads, 
-'install it and then add its reference to this project. For any issues, questions or suggestions 
-'please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
+' If you do not wish to use NuGet, you can manually download Aspose.Slides for .NET API from http://www.aspose.com/downloads, 
+' Install it and then add its reference to this project. For any issues, questions or suggestions 
+' Please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
 
 Namespace Aspose.Slides.Examples.VisualBasic.Shapes
     Public Class SettAlternativeText
@@ -27,8 +27,6 @@ Namespace Aspose.Slides.Examples.VisualBasic.Shapes
             shp2.FillFormat.FillType = FillType.Solid
             shp2.FillFormat.SolidFillColor.Color = Color.Gray
 
-
-
             For i As Integer = 0 To sld.Shapes.Count - 1
                 Dim autoShape As AutoShape = TryCast(sld.Shapes(i), AutoShape)
                 If (autoShape IsNot Nothing) Then
@@ -36,8 +34,8 @@ Namespace Aspose.Slides.Examples.VisualBasic.Shapes
                 End If
             Next
 
-            'Save presentation to disk
-            pres.Save(dataDir + "Set_AlternativeText.pptx", SaveFormat.Pptx)
+            ' Save presentation to disk
+            pres.Save(dataDir + "Set_AlternativeText_out.pptx", SaveFormat.Pptx)
 
         End Sub
     End Class

@@ -61,7 +61,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
 
                 // ExEnd:SetTextFontProperties
                 // Write the PPTX to disk 
-                presentation.Save(dataDir + "SetTextFontProperties.pptx", SaveFormat.Pptx);
+                presentation.Save(dataDir + "SetTextFontProperties_out.pptx", SaveFormat.Pptx);
             }
         }
     }

@@ -1,7 +1,3 @@
-Imports Microsoft.VisualBasic
-Imports System.IO
-
-Imports Aspose.Slides
 Imports Aspose.Slides.Export
 
 Namespace Aspose.Slides.Examples.VisualBasic.Shapes
@@ -16,20 +12,20 @@ Namespace Aspose.Slides.Examples.VisualBasic.Shapes
                 System.IO.Directory.CreateDirectory(dataDir)
             End If
 
-            'Instantiate PrseetationEx class that represents the PPTX
+            ' Instantiate PrseetationEx class that represents the PPTX
             Using pres As New Presentation()
 
-                'Get the first slide
+                ' Get the first slide
                 Dim sld As ISlide = pres.Slides(0)
 
-                'Add autoshape of rectangle type
+                ' Add autoshape of rectangle type
                 Dim shp As IShape = sld.Shapes.AddAutoShape(ShapeType.Rectangle, 50, 150, 75, 150)
 
-                'Rotate the shape to 90 degree
+                ' Rotate the shape to 90 degree
                 shp.Rotation = 90
 
                 'Write the PPTX file to disk
-                pres.Save(dataDir & "RectShpRot.pptx", SaveFormat.Pptx)
+                pres.Save(dataDir & "RectShpRot_out.pptx", SaveFormat.Pptx)
             End Using
         End Sub
     End Class

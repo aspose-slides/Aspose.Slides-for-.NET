@@ -13,7 +13,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Text();
 
-            // Use load options to define the default regualr and asian fonts//Use load options to define the default regualr and asian fonts
+            // Use load options to define the default regualr and asian fonts// Use load options to define the default regualr and asian fonts
             LoadOptions loadOptions = new LoadOptions(LoadFormat.Auto);
             loadOptions.DefaultRegularFont = "Wingdings";
             loadOptions.DefaultAsianFont = "Wingdings";
@@ -22,13 +22,13 @@ namespace Aspose.Slides.Examples.CSharp.Text
             using (Presentation pptx = new Presentation(dataDir + "DefaultFonts.pptx", loadOptions))
             {
                 // Generate slide thumbnail
-                pptx.Slides[0].GetThumbnail(1, 1).Save(dataDir+ "output.png", ImageFormat.Png);
+                pptx.Slides[0].GetThumbnail(1, 1).Save(dataDir + "output_out.png", ImageFormat.Png);
 
                 // Generate PDF
-                pptx.Save(dataDir +  "output.pdf", SaveFormat.Pdf);
+                pptx.Save(dataDir + "output_out.pdf", SaveFormat.Pdf);
 
                 // Generate XPS
-                pptx.Save(dataDir+ "output.xps", SaveFormat.Xps);
+                pptx.Save(dataDir + "output_out.xps", SaveFormat.Xps);
             }
         }
     }

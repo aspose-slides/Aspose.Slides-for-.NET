@@ -49,7 +49,7 @@ namespace Aspose.Slides.Examples.CSharp.Charts
                 EffectType.Appear, EffectSubtype.None, EffectTriggerType.AfterPrevious);
 
                 // Write the modified presentation to disk 
-                presentation.Save(dataDir + "AnimatingSeries.pptx", SaveFormat.Pptx);
+                presentation.Save(dataDir + "AnimatingSeries_out.pptx", SaveFormat.Pptx);
             }
         }
     }

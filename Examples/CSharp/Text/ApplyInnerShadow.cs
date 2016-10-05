@@ -23,7 +23,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
             if (!IsExists)
                 System.IO.Directory.CreateDirectory(dataDir);
 
-            // Instantiate PresentationEx//Instantiate PresentationEx
+            // Instantiate PresentationEx// Instantiate PresentationEx
             using (Presentation pres = new Presentation())
             {
                 // Get the first slide
@@ -49,7 +49,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
 
                 // ExEnd:ApplyInnerShadow
                 // Save the presentation to disk
-                pres.Save(dataDir + "ApplyInnerShadow.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
+                pres.Save(dataDir + "ApplyInnerShadow_out.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
             }
         }
     }

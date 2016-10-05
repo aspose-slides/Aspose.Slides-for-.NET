@@ -33,7 +33,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Shapes
                 ishape.LineFormat.Width = 5
 
                 ' Write the PPTX file to disk
-                presentation.Save(dataDir & "EllipseShp2.pptx", SaveFormat.Pptx)
+                presentation.Save(dataDir & "EllipseShp2_out.pptx", SaveFormat.Pptx)
 
             End Using
 

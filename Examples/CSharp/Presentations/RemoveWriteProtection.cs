@@ -18,16 +18,16 @@ namespace Aspose.Slides.Examples.CSharp.Presentations
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Presentations();
 
-            //Opening the presentation file
+            // Opening the presentation file
             Presentation presentation = new Presentation(dataDir + "RemoveWriteProtection.pptx");
 
-            //Checking if presentation is write protected
+            // Checking if presentation is write protected
             if (presentation.ProtectionManager.IsWriteProtected)
-                //Removing Write protection                
+                // Removing Write protection                
                 presentation.ProtectionManager.RemoveWriteProtection();
 
-            //Saving presentation
-            presentation.Save(dataDir + "File_Without_WriteProtection.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
+            // Saving presentation
+            presentation.Save(dataDir + "File_Without_WriteProtection_out.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
         }
     }
 }

@@ -15,7 +15,7 @@ namespace Aspose.Slides.Examples.CSharp.Tables
             if (!IsExists)
                 System.IO.Directory.CreateDirectory(dataDir);
 
-            //Instantiate Presentation class that represents PPTX file
+            // Instantiate Presentation class that represents PPTX file
             using (Presentation pres = new Presentation())
             {
 
@@ -31,7 +31,7 @@ namespace Aspose.Slides.Examples.CSharp.Tables
                 //Add table shape to slide
                 ITable tbl = sld.Shapes.AddTable(100, 50, dblCols, dblRows);
 
-                //Set border format for each cell
+                // Set border format for each cell
                 foreach (IRow row in tbl.Rows)
                     foreach (ICell cell in row)
                     {
@@ -41,10 +41,8 @@ namespace Aspose.Slides.Examples.CSharp.Tables
                         cell.BorderRight.FillFormat.FillType = FillType.NoFill;
                     }
 
-
-
                 //Write PPTX to Disk
-                pres.Save(dataDir + "table.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
+                pres.Save(dataDir + "table_out.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
             }
 
         }

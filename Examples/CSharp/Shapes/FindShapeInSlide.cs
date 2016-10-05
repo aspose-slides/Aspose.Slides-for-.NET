@@ -18,7 +18,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
             if (!IsExists)
                 System.IO.Directory.CreateDirectory(dataDir);
 
-            //Instantiate a Presentation class that represents the presentation file
+            // Instantiate a Presentation class that represents the presentation file
             using (Presentation p = new Presentation(dataDir + "FindingShapeInSlide.pptx"))
             {
 
@@ -32,14 +32,14 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
             }
         }
         
-        //Method implementation to find a shape in a slide using its alternative text
+        // Method implementation to find a shape in a slide using its alternative text
         public static IShape FindShape(ISlide slide, string alttext)
         {
-            //Iterating through all shapes inside the slide
+            // Iterating through all shapes inside the slide
             for (int i = 0; i < slide.Shapes.Count; i++)
             {
-                //If the alternative text of the slide matches with the required one then
-                //return the shape
+                // If the alternative text of the slide matches with the required one then
+                // Return the shape
                 if (slide.Shapes[i].AlternativeText.CompareTo(alttext) == 0)
                     return slide.Shapes[i];
             }

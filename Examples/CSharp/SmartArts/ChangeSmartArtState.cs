@@ -16,7 +16,7 @@ namespace Aspose.Slides.Examples.CSharp.SmartArts
     {
         public static void Run()
         {
-            //ExStart:ChangeSmartArtState
+            // ExStart:ChangeSmartArtState
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_SmartArts();
 
@@ -29,9 +29,9 @@ namespace Aspose.Slides.Examples.CSharp.SmartArts
                 smart.IsReversed = true;
                 bool flag = smart.IsReversed;
 
-                //ExEnd:ChangeSmartArtState
+                // ExEnd:ChangeSmartArtState
                 // Saving Presentation
-                presentation.Save(dataDir + "ChangeSmartArtState.pptx", SaveFormat.Pptx);
+                presentation.Save(dataDir + "ChangeSmartArtState_out.pptx", SaveFormat.Pptx);
             }
         }
     }

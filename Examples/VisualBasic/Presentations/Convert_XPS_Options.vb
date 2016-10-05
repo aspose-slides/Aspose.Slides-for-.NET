@@ -24,7 +24,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Presentations
                 options.SaveMetafilesAsPng = True
 
                 ' Save the presentation to XPS document
-                presentation.Save(dataDir & "XPS_With_Options.xps", Aspose.Slides.Export.SaveFormat.Xps, options)
+                presentation.Save(dataDir & "XPS_With_Options_out.xps", Aspose.Slides.Export.SaveFormat.Xps, options)
 
             End Using
         End Sub

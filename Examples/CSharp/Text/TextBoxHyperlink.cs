@@ -15,16 +15,16 @@ namespace Aspose.Slides.Examples.CSharp.Text
             if (!IsExists)
                 System.IO.Directory.CreateDirectory(dataDir);
 
-            //Instantiate a Presentation class that represents a PPTX
+            // Instantiate a Presentation class that represents a PPTX
             Presentation pptxPresentation = new Presentation();
 
-            //Get first slide
+            // Get first slide
             ISlide slide = pptxPresentation.Slides[0];
 
             //Add an AutoShape of Rectangle Type
             IShape pptxShape = slide.Shapes.AddAutoShape(ShapeType.Rectangle, 150, 150, 150, 50);
 
-            //Cast the shape to AutoShape
+            // Cast the shape to AutoShape
             IAutoShape pptxAutoShape = (IAutoShape)pptxShape;
 
             //Access ITextFrame associated with the AutoShape
@@ -35,13 +35,13 @@ namespace Aspose.Slides.Examples.CSharp.Text
             //Add some text to the frame
             ITextFrame.Paragraphs[0].Portions[0].Text = "Aspose.Slides";
 
-            //Set Hyperlink for the portion text
+            // Set Hyperlink for the portion text
             IHyperlinkManager HypMan = ITextFrame.Paragraphs[0].Portions[0].PortionFormat.HyperlinkManager;
             HypMan.SetExternalHyperlinkClick("http://www.aspose.com");
 
 
-            //Save the PPTX Presentation
-            pptxPresentation.Save(dataDir + "hLinkPPTX.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
+            // Save the PPTX Presentation
+            pptxPresentation.Save(dataDir + "hLinkPPTX_out.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
 
         }
     }

@@ -33,7 +33,7 @@ namespace Aspose.Slides.Examples.CSharp.Tables
                 //Add table shape to slide
                 ITable table = slide.Shapes.AddTable(100, 50, dblCols, dblRows);
 
-                //Set border format for each cell
+                // Set border format for each cell
                 foreach (IRow row in table.Rows)
                 {
                     foreach (ICell cell in row)
@@ -68,7 +68,7 @@ namespace Aspose.Slides.Examples.CSharp.Tables
                 table.MergeCells(table[1, 1], table[1, 2], true);
 
                 //Write PPTX to Disk
-                presentation.Save(dataDir + "MergeCells1.pptx", SaveFormat.Pptx);
+                presentation.Save(dataDir + "MergeCells1_out.pptx", SaveFormat.Pptx);
 
 
             }

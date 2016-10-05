@@ -19,17 +19,17 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
             if (!IsExists)
                 System.IO.Directory.CreateDirectory(dataDir);
 
-            //Instantiate Prseetation class that represents the PPTX
+            // Instantiate Prseetation class that represents the PPTX
             using (Presentation pres = new Presentation())
             {
 
-                //Get the first slide
+                // Get the first slide
                 ISlide sld = pres.Slides[0];
 
                 //Add autoshape of rectangle type
                 IShape shp = sld.Shapes.AddAutoShape(ShapeType.Rectangle, 50, 150, 150, 75);
 
-                //Set the fill color of the rectangle shape
+                // Set the fill color of the rectangle shape
                 shp.FillFormat.FillType = FillType.Solid;
                 shp.FillFormat.SolidFillColor.Color = Color.White;
 
@@ -38,12 +38,12 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
                 shp.LineFormat.Width = 7;
                 shp.LineFormat.DashStyle = LineDashStyle.Dash;
 
-                //set the color of the line of rectangle
+                // Set the color of the line of rectangle
                 shp.LineFormat.FillFormat.FillType = FillType.Solid;
                 shp.LineFormat.FillFormat.SolidFillColor.Color = Color.Blue;
 
                 //Write the PPTX file to disk
-                pres.Save(dataDir + "RectShpLn.pptx", SaveFormat.Pptx);
+                pres.Save(dataDir + "RectShpLn_out.pptx", SaveFormat.Pptx);
 
             } 
         }

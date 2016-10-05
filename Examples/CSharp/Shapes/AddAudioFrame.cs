@@ -17,25 +17,25 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
             if (!IsExists)
                 System.IO.Directory.CreateDirectory(dataDir);
 
-            //Instantiate Prseetation class that represents the PPTX
+            // Instantiate Prseetation class that represents the PPTX
             using (Presentation pres = new Presentation())
             {
 
-                //Get the first slide
+                // Get the first slide
                 ISlide sld = pres.Slides[0];
 
-                //Load the wav sound file to stram
+                // Load the wav sound file to stram
                 FileStream fstr = new FileStream(dataDir+ "sampleaudio.wav", FileMode.Open, FileAccess.Read);
 
                 //Add Audio Frame
                 IAudioFrame af = sld.Shapes.AddAudioFrameEmbedded(50, 150, 100, 100, fstr);
 
-                //Set Play Mode and Volume of the Audio
+                // Set Play Mode and Volume of the Audio
                 af.PlayMode = AudioPlayModePreset.Auto;
                 af.Volume = AudioVolumeMode.Loud;
 
                 //Write the PPTX file to disk
-                pres.Save(dataDir+ "AudioFrameEmbed.pptx", SaveFormat.Pptx);
+                pres.Save(dataDir + "AudioFrameEmbed_out.pptx", SaveFormat.Pptx);
             }
 
             

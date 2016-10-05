@@ -71,7 +71,7 @@ namespace Aspose.Slides.Examples.CSharp.Charts
             }
 
             // Save presentation with chart
-            presentation.Save(dataDir + "DisplayPercentageAsLabels.pptx", SaveFormat.Pptx);
+            presentation.Save(dataDir + "DisplayPercentageAsLabels_out.pptx", SaveFormat.Pptx);
 
         }
     }

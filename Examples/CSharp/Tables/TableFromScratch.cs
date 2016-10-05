@@ -12,7 +12,7 @@ namespace Aspose.Slides.Examples.CSharp.Tables
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Tables();
 
-            // Instantiate Presentation class that represents PPTX//Instantiate Presentation class that represents PPTX
+            // Instantiate Presentation class that represents PPTX// Instantiate Presentation class that represents PPTX
             using (Presentation presentation = new Presentation(dataDir + "UpdateExistingTable.pptx"))
             {
                 // Access the first slide
@@ -30,7 +30,7 @@ namespace Aspose.Slides.Examples.CSharp.Tables
                 table[0, 1].TextFrame.Text = "New";
 
                 // Write the PPTX to Disk
-                presentation.Save(dataDir + "UpdateTable.pptx", SaveFormat.Pptx);
+                presentation.Save(dataDir + "UpdateTable_out.pptx", SaveFormat.Pptx);
             }
         }
     }

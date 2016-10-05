@@ -20,7 +20,7 @@ namespace Aspose.Slides.Examples.CSharp.Slides
             string dataDir = RunExamples.GetDataDir_Slides_Presentations();
 
             // ExStart:ManagSimpleSlideTransitions
-            //Instantiate Presentation class to load the source presentation file
+            // Instantiate Presentation class to load the source presentation file
             using (Presentation presentation = new Presentation(dataDir + "AccessSlides.pptx"))
             {
                 //Apply circle type transition on slide 1
@@ -31,7 +31,7 @@ namespace Aspose.Slides.Examples.CSharp.Slides
 
                 // ExEnd:ManagSimpleSlideTransitions
                 //Write the presentation to disk
-                presentation.Save(dataDir + "SampleTransition.pptx", SaveFormat.Pptx);
+                presentation.Save(dataDir + "SampleTransition_out.pptx", SaveFormat.Pptx);
             }
         }
     }

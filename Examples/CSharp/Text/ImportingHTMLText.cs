@@ -11,7 +11,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Text();
 
-            //Create Empty presentation instance//Create Empty presentation instance
+            // Create Empty presentation instance// Create Empty presentation instance
             using (Presentation pres = new Presentation())
             {
                 //Acesss the default first slide of presentation
@@ -25,17 +25,17 @@ namespace Aspose.Slides.Examples.CSharp.Text
                 //Adding text frame to the shape
                 ashape.AddTextFrame("");
 
-                //Clearing all paragraphs in added text frame
+                // Clearing all paragraphs in added text frame
                 ashape.TextFrame.Paragraphs.Clear();
 
-                //Loading the HTML file using stream reader
+                // Loading the HTML file using stream reader
                 TextReader tr = new StreamReader(dataDir + "file.html");
 
                 //Adding text from HTML stream reader in text frame
                 ashape.TextFrame.Paragraphs.AddFromHtml(tr.ReadToEnd());
 
-                //Saving Presentation
-                pres.Save(dataDir + "output.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
+                // Saving Presentation
+                pres.Save(dataDir + "output_out.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
 
             }
  

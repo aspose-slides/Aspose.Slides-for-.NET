@@ -17,13 +17,13 @@ Namespace Aspose.Slides.Examples.VisualBasic.Shapes
                 System.IO.Directory.CreateDirectory(dataDir)
             End If
 
-            'Instantiate Prseetation class that represents the PPTX
+            ' Instantiate Prseetation class that represents the PPTX
             Dim pres As New Presentation()
 
-            'Access the first slide
+            ' Access the first slide
             Dim sld As ISlide = pres.Slides(0)
 
-            'Load an cel file to stream
+            ' Load an cel file to stream
             Dim fs As New FileStream(dataDir & "book1.xlsx", FileMode.Open, FileAccess.Read)
             Dim mstream As New MemoryStream()
             Dim buf(4095) As Byte
@@ -36,11 +36,11 @@ Namespace Aspose.Slides.Examples.VisualBasic.Shapes
                 mstream.Write(buf, 0, bytesRead)
             Loop
 
-            'Add an Ole Object Frame shape
+            ' Add an Ole Object Frame shape
             Dim oof As IOleObjectFrame = sld.Shapes.AddOleObjectFrame(0, 0, pres.SlideSize.Size.Width, pres.SlideSize.Size.Height, "Excel.Sheet.12", mstream.ToArray())
 
             'Write the PPTX to disk
-            pres.Save(dataDir & "OleEmbed.pptx", SaveFormat.Pptx)
+            pres.Save(dataDir & "OleEmbed_out.pptx", SaveFormat.Pptx)
 
 
         End Sub

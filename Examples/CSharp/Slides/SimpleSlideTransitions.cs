@@ -13,7 +13,7 @@ namespace Aspose.Slides.Examples.CSharp.Slides
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Slides_Presentations();
 
-            //Instantiate Presentation class that represents a presentation file
+            // Instantiate Presentation class that represents a presentation file
             using (Presentation pres = new Presentation(dataDir + "SimpleSlideTransitions.pptx"))
             {
 
@@ -24,7 +24,7 @@ namespace Aspose.Slides.Examples.CSharp.Slides
                 pres.Slides[1].SlideShowTransition.Type = TransitionType.Comb;
 
                 //Write the presentation to disk
-                pres.Save(dataDir + "SampleTransition.pptx", SaveFormat.Pptx);
+                pres.Save(dataDir + "SampleTransition_out.pptx", SaveFormat.Pptx);
 
             }
         }

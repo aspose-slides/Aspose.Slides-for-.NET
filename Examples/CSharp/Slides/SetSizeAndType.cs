@@ -19,21 +19,21 @@ namespace Aspose.Slides.Examples.CSharp.Slides
             string dataDir = RunExamples.GetDataDir_Slides_Presentations();
 
             // ExStart:SettSizeAndType
-            //Instantiate a Presentation object that represents a presentation file 
+            // Instantiate a Presentation object that represents a presentation file 
             Presentation presentation = new Presentation(dataDir + "AccessSlides.pptx");
             Presentation auxPresentation = new Presentation();
 
             ISlide slide = presentation.Slides[0];
 
-            //Set the slide size of generated presentations to that of source
+            // Set the slide size of generated presentations to that of source
             auxPresentation.SlideSize.Type = presentation.SlideSize.Type;
             auxPresentation.SlideSize.Size = presentation.SlideSize.Size;
 
             auxPresentation.Slides.InsertClone(0, slide);
             auxPresentation.Slides.RemoveAt(0);
             // ExEnd:SettSizeAndType
-            //Save Presentation to disk
-            auxPresentation.Save(dataDir + "Set_Size&Type.pptx", SaveFormat.Pptx);
+            // Save Presentation to disk
+            auxPresentation.Save(dataDir + "Set_Size&Type_out.pptx", SaveFormat.Pptx);
         }
     }
 }

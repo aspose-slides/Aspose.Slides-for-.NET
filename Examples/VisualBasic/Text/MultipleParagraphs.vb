@@ -17,19 +17,19 @@ Namespace Aspose.Slides.Examples.VisualBasic.Text
                 System.IO.Directory.CreateDirectory(dataDir)
             End If
 
-            'Instantiate a Presentation class that represents a PPTX file
+            ' Instantiate a Presentation class that represents a PPTX file
             Using pres As New Presentation()
 
-                'Accessing first slide
+                ' Accessing first slide
                 Dim slide As ISlide = pres.Slides(0)
 
-                'Add an AutoShape of Rectangle type
+                ' Add an AutoShape of Rectangle type
                 Dim ashp As IAutoShape = slide.Shapes.AddAutoShape(ShapeType.Rectangle, 50, 150, 300, 150)
 
-                'Access TextFrame of the AutoShape
+                ' Access TextFrame of the AutoShape
                 Dim tf As ITextFrame = ashp.TextFrame
 
-                'Create Paragraphs and Portions with different text formats
+                ' Create Paragraphs and Portions with different text formats
                 Dim para0 As IParagraph = tf.Paragraphs(0)
                 Dim port01 As IPortion = New Portion()
                 Dim port02 As IPortion = New Portion()
@@ -72,7 +72,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Text
                 Next i
 
                 'Write PPTX to Disk
-                pres.Save(dataDir & "multiParaPort.pptx", SaveFormat.Pptx)
+                pres.Save(dataDir & "multiParaPort_out.pptx", SaveFormat.Pptx)
             End Using
 
         End Sub

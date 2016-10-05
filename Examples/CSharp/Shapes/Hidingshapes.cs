@@ -40,7 +40,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
             }
 
             // Save presentation to disk
-            pres.Save(dataDir + "Hiding_Shapes.pptx", SaveFormat.Pptx);
+            pres.Save(dataDir + "Hiding_Shapes_out.pptx", SaveFormat.Pptx);
 
         }
     }

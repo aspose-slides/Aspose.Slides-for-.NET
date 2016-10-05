@@ -1,7 +1,4 @@
-Imports Microsoft.VisualBasic
-Imports System.IO
-
-Imports Aspose.Slides
+Imports System
 Imports Aspose.Slides.Export
 
 Namespace Aspose.Slides.Examples.VisualBasic.Presentations
@@ -11,13 +8,14 @@ Namespace Aspose.Slides.Examples.VisualBasic.Presentations
             Dim dataDir As String = RunExamples.GetDataDir_Presentations()
 
             ' Instantiate a Presentation object that represents a presentation file
-            Using presentation As New Presentation(dataDir & "Convert_HTML.pptx")
-
-                Dim htmlOpt As New HtmlOptions()
-                htmlOpt.HtmlFormatter = HtmlFormatter.CreateDocumentFormatter("", False)
+            Using presentation As New Presentation(dataDir & Convert.ToString("Convert_HTML.pptx"))
+                Dim controller As New ResponsiveHtmlController()
+                Dim htmlOptions As New HtmlOptions() With { _
+                    .HtmlFormatter = HtmlFormatter.CreateCustomFormatter(controller) _
+                }
 
                 ' Saving the presentation to HTML
-                presentation.Save(dataDir & "demo.html", Aspose.Slides.Export.SaveFormat.Html, htmlOpt)
+                presentation.Save(dataDir & Convert.ToString("Convert_HTML_out.html"), Aspose.Slides.Export.SaveFormat.Html, htmlOptions)
             End Using
         End Sub
     End Class

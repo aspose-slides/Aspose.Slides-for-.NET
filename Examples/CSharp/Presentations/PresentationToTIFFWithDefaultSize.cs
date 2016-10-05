@@ -22,7 +22,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations
             using (Presentation presentation = new Presentation(dataDir + "DemoFile.pptx"))
             {
                 // Saving the presentation to TIFF document
-                presentation.Save(dataDir+"Tiffoutput.tiff", SaveFormat.Tiff);
+                presentation.Save(dataDir + "Tiffoutput_out.tiff", SaveFormat.Tiff);
             }
         }
     }

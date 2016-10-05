@@ -17,21 +17,21 @@ Namespace Aspose.Slides.Examples.VisualBasic.Slides
             End If
 
 
-            'Instantiate Presentation class that represents the presentation file
+            ' Instantiate Presentation class that represents the presentation file
             Using pres As New Presentation()
 
-                'Instantiate SlideCollection calss
+                ' Instantiate SlideCollection calss
                 Dim slds As ISlideCollection = pres.Slides
 
                 For i As Integer = 0 To pres.LayoutSlides.Count - 1
-                    'Add an empty slide to the Slides collection
+                    ' Add an empty slide to the Slides collection
                     slds.AddEmptySlide(pres.LayoutSlides(i))
 
                 Next i
-                'Do some work on the newly added slide
+                ' Do some work on the newly added slide
 
-                'Save the PPTX file to the Disk
-                pres.Save(dataDir & "EmptySlide.pptx", Aspose.Slides.Export.SaveFormat.Pptx)
+                ' Save the PPTX file to the Disk
+                pres.Save(dataDir & "EmptySlide_out.pptx", Aspose.Slides.Export.SaveFormat.Pptx)
 
             End Using
         End Sub

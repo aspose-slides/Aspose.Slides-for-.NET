@@ -29,7 +29,7 @@ namespace Aspose.Slides.Examples.CSharp.Slides
 
             // ExEnd:SetTransitionEffects
             // Write the presentation to disk
-            presentation.Save(dataDir + "SetTransitionEffects.pptx", SaveFormat.Pptx);
+            presentation.Save(dataDir + "SetTransitionEffects_out.pptx", SaveFormat.Pptx);
         }
     }
 }

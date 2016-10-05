@@ -18,7 +18,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
             if (!IsExists)
                 System.IO.Directory.CreateDirectory(dataDir);
 
-            //Instantiate a Presentation class that represents a PPTX file
+            // Instantiate a Presentation class that represents a PPTX file
             using (Presentation pres = new Presentation())
             {
                 //Accessing first slide
@@ -30,7 +30,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
                 //Access TextFrame of the AutoShape
                 ITextFrame tf = ashp.TextFrame;
 
-                //Create Paragraphs and Portions with different text formats
+                // Create Paragraphs and Portions with different text formats
                 IParagraph para0 = tf.Paragraphs[0];
                 IPortion port01 = new Portion();
                 IPortion port02 = new Portion();
@@ -76,7 +76,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
                     }
 
                 //Write PPTX to Disk
-                pres.Save(dataDir + "multiParaPort.pptx", SaveFormat.Pptx);
+                pres.Save(dataDir + "multiParaPort_out.pptx", SaveFormat.Pptx);
             }
 
         }

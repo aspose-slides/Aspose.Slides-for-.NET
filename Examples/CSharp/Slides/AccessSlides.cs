@@ -11,7 +11,7 @@ namespace Aspose.Slides.Examples.CSharp.Slides
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Slides_Presentations();
 
-            //Instantiate a Presentation object that represents a presentation file
+            // Instantiate a Presentation object that represents a presentation file
             using (Presentation pres = new Presentation(dataDir + "AccessSlides.pptx"))
             {
 

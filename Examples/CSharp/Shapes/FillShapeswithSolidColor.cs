@@ -22,20 +22,20 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
             // Create an instance of Presentation class
             Presentation presentation = new Presentation();
 
-            //Get the first slide
+            // Get the first slide
             ISlide slide = presentation.Slides[0];
 
             //Add autoshape of rectangle type
             IShape shape = slide.Shapes.AddAutoShape(ShapeType.Rectangle, 50, 150, 75, 150);
 
-            //Set the fill type to Solid
+            // Set the fill type to Solid
             shape.FillFormat.FillType = FillType.Solid;
 
-            //Set the color of the rectangle
+            // Set the color of the rectangle
             shape.FillFormat.SolidFillColor.Color = Color.Yellow;
 
             //Write the PPTX file to disk
-            presentation.Save(dataDir + "RectShpSolid.pptx", SaveFormat.Pptx);
+            presentation.Save(dataDir + "RectShpSolid_out.pptx", SaveFormat.Pptx);
         }
     }
 }

@@ -27,7 +27,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations
                 // Add an autoshape of type line
                 slide.Shapes.AddAutoShape(ShapeType.Line, 50, 150, 300, 0);
 
-                presentation.Save(dataDir + "NewPresentation.pptx", SaveFormat.Pptx);
+                presentation.Save(dataDir + "NewPresentation_out.pptx", SaveFormat.Pptx);
             }
         } 
     }

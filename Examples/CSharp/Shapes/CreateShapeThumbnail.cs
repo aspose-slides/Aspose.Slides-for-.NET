@@ -25,8 +25,8 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
                 // Create a full scale image
                 using (Bitmap bitmap = presentation.Slides[0].Shapes[0].GetThumbnail())
                 {
-                    //Save the image to disk in PNG format
-                    bitmap.Save(dataDir + "Shape_thumbnail.png", ImageFormat.Png);
+                    // Save the image to disk in PNG format
+                    bitmap.Save(dataDir + "Shape_thumbnail_out.png", ImageFormat.Png);
                 }
             }
         }

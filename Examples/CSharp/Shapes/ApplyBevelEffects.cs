@@ -42,7 +42,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
             shape.ThreeDFormat.LightRig.Direction = LightingDirection.Top;
 
             // Write the presentation as a PPTX file
-            pres.Save(dataDir + "Bavel.pptx", SaveFormat.Pptx);
+            pres.Save(dataDir + "Bavel_out.pptx", SaveFormat.Pptx);
         }
     }
 }

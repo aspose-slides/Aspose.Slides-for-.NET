@@ -15,16 +15,16 @@ Namespace Aspose.Slides.Examples.VisualBasic.Presentations
                 System.IO.Directory.CreateDirectory(dataDir)
             End If
 
-            'Instantiate a Presentation object that represents a PPT file
+            ' Instantiate a Presentation object that represents a PPT file
             Dim pres As New Presentation()
 
             '....do some work here.....
 
-            'Setting Write protection Password
+            ' Setting Write protection Password
             pres.ProtectionManager.SetWriteProtection("test")
 
-            'Save your presentation to a file
-            pres.Save(dataDir & "demoWriteProtected.pptx", Aspose.Slides.Export.SaveFormat.Pptx)
+            ' Save your presentation to a file
+            pres.Save(dataDir & "demoWriteProtected_out.pptx", Aspose.Slides.Export.SaveFormat.Pptx)
         End Sub
     End Class
 End Namespace

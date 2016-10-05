@@ -37,7 +37,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Shapes
                 ishape.LineFormat.FillFormat.SolidFillColor.Color = Color.Blue
 
                 ' Write the PPTX file to disk
-                presentation.Save(dataDir & "RectShpLn.pptx", SaveFormat.Pptx)
+                presentation.Save(dataDir & "RectShpLn_out.pptx", SaveFormat.Pptx)
 
             End Using
 

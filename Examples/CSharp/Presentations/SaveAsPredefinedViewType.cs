@@ -20,11 +20,11 @@ namespace Aspose.Slides.Examples.CSharp.Presentations
             // Opening the presentation file
             Presentation presentation = new Presentation();
 
-            //Setting view type 
+            // Setting view type 
             presentation.ViewProperties.LastView = ViewType.SlideMasterView;
 
-            //Saving presentation
-            presentation.Save(dataDir + "SetViewType.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
+            // Saving presentation
+            presentation.Save(dataDir + "SetViewType_out.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
         }
     }
 }

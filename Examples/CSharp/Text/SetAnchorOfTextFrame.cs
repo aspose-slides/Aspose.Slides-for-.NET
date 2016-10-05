@@ -19,7 +19,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Text();
 
-            //ExStart:SetAnchorOfTextFrame
+            // ExStart:SetAnchorOfTextFrame
             // Create an instance of Presentation class
             Presentation presentation = new Presentation();
 
@@ -40,15 +40,15 @@ namespace Aspose.Slides.Examples.CSharp.Text
             // Create the Paragraph object for text frame
             IParagraph para = txtFrame.Paragraphs[0];
 
-            //Create Portion object for paragraph
+            // Create Portion object for paragraph
             IPortion portion = para.Portions[0];
             portion.Text = "A quick brown fox jumps over the lazy dog. A quick brown fox jumps over the lazy dog.";
             portion.PortionFormat.FillFormat.FillType = FillType.Solid;
             portion.PortionFormat.FillFormat.SolidFillColor.Color = Color.Black;
 
-            //ExEnd:SetAnchorOfTextFrame
+            // ExEnd:SetAnchorOfTextFrame
             // Save Presentation
-            presentation.Save(dataDir + "AnchorText.pptx", SaveFormat.Pptx); 
+            presentation.Save(dataDir + "AnchorText_out.pptx", SaveFormat.Pptx); 
 
         }
     }

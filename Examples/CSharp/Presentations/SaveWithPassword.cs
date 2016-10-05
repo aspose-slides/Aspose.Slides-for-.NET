@@ -16,16 +16,16 @@ namespace Aspose.Slides.Examples.CSharp.Presentations
             if (!IsExists)
                 System.IO.Directory.CreateDirectory(dataDir);
 
-            //Instantiate a Presentation object that represents a PPT file
+            // Instantiate a Presentation object that represents a PPT file
             Presentation pres = new Presentation();
 
             //....do some work here.....
 
-            //Setting Password
+            // Setting Password
             pres.ProtectionManager.Encrypt("pass");
 
-            //Save your presentation to a file
-            pres.Save(dataDir + "demoPass.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
+            // Save your presentation to a file
+            pres.Save(dataDir + "demoPass_out.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
         }
     }
 }
