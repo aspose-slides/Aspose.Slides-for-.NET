@@ -24,7 +24,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
                 // Get the first slide
                 ISlide sld = pres.Slides[0];
 
-                //Add autoshape of ellipse type
+                // Add autoshape of ellipse type
                 sld.Shapes.AddAutoShape(ShapeType.Ellipse, 50, 150, 150, 50);
 
                 //Write the PPTX file to disk

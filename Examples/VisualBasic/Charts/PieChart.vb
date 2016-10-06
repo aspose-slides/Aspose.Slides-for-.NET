@@ -62,7 +62,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Charts
 
             ' Not working in new version
             ' Adding new points and setting sector color
-            ' series.IsColorVaried = true;
+            ' series.IsColorVaried = true
             chart.ChartData.SeriesGroups(0).IsColorVaried = True
 
             Dim point As IChartDataPoint = series.DataPoints(0)
@@ -100,7 +100,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Charts
             ' Create custom labels for each of categories for new series
 
             Dim lbl1 As IDataLabel = series.DataPoints(0).Label
-            ' lbl.ShowCategoryName = true;
+            ' lbl.ShowCategoryName = true
 
             lbl1.DataLabelFormat.ShowValue = True
 

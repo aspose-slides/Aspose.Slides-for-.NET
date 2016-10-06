@@ -23,14 +23,14 @@ namespace Aspose.Slides.Examples.CSharp.Text
             using (Presentation pres = new Presentation())
             {
 
-                //Accessing the first slide
+                // Accessing the first slide
                 ISlide slide = pres.Slides[0];
 
 
-                //Adding and accessing Autoshape
+                // Adding and accessing Autoshape
                 IAutoShape aShp = slide.Shapes.AddAutoShape(ShapeType.Rectangle, 200, 200, 400, 200);
 
-                //Accessing the text frame of created autoshape
+                // Accessing the text frame of created autoshape
                 ITextFrame txtFrm = aShp.TextFrame;
 
                 // Removing the default exisiting paragraph
@@ -57,7 +57,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
                 // Setting Bullet Height
                 para.ParagraphFormat.Bullet.Height = 100;
 
-                //Adding Paragraph to text frame
+                // Adding Paragraph to text frame
                 txtFrm.Paragraphs.Add(para);
 
                 // Creating second paragraph
@@ -67,7 +67,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
                 para2.ParagraphFormat.Bullet.Type = BulletType.Numbered;
                 para2.ParagraphFormat.Bullet.NumberedBulletStyle = NumberedBulletStyle.BulletCircleNumWDBlackPlain;
 
-                //Adding paragraph text
+                // Adding paragraph text
                 para2.Text = "This is numbered bullet";
 
                 // Setting bullet indent
@@ -80,7 +80,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
                 // Setting Bullet Height
                 para2.ParagraphFormat.Bullet.Height = 100;
 
-                //Adding Paragraph to text frame
+                // Adding Paragraph to text frame
                 txtFrm.Paragraphs.Add(para2);
 
 

@@ -22,7 +22,7 @@ namespace Aspose.Slides.Examples.CSharp.VBA
             // Instantiate Presentation
             using (Presentation presentation = new Presentation(dataDir + "VBA.pptm"))
             {
-                //Access the Vba module and remove 
+                // Access the Vba module and remove 
                 presentation.VbaProject.Modules.Remove(presentation.VbaProject.Modules[0]);
 
                 // ExEnd:RemoveVBAMacros

@@ -16,7 +16,7 @@ namespace Aspose.Slides.Examples.CSharp.Charts
             // Instantiate Presentation class that represents PPTX file// Instantiate Presentation class that represents PPTX file
             Presentation pres = new Presentation(dataDir + "ExistingChart.pptx");
 
-            //Access first slideMarker
+            // Access first slideMarker
             ISlide sld = pres.Slides[0];
 
             // Add chart with default data

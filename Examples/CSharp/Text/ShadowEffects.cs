@@ -24,11 +24,11 @@ namespace Aspose.Slides.Examples.CSharp.Text
                 // Get reference of the slide
                 ISlide sld = pres.Slides[0];
 
-                //Add an AutoShape of Rectangle type
+                // Add an AutoShape of Rectangle type
                 IAutoShape ashp = sld.Shapes.AddAutoShape(ShapeType.Rectangle, 150, 75, 150, 50);
 
 
-                //Add TextFrame to the Rectangle
+                // Add TextFrame to the Rectangle
                 ashp.AddTextFrame("Aspose TextBox");
 
                 // Disable shape fill in case we want to get shadow of text

@@ -9,7 +9,7 @@ Imports Aspose.Slides
 ' Please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
 
 Namespace Aspose.Slides.Examples.VisualBasic.Shapes
-    Public Class SettAlternativeText
+    Public Class SetAlternativeText
         Public Shared Sub Run()
 
             ' The path to the documents directory.

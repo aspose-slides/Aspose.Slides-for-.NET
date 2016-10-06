@@ -22,7 +22,7 @@ namespace Aspose.Slides.Examples.CSharp.Charts
             // Instantiate Presentation class that represents PPTX file
             Presentation pres = new Presentation();
 
-            //Access first slide
+            // Access first slide
             ISlide sld = pres.Slides[0];
 
             // Add chart with default data
@@ -44,17 +44,17 @@ namespace Aspose.Slides.Examples.CSharp.Charts
             // Getting the chart data worksheet
             IChartDataWorkbook fact = chart.ChartData.ChartDataWorkbook;
 
-            //Delete default generated series and categories
+            // Delete default generated series and categories
             chart.ChartData.Series.Clear();
             chart.ChartData.Categories.Clear();
             int s = chart.ChartData.Series.Count;
             s = chart.ChartData.Categories.Count;
 
-            //Adding new series
+            // Adding new series
             chart.ChartData.Series.Add(fact.GetCell(defaultWorksheetIndex, 0, 1, "Series 1"), chart.Type);
             chart.ChartData.Series.Add(fact.GetCell(defaultWorksheetIndex, 0, 2, "Series 2"), chart.Type);
 
-            //Adding new categories
+            // Adding new categories
             chart.ChartData.Categories.Add(fact.GetCell(defaultWorksheetIndex, 1, 0, "Caetegoty 1"));
             chart.ChartData.Categories.Add(fact.GetCell(defaultWorksheetIndex, 2, 0, "Caetegoty 2"));
             chart.ChartData.Categories.Add(fact.GetCell(defaultWorksheetIndex, 3, 0, "Caetegoty 3"));

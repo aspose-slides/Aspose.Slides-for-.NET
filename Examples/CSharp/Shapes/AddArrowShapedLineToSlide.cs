@@ -24,10 +24,10 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
                 // Get the first slide
                 ISlide sld = pres.Slides[0];
 
-                //Add an autoshape of type line
+                // Add an autoshape of type line
                 IAutoShape shp = sld.Shapes.AddAutoShape(ShapeType.Line, 50, 150, 300, 0);
 
-                //Apply some formatting on the line
+                // Apply some formatting on the line
                 shp.LineFormat.Style = LineStyle.ThickBetweenThin;
                 shp.LineFormat.Width = 10;
 

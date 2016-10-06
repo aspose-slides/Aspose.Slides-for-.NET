@@ -24,17 +24,17 @@ namespace Aspose.Slides.Examples.CSharp.Text
                 // Get first slide
                 ISlide sld = pres.Slides[0];
 
-                //Add an AutoShape of Rectangle type
+                // Add an AutoShape of Rectangle type
                 IAutoShape ashp = sld.Shapes.AddAutoShape(ShapeType.Rectangle, 50, 50, 200, 50);
 
                 // Remove any fill style associated with the AutoShape
                 ashp.FillFormat.FillType = FillType.NoFill;
 
-                //Access the TextFrame associated with the AutoShape
+                // Access the TextFrame associated with the AutoShape
                 ITextFrame tf = ashp.TextFrame;
                 tf.Text = "Aspose TextBox";
 
-                //Access the Portion associated with the TextFrame
+                // Access the Portion associated with the TextFrame
                 IPortion port = tf.Paragraphs[0].Portions[0];
 
                 // Set the Font for the Portion

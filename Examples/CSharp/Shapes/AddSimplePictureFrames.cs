@@ -28,7 +28,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
                 System.Drawing.Image img = (System.Drawing.Image)new Bitmap(dataDir+ "aspose-logo.jpg");
                 IPPImage imgx = pres.Images.AddImage(img);
 
-                //Add Picture Frame with height and width equivalent of Picture
+                // Add Picture Frame with height and width equivalent of Picture
                 sld.Shapes.AddPictureFrame(ShapeType.Rectangle, 50, 150, imgx.Width, imgx.Height, imgx);
 
                 //Write the PPTX file to disk

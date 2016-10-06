@@ -23,7 +23,7 @@ namespace Aspose.Slides.Examples.CSharp.SmartArts
 
             using (Presentation presentation = new Presentation())
             {
-                //Accessing the slide
+                // Accessing the slide
                 ISlide slide = presentation.Slides[0];
 
                 // Adding SmartArt shape and nodes

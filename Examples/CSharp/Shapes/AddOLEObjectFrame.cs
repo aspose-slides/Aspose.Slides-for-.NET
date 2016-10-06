@@ -20,7 +20,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
             // Instantiate Prseetation class that represents the PPTX
             Presentation pres = new Presentation();
 
-            //Access the first slide
+            // Access the first slide
             ISlide sld = pres.Slides[0];
 
             // Load an cel file to stream
@@ -36,7 +36,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
                 mstream.Write(buf, 0, bytesRead);
             }
 
-            //Add an Ole Object Frame shape
+            // Add an Ole Object Frame shape
             IOleObjectFrame oof = sld.Shapes.AddOleObjectFrame(0, 0, pres.SlideSize.Size.Width, pres.SlideSize.Size.Height, "Excel.Sheet.12", mstream.ToArray());
 
             //Write the PPTX to disk

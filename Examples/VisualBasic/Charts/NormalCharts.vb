@@ -28,7 +28,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Charts
             Dim chart As IChart = sld.Shapes.AddChart(ChartType.ClusteredColumn, 0, 0, 500, 500)
 
             ' Setting chart Title
-            ' Chart.ChartTitle.TextFrameForOverriding.Text = "Sample Title";
+            ' Chart.ChartTitle.TextFrameForOverriding.Text = "Sample Title"
             chart.ChartTitle.AddTextFrameForOverriding("Sample Title")
             chart.ChartTitle.TextFrameForOverriding.TextFrameFormat.CenterText = NullableBool.True
             chart.ChartTitle.Height = 20

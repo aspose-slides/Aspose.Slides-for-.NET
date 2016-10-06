@@ -25,7 +25,7 @@ namespace Aspose.Slides.Examples.CSharp.Tables
             // Get the first slide 
             ISlide slide = presentation.Slides[0];
 
-            //Define columns with widths and rows with heights
+            // Define columns with widths and rows with heights
             double[] dblCols = { 120, 120, 120, 120 };
             double[] dblRows = { 100, 100, 100, 100 };
 

@@ -17,26 +17,26 @@ namespace Aspose.Slides.Examples.CSharp.Text
             using (Presentation pres = new Presentation(dataDir + "FontProperties.pptx"))
             {
 
-                //Accessing a slide using its slide position
+                // Accessing a slide using its slide position
                 ISlide slide = pres.Slides[0];
 
-                //Accessing the first and second placeholder in the slide and typecasting it as AutoShape
+                // Accessing the first and second placeholder in the slide and typecasting it as AutoShape
                 ITextFrame tf1 = ((IAutoShape)slide.Shapes[0]).TextFrame;
                 ITextFrame tf2 = ((IAutoShape)slide.Shapes[1]).TextFrame;
 
-                //Accessing the first Paragraph
+                // Accessing the first Paragraph
                 IParagraph para1 = tf1.Paragraphs[0];
                 IParagraph para2 = tf2.Paragraphs[0];
 
-                //Accessing the first portion
+                // Accessing the first portion
                 IPortion port1 = para1.Portions[0];
                 IPortion port2 = para2.Portions[0];
 
-                //Define new fonts
+                // Define new fonts
                 FontData fd1 = new FontData("Elephant");
                 FontData fd2 = new FontData("Castellar");
 
-                //Assign new fonts to portion
+                // Assign new fonts to portion
                 port1.PortionFormat.LatinFont = fd1;
                 port2.PortionFormat.LatinFont = fd2;
 

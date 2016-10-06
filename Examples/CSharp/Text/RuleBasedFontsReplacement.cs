@@ -35,7 +35,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
             IFontSubstRuleCollection fontSubstRuleCollection = new FontSubstRuleCollection();
             fontSubstRuleCollection.Add(fontSubstRule);
 
-            //Add font rule collection to rule list
+            // Add font rule collection to rule list
             presentation.FontsManager.FontSubstRuleList = fontSubstRuleCollection;
 
             // Arial font will be used instead of SomeRareFont when inaccessible

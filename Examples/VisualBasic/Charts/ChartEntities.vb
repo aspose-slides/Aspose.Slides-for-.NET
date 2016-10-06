@@ -87,9 +87,9 @@ Namespace Aspose.Slides.Examples.VisualBasic.Charts
             valtitle.PortionFormat.FontItalic = NullableBool.True
 
             ' Setting value axis line format : Now Obselete
-            ' chart.Axes.VerticalAxis.aVerticalAxis.l.AxisLine.Width = 10;
-            ' chart.Axes.VerticalAxis.AxisLine.FillFormat.FillType = FillType.Solid;
-            ' Chart.Axes.VerticalAxis.AxisLine.FillFormat.SolidFillColor.Color = Color.Red;
+            ' chart.Axes.VerticalAxis.aVerticalAxis.l.AxisLine.Width = 10
+            ' chart.Axes.VerticalAxis.AxisLine.FillFormat.FillType = FillType.Solid
+            ' Chart.Axes.VerticalAxis.AxisLine.FillFormat.SolidFillColor.Color = Color.Red
 
             ' Setting Major grid lines format for Category axis
             chart.Axes.HorizontalAxis.MajorGridLinesFormat.Line.FillFormat.FillType = FillType.Solid
@@ -143,7 +143,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Charts
             chart.Legend.Overlay = True
 
             ' Ploting first series on secondary value axis
-            ' Chart.ChartData.Series[0].PlotOnSecondAxis = true;
+            ' Chart.ChartData.Series[0].PlotOnSecondAxis = true
 
             ' Setting chart back wall color
             chart.BackWall.Thickness = 1

@@ -24,10 +24,10 @@ namespace Aspose.Slides.Examples.CSharp.Text
             // Get first slide
             ISlide sld = pres.Slides[0];
 
-            //Add a Rectangle Shape
+            // Add a Rectangle Shape
             IAutoShape rect = sld.Shapes.AddAutoShape(ShapeType.Rectangle, 100, 100, 500, 150);
 
-            //Add TextFrame to the Rectangle
+            // Add TextFrame to the Rectangle
             ITextFrame tf = rect.AddTextFrame("This is first line \rThis is second line \rThis is third line");
 
             // Set the text to fit the shape

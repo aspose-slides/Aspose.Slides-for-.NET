@@ -16,10 +16,10 @@ namespace Aspose.Slides.Examples.CSharp.Text
             using (Presentation pres = new Presentation(dataDir + "ParagraphsAlignment.pptx"))
             {
 
-                //Accessing first slide
+                // Accessing first slide
                 ISlide slide = pres.Slides[0];
 
-                //Accessing the first and second placeholder in the slide and typecasting it as AutoShape
+                // Accessing the first and second placeholder in the slide and typecasting it as AutoShape
                 ITextFrame tf1 = ((IAutoShape)slide.Shapes[0]).TextFrame;
                 ITextFrame tf2 = ((IAutoShape)slide.Shapes[1]).TextFrame;
 
@@ -31,7 +31,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
                 IParagraph para1 = tf1.Paragraphs[0];
                 IParagraph para2 = tf2.Paragraphs[0];
 
-                //Aligning the text paragraph to center
+                // Aligning the text paragraph to center
                 para1.ParagraphFormat.Alignment = TextAlignment.Center;
                 para2.ParagraphFormat.Alignment = TextAlignment.Center;
 

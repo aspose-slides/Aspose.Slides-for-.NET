@@ -27,7 +27,7 @@ namespace Aspose.Slides.Examples.CSharp.SmartArts
 
                         if (smart.AllNodes.Count > 0)
                         {
-                            //Accessing SmartArt node at index 0
+                            // Accessing SmartArt node at index 0
                             ISmartArtNode node = smart.AllNodes[0];
 
                             // Removing the selected node

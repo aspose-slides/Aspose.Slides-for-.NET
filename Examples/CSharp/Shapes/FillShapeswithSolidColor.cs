@@ -25,7 +25,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
             // Get the first slide
             ISlide slide = presentation.Slides[0];
 
-            //Add autoshape of rectangle type
+            // Add autoshape of rectangle type
             IShape shape = slide.Shapes.AddAutoShape(ShapeType.Rectangle, 50, 150, 75, 150);
 
             // Set the fill type to Solid

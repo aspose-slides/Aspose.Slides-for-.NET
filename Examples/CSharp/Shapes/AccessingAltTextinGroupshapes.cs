@@ -26,17 +26,17 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
 
             for (int i = 0; i < sld.Shapes.Count; i++)
             {
-                //Accessing the shape collection of slides
+                // Accessing the shape collection of slides
                 IShape shape = sld.Shapes[i];
 
                 if (shape is GroupShape)
                 {
-                    //Accessing the group shape.
+                    // Accessing the group shape.
                     IGroupShape grphShape = (IGroupShape)shape;
                     for (int j = 0; j < grphShape.Shapes.Count; j++)
                     {
                         IShape shape2 = grphShape.Shapes[j];
-                        //Accessing the AltText property
+                        // Accessing the AltText property
                         Console.WriteLine(shape2.AlternativeText);
                     }
                 }

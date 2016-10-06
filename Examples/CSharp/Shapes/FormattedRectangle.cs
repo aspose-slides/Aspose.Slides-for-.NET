@@ -24,14 +24,14 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
                 // Get the first slide
                 ISlide sld = pres.Slides[0];
 
-                //Add autoshape of rectangle type
+                // Add autoshape of rectangle type
                 IShape shp = sld.Shapes.AddAutoShape(ShapeType.Rectangle, 50, 150, 150, 50);
 
-                //Apply some formatting to rectangle shape
+                // Apply some formatting to rectangle shape
                 shp.FillFormat.FillType = FillType.Solid;
                 shp.FillFormat.SolidFillColor.Color = Color.Chocolate;
 
-                //Apply some formatting to the line of rectangle
+                // Apply some formatting to the line of rectangle
                 shp.LineFormat.FillFormat.FillType = FillType.Solid;
                 shp.LineFormat.FillFormat.SolidFillColor.Color = Color.Black;
                 shp.LineFormat.Width = 5;

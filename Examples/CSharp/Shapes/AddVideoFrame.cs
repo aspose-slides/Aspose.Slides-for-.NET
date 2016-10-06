@@ -24,7 +24,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
                 // Get the first slide
                 ISlide sld = pres.Slides[0];
 
-                //Add Video Frame
+                // Add Video Frame
                 IVideoFrame vf = sld.Shapes.AddVideoFrame(50, 150, 300, 150, dataDir+ "video1.avi");
 
                 // Set Play Mode and Volume of the Video

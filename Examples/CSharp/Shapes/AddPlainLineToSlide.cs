@@ -22,7 +22,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
                 // Get the first slide
                 ISlide sld = pres.Slides[0];
 
-                //Add an autoshape of type line
+                // Add an autoshape of type line
                 sld.Shapes.AddAutoShape(ShapeType.Line, 50, 150, 300, 0);
 
                 //Write the PPTX to Disk

@@ -20,16 +20,16 @@ namespace Aspose.Slides.Examples.CSharp.SmartArts
             // Instantiate the presentation
             Presentation pres = new Presentation();
 
-            //Accessing the first slide
+            // Accessing the first slide
             ISlide slide = pres.Slides[0];
 
-            //Adding the SmartArt shape in first slide
+            // Adding the SmartArt shape in first slide
             ISmartArt smart = slide.Shapes.AddSmartArt(0, 0, 400, 400, SmartArtLayoutType.StackedList);
 
-            //Accessing the SmartArt  node at index 0
+            // Accessing the SmartArt  node at index 0
             ISmartArtNode node = smart.AllNodes[0];
 
-            //Accessing the child node at position 1 in parent node
+            // Accessing the child node at position 1 in parent node
             int position = 1;
             SmartArtNode chNode = (SmartArtNode)node.ChildNodes[position]; 
 

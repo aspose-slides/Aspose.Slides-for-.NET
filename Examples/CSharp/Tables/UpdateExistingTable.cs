@@ -14,7 +14,7 @@ namespace Aspose.Slides.Examples.CSharp.Tables
             using (Presentation pres = new Presentation(dataDir + "UpdateExistingTable.pptx"))
             {
 
-                //Access the first slide
+                // Access the first slide
                 ISlide sld = pres.Slides[0];
 
                 // Initialize null TableEx

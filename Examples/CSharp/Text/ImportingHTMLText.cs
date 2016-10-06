@@ -14,15 +14,15 @@ namespace Aspose.Slides.Examples.CSharp.Text
             // Create Empty presentation instance// Create Empty presentation instance
             using (Presentation pres = new Presentation())
             {
-                //Acesss the default first slide of presentation
+                // Acesss the default first slide of presentation
                 ISlide slide = pres.Slides[0];
 
-                //Adding the AutoShape to accomodate the HTML content
+                // Adding the AutoShape to accomodate the HTML content
                 IAutoShape ashape = slide.Shapes.AddAutoShape(ShapeType.Rectangle, 10, 10, pres.SlideSize.Size.Width - 20, pres.SlideSize.Size.Height - 10);
 
                 ashape.FillFormat.FillType = FillType.NoFill;
 
-                //Adding text frame to the shape
+                // Adding text frame to the shape
                 ashape.AddTextFrame("");
 
                 // Clearing all paragraphs in added text frame
@@ -31,7 +31,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
                 // Loading the HTML file using stream reader
                 TextReader tr = new StreamReader(dataDir + "file.html");
 
-                //Adding text from HTML stream reader in text frame
+                // Adding text from HTML stream reader in text frame
                 ashape.TextFrame.Paragraphs.AddFromHtml(tr.ReadToEnd());
 
                 // Saving Presentation

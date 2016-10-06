@@ -29,10 +29,10 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
                 System.Drawing.Image img = (System.Drawing.Image)new Bitmap(dataDir+ "aspose-logo.jpg");
                 IPPImage imgx = pres.Images.AddImage(img);
 
-                //Add Picture Frame with height and width equivalent of Picture
+                // Add Picture Frame with height and width equivalent of Picture
                 IPictureFrame pf = sld.Shapes.AddPictureFrame(ShapeType.Rectangle, 50, 150, imgx.Width, imgx.Height, imgx);
 
-                //Apply some formatting to PictureFrameEx
+                // Apply some formatting to PictureFrameEx
                 pf.LineFormat.FillFormat.FillType = FillType.Solid;
                 pf.LineFormat.FillFormat.SolidFillColor.Color = Color.Blue;
                 pf.LineFormat.Width = 20;
