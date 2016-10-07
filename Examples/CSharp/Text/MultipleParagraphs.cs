@@ -21,13 +21,13 @@ namespace Aspose.Slides.Examples.CSharp.Text
             // Instantiate a Presentation class that represents a PPTX file
             using (Presentation pres = new Presentation())
             {
-                //Accessing first slide
+                // Accessing first slide
                 ISlide slide = pres.Slides[0];
 
-                //Add an AutoShape of Rectangle type
+                // Add an AutoShape of Rectangle type
                 IAutoShape ashp = slide.Shapes.AddAutoShape(ShapeType.Rectangle, 50, 150, 300, 150);
 
-                //Access TextFrame of the AutoShape
+                // Access TextFrame of the AutoShape
                 ITextFrame tf = ashp.TextFrame;
 
                 // Create Paragraphs and Portions with different text formats

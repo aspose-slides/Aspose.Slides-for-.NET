@@ -24,7 +24,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
                 // Get the first slide
                 ISlide sld = pres.Slides[0];
 
-                //Add three autoshapes of rectangle type
+                // Add three autoshapes of rectangle type
                 IShape shp1 = sld.Shapes.AddAutoShape(ShapeType.Rectangle, 50, 100, 150, 75);
 
                 IShape shp2 = sld.Shapes.AddAutoShape(ShapeType.Rectangle, 300, 100, 150, 75);
@@ -57,7 +57,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
                 shp2.LineFormat.JoinStyle = LineJoinStyle.Bevel;
                 shp3.LineFormat.JoinStyle = LineJoinStyle.Round;
 
-                //Add text to each rectangle
+                // Add text to each rectangle
                 ((IAutoShape)shp1).TextFrame.Text = "This is Miter Join Style";
                 ((IAutoShape)shp2).TextFrame.Text = "This is Bevel Join Style";
                 ((IAutoShape)shp3).TextFrame.Text = "This is Round Join Style";

@@ -19,10 +19,10 @@ namespace Aspose.Slides.Examples.CSharp.SmartArts
             using (Presentation pres = new Presentation())
             {
 
-                //Access the presentation slide
+                // Access the presentation slide
                 ISlide slide = pres.Slides[0];
 
-                //Add Smart Art Shape
+                // Add Smart Art Shape
                 ISmartArt smart = slide.Shapes.AddSmartArt(0, 0, 400, 400, SmartArtLayoutType.BasicBlockList);
 
                 // Saving presentation

@@ -15,7 +15,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
             using (Presentation pres = new Presentation(dataDir + "ReplacingText.pptx"))
             {
 
-                //Access first slide
+                // Access first slide
                 ISlide sld = pres.Slides[0];
 
                 // Iterate through shapes to find the placeholder

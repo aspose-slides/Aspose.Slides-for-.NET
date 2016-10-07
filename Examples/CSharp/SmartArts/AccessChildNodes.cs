@@ -28,13 +28,13 @@ namespace Aspose.Slides.Examples.CSharp.SmartArts
                     // Traverse through all nodes inside SmartArt
                     for (int i = 0; i < smart.AllNodes.Count; i++)
                     {
-                        //Accessing SmartArt node at index i
+                        // Accessing SmartArt node at index i
                         Aspose.Slides.SmartArt.SmartArtNode node0 = (Aspose.Slides.SmartArt.SmartArtNode)smart.AllNodes[i];
 
                         // Traversing through the child nodes in SmartArt node at index i
                         for (int j = 0; j < node0.ChildNodes.Count; j++)
                         {
-                            //Accessing the child node in SmartArt node
+                            // Accessing the child node in SmartArt node
                             Aspose.Slides.SmartArt.SmartArtNode node = (Aspose.Slides.SmartArt.SmartArtNode)node0.ChildNodes[j];
 
                             // Printing the SmartArt child node parameters

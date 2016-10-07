@@ -24,7 +24,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
                 // Get the first slide
                 ISlide sld = pres.Slides[0];
 
-                //Add autoshape of rectangle type
+                // Add autoshape of rectangle type
                 IShape shp = sld.Shapes.AddAutoShape(ShapeType.Rectangle, 50, 150, 75, 150);
 
 

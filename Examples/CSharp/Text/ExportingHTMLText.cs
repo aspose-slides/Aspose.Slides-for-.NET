@@ -24,13 +24,13 @@ namespace Aspose.Slides.Examples.CSharp.Text
             using (Presentation pres = new Presentation(dataDir + "ExportingHTMLText.pptx"))
             {
 
-                //Acesss the default first slide of presentation
+                // Acesss the default first slide of presentation
                 ISlide slide = pres.Slides[0];
 
-                //Desired index
+                // Desired index
                 int index = 0;
 
-                //Accessing the added shape
+                // Accessing the added shape
                 IAutoShape ashape = (IAutoShape)slide.Shapes[index];
 
                 // Extracting first paragraph as HTML

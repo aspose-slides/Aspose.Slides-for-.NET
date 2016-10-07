@@ -23,13 +23,13 @@ namespace Aspose.Slides.Examples.CSharp.Text
                 // Get the first slide
                 ISlide sld = pres.Slides[0];
 
-                //Add an AutoShape of Rectangle type
+                // Add an AutoShape of Rectangle type
                 IAutoShape ashp = sld.Shapes.AddAutoShape(ShapeType.Rectangle, 150, 75, 150, 50);
 
-                //Add TextFrame to the Rectangle
+                // Add TextFrame to the Rectangle
                 ashp.AddTextFrame(" ");
 
-                //Accessing the text frame
+                // Accessing the text frame
                 ITextFrame txtFrame = ashp.TextFrame;
 
                 // Create the Paragraph object for text frame

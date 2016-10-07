@@ -20,13 +20,13 @@ namespace Aspose.Slides.Examples.CSharp.Charts
             // Instantiate the presentation// Instantiate the presentation
             Presentation pres = new Presentation();
 
-            //Access the first presentation slide
+            // Access the first presentation slide
             ISlide slide = pres.Slides[0];
 
-            //Adding a defautlt clustered column chart
+            // Adding a defautlt clustered column chart
             IChart chart = slide.Shapes.AddChart(ChartType.ClusteredColumn, 50, 50, 500, 400);
 
-            //Accessing the chart series collection
+            // Accessing the chart series collection
             IChartSeriesCollection series = chart.ChartData.Series;
 
             // Setting the preset number format

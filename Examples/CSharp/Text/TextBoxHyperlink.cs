@@ -21,18 +21,18 @@ namespace Aspose.Slides.Examples.CSharp.Text
             // Get first slide
             ISlide slide = pptxPresentation.Slides[0];
 
-            //Add an AutoShape of Rectangle Type
+            // Add an AutoShape of Rectangle Type
             IShape pptxShape = slide.Shapes.AddAutoShape(ShapeType.Rectangle, 150, 150, 150, 50);
 
             // Cast the shape to AutoShape
             IAutoShape pptxAutoShape = (IAutoShape)pptxShape;
 
-            //Access ITextFrame associated with the AutoShape
+            // Access ITextFrame associated with the AutoShape
             pptxAutoShape.AddTextFrame("");
 
             ITextFrame ITextFrame = pptxAutoShape.TextFrame;
 
-            //Add some text to the frame
+            // Add some text to the frame
             ITextFrame.Paragraphs[0].Portions[0].Text = "Aspose.Slides";
 
             // Set Hyperlink for the portion text

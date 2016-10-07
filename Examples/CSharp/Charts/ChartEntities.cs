@@ -21,10 +21,10 @@ namespace Aspose.Slides.Examples.CSharp.Charts
             // Instantiating presentation// Instantiating presentation
             Presentation pres = new Presentation();
 
-            //Accessing the first slide
+            // Accessing the first slide
             ISlide slide = pres.Slides[0];
 
-            //Adding the sample chart
+            // Adding the sample chart
             IChart chart = slide.Shapes.AddChart(ChartType.LineWithMarkers, 50, 50, 500, 400);
 
             // Setting Chart Titile

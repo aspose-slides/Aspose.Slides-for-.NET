@@ -27,7 +27,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
                 // Load the wav sound file to stram
                 FileStream fstr = new FileStream(dataDir+ "sampleaudio.wav", FileMode.Open, FileAccess.Read);
 
-                //Add Audio Frame
+                // Add Audio Frame
                 IAudioFrame af = sld.Shapes.AddAudioFrameEmbedded(50, 150, 100, 100, fstr);
 
                 // Set Play Mode and Volume of the Audio

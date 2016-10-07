@@ -29,7 +29,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
 
                 ashp.AddTextFrame("Animated TextBox");
 
-                //Add PathFootBall animation effect
+                // Add PathFootBall animation effect
                 pres.Slides[0].Timeline.MainSequence.AddEffect(ashp, EffectType.PathFootball,
                                        EffectSubtype.None, EffectTriggerType.AfterPrevious);
 

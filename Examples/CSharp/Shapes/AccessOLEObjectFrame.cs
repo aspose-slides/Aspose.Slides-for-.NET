@@ -13,7 +13,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
             // Load the PPTX to Presentation object
             Presentation pres = new Presentation(dataDir + "AccessingOLEObjectFrame.pptx");
 
-            //Access the first slide
+            // Access the first slide
             ISlide sld = pres.Slides[0];
 
             // Cast the shape to OleObjectFrame

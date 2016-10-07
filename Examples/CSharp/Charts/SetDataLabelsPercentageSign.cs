@@ -39,7 +39,7 @@ namespace Aspose.Slides.Examples.CSharp.Charts
             // Getting the chart data worksheet
             IChartDataWorkbook workbook = chart.ChartData.ChartDataWorkbook;
 
-            //Add new series
+            // Add new series
             IChartSeries series = chart.ChartData.Series.Add(workbook.GetCell(defaultWorksheetIndex, 0, 1, "Reds"), chart.Type);
             series.DataPoints.AddDataPointForBarSeries(workbook.GetCell(defaultWorksheetIndex, 1, 1, 0.30));
             series.DataPoints.AddDataPointForBarSeries(workbook.GetCell(defaultWorksheetIndex, 2, 1, 0.50));

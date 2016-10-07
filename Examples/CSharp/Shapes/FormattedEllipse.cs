@@ -25,14 +25,14 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
                 // Get the first slide
                 ISlide sld = pres.Slides[0];
 
-                //Add autoshape of ellipse type
+                // Add autoshape of ellipse type
                 IShape shp = sld.Shapes.AddAutoShape(ShapeType.Ellipse, 50, 150, 150, 50);
 
-                //Apply some formatting to ellipse shape
+                // Apply some formatting to ellipse shape
                 shp.FillFormat.FillType = FillType.Solid;
                 shp.FillFormat.SolidFillColor.Color = Color.Chocolate;
 
-                //Apply some formatting to the line of Ellipse
+                // Apply some formatting to the line of Ellipse
                 shp.LineFormat.FillFormat.FillType = FillType.Solid;
                 shp.LineFormat.FillFormat.SolidFillColor.Color = Color.Black;
                 shp.LineFormat.Width = 5;

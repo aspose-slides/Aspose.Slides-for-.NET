@@ -22,10 +22,10 @@ namespace Aspose.Slides.Examples.CSharp.SmartArts
 
             using (Presentation presentation = new Presentation())
             {
-                //Add SmartArt BasicProcess 
+                // Add SmartArt BasicProcess 
                 ISmartArt smart = presentation.Slides[0].Shapes.AddSmartArt(10, 10, 400, 300, SmartArtLayoutType.RadialCycle);
 
-                //Add node on SmartArt 
+                // Add node on SmartArt 
                 ISmartArtNode node = smart.AllNodes.AddNode();
 
                 // Check isHidden property
@@ -33,7 +33,7 @@ namespace Aspose.Slides.Examples.CSharp.SmartArts
 
                 if (hidden)
                 {
-                    //do some actions or notifications
+                    // Do some actions or notifications
                 }
 
                 // ExEnd:CheckSmartArtHiddenProperty

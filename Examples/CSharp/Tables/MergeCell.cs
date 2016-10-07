@@ -23,14 +23,14 @@ namespace Aspose.Slides.Examples.CSharp.Tables
             using (Presentation presentation = new Presentation())
             {
 
-                //Access first slide
+                // Access first slide
                 ISlide slide = presentation.Slides[0];
 
-                //Define columns with widths and rows with heights
+                // Define columns with widths and rows with heights
                 double[] dblCols = { 70, 70, 70, 70 };
                 double[] dblRows = { 70, 70, 70, 70 };
 
-                //Add table shape to slide
+                // Add table shape to slide
                 ITable table = slide.Shapes.AddTable(100, 50, dblCols, dblRows);
 
                 // Set border format for each cell

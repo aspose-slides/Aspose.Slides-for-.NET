@@ -21,19 +21,19 @@ namespace Aspose.Slides.Examples.CSharp.SmartArts
             // Creating a presentation instance
             Presentation pres = new Presentation();
 
-            //Access the presentation slide
+            // Access the presentation slide
             ISlide slide = pres.Slides[0];
 
-            //Add Smart Art IShape
+            // Add Smart Art IShape
             ISmartArt smart = slide.Shapes.AddSmartArt(0, 0, 400, 400, SmartArtLayoutType.StackedList);
 
-            //Accessing the SmartArt node at index 0
+            // Accessing the SmartArt node at index 0
             ISmartArtNode node = smart.AllNodes[0];
 
-            //Adding new child node at position 2 in parent node
+            // Adding new child node at position 2 in parent node
             SmartArtNode chNode = (SmartArtNode)((SmartArtNodeCollection)node.ChildNodes).AddNodeByPosition(2);
 
-            //Add Text
+            // Add Text
             chNode.TextFrame.Text = "Sample Text Added";
 
             // Save Presentation

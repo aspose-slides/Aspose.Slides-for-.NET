@@ -23,7 +23,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
             {
 
                 ISlide slide = p.Slides[0];
-                //alternative text of the shape to be found
+                // Alternative text of the shape to be found
                 IShape shape = FindShape(slide, "Shape1");
                 if (shape != null)
                 {
