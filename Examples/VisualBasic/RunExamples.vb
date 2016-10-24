@@ -73,6 +73,7 @@ Namespace Aspose.Slides.Examples.VisualBasic
             'DisplayPercentageAsLabels.Run()
             'SecondPlotOptionsforCharts.Run()
             'SetMarkerOptions.Run()
+            'SetDataRange.Run()
 
             '''/ =====================================================
             '''/                    Presentations 
