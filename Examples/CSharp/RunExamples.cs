@@ -75,6 +75,7 @@ namespace Aspose.Slides.Examples.CSharp
             //DisplayPercentageAsLabels.Run();
             //SecondPlotOptionsforCharts.Run();
             //SetMarkerOptions.Run();
+            //SetDataRange.Run();
 
             //// =====================================================
             ////                    Presentations 
