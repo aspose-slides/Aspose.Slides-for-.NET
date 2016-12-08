@@ -107,6 +107,7 @@ namespace Aspose.Slides.Examples.CSharp
             //CreateNewPresentation.Run();
             //PPTtoPPTX.Run();
             //ExportMediaFilestohtml.Run();
+            //SetInvertFillColorChart.Run();
 
             // =====================================================
             //// =====================================================
