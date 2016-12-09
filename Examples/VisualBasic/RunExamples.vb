@@ -74,6 +74,7 @@ Namespace Aspose.Slides.Examples.VisualBasic
             'SecondPlotOptionsforCharts.Run()
             'SetMarkerOptions.Run()
             'SetDataRange.Run()
+            'SetInvertFillColorChart.Run()
 
             '''/ =====================================================
             '''/                    Presentations 
