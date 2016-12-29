@@ -7,7 +7,7 @@ Imports System
 Namespace Aspose.Slides.Examples.VisualBasic.Shapes
     Public Class AccessOLEObjectFrame
         Public Shared Sub Run()
-
+			'ExStart:AccessOLEObjectFrame
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Shapes()
 
@@ -28,6 +28,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Shapes
                 fstr.Flush()
                 fstr.Close()
             End If
+			'ExEnd:AccessOLEObjectFrame
         End Sub
     End Class
 End Namespace

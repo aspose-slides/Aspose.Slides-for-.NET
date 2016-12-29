@@ -12,7 +12,7 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.Tables
     Public Class StandardTables
         Public Shared Sub Run()
-
+            ' ExStart:StandardTables
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Tables()
 
@@ -49,10 +49,10 @@ Namespace Aspose.Slides.Examples.VisualBasic.Tables
                         cell.BorderRight.Width = 5
                     Next
                 Next
-
                 ' Write PPTX to Disk
                 pres.Save(dataDir & Convert.ToString("StandardTables_out.pptx"), SaveFormat.Pptx)
             End Using
+            ' ExEnd:StandardTables
         End Sub
     End Class
 End Namespace

@@ -14,6 +14,8 @@ Imports Aspose.Slides.Export
 Namespace Aspose.Slides.Examples.VisualBasic.Presentations
     Public Class ManageEmbeddedFonts
         Public Shared Sub Run()
+            ' ExStart:ManageEmbeddedFonts
+
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Text()
 
@@ -39,6 +41,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Presentations
                 ' save the presentation without embedded "Calibri" font
                 presentation.Save(dataDir & Convert.ToString("WithoutManageEmbeddedFonts_out.ppt"), SaveFormat.Ppt)
             End Using
+            ' ExEnd:ManageEmbeddedFonts
         End Sub
     End Class
 End Namespace

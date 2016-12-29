@@ -9,6 +9,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
     {
         public static void Run()
         {
+            //ExStart:FormattedRectangle
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Shapes();
 
@@ -39,7 +40,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
                 //Write the PPTX file to disk
                 pres.Save(dataDir + "RectShp2_out.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
             }
-            
+            //ExEnd:FormattedRectangle
         }
     }
 }

@@ -13,10 +13,10 @@ Imports Aspose.Slides.Export
 Namespace Aspose.Slides.Examples.VisualBasic.Slides.Comments
     Class AddSlideComments
         Public Shared Sub Run()
+            ' ExStart:AddSlideComments
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Slides_Presentations_Comments()
 
-            ' ExStart:AddSlideComments
             ' Instantiate Presentation class
             Using presentation As New Presentation()
                 ' Adding Empty slide
@@ -48,12 +48,12 @@ Namespace Aspose.Slides.Examples.VisualBasic.Slides.Comments
                 presentation.Save(dataDir & Convert.ToString("Comments_out.pptx"), SaveFormat.Pptx)
 
                 If Comments.GetLength(0) > 0 Then
-                    ' ExEnd:AddSlideComments
                     ' Select comments collection of Author at index 0
                     Dim commentCollection As ICommentCollection = Comments(0).Author.Comments
                     Dim Comment As [String] = commentCollection(0).Text
                 End If
             End Using
+            ' ExEnd:AddSlideComments
         End Sub
     End Class
 End Namespace

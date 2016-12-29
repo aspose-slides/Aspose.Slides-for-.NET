@@ -7,6 +7,7 @@ Imports Aspose.Slides.Export
 Namespace Aspose.Slides.Examples.VisualBasic.Shapes
     Public Class SimpleEllipse
         Public Shared Sub Run()
+			'ExStart:SimpleEllipse	
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Shapes()
 
@@ -28,6 +29,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Shapes
                 'Write the PPTX file to disk
                 pres.Save(dataDir & "EllipseShp1_out.pptx", SaveFormat.Pptx)
             End Using
+			'ExEnd:SimpleEllipse
         End Sub
     End Class
 End Namespace

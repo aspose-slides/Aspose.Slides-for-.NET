@@ -1,5 +1,4 @@
 using System.IO;
-
 using Aspose.Slides;
 using Aspose.Slides.Export;
 
@@ -9,6 +8,8 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
     {
         public static void Run()
         {
+            //ExStart:AddOLEObjectFrame
+
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Shapes();
 
@@ -41,8 +42,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
 
             //Write the PPTX to disk
             pres.Save(dataDir + "OleEmbed_out.pptx", SaveFormat.Pptx);
-            
-            
+            //ExEnd:AddOLEObjectFrame
         }
     }
 }

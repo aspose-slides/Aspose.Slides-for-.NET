@@ -16,6 +16,7 @@ namespace Aspose.Slides.Examples.CSharp.Charts
     {
         public static void Run()
         {
+            //ExStart:SetDataRange
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Charts();
 
@@ -27,6 +28,7 @@ namespace Aspose.Slides.Examples.CSharp.Charts
             IChart chart = (IChart)slide.Shapes[0];
             chart.ChartData.SetRange("Sheet1!A1:B4");
             presentation.Save(dataDir + "SetDataRange_out.pptx", SaveFormat.Pptx);
+            //ExEnd:SetDataRange
         }
     }
 }

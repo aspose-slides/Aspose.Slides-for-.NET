@@ -14,6 +14,7 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.Charts
     Public Class SetDataRange
         Public Shared Sub Run()
+			'ExStart:SetDataRange
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Charts()
 
@@ -26,5 +27,6 @@ Namespace Aspose.Slides.Examples.VisualBasic.Charts
             chart.ChartData.SetRange("Sheet1!A1:B4")
             presentation.Save(dataDir & Convert.ToString("SetDataRange_out.pptx"), SaveFormat.Pptx)
         End Sub
+			'ExEnd:SetDataRange
     End Class
 End Namespace

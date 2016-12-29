@@ -3,6 +3,7 @@ Imports System
 Namespace Aspose.Slides.Examples.VisualBasic.Shapes
     Public Class ConnectorLineAngle
         Public Shared Sub Run()
+			'ExStart:ConnectorLineAngle
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Shapes()
 
@@ -37,6 +38,8 @@ Namespace Aspose.Slides.Examples.VisualBasic.Shapes
             End If
             Return angle * 180.0 / Math.PI
         End Function
+		
+		'ExEnd:ConnectorLineAngle
     End Class
 
 End Namespace

@@ -12,6 +12,7 @@ Imports Aspose.Slides.Export
 Namespace Aspose.Slides.Examples.VisualBasic.Conversion
     Public Class ConvertWithNoteToTiff
         Public Shared Sub Run()
+			'ExStart:ConvertWithNoteToTiff
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Conversion()
 
@@ -20,6 +21,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Conversion
                 ' Saving the presentation to TIFF notes
                 pres.Save(dataDir & Convert.ToString("TestNotes_out.tiff"), SaveFormat.TiffNotes)
             End Using
+			'ExEnd:ConvertWithNoteToTiff
         End Sub
     End Class
 End Namespace

@@ -8,6 +8,8 @@ Imports System
 Namespace Aspose.Slides.Examples.VisualBasic.SmartArts
     Public Class AccessChildNodeSpecificPosition
         Public Shared Sub Run()
+            ' ExStart:AccessChildNodeSpecificPosition
+
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_SmartArts()
 
@@ -36,7 +38,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.SmartArts
             ' Printing the SmartArt child node parameters
             Dim outString As String = String.Format("j = {0}, Text = {1},  Level = {2}, Position = {3}", position, chNode.TextFrame.Text, chNode.Level, chNode.Position)
             Console.WriteLine(outString)
-
+            ' ExStart:AccessChildNodeSpecificPosition
         End Sub
     End Class
 End Namespace

@@ -16,10 +16,10 @@ namespace Aspose.Slides.Examples.CSharp.Text
     {
         public static void Run()
         {
+            // ExStart:RotatingText
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Text();
 
-            // ExStart:RotatingText
             // Create an instance of Presentation class
             Presentation presentation = new Presentation();
 
@@ -46,9 +46,9 @@ namespace Aspose.Slides.Examples.CSharp.Text
             portion.PortionFormat.FillFormat.FillType = FillType.Solid;
             portion.PortionFormat.FillFormat.SolidFillColor.Color = Color.Black;
 
-            // ExEnd:RotatingText
             // Save Presentation
-            presentation.Save(dataDir + "RotateText_out.pptx", SaveFormat.Pptx); 
+            presentation.Save(dataDir + "RotateText_out.pptx", SaveFormat.Pptx);
+            // ExEnd:RotatingText
         }
     }
 }

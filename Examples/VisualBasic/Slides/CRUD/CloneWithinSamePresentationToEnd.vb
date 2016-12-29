@@ -12,6 +12,7 @@ Imports Aspose.Slides.Export
 Namespace Aspose.Slides.Examples.VisualBasic.Slides.CRUD
     Public Class CloneWithinSamePresentationToEnd
         Public Shared Sub Run()
+            ' ExStart:CloneWithinSamePresentationToEnd
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Slides_Presentations_CRUD()
 
@@ -26,6 +27,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Slides.CRUD
                 ' Write the modified presentation to disk
                 pres.Save(dataDir & Convert.ToString("Aspose_CloneWithinSamePresentationToEnd_out.pptx"), SaveFormat.Pptx)
             End Using
+            ' ExEnd:CloneWithinSamePresentationToEnd
         End Sub
     End Class
 End Namespace

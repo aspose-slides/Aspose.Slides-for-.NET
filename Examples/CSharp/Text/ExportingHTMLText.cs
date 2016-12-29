@@ -16,9 +16,9 @@ namespace Aspose.Slides.Examples.CSharp.Text
     {
         public static void Run()
         {
+            // ExStart:ExportingHTMLText
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Text();
-
 
             // Load the presentation file
             using (Presentation pres = new Presentation(dataDir + "ExportingHTMLText.pptx"))
@@ -41,8 +41,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
 
                 sw.Close();
             }
-
-            
+            // ExEnd:ExportingHTMLText
         }
     }
 }

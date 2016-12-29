@@ -45,9 +45,9 @@ namespace Aspose.Slides.Examples.CSharp.Charts
                 series.Format.Fill.FillType = FillType.Solid;
                 series.Format.Fill.SolidFillColor.Color = seriesColor;
                 series.InvertedSolidFillColor.Color = inverColor;
-                pres.Save(dataDir + "SetInvertFillColorChart_out.pptx", SaveFormat.Pptx);
-                //ExEnd:SetInvertFillColorChart
+                pres.Save(dataDir + "SetInvertFillColorChart_out.pptx", SaveFormat.Pptx);               
             }
+            //ExEnd:SetInvertFillColorChart
         }
     }
 }

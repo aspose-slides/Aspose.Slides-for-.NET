@@ -14,6 +14,7 @@ namespace Aspose.Slides.Examples.CSharp.Slides.Layout
     {
         public static void Run()
         {
+            //ExStart:SetSizeAndType
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Slides_Presentations_Layout();
 
@@ -33,6 +34,7 @@ namespace Aspose.Slides.Examples.CSharp.Slides.Layout
             // ExEnd:SettSizeAndType
             // Save Presentation to disk
             auxPresentation.Save(dataDir + "Set_Size&Type_out.pptx", SaveFormat.Pptx);
+            //ExEnd:SetSizeAndType
         }
     }
 }

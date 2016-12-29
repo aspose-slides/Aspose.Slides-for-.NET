@@ -38,10 +38,10 @@ namespace Aspose.Slides.Examples.CSharp.SmartArts
                     item.FillFormat.SolidFillColor.Color = Color.Red;
                 }
 
-                // ExEnd:FillFormatSmartArtShapeNode
                 // Saving Presentation
                 presentation.Save(dataDir + "FillFormat_SmartArt_ShapeNode_out.pptx", SaveFormat.Pptx);
             }
+            // ExEnd:FillFormatSmartArtShapeNode
         }
     }
 }

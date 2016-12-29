@@ -15,6 +15,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
     {
         public static void Run()
         {
+            //ExStart:CreateScalingFactorThumbnail
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Shapes();
 
@@ -42,6 +43,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
                 // Write the PPTX file to disk 
                 pres.Save(dataDir + "GroupShape_out.pptx", SaveFormat.Pptx);
             }
+            //ExEnd:CreateScalingFactorThumbnail
         }
     }
 }

@@ -16,6 +16,7 @@ namespace Aspose.Slides.Examples.CSharp.Charts
     {
         public static void Run()
         {
+            //ExStart:AddErrorBars
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Charts();
 
@@ -41,6 +42,7 @@ namespace Aspose.Slides.Examples.CSharp.Charts
                 // Saving presentation
                 presentation.Save(dataDir + "ErrorBars_out.pptx", SaveFormat.Pptx);
             }
+            //ExEnd:AddErrorBars
         }
     }
 }

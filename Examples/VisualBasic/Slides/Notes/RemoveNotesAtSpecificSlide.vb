@@ -12,10 +12,10 @@ Imports Aspose.Slides.Export
 Namespace Aspose.Slides.Examples.VisualBasic.Slides.Notes
     Class RemoveNotesAtSpecificSlide
         Public Shared Sub Run()
+            ' ExStart:RemoveNotesAtSpecificSlide
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Slides_Presentations_Notes()
 
-            ' ExStart:RemoveNotesAtSpecificSlide
             ' Instantiate a Presentation object that represents a presentation file 
             Dim presentation As New Presentation(dataDir & Convert.ToString("AccessSlides.pptx"))
 
@@ -23,9 +23,9 @@ Namespace Aspose.Slides.Examples.VisualBasic.Slides.Notes
             Dim mgr As INotesSlideManager = presentation.Slides(0).NotesSlideManager
             mgr.RemoveNotesSlide()
 
-            ' ExEnd:RemoveNotesAtSpecificSlide
             ' Save presentation to disk
             presentation.Save(dataDir & Convert.ToString("RemoveNotesAtSpecificSlide_out.pptx"), SaveFormat.Pptx)
+            ' ExEnd:RemoveNotesAtSpecificSlide
         End Sub
     End Class
 End Namespace

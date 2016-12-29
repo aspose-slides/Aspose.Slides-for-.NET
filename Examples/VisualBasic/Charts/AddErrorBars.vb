@@ -14,6 +14,7 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.Charts
     Public Class AddErrorBars
         Public Shared Sub Run()
+			'ExStart:AddErrorBars
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Charts()
 
@@ -38,6 +39,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Charts
                 ' Saving presentation
                 presentation.Save(dataDir & Convert.ToString("ErrorBars_out.pptx"), SaveFormat.Pptx)
             End Using
+			'ExEnd:AddErrorBars
         End Sub
     End Class
 End Namespace

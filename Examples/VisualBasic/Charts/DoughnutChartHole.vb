@@ -14,6 +14,7 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.Charts
     Public Class DoughnutChartHole
         Public Shared Sub Run()
+			'ExStart:DoughnutChartHole	
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Charts()
 
@@ -26,6 +27,8 @@ Namespace Aspose.Slides.Examples.VisualBasic.Charts
             ' Write presentation to disk
             presentation.Save(dataDir & Convert.ToString("DoughnutHoleSize_out.pptx"), SaveFormat.Pptx)
 
+			'ExEnd:DoughnutChartHole	
+			
         End Sub
     End Class
 End Namespace

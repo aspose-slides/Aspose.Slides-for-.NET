@@ -16,6 +16,7 @@ namespace Aspose.Slides.Examples.CSharp.Charts
     {
         public static void Run()
         {
+            //ExStart:SecondPlotOptionsforCharts
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Charts();
 
@@ -33,6 +34,8 @@ namespace Aspose.Slides.Examples.CSharp.Charts
 
             // Write presentation to disk
             presentation.Save(dataDir + "SecondPlotOptionsforCharts_out.pptx", SaveFormat.Pptx);
+            //ExEnd:SecondPlotOptionsforCharts
+
         }
     }
 }

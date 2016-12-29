@@ -11,7 +11,7 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.Tables
     Public Class VerticallyAlignText
         Public Shared Sub Run()
-
+            ' ExStart:VerticallyAlignText
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Tables()
 
@@ -51,5 +51,6 @@ Namespace Aspose.Slides.Examples.VisualBasic.Tables
             ' Save Presentation
             presentation.Save(dataDir + "Vertical_Align_Text_out.pptx", SaveFormat.Pptx)
         End Sub
+        ' ExEnd:VerticallyAlignText
     End Class
 End Namespace

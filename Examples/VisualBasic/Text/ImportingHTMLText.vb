@@ -5,6 +5,7 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.Text
     Public Class ImportingHTMLText
         Public Shared Sub Run()
+            ' ExStart:ImportingHTMLText
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Text()
 
@@ -32,9 +33,8 @@ Namespace Aspose.Slides.Examples.VisualBasic.Text
 
                 ' Saving Presentation
                 pres.Save(dataDir & "ImportingHTMLText_out.pptx", Aspose.Slides.Export.SaveFormat.Pptx)
-
             End Using
-
+            ' ExEnd:ImportingHTMLText
         End Sub
     End Class
 End Namespace

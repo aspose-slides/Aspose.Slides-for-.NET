@@ -12,6 +12,7 @@ Imports Aspose.Slides.Export
 Namespace Aspose.Slides.Examples.VisualBasic.Presentations
     Public Class UpdatePresentationPropertiesUsingNewTemplate
         Public Shared Sub Run()
+			'ExStart:UpdatePresentationPropertiesUsingNewTemplate
             ' For complete examples and data files, please go to https:// Github.com/aspose-slides/Aspose.Slides-for-.NET
 
             ' The path to the documents directory.
@@ -36,6 +37,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Presentations
             Dim toUpdate As IPresentationInfo = PresentationFactory.Instance.GetPresentationInfo(path)
             toUpdate.UpdateDocumentProperties(template)
             toUpdate.WriteBindedPresentation(path)
+			'ExEnd:UpdatePresentationPropertiesUsingNewTemplate
         End Sub
     End Class
 End Namespace

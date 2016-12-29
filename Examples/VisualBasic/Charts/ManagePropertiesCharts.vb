@@ -14,6 +14,7 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.Charts
     Public Class ManagePropertiesCharts
         Public Shared Sub Run()
+			'ExStart:ManagePropertiesCharts
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Charts()
 
@@ -64,6 +65,8 @@ Namespace Aspose.Slides.Examples.VisualBasic.Charts
             ' Write presentation to disk
             presentation.Save(dataDir & Convert.ToString("Rotation3D_out.pptx"), SaveFormat.Pptx)
 
+			'ExStart:ManagePropertiesCharts
+			
         End Sub
     End Class
 End Namespace

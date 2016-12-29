@@ -8,6 +8,7 @@ Imports Aspose.Slides.Export
 Namespace Aspose.Slides.Examples.VisualBasic.Shapes
     Public Class AddOLEObjectFrame
         Public Shared Sub Run()
+			'ExStart:AddOLEObjectFrame
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Shapes()
 
@@ -41,8 +42,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Shapes
 
             'Write the PPTX to disk
             pres.Save(dataDir & "OleEmbed_out.pptx", SaveFormat.Pptx)
-
-
+			'ExEnd:AddOLEObjectFrame
         End Sub
     End Class
 End Namespace

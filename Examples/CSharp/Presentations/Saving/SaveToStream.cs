@@ -15,6 +15,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Saving
     {
         public static void Run()
         {
+            //ExStart:SaveToStream
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_PresentationSaving();
 
@@ -31,6 +32,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Saving
                 presentation.Save(toStream, Aspose.Slides.Export.SaveFormat.Pptx);
                 toStream.Close();
             }
+            //ExEnd:SaveToStream
         }
     }
 }

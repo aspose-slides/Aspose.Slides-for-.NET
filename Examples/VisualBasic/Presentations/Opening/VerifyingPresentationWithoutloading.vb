@@ -10,11 +10,13 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.Presentations.Opening
     Class VerifyingPresentationWithoutloading
         Public Shared Sub Run()
+			'ExStart:VerifyingPresentationWithoutloading
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_PresentationOpening()
 
             Dim format As LoadFormat = PresentationFactory.Instance.GetPresentationInfo(dataDir & Convert.ToString("HelloWorld.pptx")).LoadFormat
             ' It will return "LoadFormat.Unknown" if the file is other than presentation formats           
         End Sub
+			'ExEnd:VerifyingPresentationWithoutloading
     End Class
 End Namespace

@@ -16,6 +16,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
     {
         public static void Run()
         {
+            //ExStart:AddRelativeScaleHeightPictureFrame
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Shapes();
 
@@ -37,8 +38,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
                 // Save presentation
                 presentation.Save(dataDir + "Adding Picture Frame with Relative Scale_out.pptx", SaveFormat.Pptx);
             }
-           
-
+            //ExEnd:AddRelativeScaleHeightPictureFrame
         }
     }
 }

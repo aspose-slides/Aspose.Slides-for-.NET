@@ -6,6 +6,7 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.Text
     Public Class TextBoxOnSlideProgram
         Public Shared Sub Run()
+            ' ExStart:TextBoxOnSlideProgram
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Text()
 
@@ -42,7 +43,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Text
                 ' Save the presentation to disk
                 pres.Save(dataDir & "TextBox_out.pptx", Aspose.Slides.Export.SaveFormat.Pptx)
             End Using
-
+            ' ExEnd:TextBoxOnSlideProgram
         End Sub
     End Class
 End Namespace

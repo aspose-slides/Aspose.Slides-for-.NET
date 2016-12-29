@@ -15,6 +15,7 @@ Imports Aspose.Slides.Animation
 Namespace Aspose.Slides.Examples.VisualBasic.Charts
     Public Class AnimatingCategoriesElements
         Public Shared Sub Run()
+			'ExStart:AnimatingCategoriesElements
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Charts()
 
@@ -56,6 +57,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Charts
                 ' Write the presentation file to disk
                 presentation.Save(dataDir & Convert.ToString("AnimatingCategoriesElements_out.pptx"), SaveFormat.Pptx)
             End Using
+			'ExEnd:AnimatingCategoriesElements
         End Sub
     End Class
 End Namespace

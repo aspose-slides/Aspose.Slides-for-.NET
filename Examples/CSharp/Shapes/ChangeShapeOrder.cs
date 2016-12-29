@@ -15,6 +15,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
     {
         public static void Run()
         {
+            //ExStart:ChangeShapeOrder
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Shapes();
 
@@ -31,7 +32,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
             shp3 = slide.Shapes.AddAutoShape(ShapeType.Triangle, 200, 365, 400, 150);
             slide.Shapes.Reorder(2, shp3);
             presentation1.Save(dataDir + "Reshape_out.pptx", SaveFormat.Pptx);
-
+            //ExEnd:ChangeShapeOrder
         }
     }
 }

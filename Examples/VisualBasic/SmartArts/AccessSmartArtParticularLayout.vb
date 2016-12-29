@@ -32,6 +32,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.SmartArts
                     End If
                 Next
             End Using
+            ' ExEnd:AccessSmartArtParticularLayout
         End Sub
     End Class
 End Namespace

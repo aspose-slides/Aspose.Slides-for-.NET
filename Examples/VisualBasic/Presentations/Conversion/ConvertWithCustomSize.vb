@@ -13,6 +13,7 @@ Imports Aspose.Slides.Export
 Namespace Aspose.Slides.Examples.VisualBasic.Conversion
     Public Class ConvertWithCustomSize
         Public Shared Sub Run()
+			'ExStart:ConvertWithCustomSize
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Conversion()
 
@@ -46,6 +47,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Conversion
                 ' Save the presentation to TIFF with specified image size
                 pres.Save(dataDir & Convert.ToString("TiffWithCustomSize_out.tiff"), SaveFormat.Tiff, opts)
             End Using
+			'ExEnd:ConvertWithCustomSize
         End Sub
     End Class
 End Namespace

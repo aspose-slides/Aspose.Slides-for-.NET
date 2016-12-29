@@ -13,6 +13,7 @@ Imports Aspose.Slides.Export
 Namespace Aspose.Slides.Examples.VisualBasic.Shapes
     Class AddVideoFrameFromWebSource
         Public Shared Sub Run()
+			'ExStart:AddVideoFrameFromWebSource	
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Shapes()
 
@@ -32,6 +33,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Shapes
                 Dim thumbnailUri As String = (Convert.ToString("http://img.youtube.com/vi/") & videoId) + "/hqdefault.jpg"
                 videoFrame.PictureFormat.Picture.Image = pres.Images.AddImage(client.DownloadData(thumbnailUri))
             End Using
+			'ExEnd:AddVideoFrameFromWebSource	
         End Sub
     End Class
 End Namespace

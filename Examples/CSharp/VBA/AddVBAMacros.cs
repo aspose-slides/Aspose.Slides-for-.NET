@@ -44,10 +44,11 @@ namespace Aspose.Slides.Examples.CSharp.VBA
                 presentation.VbaProject.References.Add(stdoleReference);
                 presentation.VbaProject.References.Add(officeReference);
 
-                // ExStart:AddVBAMacros
+            
                 // Save Presentation
                 presentation.Save(dataDir + "AddVBAMacros_out.pptm", SaveFormat.Pptm);
             }
+            // ExStart:AddVBAMacros
         }
     }
 }

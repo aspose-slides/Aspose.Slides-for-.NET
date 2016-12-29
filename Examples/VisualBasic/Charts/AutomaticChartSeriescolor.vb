@@ -14,6 +14,7 @@ Imports Aspose.Slides.Export
 Namespace Aspose.Slides.Examples.VisualBasic.Charts
     Public Class AutomaticChartSeriescolor
         Public Shared Sub Run()
+			'ExStart:AutomaticChartSeriescolor
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Charts()
 
@@ -75,7 +76,8 @@ Namespace Aspose.Slides.Examples.VisualBasic.Charts
 
             ' Save presentation with chart
             presentation.Save(dataDir & Convert.ToString("AutomaticColor_out.pptx"), SaveFormat.Pptx)
-
+			
+			'ExEnd:AutomaticChartSeriescolor
         End Sub
     End Class
 End Namespace

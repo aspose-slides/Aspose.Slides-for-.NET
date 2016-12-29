@@ -17,6 +17,7 @@ namespace Aspose.Slides.Examples.CSharp.Charts
     {
         public static void Run()
         {
+            //ExStart:AnimatingSeries
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Charts();
 
@@ -51,6 +52,7 @@ namespace Aspose.Slides.Examples.CSharp.Charts
                 // Write the modified presentation to disk 
                 presentation.Save(dataDir + "AnimatingSeries_out.pptx", SaveFormat.Pptx);
             }
+            //ExEnd:AnimatingSeries
         }
     }
 }

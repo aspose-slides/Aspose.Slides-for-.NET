@@ -15,10 +15,10 @@ namespace Aspose.Slides.Examples.CSharp.Slides.Comments
     {
         public static void Run()
         {
+            //ExStart:AccessSlideComments
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Slides_Presentations_Comments();
 
-            // ExStart:AccessSlideComments
             // Instantiate Presentation class
             using (Presentation presentation = new Presentation(dataDir + "Comments1.pptx"))
             {
@@ -33,6 +33,7 @@ namespace Aspose.Slides.Examples.CSharp.Slides.Comments
                     }
                 }
             }
+            //ExEnd:AccessSlideComments
         }
     }
 }

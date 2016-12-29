@@ -11,7 +11,7 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.Shapes
     Public Class Hidingshapes
         Public Shared Sub Run()
-
+			'ExStart:Hidingshapes	
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Shapes()
 
@@ -35,7 +35,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Shapes
 
             ' Save presentation to disk
             presentation.Save(dataDir + "Hidding_shapes_out.pptx", SaveFormat.Pptx)
-
+			'ExEnd:Hidingshapes	
         End Sub
     End Class
 End Namespace

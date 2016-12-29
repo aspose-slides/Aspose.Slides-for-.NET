@@ -13,19 +13,18 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.VBA
     Class RemoveVBAMacros
         Public Shared Sub Run()
+            ' ExStart:RemoveVBAMacros
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_VBA()
-
-            ' ExStart:RemoveVBAMacros
             ' Instantiate Presentation
             Using presentation As New Presentation(dataDir & Convert.ToString("VBA.pptm"))
                 ' Access the Vba module and remove 
                 presentation.VbaProject.Modules.Remove(presentation.VbaProject.Modules(0))
 
-                ' ExEnd:RemoveVBAMacros
                 ' Save Presentation
                 presentation.Save(dataDir & Convert.ToString("RemovedVBAMacros_out.pptm"), SaveFormat.Pptm)
             End Using
+            ' ExEnd:RemoveVBAMacros
         End Sub
     End Class
 End Namespace

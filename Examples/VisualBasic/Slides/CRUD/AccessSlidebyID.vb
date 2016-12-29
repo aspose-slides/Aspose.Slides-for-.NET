@@ -11,20 +11,20 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.Slides.CRUD
     Class AccessSlidebyID
         Public Shared Sub Run()
+            'ExStart:AccessSlidebyID
+
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Slides_Presentations_CRUD()
 
-            ' ExStart:AccessSlidebyID
             ' Create an instance of Presentation class
             Dim presentation As New Presentation(dataDir & Convert.ToString("AccessSlides.pptx"))
 
             ' Getting Slide ID
             Dim id As UInteger = presentation.Slides(0).SlideId
 
-            ' ExEnd:AccessSlidebyID
             ' Accessing Slide by ID
             Dim slide As IBaseSlide = presentation.GetSlideById(id)
-
+            ' ExEnd:AccessSlidebyID
         End Sub
     End Class
 End Namespace

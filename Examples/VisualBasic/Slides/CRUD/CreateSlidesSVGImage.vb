@@ -13,6 +13,7 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.Slides.CRUD
     Public Class CreateSlidesSVGImage
         Public Shared Sub Run()
+            ' ExStart:CreateSlidesSVGImage
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Slides_Presentations_CRUD()
 
@@ -45,5 +46,6 @@ Namespace Aspose.Slides.Examples.VisualBasic.Slides.CRUD
             target = value
             Return value
         End Function
+        ' ExEnd:CreateSlidesSVGImage
     End Class
 End Namespace

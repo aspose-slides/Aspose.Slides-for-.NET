@@ -14,6 +14,7 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.Charts
     Public Class SetChartSeriesOverlap
         Public Shared Sub Run()
+			'ExStart:SetChartSeriesOverlap
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Charts()
 
@@ -29,6 +30,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Charts
                 ' Write the presentation file to disk
                 presentation.Save(dataDir & Convert.ToString("SetChartSeriesOverlap_out.pptx"), SaveFormat.Pptx)
             End Using
+			'ExEnd:SetChartSeriesOverlap
         End Sub
     End Class
 End Namespace

@@ -5,6 +5,7 @@ Imports System.Drawing
 Namespace Aspose.Slides.Examples.VisualBasic.Shapes
     Public Class AnimationsOnShapes
         Public Shared Sub Run()
+			'ExStart:AnimationsOnShapes	
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Shapes()
 
@@ -49,6 +50,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Shapes
                 pres.Save(dataDir & "AnimExample_out.pptx", SaveFormat.Pptx)
 
             End Using
+			'ExEnd:AnimationsOnShapes	
         End Sub
     End Class
 End Namespace

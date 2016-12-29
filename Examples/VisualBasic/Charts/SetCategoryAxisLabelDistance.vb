@@ -14,6 +14,7 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.Charts
     Public Class SetCategoryAxisLabelDistance
         Public Shared Sub Run()
+			'ExStart:SetCategoryAxisLabelDistance
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Charts()
 
@@ -31,5 +32,6 @@ Namespace Aspose.Slides.Examples.VisualBasic.Charts
             ' Write the presentation file to disk
             presentation.Save(dataDir & Convert.ToString("SetCategoryAxisLabelDistance_out.pptx"), SaveFormat.Pptx)
         End Sub
+			'ExEnd:SetCategoryAxisLabelDistance
     End Class
 End Namespace

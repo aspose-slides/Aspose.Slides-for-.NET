@@ -25,11 +25,10 @@ Namespace Aspose.Slides.Examples.VisualBasic.SmartArts
                 ' Get or Set the state of SmartArt Diagram
                 smart.IsReversed = True
                 Dim flag As Boolean = smart.IsReversed
-
-                ' ExEnd:ChangeSmartArtState
                 ' Saving Presentation
                 presentation.Save(dataDir & Convert.ToString("ChangeSmartArtState_out.pptx"), SaveFormat.Pptx)
             End Using
+            ' ExEnd:ChangeSmartArtState
         End Sub
     End Class
 End Namespace

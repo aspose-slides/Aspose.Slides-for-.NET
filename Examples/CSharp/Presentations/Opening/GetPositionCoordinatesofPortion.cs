@@ -16,9 +16,9 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Opening
     {
         public static void Run()
         {
+            //ExStart:GetPositionCoordinatesofPortion
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_PresentationOpening();
-
             using (Presentation presentation = new Presentation(dataDir + "Shapes.pptx"))
             {
                 IAutoShape shape = (IAutoShape)presentation.Slides[0].Shapes[0];
@@ -33,7 +33,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Opening
                     }
                 }
             }
-
+            //ExEnd:GetPositionCoordinatesofPortion
         }
     }
 }

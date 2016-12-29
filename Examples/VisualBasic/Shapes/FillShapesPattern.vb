@@ -10,6 +10,7 @@ Imports System.Drawing
 Namespace Aspose.Slides.Examples.VisualBasic.Shapes
     Public Class FillShapesPattern
         Public Shared Sub Run()
+			'ExStart:FillShapesPattern
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Shapes()
 
@@ -41,6 +42,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Shapes
                 'Write the PPTX file to disk
                 pres.Save(dataDir & "RectShpPatt_out.pptx", SaveFormat.Pptx)
             End Using
+			'ExEnd:FillShapesPattern
         End Sub
     End Class
 End Namespace

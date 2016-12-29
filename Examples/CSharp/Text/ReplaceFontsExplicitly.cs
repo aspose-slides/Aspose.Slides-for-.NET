@@ -15,6 +15,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
     {
         public static void Run()
         {
+            // ExStart:ReplaceFontsExplicitly
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Text();
            
@@ -34,6 +35,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
             // ExEnd:ReplaceFontsExplicitly
             // Save the presentation
             presentation.Save(dataDir + "UpdatedFont_out.pptx", SaveFormat.Pptx);
+            // ExEnd:ReplaceFontsExplicitly
         }
     }
 }

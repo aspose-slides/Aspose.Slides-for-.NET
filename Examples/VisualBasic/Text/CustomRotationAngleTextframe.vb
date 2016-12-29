@@ -14,10 +14,9 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.Text
     Class CustomRotationAngleTextframe
         Public Shared Sub Run()
+            ' ExStart:CustomRotationAngleTextframe
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Text()
-
-            ' ExStart:CustomRotationAngleTextframe
             ' Create an instance of Presentation class
             Dim presentation As New Presentation()
 
@@ -31,9 +30,9 @@ Namespace Aspose.Slides.Examples.VisualBasic.Text
             chart.HasTitle = True
             chart.ChartTitle.AddTextFrameForOverriding("Custom title").TextFrameFormat.RotationAngle = -30
 
-            ' ExEnd:CustomRotationAngleTextframe
             ' Save Presentation
             presentation.Save(dataDir & Convert.ToString("textframe-rotation_out.pptx"), SaveFormat.Pptx)
+            ' ExEnd:CustomRotationAngleTextframe
 
         End Sub
     End Class

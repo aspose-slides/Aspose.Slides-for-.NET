@@ -12,6 +12,8 @@ Imports Aspose.Slides.Export
 Namespace Aspose.Slides.Examples.VisualBasic.Slides.Background
     Public Class SetBackgroundToGradient
         Public Shared Sub Run()
+            'ExStart:SetBackgroundToGradient
+
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Slides_Presentations_Background()
 
@@ -26,7 +28,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Slides.Background
                 'Write the presentation to disk
                 pres.Save(dataDir & Convert.ToString("ContentBG_Grad_out.pptx"), SaveFormat.Pptx)
             End Using
-
+            'ExEnd:SetBackgroundToGradient
         End Sub
     End Class
 End Namespace

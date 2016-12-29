@@ -14,6 +14,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations
     {
         public static void Run()
         {
+            //ExStart:AccessProperties
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_PresentationProperties();
 
@@ -34,6 +35,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations
             IDocumentProperties docProps = pres.DocumentProperties;
 
             System.Console.WriteLine("Name of Application : " + docProps.NameOfApplication);
+            //ExEnd:AccessProperties
         }
     }
 }

@@ -24,11 +24,10 @@ Namespace Aspose.Slides.Examples.VisualBasic.SmartArts
 
                 ' Get or Set the organization chart type 
                 smart.Nodes(0).OrganizationChartLayout = OrganizationChartLayoutType.LeftHanging
-
-                ' ExEnd:OrganizeChartLayoutType
                 ' Saving Presentation
                 presentation.Save(dataDir & Convert.ToString("OrganizeChartLayoutType_out.pptx"), SaveFormat.Pptx)
             End Using
+            ' ExEnd:OrganizeChartLayoutType
         End Sub
     End Class
 End Namespace

@@ -40,10 +40,10 @@ namespace Aspose.Slides.Examples.CSharp.SmartArts
                     }
                 }
 
-                // ExEnd:ChangeSmartArtShapeColorStyle
                 // Saving Presentation
                 presentation.Save(dataDir + "ChangeSmartArtColorStyle_out.pptx", SaveFormat.Pptx);
             }
+            // ExEnd:ChangeSmartArtShapeColorStyle
         }
     }
 }

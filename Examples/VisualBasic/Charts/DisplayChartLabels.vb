@@ -14,6 +14,7 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.Charts
     Public Class DisplayChartLabels
         Public Shared Sub Run()
+			'ExStart:DisplayChartLabels
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Charts()
 
@@ -24,6 +25,8 @@ Namespace Aspose.Slides.Examples.VisualBasic.Charts
                 chart.ChartData.Series(0).Labels(2).DataLabelFormat.ShowLabelAsDataCallout = False
                 presentation.Save(dataDir & Convert.ToString("DisplayChartLabels_out.pptx"), SaveFormat.Pptx)
             End Using
+			'ExEnd:DisplayChartLabels
+
         End Sub
     End Class
 End Namespace

@@ -8,6 +8,7 @@ Imports Aspose.Slides.Export
 Namespace Aspose.Slides.Examples.VisualBasic.Shapes
     Public Class FormatJoinStyles
         Public Shared Sub Run()
+			'ExStart:FormatJoinStyles	
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Shapes()
 
@@ -64,6 +65,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Shapes
                 'Write the PPTX file to disk
                 pres.Save(dataDir & "RectShpLnJoin_out.pptx", SaveFormat.Pptx)
             End Using
-        End Sub
+			'ExEnd:FormatJoinStyles	
+		End Sub
     End Class
 End Namespace

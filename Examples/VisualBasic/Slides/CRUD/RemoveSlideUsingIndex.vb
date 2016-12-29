@@ -12,6 +12,7 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.Slides.CRUD
     Public Class RemoveSlideUsingIndex
         Public Shared Sub Run()
+            ' ExStart:RemoveSlideUsingIndex
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Slides_Presentations_CRUD()
 
@@ -24,6 +25,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Slides.CRUD
                 ' Writing the presentation file
                 pres.Save(dataDir & Convert.ToString("modified_out.pptx"), Aspose.Slides.Export.SaveFormat.Pptx)
             End Using
+            ' ExEnd:RemoveSlideUsingIndex
         End Sub
     End Class
 End Namespace

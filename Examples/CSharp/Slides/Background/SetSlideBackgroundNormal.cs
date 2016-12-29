@@ -16,6 +16,7 @@ namespace Aspose.Slides.Examples.CSharp.Slides.Background
     {
         public static void Run()
         {
+            //ExStart:SetSlideBackgroundNormal
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Slides_Presentations_Background();
 
@@ -34,6 +35,7 @@ namespace Aspose.Slides.Examples.CSharp.Slides.Background
                 pres.Slides[0].Background.FillFormat.SolidFillColor.Color = Color.Blue;
                 pres.Save(dataDir + "ContentBG_out.pptx", SaveFormat.Pptx);
             }
+            //ExEnd:SetSlideBackgroundNormal
         }
     }
 }

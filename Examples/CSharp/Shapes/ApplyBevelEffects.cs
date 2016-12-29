@@ -16,6 +16,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
     {
         public static void Run()
         {
+            //ExStart:ApplyBevelEffects
             // The path to the documents directory.                    
             string dataDir = RunExamples.GetDataDir_Shapes();
 
@@ -43,6 +44,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
 
             // Write the presentation as a PPTX file
             pres.Save(dataDir + "Bavel_out.pptx", SaveFormat.Pptx);
+            //ExEnd:ApplyBevelEffects
         }
     }
 }

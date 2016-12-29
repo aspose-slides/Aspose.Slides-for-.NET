@@ -6,6 +6,7 @@ Imports Aspose.Slides.Export
 Namespace Aspose.Slides.Examples.VisualBasic.Shapes
     Public Class AddVideoFrame
         Public Shared Sub Run()
+			'ExStart:AddVideoFrame	
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Shapes()
 
@@ -31,6 +32,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Shapes
                 'Write the PPTX file to disk
                 pres.Save(dataDir & "VideoFrame1_out.pptx", SaveFormat.Pptx)
             End Using
+			'ExEnd:AddVideoFrame	
         End Sub
     End Class
 End Namespace

@@ -15,6 +15,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Conversion
     {
         public static void Run()
         {
+            //ExStart:ConvetToSWF
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Conversion();
 
@@ -29,6 +30,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Conversion
                 swfOptions.ViewerIncluded = true;
                 presentation.Save(dataDir + "SaveNotes_out.swf", SaveFormat.SwfNotes, swfOptions);
             }
+            //ExEnd:ConvetToSWF
         } 
     }
 }

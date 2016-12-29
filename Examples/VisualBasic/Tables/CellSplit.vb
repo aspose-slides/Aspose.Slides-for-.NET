@@ -12,6 +12,7 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.Tables
     Public Class CellSplit
         Public Shared Sub Run()
+            ' ExStart:CellSplit
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Tables()
 
@@ -61,8 +62,8 @@ Namespace Aspose.Slides.Examples.VisualBasic.Tables
 
                 ' Write PPTX to Disk
                 presentation.Save(dataDir & Convert.ToString("CellSplit_out.pptx"), SaveFormat.Pptx)
-
             End Using
+            ' ExEnd:CellSplit
         End Sub
     End Class
 End Namespace

@@ -12,6 +12,7 @@ Imports Aspose.Slides.Export
 Namespace Aspose.Slides.Examples.VisualBasic.Slides.Layout
     Class AddLayoutSlides
         Public Shared Sub Run()
+            'ExStart:AddLayoutSlides
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Slides_Presentations_Layout()
 
@@ -59,6 +60,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Slides.Layout
                 ' Save presentation    
                 presentation.Save(dataDir & Convert.ToString("AddLayoutSlides_out.pptx"), SaveFormat.Pptx)
             End Using
+            'ExStart:AddLayoutSlides
         End Sub
     End Class
 End Namespace

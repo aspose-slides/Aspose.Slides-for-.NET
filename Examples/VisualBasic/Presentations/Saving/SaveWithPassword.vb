@@ -12,6 +12,7 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.Presentations.Saving
     Public Class SaveWithPassword
         Public Shared Sub Run()
+			'ExStart:SaveWithPassword
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_PresentationSaving()
 
@@ -31,6 +32,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Presentations.Saving
 
             ' Save your presentation to a file
             pres.Save(dataDir & Convert.ToString("SaveWithPassword_out.pptx"), Aspose.Slides.Export.SaveFormat.Pptx)
+			'ExEnd:SaveWithPassword
         End Sub
     End Class
 End Namespace

@@ -12,6 +12,7 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.Presentations.Saving
     Public Class SaveAsReadOnly
         Public Shared Sub Run()
+			'ExStart:SaveAsReadOnly
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_PresentationSaving()
 
@@ -31,7 +32,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Presentations.Saving
 
             ' Save your presentation to a file
             presentation.Save(dataDir & Convert.ToString("WriteProtected_out.pptx"), Aspose.Slides.Export.SaveFormat.Pptx)
-
+			'ExEnd:SaveAsReadOnly
         End Sub
     End Class
 End Namespace

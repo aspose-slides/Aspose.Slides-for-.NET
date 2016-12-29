@@ -17,6 +17,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
     {
         public static void Run()
         {
+            //ExStart:CreateSmartArtChildNoteThumbnail
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Shapes();
 
@@ -34,6 +35,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
 
             // Save thumbnail
             bmp.Save(dataDir + "SmartArt_ChildNote_Thumbnail_out.jpeg", ImageFormat.Jpeg);
+            //ExEnd:CreateSmartArtChildNoteThumbnail
         }
     }
 }

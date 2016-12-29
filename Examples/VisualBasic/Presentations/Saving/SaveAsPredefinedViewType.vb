@@ -12,6 +12,7 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.Presentations.Saving
     Class SaveAsPredefinedViewType
         Public Shared Sub Run()
+			'ExStart:SaveAsPredefinedViewType
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_PresentationSaving()
 
@@ -23,6 +24,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Presentations.Saving
 
             ' Saving presentation
             presentation.Save(dataDir & Convert.ToString("SetViewType_out.pptx"), Aspose.Slides.Export.SaveFormat.Pptx)
+			'ExEnd:SaveAsPredefinedViewType
         End Sub
     End Class
 End Namespace

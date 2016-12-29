@@ -16,6 +16,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
     {
         public static void Run()
         {
+            //ExStart:Hidingshapes
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Shapes();
 
@@ -41,7 +42,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
 
             // Save presentation to disk
             pres.Save(dataDir + "Hiding_Shapes_out.pptx", SaveFormat.Pptx);
-
+            //ExEnd:Hidingshapes
         }
     }
 }

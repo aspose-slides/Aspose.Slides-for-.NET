@@ -13,10 +13,9 @@ namespace Aspose.Slides.Examples.CSharp.Presentations
 {
     public class UpdatePresentationPropertiesUsingNewTemplate
     {
+        //ExStart:UpdatePresentationPropertiesUsingNewTemplate
         public static void Run()
         {
-            // For complete examples and data files, please go to https:// Github.com/aspose-slides/Aspose.Slides-for-.NET
-
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_PresentationProperties();
 
@@ -41,5 +40,6 @@ namespace Aspose.Slides.Examples.CSharp.Presentations
             toUpdate.UpdateDocumentProperties(template);
             toUpdate.WriteBindedPresentation(path);
         }
+        //ExEnd:UpdatePresentationPropertiesUsingNewTemplate
     }
 }

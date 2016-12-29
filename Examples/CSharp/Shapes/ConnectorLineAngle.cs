@@ -1,12 +1,12 @@
 using System.IO;
-
 using Aspose.Slides;
 using System;
 
-namespace Aspose.Slides.Examples.CSharp.Shapes 
+namespace Aspose.Slides.Examples.CSharp.Shapes
 {
     public class ConnectorLineAngle
     {
+        //ExStart:ConnectorLineAngle
         public static void Run()
         {
             // The path to the documents directory.
@@ -35,7 +35,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
 
                 Console.WriteLine(dir);
             }
-            
+
         }
         public static double getDirection(float w, float h, bool flipH, bool flipV)
         {
@@ -47,6 +47,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
             if (angle < 0) angle += 2 * Math.PI;
             return angle * 180.0 / Math.PI;
         }
+        //ExEnd:ConnectorLineAngle
     }
 
 }

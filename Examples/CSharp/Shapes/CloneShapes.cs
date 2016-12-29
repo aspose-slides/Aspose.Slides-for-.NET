@@ -15,6 +15,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
     {
         public static void Run()
         {
+            //ExStart:CloneShapes
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Shapes();
 
@@ -29,11 +30,11 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
                 destShapes.AddClone(sourceShapes[2]);                 
                 destShapes.InsertClone(0, sourceShapes[0], 50, 150);
 
-                //Write the PPTX file to disk
+                // Write the PPTX file to disk
                 srcPres.Save(dataDir + "CloneShape_out.pptx", SaveFormat.Pptx);
-
+                //ExStart:CloneShapes
             }
-            
+           
         }
     }
 }

@@ -14,6 +14,8 @@ namespace Aspose.Slides.Examples.CSharp.Presentations
     {
         public static void Run()
         {
+            //ExStart:AccessBuiltinProperties
+
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_PresentationProperties();
 
@@ -38,7 +40,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations
             System.Console.WriteLine("Is Shared between producers : " + documentProperties.SharedDoc);
             System.Console.WriteLine("Subject : " + documentProperties.Subject);
             System.Console.WriteLine("Title : " + documentProperties.Title);
-            
+            //ExEnd:AccessBuiltinProperties            
         }
     }
 }

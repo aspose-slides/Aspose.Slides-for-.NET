@@ -13,6 +13,7 @@ Imports Aspose.Slides.Export
 Namespace Aspose.Slides.Examples.VisualBasic.Slides.Background
     Public Class SetSlideBackgroundNormal
         Public Shared Sub Run()
+            'ExStart:SetSlideBackgroundNormal
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Slides_Presentations_Background()
 
@@ -31,6 +32,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Slides.Background
                 pres.Slides(0).Background.FillFormat.SolidFillColor.Color = Color.Blue
                 pres.Save(dataDir & Convert.ToString("ContentBG_out.pptx"), SaveFormat.Pptx)
             End Using
+            'ExEnd:SetSlideBackgroundNormal
         End Sub
     End Class
 End Namespace

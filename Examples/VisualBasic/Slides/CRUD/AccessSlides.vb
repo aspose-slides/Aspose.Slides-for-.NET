@@ -12,6 +12,7 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.Slides.CRUD
     Public Class AccessSlides
         Public Shared Sub Run()
+            'ExStart:AccessSlides
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Slides_Presentations_CRUD()
 
@@ -21,6 +22,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Slides.CRUD
                 Dim slide As ISlide = pres.Slides(0)
                 System.Console.WriteLine("Slide Number: " + slide.SlideNumber.ToString())
             End Using
+            'ExEnd:AccessSlides'
         End Sub
     End Class
 End Namespace

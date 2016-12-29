@@ -13,10 +13,10 @@ Imports Aspose.Slides.SlideShow
 Namespace Aspose.Slides.Examples.VisualBasic.Slides.Transitions
     Class ManagingBetterSlideTransitions
         Public Shared Sub Run()
+            ' ExStart:ManagingBetterSlideTransitions
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Slides_Presentations_Transitions()
 
-            ' ExStart:ManagingBetterSlideTransitions
             ' Instantiate Presentation class to load the source presentation file
             Using presentation As New Presentation(dataDir & Convert.ToString("AccessSlides.pptx"))
                 ' Apply circle type transition on slide 1
@@ -40,6 +40,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Slides.Transitions
                 ' Write the presentation to disk
                 presentation.Save(dataDir & Convert.ToString("BetterTransitions_out.pptx"), SaveFormat.Pptx)
             End Using
+            ' ExEnd:ManagingBetterSlideTransitions
         End Sub
     End Class
 End Namespace

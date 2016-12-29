@@ -13,7 +13,8 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Conversion
     class CustomOptionsPDFConversion
     {
         public static void Run()
-        {           
+        {
+            //ExStart:CustomOptionsPDFConversion
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Conversion();
 
@@ -38,6 +39,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Conversion
                 // Save the presentation to PDF with specified options
                 pres.Save(dataDir + "Custom_Option_Pdf_Conversion_out.pdf", SaveFormat.Pdf, pdfOptions);
             }
+            //ExEnd:CustomOptionsPDFConversion
         }
     }
 }

@@ -10,7 +10,7 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.Shapes
     Public Class AccessingAltTextinGroupshapes
         Public Shared Sub Run()
-
+			'ExStart:AccessingAltTextinGroupshapes
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Shapes()
 
@@ -35,6 +35,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Shapes
                     Next
                 End If
             Next
+			'ExEnd:AccessingAltTextinGroupshapes
         End Sub
     End Class
 End Namespace

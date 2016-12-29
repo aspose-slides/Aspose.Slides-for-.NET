@@ -7,6 +7,8 @@ Imports Aspose.Slides.Export
 Namespace Aspose.Slides.Examples.VisualBasic.Text
     Public Class ParagraphsAlignment
         Public Shared Sub Run()
+            ' ExStart:ParagraphsAlignment
+
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Text()
 
@@ -35,8 +37,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Text
                 'Writing the presentation as a PPTX file
                 pres.Save(dataDir & "Centeralign_out.pptx", SaveFormat.Pptx)
             End Using
-
-
+            ' ExStart:ParagraphsAlignment
         End Sub
     End Class
 End Namespace

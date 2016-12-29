@@ -15,12 +15,11 @@ namespace Aspose.Slides.Examples.CSharp.Rendering.Printing
     {
         public static void Run()
         {
+            //ExStart:SpecificPrinterPrinting
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Rendering();
-
             try
             {
-
                 // Load the presentation
                 Presentation presentation = new Presentation(dataDir + "Print.ppt");
 
@@ -33,7 +32,7 @@ namespace Aspose.Slides.Examples.CSharp.Rendering.Printing
                 Console.WriteLine(ex.Message + "\nPlease set printer name as string parameter to the Presentation Print method");
                        
             }
-
+            //ExEnd:SpecificPrinterPrinting
         }
     }
 }

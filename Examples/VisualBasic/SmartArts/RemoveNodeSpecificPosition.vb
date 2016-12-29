@@ -5,6 +5,7 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.SmartArts
     Public Class RemoveNodeSpecificPosition
         Public Shared Sub Run()
+            ' ExStart:RemoveNodeSpecificPosition
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_SmartArts()
 
@@ -30,12 +31,10 @@ Namespace Aspose.Slides.Examples.VisualBasic.SmartArts
 
                     End If
                 End If
-
             Next shape
-
             ' Save Presentation
             pres.Save(dataDir & "RemoveSmartArtNodeByPosition_out.pptx", Aspose.Slides.Export.SaveFormat.Pptx)
-
+            ' ExEnd:RemoveNodeSpecificPosition
         End Sub
     End Class
 End Namespace

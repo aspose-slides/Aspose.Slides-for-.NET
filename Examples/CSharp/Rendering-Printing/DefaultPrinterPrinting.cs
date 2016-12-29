@@ -14,6 +14,7 @@ namespace Aspose.Slides.Examples.CSharp.Rendering.Printing
     {
         public static void Run()
         {
+            //ExStart:DefaultPrinterPrinting
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Rendering();
 
@@ -22,6 +23,7 @@ namespace Aspose.Slides.Examples.CSharp.Rendering.Printing
 
             // Call the print method to print whole presentation to the default printer
             presentation.Print();
+            //ExEnd:DefaultPrinterPrinting
         }
     }
 }

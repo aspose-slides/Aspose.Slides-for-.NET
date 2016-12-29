@@ -12,6 +12,7 @@ Imports Aspose.Slides.Export
 Namespace Aspose.Slides.Examples.VisualBasic.Conversion
     Public Class ConvertWholePresentationToHTML
         Public Shared Sub Run()
+			'ExStart:ConvertToPDFWithHiddenSlides
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Conversion()
 
@@ -23,6 +24,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Conversion
                 ' Saving the presentation to HTML
                 presentation.Save(dataDir & Convert.ToString("ConvertWholePresentationToHTML_out.html"), SaveFormat.Html, htmlOpt)
             End Using
+			'ExEnd:ConvertToPDFWithHiddenSlides
         End Sub
     End Class
 End Namespace

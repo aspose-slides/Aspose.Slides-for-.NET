@@ -17,6 +17,7 @@ namespace Aspose.Slides.Examples.CSharp.Charts
     {
         public static void Run()
         {
+            //ExStart:DisplayPercentageAsLabels
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Charts();
 
@@ -24,13 +25,10 @@ namespace Aspose.Slides.Examples.CSharp.Charts
             Presentation presentation = new Presentation();
 
             ISlide slide = presentation.Slides[0];
-
             IChart chart = slide.Shapes.AddChart(ChartType.StackedColumn, 20, 20, 400, 400);
             IChartSeries series = chart.ChartData.Series[0];
             IChartCategory cat;
-          
             double[] total_for_Cat = new double[chart.ChartData.Categories.Count];
-
             for (int k = 0; k < chart.ChartData.Categories.Count; k++)
             {
                 cat = chart.ChartData.Categories[k];
@@ -72,7 +70,7 @@ namespace Aspose.Slides.Examples.CSharp.Charts
 
             // Save presentation with chart
             presentation.Save(dataDir + "DisplayPercentageAsLabels_out.pptx", SaveFormat.Pptx);
-
+            //ExEnd:DisplayPercentageAsLabels
         }
     }
 }

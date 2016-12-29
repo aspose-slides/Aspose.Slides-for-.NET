@@ -12,6 +12,7 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.Presentations.Properties
     Class AddCustomDocumentProperties
         Public Shared Sub Run()
+			'ExStart:AddCustomDocumentProperties
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_PresentationProperties()
 
@@ -34,7 +35,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Presentations.Properties
 
             ' Saving presentation
             presentation.Save(dataDir & Convert.ToString("CustomDocumentProperties_out.pptx"), Aspose.Slides.Export.SaveFormat.Pptx)
-
+			'ExEnd:AddCustomDocumentProperties
         End Sub
     End Class
 End Namespace

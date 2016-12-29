@@ -14,6 +14,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Opening
     {
         public static void Run()
         {
+            //ExStart:OpenPasswordPresentation
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_PresentationOpening();
 
@@ -28,6 +29,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Opening
 
             // Printing the total number of slides present in the presentation
             System.Console.WriteLine(pres.Slides.Count.ToString());
+            //ExEnd:OpenPasswordPresentation
         }
     }
 }

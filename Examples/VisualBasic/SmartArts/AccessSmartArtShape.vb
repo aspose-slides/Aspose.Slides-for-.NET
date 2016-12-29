@@ -7,6 +7,7 @@ Imports Aspose.Slides.SmartArt
 Namespace Aspose.Slides.Examples.VisualBasic.SmartArts
     Public Class AccessSmartArtShape
         Public Shared Sub Run()
+            ' ExStart:AccessSmartArtShape
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_SmartArts()
 
@@ -24,6 +25,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.SmartArts
                     End If
                 Next shape
             End Using
+            ' ExEnd:AccessSmartArtShape
         End Sub
     End Class
 End Namespace

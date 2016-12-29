@@ -14,6 +14,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Saving
     {
         public static void Run()
         {
+            //ExStart:SaveAsReadOnly
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_PresentationSaving();
 
@@ -32,7 +33,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Saving
 
             // Save your presentation to a file
             presentation.Save(dataDir + "WriteProtected_out.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
-
+            //ExEnd:SaveAsReadOnly
         }
     }
 }

@@ -12,6 +12,8 @@ Imports Aspose.Slides.Export
 Namespace Aspose.Slides.Examples.VisualBasic.Presentations.Conversion
     Class ConvertIndividualSlide
         Public Shared Sub Run()
+			'ExStart:ConvertIndividualSlide
+			' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Conversion()
 
             Using presentation As New Presentation(dataDir & Convert.ToString("Individual-Slide.pptx"))
@@ -51,6 +53,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Presentations.Conversion
 
             Private Const SlideHeader As String = "<div class=""slide"" name=""slide"" id=""slide{0}"">"
             Private Const SlideFooter As String = "</div>"
-        End Class
+			'ExEnd:ConvertIndividualSlide
+		End Class
     End Class
 End Namespace

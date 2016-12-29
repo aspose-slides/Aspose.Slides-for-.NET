@@ -14,10 +14,10 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.Text
     Class SetAnchorOfTextFrame
         Public Shared Sub Run()
+            ' ExStart:SetAnchorOfTextFrame
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Text()
 
-            ' ExStart:SetAnchorOfTextFrame
             ' Create an instance of Presentation class
             Dim presentation As New Presentation()
 
@@ -44,9 +44,9 @@ Namespace Aspose.Slides.Examples.VisualBasic.Text
             portion.PortionFormat.FillFormat.FillType = FillType.Solid
             portion.PortionFormat.FillFormat.SolidFillColor.Color = Color.Black
 
-            ' ExEnd:SetAnchorOfTextFrame
             ' Save Presentation
             presentation.Save(dataDir & Convert.ToString("AnchorText_out.pptx"), SaveFormat.Pptx)
+            ' ExEnd:SetAnchorOfTextFrame
 
         End Sub
     End Class

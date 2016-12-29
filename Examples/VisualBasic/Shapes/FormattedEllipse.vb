@@ -9,8 +9,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Shapes
     Public Class FormattedEllipse
         Public Shared Sub Run()
 
-            ' For complete examples and data files, please go to https://github.com/aspose-slides/Aspose.Slides-for-.NET            ' The path to the documents directory.
-
+			'ExStart:FormattedEllipse	
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Shapes()
 
@@ -34,9 +33,8 @@ Namespace Aspose.Slides.Examples.VisualBasic.Shapes
 
                 ' Write the PPTX file to disk
                 presentation.Save(dataDir & "EllipseShp2_out.pptx", SaveFormat.Pptx)
-
             End Using
-
+			'ExEnd:FormattedEllipse	
         End Sub
     End Class
 End Namespace

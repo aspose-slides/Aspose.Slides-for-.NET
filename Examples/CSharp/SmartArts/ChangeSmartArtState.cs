@@ -29,10 +29,11 @@ namespace Aspose.Slides.Examples.CSharp.SmartArts
                 smart.IsReversed = true;
                 bool flag = smart.IsReversed;
 
-                // ExEnd:ChangeSmartArtState
                 // Saving Presentation
                 presentation.Save(dataDir + "ChangeSmartArtState_out.pptx", SaveFormat.Pptx);
             }
+            // ExEnd:ChangeSmartArtState
+
         }
     }
 }

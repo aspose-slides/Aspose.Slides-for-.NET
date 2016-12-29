@@ -7,6 +7,7 @@ Imports Aspose.Slides.SmartArt
 Namespace Aspose.Slides.Examples.VisualBasic.SmartArts
     Public Class RemoveNode
         Public Shared Sub Run()
+            ' ExStart:RemoveNode
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_SmartArts()
 
@@ -35,8 +36,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.SmartArts
                 ' Save Presentation
                 pres.Save(dataDir & "RemoveSmartArtNode_out.pptx", Aspose.Slides.Export.SaveFormat.Pptx)
             End Using
-
-
+            ' ExEnd:RemoveNode
         End Sub
     End Class
 End Namespace

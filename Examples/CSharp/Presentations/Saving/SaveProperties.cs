@@ -14,6 +14,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Saving
     {
         public static void Run()
         {
+            //ExStart:SaveProperties
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_PresentationSaving();
 
@@ -30,6 +31,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Saving
 
             // Save your presentation to a file
             presentation.Save(dataDir + "Password Protected Presentation_out.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
+            //ExEnd:SaveProperties
         }
     }
 }

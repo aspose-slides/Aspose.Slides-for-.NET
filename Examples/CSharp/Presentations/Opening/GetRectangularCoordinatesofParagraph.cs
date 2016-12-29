@@ -15,6 +15,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Opening
     {
         public static void Run()
         {
+            //ExStart:GetRectangularCoordinatesofParagraph
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_PresentationOpening();
 
@@ -25,6 +26,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Opening
                     var textFrame = (ITextFrame)shape.TextFrame;
                     RectangleF rect = ((Paragraph)textFrame.Paragraphs[0]).GetRect();
             }
+            //ExStart:GetRectangularCoordinatesofParagraph
         } 
     }
 }

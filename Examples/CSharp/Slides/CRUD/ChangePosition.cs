@@ -14,6 +14,7 @@ namespace Aspose.Slides.Examples.CSharp.Slides.CRUD
     {
         public static void Run()
         {
+            //ExStart:ChangePosition
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Slides_Presentations_CRUD();
 
@@ -28,8 +29,8 @@ namespace Aspose.Slides.Examples.CSharp.Slides.CRUD
 
                 // Write the presentation to disk
                 pres.Save(dataDir + "Aspose_out.pptx", SaveFormat.Pptx);
-
             }
+            //ExEnd:ChangePosition
         }
     }
 }

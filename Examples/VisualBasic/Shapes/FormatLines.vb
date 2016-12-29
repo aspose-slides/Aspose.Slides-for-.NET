@@ -8,10 +8,8 @@ Imports Aspose.Slides.Export
 Namespace Aspose.Slides.Examples.VisualBasic.Shapes
     Public Class FormatLines
         Public Shared Sub Run()
-
-            ' For complete examples and data files, please go to https://github.com/aspose-slides/Aspose.Slides-for-.NET            ' The path to the documents directory.
-
-            ' The path to the documents directory.
+			'ExStart:FormatLines	
+			' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Shapes()
 
             ' Instantiate Prseetation class that represents the PPTX
@@ -40,8 +38,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Shapes
                 presentation.Save(dataDir & "RectShpLn_out.pptx", SaveFormat.Pptx)
 
             End Using
-
-
+			'ExEnd:FormatLines	
         End Sub
     End Class
 End Namespace

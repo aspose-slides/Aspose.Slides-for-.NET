@@ -12,6 +12,7 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.Presentations.Saving
     Public Class RemoveWriteProtection
         Public Shared Sub Run()
+			'ExStart:RemoveWriteProtection
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_PresentationSaving()
 
@@ -26,6 +27,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Presentations.Saving
 
             ' Saving presentation
             presentation.Save(dataDir & Convert.ToString("File_Without_WriteProtection_out.pptx"), Aspose.Slides.Export.SaveFormat.Pptx)
+			'ExEnd:RemoveWriteProtection
         End Sub
     End Class
 End Namespace

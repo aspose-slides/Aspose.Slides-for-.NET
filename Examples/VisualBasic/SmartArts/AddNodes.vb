@@ -5,6 +5,7 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.SmartArts
     Public Class AddNodes
         Public Shared Sub Run()
+            ' ExStart:AddNodes
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_SmartArts()
 
@@ -37,8 +38,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.SmartArts
 
             ' Saving Presentation
             pres.Save(dataDir & "AddSmartArtNode_out.pptx", Aspose.Slides.Export.SaveFormat.Pptx)
-
-
+            ' ExEnd:AddNodes
         End Sub
     End Class
 End Namespace

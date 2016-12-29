@@ -14,7 +14,7 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.Shapes
     Public Class ConnectShapesUsingConnectors
         Public Shared Sub Run()
-
+			'ExStart:ConnectShapesUsingConnectors
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Shapes()
 
@@ -43,6 +43,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Shapes
                 ' Saving presenation
                 input.Save(dataDir + "Connecting shapes using connectors_out.pptx", SaveFormat.Pptx)
             End Using
+			'ExEnd:ConnectShapesUsingConnectors
         End Sub
     End Class
 End Namespace

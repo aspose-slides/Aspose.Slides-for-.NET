@@ -15,8 +15,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations
     {
         public static void Run()
         {
-            // For complete examples and data files, please go to https:// Github.com/aspose-slides/Aspose.Slides-for-.NET
-
+            //ExStart:ModifyBuiltinProperties
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_PresentationProperties();
 
@@ -35,7 +34,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations
 
             // Save your presentation to a file
             presentation.Save(dataDir + "DocumentProperties_out.pptx", SaveFormat.Pptx);
-
+            //ExEnd:ModifyBuiltinProperties
         }
     }
 }

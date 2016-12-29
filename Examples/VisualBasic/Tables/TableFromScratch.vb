@@ -7,6 +7,8 @@ Imports System.Drawing
 Namespace Aspose.Slides.Examples.VisualBasic.Tables
     Public Class TableFromScratch
         Public Shared Sub Run()
+            ' ExStart:TableFromScratch
+
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Tables()
 
@@ -60,7 +62,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Tables
                 'Write PPTX to Disk
                 pres.Save(dataDir & "TableFromScratch_out.pptx", Aspose.Slides.Export.SaveFormat.Pptx)
             End Using
-
+            ' ExEnd:TableFromScratch
         End Sub
     End Class
 End Namespace

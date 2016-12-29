@@ -14,6 +14,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Conversion
     {
         public static void Run()
         {
+            //ExStart:ConvertPresentationToResponsiveHTML
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Conversion();
 
@@ -26,6 +27,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Conversion
                 // Saving the presentation to HTML
                 presentation.Save(dataDir + "ConvertPresentationToResponsiveHTML_out.html", SaveFormat.Html, htmlOptions);
             }
+            //ExEnd:ConvertPresentationToResponsiveHTML
         }
     }
 }

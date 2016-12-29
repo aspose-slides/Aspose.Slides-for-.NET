@@ -15,6 +15,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Properties
     {
         public static void Run()
         {
+            //ExStart:AddCustomDocumentProperties
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_PresentationProperties();
 
@@ -37,7 +38,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Properties
 
             // Saving presentation
             presentation.Save(dataDir + "CustomDocumentProperties_out.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
-
+            //ExEnd:AddCustomDocumentProperties
         }
     }
 }

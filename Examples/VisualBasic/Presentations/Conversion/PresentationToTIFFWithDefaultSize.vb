@@ -12,6 +12,7 @@ Imports Aspose.Slides.Export
 Namespace Aspose.Slides.Examples.VisualBasic.Presentations.Conversion
     Class PresentationToTIFFWithDefaultSize
         Public Shared Sub Run()
+			'ExStart:PresentationToTIFFWithDefaultSize
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Conversion()
 
@@ -20,6 +21,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Presentations.Conversion
                 ' Saving the presentation to TIFF document
                 presentation.Save(dataDir & Convert.ToString("Tiffoutput_out.tiff"), SaveFormat.Tiff)
             End Using
+			'ExEnd:PresentationToTIFFWithDefaultSize
         End Sub
     End Class
 End Namespace

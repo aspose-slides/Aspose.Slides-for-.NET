@@ -12,21 +12,21 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.Slides.Comments
     Class AccessSlideComments
         Public Shared Sub Run()
+            ' ExStart:AccessSlideComments
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Slides_Presentations_Comments()
 
-            ' ExStart:AccessSlideComments
             ' Instantiate Presentation class
             Using presentation As New Presentation(dataDir & Convert.ToString("Comments1.pptx"))
                 For Each commentAuthor In presentation.CommentAuthors
                     Dim author = DirectCast(commentAuthor, CommentAuthor)
                     For Each comment1 In author.Comments
                         Dim comment = DirectCast(comment1, Comment)
-                        ' ExEnd:AccessSlideComments
                         Console.WriteLine("ISlide :" & comment.Slide.SlideNumber & " has comment: " & comment.Text & " with Author: " & comment.Author.Name & " posted on time :" & comment.CreatedTime)
                     Next
                 Next
             End Using
+            ' ExEnd:AccessSlideComments
         End Sub
     End Class
 End Namespace

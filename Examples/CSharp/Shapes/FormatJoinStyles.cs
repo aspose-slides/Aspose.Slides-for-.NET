@@ -9,6 +9,8 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
     {
         public static void Run()
         {
+            //ExStart:FormatJoinStyles
+
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Shapes();
 
@@ -26,9 +28,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
 
                 // Add three autoshapes of rectangle type
                 IShape shp1 = sld.Shapes.AddAutoShape(ShapeType.Rectangle, 50, 100, 150, 75);
-
                 IShape shp2 = sld.Shapes.AddAutoShape(ShapeType.Rectangle, 300, 100, 150, 75);
-
                 IShape shp3 = sld.Shapes.AddAutoShape(ShapeType.Rectangle, 50, 250, 150, 75);
 
                 // Set the fill color of the rectangle shape
@@ -65,6 +65,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
                 //Write the PPTX file to disk
                 pres.Save(dataDir + "RectShpLnJoin_out.pptx", SaveFormat.Pptx);
             }
+            //ExEnd:FormatJoinStyles
         }
     }
 }

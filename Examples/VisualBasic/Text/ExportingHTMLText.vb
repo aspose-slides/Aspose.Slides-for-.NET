@@ -7,10 +7,9 @@ Imports System.Text
 Namespace Aspose.Slides.Examples.VisualBasic.Text
     Public Class ExportingHTMLText
         Public Shared Sub Run()
+            ' ExStart:FontFamily
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Text()
-
-
             ' Load the presentation file
             Using pres As New Presentation(dataDir & "ExportingHTMLText.pptx")
 
@@ -31,6 +30,8 @@ Namespace Aspose.Slides.Examples.VisualBasic.Text
 
                 sw.Close()
             End Using
+            ' ExEnd:FontFamily
+
         End Sub
     End Class
 End Namespace

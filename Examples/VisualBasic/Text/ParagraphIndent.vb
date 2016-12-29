@@ -8,6 +8,7 @@ Imports Aspose.Slides.Export
 Namespace Aspose.Slides.Examples.VisualBasic.Text
     Public Class ParagraphIndent
         Public Shared Sub Run()
+            ' ExStart:ParagraphIndent
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Text()
 
@@ -63,7 +64,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Text
 
             'Write the Presentation to disk
             pres.Save(dataDir & "InOutDent_out.pptx", SaveFormat.Pptx)
-
+            ' ExEnd:ParagraphIndent
         End Sub
     End Class
 End Namespace

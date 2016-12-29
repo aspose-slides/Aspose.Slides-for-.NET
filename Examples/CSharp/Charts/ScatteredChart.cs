@@ -10,6 +10,7 @@ namespace Aspose.Slides.Examples.CSharp.Charts
     {
         public static void Run()
         {
+            //ExStart:ScatteredChart
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Charts();
 
@@ -74,8 +75,7 @@ namespace Aspose.Slides.Examples.CSharp.Charts
             series.Marker.Symbol = MarkerStyleType.Circle;
 
             pres.Save(dataDir + "AsposeChart_out.pptx", SaveFormat.Pptx);
-
-
+            //ExEnd:ScatteredChart
         }
     }
 }

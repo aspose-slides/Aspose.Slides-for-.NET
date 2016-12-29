@@ -6,6 +6,7 @@ Imports System
 Namespace Aspose.Slides.Examples.VisualBasic.SmartArts
     Public Class AssistantNode
         Public Shared Sub Run()
+            ' ExStart:AssistantNode
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_SmartArts()
 
@@ -32,6 +33,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.SmartArts
                 ' Save Presentation
                 pres.Save(dataDir & "ChangeAssitantNode_out.pptx", Aspose.Slides.Export.SaveFormat.Pptx)
             End Using
+            ' ExEnd:AssistantNode
         End Sub
     End Class
 End Namespace

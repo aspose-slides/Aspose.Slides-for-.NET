@@ -13,10 +13,11 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.Text
     Class LineSpacing
         Public Shared Sub Run()
+            ' ExStart:LineSpacing
+
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Text()
 
-            ' ExStart:LineSpacing
             ' Create an instance of Presentation class
             Dim presentation As New Presentation(dataDir & "Fonts.pptx")
 
@@ -34,9 +35,9 @@ Namespace Aspose.Slides.Examples.VisualBasic.Text
             para1.ParagraphFormat.SpaceBefore = 40
             para1.ParagraphFormat.SpaceAfter = 40
 
-            ' ExEnd:LineSpacing
             ' Save Presentation
             presentation.Save(dataDir & Convert.ToString("LineSpacing_out.pptx"), SaveFormat.Pptx)
+            ' ExEnd:LineSpacing
         End Sub
     End Class
 End Namespace

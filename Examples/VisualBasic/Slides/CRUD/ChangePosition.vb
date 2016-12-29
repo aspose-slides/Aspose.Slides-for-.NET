@@ -12,6 +12,7 @@ Imports Aspose.Slides.Export
 Namespace Aspose.Slides.Examples.VisualBasic.Slides.CRUD
     Public Class ChangePosition
         Public Shared Sub Run()
+            'ExStart:ChangePosition
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Slides_Presentations_CRUD()
 
@@ -26,6 +27,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Slides.CRUD
                 ' Write the presentation to disk
                 pres.Save(dataDir & Convert.ToString("ChangePosition_out.pptx"), SaveFormat.Pptx)
             End Using
+            'ExEnd:ChangePosition
         End Sub
     End Class
 End Namespace

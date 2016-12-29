@@ -13,6 +13,7 @@ Imports Aspose.Slides.Export
 Namespace Aspose.Slides.Examples.VisualBasic.Slides.Background
     Public Class SetSlideBackgroundMaster
         Public Shared Sub Run()
+            'ExStart:SetSlideBackgroundMaster
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Slides_Presentations_Background()
 
@@ -33,6 +34,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Slides.Background
                 ' Write the presentation to disk
                 pres.Save(dataDir & Convert.ToString("SetSlideBackgroundMaster_out.pptx"), SaveFormat.Pptx)
             End Using
+            'ExEnd:SetSlideBackgroundMaster
         End Sub
     End Class
 End Namespace

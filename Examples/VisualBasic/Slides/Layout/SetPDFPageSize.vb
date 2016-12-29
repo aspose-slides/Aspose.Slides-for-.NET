@@ -13,10 +13,10 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.Slides.Layout
     Class SetPDFPageSize
         Public Shared Sub Run()
+            ' ExStart:SetPDFPageSize
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Slides_Presentations_Layout()
 
-            ' ExStart:SetPDFPageSize
             ' Instantiate a Presentation object that represents a presentation file 
             Dim presentation As New Presentation()
 
@@ -27,9 +27,9 @@ Namespace Aspose.Slides.Examples.VisualBasic.Slides.Layout
             Dim opts As New PdfOptions()
             opts.SufficientResolution = 600
 
-            ' ExEnd:SetPDFPageSize
             ' Save presentation to disk
             presentation.Save(dataDir & Convert.ToString("SetPDFPageSize_out.pdf"), SaveFormat.Pdf, opts)
+            ' ExEnd:SetPDFPageSize
         End Sub
     End Class
 End Namespace

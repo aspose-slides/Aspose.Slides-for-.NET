@@ -14,6 +14,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Properties
     {
         public static void Run()
         {
+            //ExStart:AccessOpenDoc
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_PresentationProperties();
 
@@ -22,7 +23,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Properties
 
             // Saving the ODP presentation to PPTX format
             pres.Save(dataDir + "AccessOpenDoc_out.pptx", SaveFormat.Pptx);
-
+            //ExEnd:AccessOpenDoc
         }
     }
 }

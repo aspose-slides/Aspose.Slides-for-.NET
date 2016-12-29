@@ -9,7 +9,7 @@
 Namespace Aspose.Slides.Examples.VisualBasic.Rendering.Printing
     Public Class DefaultPrinterPrinting
         Public Shared Sub Run()
-
+			'ExStart:DefaultPrinterPrinting
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Rendering()
 
@@ -18,7 +18,8 @@ Namespace Aspose.Slides.Examples.VisualBasic.Rendering.Printing
 
             ' Call the print method to print whole presentation to the default printer
             presentation.Print()
-
+			
+			'ExEnd:DefaultPrinterPrinting
         End Sub
     End Class
 End Namespace

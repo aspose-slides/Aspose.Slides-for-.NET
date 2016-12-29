@@ -15,6 +15,7 @@ namespace Aspose.Slides.Examples.CSharp.Rendering.Printing
     {
         public static void Run()
         {
+            //ExStart:SetSlideNumber
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Rendering();
 
@@ -29,10 +30,7 @@ namespace Aspose.Slides.Examples.CSharp.Rendering.Printing
 
                 presentation.Save(dataDir + "Set_Slide_Number_out.pptx", SaveFormat.Pptx);
             }
- 
-
-           
-
+            //ExEnd:SetSlideNumber
         }
     }
 }

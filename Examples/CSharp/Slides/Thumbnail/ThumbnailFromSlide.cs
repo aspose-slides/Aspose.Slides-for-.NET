@@ -15,6 +15,7 @@ namespace Aspose.Slides.Examples.CSharp.Slides.Thumbnail
     {
         public static void Run()
         {
+            // ExStart:ThumbnailFromSlide
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Slides_Presentations_Thumbnail();
 
@@ -32,6 +33,7 @@ namespace Aspose.Slides.Examples.CSharp.Slides.Thumbnail
                 bmp.Save(dataDir + "Thumbnail_out.jpg", System.Drawing.Imaging.ImageFormat.Jpeg);
 
             }
+            // ExEnd:ThumbnailFromSlide
         }
     }
 }

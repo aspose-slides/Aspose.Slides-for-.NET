@@ -15,6 +15,7 @@ namespace Aspose.Slides.Examples.CSharp.Slides.Transitions
     {
         public static void Run()
         {
+            // ExStart:SetTransitionEffects
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Slides_Presentations_Transitions();
 
@@ -29,6 +30,7 @@ namespace Aspose.Slides.Examples.CSharp.Slides.Transitions
             // ExEnd:SetTransitionEffects
             // Write the presentation to disk
             presentation.Save(dataDir + "SetTransitionEffects_out.pptx", SaveFormat.Pptx);
+            // ExEnd:SetTransitionEffects
         }
     }
 }

@@ -14,6 +14,7 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.Text
     Class ManageParagraphPictureBulletsInPPT
         Public Shared Sub Run()
+            ' ExStart:ManageParagraphPictureBulletsInPPT
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Text()
 
@@ -53,6 +54,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Text
             presentation.Save(dataDir & Convert.ToString("ParagraphPictureBulletsPPTX_out.pptx"), SaveFormat.Pptx)
             ' Writing the presentation as a PPT file
             presentation.Save(dataDir & Convert.ToString("ParagraphPictureBulletsPPT_out.ppt"), SaveFormat.Ppt)
+            ' ExEnd:ManageParagraphPictureBulletsInPPT
         End Sub
     End Class
 End Namespace

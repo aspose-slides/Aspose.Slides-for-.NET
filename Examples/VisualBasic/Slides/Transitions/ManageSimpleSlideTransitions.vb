@@ -13,10 +13,10 @@ Imports Aspose.Slides.SlideShow
 Namespace Aspose.Slides.Examples.Visualbasic.Slides.Transitions
     Class ManageSimpleSlideTransitions
         Public Shared Sub Run()
+            ' ExStart:ManageSimpleSlideTransitions
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Slides_Presentations_Transitions()
 
-            ' ExStart:ManagSimpleSlideTransitions
             ' Instantiate Presentation class to load the source presentation file
             Using presentation As New Presentation(dataDir & Convert.ToString("AccessSlides.pptx"))
                 ' Apply circle type transition on slide 1
@@ -25,10 +25,10 @@ Namespace Aspose.Slides.Examples.Visualbasic.Slides.Transitions
                 ' Apply comb type transition on slide 2
                 presentation.Slides(1).SlideShowTransition.Type = TransitionType.Comb
 
-                ' ExEnd:ManagSimpleSlideTransitions
                 ' Write the presentation to disk
                 presentation.Save(dataDir & Convert.ToString("SampleTransition_out.pptx"), SaveFormat.Pptx)
             End Using
+            ' ExEnd:ManageSimpleSlideTransitions
         End Sub
     End Class
 End Namespace

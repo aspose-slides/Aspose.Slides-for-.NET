@@ -11,7 +11,7 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.Shapes
     Public Class CreateShapeThumbnail
         Public Shared Sub Run()
-
+			'ExStart:CreateShapeThumbnail
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Shapes()
 
@@ -26,6 +26,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Shapes
                 End Using
 
             End Using
+			'ExEnd:CreateShapeThumbnail
         End Sub
     End Class
 End Namespace

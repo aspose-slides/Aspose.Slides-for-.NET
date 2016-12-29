@@ -9,6 +9,7 @@ namespace Aspose.Slides.Examples.CSharp.Charts
     {
         public static void Run()
         {
+            //ExStart:NumberFormat
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Charts();
 
@@ -43,7 +44,7 @@ namespace Aspose.Slides.Examples.CSharp.Charts
 
             // Saving presentation
             pres.Save(dataDir + "PresetNumberFormat_out.pptx", SaveFormat.Pptx);
-
+            //ExEnd:NumberFormat
         }
     }
 }

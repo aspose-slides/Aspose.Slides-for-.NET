@@ -9,6 +9,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
     {
         public static void Run()
         {
+            //ExStart:EmbeddedVideoFrame
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Shapes();
             string videoDir = RunExamples.GetDataDir_Video();
@@ -40,9 +41,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
                 // Write the PPTX file to disk
                 pres.Save(dataDir + "VideoFrame_out.pptx", SaveFormat.Pptx);
             }
-
-            
-            
+            //ExEnd:EmbeddedVideoFrame
         }
     }
 }

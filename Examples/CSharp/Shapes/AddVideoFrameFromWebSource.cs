@@ -15,6 +15,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
 {
     class AddVideoFrameFromWebSource
     {
+        //ExStart:AddVideoFrameFromWebSource
         public static void Run()
         {
             // The path to the documents directory.
@@ -40,6 +41,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
                 videoFrame.PictureFormat.Picture.Image = pres.Images.AddImage(client.DownloadData(thumbnailUri));
             }
         }
+        //ExEnd:AddVideoFrameFromWebSource
     }
 }
 

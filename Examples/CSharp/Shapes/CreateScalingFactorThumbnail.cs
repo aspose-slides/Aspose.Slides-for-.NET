@@ -16,6 +16,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
     {
         public static void Run()
         {
+            //ExStart:CreateScalingFactorThumbnail
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Shapes();
 
@@ -29,7 +30,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
                     bitmap.Save(dataDir + "Scaling Factor Thumbnail_out.png", ImageFormat.Png);
                 }
             }
-
+            //ExEnd:CreateScalingFactorThumbnail
         }
     }
 }

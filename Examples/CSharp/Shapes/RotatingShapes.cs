@@ -9,6 +9,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
     {
         public static void Run()
         {
+            //ExStart:RotatingShapes
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Shapes();
 
@@ -30,9 +31,10 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
                 // Rotate the shape to 90 degree
                 shp.Rotation = 90;
 
-                //Write the PPTX file to disk
+                // Write the PPTX file to disk
                 pres.Save(dataDir + "RectShpRot_out.pptx", SaveFormat.Pptx);
             }
+            //ExEnd:RotatingShapes
         }
     }
 }

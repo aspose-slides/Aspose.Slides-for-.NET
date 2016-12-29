@@ -31,10 +31,10 @@ namespace Aspose.Slides.Examples.CSharp.SmartArts
                 // Setting the text of the TextFrame 
                 node.TextFrame.Text = "Second root node";
 
-                // ExEnd:FillFormatSmartArtShapeNode
                 // Saving Presentation
                 presentation.Save(dataDir + "ChangeText_On_SmartArt_Node_out.pptx", SaveFormat.Pptx);
             }
+            // ExEnd:FillFormatSmartArtShapeNode
         }
     }
 }

@@ -7,6 +7,7 @@ Imports System
 Namespace Aspose.Slides.Examples.VisualBasic.Shapes
     Public Class FindShapeInSlide
         Public Shared Sub Run()
+			'ExStart:FindShapeInSlide		
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Shapes()
 
@@ -42,7 +43,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Shapes
             Next i
             Return Nothing
         End Function
-
+		'ExEnd:FindShapeInSlide	
     End Class
 End Namespace
 

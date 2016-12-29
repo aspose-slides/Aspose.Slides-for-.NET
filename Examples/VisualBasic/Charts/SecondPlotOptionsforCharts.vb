@@ -14,6 +14,7 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.Charts
     Public Class SecondPlotOptionsforCharts
         Public Shared Sub Run()
+			'ExStart:SecondPlotOptionsforCharts
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Charts()
 
@@ -31,6 +32,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Charts
 
             ' Write presentation to disk
             presentation.Save(dataDir & Convert.ToString("SecondPlotOptionsforCharts_out.pptx"), SaveFormat.Pptx)
-        End Sub
+			'ExEnd:SecondPlotOptionsforChart
+		End Sub
     End Class
 End Namespace
