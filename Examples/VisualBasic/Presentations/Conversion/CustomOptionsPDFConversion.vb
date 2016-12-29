@@ -12,6 +12,7 @@ Imports Aspose.Slides.Export
 Namespace Aspose.Slides.Examples.VisualBasic.Presentations.Conversion
     Class CustomOptionsPDFConversion
         Public Shared Sub Run()
+			'ExStart:CustomOptionsPDFConversion
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Conversion()
 
@@ -35,6 +36,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Presentations.Conversion
                 ' Save the presentation to PDF with specified options
                 pres.Save(dataDir & Convert.ToString("Custom_Option_Pdf_Conversion_out.pdf"), SaveFormat.Pdf, pdfOptions)
             End Using
+			'ExEnd:CustomOptionsPDFConversion
         End Sub
     End Class
 End Namespace

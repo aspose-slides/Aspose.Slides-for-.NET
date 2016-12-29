@@ -15,6 +15,7 @@ namespace Aspose.Slides.Examples.CSharp.Conversion
     {
         public static void Run()
         {
+            //ExStart:ConvertWholePresentationToHTML
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Conversion();
 
@@ -27,6 +28,7 @@ namespace Aspose.Slides.Examples.CSharp.Conversion
                 // Saving the presentation to HTML
                 presentation.Save(dataDir + "ConvertWholePresentationToHTML_out.html", SaveFormat.Html, htmlOpt);
             }
+            //ExEnd:ConvertWholePresentationToHTML
         }
     }
 }

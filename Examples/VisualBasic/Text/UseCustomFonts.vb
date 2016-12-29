@@ -15,9 +15,9 @@ Namespace Aspose.Slides.Examples.VisualBasic.Text
     Class UseCustomFonts
         Public Shared Sub Run()
 
+            ' ExStart:UseCustomFonts
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Text()
-
             Dim loadFonts As [String]() = New [String]() {dataDir & Convert.ToString("CustomFonts.ttf")}
 
             ' Load the custom font directory fonts
@@ -30,7 +30,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Text
 
             ' Clear Font Cachce
             FontsLoader.ClearCache()
-
+            ' ExEnd:UseCustomFonts
         End Sub
     End Class
 End Namespace

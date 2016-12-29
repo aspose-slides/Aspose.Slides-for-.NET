@@ -13,7 +13,8 @@ Imports Aspose.Slides
 
 Namespace Aspose.Slides.Examples.VisualBasic.Charts
     Public Class ChangeChartCategoryAxis
-        Public Shared Sub Run()
+        Public Shared Sub Run
+			'ExStart:ChangeChartCategoryAxis
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Charts()
 
@@ -25,6 +26,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Charts
                 chart.Axes.HorizontalAxis.MajorUnitScale = TimeUnitType.Months
                 presentation.Save(dataDir & Convert.ToString("ChangeChartCategoryAxis_out.pptx"), SaveFormat.Pptx)
             End Using
+			'ExEnd:ChangeChartCategoryAxis
         End Sub
     End Class
 End Namespace

@@ -12,6 +12,7 @@ Imports Aspose.Slides.Export
 Namespace Aspose.Slides.Examples.VisualBasic.Presentations
     Public Class ModifyBuiltinProperties
         Public Shared Sub Run()
+			'ExStart:ModifyBuiltinProperties
             ' For complete examples and data files, please go to https:// Github.com/aspose-slides/Aspose.Slides-for-.NET
 
             ' The path to the documents directory.
@@ -33,6 +34,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Presentations
             ' Save your presentation to a file
             presentation.Save(dataDir & Convert.ToString("DocumentProperties_out.pptx"), SaveFormat.Pptx)
 
-        End Sub
+			'ExEnd:ModifyBuiltinProperties
+		End Sub
     End Class
 End Namespace

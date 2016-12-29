@@ -14,6 +14,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Conversion
     {
         public static void Run()
         {
+            //ExStart:ConvertSpecificSlideToPDF
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Conversion();
 
@@ -26,6 +27,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Conversion
                 // Save the presentation to PDF
                 presentation.Save(dataDir + "RequiredSelectedSlides_out.pdf", slides, SaveFormat.Pdf);
             }
+            //ExEnd:ConvertSpecificSlideToPDF
         }
     }
 }

@@ -40,9 +40,9 @@ Namespace Aspose.Slides.Examples.VisualBasic.Charts
                 series.Format.Fill.FillType = FillType.Solid
                 series.Format.Fill.SolidFillColor.Color = seriesColor
                 series.InvertedSolidFillColor.Color = inverColor
-                'ExEnd:SetInvertFillColorChart
                 pres.Save(dataDir & Convert.ToString("SetInvertFillColorChart_out.pptx"), SaveFormat.Pptx)
             End Using
+           'ExEnd:SetInvertFillColorChart
         End Sub
     End Class
 End Namespace

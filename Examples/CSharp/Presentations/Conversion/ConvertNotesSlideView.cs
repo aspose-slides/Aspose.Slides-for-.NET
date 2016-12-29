@@ -15,6 +15,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Conversion
     {
         public static void Run()
         {
+            //ExStart:ConvertNotesSlideView
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Conversion();
 
@@ -24,6 +25,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Conversion
                 // Saving the presentation to TIFF document
                 pres.Save(dataDir + "Tiff_out.tiff", SaveFormat.Tiff);
             }
+            //ExEnd:ConvertNotesSlideView
         }
     }
 }

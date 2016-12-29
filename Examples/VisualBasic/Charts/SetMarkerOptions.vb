@@ -15,7 +15,7 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.Charts
     Public Class SetMarkerOptions
         Public Shared Sub Run()
-
+			'ExStart:SetMarkerOptions
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Charts()
 
@@ -72,7 +72,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Charts
 
             ' Write presentation to disk
             presentation.Save(dataDir & Convert.ToString("MarkOptions_out.pptx"), SaveFormat.Pptx)
-
-        End Sub
+			'ExEnd:SetMarkerOptions
+		End Sub
     End Class
 End Namespace

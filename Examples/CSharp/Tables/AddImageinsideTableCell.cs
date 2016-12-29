@@ -15,8 +15,7 @@ namespace Aspose.Slides.Examples.CSharp.Tables
     {
         public static void Run()
         {
-            // For complete examples and data files, please go to https:// Github.com/aspose-slides/Aspose.Slides-for-.NET
-
+            // ExStart:AddImageinsideTableCell
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Tables();
 
@@ -46,7 +45,7 @@ namespace Aspose.Slides.Examples.CSharp.Tables
 
             // Save PPTX to Disk
             presentation.Save(dataDir + "Image_In_TableCell_out.pptx", SaveFormat.Pptx);
-
+            // ExEnd:AddImageinsideTableCell
         }
     }
 }

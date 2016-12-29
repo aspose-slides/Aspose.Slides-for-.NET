@@ -16,6 +16,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
     {
         public static void Run()
         {
+            // ExStart:SetAnchorOfTextFrame
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Text();
 
@@ -48,8 +49,8 @@ namespace Aspose.Slides.Examples.CSharp.Text
 
             // ExEnd:SetAnchorOfTextFrame
             // Save Presentation
-            presentation.Save(dataDir + "AnchorText_out.pptx", SaveFormat.Pptx); 
-
+            presentation.Save(dataDir + "AnchorText_out.pptx", SaveFormat.Pptx);
+            // ExEnd:SetAnchorOfTextFrame
         }
     }
 }

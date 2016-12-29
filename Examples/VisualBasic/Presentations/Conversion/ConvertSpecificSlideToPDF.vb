@@ -12,6 +12,7 @@ Imports Aspose.Slides.Export
 Namespace Aspose.Slides.Examples.VisualBasic.Presentations.Conversion
     Class ConvertSpecificSlideToPDF
         Public Shared Sub Run()
+			'ExStart:ConvertSpecificSlideToPDF
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Conversion()
 
@@ -23,6 +24,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Presentations.Conversion
                 ' Save the presentation to PDF
                 presentation.Save(dataDir & Convert.ToString("RequiredSelectedSlides_out.pdf"), slides, SaveFormat.Pdf)
             End Using
+			'ExEnd:ConvertSpecificSlideToPDF
         End Sub
     End Class
 End Namespace

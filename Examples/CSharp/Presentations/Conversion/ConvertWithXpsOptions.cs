@@ -14,6 +14,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Conversion
     {
         public static void Run()
         {
+            //ExStart:ConvertWithXpsOptions
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Conversion();
 
@@ -29,6 +30,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Conversion
                 // Save the presentation to XPS document
                 pres.Save(dataDir + "XPS_With_Options_out.xps", SaveFormat.Xps, opts);
             }
+            //ExEnd:ConvertWithXpsOptions
         }
     }
 }

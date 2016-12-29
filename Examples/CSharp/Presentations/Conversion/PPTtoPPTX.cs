@@ -15,6 +15,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Conversion
     {
         public static void Run()
         {
+            //ExStart:PPTtoPPTX
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Conversion();
 
@@ -23,6 +24,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Conversion
 
             // Saving the PPTX presentation to PPTX format
             pres.Save(dataDir + "PPTtoPPTX_out.pptx", SaveFormat.Pptx);
+            //ExEnd:PPTtoPPTX
         }
     }
 }

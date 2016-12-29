@@ -10,6 +10,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
     {
         public static void Run()
         {
+            //ExStart:FormattedEllipse
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Shapes();
 
@@ -40,8 +41,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
                 //Write the PPTX file to disk
                 pres.Save(dataDir + "EllipseShp2_out.pptx", SaveFormat.Pptx);
             }
-
-            
+            //ExEnd:FormattedEllipse
         }
     }
 }

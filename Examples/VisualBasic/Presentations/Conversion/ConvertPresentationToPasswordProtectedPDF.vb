@@ -12,6 +12,7 @@ Imports Aspose.Slides.Export
 Namespace Aspose.Slides.Examples.VisualBasic.Presentations.Conversion
     Class ConvertPresentationToPasswordProtectedPDF
         Public Shared Sub Run()
+			'ExStart:ConvertPresentationToPasswordProtectedPDF
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Conversion()
 
@@ -26,6 +27,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Presentations.Conversion
                 ' Save the presentation to password protected PDF
                 presentation.Save(dataDir & Convert.ToString("PasswordProtectedPDF_out.pdf"), SaveFormat.Pdf, pdfOptions)
             End Using
+			'ExEnd:ConvertPresentationToPasswordProtectedPDF
         End Sub
     End Class
 End Namespace

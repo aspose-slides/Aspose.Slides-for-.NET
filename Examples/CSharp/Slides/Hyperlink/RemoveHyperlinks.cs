@@ -14,6 +14,7 @@ namespace Aspose.Slides.Examples.CSharp.Slides.Hyperlink
     {
         public static void Run()
         {
+            //ExStart:RemoveHyperlinks
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Slides_Presentations_Hyperlink();
 
@@ -27,6 +28,7 @@ namespace Aspose.Slides.Examples.CSharp.Slides.Hyperlink
             // ExEnd:RemoveHyperlinks
             //Writing the presentation as a PPTX file
             presentation.Save(dataDir + "RemovedHyperlink_out.pptx", SaveFormat.Pptx);
+            //ExEnd:RemoveHyperlinks
         }
     }
 }

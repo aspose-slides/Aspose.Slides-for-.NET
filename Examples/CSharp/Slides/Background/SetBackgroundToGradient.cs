@@ -14,6 +14,7 @@ namespace Aspose.Slides.Examples.CSharp.Slides.Background
     {
         public static void Run()
         {
+            //ExStart:SetBackgroundToGradient
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Slides_Presentations_Background();
 
@@ -29,7 +30,7 @@ namespace Aspose.Slides.Examples.CSharp.Slides.Background
                 //Write the presentation to disk
                 pres.Save(dataDir + "ContentBG_Grad_out.pptx", SaveFormat.Pptx);
             }
- 
+            //ExEnd:SetBackgroundToGradient
         }
     }
 }

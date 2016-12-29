@@ -14,6 +14,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Saving
     {
         public static void Run()
         {
+            //ExStart:SaveAsPredefinedViewType
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_PresentationSaving();
 
@@ -25,6 +26,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Saving
 
             // Saving presentation
             presentation.Save(dataDir + "SetViewType_out.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
+            //ExEnd:SaveAsPredefinedViewType
         }
     }
 }

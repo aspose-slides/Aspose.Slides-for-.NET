@@ -13,6 +13,7 @@ Imports Aspose.Slides.Export
 Namespace Aspose.Slides.Examples.VisualBasic.Presentations.Conversion
     Class ConvertSlidesToPdfNotes
         Public Shared Sub Run()
+			'ExStart:ConvertSlidesToPdfNotes
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Conversion()
 
@@ -29,6 +30,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Presentations.Conversion
             auxPresentation.SlideSize.Size = New SizeF(612.0F, 792.0F)
 
             auxPresentation.Save(dataDir & Convert.ToString("PDFnotes_out.pdf"), SaveFormat.PdfNotes)
-        End Sub
+			'ExEnd:ConvertSlidesToPdfNotes
+		End Sub
     End Class
 End Namespace

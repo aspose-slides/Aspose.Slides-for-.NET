@@ -8,8 +8,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Shapes
     Public Class AddAudioFrame
         Public Shared Sub Run()
 
-            ' For complete examples and data files, please go to https://github.com/aspose-slides/Aspose.Slides-for-.NET
-
+            'ExStart:AddAudioFrame
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Shapes()
 
@@ -33,6 +32,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Shapes
                 presentation.Save(dataDir & "AudioFrameEmbed_out.pptx", SaveFormat.Pptx)
 
             End Using
+			'ExEnd:AddAudioFrame
         End Sub
     End Class
 End Namespace

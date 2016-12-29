@@ -16,6 +16,7 @@ namespace Aspose.Slides.Examples.CSharp.Charts
     {
         public static void Run()
         {
+            //ExStart:ChangeChartCategoryAxis
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Charts();
 
@@ -28,6 +29,7 @@ namespace Aspose.Slides.Examples.CSharp.Charts
                 chart.Axes.HorizontalAxis.MajorUnitScale = TimeUnitType.Months;
                 presentation.Save(dataDir + "ChangeChartCategoryAxis_out.pptx", SaveFormat.Pptx);
             }
+            //ExEnd:ChangeChartCategoryAxis
         }
     }
 }

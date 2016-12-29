@@ -10,6 +10,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
     {
         public static void Run()
         {
+            // ExStart:MultipleParagraphs
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Text();
 
@@ -78,7 +79,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
                 //Write PPTX to Disk
                 pres.Save(dataDir + "multiParaPort_out.pptx", SaveFormat.Pptx);
             }
-
+            // ExEnd:MultipleParagraphs
         }
     }
 }

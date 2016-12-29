@@ -8,6 +8,8 @@ Imports Aspose.Slides.Export
 Namespace Aspose.Slides.Examples.VisualBasic.Text
     Public Class ShadowEffects
         Public Shared Sub Run()
+            ' ExStart:ShadowEffects
+
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Text()
 
@@ -45,7 +47,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Text
                 'Write the presentation to disk
                 pres.Save(dataDir & "pres_out.pptx", SaveFormat.Pptx)
             End Using
-
+            ' ExEnd:ShadowEffects
         End Sub
     End Class
 End Namespace

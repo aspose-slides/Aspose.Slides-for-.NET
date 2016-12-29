@@ -14,10 +14,10 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.VBA
     Class AddVBAMacros
         Public Shared Sub Run()
+            ' ExStart:AddVBAMacros
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_VBA()
 
-            ' ExStart:AddVBAMacros
             ' Instantiate Presentation
             Using presentation As New Presentation()
                 ' Create new VBA Project
@@ -39,10 +39,10 @@ Namespace Aspose.Slides.Examples.VisualBasic.VBA
                 presentation.VbaProject.References.Add(stdoleReference)
                 presentation.VbaProject.References.Add(officeReference)
 
-                ' ExStart:AddVBAMacros
                 ' Save Presentation
                 presentation.Save(dataDir & Convert.ToString("AddVBAMacros_out.pptm"), SaveFormat.Pptm)
             End Using
+            ' ExStart:AddVBAMacros
         End Sub
     End Class
 End Namespace

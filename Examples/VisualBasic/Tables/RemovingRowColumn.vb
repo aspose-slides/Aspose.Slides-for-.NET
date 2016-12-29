@@ -6,6 +6,8 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.Tables
     Public Class RemovingRowColumn
         Public Shared Sub Run()
+            ' ExStart:RemovingRowColumn
+
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Tables()
 
@@ -26,6 +28,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Tables
             table.Rows.RemoveAt(1, False)
             table.Columns.RemoveAt(1, False)
             pres.Save(dataDir & "TestTable_out.pptx", Aspose.Slides.Export.SaveFormat.Pptx)
+            ' ExEnd:RemovingRowColumn
 
         End Sub
     End Class

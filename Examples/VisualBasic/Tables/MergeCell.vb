@@ -12,6 +12,7 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.Tables
     Public Class MergeCell
         Public Shared Sub Run()
+            ' ExStart:MergeCell
 
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Tables()
@@ -64,8 +65,8 @@ Namespace Aspose.Slides.Examples.VisualBasic.Tables
                 'Write PPTX to Disk
 
                 presentation.Save(dataDir & Convert.ToString("MergeCells1_out.pptx"), SaveFormat.Pptx)
-
             End Using
+            ' ExEnd:MergeCell
         End Sub
     End Class
 End Namespace

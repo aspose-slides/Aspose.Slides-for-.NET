@@ -25,10 +25,10 @@ namespace Aspose.Slides.Examples.CSharp.VBA
                 // Access the Vba module and remove 
                 presentation.VbaProject.Modules.Remove(presentation.VbaProject.Modules[0]);
 
-                // ExEnd:RemoveVBAMacros
                 // Save Presentation
                 presentation.Save(dataDir + "RemovedVBAMacros_out.pptm", SaveFormat.Pptm);
             }
+            // ExEnd:RemoveVBAMacros
         }
     }
 }

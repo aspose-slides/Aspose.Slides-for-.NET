@@ -12,6 +12,7 @@ Imports Aspose.Slides.Export
 Namespace Aspose.Slides.Examples.VisualBasic.Slides.CRUD
     Public Class CloneToAnotherPresentationWithMaster
         Public Shared Sub Run()
+            ' ExStart:CloneToAnotherPresentationWithMaster
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Slides_Presentations_CRUD()
 
@@ -46,6 +47,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Slides.CRUD
                     destPres.Save(dataDir & Convert.ToString("CloneToAnotherPresentationWithMaster_out.pptx"), SaveFormat.Pptx)
                 End Using
             End Using
+            ' ExEnd:CloneToAnotherPresentationWithMaster
         End Sub
     End Class
 End Namespace

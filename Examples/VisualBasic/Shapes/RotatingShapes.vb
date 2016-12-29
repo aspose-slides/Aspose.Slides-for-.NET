@@ -3,6 +3,7 @@ Imports Aspose.Slides.Export
 Namespace Aspose.Slides.Examples.VisualBasic.Shapes
     Public Class RotatingShapes
         Public Shared Sub Run()
+			'ExStart:RotatingShapes	
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Shapes()
 
@@ -27,6 +28,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Shapes
                 'Write the PPTX file to disk
                 pres.Save(dataDir & "RectShpRot_out.pptx", SaveFormat.Pptx)
             End Using
+			'ExEnd:RotatingShapes	
         End Sub
     End Class
 End Namespace

@@ -12,6 +12,7 @@ Imports Aspose.Slides.Export
 Namespace Aspose.Slides.Examples.VisualBasic.Presentations.Conversion
     Public Class ConvertWithXpsOptions
         Public Shared Sub Run()
+			'ExStart:ConvertWithXpsOptions
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Conversion()
 
@@ -26,6 +27,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Presentations.Conversion
                 ' Save the presentation to XPS document
                 pres.Save(dataDir & Convert.ToString("XPS_With_Options_out.xps"), SaveFormat.Xps, opts)
             End Using
+			'ExEnd:ConvertWithXpsOptions
         End Sub
     End Class
 End Namespace

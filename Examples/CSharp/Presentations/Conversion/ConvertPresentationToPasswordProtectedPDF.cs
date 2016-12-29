@@ -14,6 +14,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Conversion
     {
         public static void Run()
         {
+            //ExStart:ConvertPresentationToPasswordProtectedPDF
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Conversion();
 
@@ -29,6 +30,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Conversion
                 // Save the presentation to password protected PDF
                 presentation.Save(dataDir + "PasswordProtectedPDF_out.pdf", SaveFormat.Pdf, pdfOptions);
             }
+            //ExEnd:ConvertPresentationToPasswordProtectedPDF
         }
     }
 }

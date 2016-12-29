@@ -12,6 +12,7 @@ Imports Aspose.Slides.Export
 Namespace Aspose.Slides.Examples.VisualBasic.Presentations.Conversion
     Public Class ConvertPresentationToResponsiveHTML
         Public Shared Sub Run()
+			'ExStart:ConvertPresentationToResponsiveHTML
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Conversion()
 
@@ -25,6 +26,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Presentations.Conversion
                 ' Saving the presentation to HTML
                 presentation.Save(dataDir & Convert.ToString("ConvertPresentationToResponsiveHTML_out.html"), SaveFormat.Html, HtmlOptions)
             End Using
+			'ExEnd:ConvertPresentationToResponsiveHTML
         End Sub
     End Class
 End Namespace

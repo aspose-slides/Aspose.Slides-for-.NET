@@ -11,7 +11,7 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.Rendering.Printing
     Public Class SetSlideNumber
         Public Shared Sub Run()
-
+			'ExStart:SetSlideNumber
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Rendering()
 
@@ -25,7 +25,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Rendering.Printing
                 presentation.FirstSlideNumber = 10
                 presentation.Save(dataDir & Convert.ToString("Set_Slide_Number_out.pptx"), SaveFormat.Pptx)
             End Using
-
+			'ExEnd:SetSlideNumber	
         End Sub
     End Class
 End Namespace

@@ -14,10 +14,10 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.Text
     Class RotatingText
         Public Shared Sub Run()
+            ' ExStart:RotatingText
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Text()
 
-            ' ExStart:RotatingText
             ' Create an instance of Presentation class
             Dim presentation As New Presentation()
 
@@ -44,9 +44,9 @@ Namespace Aspose.Slides.Examples.VisualBasic.Text
             portion.PortionFormat.FillFormat.FillType = FillType.Solid
             portion.PortionFormat.FillFormat.SolidFillColor.Color = Color.Black
 
-            ' ExEnd:RotatingText
             ' Save Presentation
             presentation.Save(dataDir & Convert.ToString("RotateText_out.pptx"), SaveFormat.Pptx)
+            ' ExEnd:RotatingText
         End Sub
     End Class
 End Namespace

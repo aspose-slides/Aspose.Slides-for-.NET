@@ -16,6 +16,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
     {
         public static void Run()
         {
+            //ExStart:CreateShapeThumbnail
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Shapes();
 
@@ -29,6 +30,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
                     bitmap.Save(dataDir + "Shape_thumbnail_out.png", ImageFormat.Png);
                 }
             }
+            //ExEnd:CreateShapeThumbnail
         }
     }
 }

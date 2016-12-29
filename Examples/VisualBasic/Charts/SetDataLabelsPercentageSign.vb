@@ -15,6 +15,7 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.Charts
     Public Class SetDataLabelsPercentageSign
         Public Shared Sub Run()
+			'ExStart:SetDataLabelsPercentageSign
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Charts()
 
@@ -76,7 +77,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Charts
 
             ' Write presentation to disk
             presentation.Save(dataDir & Convert.ToString("SetDataLabelsPercentageSign_out.pptx"), SaveFormat.Pptx)
-
+			'ExEnd:SetDataLabelsPercentageSign
         End Sub
     End Class
 End Namespace

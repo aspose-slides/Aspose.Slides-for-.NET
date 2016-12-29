@@ -16,6 +16,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
     {
         public static void Run()
         {
+            //ExStart:SetAlternativeText
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Shapes();
 
@@ -43,7 +44,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
 
             // Save presentation to disk
             pres.Save(dataDir + "Set_AlternativeText_out.pptx", SaveFormat.Pptx);
-
+            //ExEnd:SetAlternativeText
         }
     }
 }

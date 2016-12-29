@@ -14,6 +14,7 @@ namespace Aspose.Slides.Examples.CSharp.Slides.CRUD
     {
         public static void Run()
         {
+            //ExStart:RemoveSlideUsingIndex
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Slides_Presentations_CRUD();
 
@@ -28,6 +29,7 @@ namespace Aspose.Slides.Examples.CSharp.Slides.CRUD
                 pres.Save(dataDir + "modified_out.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
 
             }
+            //ExEnd:RemoveSlideUsingIndex
         }
     }
 }

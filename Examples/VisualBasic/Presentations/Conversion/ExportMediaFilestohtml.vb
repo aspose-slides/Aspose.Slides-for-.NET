@@ -13,6 +13,7 @@ Imports Aspose.Slides.Export
 Namespace Aspose.Slides.Examples.VisualBasic.Presentations.Conversion
     Class ExportMediaFilestohtml
         Public Shared Sub Run()
+			'ExStart:ExportMediaFilestohtml
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Conversion()
 
@@ -34,6 +35,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Presentations.Conversion
                 ' Saving the file
                 pres.Save(Path.Combine(path__1, fileName), SaveFormat.Html, htmlOptions)
             End Using
+			'ExEnd:ExportMediaFilestohtml
         End Sub
     End Class
 End Namespace

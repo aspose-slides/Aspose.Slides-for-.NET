@@ -13,6 +13,7 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.Presentations.Opening
     Class GetPositionCoordinatesofPortion
         Public Shared Sub Run()
+			'ExStart:GetPositionCoordinatesofPortion
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_PresentationOpening()
 
@@ -27,6 +28,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Presentations.Opening
                     Next
                 Next
             End Using
+			'ExEnd:GetPositionCoordinatesofPortion
         End Sub
     End Class
 End Namespace

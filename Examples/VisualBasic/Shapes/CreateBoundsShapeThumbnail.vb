@@ -12,7 +12,7 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.Shapes
     Public Class CreateBoundsShapeThumbnail
         Public Shared Sub Run()
-
+			'ExStart:CreateBoundsShapeThumbnail
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Shapes()
 
@@ -26,7 +26,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Shapes
                     bitmap.Save(dataDir & Convert.ToString("Shape_thumbnail_Bound_Shape_out.png"), ImageFormat.Png)
                 End Using
             End Using
-
+			'ExEnd:CreateBoundsShapeThumbnail
         End Sub
     End Class
 End Namespace

@@ -15,11 +15,10 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Opening
     {
         public static void Run()
         {
+            //ExStart:GetFileFormat
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_PresentationOpening();
-
             IPresentationInfo info = PresentationFactory.Instance.GetPresentationInfo(dataDir + "HelloWorld.pptx");
-
             switch (info.LoadFormat)
             {
                 case LoadFormat.Pptx:
@@ -32,6 +31,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Opening
                         break;
                     }
             }
+            //ExEnd:GetFileFormat
         }
     }
 

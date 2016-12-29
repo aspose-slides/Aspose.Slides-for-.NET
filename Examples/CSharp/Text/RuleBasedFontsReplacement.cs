@@ -15,6 +15,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
     {
         public static void Run()
         {
+            // ExStart:RuleBasedFontsReplacement
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Text();
 
@@ -44,6 +45,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
             // ExEnd:RuleBasedFontsReplacement
             // Save the image to disk in JPEG format
             bmp.Save(dataDir + "Thumbnail_out.jpg", System.Drawing.Imaging.ImageFormat.Jpeg);
+            // ExEnd:RuleBasedFontsReplacement
         }
     }
 }

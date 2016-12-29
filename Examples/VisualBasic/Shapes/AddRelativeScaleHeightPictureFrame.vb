@@ -11,7 +11,7 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.Shapes
     Public Class AddRelativeScaleHeightPictureFrame
         Public Shared Sub Run()
-
+			'ExStart:AddRelativeScaleHeightPictureFrame
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Shapes()
 
@@ -36,6 +36,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Shapes
                 prsentation.Save(dataDir + "Adding Picture Frame with Relative Scale_out.pptx", SaveFormat.Pptx)
 
             End Using
+			'ExEnd:AddRelativeScaleHeightPictureFrame
         End Sub
     End Class
 End Namespace

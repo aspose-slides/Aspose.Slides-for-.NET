@@ -7,8 +7,7 @@ Imports System.Drawing
 Namespace Aspose.Slides.Examples.VisualBasic.Shapes
     Public Class FormattedRectangle
         Public Shared Sub Run()
-            ' For complete examples and data files, please go to https://github.com/aspose-slides/Aspose.Slides-for-.NET            ' The path to the documents directory.
-
+			'ExStart:FormattedRectangle		
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Shapes()
 
@@ -34,7 +33,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Shapes
                 pres.Save(dataDir & "RectShp2_out.pptx", Aspose.Slides.Export.SaveFormat.Pptx)
 
             End Using
-
+			'ExEnd:FormattedRectangle	
         End Sub
     End Class
 End Namespace

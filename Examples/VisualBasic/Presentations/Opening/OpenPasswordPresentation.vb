@@ -12,6 +12,7 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.Presentations.Opening
     Public Class OpenPasswordPresentation
         Public Shared Sub Run()
+			'ExStart:OpenPasswordPresentation
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_PresentationOpening()
 
@@ -26,6 +27,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Presentations.Opening
 
             ' Printing the total number of slides present in the presentation
             System.Console.WriteLine(pres.Slides.Count.ToString())
-        End Sub
+			'ExEnd:OpenPasswordPresentation
+		End Sub
     End Class
 End Namespace

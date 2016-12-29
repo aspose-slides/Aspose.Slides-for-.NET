@@ -1,6 +1,4 @@
-
 using System.IO;
-
 using Aspose.Slides;
 using System;
 
@@ -8,6 +6,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
 {
     public class FindShapeInSlide
     {
+        //ExStart:FindShapeInSlide
         public static void Run()
         {
             // The path to the documents directory.
@@ -45,7 +44,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
             }
             return null;
         }
-
+        //ExEnd:FindShapeInSlide
     }
 }
 

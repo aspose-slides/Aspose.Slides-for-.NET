@@ -16,6 +16,8 @@ namespace Aspose.Slides.Examples.CSharp.Text
     {
         public static void Run()
         {
+            // ExStart:CustomRotationAngleTextframe
+
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Text();
 
@@ -36,7 +38,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
             // ExEnd:CustomRotationAngleTextframe
             // Save Presentation
             presentation.Save(dataDir + "textframe-rotation_out.pptx", SaveFormat.Pptx);
-
+            // ExEnd:CustomRotationAngleTextframe
         }
     }
 }

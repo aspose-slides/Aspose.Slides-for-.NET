@@ -8,6 +8,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
     {
         public static void Run()
         {
+            // ExStart:ReplacingText
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Text();
 
@@ -29,7 +30,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
                 // Save the PPTX to Disk
                 pres.Save(dataDir + "output_out.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
             }
-
+            // ExEnd:ReplacingText
         }
     }
 }

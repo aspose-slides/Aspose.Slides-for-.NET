@@ -12,19 +12,19 @@ Imports Aspose.Slides.Export
 Namespace Aspose.Slides.Examples.VisualBasic.Slides.Hyperlink
     Class RemoveHyperlinks
         Public Shared Sub Run()
+            ' ExStart:RemoveHyperlinks
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Slides_Presentations_Hyperlink()
 
-            ' ExStart:RemoveHyperlinks
             ' Instantiate Presentation class
             Dim presentation As New Presentation(dataDir & Convert.ToString("Hyperlink.pptx"))
 
             ' Removing the hyperlinks from presentation
             presentation.HyperlinkQueries.RemoveAllHyperlinks()
 
-            ' ExEnd:RemoveHyperlinks
             ' Writing the presentation as a PPTX file
             presentation.Save(dataDir & Convert.ToString("RemovedHyperlink_out.pptx"), SaveFormat.Pptx)
+            ' ExEnd:RemoveHyperlinks
         End Sub
     End Class
 End Namespace

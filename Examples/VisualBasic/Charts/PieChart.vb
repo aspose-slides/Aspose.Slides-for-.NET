@@ -15,6 +15,7 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.Charts
     Public Class PieChart
         Public Shared Sub Run()
+			'ExStart:PieChart
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Charts()
 
@@ -121,6 +122,9 @@ Namespace Aspose.Slides.Examples.VisualBasic.Charts
 
             ' Save presentation with chart
             presentation.Save(dataDir & Convert.ToString("PieChart_out.pptx"), SaveFormat.Pptx)
+			
+			'ExEnd:PieChart
+			
         End Sub
     End Class
 End Namespace

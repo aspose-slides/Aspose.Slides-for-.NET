@@ -12,6 +12,7 @@ Imports Aspose.Slides.Export
 Namespace Aspose.Slides.Examples.VisualBasic.Presentations.Properties
     Public Class AccessOpenDoc
         Public Shared Sub Run()
+			'ExStart:AccessOpenDoc
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_PresentationProperties()
 
@@ -20,7 +21,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Presentations.Properties
 
             ' Saving the ODP presentation to PPTX format
             pres.Save(dataDir & Convert.ToString("AccessOpenDoc_out.pptx"), SaveFormat.Pptx)
-
+			'ExEnd:AccessOpenDoc
         End Sub
     End Class
 End Namespace

@@ -12,10 +12,10 @@ Imports Aspose.Slides.Export
 Namespace Aspose.Slides.Examples.VisualBasic.Slides.Layout
     Class SetSizeAndType
         Public Shared Sub Run()
+            ' ExStart:SetSizeAndType
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Slides_Presentations_Layout()
 
-            ' ExStart:SettSizeAndType
             ' Instantiate a Presentation object that represents a presentation file 
             Dim presentation As New Presentation(dataDir & Convert.ToString("AccessSlides.pptx"))
             Dim auxPresentation As New Presentation()
@@ -28,9 +28,9 @@ Namespace Aspose.Slides.Examples.VisualBasic.Slides.Layout
 
             auxPresentation.Slides.InsertClone(0, slide)
             auxPresentation.Slides.RemoveAt(0)
-            ' ExEnd:SettSizeAndType
             ' Save Presentation to disk
             auxPresentation.Save(dataDir & Convert.ToString("Set_Size&Type_out.pptx"), SaveFormat.Pptx)
+            ' ExEnd:SettSizeAndType
         End Sub
     End Class
 End Namespace

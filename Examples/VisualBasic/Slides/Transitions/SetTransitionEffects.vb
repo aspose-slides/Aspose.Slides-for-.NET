@@ -13,10 +13,10 @@ Imports Aspose.Slides.SlideShow
 Namespace Aspose.Slides.Examples.VisualBasic.Slides.Transitions
     Class SetTransitionEffects
         Public Shared Sub Run()
+            ' ExStart:SetTransitionEffects
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Slides_Presentations_Transitions()
 
-            ' ExStart:SetTransitionEffects
             ' Create an instance of Presentation class
             Dim presentation As New Presentation(dataDir & Convert.ToString("AccessSlides.pptx"))
 
@@ -24,9 +24,9 @@ Namespace Aspose.Slides.Examples.VisualBasic.Slides.Transitions
             presentation.Slides(0).SlideShowTransition.Type = TransitionType.Cut
             DirectCast(presentation.Slides(0).SlideShowTransition.Value, OptionalBlackTransition).FromBlack = True
 
-            ' ExEnd:SetTransitionEffects
             ' Write the presentation to disk
             presentation.Save(dataDir & Convert.ToString("SetTransitionEffects_out.pptx"), SaveFormat.Pptx)
+            ' ExEnd:SetTransitionEffects
         End Sub
     End Class
 End Namespace

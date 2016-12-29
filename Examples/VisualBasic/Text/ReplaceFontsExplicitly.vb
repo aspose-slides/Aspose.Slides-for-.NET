@@ -13,10 +13,10 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.Text
     Class ReplaceFontsExplicitly
         Public Shared Sub Run()
+            ' ExStart:ReplaceFontsExplicitly
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Text()
 
-            ' ExStart:ReplaceFontsExplicitly
             ' Load presentation
             Dim presentation As New Presentation(dataDir & Convert.ToString("Fonts.pptx"))
 
@@ -29,9 +29,9 @@ Namespace Aspose.Slides.Examples.VisualBasic.Text
             ' Replace the fonts
             presentation.FontsManager.ReplaceFont(sourceFont, destFont)
 
-            ' ExEnd:ReplaceFontsExplicitly
             ' Save the presentation
             presentation.Save(dataDir & Convert.ToString("UpdatedFont_out.pptx"), SaveFormat.Pptx)
+            ' ExEnd:ReplaceFontsExplicitly
         End Sub
     End Class
 End Namespace

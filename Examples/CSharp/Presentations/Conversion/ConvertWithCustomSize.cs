@@ -16,6 +16,7 @@ namespace Aspose.Slides.Examples.CSharp.Conversion
     {
         public static void Run()
         {
+            //ExStart:ConvertWithCustomSize
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Conversion();
 
@@ -50,6 +51,7 @@ namespace Aspose.Slides.Examples.CSharp.Conversion
                 // Save the presentation to TIFF with specified image size
                 pres.Save(dataDir + "TiffWithCustomSize_out.tiff", SaveFormat.Tiff, opts);
             }
+            //ExEnd:ConvertWithCustomSize
         }
     }
 }

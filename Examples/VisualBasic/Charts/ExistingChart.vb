@@ -8,6 +8,7 @@ Imports Aspose.Slides.Export
 Namespace Aspose.Slides.Examples.VisualBasic.Charts
     Public Class ExistingChart
         Public Shared Sub Run()
+			'ExStart:ExistingChart	
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Charts()
 
@@ -67,6 +68,8 @@ Namespace Aspose.Slides.Examples.VisualBasic.Charts
             ' Save presentation with chart
             pres.Save(dataDir & "AsposeChartModified_out.pptx", SaveFormat.Pptx)
 
+			'ExStart:ExistingChart
+			
         End Sub
     End Class
 End Namespace

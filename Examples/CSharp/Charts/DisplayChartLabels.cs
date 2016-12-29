@@ -16,6 +16,7 @@ namespace Aspose.Slides.Examples.CSharp.Charts
     {
         public static void Run()
         {
+            //ExStart:DisplayChartLabels
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Charts();
 
@@ -27,6 +28,7 @@ namespace Aspose.Slides.Examples.CSharp.Charts
                 chart.ChartData.Series[0].Labels[2].DataLabelFormat.ShowLabelAsDataCallout = false;
                 presentation.Save(dataDir + "DisplayChartLabels_out.pptx", SaveFormat.Pptx);
             }
+            //ExEnd:DisplayChartLabels
         }
     }
 }

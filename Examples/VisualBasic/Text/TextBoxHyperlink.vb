@@ -6,6 +6,8 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.Text
     Public Class TextBoxHyperlink
         Public Shared Sub Run()
+            ' ExStart:TextBoxHyperlink
+
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Text()
 
@@ -41,7 +43,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Text
 
             ' Save the PPTX Presentation
             pptxPresentation.Save(dataDir & "hLinkPPTX_out.pptx", Aspose.Slides.Export.SaveFormat.Pptx)
-
+            ' ExEnd:TextBoxHyperlink
         End Sub
     End Class
 End Namespace

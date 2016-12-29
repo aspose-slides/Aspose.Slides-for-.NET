@@ -16,6 +16,7 @@ namespace  Aspose.Slides.Examples.CSharp.Charts
     {
         public static void Run()
         {
+            //ExStart:SetlegendCustomOptions
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Charts();
 
@@ -36,6 +37,7 @@ namespace  Aspose.Slides.Examples.CSharp.Charts
 
             // Write presentation to disk
             presentation.Save(dataDir + "Legend_out.pptx", SaveFormat.Pptx);
+            //ExEnd:SetlegendCustomOptions
         }
     }
 }

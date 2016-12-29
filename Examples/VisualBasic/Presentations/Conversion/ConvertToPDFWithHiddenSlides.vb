@@ -12,6 +12,7 @@ Imports Aspose.Slides.Export
 Namespace Aspose.Slides.Examples.VisualBasic.Conversion
     Class ConvertToPDFWithHiddenSlides
         Public Shared Sub Run()
+			'ExStart:ConvertToPDFWithHiddenSlides
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Conversion()
 
@@ -25,6 +26,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Conversion
                 ' Save the presentation to PDF with specified options
                 presentation.Save(dataDir & Convert.ToString("PDFWithHiddenSlides_out.pdf"), SaveFormat.Pdf, pdfOptions)
             End Using
+			'ExEnd:ConvertToPDFWithHiddenSlides
         End Sub
     End Class
 End Namespace

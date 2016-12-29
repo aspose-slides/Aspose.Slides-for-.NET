@@ -14,6 +14,7 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.Text
     Class SetTextFontProperties
         Public Shared Sub Run()
+            ' ExStart:SetTextFontProperties
 
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Text()
@@ -61,6 +62,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Text
                 ' Write the PPTX to disk 
                 presentation.Save(dataDir & Convert.ToString("SetTextFontProperties_out.pptx"), SaveFormat.Pptx)
             End Using
+            ' ExEnd:SetTextFontProperties
         End Sub
     End Class
 End Namespace

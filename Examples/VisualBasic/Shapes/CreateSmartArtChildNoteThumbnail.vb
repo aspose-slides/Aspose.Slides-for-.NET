@@ -11,7 +11,7 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.Shapes
     Public Class CreateSmartArtChildNoteThumbnail
         Public Shared Sub Run()
-
+			'ExStart:CreateSmartArtChildNoteThumbnail
             ' For complete examples and data files, please go to https://github.com/aspose-slides/Aspose.Slides-for-.NET
 
             ' The path to the documents directory.
@@ -31,7 +31,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Shapes
 
             ' Save thumbnail
             bmp.Save(dataDir + "SmartArt_ChildNote_Thumbnail_out.jpeg", System.Drawing.Imaging.ImageFormat.Jpeg)
-
+			'ExEnd:CreateSmartArtChildNoteThumbnail
         End Sub
     End Class
 End Namespace

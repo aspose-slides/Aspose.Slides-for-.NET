@@ -12,6 +12,7 @@ Imports Aspose.Slides.Export
 Namespace Aspose.Slides.Examples.VisualBasic.Presentations.Conversion
     Class CreateNewPresentation
         Public Shared Sub Run()
+			'ExStart:CreateNewPresentation
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Conversion()
 
@@ -24,6 +25,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Presentations.Conversion
                 slide.Shapes.AddAutoShape(ShapeType.Line, 50, 150, 300, 0)
                 presentation.Save(dataDir & Convert.ToString("NewPresentation_out.pptx"), SaveFormat.Pptx)
             End Using
+			'ExEnd:CreateNewPresentation
         End Sub
     End Class
 End Namespace

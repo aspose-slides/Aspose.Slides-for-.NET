@@ -15,7 +15,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Properties
     {
         public static void Run()
         {
-            // For complete examples and data files, please go to https:// Github.com/aspose-slides/Aspose.Slides-for-.NET
+            //ExStart:UpdatePresentationProperties
 
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_PresentationProperties();
@@ -33,7 +33,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Properties
             // update the presentation with a new values 
             info.UpdateDocumentProperties(props);
             info.WriteBindedPresentation(dataDir + "ModifyBuiltinProperties1.pptx");
-
+            //ExEnd:UpdatePresentationProperties
         }
     }
 }

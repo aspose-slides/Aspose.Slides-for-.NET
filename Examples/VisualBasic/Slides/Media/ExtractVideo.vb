@@ -13,10 +13,10 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.Slides.Media
     Class ExtractVideo
         Public Shared Sub Run()
+            'ExStart:ExtractVideo
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Slides_Presentations_Media()
 
-            ' ExStart:RemoveNotesFromAllSlides
             ' Instantiate a Presentation object that represents a presentation file 
             Dim presentation As New Presentation(dataDir & Convert.ToString("Video.pptx"))
 
@@ -35,6 +35,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Slides.Media
                     End If
                 Next
             Next
+            'ExStart:ExtractVideo
         End Sub
     End Class
 End Namespace

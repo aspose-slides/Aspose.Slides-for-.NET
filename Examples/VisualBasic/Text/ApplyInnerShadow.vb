@@ -12,6 +12,8 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.Text
     Class ApplyInnerShadow
         Public Shared Sub Run()
+            ' ExStart:ApplyInnerShadow
+
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Text()
 
@@ -23,7 +25,6 @@ Namespace Aspose.Slides.Examples.VisualBasic.Text
 
             ' Instantiate PresentationEx 
             Using pres As New Presentation()
-                ' ExStart:ApplyInnerShadow
                 ' Get the first slide
                 Dim sld As ISlide = pres.Slides(0)
 
@@ -45,10 +46,10 @@ Namespace Aspose.Slides.Examples.VisualBasic.Text
                 ' Set Text
                 portion.Text = "Aspose TextBox"
 
-                ' ExEnd:ApplyInnerShadow
                 ' Save the presentation to disk
                 pres.Save(dataDir & Convert.ToString("ApplyInnerShadow_out.pptx"), Aspose.Slides.Export.SaveFormat.Pptx)
             End Using
+            ' ExStart:ApplyInnerShadow
         End Sub
     End Class
 End Namespace

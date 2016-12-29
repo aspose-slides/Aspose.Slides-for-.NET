@@ -12,6 +12,7 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.ActiveX
     Public Class LinkingVideoActiveXControl
         Public Shared Sub Run()
+        	'ExStart:LinkingVideoActiveXControl
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_ActiveX()
             Dim dataVideo As String = RunExamples.GetDataDir_Video()
@@ -33,6 +34,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.ActiveX
 
             ' Save the Presentation
             newPresentation.Save(dataDir & Convert.ToString("LinkingVideoActiveXControl_out.pptx"), Aspose.Slides.Export.SaveFormat.Pptx)
+            'ExEnd:LinkingVideoActiveXControl
         End Sub
     End Class
 End Namespace

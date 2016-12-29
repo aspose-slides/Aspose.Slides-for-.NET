@@ -15,6 +15,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Shapes
     Class ChangeShapeOrder
         Public Shared Sub Run()
 
+			'ExStart:ChangeShapeOrder	
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Shapes()
 
@@ -39,7 +40,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Shapes
 
             ' Save presentation
             presentation1.Save(dataDir & Convert.ToString("Reshape_out.pptx"), SaveFormat.Pptx)
-
+			'ExEnd:ChangeShapeOrder
         End Sub
     End Class
 End Namespace

@@ -12,6 +12,7 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.Presentations.Properties
     Public Class AccessModifyingProperties
         Public Shared Sub Run()
+			'ExStart:AccessModifyingProperties
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_PresentationProperties()
 
@@ -33,6 +34,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Presentations.Properties
 
             ' Save your presentation to a file
             presentation.Save(dataDir & Convert.ToString("CustomDemoModified_out.pptx"), Aspose.Slides.Export.SaveFormat.Pptx)
+			'ExEnd:AccessModifyingProperties
         End Sub
     End Class
 End Namespace

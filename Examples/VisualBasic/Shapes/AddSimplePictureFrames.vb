@@ -8,6 +8,7 @@ Imports Aspose.Slides.Export
 Namespace Aspose.Slides.Examples.VisualBasic.Shapes
     Public Class AddSimplePictureFrames
         Public Shared Sub Run()
+			'ExStart:AddSimplePictureFrames
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Shapes()
 
@@ -33,6 +34,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Shapes
                 'Write the PPTX file to disk
                 pres.Save(dataDir & "RectPicFrame_out.pptx", SaveFormat.Pptx)
             End Using
+			'ExEnd:AddSimplePictureFrames
         End Sub
     End Class
 End Namespace

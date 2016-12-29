@@ -7,6 +7,7 @@ Imports Aspose.Slides.Export
 Namespace Aspose.Slides.Examples.VisualBasic.Shapes
     Public Class AddPlainLineToSlide
         Public Shared Sub Run()
+			'ExStart:AddPlainLineToSlide
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Shapes()
 
@@ -27,6 +28,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Shapes
                 'Write the PPTX to Disk
                 pres.Save(dataDir & "LineShape1_out.pptx", SaveFormat.Pptx)
             End Using
+			'ExEnd:AddPlainLineToSlide
         End Sub
     End Class
 End Namespace

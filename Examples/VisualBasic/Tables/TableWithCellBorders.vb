@@ -6,6 +6,8 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.Tables
     Public Class TableWithCellBorders
         Public Shared Sub Run()
+            ' ExStart:TableWithCellBorders
+
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Tables()
 
@@ -43,7 +45,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Tables
                 'Write PPTX to Disk
                 pres.Save(dataDir & "table1_out.pptx", Aspose.Slides.Export.SaveFormat.Pptx)
             End Using
-
+            ' ExEnd:TableWithCellBorders
         End Sub
     End Class
 End Namespace

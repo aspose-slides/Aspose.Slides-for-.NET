@@ -16,6 +16,7 @@ namespace Aspose.Slides.Examples.CSharp.Tables
     {
         public static void Run()
         {
+            // ExStart:VerticallyAlignText
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Tables();
 
@@ -54,7 +55,7 @@ namespace Aspose.Slides.Examples.CSharp.Tables
 
             // Save Presentation
             presentation.Save(dataDir +  "Vertical_Align_Text_out.pptx", SaveFormat.Pptx);
-
+            // ExEnd:VerticallyAlignText
          }
     }
 }

@@ -12,6 +12,7 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.Presentations.Opening
     Public Class OpenPresentation
         Public Shared Sub Run()
+			'ExStart:OpenPresentation
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_PresentationOpening()
 
@@ -20,6 +21,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Presentations.Opening
 
             ' Printing the total number of slides present in the presentation
             System.Console.WriteLine(pres.Slides.Count.ToString())
+			'ExEnd:OpenPresentation
         End Sub
     End Class
 End Namespace

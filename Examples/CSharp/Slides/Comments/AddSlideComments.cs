@@ -16,6 +16,7 @@ namespace Aspose.Slides.Examples.CSharp.Slides.Comments
     {
         public static void Run()
         {
+            //ExStart:AddSlideComments
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Slides_Presentations_Comments();
 
@@ -59,6 +60,7 @@ namespace Aspose.Slides.Examples.CSharp.Slides.Comments
                     String Comment = commentCollection[0].Text;
                 }
             }
+            //ExEnd:AddSlideComments
         }
     }
 }

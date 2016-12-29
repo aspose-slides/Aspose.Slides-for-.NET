@@ -12,7 +12,7 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.Shapes
     Public Class ApplyBevelEffects
         Public Shared Sub Run()
-
+			'ExStart:ApplyBevelEffects	
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Shapes()
 
@@ -40,7 +40,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Shapes
 
             ' Write the presentation as a PPTX file
             pres.Save(dataDir + "Bavel_out.pptx", SaveFormat.Pptx)
-
+			'ExEnd:ApplyBevelEffects	
         End Sub
     End Class
 End Namespace

@@ -12,6 +12,7 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.Presentations
     Public Class AccessBuiltinProperties
         Public Shared Sub Run()
+			'ExStart:AccessBuiltinProperties
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_PresentationProperties()
 
@@ -36,6 +37,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Presentations
             System.Console.WriteLine("Is Shared between producers : " + documentProperties.SharedDoc.ToString())
             System.Console.WriteLine("Subject : " + documentProperties.Subject)
             System.Console.WriteLine("Title : " + documentProperties.Title)
+			'ExEnd:AccessBuiltinProperties
         End Sub
     End Class
 End Namespace

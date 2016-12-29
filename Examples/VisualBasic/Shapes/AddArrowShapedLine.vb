@@ -8,6 +8,7 @@ Imports System.Drawing
 Namespace Aspose.Slides.Examples.VisualBasic.Shapes
     Public Class AddArrowShapedLine
         Public Shared Sub Run()
+			'ExStart:AddArrowShapedLine
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Shapes()
 
@@ -44,7 +45,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Shapes
                 'Write the PPTX to Disk
                 pres.Save(dataDir & "LineShape2_out.pptx", SaveFormat.Pptx)
             End Using
-
+			'ExEnd:AddArrowShapedLine
         End Sub
     End Class
 End Namespace

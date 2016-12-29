@@ -8,6 +8,7 @@ Imports Aspose.Slides.Export
 Namespace Aspose.Slides.Examples.VisualBasic.Text
     Public Class MultipleParagraphs
         Public Shared Sub Run()
+            ' ExStart:MultipleParagraphs
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Text()
 
@@ -74,7 +75,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Text
                 'Write PPTX to Disk
                 pres.Save(dataDir & "multiParaPort_out.pptx", SaveFormat.Pptx)
             End Using
-
+            ' ExEnd:MultipleParagraphs
         End Sub
     End Class
 End Namespace

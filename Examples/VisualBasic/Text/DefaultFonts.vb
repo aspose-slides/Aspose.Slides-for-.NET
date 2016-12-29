@@ -8,6 +8,8 @@ Imports Aspose.Slides.Export
 Namespace Aspose.Slides.Examples.VisualBasic.Text
     Public Class DefaultFonts
         Public Shared Sub Run()
+            ' ExStart:FontFamily
+
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Text()
 
@@ -28,6 +30,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Text
                 ' Generate XPS
                 pptx.Save(dataDir & "DefaultFonts_xps_out.xps", SaveFormat.Xps)
             End Using
+            ' ExEnd:FontFamily
         End Sub
     End Class
 End Namespace

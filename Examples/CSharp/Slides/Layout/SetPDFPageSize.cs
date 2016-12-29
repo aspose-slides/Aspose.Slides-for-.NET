@@ -15,6 +15,7 @@ namespace Aspose.Slides.Examples.CSharp.Slides.Layout
     {
         public static void Run()
         {
+            //ExStart:SetPDFPageSize
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Slides_Presentations_Layout();
 
@@ -32,6 +33,7 @@ namespace Aspose.Slides.Examples.CSharp.Slides.Layout
             // ExEnd:SetPDFPageSize
             // Save presentation to disk
             presentation.Save(dataDir + "SetPDFPageSize_out.pdf", SaveFormat.Pdf, opts);
+            //ExEnd:SetPDFPageSize
         }
     }
 }

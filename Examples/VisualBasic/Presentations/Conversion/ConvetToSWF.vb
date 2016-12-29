@@ -12,6 +12,7 @@ Imports Aspose.Slides.Export
 Namespace Aspose.Slides.Examples.VisualBasic.Presentations.Conversion
     Class ConvetToSWF
         Public Shared Sub Run()
+			'ExStart:ConvetToSWF
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Conversion()
 
@@ -25,6 +26,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Presentations.Conversion
                 swfOptions.ViewerIncluded = True
                 presentation.Save(dataDir & Convert.ToString("SaveNotes_out.swf"), SaveFormat.SwfNotes, swfOptions)
             End Using
+			'ExEnd:ConvetToSWF
         End Sub
     End Class
 End Namespace

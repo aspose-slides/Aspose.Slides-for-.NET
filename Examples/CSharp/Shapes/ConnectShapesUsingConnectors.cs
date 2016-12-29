@@ -15,6 +15,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
     {
         public static void Run()
         {
+            //ExStart:ConnectShapesUsingConnectors
             // The path to the documents directory.                    
             string dataDir = RunExamples.GetDataDir_Shapes();
             
@@ -43,6 +44,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
                 // Saving presenation
                 input.Save(dataDir + "Connecting shapes using connectors_out.pptx", SaveFormat.Pptx);
             }
+            //ExEnd:ConnectShapesUsingConnectors
         }
     }
 }

@@ -12,6 +12,7 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.Slides
     Public Class RemoveSlideUsingReference
         Public Shared Sub Run()
+            ' ExStart:RemoveSlideUsingReference
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Slides_Presentations_CRUD()
 
@@ -27,6 +28,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Slides
                 ' Writing the presentation file
                 pres.Save(dataDir & Convert.ToString("modified_out.pptx"), Aspose.Slides.Export.SaveFormat.Pptx)
             End Using
+            ' ExEnd:RemoveSlideUsingReference
         End Sub
     End Class
 End Namespace

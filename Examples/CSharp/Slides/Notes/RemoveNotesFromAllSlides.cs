@@ -14,6 +14,7 @@ namespace Aspose.Slides.Examples.CSharp.Slides.Notes
     {
         public static void Run()
         {
+            //ExStart:RemoveNotesFromAllSlides
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Slides_Presentations_Notes();
 
@@ -28,10 +29,9 @@ namespace Aspose.Slides.Examples.CSharp.Slides.Notes
                 mgr = presentation.Slides[i].NotesSlideManager;
                 mgr.RemoveNotesSlide();
             }
-
-            // ExEnd:RemoveNotesFromAllSlides
             // Save presentation to disk
             presentation.Save(dataDir + "RemoveNotesFromAllSlides_out.pptx", SaveFormat.Pptx);
+            // ExEnd:RemoveNotesFromAllSlides
         }
     }
 }

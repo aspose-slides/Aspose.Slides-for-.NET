@@ -14,9 +14,9 @@ namespace Aspose.Slides.Examples.CSharp.Conversion
     {
         public static void Run()
         {
+            //ExStart:ConvertToPDFWithHiddenSlides
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Conversion();
-
             using (Presentation presentation = new Presentation(dataDir + "HiddingSlides.pptx"))
             {
                 // Instantiate the PdfOptions class
@@ -28,6 +28,7 @@ namespace Aspose.Slides.Examples.CSharp.Conversion
                 // Save the presentation to PDF with specified options
                 presentation.Save(dataDir + "PDFWithHiddenSlides_out.pdf", SaveFormat.Pdf, pdfOptions);
             }
+            //ExEnd:ConvertToPDFWithHiddenSlides
         }
     }
 }

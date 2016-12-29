@@ -13,6 +13,7 @@ Imports Aspose.Slides.SlideShow
 Namespace Aspose.Slides.Examples.VisualBasic.Slides.Transitions
     Public Class BetterSlideTransitions
         Public Shared Sub Run()
+            ' ExStart:BetterSlideTransitions
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Slides_Presentations_Transitions()
 
@@ -43,6 +44,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Slides.Transitions
                 ' Write the presentation to disk
                 pres.Save(dataDir & Convert.ToString("SampleTransition_out.pptx"), SaveFormat.Pptx)
             End Using
+            ' ExEnd:BetterSlideTransitions
         End Sub
     End Class
 End Namespace

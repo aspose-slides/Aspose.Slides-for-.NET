@@ -12,6 +12,7 @@ Imports Aspose.Slides.Export
 Namespace Aspose.Slides.Examples.VisualBasic.Conversion
     Public Class ConvertWithoutXpsOptions
         Public Shared Sub Run()
+			'ExStart:ConvertWithoutXpsOptions
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Conversion()
 
@@ -20,6 +21,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Conversion
                 ' Saving the presentation to XPS document
                 pres.Save(dataDir & Convert.ToString("XPS_Output_Without_XPSOption_out.xps"), SaveFormat.Xps)
             End Using
+			'ExEnd:ConvertWithoutXpsOptions
         End Sub
     End Class
 End Namespace

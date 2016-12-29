@@ -17,6 +17,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
     {
         public static void Run()
         {
+            // ExStart:ManageParagraphPictureBulletsInPPT
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Text();
 
@@ -56,6 +57,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
             presentation.Save(dataDir + "ParagraphPictureBulletsPPTX_out.pptx", SaveFormat.Pptx);
             // Writing the presentation as a PPT file
             presentation.Save(dataDir + "ParagraphPictureBulletsPPT_out.ppt", SaveFormat.Ppt);
+            // ExEnd:ManageParagraphPictureBulletsInPPT
         }
     }
 }

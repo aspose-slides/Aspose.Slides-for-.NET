@@ -12,6 +12,7 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.Presentations.Opening
     Class GetFileFormat
         Public Shared Sub Run()
+			'ExStart:GetFileFormat
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_PresentationOpening()
 
@@ -28,6 +29,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Presentations.Opening
                         Exit Select
                     End If
             End Select
+			'ExEnd:GetFileFormat
         End Sub
     End Class
 End Namespace

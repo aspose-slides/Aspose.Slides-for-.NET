@@ -16,12 +16,13 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
     {
         public static void Run()
         {
+            //ExStart:RemoveShape
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Shapes();
 
-             // Create Presentation object
+            // Create Presentation object
             Presentation pres = new Presentation();
-            
+
             // Get the first slide
             ISlide sld = pres.Slides[0];
 
@@ -32,16 +33,16 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
             int iCount = sld.Shapes.Count;
             for (int i = 0; i < iCount; i++)
             {
-                    AutoShape ashp = (AutoShape)sld.Shapes[0];
-                    if (String.Compare(ashp.AlternativeText, alttext, StringComparison.Ordinal) == 0)
-                    {
-                        sld.Shapes.Remove(ashp);
-                    }
+                AutoShape ashp = (AutoShape)sld.Shapes[0];
+                if (String.Compare(ashp.AlternativeText, alttext, StringComparison.Ordinal) == 0)
+                {
+                    sld.Shapes.Remove(ashp);
+                }
             }
 
             // Save presentation to disk
             pres.Save(dataDir + "RemoveShape_out.pptx", SaveFormat.Pptx);
-
+            //ExEnd:RemoveShape
         }
     }
 }

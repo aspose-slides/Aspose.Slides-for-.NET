@@ -7,6 +7,7 @@ Imports Aspose.Slides.Export
 Namespace Aspose.Slides.Examples.VisualBasic.Shapes
     Public Class FillShapesGradient
         Public Shared Sub Run()
+			'ExStart:FillShapesGradient
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Shapes()
 
@@ -39,7 +40,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Shapes
                 'Write the PPTX file to disk
                 pres.Save(dataDir & "EllipseShpGrad_out.pptx", SaveFormat.Pptx)
             End Using
-
+			'ExEnd:FillShapesGradient
         End Sub
     End Class
 End Namespace

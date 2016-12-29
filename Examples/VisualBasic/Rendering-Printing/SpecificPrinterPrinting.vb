@@ -11,6 +11,7 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.Rendering.Printing
     Public Class SpecificPrinterPrinting
         Public Shared Sub Run()
+			'ExStart:SpecificPrinterPrinting
 
             Try
 
@@ -25,6 +26,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Rendering.Printing
             Catch ex As Exception
                 Console.WriteLine(ex.Message & "Please set printer name as string parameter to the Presentation Print method ")
             End Try
+			'ExEnd:SpecificPrinterPrinting
         End Sub
     End Class
 End Namespace

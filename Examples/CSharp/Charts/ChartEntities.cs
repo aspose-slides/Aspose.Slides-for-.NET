@@ -10,6 +10,7 @@ namespace Aspose.Slides.Examples.CSharp.Charts
     {
         public static void Run()
         {
+            //ExStart:ChartEntities
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Charts();
 
@@ -155,7 +156,7 @@ namespace Aspose.Slides.Examples.CSharp.Charts
 
             // Save Presentation
             pres.Save(dataDir + "FormattedChart_out.pptx", SaveFormat.Pptx);
-
+            //ExEnd:ChartEntities
         }
     }
 }

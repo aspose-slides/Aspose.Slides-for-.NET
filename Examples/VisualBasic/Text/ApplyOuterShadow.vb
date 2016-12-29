@@ -13,10 +13,10 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.Text
     Class ApplyOuterShadow
         Public Shared Sub Run()
+            ' ExStart:ApplyOuterShadow
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Text()
 
-            ' ExStart:ApplyOuterShadow
             ' Create an instance of Presentation class
             Dim presentation As New Presentation()
 
@@ -49,9 +49,9 @@ Namespace Aspose.Slides.Examples.VisualBasic.Text
             ' Set Scheme Color
             ef.InnerShadowEffect.ShadowColor.SchemeColor = SchemeColor.Accent1
 
-            ' ExEnd:ApplyOuterShadow
             ' Save Presentation
             presentation.Save(dataDir & Convert.ToString("WordArt_out.pptx"), SaveFormat.Pptx)
+            ' ExEnd:ApplyOuterShadow
 
         End Sub
     End Class

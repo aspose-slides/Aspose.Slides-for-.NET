@@ -47,10 +47,10 @@ namespace Aspose.Slides.Examples.CSharp.Text
                 // Set Text
                 portion.Text = "Aspose TextBox";
 
-                // ExEnd:ApplyInnerShadow
                 // Save the presentation to disk
                 pres.Save(dataDir + "ApplyInnerShadow_out.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
             }
+            // ExEnd:ApplyInnerShadow
         }
     }
 }

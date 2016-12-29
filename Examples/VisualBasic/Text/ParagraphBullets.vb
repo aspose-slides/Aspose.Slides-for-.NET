@@ -9,6 +9,7 @@ Imports Aspose.Slides.Export
 Namespace Aspose.Slides.Examples.VisualBasic.Text
     Public Class ParagraphBullets
         Public Shared Sub Run()
+            ' ExStart:ParagraphBullets
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Text()
 
@@ -84,9 +85,8 @@ Namespace Aspose.Slides.Examples.VisualBasic.Text
 
                 'Writing the presentation as a PPTX file
                 pres.Save(dataDir & "Bullet_out.pptx", SaveFormat.Pptx)
-
             End Using
-
+            ' ExEnd:ParagraphBullets
         End Sub
     End Class
 End Namespace

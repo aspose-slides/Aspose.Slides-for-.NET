@@ -11,9 +11,8 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.Shapes
     Public Class RemoveShape
         Public Shared Sub Run()
-            ' For complete examples and data files, please go to https://github.com/aspose-slides/Aspose.Slides-for-.NET            ' The path to the documents directory.
-
-            ' The path to the documents directory.
+            'ExStart:RemoveShape	
+			' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Shapes()
 
             ' Create presentation object
@@ -37,7 +36,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Shapes
 
             ' Save presentation to disk
             presentation.Save(dataDir + "RemovedShape_out.pptx", SaveFormat.Pptx)
-
+			'ExEnd:RemoveShape	
         End Sub
 
 

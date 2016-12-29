@@ -32,10 +32,10 @@ Namespace Aspose.Slides.Examples.VisualBasic.SmartArts
                 If hidden Then
                 End If
 
-                ' ExEnd:CheckSmartArtHiddenProperty
                 ' Saving Presentation
                 presentation.Save(dataDir & Convert.ToString("CheckSmartArtHiddenProperty_out.pptx"), SaveFormat.Pptx)
             End Using
+            ' ExEnd:CheckSmartArtHiddenProperty
         End Sub
     End Class
 End Namespace

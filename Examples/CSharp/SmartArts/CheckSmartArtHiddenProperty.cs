@@ -35,11 +35,10 @@ namespace Aspose.Slides.Examples.CSharp.SmartArts
                 {
                     // Do some actions or notifications
                 }
-
-                // ExEnd:CheckSmartArtHiddenProperty
                 // Saving Presentation
                 presentation.Save(dataDir + "CheckSmartArtHiddenProperty_out.pptx", SaveFormat.Pptx);
             }
+            // ExEnd:CheckSmartArtHiddenProperty
         }
     }
 }

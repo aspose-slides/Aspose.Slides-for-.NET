@@ -12,6 +12,7 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.Presentations.Properties
     Public Class UpdatePresentationProperties
         Public Shared Sub Run()
+			'ExStart:UpdatePresentationProperties
             ' For complete examples and data files, please go to https:// Github.com/aspose-slides/Aspose.Slides-for-.NET
 
             ' The path to the documents directory.
@@ -30,7 +31,8 @@ Namespace Aspose.Slides.Examples.VisualBasic.Presentations.Properties
             ' update the presentation with a new values 
             info.UpdateDocumentProperties(props)
             info.WriteBindedPresentation(dataDir & Convert.ToString("ModifyBuiltinProperties1.pptx"))
-
+			
+			'ExEnd:UpdatePresentationProperties
         End Sub
     End Class
 End Namespace

@@ -12,6 +12,7 @@ Imports Aspose.Slides.Export
 Namespace Aspose.Slides.Examples.VisualBasic.Presentations.Conversion
     Public Class PPTtoPPTX
         Public Shared Sub Run()
+			'ExStart:PPTtoPPTX
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Conversion()
 
@@ -21,5 +22,6 @@ Namespace Aspose.Slides.Examples.VisualBasic.Presentations.Conversion
             ' Saving the PPTX presentation to PPTX format
             pres.Save(dataDir & Convert.ToString("PPTtoPPTX_out.pptx"), SaveFormat.Pptx)
         End Sub
+			'ExEnd:PPTtoPPTX
     End Class
 End Namespace

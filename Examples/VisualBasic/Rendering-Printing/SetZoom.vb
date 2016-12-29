@@ -12,7 +12,7 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.Rendering.Printing
     Public Class SetZoom
         Public Shared Sub Run()
-
+			'ExStart:SetZoom
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Rendering()
 
@@ -26,7 +26,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Rendering.Printing
                 ' zoom value in percentages for notes view 
                 presentation.Save(dataDir & Convert.ToString("Zoom_out.pptx"), SaveFormat.Pptx)
             End Using
-
+			'ExEnd:SetZoom
         End Sub
     End Class
 End Namespace

@@ -25,10 +25,10 @@ Namespace Aspose.Slides.Examples.VisualBasic.SmartArts
                 ' Change LayoutType to BasicProcess
                 smart.Layout = SmartArtLayoutType.BasicProcess
 
-                ' ExEnd:ChangeSmartArtLayout
                 ' Saving Presentation
                 presentation.Save(dataDir & Convert.ToString("ChangeSmartArtLayout_out.pptx"), SaveFormat.Pptx)
             End Using
+            ' ExEnd:ChangeSmartArtLayout
         End Sub
     End Class
 End Namespace

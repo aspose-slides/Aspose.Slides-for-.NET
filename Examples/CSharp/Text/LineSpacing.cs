@@ -15,10 +15,11 @@ namespace Aspose.Slides.Examples.CSharp.Text
     {
         public static void Run()
         {
+            // ExStart:LineSpacing
+
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Text();
 
-            // ExStart:LineSpacing
             // Create an instance of Presentation class
             Presentation presentation = new Presentation(dataDir + "Fonts.pptx");
 
@@ -36,9 +37,9 @@ namespace Aspose.Slides.Examples.CSharp.Text
             para1.ParagraphFormat.SpaceBefore = 40;
             para1.ParagraphFormat.SpaceAfter = 40;
 
-            // ExEnd:LineSpacing
             // Save Presentation
-            presentation.Save(dataDir + "LineSpacing_out.pptx", SaveFormat.Pptx); 
+            presentation.Save(dataDir + "LineSpacing_out.pptx", SaveFormat.Pptx);
+            // ExStart:LineSpacing
         }
     }
 }

@@ -13,6 +13,7 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.ActiveX
     Public Class ManageActiveXControl
         Public Shared Sub Run()
+        	'ExStart:ManageActiveXControl
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_ActiveX()
 
@@ -107,7 +108,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.ActiveX
 
             ' Saving the presentation with cleared ActiveX controls
             presentation.Save(dataDir & Convert.ToString("withActiveX.cleared_out.pptm"), Aspose.Slides.Export.SaveFormat.Pptm)
-
+        	'ExEnd:ManageActiveXControl
         End Sub
     End Class
 End Namespace

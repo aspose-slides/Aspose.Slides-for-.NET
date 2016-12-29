@@ -14,6 +14,7 @@ namespace Aspose.Slides.Examples.CSharp.Slides
     {
         public static void Run()
         {
+            //ExStart:RemoveSlideUsingReference
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Slides_Presentations_CRUD();
 
@@ -24,14 +25,13 @@ namespace Aspose.Slides.Examples.CSharp.Slides
                 // Accessing a slide using its index in the slides collection
                 ISlide slide = pres.Slides[0];
 
-
                 // Removing a slide using its reference
                 pres.Slides.Remove(slide);
-
 
                 //Writing the presentation file
                 pres.Save(dataDir + "modified_out.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
             }
+            //ExEnd:RemoveSlideUsingReference
         }
     }
 }

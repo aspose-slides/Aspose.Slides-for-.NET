@@ -34,10 +34,10 @@ Namespace Aspose.Slides.Examples.VisualBasic.SmartArts
                     item.FillFormat.SolidFillColor.Color = Color.Red
                 Next
 
-                ' ExEnd:FillFormatSmartArtShapeNode
                 ' Saving Presentation
                 presentation.Save(dataDir & Convert.ToString("FillFormat_SmartArt_ShapeNode_out.pptx"), SaveFormat.Pptx)
             End Using
+            ' ExEnd:FillFormatSmartArtShapeNode
         End Sub
     End Class
 End Namespace

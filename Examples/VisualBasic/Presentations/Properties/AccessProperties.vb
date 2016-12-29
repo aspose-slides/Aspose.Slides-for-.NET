@@ -12,6 +12,7 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.Presentations
     Public Class AccessProperties
         Public Shared Sub Run()
+			'ExStart:AccessProperties
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_PresentationProperties()
 
@@ -32,6 +33,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Presentations
             Dim docProps As IDocumentProperties = pres.DocumentProperties
 
             System.Console.WriteLine("Name of Application : " + docProps.NameOfApplication)
+			'ExEnd:AccessProperties
         End Sub
     End Class
 End Namespace

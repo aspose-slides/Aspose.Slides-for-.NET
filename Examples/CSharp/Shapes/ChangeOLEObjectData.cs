@@ -10,6 +10,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
     {
         public static void Run()
         {
+            //ExStart:ChangeOLEObjectData
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Shapes();
 
@@ -57,9 +58,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
             }
 
             pres.Save(dataDir + "OleEdit_out.pptx", SaveFormat.Pptx);
-
- 
-            
+            //ExEnd:ChangeOLEObjectData
         }
     }
 }

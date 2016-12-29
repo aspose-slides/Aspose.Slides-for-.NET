@@ -12,10 +12,10 @@ Imports Aspose.Slides.Export
 Namespace Aspose.Slides.Examples.VisualBasic.Slides.CRUD
     Class CloneAnotherPresentationAtSpecifiedPosition
         Public Shared Sub Run()
+            'ExStart:CloneAnotherPresentationAtSpecifiedPosition
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Slides_Presentations_CRUD()
 
-            ' ExStart:CloneAnotherPresentationAtSpecifiedPosition
             ' Instantiate Presentation class to load the source presentation file
             Using sourcePresentation As New Presentation(dataDir & Convert.ToString("AccessSlides.pptx"))
                 ' Instantiate Presentation class for destination presentation (where slide is to be cloned)
@@ -31,6 +31,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Slides.CRUD
                     destPres.Save(dataDir & Convert.ToString("CloneAnotherPresentationAtSpecifiedPosition_out.pptx"), SaveFormat.Pptx)
                 End Using
             End Using
+            'ExEnd:CloneAnotherPresentationAtSpecifiedPosition
         End Sub
     End Class
 End Namespace

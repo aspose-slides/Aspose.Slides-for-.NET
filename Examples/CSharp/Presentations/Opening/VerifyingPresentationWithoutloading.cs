@@ -14,11 +14,13 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Opening
     {
         public static void Run()
         {
+            //ExStart:VerifyingPresentationWithoutloading
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_PresentationOpening();
 
             LoadFormat format = PresentationFactory.Instance.GetPresentationInfo(dataDir + "HelloWorld.pptx").LoadFormat;
-            // It will return "LoadFormat.Unknown" if the file is other than presentation formats           
+            // It will return "LoadFormat.Unknown" if the file is other than presentation formats  
+            //ExEnd:VerifyingPresentationWithoutloading
         }
     }
 }

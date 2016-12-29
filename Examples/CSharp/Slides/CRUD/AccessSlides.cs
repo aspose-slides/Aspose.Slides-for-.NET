@@ -14,6 +14,7 @@ namespace Aspose.Slides.Examples.CSharp.Slides.CRUD
     {
         public static void Run()
         {
+            //ExStart:AccessSlides
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Slides_Presentations_CRUD();
 
@@ -24,6 +25,7 @@ namespace Aspose.Slides.Examples.CSharp.Slides.CRUD
                 ISlide slide = pres.Slides[0];
                 System.Console.WriteLine("Slide Number: " + slide.SlideNumber);
             }
+            //ExEnd:AccessSlides
         }
     }
 }

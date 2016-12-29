@@ -7,6 +7,7 @@ Imports Aspose.Slides.Export
 Namespace Aspose.Slides.Examples.VisualBasic.Shapes
     Public Class ChangeOLEObjectData
         Public Shared Sub Run()
+			'ExStart:ChangeOLEObjectData	
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Shapes()
 
@@ -49,6 +50,8 @@ Namespace Aspose.Slides.Examples.VisualBasic.Shapes
             End If
 
             pres.Save(dataDir & "OleEdit_out.pptx", SaveFormat.Pptx)
+			
+			'ExEnd:ChangeOLEObjectData	
         End Sub
     End Class
 End Namespace

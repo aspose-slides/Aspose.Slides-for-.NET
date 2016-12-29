@@ -28,10 +28,10 @@ Namespace Aspose.Slides.Examples.VisualBasic.SmartArts
                 ' Setting the text of the TextFrame 
                 node.TextFrame.Text = "Second root node"
 
-                ' ExEnd:FillFormatSmartArtShapeNode
                 ' Saving Presentation
                 presentation.Save(dataDir & Convert.ToString("ChangeText_On_SmartArt_Node_out.pptx"), SaveFormat.Pptx)
             End Using
+            ' ExEnd:FillFormatSmartArtShapeNode
         End Sub
     End Class
 End Namespace

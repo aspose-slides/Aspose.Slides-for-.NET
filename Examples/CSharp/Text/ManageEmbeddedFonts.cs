@@ -19,6 +19,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
     {
         public static void Run()
         {
+            // ExStart:ManageEmbeddedFonts
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Text();
 
@@ -48,6 +49,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
                 // save the presentation without embedded "Calibri" font
                 presentation.Save(dataDir + "WithoutManageEmbeddedFonts_out.ppt", SaveFormat.Ppt);
             }
+            // ExEnd:ManageEmbeddedFonts
         }
     }
 }

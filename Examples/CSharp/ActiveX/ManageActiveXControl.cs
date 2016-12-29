@@ -16,6 +16,7 @@ namespace Aspose.Slides.Examples.CSharp.ActiveX
     {
         public static void Run()
         {
+            //ExStart:ManageActiveXControl
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ActiveX();
 
@@ -27,7 +28,6 @@ namespace Aspose.Slides.Examples.CSharp.ActiveX
 
             // changing TextBox text
             IControl control = slide.Controls[0];
-
 
             if (control.Name == "TextBox1" && control.Properties != null)
             {
@@ -124,7 +124,7 @@ namespace Aspose.Slides.Examples.CSharp.ActiveX
 
             // Saving the presentation with cleared ActiveX controls
             presentation.Save(dataDir + "withActiveX.cleared_out.pptm", Aspose.Slides.Export.SaveFormat.Pptm);
-
+            //ExEnd:ManageActiveXControl
         }
     }
 }

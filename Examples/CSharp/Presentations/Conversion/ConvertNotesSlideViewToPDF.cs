@@ -14,6 +14,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Conversion
     {
         public static void Run()
         {
+            //ExStart:ConvertNotesSlideViewToPDF
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Conversion();
 
@@ -23,6 +24,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Conversion
                 // Saving the presentation to PDF notes
                 presentation.Save(dataDir + "Pdf_Notes_out.tiff", SaveFormat.PdfNotes);
             }
+            //ExEnd:ConvertNotesSlideViewToPDF
         } 
     }
 }

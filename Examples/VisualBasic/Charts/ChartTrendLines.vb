@@ -9,6 +9,7 @@ Imports System.Drawing
 Namespace Aspose.Slides.Examples.VisualBasic.Charts
     Public Class ChartTrendLines
         Public Shared Sub Run()
+			'ExStart:ChartTrendLines
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Charts()
 
@@ -61,6 +62,8 @@ Namespace Aspose.Slides.Examples.VisualBasic.Charts
             ' Saving presentation
             pres.Save(dataDir & "ChartTrendLines_out.pptx", SaveFormat.Pptx)
 
+			'ExEnd:ChartTrendLines
+			
         End Sub
     End Class
 End Namespace

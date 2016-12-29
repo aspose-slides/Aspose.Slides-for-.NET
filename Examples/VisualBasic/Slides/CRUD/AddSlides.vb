@@ -12,6 +12,7 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.Slides.CRUD
     Public Class AddSlides
         Public Shared Sub Run()
+            'ExStart:AddSlides
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Slides_Presentations_CRUD()
 
@@ -35,6 +36,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Slides.CRUD
                 ' Save the PPTX file to the Disk
                 pres.Save(dataDir & Convert.ToString("EmptySlide_out.pptx"), Aspose.Slides.Export.SaveFormat.Pptx)
             End Using
+            'ExEnd:AddSlides
         End Sub
     End Class
 End Namespace

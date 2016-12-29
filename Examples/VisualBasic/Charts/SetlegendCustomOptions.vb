@@ -14,6 +14,7 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.Charts
     Public Class SetlegendCustomOptions
         Public Shared Sub Run()
+            'ExStart:SetlegendCustomOptions
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Charts()
 
@@ -34,6 +35,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Charts
 
             ' Write presentation to disk
             presentation.Save(dataDir & Convert.ToString("Legend_out.pptx"), SaveFormat.Pptx)
+			'ExEnd:SetlegendCustomOptions
         End Sub
     End Class
 End Namespace

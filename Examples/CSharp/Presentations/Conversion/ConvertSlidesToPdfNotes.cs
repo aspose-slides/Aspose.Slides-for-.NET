@@ -15,6 +15,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Conversion
     {
         public static void Run()
         {
+            //ExStart:ConvertSlidesToPdfNotes
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Conversion();
 
@@ -29,8 +30,8 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Conversion
             // Setting Slide Type and Size 
             auxPresentation.SlideSize.Type = SlideSizeType.Custom;
             auxPresentation.SlideSize.Size = new SizeF(612F, 792F);
-
             auxPresentation.Save(dataDir + "PDFnotes_out.pdf", SaveFormat.PdfNotes);
+            //ExEnd:ConvertSlidesToPdfNotes
         }
     }
 }

@@ -32,11 +32,10 @@ Namespace Aspose.Slides.Examples.VisualBasic.SmartArts
                         End If
                     End If
                 Next
-
-                ' ExEnd:ChangeSmartArtShapeColorStyle
                 ' Saving Presentation
                 presentation.Save(dataDir & Convert.ToString("ChangeSmartArtColorStyle_out.pptx"), SaveFormat.Pptx)
             End Using
+            ' ExEnd:ChangeSmartArtShapeColorStyle
         End Sub
     End Class
 End Namespace

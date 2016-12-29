@@ -17,6 +17,7 @@ namespace Aspose.Slides.Examples.CSharp.Charts
     {
         public static void Run()
         {
+            //ExStart:SetDataLabelsPercentageSign
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Charts();
 
@@ -78,7 +79,7 @@ namespace Aspose.Slides.Examples.CSharp.Charts
 
             // Write presentation to disk
             presentation.Save(dataDir + "SetDataLabelsPercentageSign_out.pptx", SaveFormat.Pptx);
-
+            //ExEnd:SetDataLabelsPercentageSign
         }
     }
 }

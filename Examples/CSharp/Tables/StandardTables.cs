@@ -16,6 +16,7 @@ namespace Aspose.Slides.Examples.CSharp.Tables
     {
         public static void Run()
         {
+            // ExStart:StandardTables
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Tables();
 
@@ -52,14 +53,15 @@ namespace Aspose.Slides.Examples.CSharp.Tables
 
                         cell.BorderRight.FillFormat.FillType = FillType.Solid;
                         cell.BorderRight.FillFormat.SolidFillColor.Color = Color.Red;
-                        cell.BorderRight.Width = 5;                        
+                        cell.BorderRight.Width = 5;
                     }
                 }
 
                 //Write PPTX to Disk
                 pres.Save(dataDir + "StandardTables_out.pptx", SaveFormat.Pptx);
             }
-         }
+            // ExEnd:StandardTables
+        }
     }
 }
 

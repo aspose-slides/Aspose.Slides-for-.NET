@@ -12,7 +12,7 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.Shapes
     Public Class CreateScalingFactorThumbnail
         Public Shared Sub Run()
-
+			'ExStart:CreateScalingFactorThumbnail
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Shapes()
 
@@ -28,7 +28,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Shapes
                 End Using
 
             End Using
-
+			'ExEnd:CreateScalingFactorThumbnail
         End Sub
     End Class
 End Namespace

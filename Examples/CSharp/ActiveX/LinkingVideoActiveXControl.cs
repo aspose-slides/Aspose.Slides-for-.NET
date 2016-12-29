@@ -14,6 +14,7 @@ namespace Aspose.Slides.Examples.CSharp.ActiveX
     {
         public static void Run()
         {
+            //ExStart:LinkingVideoActiveXControl
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ActiveX();
             string dataVideo = RunExamples.GetDataDir_Video();
@@ -35,6 +36,7 @@ namespace Aspose.Slides.Examples.CSharp.ActiveX
 
             // Save the Presentation
             newPresentation.Save(dataDir + "LinkingVideoActiveXControl_out.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
+            //ExEnd:LinkingVideoActiveXControl
         }
     }
 }

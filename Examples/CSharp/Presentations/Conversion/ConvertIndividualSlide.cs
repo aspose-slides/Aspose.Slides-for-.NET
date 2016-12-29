@@ -12,10 +12,10 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Conversion
 {
     class ConvertIndividualSlide
     {
+        //ExStart:ConvertIndividualSlide
         public static void Run()
         {
             string dataDir = RunExamples.GetDataDir_Conversion();
-
             using (Presentation presentation = new Presentation(dataDir + "Individual-Slide.pptx"))
             {
                 HtmlOptions htmlOptions = new HtmlOptions();
@@ -54,5 +54,6 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Conversion
             private const string SlideHeader = "<div class=\"slide\" name=\"slide\" id=\"slide{0}\">";
             private const string SlideFooter = "</div>";
         }
+        //ExEnd:ConvertIndividualSlide
     }
 }

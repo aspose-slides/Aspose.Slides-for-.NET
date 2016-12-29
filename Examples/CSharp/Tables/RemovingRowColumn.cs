@@ -7,6 +7,7 @@ namespace Aspose.Slides.Examples.CSharp.Tables
     {
         public static void Run()
         {
+            // ExStart:RemovingRowColumn
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Tables();
 
@@ -22,14 +23,10 @@ namespace Aspose.Slides.Examples.CSharp.Tables
             double[] rowHeight = { 30, 50, 30 };
 
             ITable table = slide.Shapes.AddTable(100, 100, colWidth, rowHeight);
-
             table.Rows.RemoveAt(1, false);
             table.Columns.RemoveAt(1, false);
-
-
             pres.Save(dataDir + "TestTable_out.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
-
-
+            // ExEnd:RemovingRowColumn
         }
     }
 }

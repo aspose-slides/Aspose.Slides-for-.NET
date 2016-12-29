@@ -13,9 +13,9 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.Text
     Class ManagParagraphFontProperties
         Public Shared Sub Run()
+            ' ExStart:ManagParagraphFontProperties
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Text()
-            ' ExStart:ManagParagraphFontProperties
             ' Instantiate PresentationEx
             Using presentation As New Presentation(dataDir & Convert.ToString("DefaultFonts.pptx"))
                 ' Accessing a slide using its slide position
@@ -57,10 +57,9 @@ Namespace Aspose.Slides.Examples.VisualBasic.Text
                 port1.PortionFormat.FillFormat.SolidFillColor.Color = Color.Purple
                 port2.PortionFormat.FillFormat.FillType = FillType.Solid
                 port2.PortionFormat.FillFormat.SolidFillColor.Color = Color.Peru
-
-                ' ExEnd:ManagParagraphFontProperties
                 ' Write the PPTX to disk 
                 presentation.Save(dataDir & Convert.ToString("ManagParagraphFontProperties_out.pptx"), Aspose.Slides.Export.SaveFormat.Pptx)
+                ' ExEnd:ManagParagraphFontProperties
             End Using
         End Sub
     End Class

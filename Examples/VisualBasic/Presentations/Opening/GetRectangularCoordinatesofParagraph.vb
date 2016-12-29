@@ -13,6 +13,7 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.Presentations.Opening
     Class GetRectangularCoordinatesofParagraph
         Public Shared Sub Run()
+			'ExStart:GetRectangularCoordinatesofParagraph
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_PresentationOpening()
 
@@ -22,6 +23,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Presentations.Opening
                 Dim textFrame = DirectCast(shape.TextFrame, ITextFrame)
                 Dim rect As RectangleF = DirectCast(textFrame.Paragraphs(0), Paragraph).GetRect()
             End Using
+			'ExEnd:GetRectangularCoordinatesofParagraph
         End Sub
     End Class
 End Namespace

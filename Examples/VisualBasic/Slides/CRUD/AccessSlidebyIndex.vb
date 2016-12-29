@@ -12,17 +12,16 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.Slides.CRUD
     Class AccessSlidebyIndex
         Public Shared Sub Run()
+            'ExStart:AccessSlidebyIndex
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Slides_Presentations_CRUD()
 
-            ' ExStart:AccessSlidebyIndex
             ' Create an instance of Presentation class
             Dim presentation As New Presentation(dataDir & Convert.ToString("AccessSlides.pptx"))
 
-            ' ExEnd:AccessSlidebyIndex
             ' Obtain a slide's reference by its index
             Dim slide As ISlide = presentation.Slides(0)
-
+            ' ExEnd:AccessSlidebyIndex
         End Sub
     End Class
 End Namespace

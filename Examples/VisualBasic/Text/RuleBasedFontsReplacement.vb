@@ -13,10 +13,10 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.Text
     Class RuleBasedFontsReplacement
         Public Shared Sub Run()
+            ' ExStart:RuleBasedFontsReplacement
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Text()
 
-            ' ExStart:RuleBasedFontsReplacement
             ' Load presentation
             Dim presentation As New Presentation(dataDir & Convert.ToString("Fonts.pptx"))
 
@@ -39,9 +39,9 @@ Namespace Aspose.Slides.Examples.VisualBasic.Text
             ' Arial font will be used instead of SomeRareFont when inaccessible
             Dim bmp As Bitmap = presentation.Slides(0).GetThumbnail(1.0F, 1.0F)
 
-            ' ExEnd:RuleBasedFontsReplacement
             ' Save the image to disk in JPEG format
             bmp.Save(dataDir & Convert.ToString("Thumbnail_out.jpg"), System.Drawing.Imaging.ImageFormat.Jpeg)
+            ' ExEnd:RuleBasedFontsReplacement
 
         End Sub
     End Class

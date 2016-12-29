@@ -16,6 +16,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
     {
         public static void Run()
         {
+            // ExStart:SetAutofitOftextframe
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Text();
 
@@ -50,5 +51,6 @@ namespace Aspose.Slides.Examples.CSharp.Text
             // Save Presentation
             presentation.Save(dataDir + "formatText_out.pptx", SaveFormat.Pptx); 
         }
+        // ExEnd:SetAutofitOftextframe
     }
 }

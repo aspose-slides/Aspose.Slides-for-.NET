@@ -28,10 +28,10 @@ namespace Aspose.Slides.Examples.CSharp.SmartArts
                 // Change LayoutType to BasicProcess
                 smart.Layout = SmartArtLayoutType.BasicProcess;
 
-                // ExEnd:ChangeSmartArtLayout
                 // Saving Presentation
                 presentation.Save(dataDir + "ChangeSmartArtLayout_out.pptx", SaveFormat.Pptx);
             }
+            // ExEnd:ChangeSmartArtLayout
         }
     }
 }

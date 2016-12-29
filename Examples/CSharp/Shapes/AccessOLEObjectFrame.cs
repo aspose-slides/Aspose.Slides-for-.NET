@@ -7,6 +7,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
     {
         public static void Run()
         {
+            //ExStart:AccessOLEObjectFrame
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Shapes();
 
@@ -28,8 +29,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
                 fstr.Flush();
                 fstr.Close();
             }
-            
-            
+            //ExEnd:AccessOLEObjectFrame
         }
     }
 }

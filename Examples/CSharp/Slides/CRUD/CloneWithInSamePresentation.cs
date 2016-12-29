@@ -14,6 +14,7 @@ namespace Aspose.Slides.Examples.CSharp.Slides.CRUD
     {
         public static void Run()
         {
+            //ExStart:CloneWithInSamePresentation
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Slides_Presentations_CRUD();
 
@@ -31,7 +32,7 @@ namespace Aspose.Slides.Examples.CSharp.Slides.CRUD
                 pres.Save(dataDir + "Aspose_CloneWithInSamePresentation_out.pptx", SaveFormat.Pptx);
 
             }
-            
+            //ExEnd:CloneWithInSamePresentation            
         }
     }
 }

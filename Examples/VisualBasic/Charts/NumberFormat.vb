@@ -8,6 +8,7 @@ Imports Aspose.Slides.Export
 Namespace Aspose.Slides.Examples.VisualBasic.Charts
     Public Class NumberFormat
         Public Shared Sub Run()
+			'ExStart:NumberFormat
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Charts()
 
@@ -42,6 +43,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Charts
             ' Saving presentation
             pres.Save(dataDir & "PresetNumberFormat_out.pptx", SaveFormat.Pptx)
 
+			'ExEnd:NumberFormat
         End Sub
     End Class
 End Namespace

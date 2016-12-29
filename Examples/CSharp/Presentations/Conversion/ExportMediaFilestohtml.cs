@@ -15,6 +15,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Conversion
     {
         public static void Run()
         {
+            //ExStart:ExportMediaFilestohtml
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Conversion();
 
@@ -37,6 +38,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Conversion
                 // Saving the file
                 pres.Save(Path.Combine(path, fileName), SaveFormat.Html, htmlOptions);
             }
+            //ExEnd:ExportMediaFilestohtml
         }
     }
 }

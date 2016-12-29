@@ -13,6 +13,7 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.Slides.Thumbnail
     Public Class ThumbnailFromSlide
         Public Shared Sub Run()
+            ' ExStart:ThumbnailFromSlide
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Slides_Presentations_Thumbnail()
 
@@ -28,6 +29,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Slides.Thumbnail
                 ' Save the image to disk in JPEG format
                 bmp.Save(dataDir & Convert.ToString("Thumbnail_out.jpg"), System.Drawing.Imaging.ImageFormat.Jpeg)
             End Using
+            ' ExEnd:ThumbnailFromSlide
         End Sub
     End Class
 End Namespace

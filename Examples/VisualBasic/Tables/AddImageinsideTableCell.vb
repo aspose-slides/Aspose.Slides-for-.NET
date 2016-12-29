@@ -11,7 +11,7 @@ Imports Aspose.Slides
 Namespace Aspose.Slides.Examples.VisualBasic.Tables
     Public Class AddImageinsideTableCell
         Public Shared Sub Run()
-
+            ' ExStart:AddImageinsideTableCell
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Tables()
 
@@ -41,7 +41,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Tables
 
             ' Save PPTX to Disk
             presentation.Save(dataDir + "Image_Inside_TableCell_out.pptx", SaveFormat.Pptx)
-
+            ' ExStart:AddImageinsideTableCell
         End Sub
     End Class
 End Namespace

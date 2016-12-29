@@ -14,6 +14,7 @@ namespace Aspose.Slides.Examples.CSharp.Slides.Layout
     {
         public static void Run()
         {
+            //ExStart:AddLayoutSlides
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Slides_Presentations_Layout();
 
@@ -70,6 +71,7 @@ namespace Aspose.Slides.Examples.CSharp.Slides.Layout
                 // Save presentation    
                 presentation.Save(dataDir + "AddLayoutSlides_out.pptx", SaveFormat.Pptx);
             }
+            //ExEnd:AddLayoutSlides
         }
     }
 }

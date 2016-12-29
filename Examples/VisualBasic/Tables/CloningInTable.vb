@@ -12,6 +12,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Tables
     Public Class CloningInTable
         Public Shared Sub Run()
 
+            ' ExStart:CloningInTable
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Tables()
 
@@ -71,7 +72,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Tables
             table.Columns.InsertClone(2, table.Columns(0), False)
 
             presentation.Save(dataDir + "CloneRow_out.pptx", SaveFormat.Pptx)
-
+            ' ExEnd:CloningInTable
         End Sub
     End Class
 End Namespace

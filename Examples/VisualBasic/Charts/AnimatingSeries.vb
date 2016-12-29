@@ -15,6 +15,7 @@ Imports Aspose.Slides.Animation
 Namespace Aspose.Slides.Examples.VisualBasic.Charts
     Public Class AnimatingSeries
         Public Shared Sub Run()
+			'ExStart:AnimatingSeries
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_Charts()
 
@@ -39,6 +40,7 @@ Namespace Aspose.Slides.Examples.VisualBasic.Charts
                 ' Write the modified presentation to disk 
                 presentation.Save(dataDir & Convert.ToString("AnimatingSeries_out.pptx"), SaveFormat.Pptx)
             End Using
+			'ExEnd:AnimatingSeries
         End Sub
     End Class
 End Namespace
