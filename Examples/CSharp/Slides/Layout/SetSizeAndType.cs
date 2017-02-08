@@ -31,7 +31,6 @@ namespace Aspose.Slides.Examples.CSharp.Slides.Layout
 
             auxPresentation.Slides.InsertClone(0, slide);
             auxPresentation.Slides.RemoveAt(0);
-            // ExEnd:SettSizeAndType
             // Save Presentation to disk
             auxPresentation.Save(dataDir + "Set_Size&Type_out.pptx", SaveFormat.Pptx);
             //ExEnd:SetSizeAndType

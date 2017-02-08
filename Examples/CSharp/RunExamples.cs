@@ -76,7 +76,7 @@ namespace Aspose.Slides.Examples.CSharp
             //SecondPlotOptionsforCharts.Run();
             //SetMarkerOptions.Run();
             //SetDataRange.Run();
-
+        // UsingWorkBookChartcellAsDatalabel.Run();
             //// =====================================================
             ////                    Presentations 
             //// =====================================================
@@ -265,7 +265,7 @@ namespace Aspose.Slides.Examples.CSharp
             //AddLayoutSlides.Run();
             //SetSizeAndType.Run();
             //SetPDFPageSize.Run();       
-
+            //SetSlideSizeScale.Run();
             //// =====================================================
             ////                    Slides - HyperLink
             //// =====================================================
@@ -327,7 +327,9 @@ namespace Aspose.Slides.Examples.CSharp
             //MergeCells.Run();
             //MergeCell.Run();
             //CellSplit.Run();
-
+            //TextFormattingInsideTableColumn.Run();
+            //TextFormattingInsideTableRow.Run();
+            //SetFormattingInsideTable.Run();
             //// =====================================================
             //// Text
             //// =====================================================
