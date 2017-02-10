@@ -29,7 +29,6 @@ namespace Aspose.Slides.Examples.CSharp.Charts
 
             // Instantiate Presentation class that represents a presentation file 
 
-
             using (Presentation pres = new Presentation(dataDir + "chart2.pptx"))
             {
                 ISlide slide = pres.Slides[0];
@@ -47,16 +46,12 @@ namespace Aspose.Slides.Examples.CSharp.Charts
                 series[0].Labels[1].ValueFromCell = wb.GetCell(0, "A11", lbl1);
                 series[0].Labels[2].ValueFromCell = wb.GetCell(0, "A12", lbl2);
 
-
-
-
-
                 pres.Save(path + "resultchart.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
 
-                // Write the modified presentation to disk 
-                presentation.Save(dataDir + "AnimatingSeries_out.pptx", SaveFormat.Pptx);
             }
-            //ExEnd:UsingWorkBookChartcellAsDatalabel
+       //ExEnd:UsingWorkBookChartcellAsDatalabel
+        
+        
         }
     }
 }

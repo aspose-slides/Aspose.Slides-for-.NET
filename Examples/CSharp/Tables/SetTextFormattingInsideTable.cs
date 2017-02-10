@@ -16,7 +16,7 @@ namespace Aspose.Slides.Examples.CSharp.Tables
     {
         public static void Run()
         {
-            // ExStart:TextFormattingInsideTableColumn
+            // ExStart:TextFormattingInsideTable
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Tables();
 

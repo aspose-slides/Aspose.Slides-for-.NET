@@ -28,7 +28,7 @@ namespace ConsoleApplication19
             presentation.SlideSize.SetSize(SlideSizeType.A4Paper, SlideSizeScaleType.Maximize); // Method SetSize is used for set slide size with maximize size of content
 
           
-            // ExEnd:SetSlideSizeScale
+           
             // Save Presentation to disk
             auxPresentation.Save(dataDir + "Set_Size&Type_out.pptx", SaveFormat.Pptx);
             //ExEnd:SetSlideSizeScale
