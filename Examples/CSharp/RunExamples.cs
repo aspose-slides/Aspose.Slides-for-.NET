@@ -266,6 +266,7 @@ namespace Aspose.Slides.Examples.CSharp
             //SetSizeAndType.Run();
             //SetPDFPageSize.Run();       
             //SetSlideSizeScale.Run();
+            //CheckSlidesComparison.Run();
             //// =====================================================
             ////                    Slides - HyperLink
             //// =====================================================
@@ -330,6 +331,7 @@ namespace Aspose.Slides.Examples.CSharp
             //TextFormattingInsideTableColumn.Run();
             //TextFormattingInsideTableRow.Run();
             //SetFormattingInsideTable.Run();
+           //IdentifyingTheMergedCellsinTable.Run();
             //// =====================================================
             //// Text
             //// =====================================================
