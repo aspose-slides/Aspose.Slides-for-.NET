@@ -21,7 +21,7 @@ Directory | Description
 + **Website:** [www.aspose.com](http://www.aspose.com)
 + **Product Home:** [Aspose.Slides for .NET](http://www.aspose.com/products/slides/net)
 + **Download:** [Download Aspose.Slides for .NET](http://www.aspose.com/downloads/slides/net)
-+ **Documentation:** [Aspose.Slides for .NET Documentation](http://www.aspose.com/docs/display/slidesnet/Home)
++ **Documentation:** [Aspose.Slides for .NET Documentation](https://docs.aspose.com/display/slidesnet/Home)
 + **Forum:** [Aspose.Slides for .NET Forum](http://www.aspose.com/community/forums/aspose.slides-product-family/109/showforum.aspx)
-+ **Blog:** [Aspose.Slides for .NET Blog](http://www.aspose.com/blogs/aspose-products/aspose-slides-product-family.html)
++ **Blog:** [Aspose.Slides for .NET Blog](https://blog.aspose.com/category/aspose-products/aspose-slides-product-family/)
 
