@@ -13,6 +13,6 @@ This repository contains C# and VB.NET examples for [Aspose.Slides for .NET](htt
 
 After you have downloaded the ZIP file from the [Download ZIP](https://github.com/asposeslides/Aspose_Slides_NET/archive/master.zip) link above, please check the following link with detailed instructions on how to run these Source Code Examples.
 
-[How to Run the Examples](http://www.aspose.com/docs/display/slidesnet/How+to+Run+Examples)
+[How to Run the Examples](https://docs.aspose.com/display/slidesnet/How+to+Run+Examples)
 
 Please feel free to contact us if you have any question, issue or suggestion.
