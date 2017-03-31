@@ -65,7 +65,9 @@ namespace Aspose.Slides.Examples.CSharp
             //AnimatingCategoriesElements.Run();
             //SetChartSeriesOverlap.Run();
             //SetAutomaticSeriesFillColor.Run();
-            SetCategoryAxisLabelDistance.Run();
+           // ValidateChartLayoutAdded.Run();
+
+            //SetCategoryAxisLabelDistance.Run();
             //SetlegendCustomOptions.Run();
             //SetDataLabelsPercentageSign.Run();
             //DoughnutChartHole.Run();
@@ -76,6 +78,7 @@ namespace Aspose.Slides.Examples.CSharp
             //SecondPlotOptionsforCharts.Run();
             //SetMarkerOptions.Run();
             //SetDataRange.Run();
+            //GetWidthHeightFromChartPlotArea.Run();
          //UsingWorkBookChartcellAsDatalabel.Run();
             //// =====================================================
             ////                    Presentations 
@@ -116,6 +119,7 @@ namespace Aspose.Slides.Examples.CSharp
             //// =====================================================
 
             //OpenPresentation.Run();
+            //LoadFormatEnumeration.Run();
             //OpenPasswordPresentation.Run();
             //VerifyingPresentationWithoutloading.Run();
             //GetFileFormat.Run();
@@ -350,6 +354,7 @@ namespace Aspose.Slides.Examples.CSharp
             //TextBoxHyperlink.Run();
             //TextBoxOnSlideProgram.Run();
             //ApplyInnerShadow.Run();
+            //LoadExternalFont.Run();
             //ManageParagraphFontProperties.Run();
             //SetTextFontProperties.Run();
             //ReplaceFontsExplicitly.Run();
