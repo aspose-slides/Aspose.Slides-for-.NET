@@ -20,24 +20,17 @@ namespace Aspose.Slides.Examples.CSharp.Charts
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Charts();
 
-            // Creating empty presentation
-            using (Presentation presentation = new Presentation())
-            {
-                // Creating a bubble chart
-                IChart chart = presentation.Slides[0].Shapes.AddChart(ChartType.Bubble, 50, 50, 400, 300, true);
+          using (Presentation pres = new Presentation())
+{
+          Chart chart = (Chart)pres.Slides[0].Shapes.AddChart(ChartType.Area, 100, 100, 500, 350);
+          chart.ValidateChartLayout();
 
-                // Adding Error bars and setting its format
-                IErrorBarsFormat errBarX = chart.ChartData.Series[0].ErrorBarsXFormat;
-                IErrorBarsFormat errBarY = chart.ChartData.Series[0].ErrorBarsYFormat;
-                errBarX.IsVisible = true;
-                errBarY.IsVisible = true;
-                errBarX.ValueType = ErrorBarValueType.Fixed;
-                errBarX.Value = 0.1f;
-                errBarY.ValueType = ErrorBarValueType.Percentage;
-                errBarY.Value = 5;
-                errBarX.Type = ErrorBarType.Plus;
-                errBarY.Format.Line.Width = 2;
-                errBarX.HasEndCap = true;
+          double maxValue = chart.Axes.VerticalAxis.ActualMaxValue;
+          double minValue = chart.Axes.VerticalAxis.ActualMinValue;
+
+          double majorUnit = chart.Axes.HorizontalAxis.ActualMajorUnit;
+             double minorUnit = chart.Axes.HorizontalAxis.ActualMinorUnit;
+}
 
                 // Saving presentation
                 presentation.Save(dataDir + "ErrorBars_out.pptx", SaveFormat.Pptx);
@@ -45,4 +38,3 @@ namespace Aspose.Slides.Examples.CSharp.Charts
             //ExEnd:GetValuesAndUnitScaleFromAxis
         }
     }
-}
