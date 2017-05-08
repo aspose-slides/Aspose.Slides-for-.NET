@@ -12,10 +12,12 @@ namespace Aspose.Slides.Examples.CSharp.Text
         public static void Run()
         {
             // ExStart:LoadExternalFont
+            
             // The path to the documents directory.
+          
             string dataDir = RunExamples.GetDataDir_Text();
 
-            // Instantiate a Presentation object that represents a PPTX file// Instantiate a Presentation object that represents a PPTX file
+           
            // loading presentation uses SomeFont which is not installed on the system
               using(Presentation pres = new Presentation("pres.pptx")
             {
@@ -25,10 +27,11 @@ namespace Aspose.Slides.Examples.CSharp.Text
        // load font represented as byte array
              FontsLoader.LoadExternalFont(fontData);
 
-  // font SomeFont will be available during the rendering or other operations
+       // font SomeFont will be available during the rendering or other operations
 }
            
             // ExEnd:LoadExternalFont
+       
         }
     }
 }
