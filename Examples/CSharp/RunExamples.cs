@@ -42,7 +42,7 @@ namespace Aspose.Slides.Examples.CSharp
             ////                    ActiveX
             //// =====================================================
 
-            //ManageActiveXControl.Run();
+         //   ManageActiveXControl.Run();
             //LinkingVideoActiveXControl.Run();
 
             // =====================================================
@@ -88,6 +88,7 @@ namespace Aspose.Slides.Examples.CSharp
             ////               Presentations - Conversion
             //// =====================================================
 
+            //ConvertingPresentationToHtmlWithEmbedAllFontsHtmlController.Run();
             //ConvertToPDF.Run();
             //ConvertToPDFWithHiddenSlides.Run();
             //CustomOptionsPDFConversion.Run();
@@ -106,6 +107,7 @@ namespace Aspose.Slides.Examples.CSharp
             //ConvertWithXpsOptions.Run();
             //ConvetToSWF.Run();
             //ConversionToTIFFNotes.Run();
+            //GeneratingSVGWithCustomShapeIDS.Run();
             //ConvertNotesSlideViewToPDF.Run();
             //CreateNewPresentation.Run();
             //PPTtoPPTX.Run();
@@ -270,6 +272,8 @@ namespace Aspose.Slides.Examples.CSharp
             //SetSizeAndType.Run();
             //SetPDFPageSize.Run();       
             //SetSlideSizeScale.Run();
+            //SetChildFooter.Run();
+            //HeaderFooterManager.Run();
             //CheckSlidesComparison.Run();
             //// =====================================================
             ////                    Slides - HyperLink
@@ -342,6 +346,7 @@ namespace Aspose.Slides.Examples.CSharp
 
             //DefaultFonts.Run();
             //ExportingHTMLText.Run();
+            //EmbedFontsInHtml.Run();
             //FontFamily.Run();
             //FontProperties.Run();
             //ImportingHTMLText.Run();
