@@ -178,6 +178,7 @@ namespace Aspose.Slides.Examples.CSharp
             //FormatJoinStyles.Run();
             //FormatLines.Run();
             //FormattedEllipse.Run();
+           //Apply3DRotationEffectOnShape.Run();
             //FormattedRectangle.Run();
             //PictureFrameFormatting.Run();
             //RotatingShapes.Run();
@@ -340,6 +341,7 @@ namespace Aspose.Slides.Examples.CSharp
             //TextFormattingInsideTableRow.Run();
             //SetFormattingInsideTable.Run();
            //IdentifyingTheMergedCellsinTable.Run();
+            //AddImageInsideTableCells.Run();
             //// =====================================================
             //// Text
             //// =====================================================
