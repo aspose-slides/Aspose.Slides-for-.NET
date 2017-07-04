@@ -35,7 +35,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Conversion
 
                 // Define the PDF standard
                 pdfOptions.Compliance = PdfCompliance.Pdf15;
-
+                pdfOptions IncludeComments = true;
                 // Save the presentation to PDF with specified options
                 pres.Save(dataDir + "Custom_Option_Pdf_Conversion_out.pdf", SaveFormat.Pdf, pdfOptions);
             }

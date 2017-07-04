@@ -24,7 +24,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Conversion
             {
                 SwfOptions swfOptions = new SwfOptions();
                 swfOptions.ViewerIncluded = false;
-
+                swfOptions.IncludeComments = true;
                 // Saving presentation and notes pages
                 presentation.Save(dataDir + "SaveAsSwf_out.swf", SaveFormat.Swf, swfOptions);
                 swfOptions.ViewerIncluded = true;

@@ -19,6 +19,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Conversion
             using (Presentation presentation = new Presentation(dataDir + "Individual-Slide.pptx"))
             {
                 HtmlOptions htmlOptions = new HtmlOptions();
+                htmlOptions IncludeComments = true;
                 htmlOptions.HtmlFormatter = HtmlFormatter.CreateCustomFormatter(new CustomFormattingController());
 
                 // Saving File              

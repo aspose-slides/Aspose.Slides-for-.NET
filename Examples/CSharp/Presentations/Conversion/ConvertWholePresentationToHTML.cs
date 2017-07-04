@@ -23,6 +23,7 @@ namespace Aspose.Slides.Examples.CSharp.Conversion
             using (Presentation presentation = new Presentation(dataDir + "Convert_HTML.pptx"))
             {
                 HtmlOptions htmlOpt = new HtmlOptions();
+                htmlOpt.IncludeComments = true;
                 htmlOpt.HtmlFormatter = HtmlFormatter.CreateDocumentFormatter("", false);
 
                 // Saving the presentation to HTML

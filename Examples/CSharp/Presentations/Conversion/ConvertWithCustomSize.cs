@@ -28,7 +28,7 @@ namespace Aspose.Slides.Examples.CSharp.Conversion
 
                 // Setting compression type
                 opts.CompressionType = TiffCompressionTypes.Default;
-
+                opt.IncludeComments = true;
                 // Compression Types
 
                 // Default - Specifies the default compression scheme (LZW).

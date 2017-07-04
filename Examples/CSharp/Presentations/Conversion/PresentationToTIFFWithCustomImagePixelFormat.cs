@@ -22,8 +22,9 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Conversion
             using (Presentation presentation = new Presentation(dataDir + "DemoFile.pptx"))
             {
                 TiffOptions options = new TiffOptions();
+               
                 options.PixelFormat = ImagePixelFormat.Format8bppIndexed;
-
+                options.IncludeComments = true;
                 /*
                 ImagePixelFormat contains the following values (as could be seen from documentation):
                 Format1bppIndexed; // 1 bits per pixel, indexed.
