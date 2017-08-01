@@ -14,7 +14,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Conversion
     {
         public static void Run()
         {
-            //ExStart:PresentationToTIFFWithDefaultSize
+            //ExStart:ExportBlobFromPresentation
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Conversion();
          const string hugePresentationWithAudiosAndVideosFile = @"c:\bin\aspose\Tasks\020, 38595\orig\Large  Video File Test1.pptx";
