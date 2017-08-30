@@ -5,11 +5,11 @@ using Aspose.Slides.Export;
 
 namespace Aspose.Slides.Examples.CSharp.Shapes
 {
-    public class AddSimplePictureFrames
+    public class AddStretchOffsetForImageFill
     {
         public static void Run()
         {
-            //ExStart:AddSimplePictureFrames
+            //ExStart:AddStretchOffsetForImageFill
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Shapes();
 
@@ -33,9 +33,9 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
                 sld.Shapes.AddPictureFrame(ShapeType.Rectangle, 50, 150, imgx.Width, imgx.Height, imgx);
 
                 //Write the PPTX file to disk
-                pres.Save(dataDir + "RectPicFrame_out.pptx", SaveFormat.Pptx);
+                pres.Save(dataDir + "AddStretchOffsetForImageFill_out.pptx", SaveFormat.Pptx);
             }
-            //ExEnd:AddSimplePictureFrames
+            //ExEnd:AddStretchOffsetForImageFill
         }
     }
 }

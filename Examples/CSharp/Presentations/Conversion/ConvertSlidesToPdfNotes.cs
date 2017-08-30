@@ -29,7 +29,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Conversion
 
             // Setting Slide Type and Size 
             auxPresentation.SlideSize.Type = SlideSizeType.Custom;
-            auxPresentation.SlideSize.Size = new SizeF(612F, 792F);
+            auxPresentation.SlideSize.SetSize(612F, 792F,SlideSizeScaleType.EnsureFit);
             auxPresentation.Save(dataDir + "PDFnotes_out.pdf", SaveFormat.PdfNotes);
             //ExEnd:ConvertSlidesToPdfNotes
         }

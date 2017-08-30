@@ -27,7 +27,7 @@ namespace Aspose.Slides.Examples.CSharp.Slides.Layout
 
             // Set the slide size of generated presentations to that of source
             auxPresentation.SlideSize.Type = presentation.SlideSize.Type;
-            auxPresentation.SlideSize.Size = presentation.SlideSize.Size;
+            auxPresentation.SlideSize.SetSize(presentation.SlideSize.Type,SlideSizeScaleType.EnsureFit);
 
             auxPresentation.Slides.InsertClone(0, slide);
             auxPresentation.Slides.RemoveAt(0);
