@@ -64,8 +64,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
 
                 presentation.Slides[0].Save("TestOut.pptx", SaveFormat.Pptx);
                 System.Diagnostics.Process.Start("TestOut.pptx");
-           
-            }
+             } 
             // ExEnd:SupportForAddingSuperscriptAndSubscriptTextInTextFrame
         }
     }
