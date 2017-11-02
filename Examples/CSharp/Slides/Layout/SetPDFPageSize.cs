@@ -24,7 +24,7 @@ namespace Aspose.Slides.Examples.CSharp.Slides.Layout
             Presentation presentation = new Presentation();
 
             // Set SlideSize.Type Property 
-            presentation.SlideSize.Type = SlideSizeType.A4Paper;
+            presentation.SlideSize.SetSize(SlideSizeType.A4Paper,SlideSizeScaleType.EnsureFit);
 
             // Set different properties of PDF Options
             PdfOptions opts = new  PdfOptions();

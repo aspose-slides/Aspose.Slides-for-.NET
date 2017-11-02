@@ -37,12 +37,13 @@
     <StartupObject>Aspose.Slides.Examples.CSharp.RunExamples</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Cells, Version=17.8.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Cells.17.8\lib\net40\Aspose.Cells.dll</HintPath>
+    <Reference Include="Aspose.Cells, Version=17.10.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Cells.17.10\lib\net40\Aspose.Cells.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Aspose.Slides">
-      <HintPath>..\packages\net4.0\Aspose.Slides.dll</HintPath>
+    <Reference Include="Aspose.Slides, Version=17.10.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Slides.NET.17.10\lib\net4.0-client\Aspose.Slides.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -87,6 +88,7 @@
     <Compile Include="Shapes\StretchOffsetLeftForPictureFrame.cs" />
     <Compile Include="Slides\CRUD\AddNotesSlideWithNotesStyle.cs" />
     <Compile Include="Text\AddEmbeddedFonts.cs" />
+    <Compile Include="Text\AddingSuperscriptAndSubscriptTextInTextFrame.cs" />
     <Compile Include="Text\GetFontsFolders.cs" />
     <Compile Include="Text\ManageEmbeddedFonts.cs" />
     <Compile Include="Presentations\Conversion\ConvetToSWF.cs" />
