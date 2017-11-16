@@ -12,11 +12,11 @@ please feel free to contact us using http://www.aspose.com/community/forums/defa
 
 namespace Aspose.Slides.Examples.CSharp.Tables
 {
-    public class SetTextFormattingInsideTable
+    public class SetTextFormattingInsideTable.cs
     {
         public static void Run()
         {
-            //ExStart:TextFormattingInsideTable
+            //ExStart:SetTextFormattingInsideTable.cs
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Tables();
            // Create an instance of Presentation class

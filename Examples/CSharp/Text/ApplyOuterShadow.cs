@@ -52,7 +52,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
 
             // Save Presentation
             presentation.Save(dataDir + "WordArt_out.pptx", SaveFormat.Pptx);
-            //ExStart:ApplyOuterShadow
+            //ExEnd:ApplyOuterShadow
         }
     }
 }

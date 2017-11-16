@@ -38,7 +38,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
             para1.ParagraphFormat.SpaceAfter = 40;
             // Save Presentation
             presentation.Save(dataDir + "LineSpacing_out.pptx", SaveFormat.Pptx);
-            //ExStart:LineSpacing
+            //ExEnd:LineSpacing
         }
     }
 }
