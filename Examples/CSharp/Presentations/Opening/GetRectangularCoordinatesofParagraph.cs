@@ -26,7 +26,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Opening
                     var textFrame = (ITextFrame)shape.TextFrame;
                     RectangleF rect = ((Paragraph)textFrame.Paragraphs[0]).GetRect();
             }
-            //ExStart:GetRectangularCoordinatesofParagraph
+            //ExEnd:GetRectangularCoordinatesofParagraph
         } 
     }
 }
