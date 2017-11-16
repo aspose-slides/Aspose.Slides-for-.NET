@@ -36,7 +36,6 @@ namespace Aspose.Slides.Examples.CSharp.Text
             para1.ParagraphFormat.SpaceWithin = 80;
             para1.ParagraphFormat.SpaceBefore = 40;
             para1.ParagraphFormat.SpaceAfter = 40;
-
             // Save Presentation
             presentation.Save(dataDir + "LineSpacing_out.pptx", SaveFormat.Pptx);
             //ExStart:LineSpacing

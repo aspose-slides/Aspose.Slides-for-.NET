@@ -16,7 +16,6 @@ namespace Aspose.Slides.Examples.CSharp.Text
         public static void Run()
         {
             //ExStart:ApplyOuterShadow
-
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Text();
             // Create an instance of Presentation class

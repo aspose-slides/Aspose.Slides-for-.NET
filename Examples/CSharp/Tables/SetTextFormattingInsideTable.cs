@@ -19,10 +19,8 @@ namespace Aspose.Slides.Examples.CSharp.Tables
             //ExStart:TextFormattingInsideTable
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Tables();
-
-            // Create an instance of Presentation class
+           // Create an instance of Presentation class
             Presentation presentation = new Presentation();
-      
             ISlide slide = presentation.Slides[0];
 
             ITable someTable = presentation.Slides[0].Shapes[0] as ITable; // let's say that the first shape on the first slide is a table
@@ -45,8 +43,6 @@ namespace Aspose.Slides.Examples.CSharp.Tables
 
 
             presentation.Save(path + "result.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
-
-
             //ExEnd:SetTextFormattingInsideTable
          }
     }
