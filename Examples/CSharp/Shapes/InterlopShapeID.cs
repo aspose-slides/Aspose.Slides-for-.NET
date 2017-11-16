@@ -5,7 +5,9 @@ using Aspose.Slides.Export;
 
 namespace Aspose.Slides.Examples.CSharp.Shapes
 {
-    {
+  class InterlopShapeID
+   {  
+        //ExStart:InterlopShapeID
         public static void Run()
         {
             // The path to the documents directory.
@@ -15,7 +17,9 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
          {
             // Getting unique shape identifier in slide scope
             long officeInteropShapeId = presentation.Slides[0].Shapes[0].OfficeInteropShapeId;
-           }
+   
+            //ExEnd:InterlopShapeID
+            }
             }
         }
     }

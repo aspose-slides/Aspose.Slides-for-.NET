@@ -16,7 +16,7 @@ namespace Aspose.Slides.Examples.CSharp.Slides.Media
     {
         public static void Run()
         {
-            // ExStart:RemoveNotesFromAllSlides
+            //ExStart:ExtractVideo
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Slides_Presentations_Media();
 
@@ -41,7 +41,7 @@ namespace Aspose.Slides.Examples.CSharp.Slides.Media
                     }
                 }
             }
-            //ExStart:RemoveNotesFromAllSlides
+            //ExStart:ExtractVideo
         }
     }
 }

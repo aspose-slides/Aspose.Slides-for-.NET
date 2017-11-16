@@ -15,7 +15,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
     {
         public static void Run()
         {
-            // ExStart:ApplyOuterShadow
+            //ExStart:ApplyOuterShadow
 
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Text();
@@ -53,7 +53,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
 
             // Save Presentation
             presentation.Save(dataDir + "WordArt_out.pptx", SaveFormat.Pptx);
-            // ExStart:ApplyOuterShadow
+            //ExStart:ApplyOuterShadow
         }
     }
 }

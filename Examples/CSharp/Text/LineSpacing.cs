@@ -15,7 +15,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
     {
         public static void Run()
         {
-            // ExStart:LineSpacing
+            //ExStart:LineSpacing
 
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Text();
@@ -39,7 +39,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
 
             // Save Presentation
             presentation.Save(dataDir + "LineSpacing_out.pptx", SaveFormat.Pptx);
-            // ExStart:LineSpacing
+            //ExStart:LineSpacing
         }
     }
 }

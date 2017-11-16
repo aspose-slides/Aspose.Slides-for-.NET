@@ -16,7 +16,7 @@ namespace Aspose.Slides.Examples.CSharp.Tables
     {
         public static void Run()
         {
-            // ExStart:TextFormattingInsideTable
+            //ExStart:TextFormattingInsideTable
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Tables();
 
@@ -47,7 +47,7 @@ namespace Aspose.Slides.Examples.CSharp.Tables
             presentation.Save(path + "result.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
 
 
-            // ExEnd:SetTextFormattingInsideTable
+            //ExEnd:SetTextFormattingInsideTable
          }
     }
 }
