@@ -48,7 +48,7 @@ namespace Aspose.Slides.Examples.CSharp
             // =====================================================
             //                      Charts
             // =====================================================
-
+            //MultiCategoryChart.Run();
             //ChartEntities.Run();
             //ChartTrendLines.Run();
             //ExistingChart.Run();
