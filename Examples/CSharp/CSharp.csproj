@@ -85,11 +85,13 @@
     <Compile Include="Presentations\Conversion\ConvertSpecificSlideToPDF.cs" />
     <Compile Include="Presentations\Conversion\ConvertToPDFWithHiddenSlides.cs" />
     <Compile Include="Presentations\Conversion\ConvertWholePresentationToHTML.cs" />
+    <Compile Include="Rendering-Printing\RenderComments.cs" />
     <Compile Include="Shapes\AddVideoFrameFromWebSource.cs" />
     <Compile Include="Shapes\StretchOffsetLeftForPictureFrame.cs" />
     <Compile Include="Slides\CRUD\AddNotesSlideWithNotesStyle.cs" />
     <Compile Include="Text\AddEmbeddedFonts.cs" />
     <Compile Include="Text\AddingSuperscriptAndSubscriptTextInTextFrame.cs" />
+    <Compile Include="Text\EndParaGraphProperties.cs" />
     <Compile Include="Text\GetFontsFolders.cs" />
     <Compile Include="Text\ManageEmbeddedFonts.cs" />
     <Compile Include="Presentations\Conversion\ConvetToSWF.cs" />

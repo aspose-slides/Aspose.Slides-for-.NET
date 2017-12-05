@@ -301,7 +301,7 @@ namespace Aspose.Slides.Examples.CSharp
             //SetSlideNumber.Run();
             //DefaultPrinterPrinting.Run();
             //SpecificPrinterPrinting.Run();
-
+            //RenderComments.Run();
             //// =====================================================
             ////                    Smart Arts
             //// =====================================================
@@ -355,6 +355,7 @@ namespace Aspose.Slides.Examples.CSharp
             //ExportingHTMLText.Run();
             //EmbedFontsInHtml.Run();
             //FontFamily.Run();
+            //EndParaGraphProperties.Run();
             //FontProperties.Run();
             //ImportingHTMLText.Run();
             //MultipleParagraphs.Run();

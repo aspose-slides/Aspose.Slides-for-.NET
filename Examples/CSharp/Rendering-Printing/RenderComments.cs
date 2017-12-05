@@ -18,26 +18,20 @@ namespace Aspose.Slides.Examples.CSharp.Rendering.Printing
             //ExStart:RenderComments
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Rendering();
-
-
-            Presentation _document = new Presentation(dataDir+"test.pptx");
-            ISlide slide = _document.Slides[pageNumber - 1];
-            Size size = _document.SlideSize.Size.ToSize();
-
-            using (System.Drawing.Bitmap image = new System.Drawing.Bitmap(size.Width, size.Height))
+             Presentation pres = new Presentation(dataDir+"test.pptx");
+            Bitmap bmp = new Bitmap(740, 960);
+        
+            using (Graphics graphics = Graphics.FromImage(bmp))
             {
-                using (System.Drawing.Graphics graphics = System.Drawing.Graphics.FromImage(image))
-                {
-                    slide.RenderToGraphics(RenderNotes, graphics);
-                    graphics.Save();
-                }
-
-                ImageToStream(dataDir+"image", outputStream);
+                pres.Slides[0].RenderToGraphics(true, graphics);
+            }
+            bmp.Save(dataDir+"OutPresBitmap.png", ImageFormat.Png);
+            System.Diagnostics.Process.Start("OutPresBitmap.png");
+             
             }
 
             }
             //ExEnd:RenderComments
         }
-    }
-
+    
 
