@@ -1,6 +1,6 @@
 ## Aspose.Slides for .NET Examples
 
-This repository contains C# and VB.NET examples for [Aspose.Slides for .NET](https://www.aspose.com/products/slides/net). which will help you learn Aspose.Slides for .NET and write your own applications.
+This repository contains C# and VB.NET examples for [Aspose.Slides for .NET](https://products.aspose.com/slides/net). which will help you learn Aspose.Slides for .NET and write your own applications.
 
 <p align="center">
   <a title="Download Examples ZIP" href="https://github.com/asposeslides/Aspose_Slides_NET/archive/master.zip">
