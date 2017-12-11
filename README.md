@@ -19,7 +19,7 @@ Directory | Description
 ## Resources
 
 + **Website:** [www.aspose.com](http://www.aspose.com)
-+ **Product Home:** [Aspose.Slides for .NET](http://www.aspose.com/products/slides/net)
++ **Product Home:** [Aspose.Slides for .NET](https://products.aspose.com/slides/net)
 + **Download:** [Download Aspose.Slides for .NET](https://downloads.aspose.com/slides/net)
 + **Documentation:** [Aspose.Slides for .NET Documentation](https://docs.aspose.com/display/slidesnet/Home)
 + **Forum:** [Aspose.Slides for .NET Forum](https://forum.aspose.com/c/slides)
