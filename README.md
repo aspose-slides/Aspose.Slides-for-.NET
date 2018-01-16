@@ -1,8 +1,8 @@
 ## Aspose.Slides for .NET
 
-[Aspose.Slides for .NET](http://www.aspose.com/products/slides/net) is a unique PowerPoint® management API that enables .NET applications to read, write and manipulate PowerPoint documents without using Microsoft PowerPoint.
+[Aspose.Slides for .NET](https://products.aspose.com/slides/net) is a unique PowerPoint® management API that enables .NET applications to read, write and manipulate PowerPoint documents without using Microsoft PowerPoint.
 
-This repository contains [Examples](Examples), [Plugins](Plugins) and Showcase projects for [Aspose.Slides for .NET](http://www.aspose.com/products/slides/net) to help you learn and write your own applications.
+This repository contains [Examples](Examples), [Plugins](Plugins) and Showcase projects for [Aspose.Slides for .NET](https://products.aspose.com/slides/net) to help you learn and write your own applications.
 
 <p align="center">
 
