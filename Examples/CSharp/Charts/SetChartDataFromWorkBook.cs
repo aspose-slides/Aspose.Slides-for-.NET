@@ -18,6 +18,7 @@ namespace CSharp.Charts
         public static void Run()
         {
             string dataDir = RunExamples.GetDataDir_Charts();
+            //ExStart:SetChartDataFromWorkBook
             pres = new Presentation(dataDir+"Test.pptx");
 
             IChart chart = pres.Slides[0].Shapes.AddChart(ChartType.Pie, 50, 50, 500, 400);
@@ -41,7 +42,7 @@ namespace CSharp.Charts
             IChartSeries series = chart.ChartData.Series[0];
             series.ParentSeriesGroup.IsColorVaried = true;
             pres.Save(dataDir+"response2.pptx", SaveFormat.Pptx);
-        
+            //ExEnd:SetChartDataFromWorkBook
         }
     }
 }
