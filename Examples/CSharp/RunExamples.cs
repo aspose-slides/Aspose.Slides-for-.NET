@@ -66,7 +66,7 @@ namespace Aspose.Slides.Examples.CSharp
             //SetChartSeriesOverlap.Run();
             //SetAutomaticSeriesFillColor.Run();
             // ValidateChartLayoutAdded.Run();
-
+            //SetChartDataFromWorkBook.Run();
             //SetCategoryAxisLabelDistance.Run();
             //SetlegendCustomOptions.Run();
             //SetDataLabelsPercentageSign.Run();

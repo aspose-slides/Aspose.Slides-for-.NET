@@ -52,6 +52,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Charts\SetChartDataFromWorkBook.cs" />
     <Compile Include="Charts\MultiCategoryChart.cs" />
     <Compile Include="Charts\SetInvertFillColorChart.cs" />
     <Compile Include="Charts\SetDataRange.cs" />
