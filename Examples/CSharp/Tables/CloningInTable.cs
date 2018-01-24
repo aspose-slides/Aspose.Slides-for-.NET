@@ -15,12 +15,12 @@ namespace Aspose.Slides.Examples.CSharp.Tables
     {
         public static void Run()
         {
-            // ExStart:CloningInTable
+            //ExStart:CloningInTable
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Tables();
 
-            // Instantiate presentationentation class that representationents PPTX file
-            using (Presentation presentation = new Presentation())
+             // Instantiate presentationentation class that representationents PPTX file
+            using (Presentation presentation = new Presentation(dataDir+"Test.pptx"))
             {
                 // Access first slide
                 ISlide sld = presentation.Slides[0];
@@ -32,37 +32,38 @@ namespace Aspose.Slides.Examples.CSharp.Tables
                 // Add table shape to slide
                 ITable table = sld.Shapes.AddTable(100, 50, dblCols, dblRows);
 
-                // Set border format for each cell
-                foreach (IRow row in table.Rows)
-                    foreach (ICell cell in row)
-                    {
-                        cell.BorderTop.FillFormat.FillType = FillType.Solid;
-                        cell.BorderTop.FillFormat.SolidFillColor.Color = Color.Red;
-                        cell.BorderTop.Width = 5;
 
-                        cell.BorderBottom.FillFormat.FillType = FillType.Solid;
-                        cell.BorderBottom.FillFormat.SolidFillColor.Color = Color.Red;
-                        cell.BorderBottom.Width = 5;
+                // Add text to the row 1 cell 1
+                table[0, 0].TextFrame.Text = "Row 1 Cell 1";
 
-                        cell.BorderLeft.FillFormat.FillType = FillType.Solid;
-                        cell.BorderLeft.FillFormat.SolidFillColor.Color = Color.Red;
-                        cell.BorderLeft.Width = 5;
+                // Add text to the row 1 cell 2
+                table[1, 0].TextFrame.Text = "Row 1 Cell 2";
 
-                        cell.BorderRight.FillFormat.FillType = FillType.Solid;
-                        cell.BorderRight.FillFormat.SolidFillColor.Color = Color.Red;
-                        cell.BorderRight.Width = 5;
-                    }
+                // Clone Row 1 at end of table
+                table.Rows.AddClone(table.Rows[0], false);
 
-                // Merge cells 1 & 2 of row 1
-                table.MergeCells(table[0, 0], table[1, 0], false);
+                // Add text to the row 2 cell 1
+                table[0, 1].TextFrame.Text = "Row 2 Cell 1";
 
-                // Add text to the merged cell
-                table[0, 0].TextFrame.Text = "Merged Cells";
+                // Add text to the row 2 cell 2
+                table[1, 1].TextFrame.Text = "Row 2 Cell 2";
+
+
+                // Clone Row 2 as 4th row of table
+                table.Rows.InsertClone(3,table.Rows[1], false);
+
+                //Cloning first column at end
+                table.Columns.AddClone(table.Columns[0], false);
+
+                //Cloning 2nd column at 4th column index
+                table.Columns.InsertClone(3,table.Columns[1], false);
+                
 
                 // Write PPTX to Disk
                 presentation.Save(dataDir + "table_out.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
             }
-            // ExEnd:CloningInTable
+            }
+            }
+            //ExEnd:CloningInTable
         }
-    }
-}
+   
