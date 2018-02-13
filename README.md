@@ -20,7 +20,7 @@ Directory | Description
 
 + **Website:** [www.aspose.com](http://www.aspose.com)
 + **Product Home:** [Aspose.Slides for .NET](https://products.aspose.com/slides/net)
-+ **Download:** [Download Aspose.Slides for .NET](https://downloads.aspose.com/slides/net)
++ **Download:** [Download Aspose.Slides for .NET](https://www.nuget.org/packages/Aspose.Slides.NET/)
 + **Documentation:** [Aspose.Slides for .NET Documentation](https://docs.aspose.com/display/slidesnet/Home)
 + **Forum:** [Aspose.Slides for .NET Forum](https://forum.aspose.com/c/slides)
 + **Blog:** [Aspose.Slides for .NET Blog](https://blog.aspose.com/category/aspose-products/aspose-slides-product-family/)
