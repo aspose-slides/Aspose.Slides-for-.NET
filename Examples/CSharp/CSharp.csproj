@@ -88,6 +88,7 @@
     <Compile Include="Presentations\Conversion\ConvertWholePresentationToHTML.cs" />
     <Compile Include="Rendering-Printing\RenderComments.cs" />
     <Compile Include="Shapes\AddVideoFrameFromWebSource.cs" />
+    <Compile Include="Shapes\ImageAsEMF.cs" />
     <Compile Include="Shapes\StretchOffsetLeftForPictureFrame.cs" />
     <Compile Include="Slides\CRUD\AddNotesSlideWithNotesStyle.cs" />
     <Compile Include="Text\AddEmbeddedFonts.cs" />
