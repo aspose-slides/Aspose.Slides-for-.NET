@@ -12,7 +12,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Properties
 {
     public class UpdatePresentationPropertiesUsingPropertiesOfAnotherPresentationAsATemplate
     {
-        //ExStart:UpdatePresentationPropertiesUsingPropertiesOfAnotherPresentationAsATemplate
+        //ExStart:UpdatePresPropsUsingPropsOfOtherPresAsATemplate
         public static void Run()
         {
             // The path to the documents directory.
@@ -42,6 +42,6 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Properties
             toUpdate.UpdateDocumentProperties(template);
             toUpdate.WriteBindedPresentation(path);
         }
-        //ExStart:UpdatePresentationPropertiesUsingPropertiesOfAnotherPresentationAsATemplate
+        //ExEnd:UpdatePresPropsUsingPropsOfOtherPresAsATemplate
     }
 }

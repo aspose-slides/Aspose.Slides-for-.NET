@@ -10,7 +10,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
     {
         public static void Run()
         {
-            // ExStart:ParagraphIndent
+            //ExStart:ParagraphIndent
 
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Text();
@@ -66,7 +66,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
 
             //Write the Presentation to disk
             pres.Save(dataDir + "InOutDent_out.pptx", SaveFormat.Pptx);
-            // ExEnd:ParagraphIndent            
+            //ExEnd:ParagraphIndent            
         }
     }
 }

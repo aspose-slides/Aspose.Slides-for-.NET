@@ -16,7 +16,7 @@ namespace Aspose.Slides.Examples.CSharp.SmartArts
     {
         public static void Run()
         {
-            // ExStart:CheckSmartArtHiddenProperty
+            //ExStart:CheckSmartArtHiddenProperty
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_SmartArts();
 
@@ -38,7 +38,7 @@ namespace Aspose.Slides.Examples.CSharp.SmartArts
                 // Saving Presentation
                 presentation.Save(dataDir + "CheckSmartArtHiddenProperty_out.pptx", SaveFormat.Pptx);
             }
-            // ExEnd:CheckSmartArtHiddenProperty
+            //ExEnd:CheckSmartArtHiddenProperty
         }
     }
 }

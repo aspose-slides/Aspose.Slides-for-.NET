@@ -15,11 +15,10 @@ namespace Aspose.Slides.Examples.CSharp.Text
     {
         public static void Run()
         {
-            // ExStart:ReplaceFontsExplicitly
+            //ExStart:ReplaceFontsExplicitly
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Text();
            
-            // ExStart:ReplaceFontsExplicitly
             // Load presentation
             Presentation presentation = new Presentation(dataDir + "Fonts.pptx");
 
@@ -32,10 +31,9 @@ namespace Aspose.Slides.Examples.CSharp.Text
             // Replace the fonts
             presentation.FontsManager.ReplaceFont(sourceFont, destFont);
 
-            // ExEnd:ReplaceFontsExplicitly
             // Save the presentation
             presentation.Save(dataDir + "UpdatedFont_out.pptx", SaveFormat.Pptx);
-            // ExEnd:ReplaceFontsExplicitly
+            //ExEnd:ReplaceFontsExplicitly
         }
     }
 }

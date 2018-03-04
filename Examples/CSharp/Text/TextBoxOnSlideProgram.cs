@@ -8,7 +8,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
     {
         public static void Run()
         {
-            // ExStart:TextBoxOnSlideProgram
+            //ExStart:TextBoxOnSlideProgram
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Text();
 
@@ -45,7 +45,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
                 // Save the presentation to disk
                 pres.Save(dataDir + "TextBox_out.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
             }
-            // ExEnd:TextBoxOnSlideProgram
+            //ExEnd:TextBoxOnSlideProgram
         }
     }
 }

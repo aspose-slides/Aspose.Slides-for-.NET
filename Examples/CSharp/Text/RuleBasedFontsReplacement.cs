@@ -15,11 +15,10 @@ namespace Aspose.Slides.Examples.CSharp.Text
     {
         public static void Run()
         {
-            // ExStart:RuleBasedFontsReplacement
+            //ExStart:RuleBasedFontsReplacement
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Text();
 
-            // ExStart:RuleBasedFontsReplacement
             // Load presentation
             Presentation presentation = new Presentation(dataDir + "Fonts.pptx");
 
@@ -42,10 +41,9 @@ namespace Aspose.Slides.Examples.CSharp.Text
             // Arial font will be used instead of SomeRareFont when inaccessible
             Bitmap bmp = presentation.Slides[0].GetThumbnail(1f, 1f);
 
-            // ExEnd:RuleBasedFontsReplacement
             // Save the image to disk in JPEG format
             bmp.Save(dataDir + "Thumbnail_out.jpg", System.Drawing.Imaging.ImageFormat.Jpeg);
-            // ExEnd:RuleBasedFontsReplacement
+            //ExEnd:RuleBasedFontsReplacement
         }
     }
 }

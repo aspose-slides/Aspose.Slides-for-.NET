@@ -15,11 +15,10 @@ namespace Aspose.Slides.Examples.CSharp.Slides.Transitions
     {
         public static void Run()
         {
-            // ExStart:ManagingBetterSlideTransitions
+            //ExStart:ManagingBetterSlideTransitions
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Slides_Presentations_Transitions();
 
-            // ExStart:ManagingBetterSlideTransitions
             // Instantiate Presentation class to load the source presentation file
             using (Presentation presentation = new Presentation(dataDir + "AccessSlides.pptx"))
             {
@@ -40,11 +39,10 @@ namespace Aspose.Slides.Examples.CSharp.Slides.Transitions
                 // Write the presentation to disk
                 presentation.Save("SampleTransition_out.pptx", SaveFormat.Pptx);
             
-                // ExEnd:ManagingBetterSlideTransitions
                 // Write the presentation to disk
                 presentation.Save(dataDir + "BetterTransitions_out.pptx", SaveFormat.Pptx);
             }
-            // ExEnd:ManagingBetterSlideTransitions
+            //ExEnd:ManagingBetterSlideTransitions
         }
     }
 }

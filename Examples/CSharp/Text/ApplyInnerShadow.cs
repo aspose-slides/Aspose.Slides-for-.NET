@@ -14,7 +14,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
     {
         public static void Run()
         {
-            // ExStart:ApplyInnerShadow
+            //ExStart:ApplyInnerShadow
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Text();
 
@@ -50,7 +50,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
                 // Save the presentation to disk
                 pres.Save(dataDir + "ApplyInnerShadow_out.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
             }
-            // ExEnd:ApplyInnerShadow
+            //ExEnd:ApplyInnerShadow
         }
     }
 }

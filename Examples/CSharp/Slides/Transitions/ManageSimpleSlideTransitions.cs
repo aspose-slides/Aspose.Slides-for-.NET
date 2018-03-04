@@ -15,11 +15,10 @@ namespace Aspose.Slides.Examples.CSharp.Slides.Transitions
     {
         public static void Run()
         {
-            // ExStart:ManageSimpleSlideTransitions
+            //ExStart:ManageSimpleSlideTransitions
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Slides_Presentations_Transitions();
 
-            // ExStart:ManagSimpleSlideTransitions
             // Instantiate Presentation class to load the source presentation file
             using (Presentation presentation = new Presentation(dataDir + "AccessSlides.pptx"))
             {
@@ -29,11 +28,10 @@ namespace Aspose.Slides.Examples.CSharp.Slides.Transitions
                 // Apply comb type transition on slide 2
                 presentation.Slides[1].SlideShowTransition.Type = TransitionType.Comb;
 
-                // ExEnd:ManagSimpleSlideTransitions
                 // Write the presentation to disk
                 presentation.Save(dataDir + "SampleTransition_out.pptx", SaveFormat.Pptx);
             }
-            // ExEnd:ManageSimpleSlideTransitions
+            //ExEnd:ManageSimpleSlideTransitions
         }
     }
 }

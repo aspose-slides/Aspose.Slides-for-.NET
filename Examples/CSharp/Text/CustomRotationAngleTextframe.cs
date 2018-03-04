@@ -16,12 +16,11 @@ namespace Aspose.Slides.Examples.CSharp.Text
     {
         public static void Run()
         {
-            // ExStart:CustomRotationAngleTextframe
+            //ExStart:CustomRotationAngleTextframe
 
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Text();
 
-            // ExStart:CustomRotationAngleTextframe
             // Create an instance of Presentation class
             Presentation presentation = new Presentation();
 
@@ -35,10 +34,9 @@ namespace Aspose.Slides.Examples.CSharp.Text
             chart.HasTitle = true;
             chart.ChartTitle.AddTextFrameForOverriding("Custom title").TextFrameFormat.RotationAngle = -30;
 
-            // ExEnd:CustomRotationAngleTextframe
             // Save Presentation
             presentation.Save(dataDir + "textframe-rotation_out.pptx", SaveFormat.Pptx);
-            // ExEnd:CustomRotationAngleTextframe
+            //ExEnd:CustomRotationAngleTextframe
         }
     }
 }

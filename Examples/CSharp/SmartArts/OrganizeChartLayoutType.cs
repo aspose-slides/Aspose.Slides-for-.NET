@@ -16,7 +16,7 @@ namespace Aspose.Slides.Examples.CSharp.SmartArts
     {
         public static void Run()
         {
-            // ExStart:OrganizeChartLayoutType
+            //ExStart:OrganizeChartLayoutType
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_SmartArts();
 
@@ -31,7 +31,7 @@ namespace Aspose.Slides.Examples.CSharp.SmartArts
                 // Saving Presentation
                 presentation.Save(dataDir + "OrganizeChartLayoutType_out.pptx", SaveFormat.Pptx);
             }
-            // ExEnd:OrganizeChartLayoutType
+            //ExEnd:OrganizeChartLayoutType
         }
     }
 }

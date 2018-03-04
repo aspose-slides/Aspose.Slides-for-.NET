@@ -9,7 +9,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
     {
         public static void Run()
         {
-            // ExStart:ShadowEffects
+            //ExStart:ShadowEffects
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Text();
 
@@ -47,7 +47,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
                 //Write the presentation to disk
                 pres.Save(dataDir + "pres_out.pptx", SaveFormat.Pptx);
             }
-            // ExEnd:ShadowEffects
+            //ExEnd:ShadowEffects
         }
     }
 }

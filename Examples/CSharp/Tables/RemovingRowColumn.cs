@@ -7,7 +7,7 @@ namespace Aspose.Slides.Examples.CSharp.Tables
     {
         public static void Run()
         {
-            // ExStart:RemovingRowColumn
+            //ExStart:RemovingRowColumn
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Tables();
 
@@ -26,7 +26,7 @@ namespace Aspose.Slides.Examples.CSharp.Tables
             table.Rows.RemoveAt(1, false);
             table.Columns.RemoveAt(1, false);
             pres.Save(dataDir + "TestTable_out.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
-            // ExEnd:RemovingRowColumn
+            //ExEnd:RemovingRowColumn
         }
     }
 }

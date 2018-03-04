@@ -16,15 +16,14 @@ namespace Aspose.Slides.Examples.CSharp.Text
     {
         public static void Run()
         {
-            // ExStart:SetTextFontProperties
+            //ExStart:SetTextFontProperties
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Text();
 
             // Instantiate Presentation
             using (Presentation presentation = new Presentation())
             {
-                // ExStart:SetTextFontProperties
-
+               
                 // Get first slide
                 ISlide sld = presentation.Slides[0];
 
@@ -60,11 +59,10 @@ namespace Aspose.Slides.Examples.CSharp.Text
                 port.PortionFormat.FillFormat.FillType = FillType.Solid;
                 port.PortionFormat.FillFormat.SolidFillColor.Color = Color.Blue;
 
-                // ExEnd:SetTextFontProperties
                 // Write the PPTX to disk 
                 presentation.Save(dataDir + "SetTextFontProperties_out.pptx", SaveFormat.Pptx);
             }
-            // ExEnd:SetTextFontProperties
+            //ExEnd:SetTextFontProperties
         }
     }
 }

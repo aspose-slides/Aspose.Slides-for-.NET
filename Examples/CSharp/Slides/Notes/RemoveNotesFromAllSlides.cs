@@ -18,7 +18,6 @@ namespace Aspose.Slides.Examples.CSharp.Slides.Notes
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Slides_Presentations_Notes();
 
-            // ExStart:RemoveNotesFromAllSlides
             // Instantiate a Presentation object that represents a presentation file 
             Presentation presentation = new Presentation(dataDir + "AccessSlides.pptx");
 
@@ -31,7 +30,7 @@ namespace Aspose.Slides.Examples.CSharp.Slides.Notes
             }
             // Save presentation to disk
             presentation.Save(dataDir + "RemoveNotesFromAllSlides_out.pptx", SaveFormat.Pptx);
-            // ExEnd:RemoveNotesFromAllSlides
+            //ExEnd:RemoveNotesFromAllSlides
         }
     }
 }

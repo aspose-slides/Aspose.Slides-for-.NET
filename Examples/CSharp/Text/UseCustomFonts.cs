@@ -17,7 +17,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
     {
         public static void Run()
         {
-            // ExStart:UseCustomFonts
+            //ExStart:UseCustomFonts
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Text();
 
@@ -32,7 +32,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
 
             // Clear Font Cachce
             FontsLoader.ClearCache();
-            // ExEnd:UseCustomFonts
+            //ExEnd:UseCustomFonts
         }
     }
 }

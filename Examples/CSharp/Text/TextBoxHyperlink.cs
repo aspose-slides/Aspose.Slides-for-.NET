@@ -7,7 +7,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
     {
         public static void Run()
         {
-            // ExStart:TextBoxHyperlink
+            //ExStart:TextBoxHyperlink
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Text();
 
@@ -41,7 +41,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
             HypMan.SetExternalHyperlinkClick("http://www.aspose.com");
             // Save the PPTX Presentation
             pptxPresentation.Save(dataDir + "hLinkPPTX_out.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
-            // ExEnd:TextBoxHyperlink
+            //ExEnd:TextBoxHyperlink
         }
     }
 }

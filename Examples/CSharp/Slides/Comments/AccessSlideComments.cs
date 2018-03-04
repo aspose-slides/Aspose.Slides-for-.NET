@@ -28,7 +28,6 @@ namespace Aspose.Slides.Examples.CSharp.Slides.Comments
                     foreach (var comment1 in author.Comments)
                     {
                         var comment = (Comment) comment1;
-                        // ExEnd:AccessSlideComments
                         Console.WriteLine("ISlide :" + comment.Slide.SlideNumber + " has comment: " + comment.Text + " with Author: " + comment.Author.Name + " posted on time :" + comment.CreatedTime + "\n");
                     }
                 }

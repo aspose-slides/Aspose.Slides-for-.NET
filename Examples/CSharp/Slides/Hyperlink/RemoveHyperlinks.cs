@@ -18,14 +18,12 @@ namespace Aspose.Slides.Examples.CSharp.Slides.Hyperlink
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Slides_Presentations_Hyperlink();
 
-            // ExStart:RemoveHyperlinks
             // Instantiate Presentation class
             Presentation presentation = new Presentation(dataDir + "Hyperlink.pptx");
 
             // Removing the hyperlinks from presentation
             presentation.HyperlinkQueries.RemoveAllHyperlinks();
 
-            // ExEnd:RemoveHyperlinks
             //Writing the presentation as a PPTX file
             presentation.Save(dataDir + "RemovedHyperlink_out.pptx", SaveFormat.Pptx);
             //ExEnd:RemoveHyperlinks

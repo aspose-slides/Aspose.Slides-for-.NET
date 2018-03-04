@@ -19,7 +19,6 @@ namespace Aspose.Slides.Examples.CSharp.Slides.Layout
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Slides_Presentations_Layout();
 
-            // ExStart:SetPDFPageSize
             // Instantiate a Presentation object that represents a presentation file 
             Presentation presentation = new Presentation();
 
@@ -30,7 +29,6 @@ namespace Aspose.Slides.Examples.CSharp.Slides.Layout
             PdfOptions opts = new  PdfOptions();
             opts.SufficientResolution = 600;
 
-            // ExEnd:SetPDFPageSize
             // Save presentation to disk
             presentation.Save(dataDir + "SetPDFPageSize_out.pdf", SaveFormat.Pdf, opts);
             //ExEnd:SetPDFPageSize

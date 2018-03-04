@@ -8,7 +8,7 @@ namespace Aspose.Slides.Examples.CSharp.SmartArts
     {
         public static void Run()
         {
-            // ExStart:CreateSmartArtShape
+            //ExStart:CreateSmartArtShape
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_SmartArts();
 
@@ -29,7 +29,7 @@ namespace Aspose.Slides.Examples.CSharp.SmartArts
                 // Saving presentation
                 pres.Save(dataDir + "SimpleSmartArt_out.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
             }
-            // ExEnd:CreateSmartArtShape
+            //ExEnd:CreateSmartArtShape
         }
     }
 }

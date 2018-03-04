@@ -18,7 +18,6 @@ namespace Aspose.Slides.Examples.CSharp.Slides.CRUD
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Slides_Presentations_CRUD();
 
-            // ExStart:CloneAnotherPresentationAtSpecifiedPosition
             // Instantiate Presentation class to load the source presentation file
             using (Presentation sourcePresentation = new Presentation(dataDir + "AccessSlides.pptx"))
             {
@@ -31,7 +30,6 @@ namespace Aspose.Slides.Examples.CSharp.Slides.CRUD
                     // Clone the desired slide from the source presentation to the specified position in destination presentation
                     slideCollection.InsertClone(1, sourcePresentation.Slides[1]);
 
-                    // ExEnd:CloneAnotherPresentationAtSpecifiedPosition
                     // Write the destination presentation to disk
                     destPres.Save(dataDir + "CloneAnotherPresentationAtSpecifiedPosition_out.pptx", SaveFormat.Pptx);
                 }

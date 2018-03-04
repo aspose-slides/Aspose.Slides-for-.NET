@@ -16,12 +16,11 @@ namespace Aspose.Slides.Examples.CSharp.Text
     {
         public static void Run()
         {
-            // ExStart:AddEmbeddedFonts
+            //ExStart:AddEmbeddedFonts
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Text();
 
-            // ExStart:ReplaceFontsExplicitly
-            // Load presentation
+       ]     // Load presentation
             Presentation presentation = new Presentation(dataDir + "Fonts.pptx");
 
             // Load source font to be replaced
@@ -40,7 +39,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
 
             // Save the presentation
             presentation.Save(dataDir + "AddEmbeddedFont_out.pptx", SaveFormat.Pptx);
-            // ExEnd:AddEmbeddedFonts
+            //ExEnd:AddEmbeddedFonts
         }
     }
 }

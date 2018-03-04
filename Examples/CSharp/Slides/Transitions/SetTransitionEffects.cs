@@ -15,11 +15,10 @@ namespace Aspose.Slides.Examples.CSharp.Slides.Transitions
     {
         public static void Run()
         {
-            // ExStart:SetTransitionEffects
+            //ExStart:SetTransitionEffects
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Slides_Presentations_Transitions();
 
-            // ExStart:SetTransitionEffects
             // Create an instance of Presentation class
             Presentation presentation = new Presentation(dataDir + "AccessSlides.pptx");
 
@@ -27,10 +26,9 @@ namespace Aspose.Slides.Examples.CSharp.Slides.Transitions
             presentation.Slides[0].SlideShowTransition.Type = TransitionType.Cut;
             ((OptionalBlackTransition)presentation.Slides[0].SlideShowTransition.Value).FromBlack = true;
 
-            // ExEnd:SetTransitionEffects
             // Write the presentation to disk
             presentation.Save(dataDir + "SetTransitionEffects_out.pptx", SaveFormat.Pptx);
-            // ExEnd:SetTransitionEffects
+            //ExEnd:SetTransitionEffects
         }
     }
 }

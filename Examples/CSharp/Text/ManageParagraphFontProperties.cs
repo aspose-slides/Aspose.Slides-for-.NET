@@ -15,7 +15,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
     {
         public static void Run()
         {
-            // ExStart:ManageParagraphFontProperties
+            //ExStart:ManageParagraphFontProperties
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Text();
 
@@ -65,7 +65,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
                 // Write the PPTX to disk 
                 presentation.Save(dataDir + "ManagParagraphFontProperties_out.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
             }
-            // ExEnd:ManageParagraphFontProperties
+            //ExEnd:ManageParagraphFontProperties
         }
     }
 }

@@ -16,7 +16,7 @@ namespace Aspose.Slides.Examples.CSharp.SmartArts
     {
         public static void Run()
         {
-            // ExStart:AccessSmartArtParticularLayout
+            //ExStart:AccessSmartArtParticularLayout
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_SmartArts();
 
@@ -39,7 +39,7 @@ namespace Aspose.Slides.Examples.CSharp.SmartArts
                     }
                 }
             }
-            // ExEnd:AccessSmartArtParticularLayout
+            //ExEnd:AccessSmartArtParticularLayout
         }
     }
 }

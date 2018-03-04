@@ -16,7 +16,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
     {
         public static void Run()
         {
-            // ExStart:ExportingHTMLText
+            //ExStart:ExportingHTMLText
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Text();
 
@@ -33,7 +33,6 @@ namespace Aspose.Slides.Examples.CSharp.Text
                 // Accessing the added shape
                 IAutoShape ashape = (IAutoShape)slide.Shapes[index];
 
-                // Extracting first paragraph as HTML
                 StreamWriter sw = new StreamWriter(dataDir + "output_out.html", false, Encoding.UTF8);
 
                 //Writing Paragraphs data to HTML by providing paragraph starting index, total paragraphs to be copied
@@ -41,7 +40,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
 
                 sw.Close();
             }
-            // ExEnd:ExportingHTMLText
+            //ExEnd:ExportingHTMLText
         }
     }
 }

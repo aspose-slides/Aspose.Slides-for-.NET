@@ -7,7 +7,7 @@ namespace Aspose.Slides.Examples.CSharp.Tables
     {
         public static void Run()
         {
-            // ExStart:UpdateExistingTable
+            //ExStart:UpdateExistingTable
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Tables();
 
@@ -32,7 +32,7 @@ namespace Aspose.Slides.Examples.CSharp.Tables
                 //Write the PPTX to Disk
                 pres.Save(dataDir + "table1_out.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
             }
-            // ExEnd:UpdateExistingTable
+            //ExEnd:UpdateExistingTable
         }
     }
 }

@@ -17,8 +17,8 @@ namespace Aspose.Slides.Examples.CSharp.Slides.Layout
             //ExStart:CheckSlidesComparison
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Slides_Presentations_Layout();
-            using (Presentation presentation1 = new Presentation(daraDir + "SomePresentation1.pptx"))
-            using (Presentation presentation2 = new Presentation(dataDir + "SomePresentation2.pptx"))
+            using (Presentation presentation1 = new Presentation(daraDir + "AccessSlides.pptx"))
+            using (Presentation presentation2 = new Presentation(dataDir + "HelloWorld.pptx"))
             {
                 for (int i = 0; i < presentation1.Masters.Count; i++)
                 {
@@ -28,9 +28,10 @@ namespace Aspose.Slides.Examples.CSharp.Slides.Layout
                             Console.WriteLine(string.Format("SomePresentation1 MasterSlide#{0} is equal to SomePresentation2 MasterSlide#{1}", i, j));
                     }
 
-                    //ExEnd:CheckSlidesComparison
+                    
                 }
             }
+            //ExEnd:CheckSlidesComparison
         }
     }
 }

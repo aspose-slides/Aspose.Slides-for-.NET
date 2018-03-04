@@ -9,7 +9,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
     {
         public static void Run()
         {
-            // ExStart:ParagraphsAlignment
+            //ExStart:ParagraphsAlignment
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Text();
 
@@ -39,7 +39,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
                 //Writing the presentation as a PPTX file
                 pres.Save(dataDir + "Centeralign_out.pptx", SaveFormat.Pptx);
             }
-            // ExEnd:ParagraphsAlignment
+            //ExEnd:ParagraphsAlignment
         }
     }
 }

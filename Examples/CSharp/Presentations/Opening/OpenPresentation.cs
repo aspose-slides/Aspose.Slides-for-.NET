@@ -23,7 +23,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Opening
 
             // Printing the total number of slides present in the presentation
             System.Console.WriteLine(pres.Slides.Count.ToString());
-            //ExStart:OpenPresentation
+            //ExEnd:OpenPresentation
         }
     }
 }

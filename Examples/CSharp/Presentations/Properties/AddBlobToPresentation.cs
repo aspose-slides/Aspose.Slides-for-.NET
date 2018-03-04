@@ -12,6 +12,9 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Conversion
 {
     class AddBlobToPresentation
     {
+
+
+
         public static void Run()
         {
             //ExStart:AddBlobToPresentation

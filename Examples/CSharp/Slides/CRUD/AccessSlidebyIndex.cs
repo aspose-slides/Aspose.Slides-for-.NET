@@ -18,14 +18,12 @@ namespace Aspose.Slides.Examples.CSharp.Slides.CRUD
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Slides_Presentations_CRUD();
 
-            // ExStart:AccessSlidebyIndex
             // Create an instance of Presentation class
             Presentation presentation = new Presentation(dataDir + "AccessSlides.pptx");
 
-            // ExEnd:AccessSlidebyIndex
             // Obtain a slide's reference by its index
             ISlide slide = presentation.Slides[0];
-            //EnEnd:AccessSlidebyIndex           
+            //ExEnd:AccessSlidebyIndex           
         }
     }
 }

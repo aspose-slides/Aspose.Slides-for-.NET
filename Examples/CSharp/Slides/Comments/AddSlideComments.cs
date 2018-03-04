@@ -20,7 +20,6 @@ namespace Aspose.Slides.Examples.CSharp.Slides.Comments
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Slides_Presentations_Comments();
 
-            // ExStart:AddSlideComments
             // Instantiate Presentation class
             using (Presentation presentation = new Presentation())
             {
@@ -54,7 +53,6 @@ namespace Aspose.Slides.Examples.CSharp.Slides.Comments
 
                 if (Comments.GetLength(0) > 0)
                 {
-                    // ExEnd:AddSlideComments
                     // Select comments collection of Author at index 0
                     ICommentCollection commentCollection = Comments[0].Author.Comments;
                     String Comment = commentCollection[0].Text;

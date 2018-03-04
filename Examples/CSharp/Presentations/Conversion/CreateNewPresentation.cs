@@ -14,7 +14,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Conversion
     {
         public static void Run()
         {
-            //ExStart:ConvetToSWF
+            //ExStart:CreateNewPresentation
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Conversion();
 
@@ -28,8 +28,8 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Conversion
                 slide.Shapes.AddAutoShape(ShapeType.Line, 50, 150, 300, 0);
                 presentation.Save(dataDir + "NewPresentation_out.pptx", SaveFormat.Pptx);
             }
-            //ExEnd:ConvetToSWF
-        } 
+            //ExEnd:CreateNewPresentation
+        }
     }
 }
 

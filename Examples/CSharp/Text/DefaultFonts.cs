@@ -10,7 +10,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
     {
         public static void Run()
         {
-            // ExStart:DefaultFonts
+            //ExStart:DefaultFonts
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Text();
 
@@ -31,7 +31,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
                 // Generate XPS
                 pptx.Save(dataDir + "output_out.xps", SaveFormat.Xps);
             }
-            // ExEnd:DefaultFonts
+            //ExEnd:DefaultFonts
         }
     }
 }

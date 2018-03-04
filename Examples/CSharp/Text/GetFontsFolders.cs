@@ -17,7 +17,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
     {
         public static void Run()
         {
-            // ExStart:GetFontsFolders
+            //ExStart:GetFontsFolders
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Text();
 
@@ -25,7 +25,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
             //Those are folders that have been added with LoadExternalFonts method as well as system font folders.
             string[] fontFolders = FontsLoader.GetFontFolders();
 
-            // ExEnd:GetFontsFolders
+            //ExEnd:GetFontsFolders
         }
     }
 }

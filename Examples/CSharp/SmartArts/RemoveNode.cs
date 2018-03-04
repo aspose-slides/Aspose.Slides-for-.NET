@@ -8,7 +8,7 @@ namespace Aspose.Slides.Examples.CSharp.SmartArts
     {
         public static void Run()
         {
-            // ExStart:RemoveNode
+            //ExStart:RemoveNode
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_SmartArts();
 
@@ -41,7 +41,7 @@ namespace Aspose.Slides.Examples.CSharp.SmartArts
                 // Save Presentation
                 pres.Save(dataDir + "RemoveSmartArtNode_out.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
             }
-            // ExEnd:RemoveNode
+            //ExEnd:RemoveNode
         }
     }
 }
