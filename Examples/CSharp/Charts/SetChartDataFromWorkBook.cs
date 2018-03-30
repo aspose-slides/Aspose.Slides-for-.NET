@@ -8,6 +8,8 @@ using Aspose.Slides;
 using Aspose.Slides.Charts;
 using System.Drawing;
 using Aspose.Slides.Export;
+using Aspose.Cells;
+using Aspose.Slides.Examples.CSharp;
 
 
 namespace CSharp.Charts
@@ -19,7 +21,7 @@ namespace CSharp.Charts
         {
             string dataDir = RunExamples.GetDataDir_Charts();
             //ExStart:SetChartDataFromWorkBook
-            pres = new Presentation(dataDir+"Test.pptx");
+         Presentation pres = new Presentation(dataDir+"Test.pptx");
 
             IChart chart = pres.Slides[0].Shapes.AddChart(ChartType.Pie, 50, 50, 500, 400);
             chart.ChartData.ChartDataWorkbook.Clear(0);
@@ -41,7 +43,7 @@ namespace CSharp.Charts
             chart.ChartData.SetRange("Sheet1!$A$1:$B$9");
             IChartSeries series = chart.ChartData.Series[0];
             series.ParentSeriesGroup.IsColorVaried = true;
-            pres.Save(dataDir+"response2.pptx", SaveFormat.Pptx);
+            pres.Save(dataDir+"response2.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
             //ExEnd:SetChartDataFromWorkBook
         }
     }

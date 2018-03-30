@@ -20,7 +20,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Text();
 
-       ]     // Load presentation
+            // Load presentation
             Presentation presentation = new Presentation(dataDir + "Fonts.pptx");
 
             // Load source font to be replaced

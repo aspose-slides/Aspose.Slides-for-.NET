@@ -6,6 +6,8 @@ using System.IO;
 using Aspose.Slides;
 using Aspose.Cells;
 using Aspose.Slides.Examples;
+using Aspose.Slides.Examples.CSharp;
+using Aspose.Cells.Rendering;
 namespace CSharp.Shapes
 {
    public  class ImageAsEMF

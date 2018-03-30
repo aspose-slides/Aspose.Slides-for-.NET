@@ -1,5 +1,7 @@
 ﻿using Aspose.Slides.Export;
 using Aspose.Slides;
+using System.Drawing;
+using System.Drawing.Imaging;
 
 /*
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Slides for .NET API reference 
