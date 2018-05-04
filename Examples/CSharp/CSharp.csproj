@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>CSharp</RootNamespace>
     <AssemblyName>CSharp</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -23,6 +23,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -32,6 +33,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
     <StartupObject>Aspose.Slides.Examples.CSharp.RunExamples</StartupObject>
@@ -41,14 +43,9 @@
       <HintPath>..\packages\Aspose.Cells.17.10\lib\net40\Aspose.Cells.dll</HintPath>
       <Private>True</Private>
     </Reference>
-<<<<<<< HEAD
     <Reference Include="Aspose.Slides, Version=18.4.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
       <HintPath>..\packages\Aspose.Slides.NET.18.4.0\lib\net4.0-client\Aspose.Slides.dll</HintPath>
-=======
-    <Reference Include="Aspose.Slides, Version=18.3.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Slides.NET.18.3.0\lib\net4.0-client\Aspose.Slides.dll</HintPath>
       <Private>True</Private>
->>>>>>> 8b9cf89465e71abb02c2531da00896a998bdb6d6
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -57,6 +54,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Charts\BoxChart.cs" />
+    <Compile Include="Charts\FunnelChart.cs" />
+    <Compile Include="Charts\HistogramChart.cs" />
+    <Compile Include="Charts\OrganizationChart.cs" />
     <Compile Include="Charts\SetChartDataFromWorkBook.cs" />
     <Compile Include="Charts\MultiCategoryChart.cs" />
     <Compile Include="Charts\SetInvertFillColorChart.cs" />
@@ -81,7 +82,10 @@
     <Compile Include="Charts\SetGapWidth.cs" />
     <Compile Include="Charts\SetlegendCustomOptions.cs" />
     <Compile Include="Charts\SetMarkerOptions.cs" />
+    <Compile Include="Charts\SunburstChart.cs" />
     <Compile Include="Charts\SwitchChartRowColumns.cs" />
+    <Compile Include="Charts\TreeMapChart.cs" />
+    <Compile Include="Presentations\Conversion\ExportShapeToSVG.cs" />
     <Compile Include="Presentations\Properties\AddCustomDocumentProperties.cs" />
     <Compile Include="Presentations\Conversion\ConversionToTIFFNotes.cs" />
     <Compile Include="Presentations\Conversion\ConvertIndividualSlide.cs" />
@@ -91,11 +95,14 @@
     <Compile Include="Presentations\Conversion\ConvertSpecificSlideToPDF.cs" />
     <Compile Include="Presentations\Conversion\ConvertToPDFWithHiddenSlides.cs" />
     <Compile Include="Presentations\Conversion\ConvertWholePresentationToHTML.cs" />
+    <Compile Include="Presentations\Properties\SupportForInterrupt.cs" />
     <Compile Include="Rendering-Printing\RenderComments.cs" />
+    <Compile Include="Rendering-Printing\RenderingEmoji.cs" />
     <Compile Include="Shapes\AddVideoFrameFromWebSource.cs" />
     <Compile Include="Shapes\ImageAsEMF.cs" />
     <Compile Include="Shapes\StretchOffsetLeftForPictureFrame.cs" />
     <Compile Include="Slides\CRUD\AddNotesSlideWithNotesStyle.cs" />
+    <Compile Include="Slides\Notes\HeaderAndFooterInNotesSlide.cs" />
     <Compile Include="Text\AddEmbeddedFonts.cs" />
     <Compile Include="Text\AddingSuperscriptAndSubscriptTextInTextFrame.cs" />
     <Compile Include="Text\EndParaGraphProperties.cs" />

@@ -22,7 +22,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Conversion
             using (Presentation presentation = new Presentation(dataDir + "NotesFile.pptx"))
             {
                 // Saving the presentation to TIFF notes
-                presentation.Save(dataDir + "Notes_In_Tiff_out.tiff", SaveFormat.TiffNotes);
+                presentation.Save(dataDir + "Notes_In_Tiff_out.tiff", SaveFormat.Tiff);
             }
             //ExEnd:ConversionToTIFFNotes
         } 
