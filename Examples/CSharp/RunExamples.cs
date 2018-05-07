@@ -307,7 +307,7 @@ namespace Aspose.Slides.Examples.CSharp
 
 			//SetZoom.Run();
 			//SetSlideNumber.Run();
-			//DefaultPrinterPrinting.Run();
+			//DefaultPrinterPrinting.Run();//
 			//SpecificPrinterPrinting.Run();
 			//RenderComments.Run();
 			//RenderingEmoji.Run();
