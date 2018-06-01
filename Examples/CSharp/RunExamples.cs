@@ -124,14 +124,14 @@ namespace Aspose.Slides.Examples.CSharp
 			//PPTtoPPTX.Run();
 			//ExportMediaFilestohtml.Run();
 			//SetInvertFillColorChart.Run();
-			ExportShapeToSVG.Run();
+			//ExportShapeToSVG.Run();
 			// =====================================================
 			//// =====================================================
 			//// Presentations -   Opening
 			//// =====================================================
 			//// =====================================================
 
-			//OpenPresentation.Run();
+			OpenPresentation.Run();
 			//LoadFormatEnumeration.Run();
 			//OpenPasswordPresentation.Run();
 			//VerifyingPresentationWithoutloading.Run();

@@ -43,9 +43,8 @@
       <HintPath>..\packages\Aspose.Cells.17.10\lib\net40\Aspose.Cells.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Aspose.Slides, Version=18.4.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Slides.NET.18.4.0\lib\net4.0-client\Aspose.Slides.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Aspose.Slides, Version=18.5.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Slides.NET.18.5.0\lib\net4.0-client\Aspose.Slides.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -103,6 +102,7 @@
     <Compile Include="Shapes\StretchOffsetLeftForPictureFrame.cs" />
     <Compile Include="Slides\CRUD\AddNotesSlideWithNotesStyle.cs" />
     <Compile Include="Slides\Notes\HeaderAndFooterInNotesSlide.cs" />
+    <Compile Include="SmartArts\CustomChildNodesInSmartArt.cs" />
     <Compile Include="Text\AddEmbeddedFonts.cs" />
     <Compile Include="Text\AddingSuperscriptAndSubscriptTextInTextFrame.cs" />
     <Compile Include="Text\EndParaGraphProperties.cs" />
