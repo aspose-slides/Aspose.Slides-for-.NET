@@ -63,7 +63,15 @@ namespace Aspose.Slides.Examples.CSharp
 			//PieChart.Run();
 			//ChangeChartCategoryAxis.Run();
 			//TreeMapChart.Run();
-			//SunburstChart.Run();
+			//ChartMarkerOptionsOnDataPoint.Run();
+			//SettingDateFormatForCategoryAxis.Run();
+			//SettingPositionAxis.Run();
+			//SettingRotationAngle.Run();
+			ShowingDisplayUnitLabel.Run();
+			//SupportForBubbleChartScaling.Run();
+			//SupportForPrecisionOfData.Run();
+			//SupportForSwitchingRowsAndColumns.Run();
+             //SunburstChart.Run();
 			//FunnelChart.Run();
 			//DisplayChartLabels.Run();
 			//AddErrorBars.Run();

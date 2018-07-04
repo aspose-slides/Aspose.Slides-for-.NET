@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Charts\BoxChart.cs" />
+    <Compile Include="Charts\ChartMarkerOptionsOnDataPoint.cs" />
     <Compile Include="Charts\FunnelChart.cs" />
     <Compile Include="Charts\HistogramChart.cs" />
     <Compile Include="Charts\OrganizationChart.cs" />
@@ -81,7 +82,14 @@
     <Compile Include="Charts\SetGapWidth.cs" />
     <Compile Include="Charts\SetlegendCustomOptions.cs" />
     <Compile Include="Charts\SetMarkerOptions.cs" />
+    <Compile Include="Charts\SettingDateFormatForCategoryAxis.cs" />
+    <Compile Include="Charts\SettingPositionAxis.cs" />
+    <Compile Include="Charts\SettingRotationAngle.cs" />
+    <Compile Include="Charts\ShowingDisplayUnitLabel.cs" />
     <Compile Include="Charts\SunburstChart.cs" />
+    <Compile Include="Charts\SupportForBubbleChartScaling.cs" />
+    <Compile Include="Charts\SupportForPrecisionOfData.cs" />
+    <Compile Include="Charts\SupportForSwitchingRowsAndColumns.cs" />
     <Compile Include="Charts\SwitchChartRowColumns.cs" />
     <Compile Include="Charts\TreeMapChart.cs" />
     <Compile Include="Presentations\Conversion\ExportShapeToSVG.cs" />
