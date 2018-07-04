@@ -24,7 +24,7 @@ namespace CSharp.Charts
 				chart.HasDataTable = true;
 				chart.ChartData.Series[0].NumberFormatOfValues = "#,##0.00";
 
-				pres.Save(dataDir + "ErrorBarsCustomValues_out.pptx", SaveFormat.Pptx);
+				pres.Save(dataDir + "PrecisionOfDatalabels_out.pptx", SaveFormat.Pptx);
 
      			}
 			//ExEnd:SupportForPrecisionOfData

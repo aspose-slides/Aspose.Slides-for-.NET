@@ -21,10 +21,11 @@ namespace CSharp.Charts
 				IChart chart = pres.Slides[0].Shapes.AddChart(ChartType.ClusteredColumn, 50, 50, 450, 300);
 				chart.Axes.HorizontalAxis.AxisBetweenCategories = true;
 
-				//ExEnd:SettingPositionAxis
 				pres.Save(dataDir + "AsposeScatterChart.pptx", SaveFormat.Pptx);
 
 			}
-		}
-	}
+            //ExEnd:SettingPositionAxis
+
+        }
+    }
 }
