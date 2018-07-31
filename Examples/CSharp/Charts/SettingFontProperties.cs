@@ -14,6 +14,7 @@ namespace CSharp.Charts
 	{
 		public static void Run()
 		{
+			//ExStart:SettingFontProperties
 			string dataDir = RunExamples.GetDataDir_Charts();
 			using (Presentation pres = new Presentation(dataDir+"test.pptx"))
 			{
@@ -29,5 +30,6 @@ namespace CSharp.Charts
 
 			}
 		}
+		//ExEnd:SettingFontProperties
 	}
 }
