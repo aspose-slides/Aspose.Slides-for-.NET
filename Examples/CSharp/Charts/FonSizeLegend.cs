@@ -1,4 +1,4 @@
-﻿using Aspose.Cells.Charts;
+﻿using Aspose.Slides.Charts;
 using Aspose.Slides;
 using Aspose.Slides.Charts;
 using Aspose.Slides.Examples.CSharp;
