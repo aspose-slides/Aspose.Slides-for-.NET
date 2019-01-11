@@ -149,279 +149,279 @@ namespace Aspose.Slides.Examples.CSharp
 			//// =====================================================
 
 			OpenPresentation.Run();
-			//LoadFormatEnumeration.Run();
-			//OpenPasswordPresentation.Run();
-			//VerifyingPresentationWithoutloading.Run();
-			//GetFileFormat.Run();
-			//GetRectangularCoordinatesofParagraph.Run();
-			//GetPositionCoordinatesofPortion.Run();
+            //LoadFormatEnumeration.Run();
+            //OpenPasswordPresentation.Run();
+            //VerifyingPresentationWithoutloading.Run();
+            //GetFileFormat.Run();
+            //GetRectangularCoordinatesofParagraph.Run();
+            //GetPositionCoordinatesofPortion.Run();
 
-			//// =====================================================
-			////            Presentations -   Properties
-			//// =====================================================
+            //// =====================================================
+            ////            Presentations -   Properties
+            //// =====================================================
 
-			//AccessBuiltinProperties.Run();
-			//AccessModifyingProperties.Run();
-			//AddCustomDocumentProperties.Run();
-			//AccessOpenDoc.Run();
-			//AccessProperties.Run();
-			//ModifyBuiltinProperties.Run();
-			//UpdatePresentationProperties.Run();
-			//UpdatePresentationPropertiesUsingNewTemplate.Run();
-			//UpdatePresentationPropertiesUsingPropertiesOfAnotherPresentationAsATemplate.Run();
-			//SupportForInterrupt.Run();
-			//// =====================================================
-			////            Presentations -   Saving
-			//// =====================================================
+            //AccessBuiltinProperties.Run();
+            //AccessModifyingProperties.Run();
+            //AddCustomDocumentProperties.Run();
+            //AccessOpenDoc.Run();
+            //AccessProperties.Run();
+            //ModifyBuiltinProperties.Run();
+            //UpdatePresentationProperties.Run();
+            //UpdatePresentationPropertiesUsingNewTemplate.Run();
+            //UpdatePresentationPropertiesUsingPropertiesOfAnotherPresentationAsATemplate.Run();
+            //SupportForInterrupt.Run();
+            //// =====================================================
+            ////            Presentations -   Saving
+            //// =====================================================
 
-			//RemoveWriteProtection.Run();
-			//SaveAsReadOnly.Run();
-			//SaveProperties.Run();
-			//SaveToFile.Run();
-			//SaveToStream.Run();
-			//SaveWithPassword.Run();
-			//SaveAsPredefinedViewType.Run();
+            //RemoveWriteProtection.Run();
+            //SaveAsReadOnly.Run();
+            //SaveProperties.Run();
+            //SaveToFile.Run();
+            //SaveToStream.Run();
+            //SaveWithPassword.Run();
+            //SaveAsPredefinedViewType.Run();
 
-			//// =====================================================
-			////                    Shapes
-			//// =====================================================
+            //// =====================================================
+            ////                    Shapes
+            //// =====================================================
 
-			//AccessOLEObjectFrame.Run();
-			//AddArrowShapedLine.Run();
-			//AddArrowShapedLineToSlide.Run();
-			//AddAudioFrame.Run();
-			//AddOLEObjectFrame.Run();
-			//AddPlainLineToSlide.Run();
-			//AddSimplePictureFrames.Run();
-			//AddVideoFrame.Run();
-			//AnimationsOnShapes.Run();
-			//ChangeOLEObjectData.Run();
-			//ConnectorLineAngle.Run();
-			//EmbeddedVideoFrame.Run();
-			//FillShapesGradient.Run();
-			//FillShapesPattern.Run();
-			//FillShapesPicture.Run();
-			//FindShapeInSlide.Run();
-			//FillShapeswithSolidColor.Run();
-			//FormatJoinStyles.Run();
-			//FormatLines.Run();
-			//FormattedEllipse.Run();
-			//Apply3DRotationEffectOnShape.Run();
-			//FormattedRectangle.Run();
-			//PictureFrameFormatting.Run();
-			//RotatingShapes.Run();
-			//SimpleEllipse.Run();
-			//SimpleRectangle.Run();
-			//AddRelativeScaleHeightPictureFrame.Run();
-			//CreateShapeThumbnail.Run();
-			//CreateBoundsShapeThumbnail.Run();
-			//CreateScalingFactorThumbnail.Run();
-			//CreateSmartArtChildNoteThumbnail.Run();
-			//CreateGroupShape.Run();
-			//AccessingAltTextinGroupshapes.Run();
-			//CloneShapes.Run();
-			//SetAlternativeText.Run();
-			//RemoveShape.Run();
-			//Hidingshapes.Run();
-			//ChangeShapeOrder.Run();
-			//ConnectShapesUsingConnectors.Run();
-			//ConnectShapeUsingConnectionSite.Run();
-			//ApplyBevelEffects.Run();
-			//AddVideoFrameFromWebSource.Run();
-			//AddStretchOffsetForImageFill.Run();
+            //AccessOLEObjectFrame.Run();
+            //AddArrowShapedLine.Run();
+            //AddArrowShapedLineToSlide.Run();
+            //AddAudioFrame.Run();
+            //AddOLEObjectFrame.Run();
+            //AddPlainLineToSlide.Run();
+            //AddSimplePictureFrames.Run();
+            //AddVideoFrame.Run();
+            //AnimationsOnShapes.Run();
+            //ChangeOLEObjectData.Run();
+            //ConnectorLineAngle.Run();
+            //EmbeddedVideoFrame.Run();
+            //FillShapesGradient.Run();
+            //FillShapesPattern.Run();
+            //FillShapesPicture.Run();
+            //FindShapeInSlide.Run();
+            //FillShapeswithSolidColor.Run();
+            //FormatJoinStyles.Run();
+            //FormatLines.Run();
+            //FormattedEllipse.Run();
+            //Apply3DRotationEffectOnShape.Run();
+            //FormattedRectangle.Run();
+            //PictureFrameFormatting.Run();
+            //RotatingShapes.Run();
+            //SimpleEllipse.Run();
+            //SimpleRectangle.Run();
+            //AddRelativeScaleHeightPictureFrame.Run();
+            //CreateShapeThumbnail.Run();
+            //CreateBoundsShapeThumbnail.Run();
+            //CreateScalingFactorThumbnail.Run();
+            //CreateSmartArtChildNoteThumbnail.Run();
+            //CreateGroupShape.Run();
+            //AccessingAltTextinGroupshapes.Run();
+            //CloneShapes.Run();
+            //SetAlternativeText.Run();
+            //RemoveShape.Run();
+            //Hidingshapes.Run();
+            //ChangeShapeOrder.Run();
+            //ConnectShapesUsingConnectors.Run();
+            //ConnectShapeUsingConnectionSite.Run();
+            //ApplyBevelEffects.Run();
+            //AddVideoFrameFromWebSource.Run();
+            //AddStretchOffsetForImageFill.Run();
 
-			//// =====================================================
-			////                        Slides 
-			//// =====================================================
+            //// =====================================================
+            ////                        Slides 
+            //// =====================================================
 
-			//// =====================================================
-			////                    Slides - CRUD
-			//// =====================================================
+            //// =====================================================
+            ////                    Slides - CRUD
+            //// =====================================================
 
-			//AccessSlides.Run();
-			//AccessSlidebyIndex.Run();
-			//AccessSlidebyID.Run();
-			//CreateSlidesSVGImage.Run();
-			//ChangePosition.Run();
-			//CloneAtEndOfAnother.Run();
-			//CloneAtEndOfAnotherSpecificPosition.Run();
-			//CloneToAnotherPresentationWithMaster.Run();
-			//CloneWithInSamePresentation.Run();
-			//CloneWithinSamePresentationToEnd.Run();
-			//CloneAnotherPresentationAtSpecifiedPosition.Run();
-			//RemoveSlideUsingIndex.Run();
-			//RemoveSlideUsingReference.Run();
-			//AddSlides.Run();
-			//AddNotesSlideWithNotesStyle.Run();
+            //AccessSlides.Run();
+            //AccessSlidebyIndex.Run();
+            //AccessSlidebyID.Run();
+            //CreateSlidesSVGImage.Run();
+            //ChangePosition.Run();
+            //CloneAtEndOfAnother.Run();
+            //CloneAtEndOfAnotherSpecificPosition.Run();
+            //CloneToAnotherPresentationWithMaster.Run();
+            //CloneWithInSamePresentation.Run();
+            //CloneWithinSamePresentationToEnd.Run();
+            //CloneAnotherPresentationAtSpecifiedPosition.Run();
+            //RemoveSlideUsingIndex.Run();
+            //RemoveSlideUsingReference.Run();
+            //AddSlides.Run();
+            //AddNotesSlideWithNotesStyle.Run();
 
-			//// =====================================================
-			////                    Slides - Notes
-			//// =====================================================
+            //// =====================================================
+            ////                    Slides - Notes
+            //// =====================================================
 
-			//RemoveNotesAtSpecificSlide.Run();
-			//RemoveNotesFromAllSlides.Run();           
-			//HeaderAndFooterInNotesSlide.Run();
-			//// =====================================================
-			////                    Slides - Background
-			//// =====================================================
+            //RemoveNotesAtSpecificSlide.Run();
+            //RemoveNotesFromAllSlides.Run();           
+            //HeaderAndFooterInNotesSlide.Run();
+            //// =====================================================
+            ////                    Slides - Background
+            //// =====================================================
 
-			//SetBackgroundToGradient.Run();
-			//SetImageAsBackground.Run();
-			//SetSlideBackgroundMaster.Run();
-			//SetSlideBackgroundNormal.Run();
+            //SetBackgroundToGradient.Run();
+            //SetImageAsBackground.Run();
+            //SetSlideBackgroundMaster.Run();
+            //SetSlideBackgroundNormal.Run();
 
-			//// =====================================================
-			////                    Slides - Transitions
-			//// =====================================================
+            //// =====================================================
+            ////                    Slides - Transitions
+            //// =====================================================
 
-			//BetterSlideTransitions.Run();
-			//SimpleSlideTransitions.Run();
-			//ManageSimpleSlideTransitions.Run();
-			//ManagingBetterSlideTransitions.Run();
-			//SetTransitionEffects.Run();
+            //BetterSlideTransitions.Run();
+            //SimpleSlideTransitions.Run();
+            //ManageSimpleSlideTransitions.Run();
+            //ManagingBetterSlideTransitions.Run();
+            //SetTransitionEffects.Run();
 
-			//// =====================================================
-			////                    Slides - Thumbnail
-			//// =====================================================
+            //// =====================================================
+            ////                    Slides - Thumbnail
+            //// =====================================================
 
-			//ThumbnailFromSlide.Run();
-			//ThumbnailFromSlideInNotes.Run();
-			//ThumbnailWithUserDefinedDimensions.Run();
+            //ThumbnailFromSlide.Run();
+            //ThumbnailFromSlideInNotes.Run();
+            //ThumbnailWithUserDefinedDimensions.Run();
 
-			//// =====================================================
-			////                    Slides - Comments
-			//// =====================================================
+            //// =====================================================
+            ////                    Slides - Comments
+            //// =====================================================
 
-			//AddSlideComments.Run();
-			//AccessSlideComments.Run();
+            //AddSlideComments.Run();
+            //AccessSlideComments.Run();
 
-			//// =====================================================
-			////                    Slides - Layout
-			//// =====================================================
+            //// =====================================================
+            ////                    Slides - Layout
+            //// =====================================================
 
-			//AddLayoutSlides.Run();
-			//SetSizeAndType.Run();
-			//SetPDFPageSize.Run();       
-			//SetSlideSizeScale.Run();
-			//SetChildFooter.Run();
-			//HeaderFooterManager.Run();
-			//CheckSlidesComparison.Run();
-			//// =====================================================
-			////                    Slides - HyperLink
-			//// =====================================================
+            //AddLayoutSlides.Run();
+            //SetSizeAndType.Run();
+            //SetPDFPageSize.Run();       
+            //SetSlideSizeScale.Run();
+            //SetChildFooter.Run();
+            //HeaderFooterManager.Run();
+            //CheckSlidesComparison.Run();
+            //// =====================================================
+            ////                    Slides - HyperLink
+            //// =====================================================
 
-			//RemoveHyperlinks.Run();
+            //RemoveHyperlinks.Run();
 
-			//// =====================================================
-			////                    Slides - Media
-			//// =====================================================
+            //// =====================================================
+            ////                    Slides - Media
+            //// =====================================================
 
-			//ExtractVideo.Run();
+            //ExtractVideo.Run();
 
-			//// =====================================================
-			////            Rendering - Printing a Slide
-			//// =====================================================
+            //// =====================================================
+            ////            Rendering - Printing a Slide
+            //// =====================================================
 
-			//SetZoom.Run();
-			//SetSlideNumber.Run();
-			//DefaultPrinterPrinting.Run();//
-			//SpecificPrinterPrinting.Run();
-			//RenderComments.Run();
-			//RenderingEmoji.Run();
-			//// =====================================================
-			////                    Smart Arts
-			//// =====================================================
+            //SetZoom.Run();
+            //SetSlideNumber.Run();
+            //DefaultPrinterPrinting.Run();//
+            //SpecificPrinterPrinting.Run();
+            //RenderComments.Run();
+            //RenderingEmoji.Run();
+            //// =====================================================
+            ////                    Smart Arts
+            //// =====================================================
 
-			//AccessChildNodes.Run();
-			//AccessChildNodeSpecificPosition.Run();
-			//AccessSmartArt.Run();
-			//AccessSmartArtShape.Run();
-			//AddNodes.Run();
-			//AddNodesSpecificPosition.Run();
-			//AssistantNode.Run();
-			//CreateSmartArtShape.Run();
-			//RemoveNode.Run();
-			//RemoveNodeSpecificPosition.Run();
-			//SmartArtNodeLevel.Run();
-			//AccessSmartArtParticularLayout.Run();
-			//ChangSmartArtShapeStyle.Run();
-			//ChangeSmartArtShapeColorStyle.Run();
-			//FillFormatSmartArtShapeNode.Run();
-			//ChangeTextOnSmartArtNode.Run();
-			//ChangeSmartArtLayout.Run();
-			//CheckSmartArtHiddenProperty.Run();
-			//ChangeSmartArtState.Run();
-			//OrganizeChartLayoutType.Run();
+            //AccessChildNodes.Run();
+            //AccessChildNodeSpecificPosition.Run();
+            //AccessSmartArt.Run();
+            //AccessSmartArtShape.Run();
+            //AddNodes.Run();
+            //AddNodesSpecificPosition.Run();
+            //AssistantNode.Run();
+            //CreateSmartArtShape.Run();
+            //RemoveNode.Run();
+            //RemoveNodeSpecificPosition.Run();
+            //SmartArtNodeLevel.Run();
+            //AccessSmartArtParticularLayout.Run();
+            //ChangSmartArtShapeStyle.Run();
+            //ChangeSmartArtShapeColorStyle.Run();
+            //FillFormatSmartArtShapeNode.Run();
+            //ChangeTextOnSmartArtNode.Run();
+            //ChangeSmartArtLayout.Run();
+            //CheckSmartArtHiddenProperty.Run();
+            //ChangeSmartArtState.Run();
+            //OrganizeChartLayoutType.Run();
 
-			//// =====================================================
-			////                    Tables
-			//// =====================================================
+            //// =====================================================
+            ////                    Tables
+            //// =====================================================
 
-			//RemovingRowColumn.Run();
-			//TableFromScratch.Run();
-			//TableWithCellBorders.Run();
-			//UpdateExistingTable.Run();
-			//AddImageinsideTableCell.Run();
-			//CloningInTable.Run();
-			//VerticallyAlignText.Run();
-			//StandardTables.Run();
-			//MergeCells.Run();
-			//MergeCell.Run();
-			//CellSplit.Run();
-			//TextFormattingInsideTableColumn.Run();
-			//TextFormattingInsideTableRow.Run();
-			//SetFormattingInsideTable.Run();
-			//IdentifyingTheMergedCellsinTable.Run();
-			//AddImageInsideTableCells.Run();
-			//// =====================================================
-			//// Text
-			//// =====================================================
+            //RemovingRowColumn.Run();
+            //TableFromScratch.Run();
+            //TableWithCellBorders.Run();
+            //UpdateExistingTable.Run();
+            //AddImageinsideTableCell.Run();
+            //CloningInTable.Run();
+            //VerticallyAlignText.Run();
+            //StandardTables.Run();
+            //MergeCells.Run();
+            //MergeCell.Run();
+            //CellSplit.Run();
+            //TextFormattingInsideTableColumn.Run();
+            //TextFormattingInsideTableRow.Run();
+            //SetFormattingInsideTable.Run();
+            //IdentifyingTheMergedCellsinTable.Run();
+            //AddImageInsideTableCells.Run();
+            //// =====================================================
+            //// Text
+            //// =====================================================
 
-			//DefaultFonts.Run();
-			//ExportingHTMLText.Run();
-			//EmbedFontsInHtml.Run();
-			//FontFamily.Run();
-			//EndParaGraphProperties.Run();
-			//FontProperties.Run();
-			//ImportingHTMLText.Run();
-			//MultipleParagraphs.Run();
-			//ParagraphBullets.Run();
-			//ParagraphIndent.Run();
-			//ParagraphsAlignment.Run();
-			//ReplacingText.Run();
-			//ShadowEffects.Run();
-			//TextBoxHyperlink.Run();
-			//TextBoxOnSlideProgram.Run();
-			//ApplyInnerShadow.Run();
-			//LoadExternalFont.Run();
-			//ManageParagraphFontProperties.Run();
-			//SetTextFontProperties.Run();
-			//ReplaceFontsExplicitly.Run();
-			//RuleBasedFontsReplacement.Run();
-			//SetAutofitOftextframe.Run();
-			//SetAnchorOfTextFrame.Run();
-			//RotatingText.Run();
-			//LineSpacing.Run();
-			//ApplyOuterShadow.Run();
-			//CustomRotationAngleTextframe.Run();
-			//UseCustomFonts.Run();
-			//ManageParagraphPictureBulletsInPPT.Run();
-			//ManageEmbeddedFonts.Run();
-			//GetFontsFolders.Run();
-			//AddEmbeddedFonts.Run();
+            //DefaultFonts.Run();
+            //ExportingHTMLText.Run();
+            //EmbedFontsInHtml.Run();
+            //FontFamily.Run();
+            //EndParaGraphProperties.Run();
+            //FontProperties.Run();
+            //ImportingHTMLText.Run();
+            //MultipleParagraphs.Run();
+            //ParagraphBullets.Run();
+            //ParagraphIndent.Run();
+            //ParagraphsAlignment.Run();
+            //ReplacingText.Run();
+            //ShadowEffects.Run();
+            //TextBoxHyperlink.Run();
+            //TextBoxOnSlideProgram.Run();
+            //ApplyInnerShadow.Run();
+            //LoadExternalFont.Run();
+            //ManageParagraphFontProperties.Run();
+            //SetTextFontProperties.Run();
+            //ReplaceFontsExplicitly.Run();
+            //RuleBasedFontsReplacement.Run();
+            //SetAutofitOftextframe.Run();
+            //SetAnchorOfTextFrame.Run();
+            //RotatingText.Run();
+            //LineSpacing.Run();
+            //ApplyOuterShadow.Run();
+            //CustomRotationAngleTextframe.Run();
+            //UseCustomFonts.Run();
+            //ManageParagraphPictureBulletsInPPT.Run();
+            //ManageEmbeddedFonts.Run();
+            //GetFontsFolders.Run();
+            //AddEmbeddedFonts.Run();
 
-			//AddingSuperscriptAndSubscriptTextInTextFrame.Run();
+            //AddingSuperscriptAndSubscriptTextInTextFrame.Run();
+            MutilevelBullets.Run();
 
+            //// =====================================================
+            ////                    VBA Macros
+            //// =====================================================
 
-			//// =====================================================
-			////                    VBA Macros
-			//// =====================================================
+            //AddVBAMacros.Run();
+            //RemoveVBAMacros.Run();
 
-			//AddVBAMacros.Run();
-			//RemoveVBAMacros.Run();
-
-			// Stop before exiting
-			Console.WriteLine("\n\nProgram Finished. Press any key to exit....");
+            // Stop before exiting
+            Console.WriteLine("\n\nProgram Finished. Press any key to exit....");
             Console.ReadKey();
 
 
