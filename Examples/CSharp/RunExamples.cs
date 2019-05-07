@@ -106,7 +106,9 @@ namespace Aspose.Slides.Examples.CSharp
 			//GetWidthHeightFromChartPlotArea.Run();
 			//UsingWorkBookChartcellAsDatalabel.Run();
 			//SwitchChartRowColumns.Run();
-
+			 //EditChartDatainExternalWorkbook.Run();
+		    //SetExternalWorkbook.Run();
+		    //CreateExternalWorkbook.Run();
 
 			//// =====================================================
 			////                    Presentations 
