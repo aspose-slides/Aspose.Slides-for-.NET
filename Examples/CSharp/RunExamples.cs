@@ -29,6 +29,10 @@ using CSharp.Presentations.Conversion;
 using CSharp.Presentations.Properties;
 using CSharp.Rendering_Printing;
 using CSharp.Slides.Notes;
+using CSharp.SmartArts;
+using CSharp.Slides.Comments;
+using CSharp.Slides.Views;
+using CSharp.Presentations.Saving;
 
 namespace Aspose.Slides.Examples.CSharp
 {
@@ -109,6 +113,10 @@ namespace Aspose.Slides.Examples.CSharp
 			 //EditChartDatainExternalWorkbook.Run();
 		    //SetExternalWorkbook.Run();
 		    //CreateExternalWorkbook.Run();
+		            //EditChartDatainExternalWorkbook.Run();
+            //SetExternalWorkbook.Run();
+            //CreateExternalWorkbook.Run();
+            //SupportOfBubbleSizeRepresentation.Run();
 
 			//// =====================================================
 			////                    Presentations 
@@ -183,7 +191,8 @@ namespace Aspose.Slides.Examples.CSharp
             //SaveToStream.Run();
             //SaveWithPassword.Run();
             //SaveAsPredefinedViewType.Run();
-
+            // AddImageFromSVGObject.Run();
+            //ConvertSvgImageObjectIntoGroupOfShapes.Run();
             //// =====================================================
             ////                    Shapes
             //// =====================================================
@@ -296,6 +305,7 @@ namespace Aspose.Slides.Examples.CSharp
 
             //AddSlideComments.Run();
             //AccessSlideComments.Run();
+            //AddParentComments.Run();		
 
             //// =====================================================
             ////                    Slides - Layout
@@ -421,7 +431,12 @@ namespace Aspose.Slides.Examples.CSharp
 
             //AddVBAMacros.Run();
             //RemoveVBAMacros.Run();
+		
+          //// =====================================================
+            ////                    Presentation Views
+            //// =====================================================
 
+            //ManagePresenetationNormalViewState.Run();
             // Stop before exiting
             Console.WriteLine("\n\nProgram Finished. Press any key to exit....");
             Console.ReadKey();
