@@ -421,9 +421,9 @@ namespace Aspose.Slides.Examples.CSharp
             //ManageEmbeddedFonts.Run();
             //GetFontsFolders.Run();
             //AddEmbeddedFonts.Run();
-
             //AddingSuperscriptAndSubscriptTextInTextFrame.Run();
-            MutilevelBullets.Run();
+            //MutilevelBullets.Run();
+		//AddColumnsinTextFrame.Run();
 
             //// =====================================================
             ////                    VBA Macros
