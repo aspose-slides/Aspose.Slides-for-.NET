@@ -14,7 +14,6 @@ using Aspose.Slides.Examples.CSharp.Slides;
 using Aspose.Slides.Examples.CSharp.Slides.Background;
 using Aspose.Slides.Examples.CSharp.Slides.Comments;
 using Aspose.Slides.Examples.CSharp.Slides.CRUD;
-using Aspose.Slides.Examples.CSharp.Slides.Hyperlink;
 using Aspose.Slides.Examples.CSharp.Slides.Layout;
 using Aspose.Slides.Examples.CSharp.Slides.Media;
 using Aspose.Slides.Examples.CSharp.Slides.Notes;
@@ -30,9 +29,12 @@ using CSharp.Presentations.Properties;
 using CSharp.Rendering_Printing;
 using CSharp.Slides.Notes;
 using CSharp.SmartArts;
-using CSharp.Slides.Comments;
+using CSharp.Text;
 using CSharp.Slides.Views;
+using CSharp.Slides.Comments;
 using CSharp.Presentations.Saving;
+using CSharp.Slides.Background;
+using CSharp.Slides.Transitions;
 
 namespace Aspose.Slides.Examples.CSharp
 {
@@ -46,119 +48,120 @@ namespace Aspose.Slides.Examples.CSharp
 
 			// Uncomment the one you want to try out
 
-			//// =====================================================
-			////                    ActiveX
-			//// =====================================================
+            //// =====================================================
+            ////                    ActiveX
+            //// =====================================================
 
 			//   ManageActiveXControl.Run();
 			//LinkingVideoActiveXControl.Run();
 
-			// =====================================================
-			//                      Charts
-			// =====================================================
-			//MultiCategoryChart.Run();
-			//ChartEntities.Run();
-			//ChartTrendLines.Run();
-			//ExistingChart.Run();
-			//ChangeColorOfCategories.Run();
-			//FontSizeLegend.Run();
-			//NormalCharts.Run();
-			//GetChartImage.Run();
-			//FontPropertiesForInvidualLegend.Run();
-			//InvertIfNegativeForIndividualSeries.Run();
-			//SettingFontProperties.Run();
-			//SupportForChangingSeriesColor.Run();
-			//SupportForChartAreaRoundedBorders.Run();
-			//NumberFormat.Run();
-			//SupportForStockChart.Run();
-			//OrganizationChart.Run();
-			//ScatteredChart.Run();
-			//PieChart.Run();
-			//ChangeChartCategoryAxis.Run();
-			//TreeMapChart.Run();
-			//ChartMarkerOptionsOnDataPoint.Run();
-			//SettingDateFormatForCategoryAxis.Run();
-			//SettingPositionAxis.Run();
-			//SettingRotationAngle.Run();
-			//ShowingDisplayUnitLabel.Run();
-			//SupportForBubbleChartScaling.Run();
-			//SupportForPrecisionOfData.Run();
-			//SupportForSwitchingRowsAndColumns.Run();
-			//SunburstChart.Run();
-			//FunnelChart.Run();
-			//DisplayChartLabels.Run();
-			//AddErrorBars.Run();
-			//AddCustomError.Run();
-			//AnimatingSeries.Run();
-			//AnimatingSeriesElements.Run();
-			//AnimatingCategoriesElements.Run();
-			//SetChartSeriesOverlap.Run();
-			//SetAutomaticSeriesFillColor.Run();
-			// ValidateChartLayoutAdded.Run();
-			//SetChartDataFromWorkBook.Run();
-			//SetCategoryAxisLabelDistance.Run();
-			//SetlegendCustomOptions.Run();
-			//SetDataLabelsPercentageSign.Run();
-			//DoughnutChartHole.Run();
-			//ManagePropertiesCharts.Run();
-			//SetGapWidth.Run();
-			//AutomaticChartSeriescolor.Run();
-			//DisplayPercentageAsLabels.Run();
-			//SecondPlotOptionsforCharts.Run();
-			//SetMarkerOptions.Run();
-			//SetDataRange.Run();
-			//GetWidthHeightFromChartPlotArea.Run();
-			//UsingWorkBookChartcellAsDatalabel.Run();
-			//SwitchChartRowColumns.Run();
-			 //EditChartDatainExternalWorkbook.Run();
-		    //SetExternalWorkbook.Run();
-		    //CreateExternalWorkbook.Run();
-		            //EditChartDatainExternalWorkbook.Run();
+            // =====================================================
+            //                      Charts
+            // =====================================================
+            //MultiCategoryChart.Run();
+            //ChartEntities.Run();
+            //ChartTrendLines.Run();
+            //ExistingChart.Run();
+            //ChangeColorOfCategories.Run();
+            //FontSizeLegend.Run();
+            //NormalCharts.Run();
+            //GetChartImage.Run();
+            //FontPropertiesForInvidualLegend.Run();
+            //InvertIfNegativeForIndividualSeries.Run();
+            //SettingFontProperties.Run();
+            //SupportForChangingSeriesColor.Run();
+            //SupportForChartAreaRoundedBorders.Run();
+            //NumberFormat.Run();
+            //SupportForStockChart.Run();
+            //OrganizationChart.Run();
+            //ScatteredChart.Run();
+            //PieChart.Run();
+            //ChangeChartCategoryAxis.Run();
+            //TreeMapChart.Run();
+            //ChartMarkerOptionsOnDataPoint.Run();
+            //SettingDateFormatForCategoryAxis.Run();
+            //SettingPositionAxis.Run();
+            //SettingRotationAngle.Run();
+            //ShowingDisplayUnitLabel.Run();
+            //SupportForBubbleChartScaling.Run();
+            //SupportForPrecisionOfData.Run();
+            //SupportForSwitchingRowsAndColumns.Run();
+            //SunburstChart.Run();
+            //FunnelChart.Run();
+            //DisplayChartLabels.Run();
+            //AddErrorBars.Run();
+            //AddCustomError.Run();
+            //AnimatingSeries.Run();
+            //AnimatingSeriesElements.Run();
+            //AnimatingCategoriesElements.Run();
+            //SetChartSeriesOverlap.Run();
+            //SetAutomaticSeriesFillColor.Run();
+            //ValidateChartLayoutAdded.Run();
+            //SetChartDataFromWorkBook.Run();
+            //SetCategoryAxisLabelDistance.Run();
+            //SetlegendCustomOptions.Run();
+            //SetDataLabelsPercentageSign.Run();
+            //DoughnutChartHole.Run();
+            //ManagePropertiesCharts.Run();
+            //SetGapWidth.Run();
+            //AutomaticChartSeriescolor.Run();
+            //DisplayPercentageAsLabels.Run();
+            //SecondPlotOptionsforCharts.Run();
+            //SetMarkerOptions.Run();
+            //SetDataRange.Run();
+            //GetWidthHeightFromChartPlotArea.Run();
+            //UsingWorkBookChartcellAsDatalabel.Run();
+            //SwitchChartRowColumns.Run();
+            //EditChartDatainExternalWorkbook.Run();
+            //SetExternalWorkbook.Run();
+            //CreateExternalWorkbook.Run();
+            //EditChartDatainExternalWorkbook.Run();
             //SetExternalWorkbook.Run();
             //CreateExternalWorkbook.Run();
             //SupportOfBubbleSizeRepresentation.Run();
 
-			//// =====================================================
-			////                    Presentations 
-			//// =====================================================
+            //// =====================================================
+            ////                    Presentations 
+            //// =====================================================
 
-			//// =====================================================
-			////               Presentations - Conversion
-			//// =====================================================
+            //// =====================================================
+            ////               Presentations - Conversion
+            //// =====================================================
 
-			//ConvertingPresentationToHtmlWithEmbedAllFontsHtmlController.Run();
-			//ConvertToPDF.Run();
-			//ConvertToPDFWithHiddenSlides.Run();
-			//CustomOptionsPDFConversion.Run();
-			//ConvertPresentationToPasswordProtectedPDF.Run();
-			//ConvertSpecificSlideToPDF.Run();
-			//ConvertSlidesToPdfNotes.Run();
-			//PresentationToTIFFWithDefaultSize.Run();
-			//PresentationToTIFFWithCustomImagePixelFormat.Run();
-			//ConvertWithNoteToTiff.Run();
-			//ConvertWholePresentationToHTML.Run();
-			//ConvertPresentationToResponsiveHTML.Run();
-			//ConvertIndividualSlide.Run();
-			//ConvertWithCustomSize.Run();
-			//ConvertNotesSlideView.Run();
-			//ConvertWithoutXpsOptions.Run();
-			//ConvertWithXpsOptions.Run();
-			//ConvetToSWF.Run();
-			//ConversionToTIFFNotes.Run();
-			//GeneratingSVGWithCustomShapeIDS.Run();
-			//ConvertNotesSlideViewToPDF.Run();
-			//CreateNewPresentation.Run();
-			//PPTtoPPTX.Run();
-			//ExportMediaFilestohtml.Run();
-			//SetInvertFillColorChart.Run();
-			//ExportShapeToSVG.Run();
-			// =====================================================
-			//// =====================================================
-			//// Presentations -   Opening
-			//// =====================================================
-			//// =====================================================
+            //ConvertingPresentationToHtmlWithEmbedAllFontsHtmlController.Run();
+            //ConvertToPDF.Run();
+            //ConvertToPDFWithHiddenSlides.Run();
+            //CustomOptionsPDFConversion.Run();
+            //ConvertPresentationToPasswordProtectedPDF.Run();
+            //ConvertSpecificSlideToPDF.Run();
+            //ConvertSlidesToPdfNotes.Run();
+            //PresentationToTIFFWithDefaultSize.Run();
+            //PresentationToTIFFWithCustomImagePixelFormat.Run();
+            // ConvertWithNoteToTiff.Run();
+            //ConvertWholePresentationToHTML.Run();
+            //ConvertPresentationToResponsiveHTML.Run();
+            //ConvertIndividualSlide.Run();
+            //ConvertWithCustomSize.Run();
+            //ConvertNotesSlideView.Run();
+            //ConvertWithoutXpsOptions.Run();
+            //ConvertWithXpsOptions.Run();
+            //ConvetToSWF.Run();
+            //ConversionToTIFFNotes.Run();
+            //GeneratingSVGWithCustomShapeIDS.Run();
+            // ConvertNotesSlideViewToPDF.Run();
+            //CreateNewPresentation.Run();
+            //PPTtoPPTX.Run();
+            //ExportMediaFilestohtml.Run();
+            //SetInvertFillColorChart.Run();
+            //ExportShapeToSVG.Run();
+            //CovertToPDFWithProgressUpdate.Run();
+            // =====================================================
+            //// =====================================================
+            //// Presentations -   Opening
+            //// =====================================================
+            //// =====================================================
 
-			OpenPresentation.Run();
+            //OpenPresentation.Run();
             //LoadFormatEnumeration.Run();
             //OpenPasswordPresentation.Run();
             //VerifyingPresentationWithoutloading.Run();
@@ -191,8 +194,9 @@ namespace Aspose.Slides.Examples.CSharp
             //SaveToStream.Run();
             //SaveWithPassword.Run();
             //SaveAsPredefinedViewType.Run();
-            // AddImageFromSVGObject.Run();
+            //AddImageFromSVGObject.Run();
             //ConvertSvgImageObjectIntoGroupOfShapes.Run();
+           // AddBlobImageToPresentation.Run();
             //// =====================================================
             ////                    Shapes
             //// =====================================================
@@ -217,7 +221,7 @@ namespace Aspose.Slides.Examples.CSharp
             //FormatJoinStyles.Run();
             //FormatLines.Run();
             //FormattedEllipse.Run();
-            //Apply3DRotationEffectOnShape.Run();
+            //Apply3DRotationEffecrOnShapes.Run();
             //FormattedRectangle.Run();
             //PictureFrameFormatting.Run();
             //RotatingShapes.Run();
@@ -270,8 +274,9 @@ namespace Aspose.Slides.Examples.CSharp
             //// =====================================================
 
             //RemoveNotesAtSpecificSlide.Run();
-            //RemoveNotesFromAllSlides.Run();           
+            //RemoveNotesFromAllSlides.Run();
             //HeaderAndFooterInNotesSlide.Run();
+            //  RenderingNotesWhileConvertingToHTML.Run();
             //// =====================================================
             ////                    Slides - Background
             //// =====================================================
@@ -280,6 +285,7 @@ namespace Aspose.Slides.Examples.CSharp
             //SetImageAsBackground.Run();
             //SetSlideBackgroundMaster.Run();
             //SetSlideBackgroundNormal.Run();
+            //GetBackgroundEffectiveValues.Run();
 
             //// =====================================================
             ////                    Slides - Transitions
@@ -290,6 +296,7 @@ namespace Aspose.Slides.Examples.CSharp
             //ManageSimpleSlideTransitions.Run();
             //ManagingBetterSlideTransitions.Run();
             //SetTransitionEffects.Run();
+            //SupportOfMorphTransition.Run();
 
             //// =====================================================
             ////                    Slides - Thumbnail
@@ -305,7 +312,7 @@ namespace Aspose.Slides.Examples.CSharp
 
             //AddSlideComments.Run();
             //AccessSlideComments.Run();
-            //AddParentComments.Run();		
+            //AddParentComments.Run();
 
             //// =====================================================
             ////                    Slides - Layout
@@ -313,7 +320,7 @@ namespace Aspose.Slides.Examples.CSharp
 
             //AddLayoutSlides.Run();
             //SetSizeAndType.Run();
-            //SetPDFPageSize.Run();       
+            //SetPDFPageSize.Run();
             //SetSlideSizeScale.Run();
             //SetChildFooter.Run();
             //HeaderFooterManager.Run();
@@ -423,7 +430,8 @@ namespace Aspose.Slides.Examples.CSharp
             //AddEmbeddedFonts.Run();
             //AddingSuperscriptAndSubscriptTextInTextFrame.Run();
             //MutilevelBullets.Run();
-		//AddColumnsinTextFrame.Run();
+            //AddColumnsinTextFrame.Run();
+            //SettingPresentationLanguageAndShapeText.Run();
 
             //// =====================================================
             ////                    VBA Macros
@@ -431,8 +439,8 @@ namespace Aspose.Slides.Examples.CSharp
 
             //AddVBAMacros.Run();
             //RemoveVBAMacros.Run();
-		
-          //// =====================================================
+
+            //// =====================================================
             ////                    Presentation Views
             //// =====================================================
 
@@ -564,6 +572,10 @@ namespace Aspose.Slides.Examples.CSharp
         public static String GetDataDir_Video()
         {
             return Path.GetFullPath(GetDataDir_Data() + "Video/");
+        }
+        public static String GetDataDir_Slides_Views()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "Slides/Views/");
         }
 
         private static string GetDataDir_Data()
