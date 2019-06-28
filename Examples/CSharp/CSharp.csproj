@@ -43,9 +43,13 @@
       <HintPath>..\packages\Aspose.Cells.19.4.0\lib\net40\Aspose.Cells.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Aspose.Slides, Version=19.5.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Slides.NET.19.5.0\lib\net4.0-client\Aspose.Slides.dll</HintPath>
+    <Reference Include="Aspose.Slides, Version=19.6.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Slides.NET.19.6.0\lib\net4.0-client\Aspose.Slides.dll</HintPath>
       <Private>True</Private>
+    </Reference>
+     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Data\lib\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -54,19 +58,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApplyLicense\MeteredLicensing.cs" />
     <Compile Include="Charts\AddDoughnutCallout.cs" />
     <Compile Include="Charts\BoxChart.cs" />
     <Compile Include="Charts\ChangeColorOfCategories.cs" />
     <Compile Include="Charts\ChartMarkerOptionsOnDataPoint.cs" />
+    <Compile Include="Charts\CreateExternalWorkbook.cs" />
+    <Compile Include="Charts\DataSourceTypePropertyAdded.cs" />
+    <Compile Include="Charts\EditChartDatainExternalWorkbook.cs" />
     <Compile Include="Charts\FonSizeLegend.cs" />
     <Compile Include="Charts\FontPropertiesForInvidualLegend.cs" />
     <Compile Include="Charts\FunnelChart.cs" />
+    <Compile Include="Charts\GetActualPositionOFChartDatalabel.cs" />
     <Compile Include="Charts\GetChartImage.cs" />
+    <Compile Include="Charts\GetValuesAndUnitScaleFromAxis.cs" />
+    <Compile Include="Charts\GetWidthHeightFromChartPlotArea.cs" />
     <Compile Include="Charts\HistogramChart.cs" />
+    <Compile Include="Charts\IActualLayoutAdded.cs" />
     <Compile Include="Charts\InvertIfNegativeForIndividualSeries.cs" />
     <Compile Include="Charts\OrganizationChart.cs" />
     <Compile Include="Charts\SetChartDataFromWorkBook.cs" />
     <Compile Include="Charts\MultiCategoryChart.cs" />
+    <Compile Include="Charts\SetExternalWorkbook.cs" />
     <Compile Include="Charts\SetInvertFillColorChart.cs" />
     <Compile Include="Charts\SetDataRange.cs" />
     <Compile Include="Charts\AddCustomError.cs" />
@@ -89,6 +102,8 @@
     <Compile Include="Charts\SetGapWidth.cs" />
     <Compile Include="Charts\SetlegendCustomOptions.cs" />
     <Compile Include="Charts\SetMarkerOptions.cs" />
+    <Compile Include="Charts\SettingAutomicPieChartSliceColors.cs" />
+    <Compile Include="Charts\SettingCalloutForDataLabel.cs" />
     <Compile Include="Charts\SettingDateFormatForCategoryAxis.cs" />
     <Compile Include="Charts\SettingFontProperties.cs" />
     <Compile Include="Charts\SettingPositionAxis.cs" />
@@ -101,9 +116,27 @@
     <Compile Include="Charts\SupportForPrecisionOfData.cs" />
     <Compile Include="Charts\SupportForStockChart.cs" />
     <Compile Include="Charts\SupportForSwitchingRowsAndColumns.cs" />
+    <Compile Include="Charts\SupportOfBubbleSizeRepresentation.cs" />
     <Compile Include="Charts\SwitchChartRowColumns.cs" />
     <Compile Include="Charts\TreeMapChart.cs" />
+    <Compile Include="Charts\UsingWorkBookChartcellAsDatalabel.cs" />
+    <Compile Include="Charts\ValidateChartLayoutAdded.cs" />
+    <Compile Include="obj\x86\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\x86\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\x86\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Presentations\Conversion\ConvertingPresentationToHtmlWithEmbedAllFontsHtmlController.cs" />
+    <Compile Include="Presentations\Conversion\ConvertingPresentationToHTMLWithPreservingOriginalFonts.cs" />
+    <Compile Include="Presentations\Conversion\ConvertWholePresentationToHTMLWithMediaFiles.cs" />
+    <Compile Include="Presentations\Conversion\CovertToPDFWithProgressUpdate.cs" />
+    <Compile Include="Presentations\Conversion\CustomHeaderAndFontsController.cs" />
+    <Compile Include="Presentations\Conversion\CustomSvgShapeFormattingController.cs" />
     <Compile Include="Presentations\Conversion\ExportShapeToSVG.cs" />
+    <Compile Include="Presentations\Conversion\ExportToHTMLWithResponsiveLayout.cs" />
+    <Compile Include="Presentations\Conversion\GeneratingSVGWithCustomShapeIDS.cs" />
+    <Compile Include="Presentations\Conversion\LinkAllFontsHtmlController.cs" />
+    <Compile Include="Presentations\Conversion\RenderingNotesWhileConvertingToHTML.cs" />
+    <Compile Include="Presentations\Conversion\SavingHTMLAndCSSFileWhenExportingIntoHTML.cs" />
+    <Compile Include="Presentations\Opening\LoadFormatEnumeration.cs" />
     <Compile Include="Presentations\Properties\AddCustomDocumentProperties.cs" />
     <Compile Include="Presentations\Conversion\ConversionToTIFFNotes.cs" />
     <Compile Include="Presentations\Conversion\ConvertIndividualSlide.cs" />
@@ -114,19 +147,54 @@
     <Compile Include="Presentations\Conversion\ConvertToPDFWithHiddenSlides.cs" />
     <Compile Include="Presentations\Conversion\ConvertWholePresentationToHTML.cs" />
     <Compile Include="Presentations\Properties\SupportForInterrupt.cs" />
+    <Compile Include="Presentations\Saving\AddBlobImageToPresentation.cs" />
+    <Compile Include="Presentations\Saving\AddImageFromSVGObject.cs" />
+    <Compile Include="Presentations\Saving\AddImageFromSVGObjectFromExternalResource.cs" />
+    <Compile Include="Presentations\Saving\ConvertSvgImageObjectIntoGroupOfShapes.cs" />
+    <Compile Include="Rendering-Printing\PrintPreview.cs" />
     <Compile Include="Rendering-Printing\RenderComments.cs" />
     <Compile Include="Rendering-Printing\RenderingEmoji.cs" />
     <Compile Include="Shapes\AddVideoFrameFromWebSource.cs" />
+    <Compile Include="Shapes\Apply3DRotationEffectOnShape.cs" />
     <Compile Include="Shapes\ImageAsEMF.cs" />
+    <Compile Include="Shapes\InterlopShapeID.cs" />
     <Compile Include="Shapes\StretchOffsetLeftForPictureFrame.cs" />
+    <Compile Include="Shapes\SubstitutePictureTitleOfOLEObjectFrame.cs" />
+    <Compile Include="Slides\Background\GetBackgroundEffectiveValues.cs" />
+    <Compile Include="Slides\Comments\AddParentComments.cs" />
     <Compile Include="Slides\CRUD\AddNotesSlideWithNotesStyle.cs" />
+    <Compile Include="Slides\CRUD\ISectionCollection.cs" />
+    <Compile Include="Slides\Hyperlinks\AddHyperlink.cs" />
+    <Compile Include="Slides\Hyperlinks\MutableHyperlink.cs" />
+    <Compile Include="Slides\Hyperlinks\RemoveHyperlinks.cs" />
+    <Compile Include="Slides\Hyperlinks\SetHyperLinkColor.cs" />
+    <Compile Include="Slides\Layout\CheckSlidesComparison.cs" />
+    <Compile Include="Slides\Layout\HeaderFooterManager.cs" />
+    <Compile Include="Slides\Layout\SetChildFooter.cs" />
+    <Compile Include="Slides\Layout\SetSlideSizeScale.cs" />
     <Compile Include="Slides\Notes\HeaderAndFooterInNotesSlide.cs" />
+    <Compile Include="Slides\Transitions\SetTransitionMorphType .cs" />
+    <Compile Include="Slides\Transitions\SupportOfMorphTransition.cs" />
+    <Compile Include="Slides\Views\ManagePresenetationNormalViewState.cs" />
+    <Compile Include="SmartArts\BulletFillFormat.cs" />
     <Compile Include="SmartArts\CustomChildNodesInSmartArt.cs" />
+    <Compile Include="Tables\AddImageInsideTableCells.cs" />
+    <Compile Include="Tables\IdentifyingTheMergedCellsinTable.cs" />
+    <Compile Include="Tables\SetTextFormattingInsideTable.cs" />
+    <Compile Include="Tables\TextFormattingInsideTableColumn.cs" />
+    <Compile Include="Tables\TextFormattingInsideTableRow.cs" />
+    <Compile Include="Text\AddColumnInTexBoxes.cs" />
+    <Compile Include="Text\AddColumnsinTextFrame.cs" />
     <Compile Include="Text\AddEmbeddedFonts.cs" />
     <Compile Include="Text\AddingSuperscriptAndSubscriptTextInTextFrame.cs" />
     <Compile Include="Text\EffectTextBoxParagraph.cs" />
+    <Compile Include="Text\EmbedFontsInHtml.cs" />
     <Compile Include="Text\EndParaGraphProperties.cs" />
     <Compile Include="Text\GetFontsFolders.cs" />
+    <Compile Include="Text\GetTextFromSmartArtNode.cs" />
+    <Compile Include="Text\HighlightText.cs" />
+    <Compile Include="Text\HighlightTextusingRegex.cs" />
+    <Compile Include="Text\LoadExternalFont.cs" />
     <Compile Include="Text\ManageEmbeddedFonts.cs" />
     <Compile Include="Presentations\Conversion\ConvetToSWF.cs" />
     <Compile Include="Presentations\Conversion\CreateNewPresentation.cs" />
@@ -165,7 +233,6 @@
     <Compile Include="Slides\Media\ExtractVideo.cs" />
     <Compile Include="Slides\Transitions\ManagingBetterSlideTransitions.cs" />
     <Compile Include="Slides\Transitions\ManageSimpleSlideTransitions.cs" />
-    <Compile Include="Slides\Hyperlink\RemoveHyperlinks.cs" />
     <Compile Include="Slides\Notes\RemoveNotesAtSpecificSlide.cs" />
     <Compile Include="Slides\Notes\RemoveNotesFromAllSlides.cs" />
     <Compile Include="Slides\Layout\SetPDFPageSize.cs" />
@@ -199,6 +266,9 @@
     <Compile Include="Tables\VerticallyAlignText.cs" />
     <Compile Include="Text\ManageParagraphPictureBulletsInPPT.cs" />
     <Compile Include="Text\MutilevelBullets.cs" />
+    <Compile Include="Text\SettingPresentationLanguageAndShapeText.cs" />
+    <Compile Include="Text\SetTransparencyOfTextInShadow.cs" />
+    <Compile Include="Text\SpecifyFontsUsedWithPresentation.cs" />
     <Compile Include="Text\UseCustomFonts.cs" />
     <Compile Include="VBA\AddVBAMacros.cs" />
     <Compile Include="Text\ApplyInnerShadow.cs" />
