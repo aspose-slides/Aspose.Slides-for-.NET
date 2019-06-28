@@ -33,9 +33,9 @@ namespace Aspose.Slides.Examples.CSharp.Slides.Thumbnail
                 float ScaleX = (float)(1.0 / pres.SlideSize.Size.Width) * desiredX;
                 float ScaleY = (float)(1.0 / pres.SlideSize.Size.Height) * desiredY;
 
-                // Create a full scale image
-                Bitmap bmp = sld.NotesSlideManager.NotesSlide.GetThumbnail(ScaleX, ScaleY);
-
+               
+                // Create a full scale image                
+                Bitmap bmp = sld.GetThumbnail(ScaleX, ScaleY);
                 // Save the image to disk in JPEG format
                 bmp.Save(dataDir + "Notes_tnail_out.jpg", System.Drawing.Imaging.ImageFormat.Jpeg);
             }
