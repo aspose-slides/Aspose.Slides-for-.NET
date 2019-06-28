@@ -1,4 +1,5 @@
 ﻿using Aspose.Slides.Export;
+using System;
 
 /*
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Slides for .NET API reference 
@@ -10,14 +11,14 @@ please feel free to contact us using http://www.aspose.com/community/forums/defa
 
 namespace Aspose.Slides.Examples.CSharp.Slides.Layout
 {
-    class AddLayoutSlides
+    class CheckSlidesComparison
     {
         public static void Run()
         {
             //ExStart:CheckSlidesComparison
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Slides_Presentations_Layout();
-            using (Presentation presentation1 = new Presentation(daraDir + "AccessSlides.pptx"))
+            using (Presentation presentation1 = new Presentation(dataDir + "AccessSlides.pptx"))
             using (Presentation presentation2 = new Presentation(dataDir + "HelloWorld.pptx"))
             {
                 for (int i = 0; i < presentation1.Masters.Count; i++)

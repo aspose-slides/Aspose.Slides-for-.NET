@@ -5,11 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 using Aspose.Slides;
 using Aspose.Slides.Export;
-namespace ConsoleApplication19
+using Aspose.Slides.Examples.CSharp;
+
+namespace Aspose.Slides.Examples.CSharp.Slides.Layout
 {
     class SetSlideSizeScale
     {
-        static void Main(string[] args)
+        public static void Run()
         {
 
             //ExStart:SetSlideSizeScale

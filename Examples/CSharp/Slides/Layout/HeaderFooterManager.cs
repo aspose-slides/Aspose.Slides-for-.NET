@@ -34,8 +34,12 @@ namespace Aspose.Slides.Examples.CSharp.Slides.Layout
                 }
                 headerFooterManager.SetFooterText("Footer text"); // Method SetFooterText is used for setting text to slide footer placeholder.
                 headerFooterManager.SetDateTimeText("Date and time text"); // Method SetDateTimeText is used for setting text to slide date-time placeholder.
+
+
+
+                presentation.Save(dataDir + "Presentation.ppt", SaveFormat.Ppt);
             }
-            presentation.Save(dataDir+"Presentation.ppt",SaveFormat.ppt);
+            
             //ExEnd:HeaderFooterManager
         }
     }
