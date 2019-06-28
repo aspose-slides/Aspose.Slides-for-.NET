@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Aspose.Slides;
+using Aspose.Slides.Export;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
