@@ -15,7 +15,7 @@ namespace CSharp.Slides.Views
 
             //ExStart:ManagePresenetationNormalViewState
             // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir_Slides_Presentations_Views();
+            string dataDir = RunExamples.GetDataDir_Slides_Views();
 
             using (Presentation pres = new Presentation())
             {
