@@ -1,4 +1,5 @@
 using Aspose.Slides.Export;
+using System.IO;
 
 /*
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Slides for .NET API reference 
@@ -18,7 +19,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Conversion
             string dataDir = RunExamples.GetDataDir_Conversion();
             using (Presentation pres = new Presentation(dataDir+"pptxFileName.pptx"))
             {
-                using (FileStream stream = new FileStream(outputPath, FileMode.OpenOrCreate))
+                using (FileStream stream = new FileStream(dataDir + "pptxFileName.svg", FileMode.OpenOrCreate))
                 {
                     SVGOptions svgOptions = new SVGOptions
                     {
