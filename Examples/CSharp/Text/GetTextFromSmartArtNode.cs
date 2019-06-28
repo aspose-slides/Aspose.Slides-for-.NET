@@ -1,6 +1,8 @@
 using System.IO;
 
 using Aspose.Slides;
+using Aspose.Slides.SmartArt;
+using System;
 
 namespace Aspose.Slides.Examples.CSharp.Text
 {
@@ -12,7 +14,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Text();
 
-          using (Presentation pres = new Presentation("Presentation.pptx"))
+          using (Presentation presentation = new Presentation("Presentation.pptx"))
 {
             ISlide slide = presentation.Slides[0];
             ISmartArt smartArt = (ISmartArt)slide.Shapes[0];

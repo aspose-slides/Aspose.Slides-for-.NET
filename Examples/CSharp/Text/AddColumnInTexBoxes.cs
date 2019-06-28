@@ -1,6 +1,7 @@
 using System.IO;
 
 using Aspose.Slides;
+using Aspose.Slides.Export;
 
 namespace Aspose.Slides.Examples.CSharp.Text
 {

@@ -4,7 +4,7 @@ using Aspose.Slides;
 
 namespace Aspose.Slides.Examples.CSharp.Text
 {
-    public class TextBoxOnSlideProgram
+    public class SettingPresentationLanguageAndShapeText
     {
         public static void Run()
         {
@@ -26,4 +26,3 @@ namespace Aspose.Slides.Examples.CSharp.Text
             // ExEnd:SettingPresentationLanguageAndShapeText
         }
     }
-}
