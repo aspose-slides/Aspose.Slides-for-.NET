@@ -20,20 +20,21 @@ namespace Aspose.Slides.Examples.CSharp.Charts
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Charts();
 
-           using (Presentation pres = new Presentation(dataDir+"pres.pptx"))
-           {
-            ISlide slide = pres.Slides[1];
-            IChart chart = (IChart)slide.Shapes[0];
-            ChartDataSourceType sourceType = chart.ChartData.DataSourceType;
-            if (sourceType == ChartDataSourceType.ExternalWorkbook)
+            using (Presentation pres = new Presentation(dataDir + "pres.pptx"))
             {
-            string path = chart.ChartData.ExternalWorkbookPath;
-             }
-            }
+                ISlide slide = pres.Slides[1];
+                IChart chart = (IChart)slide.Shapes[0];
+                ChartDataSourceType sourceType = chart.ChartData.DataSourceType;
+                if (sourceType == ChartDataSourceType.ExternalWorkbook)
+                {
+                    string path = chart.ChartData.ExternalWorkbookPath;
+                }
                 // Saving presentation
                 pres.Save(dataDir + "Result.pptx", SaveFormat.Pptx);
+
             }
-            //ExEnd:DataSourceTypePropertyAdded
+
         }
+        //ExEnd:DataSourceTypePropertyAdded
     }
 }

@@ -32,7 +32,7 @@ namespace CSharp.Charts
 
 				series[0].DataPoints[2].InvertIfNegative = true;
 
-				pres.Save(dataDir+"", SaveFormat.Pptx);
+				pres.Save(dataDir+ "InvertIfNegativeForIndividualSeries.pptx", SaveFormat.Pptx);
 			}
 
 		}

@@ -20,21 +20,23 @@ namespace Aspose.Slides.Examples.CSharp.Charts
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Charts();
 
-          using (Presentation pres = new Presentation())
-{
-          Chart chart = (Chart)pres.Slides[0].Shapes.AddChart(ChartType.Area, 100, 100, 500, 350);
-          chart.ValidateChartLayout();
+            using (Presentation pres = new Presentation())
+            {
+                Chart chart = (Chart)pres.Slides[0].Shapes.AddChart(ChartType.Area, 100, 100, 500, 350);
+                chart.ValidateChartLayout();
 
-          double maxValue = chart.Axes.VerticalAxis.ActualMaxValue;
-          double minValue = chart.Axes.VerticalAxis.ActualMinValue;
+                double maxValue = chart.Axes.VerticalAxis.ActualMaxValue;
+                double minValue = chart.Axes.VerticalAxis.ActualMinValue;
 
-          double majorUnit = chart.Axes.HorizontalAxis.ActualMajorUnit;
-             double minorUnit = chart.Axes.HorizontalAxis.ActualMinorUnit;
-}
+                double majorUnit = chart.Axes.HorizontalAxis.ActualMajorUnit;
+                double minorUnit = chart.Axes.HorizontalAxis.ActualMinorUnit;
 
                 // Saving presentation
-                presentation.Save(dataDir + "ErrorBars_out.pptx", SaveFormat.Pptx);
+                pres.Save(dataDir + "ErrorBars_out.pptx", SaveFormat.Pptx);
             }
-            //ExEnd:GetValuesAndUnitScaleFromAxis
+
+
         }
+        //ExEnd:GetValuesAndUnitScaleFromAxis
     }
+}

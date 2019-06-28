@@ -1,6 +1,7 @@
 ﻿using Aspose.Slides.Charts;
 using Aspose.Slides.Export;
 using Aspose.Slides;
+using System.Drawing;
 
 /*
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Slides for .NET API reference 
@@ -48,7 +49,7 @@ namespace Aspose.Slides.Examples.CSharp.Charts
                     }
                 }
 
-                pres.Save(pptxFileName, SaveFormat.Pptx);
+                pres.Save(dataDir + "GetActualPositionOFChartDatalabel", SaveFormat.Pptx);
             }
 
             //ExEnd:GetActualPositionOFChartDatalabel

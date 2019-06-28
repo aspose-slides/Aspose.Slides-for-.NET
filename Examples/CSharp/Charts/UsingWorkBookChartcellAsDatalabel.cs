@@ -46,7 +46,7 @@ namespace Aspose.Slides.Examples.CSharp.Charts
                 series[0].Labels[1].ValueFromCell = wb.GetCell(0, "A11", lbl1);
                 series[0].Labels[2].ValueFromCell = wb.GetCell(0, "A12", lbl2);
 
-                pres.Save(path + "resultchart.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
+                pres.Save(dataDir + "resultchart.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
 
             }
        //ExEnd:UsingWorkBookChartcellAsDatalabel

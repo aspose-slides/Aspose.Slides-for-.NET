@@ -21,11 +21,14 @@ namespace Aspose.Slides.Examples.CSharp.Charts
                 double y = chart.PlotArea.ActualY;
                 double w = chart.PlotArea.ActualWidth;
                 double h = chart.PlotArea.ActualHeight;
+
+
+                // Saving presentation
+                pres.Save(dataDir + "Result.pptx", SaveFormat.Pptx);
             }
           
 
-            // Saving presentation
-            pres.Save(dataDir + "Result.pptx", SaveFormat.Pptx);
+            
             //ExEnd:ValidateChartLayoutAdded
         }
     }
