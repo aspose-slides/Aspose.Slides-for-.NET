@@ -19,10 +19,15 @@ namespace Aspose.Slides.Examples.CSharp.Conversion
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Conversion();
 
-            using (Presentation pres = new Presentation("Presentation.pptx"))
+            using (Presentation pres = new Presentation(dataDir + "Presentation.pptx"))
             {
+                HtmlOptions opt = new HtmlOptions();
+
+                INotesCommentsLayoutingOptions options = opt.NotesCommentsLayouting;
+                options.NotesPosition = NotesPositions.BottomFull;
+
                 // Saving notes pages
-                pres.Save("Output.html", SaveFormat.HtmlNotes);
+                pres.Save(dataDir + "Output.html", SaveFormat.Html, opt);
             }
             //ExEnd:RenderingNotesWhileConvertingToHTML
         }

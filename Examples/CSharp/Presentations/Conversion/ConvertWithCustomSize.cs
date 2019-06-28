@@ -28,7 +28,9 @@ namespace Aspose.Slides.Examples.CSharp.Conversion
 
                 // Setting compression type
                 opts.CompressionType = TiffCompressionTypes.Default;
-                opts.IncludeComments = true;
+
+                INotesCommentsLayoutingOptions notesOptions = opts.NotesCommentsLayouting;
+                notesOptions.NotesPosition = NotesPositions.BottomFull;
                 // Compression Types
 
                 // Default - Specifies the default compression scheme (LZW).
@@ -40,7 +42,7 @@ namespace Aspose.Slides.Examples.CSharp.Conversion
 
                 // Depth depends on the compression type and cannot be set manually.
                 // Resolution unit  is always equal to “2” (dots per inch)
- 
+
                 // Setting image DPI
                 opts.DpiX = 200;
                 opts.DpiY = 100;

@@ -21,8 +21,13 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Conversion
             // Instantiate a Presentation object that represents a presentation file
             using (Presentation presentation = new Presentation(dataDir + "NotesFile.pptx"))
             {
+                PdfOptions pdfOptions = new PdfOptions();
+                INotesCommentsLayoutingOptions options = pdfOptions.NotesCommentsLayouting;
+                options.NotesPosition = NotesPositions.BottomFull;
+
+                
                 // Saving the presentation to PDF notes
-                presentation.Save(dataDir + "Pdf_Notes_out.tiff", SaveFormat.PdfNotes);
+                presentation.Save(dataDir + "Pdf_Notes_out.pdf", SaveFormat.Pdf, pdfOptions);
             }
             //ExEnd:ConvertNotesSlideViewToPDF
         } 

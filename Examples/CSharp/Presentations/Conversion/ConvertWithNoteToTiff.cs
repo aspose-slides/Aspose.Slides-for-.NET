@@ -21,8 +21,11 @@ namespace Aspose.Slides.Examples.CSharp.Conversion
             // Instantiate a Presentation object that represents a presentation file
             using (Presentation pres = new Presentation(dataDir + "ConvertWithNoteToTiff.pptx"))
             {
+                TiffOptions opts = new TiffOptions();
+                INotesCommentsLayoutingOptions notesOptions = opts.NotesCommentsLayouting;
+                notesOptions.NotesPosition = NotesPositions.BottomFull;
                 // Saving the presentation to TIFF notes
-                pres.Save(dataDir + "TestNotes_out.tiff", SaveFormat.TiffNotes);
+                pres.Save(dataDir + "TestNotes_out.tiff", SaveFormat.Tiff, opts);
             }
             //ExEnd:ConvertWithNoteToTiff
         }

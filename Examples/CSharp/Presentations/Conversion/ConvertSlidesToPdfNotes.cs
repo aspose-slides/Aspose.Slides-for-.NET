@@ -30,7 +30,15 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Conversion
             // Setting Slide Type and Size 
             //auxPresentation.SlideSize.SetSize(presentation.SlideSize.Size.Width, presentation.SlideSize.Size.Height,SlideSizeScaleType.EnsureFit);
             auxPresentation.SlideSize.SetSize(612F, 792F,SlideSizeScaleType.EnsureFit);
-            auxPresentation.Save(dataDir + "PDFnotes_out.pdf", SaveFormat.PdfNotes);
+
+
+            PdfOptions pdfOptions = new PdfOptions();
+            INotesCommentsLayoutingOptions options = pdfOptions.NotesCommentsLayouting;
+            options.NotesPosition = NotesPositions.BottomFull;
+
+
+
+            auxPresentation.Save(dataDir + "PDFnotes_out.pdf", SaveFormat.Pdf, pdfOptions);
             //ExEnd:ConvertSlidesToPdfNotes
         }
     }

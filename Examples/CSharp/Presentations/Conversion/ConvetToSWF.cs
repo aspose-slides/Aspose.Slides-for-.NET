@@ -24,11 +24,15 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Conversion
             {
                 SwfOptions swfOptions = new SwfOptions();
                 swfOptions.ViewerIncluded = false;
-                swfOptions.IncludeComments = true;
+
+
+                INotesCommentsLayoutingOptions notesOptions = swfOptions.NotesCommentsLayouting;
+                notesOptions.NotesPosition = NotesPositions.BottomFull;
+
                 // Saving presentation and notes pages
                 presentation.Save(dataDir + "SaveAsSwf_out.swf", SaveFormat.Swf, swfOptions);
                 swfOptions.ViewerIncluded = true;
-                presentation.Save(dataDir + "SaveNotes_out.swf", SaveFormat.SwfNotes, swfOptions);
+                presentation.Save(dataDir + "SaveNotes_out.swf", SaveFormat.Swf, swfOptions);
             }
             //ExEnd:ConvetToSWF
         } 
