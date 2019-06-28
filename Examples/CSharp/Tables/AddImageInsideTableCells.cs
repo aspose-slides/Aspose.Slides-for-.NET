@@ -11,7 +11,7 @@ please feel free to contact us using http://www.aspose.com/community/forums/defa
 */
 namespace Aspose.Slides.Examples.CSharp.Tables
 {
-    public class AddImageinsideTableCell
+    public class AddImageinsideTableCells                                                                            
     {
         public static void Run()
         {
@@ -45,7 +45,7 @@ namespace Aspose.Slides.Examples.CSharp.Tables
             tbl[0, 0].FillFormat.PictureFillFormat.CropRight = 20;
             tbl[0, 0].FillFormat.PictureFillFormat.CropLeft = 20;
             tbl[0, 0].FillFormat.PictureFillFormat.CropTop = 20;
-            tbl[0, 0].FillFormat.PictureFillFormat.Bottom = 20;
+            tbl[0, 0].FillFormat.PictureFillFormat.CropBottom = 20;
             // Save PPTX to Disk
             presentation.Save(dataDir + "Image_In_TableCell_out.pptx", SaveFormat.Pptx);
             // ExEnd:AddImageinsideTableCell

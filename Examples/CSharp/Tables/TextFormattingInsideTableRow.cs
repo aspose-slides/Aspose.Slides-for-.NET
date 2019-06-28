@@ -43,7 +43,7 @@ namespace Aspose.Slides.Examples.CSharp.Tables
             textFrameFormat.TextVerticalType = TextVerticalType.Vertical;
             someTable.Rows[1].SetTextFormat(textFrameFormat);
 
-            presentation.Save(path + "result.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
+            presentation.Save(dataDir + "result.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
 
             // ExEnd:TextFormattingInsideTableRow
          }

@@ -42,7 +42,7 @@ namespace Aspose.Slides.Examples.CSharp.Tables
             someTable.SetTextFormat(textFrameFormat);
 
 
-            presentation.Save(path + "result.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
+            presentation.Save(dataDir + "result.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
             //ExEnd:SetTextFormattingInsideTable
          }
     }

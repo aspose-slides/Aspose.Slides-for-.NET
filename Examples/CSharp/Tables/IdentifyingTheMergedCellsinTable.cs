@@ -1,6 +1,7 @@
 ﻿using System.Drawing;
 using Aspose.Slides.Export;
 using Aspose.Slides;
+using System;
 
 /*
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Slides for .NET API reference 
@@ -12,7 +13,7 @@ please feel free to contact us using http://www.aspose.com/community/forums/defa
 
 namespace Aspose.Slides.Examples.CSharp.Tables
 {
-    public class VerticallyAlignText
+    public class IdentifyingTheMergedCellsinTable
     {
         public static void Run()
         {
