@@ -17,7 +17,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Conversion
         {
             //ExStart:GeneratingSVGWithCustomShapeIDS
             string dataDir = RunExamples.GetDataDir_Conversion();
-            using (Presentation pres = new Presentation(dataDir+"pptxFileName.pptx"))
+            using (Presentation pres = new Presentation(dataDir+ "presentation.pptx"))
             {
                 using (FileStream stream = new FileStream(dataDir + "pptxFileName.svg", FileMode.OpenOrCreate))
                 {

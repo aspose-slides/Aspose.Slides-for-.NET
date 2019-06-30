@@ -17,7 +17,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Conversion
         {
             //ExStart:ConvertingPresentationToHtmlWithEmbedAllFontsHtmlController
             string dataDir = RunExamples.GetDataDir_Conversion();
-            using (Presentation pres = new Presentation(dataDir+"pres.pptx"))
+            using (Presentation pres = new Presentation(dataDir+"presentation.pptx"))
             {
                 // exclude default presentation fonts
                 string[] fontNameExcludeList = { "Calibri", "Arial" };
