@@ -18,7 +18,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Opening
             //ExStart:LoadFormatEnumeration
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_PresentationOpening();
-            bool isOldFormat = PresentationFactory.Instance.GetPresentationInfo(dataDir+"Helloworld.ppt").LoadFormat == LoadFormat.Ppt95;
+            bool isOldFormat = PresentationFactory.Instance.GetPresentationInfo(dataDir+"presentation.ppt").LoadFormat == LoadFormat.Ppt95;
 
            
             }
