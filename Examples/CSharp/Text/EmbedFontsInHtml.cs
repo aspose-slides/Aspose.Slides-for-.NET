@@ -20,7 +20,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
             // ExStart:EmbedFontsInHtml
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Text();
-            using (Presentation pres = new Presentation(dataDir+"pres.pptx"))
+            using (Presentation pres = new Presentation(dataDir+"presentation.pptx"))
             {
                 // exclude default presentation fonts
                 string[] fontNameExcludeList = { "Calibri", "Arial" };

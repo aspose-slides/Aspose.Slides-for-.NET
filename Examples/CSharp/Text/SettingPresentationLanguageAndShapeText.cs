@@ -12,7 +12,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Text();
 
-         using (Presentation pres = new Presentation(dataDir+"test0.pptx"))
+         using (Presentation pres = new Presentation(dataDir+ "presentation.pptx"))
             {
                 IAutoShape shape = pres.Slides[0].Shapes.AddAutoShape(ShapeType.Rectangle, 50, 50, 200, 50);
                 shape.AddTextFrame("Text to apply spellcheck language");

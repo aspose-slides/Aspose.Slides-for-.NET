@@ -19,7 +19,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
             //ExStart:EndParaGraphProperties
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Text();
-            using (Presentation pres = new Presentation(dataDir+"Test.pptx"))
+            using (Presentation pres = new Presentation(dataDir+"presentation.pptx"))
         {
              IAutoShape shape = pres.Slides[0].Shapes.AddAutoShape(ShapeType.Rectangle, 10, 10, 200, 250);
 

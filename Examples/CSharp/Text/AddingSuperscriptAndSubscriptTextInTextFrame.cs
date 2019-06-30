@@ -20,7 +20,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
              //ExStart:AddingSuperscriptAndSubscriptTextInTextFrame
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Text();
-            using (Presentation presentation = new Presentation(dataDir+"test.pptx"))
+            using (Presentation presentation = new Presentation(dataDir+ "presentation.pptx"))
             {
                 // Get slide
                 ISlide slide = presentation.Slides[0];
