@@ -36,13 +36,13 @@ namespace CSharp.Charts
 			//Add new series
 			chart.ChartData.Series.Add(fact.GetCell(defaultWorksheetIndex, 1, 1, "Series 1"), chart.Type);
 
-			String imagePath = @"C:\Users\Public\Pictures\Sample Pictures\";
+			
 			//Set the picture
-			System.Drawing.Image img = (System.Drawing.Image)new Bitmap(imagePath + "Desert.jpg");
+			System.Drawing.Image img = (System.Drawing.Image)new Bitmap(dataDir + "aspose-logo.jpg");
 			IPPImage imgx1 = pres.Images.AddImage(img);
 
 			//Set the picture
-			System.Drawing.Image img2 = (System.Drawing.Image)new Bitmap(imagePath + "Tulips.jpg");
+			System.Drawing.Image img2 = (System.Drawing.Image)new Bitmap(dataDir + "Tulips.jpg");
 			IPPImage imgx2 = pres.Images.AddImage(img2);
 
 			//Take first chart series

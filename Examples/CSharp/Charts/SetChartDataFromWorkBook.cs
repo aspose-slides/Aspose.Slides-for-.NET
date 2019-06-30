@@ -29,7 +29,7 @@ namespace CSharp.Charts
             Workbook workbook = null;
             try
             {
-                workbook = new Aspose.Cells.Workbook("a1.xlsx");
+                workbook = new Aspose.Cells.Workbook(dataDir + "book1.xlsx");
             }
             catch (Exception ex)
             {
