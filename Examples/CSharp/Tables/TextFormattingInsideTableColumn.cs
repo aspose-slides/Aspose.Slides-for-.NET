@@ -21,7 +21,7 @@ namespace Aspose.Slides.Examples.CSharp.Tables
             string dataDir = RunExamples.GetDataDir_Tables();
 
             // Create an instance of Presentation class
-            Presentation pres = new Presentation();
+            Presentation pres = new Presentation(dataDir + "SomePresentationWithTable.pptx");
            
             ISlide slide = pres.Slides[0];
 

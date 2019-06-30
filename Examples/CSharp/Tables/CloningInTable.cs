@@ -20,7 +20,7 @@ namespace Aspose.Slides.Examples.CSharp.Tables
             string dataDir = RunExamples.GetDataDir_Tables();
 
              // Instantiate presentationentation class that representationents PPTX file
-            using (Presentation presentation = new Presentation(dataDir+"Test.pptx"))
+            using (Presentation presentation = new Presentation(dataDir+"presentation.pptx"))
             {
                 // Access first slide
                 ISlide sld = presentation.Slides[0];
