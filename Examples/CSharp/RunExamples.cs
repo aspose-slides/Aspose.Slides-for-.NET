@@ -35,6 +35,8 @@ using CSharp.Slides.Comments;
 using CSharp.Presentations.Saving;
 using CSharp.Slides.Background;
 using CSharp.Slides.Transitions;
+using CSharp.Slides.Hyperlinks;
+using Aspose.Slides.Examples.CSharp.Slides.Hyperlinks;
 
 namespace Aspose.Slides.Examples.CSharp
 {
