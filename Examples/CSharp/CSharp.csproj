@@ -60,6 +60,7 @@
   <ItemGroup>
     <Compile Include="ApplyLicense\MeteredLicensing.cs" />
     <Compile Include="Charts\AddDoughnutCallout.cs" />
+    <Compile Include="Charts\AddingCustomLines.cs" />
     <Compile Include="Charts\BoxChart.cs" />
     <Compile Include="Charts\ChangeColorOfCategories.cs" />
     <Compile Include="Charts\ChartMarkerOptionsOnDataPoint.cs" />
@@ -73,6 +74,7 @@
     <Compile Include="Charts\GetChartImage.cs" />
     <Compile Include="Charts\GetValuesAndUnitScaleFromAxis.cs" />
     <Compile Include="Charts\GetWidthHeightFromChartPlotArea.cs" />
+    <Compile Include="Charts\HideInformationFromChart.cs" />
     <Compile Include="Charts\HistogramChart.cs" />
     <Compile Include="Charts\IActualLayoutAdded.cs" />
     <Compile Include="Charts\InvertIfNegativeForIndividualSeries.cs" />
@@ -92,6 +94,7 @@
     <Compile Include="Charts\DisplayChartLabels.cs" />
     <Compile Include="Charts\DisplayPercentageAsLabels.cs" />
     <Compile Include="Charts\DoughnutChartHole.cs" />
+    <Compile Include="Tables\LockAspectRatio.cs" />
     <Compile Include="Charts\ManagePropertiesCharts.cs" />
     <Compile Include="Charts\PieChart.cs" />
     <Compile Include="Charts\SecondPlotOptionsforCharts.cs" />
@@ -276,6 +279,7 @@
     <Compile Include="Text\CustomRotationAngleTextframe.cs" />
     <Compile Include="Text\LineSpacing.cs" />
     <Compile Include="Text\ManageParagraphFontProperties.cs" />
+    <Compile Include="VBA\ExtractingVBAMacros.cs" />
     <Compile Include="VBA\RemoveVBAMacros.cs" />
     <Compile Include="Text\ReplaceFontsExplicitly.cs" />
     <Compile Include="Text\RotatingText.cs" />
