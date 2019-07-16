@@ -37,7 +37,8 @@ using CSharp.Slides.Background;
 using CSharp.Slides.Transitions;
 using CSharp.Slides.Hyperlinks;
 using Aspose.Slides.Examples.CSharp.Slides.Hyperlinks;
-
+using CSharp.VBA;
+using CSharp.Tables;
 namespace Aspose.Slides.Examples.CSharp
 {
     class RunExamples
@@ -121,7 +122,8 @@ namespace Aspose.Slides.Examples.CSharp
             //SetExternalWorkbook.Run();
             //CreateExternalWorkbook.Run();
             //SupportOfBubbleSizeRepresentation.Run();
-
+            //AddingCustomLines.Run();
+            //HideInformationFromChart.Run();
             //// =====================================================
             ////                    Presentations 
             //// =====================================================
@@ -394,6 +396,7 @@ namespace Aspose.Slides.Examples.CSharp
             //SetFormattingInsideTable.Run();
             //IdentifyingTheMergedCellsinTable.Run();
             //AddImageInsideTableCells.Run();
+	    // LockAspectRatio.Run();
             //// =====================================================
             //// Text
             //// =====================================================
@@ -441,7 +444,7 @@ namespace Aspose.Slides.Examples.CSharp
 
             //AddVBAMacros.Run();
             //RemoveVBAMacros.Run();
-
+            //ExtractingVBAMacros.Run();
             //// =====================================================
             ////                    Presentation Views
             //// =====================================================
