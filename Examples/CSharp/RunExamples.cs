@@ -55,8 +55,8 @@ namespace Aspose.Slides.Examples.CSharp
             ////                    ActiveX
             //// =====================================================
 
-			//   ManageActiveXControl.Run();
-			//LinkingVideoActiveXControl.Run();
+            //   ManageActiveXControl.Run();
+            //LinkingVideoActiveXControl.Run();
 
             // =====================================================
             //                      Charts
@@ -123,7 +123,12 @@ namespace Aspose.Slides.Examples.CSharp
             //CreateExternalWorkbook.Run();
             //SupportOfBubbleSizeRepresentation.Run();
             //AddingCustomLines.Run();
-            //HideInformationFromChart.Run();
+            //HideInformationFromChart.Run()
+            // SetExternalWorkbookWithUpdateChartData.Run();
+            // FontPropertiesForChart.Run();
+            // DefaultMarkersInChart.Run();
+            // ClearSpecificChartSeriesDataPointsData.Run();
+
             //// =====================================================
             ////                    Presentations 
             //// =====================================================
@@ -187,6 +192,7 @@ namespace Aspose.Slides.Examples.CSharp
             //UpdatePresentationPropertiesUsingNewTemplate.Run();
             //UpdatePresentationPropertiesUsingPropertiesOfAnotherPresentationAsATemplate.Run();
             //SupportForInterrupt.Run();
+            //AccessLayoutFormats.Run();
             //// =====================================================
             ////            Presentations -   Saving
             //// =====================================================
@@ -200,7 +206,7 @@ namespace Aspose.Slides.Examples.CSharp
             //SaveAsPredefinedViewType.Run();
             //AddImageFromSVGObject.Run();
             //ConvertSvgImageObjectIntoGroupOfShapes.Run();
-           // AddBlobImageToPresentation.Run();
+            // AddBlobImageToPresentation.Run();
             //// =====================================================
             ////                    Shapes
             //// =====================================================
@@ -396,7 +402,7 @@ namespace Aspose.Slides.Examples.CSharp
             //SetFormattingInsideTable.Run();
             //IdentifyingTheMergedCellsinTable.Run();
             //AddImageInsideTableCells.Run();
-	    // LockAspectRatio.Run();
+            // LockAspectRatio.Run();
             //// =====================================================
             //// Text
             //// =====================================================
@@ -437,12 +443,13 @@ namespace Aspose.Slides.Examples.CSharp
             //MutilevelBullets.Run();
             //AddColumnsinTextFrame.Run();
             //SettingPresentationLanguageAndShapeText.Run();
+            //AnimationEffectinParagraph.Run();
 
             //// =====================================================
             ////                    VBA Macros
             //// =====================================================
 
-            //AddVBAMacros.Run();
+            // AddVBAMacros.Run();
             //RemoveVBAMacros.Run();
             //ExtractingVBAMacros.Run();
             //// =====================================================
