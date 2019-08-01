@@ -43,8 +43,8 @@
       <HintPath>..\packages\Aspose.Cells.19.4.0\lib\net40\Aspose.Cells.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Aspose.Slides, Version=19.6.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Slides.NET.19.6.0\lib\net4.0-client\Aspose.Slides.dll</HintPath>
+    <Reference Include="Aspose.Slides, Version=19.7.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Slides.NET.19.7.0\lib\net4.0-client\Aspose.Slides.dll</HintPath>
       <Private>True</Private>
     </Reference>
      <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
@@ -88,6 +88,12 @@
     <Compile Include="Charts\AddErrorBars.cs" />
     <Compile Include="Charts\AnimatingCategoriesElements.cs" />
     <Compile Include="Charts\AnimatingSeries.cs" />
+    <Compile Include="Charts\ClearSpecificChartSeriesDataPointsData.cs" />
+    <Compile Include="Charts\DefaultMarkersInChart.cs" />
+    <Compile Include="Charts\FontPropertiesForChart.cs" />
+    <Compile Include="Charts\SetExternalWorkbookWithUpdateChartData.cs" />
+    <Compile Include="Presentations\Properties\AccessLayoutFormats.cs" />
+    <Compile Include="Text\AnimationEffectinParagraph.cs" />
     <Compile Include="Charts\AnimatingSeriesElements.cs" />
     <Compile Include="Charts\AutomaticChartSeriescolor.cs" />
     <Compile Include="Charts\ChangeChartCategoryAxis.cs" />
