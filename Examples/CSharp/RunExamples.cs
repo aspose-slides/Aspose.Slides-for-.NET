@@ -39,6 +39,8 @@ using CSharp.Slides.Hyperlinks;
 using Aspose.Slides.Examples.CSharp.Slides.Hyperlinks;
 using CSharp.VBA;
 using CSharp.Tables;
+using CSharp.Shapes;
+
 namespace Aspose.Slides.Examples.CSharp
 {
     class RunExamples
@@ -128,7 +130,7 @@ namespace Aspose.Slides.Examples.CSharp
             // FontPropertiesForChart.Run();
             // DefaultMarkersInChart.Run();
             // ClearSpecificChartSeriesDataPointsData.Run();
-
+	    //SetLayoutMode.Run();	
             //// =====================================================
             ////                    Presentations 
             //// =====================================================
@@ -254,6 +256,10 @@ namespace Aspose.Slides.Examples.CSharp
             //ApplyBevelEffects.Run();
             //AddVideoFrameFromWebSource.Run();
             //AddStretchOffsetForImageFill.Run();
+            //GetShapeBevelEffectiveData.Run();
+            //GetLightRigEffectiveData.Run();
+            //GetCameraEffectiveData.Run();
+            //SetFileTypeForAnEmbeddingObject.Run();
 
             //// =====================================================
             ////                        Slides 
@@ -402,7 +408,9 @@ namespace Aspose.Slides.Examples.CSharp
             //SetFormattingInsideTable.Run();
             //IdentifyingTheMergedCellsinTable.Run();
             //AddImageInsideTableCells.Run();
-            // LockAspectRatio.Run();
+            //LockAspectRatio.Run();
+            //GetEffectiveValuesOfTable.Run();
+		
             //// =====================================================
             //// Text
             //// =====================================================
@@ -444,7 +452,10 @@ namespace Aspose.Slides.Examples.CSharp
             //AddColumnsinTextFrame.Run();
             //SettingPresentationLanguageAndShapeText.Run();
             //AnimationEffectinParagraph.Run();
-
+	    //GetEffectiveValues.Run();
+            //SetLocalFontHeightValues.Run();
+            //GetTextFrameFormatEffectiveData.Run();
+            //GetTextStyleEffectiveData.Run();
             //// =====================================================
             ////                    VBA Macros
             //// =====================================================
