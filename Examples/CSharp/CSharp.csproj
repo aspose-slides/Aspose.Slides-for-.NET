@@ -107,7 +107,6 @@
     <Compile Include="Shapes\GetShapeBevelEffectiveData.cs" />
     <Compile Include="Shapes\SetFileTypeForAnEmbeddingObject.cs" />
     <Compile Include="Tables\GetEffectiveValuesOfTable.cs" />
-    <Compile Include="Tables\LockAspectRatio.cs" />
     <Compile Include="Charts\ManagePropertiesCharts.cs" />
     <Compile Include="Charts\PieChart.cs" />
     <Compile Include="Charts\SecondPlotOptionsforCharts.cs" />
