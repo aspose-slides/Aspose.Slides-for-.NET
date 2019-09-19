@@ -11,39 +11,40 @@ using System.Threading.Tasks;
 
 namespace CSharp.Presentations.Properties
 {
-	public class SupportForInterrupt
-	{
 
-		//ExStart:SupportForInterrupt
-		public static void Run()
-		{
-			string dataDir = RunExamples.GetDataDir_PresentationProperties();
-			Action<InterruptionToken> action = (InterruptionToken token) =>
-			{
-				using (Presentation pres = new Presentation("pres.pptx", new LoadOptions { InterruptionToken = token }))
-				{
-					pres.Slides[0].GetThumbnail(new Size(960, 720));
-					pres.Save("pres.ppt", SaveFormat.Ppt);
-				}
-			};
+    public class SupportForInterrupt
+    {
 
-			InterruptionTokenSource tokenSource = new InterruptionTokenSource();
-			Run(action, tokenSource.Token); // run action in a separate thread from the pool
+        //ExStart:SupportForInterrupt
+        public static void Run()
+        {
 
-			Thread.Sleep(5000); // some work
+            string dataDir = RunExamples.GetDataDir_PresentationProperties();
 
-			tokenSource.Interrupt(); // we don't need the result of an interruptable action
-		}
+            Action<IInterruptionToken> action = (IInterruptionToken token) =>
+            {
+                LoadOptions options = new LoadOptions { InterruptionToken = token };
+                using (Presentation presentation = new Presentation(dataDir + "pres.pptx", options))
+                {
+                    presentation.Save(dataDir + "pres.ppt", SaveFormat.Ppt);
+                }
+            };
 
-		private static void Run(Action<InterruptionToken> action, IInterruptionToken token)
-		{
-			throw new NotImplementedException();
-		}
+            InterruptionTokenSource tokenSource = new InterruptionTokenSource();
+            Run(action, tokenSource.Token); // run action in a separate thread
+            Thread.Sleep(10000);            // timeout
+            tokenSource.Interrupt();        // stop conversion
 
-		static void Run(Action<InterruptionToken> action, InterruptionToken token)
-		{
-			Task.Run(() => { action(token); });
-		}
-		//ExEnd:SupportForInterrupt
-	}
+
+        }
+        private static void Run(Action<IInterruptionToken> action, IInterruptionToken token)
+        {
+            Task.Run(() => { action(token); });
+        }
+
+        //ExEnd:SupportForInterrupt
+
+    }
+
+
 }
