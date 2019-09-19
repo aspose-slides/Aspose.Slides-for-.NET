@@ -20,7 +20,7 @@ namespace Aspose.Slides.Examples.CSharp.Tables
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Tables();
            // Create an instance of Presentation class
-            Presentation presentation = new Presentation();
+            Presentation presentation = new Presentation(dataDir + "pres.pptx");
             ISlide slide = presentation.Slides[0];
 
             ITable someTable = presentation.Slides[0].Shapes[0] as ITable; // let's say that the first shape on the first slide is a table
