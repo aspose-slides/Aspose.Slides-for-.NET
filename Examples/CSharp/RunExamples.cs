@@ -219,7 +219,6 @@ namespace Aspose.Slides.Examples.CSharp
             //AddAudioFrame.Run();
             //AddOLEObjectFrame.Run();
             //AddPlainLineToSlide.Run();
-            //AddSimplePictureFrames.Run();
             //AddVideoFrame.Run();
             //AnimationsOnShapes.Run();
             //ChangeOLEObjectData.Run();
@@ -405,9 +404,9 @@ namespace Aspose.Slides.Examples.CSharp
             //CellSplit.Run();
             //TextFormattingInsideTableColumn.Run();
             //TextFormattingInsideTableRow.Run();
-            //SetFormattingInsideTable.Run();
+            //SetTextFormattingInsideTable.Run();
             //IdentifyingTheMergedCellsinTable.Run();
-            //AddImageInsideTableCells.Run();
+            //AddImageinsideTableCells.Run();
             //LockAspectRatio.Run();
             //GetEffectiveValuesOfTable.Run();
 		
@@ -456,6 +455,7 @@ namespace Aspose.Slides.Examples.CSharp
             //SetLocalFontHeightValues.Run();
             //GetTextFrameFormatEffectiveData.Run();
             //GetTextStyleEffectiveData.Run();
+	    //SetCustomBulletsNumber.Run();
             //// =====================================================
             ////                    VBA Macros
             //// =====================================================
