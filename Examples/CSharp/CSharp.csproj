@@ -93,6 +93,7 @@
     <Compile Include="Charts\FontPropertiesForChart.cs" />
     <Compile Include="Charts\SetExternalWorkbookWithUpdateChartData.cs" />
     <Compile Include="Charts\SetExternalWorkbookFromNetwork.cs" />
+    <Compile Include="Presentations\Conversion\ODPToPPTX.cs" />
     <Compile Include="Presentations\Properties\AccessLayoutFormats.cs" />
     <Compile Include="Text\AnimationEffectinParagraph.cs" />
     <Compile Include="Charts\AnimatingSeriesElements.cs" />
