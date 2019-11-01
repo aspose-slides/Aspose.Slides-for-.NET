@@ -40,6 +40,7 @@ using Aspose.Slides.Examples.CSharp.Slides.Hyperlinks;
 using CSharp.VBA;
 using CSharp.Tables;
 using CSharp.Shapes;
+using CSharp.Presentations.Opening;
 
 namespace Aspose.Slides.Examples.CSharp
 {
@@ -457,6 +458,10 @@ namespace Aspose.Slides.Examples.CSharp
             //GetTextFrameFormatEffectiveData.Run();
             //GetTextStyleEffectiveData.Run();
 	    //SetCustomBulletsNumber.Run();
+            //SetFontFallBack.Run();
+            //FallBackRulesCollection.Run();
+            //RenderingWithFallBackFont.Run();
+            //AddCustomPromptText.Run();
             //// =====================================================
             ////                    VBA Macros
             //// =====================================================
