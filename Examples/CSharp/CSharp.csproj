@@ -95,6 +95,10 @@
     <Compile Include="Charts\SetExternalWorkbookFromNetwork.cs" />
     <Compile Include="Presentations\Conversion\ODPToPPTX.cs" />
     <Compile Include="Presentations\Properties\AccessLayoutFormats.cs" />
+    <Compile Include="Slides\Layout\ManageHeaderFooterText.cs" />
+    <Compile Include="Slides\Media\ExtractAudio.cs" />
+    <Compile Include="Tables\CreateATableFromScratchInASlide.cs" />
+    <Compile Include="Tables\SetFirstRowAsHeader.cs" />
     <Compile Include="Text\AddCustomPromptText.cs" />
     <Compile Include="Text\AnimationEffectinParagraph.cs" />
     <Compile Include="Charts\AnimatingSeriesElements.cs" />
