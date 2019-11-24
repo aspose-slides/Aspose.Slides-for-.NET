@@ -40,6 +40,7 @@ using Aspose.Slides.Examples.CSharp.Slides.Hyperlinks;
 using CSharp.VBA;
 using CSharp.Tables;
 using CSharp.Shapes;
+using CSharp.Slides.Media;
 
 namespace Aspose.Slides.Examples.CSharp
 {
@@ -352,6 +353,7 @@ namespace Aspose.Slides.Examples.CSharp
             //// =====================================================
 
             //ExtractVideo.Run();
+	    //ExtractAudio.Run();
 
             //// =====================================================
             ////            Rendering - Printing a Slide
@@ -410,6 +412,8 @@ namespace Aspose.Slides.Examples.CSharp
             //AddImageinsideTableCells.Run();
             //LockAspectRatio.Run();
             //GetEffectiveValuesOfTable.Run();
+	    //CreateATableFromScratchInASlide.Run();
+            //SetFirstRowAsHeader.Run();
 		
             //// =====================================================
             //// Text
