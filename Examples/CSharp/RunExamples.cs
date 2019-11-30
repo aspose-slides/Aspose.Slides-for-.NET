@@ -261,6 +261,7 @@ namespace Aspose.Slides.Examples.CSharp
             //GetLightRigEffectiveData.Run();
             //GetCameraEffectiveData.Run();
             //SetFileTypeForAnEmbeddingObject.Run();
+	    //ExtractEmbeddedFileDataFromOLEObject.Run();
 
             //// =====================================================
             ////                        Slides 
