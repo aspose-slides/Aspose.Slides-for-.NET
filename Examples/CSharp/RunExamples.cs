@@ -41,6 +41,8 @@ using CSharp.VBA;
 using CSharp.Tables;
 using CSharp.Shapes;
 using CSharp.Slides.Media;
+using CSharp.Presentations.Opening;
+using CSharp.Slides.CRUD;
 
 namespace Aspose.Slides.Examples.CSharp
 {
@@ -131,7 +133,8 @@ namespace Aspose.Slides.Examples.CSharp
             // FontPropertiesForChart.Run();
             // DefaultMarkersInChart.Run();
             // ClearSpecificChartSeriesDataPointsData.Run();
-	    //SetLayoutMode.Run();	
+	    //SetLayoutMode.Run();
+	     //AddColorToDataPoints.Run();
             //// =====================================================
             ////                    Presentations 
             //// =====================================================
@@ -181,6 +184,7 @@ namespace Aspose.Slides.Examples.CSharp
             //GetFileFormat.Run();
             //GetRectangularCoordinatesofParagraph.Run();
             //GetPositionCoordinatesofPortion.Run();
+	    //SetAccessPermissionsToPDF.Run();
 
             //// =====================================================
             ////            Presentations -   Properties
@@ -286,6 +290,7 @@ namespace Aspose.Slides.Examples.CSharp
             //RemoveSlideUsingReference.Run();
             //AddSlides.Run();
             //AddNotesSlideWithNotesStyle.Run();
+	    //CloneSlideIntoSpecifiedSection.Run();
 
             //// =====================================================
             ////                    Slides - Notes
@@ -366,6 +371,7 @@ namespace Aspose.Slides.Examples.CSharp
             //SpecificPrinterPrinting.Run();
             //RenderComments.Run();
             //RenderingEmoji.Run();
+	   //SupportOfDigitalSignature.Run();
             //// =====================================================
             ////                    Smart Arts
             //// =====================================================
