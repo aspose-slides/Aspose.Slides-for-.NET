@@ -24,7 +24,6 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Conversion
 
 
                 Paragraph para = new Paragraph();
-                ITextFrame txt;
 
                 EmbedAllFontsHtmlController embedFontsController = new EmbedAllFontsHtmlController(fontNameExcludeList);
 

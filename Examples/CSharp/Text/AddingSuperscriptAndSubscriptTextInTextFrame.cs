@@ -20,7 +20,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
              //ExStart:AddingSuperscriptAndSubscriptTextInTextFrame
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Text();
-            using (Presentation presentation = new Presentation(dataDir+ "presentation.pptx"))
+            using (Presentation presentation = new Presentation())
             {
                 // Get slide
                 ISlide slide = presentation.Slides[0];
@@ -62,8 +62,8 @@ namespace Aspose.Slides.Examples.CSharp.Text
                 textFrame.Paragraphs.Add(superPar);
                 textFrame.Paragraphs.Add(paragraph2);
 
-                presentation.Save(dataDir+"TestOut.pptx", SaveFormat.Pptx);
-                System.Diagnostics.Process.Start(dataDir + "TestOut.pptx");
+                presentation.Save(RunExamples.OutPath + "TestOut.pptx", SaveFormat.Pptx);
+                System.Diagnostics.Process.Start(RunExamples.OutPath + "TestOut.pptx");
              } 
             //ExEnd:AddingSuperscriptAndSubscriptTextInTextFrame
         }

@@ -7,6 +7,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Aspose.Slides.DOM.Ole;
 
 namespace CSharp.Shapes
 {
@@ -27,7 +28,8 @@ namespace CSharp.Shapes
 
                 // Add Ole objects
                 byte[] allbytes = File.ReadAllBytes(oleSourceFile);
-                IOleObjectFrame oof = slide.Shapes.AddOleObjectFrame(20, 20, 50, 50, "Excel.Sheet.12", allbytes);
+                IOleEmbeddedDataInfo dataInfo = new OleEmbeddedDataInfo(allbytes, "xlsx");
+                IOleObjectFrame oof = slide.Shapes.AddOleObjectFrame(20, 20, 50, 50, dataInfo);
                 oof.IsObjectIcon = true;
 
                 // Add image object

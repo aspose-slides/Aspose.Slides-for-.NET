@@ -36,7 +36,7 @@ namespace CSharp.Text
 
                         ((IAutoShape)shape).TextFrame.Text = text;
 
-                        Console.WriteLine($"Placeholder with text: {text}");
+                        Console.WriteLine("Placeholder with text: {0}", text);
                     }
                 }
 

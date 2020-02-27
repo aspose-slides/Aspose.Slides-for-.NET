@@ -20,11 +20,11 @@ namespace CSharp.Tables
             using (Presentation pres = new Presentation(dataDir + "pres.pptx"))
             {
                 ITable table = (ITable)pres.Slides[0].Shapes[0];
-                Console.WriteLine($"Lock aspect ratio set: {table.ShapeLock.AspectRatioLocked}");
+                Console.WriteLine("Lock aspect ratio set: {0}", table.ShapeLock.AspectRatioLocked);
 
                 table.ShapeLock.AspectRatioLocked = !table.ShapeLock.AspectRatioLocked; // invert
 
-                Console.WriteLine($"Lock aspect ratio set: {table.ShapeLock.AspectRatioLocked}");
+                Console.WriteLine("Lock aspect ratio set: {0}", table.ShapeLock.AspectRatioLocked);
 
                 pres.Save(dataDir + "pres-out.pptx", SaveFormat.Pptx);
             }

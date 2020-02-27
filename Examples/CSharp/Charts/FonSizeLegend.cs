@@ -1,6 +1,5 @@
 ﻿using Aspose.Slides.Charts;
 using Aspose.Slides;
-using Aspose.Slides.Charts;
 using Aspose.Slides.Examples.CSharp;
 using Aspose.Slides.Export;
 using System;

@@ -39,9 +39,9 @@ namespace Aspose.Slides.Examples.CSharp.Tables
             IPPImage imgx1 = presentation.Images.AddImage(image);
 
             // Add image to first table cell
-            tbl[0, 0].FillFormat.FillType = FillType.Picture;
-            tbl[0, 0].FillFormat.PictureFillFormat.PictureFillMode = PictureFillMode.Stretch;
-            tbl[0, 0].FillFormat.PictureFillFormat.Picture.Image = imgx1;
+            tbl[0, 0].CellFormat.FillFormat.FillType = FillType.Picture;
+            tbl[0, 0].CellFormat.FillFormat.PictureFillFormat.PictureFillMode = PictureFillMode.Stretch;
+            tbl[0, 0].CellFormat.FillFormat.PictureFillFormat.Picture.Image = imgx1;
 
             // Save PPTX to Disk
             presentation.Save(dataDir + "Image_In_TableCell_out.pptx", SaveFormat.Pptx);

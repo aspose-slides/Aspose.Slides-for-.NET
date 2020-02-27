@@ -19,7 +19,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
 
 
             // loading presentation uses SomeFont which is not installed on the system
-            using (Presentation pres = new Presentation(dataDir+"presentation.pptx"))
+            using (Presentation pres = new Presentation())
             {
                 // load SomeFont from file into the byte array
 

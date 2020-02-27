@@ -1,48 +1,5 @@
 using System;
 using System.IO;
-using Aspose.Slides.Examples.CSharp.ActiveX;
-using Aspose.Slides.Examples.CSharp.Charts;
-using Aspose.Slides.Examples.CSharp.Conversion;
-using Aspose.Slides.Examples.CSharp.Presentations;
-using Aspose.Slides.Examples.CSharp.Presentations.Conversion;
-using Aspose.Slides.Examples.CSharp.Presentations.Opening;
-using Aspose.Slides.Examples.CSharp.Presentations.Properties;
-using Aspose.Slides.Examples.CSharp.Presentations.Saving;
-using Aspose.Slides.Examples.CSharp.Rendering.Printing;
-using Aspose.Slides.Examples.CSharp.Shapes;
-using Aspose.Slides.Examples.CSharp.Slides;
-using Aspose.Slides.Examples.CSharp.Slides.Background;
-using Aspose.Slides.Examples.CSharp.Slides.Comments;
-using Aspose.Slides.Examples.CSharp.Slides.CRUD;
-using Aspose.Slides.Examples.CSharp.Slides.Layout;
-using Aspose.Slides.Examples.CSharp.Slides.Media;
-using Aspose.Slides.Examples.CSharp.Slides.Notes;
-using Aspose.Slides.Examples.CSharp.Slides.Thumbnail;
-using Aspose.Slides.Examples.CSharp.Slides.Transitions;
-using Aspose.Slides.Examples.CSharp.SmartArts;
-using Aspose.Slides.Examples.CSharp.Tables;
-using Aspose.Slides.Examples.CSharp.Text;
-using Aspose.Slides.Examples.CSharp.VBA;
-using CSharp.Charts;
-using CSharp.Presentations.Conversion;
-using CSharp.Presentations.Properties;
-using CSharp.Rendering_Printing;
-using CSharp.Slides.Notes;
-using CSharp.SmartArts;
-using CSharp.Text;
-using CSharp.Slides.Views;
-using CSharp.Slides.Comments;
-using CSharp.Presentations.Saving;
-using CSharp.Slides.Background;
-using CSharp.Slides.Transitions;
-using CSharp.Slides.Hyperlinks;
-using Aspose.Slides.Examples.CSharp.Slides.Hyperlinks;
-using CSharp.VBA;
-using CSharp.Tables;
-using CSharp.Shapes;
-using CSharp.Slides.Media;
-using CSharp.Presentations.Opening;
-using CSharp.Slides.CRUD;
 
 namespace Aspose.Slides.Examples.CSharp
 {
@@ -54,13 +11,13 @@ namespace Aspose.Slides.Examples.CSharp
             Console.WriteLine("Open RunExamples.cs. \nIn Main() method uncomment the example that you want to run.");
             Console.WriteLine("=====================================================");
 
-			// Uncomment the one you want to try out
+            // Uncomment the one you want to try out
 
             //// =====================================================
             ////                    ActiveX
             //// =====================================================
 
-            //   ManageActiveXControl.Run();
+            //ManageActiveXControl.Run();
             //LinkingVideoActiveXControl.Run();
 
             // =====================================================
@@ -128,13 +85,13 @@ namespace Aspose.Slides.Examples.CSharp
             //CreateExternalWorkbook.Run();
             //SupportOfBubbleSizeRepresentation.Run();
             //AddingCustomLines.Run();
-            //HideInformationFromChart.Run()
-            // SetExternalWorkbookWithUpdateChartData.Run();
-            // FontPropertiesForChart.Run();
-            // DefaultMarkersInChart.Run();
-            // ClearSpecificChartSeriesDataPointsData.Run();
-	    //SetLayoutMode.Run();
-	     //AddColorToDataPoints.Run();
+            //HideInformationFromChart.Run();
+            //SetExternalWorkbookWithUpdateChartData.Run();
+            //FontPropertiesForChart.Run();
+            //DefaultMarkersInChart.Run();
+            //ClearSpecificChartSeriesDataPointsData.Run();
+            //SetLayoutMode.Run();
+            //AddColorToDataPoints.Run();
             //// =====================================================
             ////                    Presentations 
             //// =====================================================
@@ -152,7 +109,7 @@ namespace Aspose.Slides.Examples.CSharp
             //ConvertSlidesToPdfNotes.Run();
             //PresentationToTIFFWithDefaultSize.Run();
             //PresentationToTIFFWithCustomImagePixelFormat.Run();
-            // ConvertWithNoteToTiff.Run();
+            //ConvertWithNoteToTiff.Run();
             //ConvertWholePresentationToHTML.Run();
             //ConvertPresentationToResponsiveHTML.Run();
             //ConvertIndividualSlide.Run();
@@ -163,14 +120,14 @@ namespace Aspose.Slides.Examples.CSharp
             //ConvetToSWF.Run();
             //ConversionToTIFFNotes.Run();
             //GeneratingSVGWithCustomShapeIDS.Run();
-            // ConvertNotesSlideViewToPDF.Run();
+            //ConvertNotesSlideViewToPDF.Run();
             //CreateNewPresentation.Run();
             //PPTtoPPTX.Run();
             //ExportMediaFilestohtml.Run();
             //SetInvertFillColorChart.Run();
             //ExportShapeToSVG.Run();
             //CovertToPDFWithProgressUpdate.Run();
-	    //ODPToPPTX.Run();
+            //ODPToPPTX.Run();
             // =====================================================
             //// =====================================================
             //// Presentations -   Opening
@@ -184,7 +141,7 @@ namespace Aspose.Slides.Examples.CSharp
             //GetFileFormat.Run();
             //GetRectangularCoordinatesofParagraph.Run();
             //GetPositionCoordinatesofPortion.Run();
-	    //SetAccessPermissionsToPDF.Run();
+            //SetAccessPermissionsToPDF.Run();
 
             //// =====================================================
             ////            Presentations -   Properties
@@ -201,6 +158,7 @@ namespace Aspose.Slides.Examples.CSharp
             //UpdatePresentationPropertiesUsingPropertiesOfAnotherPresentationAsATemplate.Run();
             //SupportForInterrupt.Run();
             //AccessLayoutFormats.Run();
+
             //// =====================================================
             ////            Presentations -   Saving
             //// =====================================================
@@ -214,7 +172,8 @@ namespace Aspose.Slides.Examples.CSharp
             //SaveAsPredefinedViewType.Run();
             //AddImageFromSVGObject.Run();
             //ConvertSvgImageObjectIntoGroupOfShapes.Run();
-            // AddBlobImageToPresentation.Run();
+            //AddBlobImageToPresentation.Run();
+
             //// =====================================================
             ////                    Shapes
             //// =====================================================
@@ -265,7 +224,7 @@ namespace Aspose.Slides.Examples.CSharp
             //GetLightRigEffectiveData.Run();
             //GetCameraEffectiveData.Run();
             //SetFileTypeForAnEmbeddingObject.Run();
-	    //ExtractEmbeddedFileDataFromOLEObject.Run();
+            //ExtractEmbeddedFileDataFromOLEObject.Run();
 
             //// =====================================================
             ////                        Slides 
@@ -290,7 +249,7 @@ namespace Aspose.Slides.Examples.CSharp
             //RemoveSlideUsingReference.Run();
             //AddSlides.Run();
             //AddNotesSlideWithNotesStyle.Run();
-	    //CloneSlideIntoSpecifiedSection.Run();
+            //CloneSlideIntoSpecifiedSection.Run();
 
             //// =====================================================
             ////                    Slides - Notes
@@ -299,7 +258,8 @@ namespace Aspose.Slides.Examples.CSharp
             //RemoveNotesAtSpecificSlide.Run();
             //RemoveNotesFromAllSlides.Run();
             //HeaderAndFooterInNotesSlide.Run();
-            //  RenderingNotesWhileConvertingToHTML.Run();
+            //RenderingNotesWhileConvertingToHTML.Run();
+
             //// =====================================================
             ////                    Slides - Background
             //// =====================================================
@@ -348,6 +308,7 @@ namespace Aspose.Slides.Examples.CSharp
             //SetChildFooter.Run();
             //HeaderFooterManager.Run();
             //CheckSlidesComparison.Run();
+
             //// =====================================================
             ////                    Slides - HyperLink
             //// =====================================================
@@ -359,7 +320,7 @@ namespace Aspose.Slides.Examples.CSharp
             //// =====================================================
 
             //ExtractVideo.Run();
-	    //ExtractAudio.Run();
+            //ExtractAudio.Run(); //!! No source presentation
 
             //// =====================================================
             ////            Rendering - Printing a Slide
@@ -367,11 +328,12 @@ namespace Aspose.Slides.Examples.CSharp
 
             //SetZoom.Run();
             //SetSlideNumber.Run();
-            //DefaultPrinterPrinting.Run();//
+            //DefaultPrinterPrinting.Run(); //
             //SpecificPrinterPrinting.Run();
             //RenderComments.Run();
             //RenderingEmoji.Run();
-	   //SupportOfDigitalSignature.Run();
+            //SupportOfDigitalSignature.Run(); // No source presentation !!
+
             //// =====================================================
             ////                    Smart Arts
             //// =====================================================
@@ -419,16 +381,16 @@ namespace Aspose.Slides.Examples.CSharp
             //AddImageinsideTableCells.Run();
             //LockAspectRatio.Run();
             //GetEffectiveValuesOfTable.Run();
-	    //CreateATableFromScratchInASlide.Run();
+            //CreateATableFromScratchInASlide.Run();
             //SetFirstRowAsHeader.Run();
-		
+
             //// =====================================================
             //// Text
             //// =====================================================
 
             //DefaultFonts.Run();
             //ExportingHTMLText.Run();
-            //EmbedFontsInHtml.Run();
+            //EmbedFontsInHtml.Run(); // No source presentation
             //FontFamily.Run();
             //EndParaGraphProperties.Run();
             //FontProperties.Run();
@@ -463,32 +425,33 @@ namespace Aspose.Slides.Examples.CSharp
             //AddColumnsinTextFrame.Run();
             //SettingPresentationLanguageAndShapeText.Run();
             //AnimationEffectinParagraph.Run();
-	    //GetEffectiveValues.Run();
+            //GetEffectiveValues.Run();
             //SetLocalFontHeightValues.Run();
             //GetTextFrameFormatEffectiveData.Run();
             //GetTextStyleEffectiveData.Run();
-	    //SetCustomBulletsNumber.Run();
+            //SetCustomBulletsNumber.Run();
             //SetFontFallBack.Run();
             //FallBackRulesCollection.Run();
             //RenderingWithFallBackFont.Run();
             //AddCustomPromptText.Run();
+
             //// =====================================================
             ////                    VBA Macros
             //// =====================================================
 
-            // AddVBAMacros.Run();
+            //AddVBAMacros.Run();
             //RemoveVBAMacros.Run();
             //ExtractingVBAMacros.Run();
+
             //// =====================================================
             ////                    Presentation Views
             //// =====================================================
 
             //ManagePresenetationNormalViewState.Run();
+
             // Stop before exiting
             Console.WriteLine("\n\nProgram Finished. Press any key to exit....");
             Console.ReadKey();
-
-
         }
 
         protected void Page_Load(object sender, EventArgs e)
@@ -498,6 +461,9 @@ namespace Aspose.Slides.Examples.CSharp
         {
             return Path.GetFullPath(GetDataDir_Data() + "ActiveX/");
         }
+
+        public static string OutPath = GetDataDir_Data() + "Out/";
+
         public static String GetDataDir_Charts()
         {
             return Path.GetFullPath(GetDataDir_Data() + "Charts/");

@@ -39,13 +39,13 @@ namespace Aspose.Slides.Examples.CSharp.Tables
             IPPImage imgx1 = presentation.Images.AddImage(image);
 
             // Add image to first table cell
-            tbl[0, 0].FillFormat.FillType = FillType.Picture;
-            tbl[0, 0].FillFormat.PictureFillFormat.PictureFillMode = PictureFillMode.Stretch;
-            tbl[0, 0].FillFormat.PictureFillFormat.Picture.Image = imgx1;
-            tbl[0, 0].FillFormat.PictureFillFormat.CropRight = 20;
-            tbl[0, 0].FillFormat.PictureFillFormat.CropLeft = 20;
-            tbl[0, 0].FillFormat.PictureFillFormat.CropTop = 20;
-            tbl[0, 0].FillFormat.PictureFillFormat.CropBottom = 20;
+            tbl[0, 0].CellFormat.FillFormat.FillType = FillType.Picture;
+            tbl[0, 0].CellFormat.FillFormat.PictureFillFormat.PictureFillMode = PictureFillMode.Stretch;
+            tbl[0, 0].CellFormat.FillFormat.PictureFillFormat.Picture.Image = imgx1;
+            tbl[0, 0].CellFormat.FillFormat.PictureFillFormat.CropRight = 20;
+            tbl[0, 0].CellFormat.FillFormat.PictureFillFormat.CropLeft = 20;
+            tbl[0, 0].CellFormat.FillFormat.PictureFillFormat.CropTop = 20;
+            tbl[0, 0].CellFormat.FillFormat.PictureFillFormat.CropBottom = 20;
             // Save PPTX to Disk
             presentation.Save(dataDir + "Image_In_TableCell_out.pptx", SaveFormat.Pptx);
             // ExEnd:AddImageinsideTableCell

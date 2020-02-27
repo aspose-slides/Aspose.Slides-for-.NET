@@ -36,10 +36,10 @@ namespace Aspose.Slides.Examples.CSharp.Tables
                 foreach (IRow row in tbl.Rows)
                     foreach (ICell cell in row)
                     {
-                        cell.BorderTop.FillFormat.FillType = FillType.NoFill;
-                        cell.BorderBottom.FillFormat.FillType = FillType.NoFill;
-                        cell.BorderLeft.FillFormat.FillType = FillType.NoFill;
-                        cell.BorderRight.FillFormat.FillType = FillType.NoFill;
+                        cell.CellFormat.BorderTop.FillFormat.FillType = FillType.NoFill;
+                        cell.CellFormat.BorderBottom.FillFormat.FillType = FillType.NoFill;
+                        cell.CellFormat.BorderLeft.FillFormat.FillType = FillType.NoFill;
+                        cell.CellFormat.BorderRight.FillFormat.FillType = FillType.NoFill;
                     }
 
                 //Write PPTX to Disk

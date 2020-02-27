@@ -5,6 +5,7 @@ using System.Text;
 using System.IO;
 using Aspose.Slides;
 using Aspose.Cells;
+using Aspose.Cells.Drawing;
 using Aspose.Slides.Examples;
 using Aspose.Slides.Examples.CSharp;
 using Aspose.Cells.Rendering;
@@ -21,7 +22,7 @@ namespace CSharp.Shapes
     Aspose.Cells.Rendering.ImageOrPrintOptions options = new Aspose.Cells.Rendering.ImageOrPrintOptions();
     options.HorizontalResolution = 200;
     options.VerticalResolution = 200;
-    options.ImageFormat = System.Drawing.Imaging.ImageFormat.Emf;
+    options.ImageType = ImageType.Emf;
 
     //Save the workbook to stream
     SheetRender sr = new SheetRender(sheet, options);

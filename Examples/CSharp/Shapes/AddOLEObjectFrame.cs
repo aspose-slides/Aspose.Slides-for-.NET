@@ -1,5 +1,6 @@
 using System.IO;
 using Aspose.Slides;
+using Aspose.Slides.DOM.Ole;
 using Aspose.Slides.Export;
 
 namespace Aspose.Slides.Examples.CSharp.Shapes 
@@ -38,7 +39,8 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
             }
 
             // Add an Ole Object Frame shape
-            IOleObjectFrame oof = sld.Shapes.AddOleObjectFrame(0, 0, pres.SlideSize.Size.Width, pres.SlideSize.Size.Height, "Excel.Sheet.12", mstream.ToArray());
+            IOleEmbeddedDataInfo dataInfo = new OleEmbeddedDataInfo(mstream.ToArray(), "xlsx");
+            IOleObjectFrame oof = sld.Shapes.AddOleObjectFrame(0, 0, pres.SlideSize.Size.Width, pres.SlideSize.Size.Height, dataInfo);
 
             //Write the PPTX to disk
             pres.Save(dataDir + "OleEmbed_out.pptx", SaveFormat.Pptx);

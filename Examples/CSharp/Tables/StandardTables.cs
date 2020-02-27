@@ -39,21 +39,21 @@ namespace Aspose.Slides.Examples.CSharp.Tables
                 {
                     foreach (ICell cell in row)
                     {
-                        cell.BorderTop.FillFormat.FillType = FillType.Solid;
-                        cell.BorderTop.FillFormat.SolidFillColor.Color = Color.Red;
-                        cell.BorderTop.Width = 5;
+                        cell.CellFormat.BorderTop.FillFormat.FillType = FillType.Solid;
+                        cell.CellFormat.BorderTop.FillFormat.SolidFillColor.Color = Color.Red;
+                        cell.CellFormat.BorderTop.Width = 5;
 
-                        cell.BorderBottom.FillFormat.FillType = FillType.Solid;
-                        cell.BorderBottom.FillFormat.SolidFillColor.Color = Color.Red;
-                        cell.BorderBottom.Width = 5;
+                        cell.CellFormat.BorderBottom.FillFormat.FillType = FillType.Solid;
+                        cell.CellFormat.BorderBottom.FillFormat.SolidFillColor.Color = Color.Red;
+                        cell.CellFormat.BorderBottom.Width = 5;
 
-                        cell.BorderLeft.FillFormat.FillType = FillType.Solid;
-                        cell.BorderLeft.FillFormat.SolidFillColor.Color = Color.Red;
-                        cell.BorderLeft.Width = 5;
+                        cell.CellFormat.BorderLeft.FillFormat.FillType = FillType.Solid;
+                        cell.CellFormat.BorderLeft.FillFormat.SolidFillColor.Color = Color.Red;
+                        cell.CellFormat.BorderLeft.Width = 5;
 
-                        cell.BorderRight.FillFormat.FillType = FillType.Solid;
-                        cell.BorderRight.FillFormat.SolidFillColor.Color = Color.Red;
-                        cell.BorderRight.Width = 5;
+                        cell.CellFormat.BorderRight.FillFormat.FillType = FillType.Solid;
+                        cell.CellFormat.BorderRight.FillFormat.SolidFillColor.Color = Color.Red;
+                        cell.CellFormat.BorderRight.Width = 5;
                     }
                 }
 

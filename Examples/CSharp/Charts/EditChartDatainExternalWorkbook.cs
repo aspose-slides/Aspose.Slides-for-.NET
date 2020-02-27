@@ -9,6 +9,9 @@ namespace CSharp.Charts
     {
         public static void Run() {
 
+            // Pay attention the path to external workbook is hardly saved in the presentation
+            // so please copy file externalWorkbook.xlsx from Data/Chart directory D:\Aspose.Slides\Aspose.Slides-for-.NET-master\Examples\Data\Charts\ before run the example
+
             //ExStart:EditChartDatainExternalWorkbook
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Charts();
@@ -19,7 +22,7 @@ namespace CSharp.Charts
                                
 
                 chartData.Series[0].DataPoints[0].Value.AsCell.Value = 100;
-                pres.Save(dataDir + "presentation_out.pptx", SaveFormat.Pptx);
+                pres.Save(RunExamples.OutPath + "presentation_out.pptx", SaveFormat.Pptx);
             }
             //ExEnd:EditChartDatainExternalWorkbook
         }

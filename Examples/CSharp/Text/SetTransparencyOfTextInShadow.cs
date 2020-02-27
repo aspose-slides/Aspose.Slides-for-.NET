@@ -25,7 +25,7 @@ namespace CSharp.Text
                 IOuterShadow outerShadowEffect = effects.OuterShadowEffect;
 
                 Color shadowColor = outerShadowEffect.ShadowColor.Color;
-                Console.WriteLine($"{shadowColor} - transparency is: {((float)shadowColor.A / byte.MaxValue) * 100}");
+                Console.WriteLine("{0} - transparency is: {1}", shadowColor, ((float)shadowColor.A / byte.MaxValue) * 100);
 
                 // set transparency to zero percent
                 outerShadowEffect.ShadowColor.Color = Color.FromArgb(255, shadowColor);
