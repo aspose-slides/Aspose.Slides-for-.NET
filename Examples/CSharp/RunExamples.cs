@@ -1,5 +1,46 @@
 using System;
 using System.IO;
+using Aspose.Slides.Examples.CSharp.ActiveX;
+using Aspose.Slides.Examples.CSharp.Charts;
+using Aspose.Slides.Examples.CSharp.Conversion;
+using Aspose.Slides.Examples.CSharp.Presentations;
+using Aspose.Slides.Examples.CSharp.Presentations.Conversion;
+using Aspose.Slides.Examples.CSharp.Presentations.Opening;
+using Aspose.Slides.Examples.CSharp.Presentations.Properties;
+using Aspose.Slides.Examples.CSharp.Presentations.Saving;
+using Aspose.Slides.Examples.CSharp.Rendering.Printing;
+using Aspose.Slides.Examples.CSharp.Shapes;
+using Aspose.Slides.Examples.CSharp.Slides;
+using Aspose.Slides.Examples.CSharp.Slides.Background;
+using Aspose.Slides.Examples.CSharp.Slides.Comments;
+using Aspose.Slides.Examples.CSharp.Slides.CRUD;
+using Aspose.Slides.Examples.CSharp.Slides.Hyperlinks;
+using Aspose.Slides.Examples.CSharp.Slides.Layout;
+using Aspose.Slides.Examples.CSharp.Slides.Media;
+using Aspose.Slides.Examples.CSharp.Slides.Notes;
+using Aspose.Slides.Examples.CSharp.Slides.Thumbnail;
+using Aspose.Slides.Examples.CSharp.Slides.Transitions;
+using Aspose.Slides.Examples.CSharp.SmartArts;
+using Aspose.Slides.Examples.CSharp.Tables;
+using Aspose.Slides.Examples.CSharp.Text;
+using Aspose.Slides.Examples.CSharp.VBA;
+using CSharp.Charts;
+using CSharp.Presentations.Conversion;
+using CSharp.Presentations.Opening;
+using CSharp.Presentations.Properties;
+using CSharp.Presentations.Saving;
+using CSharp.Rendering_Printing;
+using CSharp.Shapes;
+using CSharp.Slides.Background;
+using CSharp.Slides.Comments;
+using CSharp.Slides.CRUD;
+using CSharp.Slides.Media;
+using CSharp.Slides.Notes;
+using CSharp.Slides.Transitions;
+using CSharp.Slides.Views;
+using CSharp.Tables;
+using CSharp.Text;
+using CSharp.VBA;
 
 namespace Aspose.Slides.Examples.CSharp
 {
@@ -23,6 +64,7 @@ namespace Aspose.Slides.Examples.CSharp
             // =====================================================
             //                      Charts
             // =====================================================
+
             //MultiCategoryChart.Run();
             //ChartEntities.Run();
             //ChartTrendLines.Run();
@@ -92,6 +134,7 @@ namespace Aspose.Slides.Examples.CSharp
             //ClearSpecificChartSeriesDataPointsData.Run();
             //SetLayoutMode.Run();
             //AddColorToDataPoints.Run();
+
             //// =====================================================
             ////                    Presentations 
             //// =====================================================
@@ -128,6 +171,7 @@ namespace Aspose.Slides.Examples.CSharp
             //ExportShapeToSVG.Run();
             //CovertToPDFWithProgressUpdate.Run();
             //ODPToPPTX.Run();
+
             // =====================================================
             //// =====================================================
             //// Presentations -   Opening
@@ -332,7 +376,7 @@ namespace Aspose.Slides.Examples.CSharp
             //SpecificPrinterPrinting.Run();
             //RenderComments.Run();
             //RenderingEmoji.Run();
-            //SupportOfDigitalSignature.Run(); // No source presentation !!
+            //SupportOfDigitalSignature.Run(); 
 
             //// =====================================================
             ////                    Smart Arts
@@ -390,7 +434,7 @@ namespace Aspose.Slides.Examples.CSharp
 
             //DefaultFonts.Run();
             //ExportingHTMLText.Run();
-            //EmbedFontsInHtml.Run(); // No source presentation
+            //EmbedFontsInHtml.Run(); 
             //FontFamily.Run();
             //EndParaGraphProperties.Run();
             //FontProperties.Run();
@@ -434,6 +478,7 @@ namespace Aspose.Slides.Examples.CSharp
             //FallBackRulesCollection.Run();
             //RenderingWithFallBackFont.Run();
             //AddCustomPromptText.Run();
+            //SaveWithDefaaultRegularFont.Run();
 
             //// =====================================================
             ////                    VBA Macros

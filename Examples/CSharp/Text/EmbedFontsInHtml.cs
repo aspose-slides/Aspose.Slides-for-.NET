@@ -20,7 +20,9 @@ namespace Aspose.Slides.Examples.CSharp.Text
             // ExStart:EmbedFontsInHtml
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Text();
-            using (Presentation pres = new Presentation(dataDir+"presentation.pptx"))
+            string outPath = RunExamples.OutPath;
+
+            using (Presentation pres = new Presentation(dataDir+"Presentation.pptx"))
             {
                 // exclude default presentation fonts
                 string[] fontNameExcludeList = { "Calibri", "Arial" };
@@ -32,7 +34,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
                     HtmlFormatter = HtmlFormatter.CreateCustomFormatter(embedFontsController)
                 };
 
-                pres.Save(dataDir+"pres.html", SaveFormat.Html, htmlOptionsEmbed);
+                pres.Save(outPath + "pres.html", SaveFormat.Html, htmlOptionsEmbed);
             }
             // ExEnd:EmbedFontsInHtml
         }

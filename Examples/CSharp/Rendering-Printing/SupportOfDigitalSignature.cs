@@ -17,6 +17,7 @@ namespace CSharp.Rendering_Printing
             //ExStart:SupportOfDigitalSignature
 
             string dataDir = RunExamples.GetDataDir_Rendering();
+            string outPath = RunExamples.OutPath;
 
             using (Presentation pres = new Presentation())
             {
@@ -29,8 +30,8 @@ namespace CSharp.Rendering_Printing
                 
                 pres.DigitalSignatures.Add(signature);
 
-                
-                pres.Save(dataDir + "SomePresentationSigned.pptx", SaveFormat.Pptx);
+
+                pres.Save(outPath + "SomePresentationSigned.pptx", SaveFormat.Pptx);
             }
 
             //ExEnd:SupportOfDigitalSignature

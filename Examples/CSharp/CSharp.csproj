@@ -309,6 +309,7 @@
     <Compile Include="Text\ManageParagraphPictureBulletsInPPT.cs" />
     <Compile Include="Text\MutilevelBullets.cs" />
     <Compile Include="Text\RenderingWithFallBackFont.cs" />
+    <Compile Include="Text\SaveWithDefaultRegularFont.cs" />
     <Compile Include="Text\SetCustomBulletsNumber.cs" />
     <Compile Include="Text\SetLocalFontHeightValues.cs" />
     <Compile Include="Text\SetFontFallBack.cs" />
