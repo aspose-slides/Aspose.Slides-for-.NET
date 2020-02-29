@@ -308,6 +308,7 @@
     <Compile Include="Tables\VerticallyAlignText.cs" />
     <Compile Include="Text\ManageParagraphPictureBulletsInPPT.cs" />
     <Compile Include="Text\MutilevelBullets.cs" />
+    <Compile Include="Text\PortionGetRect.cs" />
     <Compile Include="Text\RenderingWithFallBackFont.cs" />
     <Compile Include="Text\SaveWithDefaultRegularFont.cs" />
     <Compile Include="Text\SetCustomBulletsNumber.cs" />

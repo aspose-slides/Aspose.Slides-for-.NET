@@ -479,6 +479,7 @@ namespace Aspose.Slides.Examples.CSharp
             //RenderingWithFallBackFont.Run();
             //AddCustomPromptText.Run();
             //SaveWithDefaaultRegularFont.Run();
+            PortionGetRect.Run();
 
             //// =====================================================
             ////                    VBA Macros
