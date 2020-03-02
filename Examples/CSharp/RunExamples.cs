@@ -134,6 +134,7 @@ namespace Aspose.Slides.Examples.CSharp
             //ClearSpecificChartSeriesDataPointsData.Run();
             //SetLayoutMode.Run();
             //AddColorToDataPoints.Run();
+            //RadarChartCreation.Run();
 
             //// =====================================================
             ////                    Presentations 
@@ -479,7 +480,7 @@ namespace Aspose.Slides.Examples.CSharp
             //RenderingWithFallBackFont.Run();
             //AddCustomPromptText.Run();
             //SaveWithDefaaultRegularFont.Run();
-            PortionGetRect.Run();
+            //PortionGetRect.Run();
 
             //// =====================================================
             ////                    VBA Macros

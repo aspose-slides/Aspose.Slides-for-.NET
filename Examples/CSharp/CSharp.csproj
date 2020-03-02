@@ -94,6 +94,7 @@
     <Compile Include="Charts\IActualLayoutAdded.cs" />
     <Compile Include="Charts\InvertIfNegativeForIndividualSeries.cs" />
     <Compile Include="Charts\OrganizationChart.cs" />
+    <Compile Include="Charts\RadarChartCreating.cs" />
     <Compile Include="Charts\SetChartDataFromWorkBook.cs" />
     <Compile Include="Charts\MultiCategoryChart.cs" />
     <Compile Include="Charts\SetExternalWorkbook.cs" />
