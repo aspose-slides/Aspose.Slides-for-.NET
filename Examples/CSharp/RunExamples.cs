@@ -135,6 +135,8 @@ namespace Aspose.Slides.Examples.CSharp
             //SetLayoutMode.Run();
             //AddColorToDataPoints.Run();
             //RadarChartCreation.Run();
+            //ChartDataCell_Formulas.Run();
+            //SpreadsheetFormulasOptions.Run();
 
             //// =====================================================
             ////                    Presentations 
@@ -172,6 +174,8 @@ namespace Aspose.Slides.Examples.CSharp
             //ExportShapeToSVG.Run();
             //CovertToPDFWithProgressUpdate.Run();
             //ODPToPPTX.Run();
+            //FodpFormatConvertion.Run();
+            //Pdf1A_PdfUa_Conformance.Run();
 
             // =====================================================
             //// =====================================================
@@ -203,6 +207,7 @@ namespace Aspose.Slides.Examples.CSharp
             //UpdatePresentationPropertiesUsingPropertiesOfAnotherPresentationAsATemplate.Run();
             //SupportForInterrupt.Run();
             //AccessLayoutFormats.Run();
+            //ReadOnlyRecommended.Run();
 
             //// =====================================================
             ////            Presentations -   Saving
@@ -270,7 +275,8 @@ namespace Aspose.Slides.Examples.CSharp
             //GetCameraEffectiveData.Run();
             //SetFileTypeForAnEmbeddingObject.Run();
             //ExtractEmbeddedFileDataFromOLEObject.Run();
-
+            //MathematicalShape.Run();
+            
             //// =====================================================
             ////                        Slides 
             //// =====================================================
