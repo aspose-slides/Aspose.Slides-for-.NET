@@ -208,6 +208,7 @@ namespace Aspose.Slides.Examples.CSharp
             //SupportForInterrupt.Run();
             //AccessLayoutFormats.Run();
             //ReadOnlyRecommended.Run();
+            //CheckPresentationProtection.Run();
 
             //// =====================================================
             ////            Presentations -   Saving
@@ -276,7 +277,8 @@ namespace Aspose.Slides.Examples.CSharp
             //SetFileTypeForAnEmbeddingObject.Run();
             //ExtractEmbeddedFileDataFromOLEObject.Run();
             //MathematicalShape.Run();
-            
+            //ShapesAlignment.Run();
+
             //// =====================================================
             ////                        Slides 
             //// =====================================================
