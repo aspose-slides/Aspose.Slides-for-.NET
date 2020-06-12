@@ -137,6 +137,7 @@ namespace Aspose.Slides.Examples.CSharp
             //RadarChartCreation.Run();
             //ChartDataCell_Formulas.Run();
             //SpreadsheetFormulasOptions.Run();
+            //Chart_RecoverWorkbook.Run();
 
             //// =====================================================
             ////                    Presentations 
