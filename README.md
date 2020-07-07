@@ -9,10 +9,11 @@
   </a>
 </p>
 
-This repository contains [Examples](Examples), [Plugins](Plugins) and Showcase projects for [Aspose.Slides for .NET](https://products.aspose.com/slides/net) to help you learn and write your own applications.
+This repository contains [Demos](Demos), [Examples](Examples), [Plugins](Plugins) and Showcase projects for [Aspose.Slides for .NET](https://products.aspose.com/slides/net) to help you learn and write your own applications.
 
 Directory | Description
 --------- | -----------
+[Demos](Demos)  | Aspose.Slides for .NET Live Demos Source Code
 [Examples](Examples)  | A collection of .NET examples that help you learn the product features
 [Plugins](Plugins)  | Plugins that will demonstrate one or more features of Aspose.Slides for .NET
 

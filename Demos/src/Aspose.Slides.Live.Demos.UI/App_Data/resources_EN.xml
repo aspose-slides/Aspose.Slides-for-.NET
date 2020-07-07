@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<res name="ApplicationTitle">Aspose.Slides Live Demos</res>
+	<res name="ApplicationTitle2">Free App Solutions for Powerpoint files nanipulation </res>
+	<res name="Viewerh4">Viewer</res>
+	<res name="btnViewNow">VIEW NOW</res>
+	<res name="ViewerAction">View</res>
+	<res name="HomePageTitle">Home</res>
+	<res name="DownloadFileLinkTitle">Download your file</res>
+	<res name="FileConvertedSuccessMessage">Your file has been converted successfully, please download converted file</res>
+	<res name="InvalidFileExtension">Invalid file, please upload a file with extension</res>
+	<res name="InvalidFile">Invalid file, please ensure that uploading correct file</res>
+	<res name="FileAmountMessageOne">Please select only one file</res>
+	<res name="FileAmountMessageLessTen">Please select less than ten files</res>
+	<res name="btnConvertNow">CONVERT NOW</res>
+	<res name="AsposeSlides">Aspose.Slides</res>
+	<res name="MetadataViewer">VIEW DOCUMENT</res>
+	<res name="Save">Save</res>
+	<res name="EditorReturnQuestion">Are you sure you want to return?</res>	
+	<res name="PageNotFound">404 Page not found</res>
+	<res name="BrokenLinkTitle">The link you followed probably broken or the page has been moved</res>
+	<res name="btnBackHome">Back to Home</res>
+	<res name="FileSelectMessage">Please select a file to process</res>
+	<res name="SaveAs">Save as</res>
+	<res name="ViewerAPPName">Viewer</res>
+	<res name="slidesMergerSaveAsOptions">PDF,ODP,OTP,PPTX,PPTM,POTX,PPT,PPS,PPSM,POT,POTM,XPS,PPSX,TIFF,HTML,SWF,TXT,DOC,DOCX,BMP,JPEG,PNG,EMF,WMF,GIF,EXIF,ICO,SVG</res>
+	<res name="slidesConversionSaveAsOptions">PDF,ODP,OTP,PPTX,PPTM,POTX,PPT,PPS,PPSM,POT,POTM,XPS,PPSX,TIFF,HTML,SWF,TXT,DOC,DOCX,BMP,JPEG,PNG,EMF,WMF,GIF,EXIF,ICO,SVG</res>
+	<res name="DropOrUploadFile">Drop or upload your file</res>
+	<res name="DropOrUploadFiles">Drop or upload your files</res>
+	<res name="DropOrUploadPresentationFile">Drop or Upload your style master file(any presentation file)</res>
+	<res name="slidesValidationExpression">.ppt|.pptx|.odp</res>
+	<res name="FileConvertedSuccessMessage1">Your file has been converted successfully</res>
+	<res name="DownLoadNow">DOWNLOAD NOW</res>
+	<res name="FileWrongTypeMessage">You are trying to upload document(s) of unsupported type: </res>
+	<res name="slidesConversionPageTitle">Convert PowerPoint &amp; OpenOffice Presentation Formats Online</res>
+	<res name="slidesConversionMetaDescription">Convert PowerPoint PPT(X), OpenOffice ODP Presentation Online. Convert PPTX to PPT, ODP to PPT, PPTX to PDF, PPTX to Word, PPTX to JPG, PPTX to HTML, PPTX to SWF.</res>
+	<res name="slidesConversionTitle">Free PowerPoint Online Converter</res>
+	<res name="slidesConversionSubTitle">Convert PowerPoint PPT(X) and ODP to: PDF, Word DOC(X), JPG, PPSX, HTML, Flash SWF.</res>
+	<!-- Conversion App - How To-->
+	<res name="HowtoConversionTitle">How to convert {0} file using {1}</res>
+	<res name="HowtoConversionFeature1">Click inside the file drop area to upload file or drag &amp; drop file.</res>
+	<res name="HowtoConversionFeature2">Your file will be uploaded and will be converted to required format.</res>
+	<res name="HowtoConversionFeature3">Download link of converted file will be available instantly after conversion.</res>	
+	<res name="ConvertAnotherFile">Convert another file</res>
+	<res name="AsposeProductFor"></res>
+	
+	<res name="Feature3">Conversion Quality</res>
+	<res name="Feature3Description">. All files are processed using Aspose APIs, which are being used by many Fortune 100 companies across 114 countries</res>
+	<res name="PoweredBy">Powered by</res>
+	<res name="Conversionh4">Conversion</res>
+	<res name="SaveAsDescription">Save as: {0}</res>
+	<res name="ConversionCategory">conversion</res>
+	<res name="AsposeProductFamilyInclude">{0} Product Family Includes</res>
+	<res name="ConversionFeature1">Fast and Easy Conversion</res>
+	<res name="ConversionFeature1Description">Upload your document, choose the save format type and click on “Convert” button. You will get the download link as soon as the file is converted</res>
+	
+	<res name="ConversionFeature2">Convert from Anywhere</res>
+	<res name="ConversionFeature2Description">It works from all platforms including Windows, Mac, Android and iOS. All files are processed on our servers. No plugin or software installation required for you</res>
+	<res name="ConversionFeature3">Conversion Quality</res>
+	<res name="ConversionButton">CONVERT</res>
+	<res name="ConversionAnotherFile">Convert other documents</res>
+	<res name="ConversionSuccessMessage">Your files have been processed successfully</res>
+	<res name="ConversionAction">Convert</res>
+	<res name="UnlockPasswordPlaceholder">Type Password</res>
+	<res name="PasswordPlaceholderErrorMessage">Password input can&apos;t be empty</res>
+	<res name="UnlockButton">UNLOCK NOW</res>
+	<res name="HowtoUnlockTitle">How to Unlock Presentation File using {1}</res>
+	<res name="HowtoUnlockFeature1">Click inside the file drop area to upload file or drag &amp; drop file.</res>
+	<res name="HowtoUnlockFeature2">Your document file will be rendered automatically to unlock.</res>
+	<res name="HowtoUnlockFeature3">Download link of document file will be available instantly after unlock.</res>
+	<res name="slidesUnlockPageTitle">Presentations Files Documents Unlocker Online Free</res>
+	<res name="slidesUnlockMetaDescription">Unlock MS PowerPoint presentations online free, unlock readonly PowerPoint online, unprotect PPT and ODP files, unlock password protected presentation online.</res>
+	<res name="slidesUnlockTitle">Free Online PowerPoint and ODP file Unlocker</res>
+	<res name="slidesUnlockSubTitle">Unlock password protected and readonly MS PowerPoint and OpenOffice presentations.</res>
+	<res name="slidesUnlockLiFeature1">Remove password in Presentation file</res>
+	<res name="slidesUnlockLiFeature2">We don't decrypt or recover your documents</res>
+	<res name="slidesUnlockValidationExpression">.pptx|.ppt|.odp</res>
+	<res name="UnlockFeature1">Fast and Easy Unlock</res>
+	<res name="UnlockFeature1Description">Upload your password protected file, enter current password and click on "UNLOCK NOW" button. You will get unlocked file as soon as the unlocking is performed</res>
+	<res name="UnlockFeature2">Unlock from Anywhere</res>
+	<res name="UnlockFeature2Description">It works from all platforms including Windows, Mac, Android and iOS. All files are processed on our servers. No plugin or software installation required for you</res>
+	<res name="UnlockFeature3">Unlock Quality</res>
+	<res name="UnlockAnotherFile">Unlock another file</res>
+	<res name="UnlockSuccessMessage">Your file has been unlocked successfully</res>
+	<res name="UnlockAction">Unlock</res>
+	
+	<res name="slidesViewerPageTitle">Free PowerPoint online viewer. Impress PPT, PPTX and ODP files on Desktop or Mobile</res>
+	<res name="slidesViewerMetaDescription">Free webapp to view Microsoft PowerPoint Presentation slides and OpenDocument Presentation files on any device.</res>
+	<res name="slidesViewerTitle">Free Online Presentation Viewer App</res>
+	<res name="slidesViewerSubTitle">Upload PPT, PPTX or ODP files to view presentation slides as images.</res>
+	<res name="slidesViewerValidationExpression">.ppt|.pptx|.pps|.odp</res>
+	<res name="slidesViewerLiFeature1">View your Free Online PowerPoint  as an image representation</res>
+	<res name="HowtoViewerTitle">How to View {0} file using {1}</res>
+	<res name="HowtoViewerFeature1">Click inside the file drop area to upload file or drag &amp; drop file.</res>
+	<res name="HowtoViewerFeature2">Your document file will be automatically rendered for you to view instantly.</res>
+	<res name="HowtoViewerFeature3">Download the document file in original, image or PDF format.</res>
+	<res name="ViewerFeature1">Quick and Easy Viewer</res>
+	<res name="ViewerFeature1Description">Upload your document and you will be redirected to the Viewer app with great user experience and many more features</res>
+	<res name="ViewerFeature1DescriptionChoice">Upload your document and you will be redirected to the {0} Viewer app with great user experience and many more features</res>
+	<res name="ViewerFeature2">View from Anywhere</res>
+	<res name="ViewerFeature2Description">It works from all platforms including Windows, Mac, Android and iOS. All files are processed on our servers. No plugin or software installation required for you</res>
+	<res name="ViewerFeature3">Viewer Quality</res>
+	<res name="ViewerLiFeature1">View your Photoshop online</res>
+	<res name="ViewerFeature3Description">. All files are processed using Aspose APIs, which are being used by many Fortune 100 companies across 114 countries</res>
+	
+	<res name="slidesSearchQueryPlaceholder">Type text or regular expression</res>
+	<res name="SearchAction">Search</res>
+	<res name="SearchButton">SEARCH NOW</res>
+	<res name="SearchFeature1">Fast and Easy Search</res>
+	<res name="SearchFeature1Description">Upload your document and click on “SEARCH NOW” button. You will get the file with search results as soon as the operation is performed</res>
+	<res name="SearchFeature2">Search from Anywhere</res>
+	<res name="SearchFeature2Description">It works from all platforms including Windows, Mac, Android and iOS. All files are processed on our servers. No plugin or software installation required for you</res>
+	<res name="SearchFeature3">Search Quality</res>
+	<res name="SearchAnotherFile">Search in other document</res>
+	<res name="SearchSuccessMessage">Your file has been processed successfully</res>	
+	<res name="SearchViewer">VIEW RESULTS</res>
+	<res name="ConversionViewer">VIEW RESULTS</res>
+	<res name="NoSearchResultsMessage">No search results</res>
+	<res name="WrongRegExpMessage">Wrong regular expression</res>
+	<res name="SearchQueryErrorMessage">Search query can&apos;t be empty</res>
+	<res name="Cancel">Cancel</res>
+	<res name="slidesSearchPageTitle">PowerPoint Search in PPT</res>
+	<res name="slidesSearchMetaDescription">PowerPoint search app to search in PPT by text or regular expression.</res>
+	<res name="slidesSearchTitle">Online Text Search in PowerPoint &amp; ODP Files</res>
+	<res name="slidesSearchSubTitle">Free app to search text, regular expression matching in PowerPoint PPT, PPTX presentation formats &amp; OpenOffice ODP files.</res>
+	
+	<res name="HowtoSearchTitle">How to Search Text in File using {1}</res>
+	<res name="HowtoSearchFeature1">Click inside the file drop area to upload a file or drag &amp; drop a file.</res>
+	<res name="HowtoSearchFeature2">Type text or regular expression and click on “SEARCH NOW” button.</res>
+	<res name="HowtoSearchFeature3">File will be automatically rendered for you to view results &amp; download instantly.</res>
+
+	
+	
+	<res name="ParserAPPName">Parser</res>
+	<res name="slidesParserPageTitle">Extract Text &amp; Images from PowerPoint PPT, PPTX formats and ODP files.</res>
+	<res name="slidesParserMetaDescription">Extract text and images from documents in PowerPoint presentation formats &amp; OpenOffice ODP.</res>
+	<res name="slidesParserTitle">Online Text and Img Extractor from PowerPoint</res>
+	<res name="slidesParserSubTitle">Free document parser to extract text &amp; images from PowerPoint PPT, PPTX &amp; OpenOffice presentation formats.</res>
+	<res name="slidesParserValidationExpression">.ppt|.pptx|.odp</res>
+	<res name="slidesParserLiFeature1">Quick way to extract text and images</res>
+	<res name="slidesWatermarkLiFeature1">Instantly download output file</res>
+	
+
+	<res name="ParserButton">PARSE NOW</res>
+	
+	<res name="ParserFeature1">Fast and Easy Parser</res>
+	<res name="ParserFeature1Description">Upload your file and click on “PARSE NOW” button. You will get the text file or zip-file with text and images as soon as the Parsing is performed</res>
+	<res name="ParserFeature2">Parse from Anywhere</res>
+	<res name="ParserFeature2Description">It works from all platforms including Windows, Mac, Android and iOS. All files are processed on our servers. No plugin or software installation required for you</res>
+	<res name="ParserFeature3">Parse Quality</res>
+	<res name="ParserLiFeature1">Instantly download output file</res>
+	<res name="ParserAnotherFile">Parse other document</res>
+	<res name="ParserSuccessMessage">Your file has been processed successfully</res>
+	<res name="ParserSentEmailSuccessMessage">Your file has been parsed successfully, please check your email to download parsed files</res>
+	<res name="ParserAction">Parse</res>
+	<res name="HowtoParserTitle">How to Parse file using {1}</res>
+	<res name="HowtoParserFeature1">Click inside the file drop area to upload file or drag &amp; drop file.</res>
+	<res name="HowtoParserFeature2">Click on "PARSE NOW" button, file will be automatically uploaded to parse.</res>
+	<res name="HowtoParserFeature3">Download link of document file will be available instantly after parse.</res>
+
+	<res name="lockPasswordEditProtectionPlaceholder">Password for edit protection</res>
+	<res name="lockPasswordforViewProtectionPlaceholder">Password for view protection</res>
+	<res name="lockAPPName">Lock</res>
+	<res name="LockButton">PROTECT NOW</res>
+	<res name="LockFeature1">Fast and Easy Protection</res>
+	<res name="LockFeature1Description">Upload your file, enter new password and click on "PROTECT NOW" button. You will get protected file as soon as the protection is performed</res>
+	<res name="LockFeature2">Protect from Anywhere</res>
+	<res name="LockFeature2Description">It works from all platforms including Windows, Mac, Android and iOS. All files are processed on our servers. No plugin or software installation required for you</res>
+	<res name="LockFeature3">Protection Quality</res>
+	<res name="LockLiFeature1">Protect your Excel documents with password</res>
+	<res name="LockAnotherFile">Protect another file</res>
+	<res name="LockSuccessMessage">Your file has been protected successfully</res>
+	<res name="LockPasswordPlaceholder">Type Password</res>
+	<res name="LockAction">Protect</res>
+	<res name="LockMarkAsFinal">Mark as Final</res>
+	<!-- Protect Apps - How To-->
+	<res name="slidesLockTitle">Lock PowerPoint &amp; ODP file in Free Online App</res>
+	<res name="slidesLockSubTitle">Lock presentation formats by creating password protected PowerPoint PPT, PPTX and OpenOffice ODP files.</res>
+	<res name="HowtoLockTitle">How to Protect file using {1} App</res>
+	<res name="HowtoLockFeature1">Click inside the file drop area to upload a file or drag &amp; drop a file.</res>
+	<res name="HowtoLockFeature2">Enter new password in Password input field to make your file password protected.</res>
+	<res name="HowtoLockFeature3">Click on Protect Now button. Download link of password protected file will be shown.</res>
+	<res name="slidesLockPageTitle">Lock PowerPoint Presentation</res>
+	<res name="slidesLockMetaDescription">Lock PowerPoint presentation online to password protect it.</res>
+
+	<res name="MergerAPPName">Merger</res>
+	<res name="slidesMergerPageTitle">Merge PowerPoint and OpenOffice documents.</res>
+	<res name="slidesMergerMetaDescription">Free web app to merge PPT, PPTX or ODP files. Use slide master as ppt template and set presentation background.</res>
+	<res name="slidesMergerTitle">Free App to Merge PPT, PPTX and ODP Files</res>
+	<res name="slidesMergerSubTitle">Merge/Combine Microsoft PowerPoint and OpenOffice presentation files. Upload slide master and use it as presentation template.</res>
+	
+	<res name="slidesMergerLiFeature1">Combine different files into one</res>
+
+	<res name="slidesMergerLiFeature2">Choose the order of merged files</res>
+
+	<!-- Conversion App - How To-->
+	<res name="HowtoMergerTitle">How to merger {0} file using {1}</res>
+	<res name="HowtoMergerFeature1">Click inside the file drop area to upload files or drag &amp; drop files.</res>
+	<res name="HowtoMergerFeature2">Click the "MERGE NOW" button to start merging files.</res>
+	<res name="HowtoMergerFeature3">Download link of merged file will be available instantly after merger.</res>
+
+	<res name="MergerButton">MERGE NOW</res>
+	
+	<res name="MergerFeature1">Fast and Easy Way to Merge</res>
+	<res name="MergerFeature1Description">Upload your documents and click on “MERGE NOW” button. It will merge your document files into one and provide you a download link to download merged document. The output format will be the output format of your first document</res>
+	<res name="MergerFeature2">Merge from Anywhere</res>
+	<res name="MergerFeature2Description">It works from all platforms including Windows, Mac, Android and iOS. All files are processed on our servers. No plugin or software installation required for you</res>
+	<res name="MergerFeature3">Merge Quality</res>
+	
+	<res name="MergerAnotherFile">Merge other documents</res>
+	<res name="MergerSuccessMessage">Your files have been processed successfully</res>
+	
+	<res name="MergerViewer">VIEW DOCUMENT</res>
+	<res name="MergerFileAmountMessage">Please select between two and ten files</res>	
+	<res name="MergerAction">Merge</res>
+	
+
+	<res name="WatermarkButton">Add Watermark</res>
+	<res name="WatermarkAction">Watermark</res>
+	<res name="WatermarkAPPName">Watermark</res>
+	<res name="DropAFile">Drop or upload your file</res>
+	<res name="WatermarkAddedSuccessMessage">Watermark added successfully</res>
+	<res name="WatermarkRemovedSuccessMessage">Watermark removed successfully</res>
+	<res name="slidesWatermarkPageTitle">Watermark Remover and Editor Online</res>
+	<res name="slidesWatermarkMetaDescription">Watermark remover online app to add or remove watermark online and free of any type: text watermark, image watermark.</res>
+	<res name="slidesWatermarkTitle">Add &amp; Remove Watermark from PowerPoint Online</res>
+	<res name="slidesWatermarkSubTitle">Free online app to insert text watermark, insert image watermark or remove watermark from PowerPoint PPT, PPTX and OpenOffice ODP files.</res>
+	<res name="HowtoWatermarkTitle">How to Add Watermark in file using {1}</res>
+	<res name="HowtoWatermarkFeature1">Click inside the file drop area to upload a file or drag &amp; drop a file.</res>
+	<res name="HowtoWatermarkFeature2">Your file will be rendered automatically to add watermark.</res>
+	<res name="HowtoWatermarkFeature3">Download link of file will be available instantly after add watermark.</res>
+	<res name="slidesWatermarkTextMessage">Please enter watermark text</res>
+	<res name="WatermarkFeature1">Fast and Easy Add</res>
+	<res name="slidesWatermarkValidationExpression">.ppt|.pptx|.odp</res>
+	<res name="slidesWatermarkImageValidationExpression">.jpg|.jpeg|.bmp|.png|.tiff</res>
+
+	<res name="slidesWatermarkTextTitleSub">Add text watermark in PPT, PPTX and OpenOffice ODP files</res>
+	<res name="slidesWatermarkImageTitleSub">Add image watermark in PPT, PPTX and OpenOffice ODP files</res>
+	
+	<res name="TextWatermarkButton">ADD TEXT WATERMARK</res>
+	<res name="ImageWatermarkButton">ADD IMAGE WATERMARK</res>
+	<res name="RemoveWatermarkButton">REMOVE WATERMARK</res>
+	<res name="AddWatermarkTextPlaceholder">Add Watermark Text</res>
+	
+	<res name="WatermarkAnotherFile">Add watermark in another file</res>
+	<res name="WatermarkFeature1Description">Upload your file, enter watermark text and click on “Add Watermark” button. You will get the download link as soon as the watermark text is added.</res>
+	<res name="WatermarkFeature2">Add Watermark from Anywhere</res>
+	<res name="WatermarkFeature2Description">It works from all platforms including Windows, Mac, Android and iOS. All files are processed on our servers. No plugin or software installation required for you</res>
+	<res name="WatermarkFeature3">Watermark Quality</res>
+	<res name="WatermarkViewer">VIEW RESULTS</res>
+	<res name="RotateAngleLabel">Rotate Angle</res>
+	<res name="ZoomFactorLabel">Zoom factor</res>
+	<res name="GrayscaledLabel">Gray scaled</res>
+	<res name="ColoredLabel">Colored</res>
+	
+	<res name="HowtoRedactionTitle">How to Redact Text in File using {1}</res>
+	<res name="HowtoRedactionFeature1">Click inside the file drop area to upload a file or drag &amp; drop a file.</res>
+	<res name="HowtoRedactionFeature2">Click on "REDACT NOW" button, file will be automatically uploaded to redact.</res>
+	<res name="HowtoRedactionFeature3">Download link of file will be available instantly after redact.</res>
+	<res name="slidesRedactionPageTitle">PowerPoint Presentation Redaction</res>
+	<res name="slidesRedactionMetaDescription">Fast presentation redaction app to redact in PowerPoint.</res>
+	<res name="slidesRedactionTitle">Free Online Presentation Editor</res>
+	<res name="slidesRedactionSubTitle">Presentation editor to find &amp; replace text in PowerPoint and OpenOffice. Edit text, comments, metadata in presentation via regexp data matching.</res>
+	<res name="slidesRedactionLiFeature1">Search and replace in multiple files</res>
+	
+	<res name="slidesRedactionLiFeature2">Parse words and change them easily</res>
+	<res name="RedactionAnotherFile">Redact another file</res>
+	<res name="RedactionSuccessMessage">Your file has been processed successfully</res>
+	<res name="CaseSensitive">Case sensitive</res>
+	<res name="Comments">Comments</res>
+	<res name="Text">Text</res>
+	<res name="Metadata">Metadata</res>
+
+	<res name="RedactionSearchPlaceholder">Type text or regular expression</res>
+	<res name="RedactionSearchErrorMessage">Search query can&apos;t be empty</res>
+	<res name="RedactionReplacePlaceholder">Type replace text</res>
+	<res name="RedactionAction">Search and replace text in</res>
+	<res name="RedactionFeature1">Fast and Easy Redaction</res>
+	<res name="RedactionFeature1Description">Upload your document and click on “REDACT NOW” button. You will get the document file as soon as the redaction is performed</res>
+	<res name="RedactionFeature2">Redact from Anywhere</res>
+	<res name="RedactionFeature2Description">It works from all platforms including Windows, Mac, Android and iOS. All files are processed on our servers. No plugin or software installation required for you</res>
+	<res name="RedactionFeature3">Redaction Quality</res>
+	<res name="RedactionButton">REDACT NOW</res>
+	
+	
+
+	<res name="slidesAnnotationPageTitle">PowerPoint Remove Annotations</res>
+	<res name="slidesAnnotationMetaDescription">Remove annotations from PowerPoint PPT, PPTX and ODP.</res>
+	<res name="slidesAnnotationTitle">Free Annotation Removal App for PowerPoint</res>
+	<res name="slidesAnnotationSubTitle">Free online app to remove all annotations from PowerPoint PPT, PPTX and OpenOffice ODP files.</res>
+	<res name="HowtoAnnotationTitle">How to remove annotations from File using {1}</res>
+	<res name="HowtoAnnotationFeature1">Click inside the file drop area to upload a document file or drag &amp; drop a document file.</res>
+	<res name="HowtoAnnotationFeature2">Your document file will be rendered automatically to remove annotations.</res>
+	<res name="HowtoAnnotationFeature3">Download link of document file will be available instantly after remove annotations.</res>
+	<res name="AnnotationFeature1">Fast and Easy Annotation</res>
+	<res name="AnnotationFeature1Description">Upload your document and click on “REMOVE” button. You will get the download link as soon as the annotations are removed.</res>
+	<res name="AnnotationFeature1DescriptionChoice">Upload your document and click on “{0}” button. You will get the download link as soon as the annotations are removed.</res>
+	<res name="AnnotationFeature2">Remove Annotations from Anywhere</res>
+	<res name="AnnotationFeature2Choice">{0} Annotations from Anywhere</res>
+	<res name="AnnotationFeature2Description">It works from all platforms including Windows, Mac, Android and iOS. All files are processed on our servers. No plugin or software installation required for you</res>
+	<res name="AnnotationFeature3">Annotation Quality</res>
+	<res name="slidesAnnotationLiFeature1">Fast and Easy Remove Annotation</res>
+
+	<res name="AnnotationAnotherFile">Remove annotations from other Files</res>
+	<res name="AnnotationSuccessMessage">Annotations removed successfully</res>
+	<res name="AnnotationButton">REMOVE</res>
+
+	<res name="MetadataAPPName">Metadata</res>
+	<res name="MetadataSavedTitle">File successfully saved</res>
+	<res name="MetadataFeature1">Fast and Easy Metadata</res>
+	<res name="MetadataFeature1Description">Upload your document, update the Metadata and click on "Save" button. You will get the download link as soon as the file is saved</res>
+	<res name="MetadataFeature2">Edit Metadata from Anywhere</res>
+	<res name="MetadataFeature2Description">It works from all platforms including Windows, Mac, Android and iOS. All files are processed on our servers. No plugin or software installation required by you</res>
+	<res name="MetadataFeature3">Metadata Quality</res>
+	<res name="QualityDescMetadata">All files are processed using Aspose APIs, which are being used by many Fortune 100 companies across 114 countries</res>
+	<res name="btnViewMetadata">View Metadata</res>
+	<res name="MetadataSuccessMessage">Metadata has been saved successfully</res>
+	<res name="FindAndEdit">View and edit metadata information in</res>	
+	<res name="MetadataAction">Edit metadata in</res>
+	<res name="MetadataAnotherFile">Edit metadata in another document</res>
+	<res name="MetadataClearButton">Clear All</res>
+
+	<res name="slidesMetadataPageTitle">Free Metadata Viewer &amp; Editor for PowerPoint Presentation</res>
+	<res name="slidesMetadataMetaDescription">Online app to view &amp; edit PowerPoint metadata and document properties of PPT, PPTX &amp; ODP.</res>
+	<res name="slidesMetadataTitle">View &amp; Edit PowerPoint Metadata</res>
+	<res name="slidesMetadataSubTitle">View &amp; edit document properties: presentation title, keywords, subject, comments, author for OpenOffice or PowerPoint presentation format.</res>	
+	<res name="HowtoMetadataTitle">How to edit file metadata using {1}</res>
+	<res name="HowtoMetadataFeature1">Click inside the file drop area to upload files or drag &amp; drop files.</res>
+	<res name="HowtoMetadataFeature2">File will be automatically rendered for you to view &amp; edit metadata instantly.</res>
+	<res name="HowtoMetadataFeature3">Download updated document file with metadata.</res>
+
+	<res name="HowtoSplitterTitle">How to Split a File using {1}</res>
+	<res name="HowtoSplitterFeature1">Click inside the file drop area to upload a document file or drag &amp; drop a document file.</res>
+	<res name="HowtoSplitterFeature2">Click on "SPLIT" button, file will be automatically uploaded to split.</res>
+	<res name="HowtoSplitterFeature3">Download link of document file will be available instantly after splitting.</res>
+
+
+	<res name="SplitterAPPName">Splitter</res>	
+	<res name="slidesSplitterPageTitle">PowerPoint Splitter Online</res>
+	<res name="slidesSplitterMetaDescription">PowerPoint PPT Splitter to split PPT slides online.</res>
+	<res name="slidesSplitterTitle">PowerPoint Splitter Online and Free</res>
+	<res name="slidesSplitterSubTitle">Split PowerPoint PPT, PPTX, POTX as well as other presentation formats.</res>
+	<res name="slidesSplitterValidationExpression">.ppt|.pptx|.ppsx|.potm|.odp</res>
+	<res name="SplitterButton">SPLIT</res>
+	<res name="SplitterFeature1">Fast and Easy Splitter</res>
+	<res name="SplitterFeature1Description">Upload your document file and click on “SPLIT” button. You will get the text file or zip-file with text and images as soon as the Parsing is performed</res>
+	<res name="SplitterFeature2">Split from Anywhere</res>
+	<res name="SplitterFeature2Description">It works from all platforms including Windows, Mac, Android and iOS. All files are processed on our servers. No plugin or software installation required for you</res>
+	<res name="SplitterFeature3">Split Quality</res>
+	<res name="SplitterAnotherFile">Split other documents</res>
+	<res name="SplitterSuccessMessage">Your file has been processed successfully</res>
+	<res name="SplitterSentEmailSuccessMessage">Your files have been split successfully, please check your email to download split files</res>
+	<res name="SplitterAction">Split</res>
+	<res name="SplitterIntoMany">Split into many</res>
+	<res name="SplitterIntoSingle">Split into single</res>
+	<res name="SplitterEvery">Every slide</res>
+	<res name="SplitterOdd">Odd and even slides</res>
+	<res name="SplitterByNumber">By slide number</res>
+	<res name="SplitterPageRange">By slide range</res>
+	<res name="SplitterNumberException">Please, enter number in the field</res>
+	<res name="SplitterRangeException">Please, enter valid page range in the field</res>
+	<res name="slidesSplitterSaveAsOptions">PDF,ODP,OTP,PPTX,PPTM,POTX,PPT,PPS,PPSM,POT,POTM,XPS,PPSX,TIFF,HTML,SWF,TXT,DOC,DOCX,BMP,JPEG,PNG,EMF,WMF,GIF,EXIF,ICO,SVG</res>
+</resources>
+
+
+
