@@ -57,8 +57,9 @@
     <Reference Include="Aspose.Cells">
       <HintPath>..\packages\Aspose.Cells.20.6.0\lib\net40\Aspose.Cells.dll</HintPath>
     </Reference>
-    <Reference Include="Aspose.Slides">
-      <HintPath>..\packages\Aspose.Slides.NET.20.6.0\lib\net4.0-client\Aspose.Slides.dll</HintPath>
+    <Reference Include="Aspose.Slides, Version=20.7.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Slides.NET.20.7.0\lib\net4.0-client\Aspose.Slides.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -111,6 +112,7 @@
     <Compile Include="Charts\SetExternalWorkbookWithUpdateChartData.cs" />
     <Compile Include="Charts\SetExternalWorkbookFromNetwork.cs" />
     <Compile Include="Charts\SpreadsheetFormulasOptions.cs" />
+    <Compile Include="Presentations\Conversion\ExportMathParagraphToMathML.cs" />
     <Compile Include="Presentations\Conversion\FodpFormatConvertion.cs" />
     <Compile Include="Presentations\Conversion\ODPToPPTX.cs" />
     <Compile Include="Presentations\Conversion\Pdf1A_PdfUa_Conformance.cs" />
