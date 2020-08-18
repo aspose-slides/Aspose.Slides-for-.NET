@@ -138,6 +138,7 @@ namespace Aspose.Slides.Examples.CSharp
             //ChartDataCell_Formulas.Run();
             //SpreadsheetFormulasOptions.Run();
             //Chart_RecoverWorkbook.Run();
+            //Chart_GetRange.Run();
 
             //// =====================================================
             ////                    Presentations 
@@ -280,6 +281,7 @@ namespace Aspose.Slides.Examples.CSharp
             //ExtractEmbeddedFileDataFromOLEObject.Run();
             //MathematicalShape.Run();
             //ShapesAlignment.Run();
+            //SketchedShapes.Run();
 
             //// =====================================================
             ////                        Slides 
