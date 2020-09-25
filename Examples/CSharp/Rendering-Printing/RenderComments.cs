@@ -20,27 +20,29 @@ namespace Aspose.Slides.Examples.CSharp.Rendering.Printing
             //ExStart:RenderComments
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Rendering();
-             Presentation pres = new Presentation(dataDir+"presentation.pptx");
+            Presentation pres = new Presentation(dataDir + "presentation.pptx");
             Bitmap bmp = new Bitmap(740, 960);
-        
+
             NotesCommentsLayoutingOptions opts = new NotesCommentsLayoutingOptions();
             opts.CommentsAreaColor = Color.Red;
 
             opts.CommentsAreaWidth = 200;
             opts.CommentsPosition = CommentsPositions.Right;
             opts.NotesPosition = NotesPositions.BottomTruncated;
-         
+
             using (Graphics graphics = Graphics.FromImage(bmp))
             {
                 pres.Slides[0].RenderToGraphics(opts, graphics);
             }
-            bmp.Save(dataDir+"OutPresBitmap.png", ImageFormat.Png);
-            System.Diagnostics.Process.Start(dataDir + "OutPresBitmap.png");
-             
-            }
 
-            }
-            //ExEnd:RenderComments
+            bmp.Save(dataDir + "OutPresBitmap.png", ImageFormat.Png);
+            System.Diagnostics.Process.Start(dataDir + "OutPresBitmap.png");
+
         }
+
+    }
+
+    //ExEnd:RenderComments
+}
     
 

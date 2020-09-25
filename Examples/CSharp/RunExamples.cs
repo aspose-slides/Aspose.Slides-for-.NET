@@ -179,6 +179,7 @@ namespace Aspose.Slides.Examples.CSharp
             //FodpFormatConvertion.Run();
             //Pdf1A_PdfUa_Conformance.Run();
             //ExportMathParagraphToMathML.Run();
+            //SvgFormattingController.Run();
 
             // =====================================================
             //// =====================================================
@@ -390,6 +391,7 @@ namespace Aspose.Slides.Examples.CSharp
             //RenderComments.Run();
             //RenderingEmoji.Run();
             //SupportOfDigitalSignature.Run(); 
+            //Rendering3D.Run();
 
             //// =====================================================
             ////                    Smart Arts
@@ -493,6 +495,7 @@ namespace Aspose.Slides.Examples.CSharp
             //AddCustomPromptText.Run();
             //SaveWithDefaaultRegularFont.Run();
             //PortionGetRect.Run();
+            //BulletFillFormatEffective.Run();
 
             //// =====================================================
             ////                    VBA Macros
