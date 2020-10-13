@@ -180,6 +180,7 @@ namespace Aspose.Slides.Examples.CSharp
             //Pdf1A_PdfUa_Conformance.Run();
             //ExportMathParagraphToMathML.Run();
             //SvgFormattingController.Run();
+            //MailMergeExample.Run();
 
             // =====================================================
             //// =====================================================

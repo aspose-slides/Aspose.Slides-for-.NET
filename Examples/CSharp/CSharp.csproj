@@ -115,6 +115,7 @@
     <Compile Include="Charts\SpreadsheetFormulasOptions.cs" />
     <Compile Include="Presentations\Conversion\ExportMathParagraphToMathML.cs" />
     <Compile Include="Presentations\Conversion\FodpFormatConvertion.cs" />
+    <Compile Include="Presentations\Conversion\MailMergeExample.cs" />
     <Compile Include="Presentations\Conversion\ODPToPPTX.cs" />
     <Compile Include="Presentations\Conversion\Pdf1A_PdfUa_Conformance.cs" />
     <Compile Include="Presentations\Conversion\SvgFormattingController.cs" />
