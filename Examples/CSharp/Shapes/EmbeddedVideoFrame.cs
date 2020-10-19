@@ -13,6 +13,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Shapes();
             string videoDir = RunExamples.GetDataDir_Video();
+            string resultPath = Path.Combine(RunExamples.OutPath, "VideoFrame_out.pptx");
 
             // Create directory if it is not already present.
             bool IsExists = System.IO.Directory.Exists(dataDir);
@@ -26,7 +27,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
                 ISlide sld = pres.Slides[0];
 
                 // Embedd vide inside presentation
-                IVideo vid = pres.Videos.AddVideo(new FileStream(videoDir + "Wildlife.mp4", FileMode.Open));
+                IVideo vid = pres.Videos.AddVideo(new FileStream(videoDir + "Wildlife.mp4", FileMode.Open), LoadingStreamBehavior.ReadStreamAndRelease);
 
                 // Add Video Frame
                 IVideoFrame vf = sld.Shapes.AddVideoFrame(50, 150, 300, 350, vid);
@@ -39,7 +40,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
                 vf.Volume = AudioVolumeMode.Loud;
 
                 // Write the PPTX file to disk
-                pres.Save(dataDir + "VideoFrame_out.pptx", SaveFormat.Pptx);
+                pres.Save(resultPath, SaveFormat.Pptx);
             }
             //ExEnd:EmbeddedVideoFrame
         }

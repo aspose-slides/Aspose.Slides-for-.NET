@@ -2,6 +2,7 @@
 using Aspose.Slides;
 using System.Drawing;
 using System.Drawing.Imaging;
+using System.IO;
 
 /*
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Slides for .NET API reference 
@@ -20,23 +21,24 @@ namespace Aspose.Slides.Examples.CSharp.Rendering.Printing
             //ExStart:RenderComments
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Rendering();
+            string resultPath = Path.Combine(RunExamples.OutPath, "OutPresBitmap_Comments.png");
+
             Presentation pres = new Presentation(dataDir + "presentation.pptx");
             Bitmap bmp = new Bitmap(740, 960);
 
-            NotesCommentsLayoutingOptions opts = new NotesCommentsLayoutingOptions();
-            opts.CommentsAreaColor = Color.Red;
-
-            opts.CommentsAreaWidth = 200;
-            opts.CommentsPosition = CommentsPositions.Right;
-            opts.NotesPosition = NotesPositions.BottomTruncated;
+            IRenderingOptions renderOptions = new RenderingOptions();
+            renderOptions.NotesCommentsLayouting.CommentsAreaColor = Color.Red;
+            renderOptions.NotesCommentsLayouting.CommentsAreaWidth = 200;
+            renderOptions.NotesCommentsLayouting.CommentsPosition = CommentsPositions.Right;
+            renderOptions.NotesCommentsLayouting.NotesPosition = NotesPositions.BottomTruncated;
 
             using (Graphics graphics = Graphics.FromImage(bmp))
             {
-                pres.Slides[0].RenderToGraphics(opts, graphics);
+                pres.Slides[0].RenderToGraphics(renderOptions, graphics);
             }
 
-            bmp.Save(dataDir + "OutPresBitmap.png", ImageFormat.Png);
-            System.Diagnostics.Process.Start(dataDir + "OutPresBitmap.png");
+            bmp.Save(resultPath, ImageFormat.Png);
+            System.Diagnostics.Process.Start(resultPath);
 
         }
 

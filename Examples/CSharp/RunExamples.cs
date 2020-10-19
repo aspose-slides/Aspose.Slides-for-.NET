@@ -1,5 +1,6 @@
 using System;
 using System.IO;
+using Aspose.Cells.Drawing;
 using Aspose.Slides.Examples.CSharp.ActiveX;
 using Aspose.Slides.Examples.CSharp.Charts;
 using Aspose.Slides.Examples.CSharp.Conversion;
@@ -24,6 +25,7 @@ using Aspose.Slides.Examples.CSharp.SmartArts;
 using Aspose.Slides.Examples.CSharp.Tables;
 using Aspose.Slides.Examples.CSharp.Text;
 using Aspose.Slides.Examples.CSharp.VBA;
+using Aspose.Slides.Export;
 using CSharp.Charts;
 using CSharp.Presentations.Conversion;
 using CSharp.Presentations.Opening;
@@ -393,6 +395,7 @@ namespace Aspose.Slides.Examples.CSharp
             //RenderingEmoji.Run();
             //SupportOfDigitalSignature.Run(); 
             //Rendering3D.Run();
+            //RenderOptions.Run();
 
             //// =====================================================
             ////                    Smart Arts
@@ -497,6 +500,7 @@ namespace Aspose.Slides.Examples.CSharp
             //SaveWithDefaaultRegularFont.Run();
             //PortionGetRect.Run();
             //BulletFillFormatEffective.Run();
+            //WordArt.Run();
 
             //// =====================================================
             ////                    VBA Macros

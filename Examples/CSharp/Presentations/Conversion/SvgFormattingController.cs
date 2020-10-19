@@ -61,5 +61,10 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Conversion
             }
             svgTSpan.Id = string.Format("paragraph-{0}_portion-{1}_{2}", paragraphIndex, m_portionIndex, m_tspanIndex++);
         }
+
+        public ISvgShapeFormattingController AsISvgShapeFormattingController
+        {
+            get { return this; }
+        }
     }
 }
