@@ -141,6 +141,7 @@ namespace Aspose.Slides.Examples.CSharp
             //SpreadsheetFormulasOptions.Run();
             //Chart_RecoverWorkbook.Run();
             //Chart_GetRange.Run();
+            //MapChart.Run();
 
             //// =====================================================
             ////                    Presentations 
@@ -216,6 +217,7 @@ namespace Aspose.Slides.Examples.CSharp
             //AccessLayoutFormats.Run();
             //ReadOnlyRecommended.Run();
             //CheckPresentationProtection.Run();
+            //CheckPasswordExample.Run();
 
             //// =====================================================
             ////            Presentations -   Saving
@@ -501,6 +503,7 @@ namespace Aspose.Slides.Examples.CSharp
             //PortionGetRect.Run();
             //BulletFillFormatEffective.Run();
             //WordArt.Run();
+            //KeepTextFlat.Run();
 
             //// =====================================================
             ////                    VBA Macros
