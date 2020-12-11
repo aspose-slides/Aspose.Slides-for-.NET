@@ -184,6 +184,7 @@ namespace Aspose.Slides.Examples.CSharp
             //ExportMathParagraphToMathML.Run();
             //SvgFormattingController.Run();
             //MailMergeExample.Run();
+            //PdfImportExample.Run();
 
             // =====================================================
             //// =====================================================
