@@ -12,23 +12,34 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
             string dataDir = RunExamples.GetDataDir_Shapes();
 
             // Load the PPTX to Presentation object
-            Presentation pres = new Presentation(dataDir + "AccessingOLEObjectFrame.pptx");
-
-            // Access the first slide
-            ISlide sld = pres.Slides[0];
-
-            // Cast the shape to OleObjectFrame
-            OleObjectFrame oof = (OleObjectFrame)sld.Shapes[0];
-
-            // Read the OLE Object and write it to disk
-            if (oof != null)
+            using (Presentation pres = new Presentation(dataDir + "AccessingOLEObjectFrame.pptx"))
             {
-                FileStream fstr = new FileStream(dataDir+ "excelFromOLE_out.xlsx", FileMode.Create, FileAccess.Write);
-                byte[] buf = oof.ObjectData;
-                fstr.Write(buf, 0, buf.Length);
-                fstr.Flush();
-                fstr.Close();
+                // Access the first slide
+                ISlide sld = pres.Slides[0];
+
+                // Cast the shape to OleObjectFrame
+                OleObjectFrame oleObjectFrame = sld.Shapes[0] as OleObjectFrame;
+
+                // Read the OLE Object and write it to disk
+                if (oleObjectFrame != null)
+                {
+                    // Get embedded file data
+                    byte[] data = oleObjectFrame.EmbeddedFileData;
+
+                    // Get embedded file extention
+                    string fileExtention = oleObjectFrame.EmbeddedFileExtension;
+
+                    // Create path for saving the extracted file
+                    string extractedPath = dataDir + "excelFromOLE_out" + fileExtention;
+
+                    // Save extracted data
+                    using (FileStream fstr = new FileStream(extractedPath, FileMode.Create, FileAccess.Write))
+                    {
+                        fstr.Write(data, 0, data.Length);
+                    }
+                }
             }
+
             //ExEnd:AccessOLEObjectFrame
         }
     }

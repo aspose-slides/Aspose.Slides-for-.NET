@@ -1,4 +1,5 @@
 using System;
+using System.Drawing;
 using System.IO;
 using Aspose.Cells.Drawing;
 using Aspose.Slides.Examples.CSharp.ActiveX;
@@ -25,7 +26,6 @@ using Aspose.Slides.Examples.CSharp.SmartArts;
 using Aspose.Slides.Examples.CSharp.Tables;
 using Aspose.Slides.Examples.CSharp.Text;
 using Aspose.Slides.Examples.CSharp.VBA;
-using Aspose.Slides.Export;
 using CSharp.Charts;
 using CSharp.Presentations.Conversion;
 using CSharp.Presentations.Opening;
@@ -289,6 +289,11 @@ namespace Aspose.Slides.Examples.CSharp
             //MathematicalShape.Run();
             //ShapesAlignment.Run();
             //SketchedShapes.Run();
+            //GeometryShapeAddSegment.Run();
+            //GeometryShapeRemoveSegment.Run();
+            //GeometryShapeCreatesCustomGeometry.Run();
+            //GeometryShapeCompositeObjects.Run();
+            //GeometryShapeUsingShapeUtil.Run();
 
             //// =====================================================
             ////                        Slides 

@@ -57,9 +57,9 @@
     <Reference Include="Aspose.Cells">
       <HintPath>..\packages\Aspose.Cells.20.6.0\lib\net40\Aspose.Cells.dll</HintPath>
     </Reference>
-    <Reference Include="Aspose.Slides, Version=20.12.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+    <Reference Include="Aspose.Slides, Version=21.1.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Aspose.Slides.NET.20.12.0\lib\net4.0-client\Aspose.Slides.dll</HintPath>
+      <HintPath>..\packages\Aspose.Slides.NET.21.1.0\lib\net4.0-client\Aspose.Slides.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -130,6 +130,11 @@
     <Compile Include="Rendering-Printing\RenderOptions.cs" />
     <Compile Include="Rendering-Printing\SupportOfDigitalSignature.cs" />
     <Compile Include="Shapes\ExtractEmbeddedFileDataFromOLEObject.cs" />
+    <Compile Include="Shapes\GeometryShapeAddSegment.cs" />
+    <Compile Include="Shapes\GeometryShapeCompositeObjects.cs" />
+    <Compile Include="Shapes\GeometryShapeCreatesCustomGeometry.cs" />
+    <Compile Include="Shapes\GeometryShapeRemoveSegment.cs" />
+    <Compile Include="Shapes\GeometryShapeUsingShapeUtil.cs" />
     <Compile Include="Shapes\MathematicalShape.cs" />
     <Compile Include="Shapes\ShapesAlignment.cs" />
     <Compile Include="Shapes\SketchedShapes.cs" />
