@@ -1,3 +1,4 @@
+![Nuget](https://img.shields.io/nuget/v/Aspose.Slides.NET) ![Nuget](https://img.shields.io/nuget/dt/Aspose.Slides.NET) ![GitHub](https://img.shields.io/github/license/aspose-slides/Aspose.Slides-for-.NET)
 # PowerPoint File Manipulation API
 
 [Aspose.Slides for .NET](https://products.aspose.com/slides/net) is a cross-platform API that helps in developing applications with the ability to create, manipulate, inspect or convert Microsoft PowerPoint and OpenOffice presentation files without any dependency.
