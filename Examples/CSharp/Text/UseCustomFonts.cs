@@ -21,10 +21,11 @@ namespace Aspose.Slides.Examples.CSharp.Text
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Text();
 
-            String[] loadFonts = new String[] { dataDir + "CustomFonts.ttf" };
+            // folders to seek fonts
+            String[] folders = new String[] { dataDir };
 
             // Load the custom font directory fonts
-            FontsLoader.LoadExternalFonts(loadFonts);
+            FontsLoader.LoadExternalFonts(folders);
 
             // Do Some work and perform presentation/slides rendering
             using (Presentation presentation = new Presentation(dataDir + "DefaultFonts.pptx"))
