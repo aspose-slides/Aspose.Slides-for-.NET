@@ -1,0 +1,165 @@
+﻿@model  Aspose.Slides.Web.UI.Models.Interfaces.IVideoModel
+
+<div class="container-fluid asposetools pb5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 pt-5 pb-5">
+                <partial name="HeaderProduct" for="@Model" />
+                <partial name="UploadFile" for="UploadFile" />
+                <partial name="DownloadResult" for="@Model" />
+                <partial name="Alert" for="@Model" />
+                <partial name="Loader" for="@Model" />
+
+                <div id="WorkPlaceHolder">
+                    <form class="workForm" method="POST">
+
+                        <input type="hidden" name="id" />
+
+                        <div class="row" style="padding-bottom:50px">
+                            <div class="col-md-4 col-md-offset-2 col-sm-5 col-sm-offset-1 col-xs-12">
+                                <div class="saveas">
+                                    <div class="form-group" style="text-align: left">
+                                        <label class="radio-inline">
+                                            <input type="radio" name="splitType" id="radioSlideBySlide" value="0" checked />
+                                            <em>@Model.Every</em>
+                                        </label>
+                                    </div>
+                                    <div class="form-group" style="text-align: left">
+                                        <label class="radio-inline">
+                                            <input type="radio" name="splitType" id="radioRange" value="3" />
+                                            <em>@Model.PageRange</em>
+                                        </label>
+                                        <input type="text" name="splitRange" id="splitRange" placeholder="1-2,4,6-9" style="width: 120px; height: 36px;" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-5 col-xs-12">
+                                <div class="saveas d-inline-flex align-items-center justify-content-center">
+                                    <em>Transition duration (sec)</em>
+                                    <div class="btn-group narrow_btn" >
+                                        <input type="hidden" name="transitionTime" value="5" />
+                                        <button type="button" class="btn btn-danger dropdown-toggle" id="btnTransition" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            5
+                                        </button>
+                                        <div class="dropdown-menu narrow_btn" aria-labelledby="dropdownMenuLink">
+                                            @foreach (var transition in new[] { 3, 5, 10 })
+                                            {
+                                                <a onclick="setTransiotionTime(this)" class="dropdown-item">@transition</a>
+                                            }
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix">&nbsp;</div>
+                        </div>
+
+                        @*<div class="saveas">
+                            <em>@Model["VideoCodecLabel"]</em>
+                            <div class="btn-group saveformat">
+                                <input type="hidden" name="videoCodec" value="0" />
+                                <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" id="btnSaveAs" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    @Model.VideoCodecs[0].ToUpper()
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    @for (int i = 0; i < Model.VideoCodecs.Length; ++i)
+                                    {
+                                        <a onclick="setVideoCodec(this, @i)" class="dropdown-item">@Model.VideoCodecs[i].ToUpper()</a>
+                                    }
+                                </div>
+                            </div>
+                        </div>*@
+
+                        <div class="convertbtn">
+                            <input type="submit" class="btn btn-success btn-lg" ID="workButton" value="@Model.WorkButtonText" />
+                        </div>
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts {
+    <script type="text/javascript">
+
+        $(document).ready(function() {
+            registerUploadHandlers();
+            registerFormHandlers();
+        });
+
+        window.Method = "Video";
+        window.APIMethodWorkUrl = `${APIBasePath}api/Slides/Video`;
+
+        window.afterUploadSuccess = function(data, textStatus, xhr) {
+            showInfo(window.Resources["SuccessfullyUploaded"]);
+        }
+
+        function wrongSplitRangeFormat(text) {
+            var pars = text.replace(/\s/g, ""); // remove whitespace
+            if (pars.length === 0 || pars.match(/^\s+$/) || (pars.indexOf(',') === -1 && !pars.match(/^\d+$/) && !pars.match(/^\d+\-\d+$/))) {
+                return true;
+            } else {
+                var splitResult = pars.split(',');
+                for (var i = 0; i < splitResult.length; i++) {
+                    if (!splitResult[i].match(/^\d+$/) && !splitResult[i].match(/^\d+\-\d+$/)) {
+                        return true;
+                    } else if (splitResult[i].match(/^\d+\-\d+$/)) {
+                        var dashPos = splitResult[i].indexOf('-');
+                        var v1 = parseInt(splitResult[i].substring(0, dashPos));
+                        var v2 = parseInt(splitResult[i].substring(dashPos + 1));
+                        if (v1 >= v2) {
+                            return true;
+                        }
+                    }
+                }
+            }
+            return false;
+        }
+
+        const splitRangeInput = $("#splitRange");
+
+        window.onValidateWork = function() {
+
+            $('#workButton').addClass("hidden");
+            splitRangeInput.css({ 'border': '' });
+
+            const splitRange = $('#radioRange').is(":checked");
+            if (splitRange && wrongSplitRangeFormat(splitRangeInput.val())) {
+                splitRangeInput.css({ 'border': '2px solid red' });
+                showAlert('@Model.RangeException');
+                $('#workButton').removeClass("hidden");
+                return false;
+            }
+
+            if ($('input[name="FileNames"]:isEmpty').length >= 0 &&
+                $('input[name="FileNames"]').length == 0) {
+                showAlert('@Model.FileSelectMessage');
+                $('#workButton').removeClass("hidden");
+                return false;
+            }
+
+            if (!splitRange) {
+                $('input[name="splitRange"]').val("");
+            }
+
+            return true;
+        }
+
+        function setVideoCodec(obj, codec) {
+            var t = $(obj).text();
+
+            $("#btnSaveAs").html(t);
+            $('input[name="videoCodec"]').val(codec);
+        }
+
+        function setTransiotionTime(obj) {
+            var t = $(obj).text();
+
+            $("#btnTransition").html(t);
+            $('input[name="transitionTime"]').val(t);
+        }
+
+    </script>
+}

@@ -1,0 +1,48 @@
+﻿@using System.Web
+@model Aspose.Slides.Web.UI.Models.Interfaces.IEditorAppModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <title>Aspose.Slides Editor free app.</title>
+    <link href="@Url.Content("~/slides/static/img/favicon.ico")" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+</head>
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script>
+        window.apiBaseUrl = "@Model.APIBasePath";
+        window.uploadedFolder = "@Model.FolderName";
+        window.uploadedFilename = "@Html.Raw(HttpUtility.JavaScriptStringEncode(Model.FileName))";
+        window.emailLabel = "Email";
+        window.privateReportLabel = "@Model.ReportPrivateLabel";
+        window.okButtonLabel = "@Model.ReportOkButton";
+        window.sendButtonLabel = "@Model.ReportSendButton";
+        window.closeButtonLabel = "@Model.ReportCloseButton";
+        window.incorrectEmailLabel = "Incorrect email.";
+        window.notFoundTitle = "Requested page not found [404].";
+        window.internalServerErrorTitle = "Internal Server Error [500].";
+        window.serverErrorText = "@Model.ServerErrorText";
+        window.processingTimeoutTitle = "@Model.ProcessingTimeoutTitle";
+        window.processingTimeoutText = "@Model.ProcessingTimeoutText";
+        window.invalidFileTitle = "@Model.InvalidFileTitle";
+        window.invalidFileText = "@Model.InvalidFileText";
+        window.badRequestTitle = "@Model.BadRequestTitle";
+        window.badRequestText = "@Model.BadRequestText";
+        window.otherErrorText = "@Model.OtherErrorText";
+        window.successErrorReportTitle = "@Model.ReportSuccessTitle";
+        window.successErrorReportText = "@Model.ReportSuccessText";
+
+    </script>
+    <script src="~/slides/static/Scripts/editor/main.js"></script>
+</body>
+</html>

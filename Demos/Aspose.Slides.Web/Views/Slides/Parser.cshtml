@@ -1,0 +1,41 @@
+﻿@model  Aspose.Slides.Web.UI.Models.Interfaces.IBaseViewModel
+
+<div class="container-fluid asposetools pb5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 pt-5 pb-5">
+                <partial name="HeaderProduct" for="@Model" />
+                <partial name="UploadFile" for="UploadFile" />
+                <partial name="DownloadResult" for="@Model" />
+                <partial name="Alert" for="@Model" />
+                <partial name="Loader" for="@Model" />
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts {
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            registerUploadHandlers();
+            registerFormHandlers();
+        });
+
+        window.Method = "Parser";
+        window.APIMethodWorkUrl = `${APIBasePath}api/Slides/Parser`;
+
+        window.afterUploadSuccess = function (data, textStatus, xhr) {
+            const uploaded = Array.from(data.filter(f => f.IsSuccess), f => f.FileName).join(', ');
+            $.ajax({
+                method: "POST",
+                url: `${APIMethodWorkUrl}/${data[0].id}?filename=${encodeURIComponent(uploaded)}`,
+                dataType: "json",
+                beforeSend: showLoader,
+                success: workSuccess,
+                //complete: hideLoader,
+                error: handleError
+            });
+        }
+    </script>
+}

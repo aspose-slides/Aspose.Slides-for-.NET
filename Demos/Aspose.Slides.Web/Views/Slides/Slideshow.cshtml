@@ -1,0 +1,418 @@
+@using System.Web
+@model  Aspose.Slides.Web.UI.Models.Interfaces.ISlideshowModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta name="description" content="@Model.MetaDescription" />
+    <meta name="generator" content="aspose.app" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>@Model.PageTitle</title>
+
+    <link href="@Url.Content("~/slides/static/img/favicon.ico")" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+
+    <link rel="stylesheet" href="~/slides/static/css/viewer/reset.css" />
+    <link rel="stylesheet" href="~/slides/static/css/viewer/reveal.css" />
+    <link rel="stylesheet" href="~/slides/static/css/viewer/viewer.css" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+    <style>
+        @*
+            Workaround for Reveal.js/Bootstrap conflict which break animations and previews
+            https://github.com/hakimel/reveal.js/issues/1515#issuecomment-432471954
+        *@
+        [hidden] {
+            display: inherit !important;
+        }
+    </style>
+
+    <link rel="stylesheet" href="~/slides/static/css/cms.admin.containerize.com/templates/aspose/css/font-awesome.css" />
+</head>
+<body>
+
+    <div id="loading">
+        <div class="viewer-loader">
+        </div>
+    </div>
+
+    <div id="PublishErrorModal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <h5 class="modal-title text-danger">@Model.ReportTitle</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="row">
+                            <p id="pPopupMessage" class="mt-1"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <p id="pPopupBody" class="font-weight-bold font-italic">
+                    </p>
+                    <form>
+                        <div class="form-group">
+                            <label for="ReportErrorEmail" class="control-label">Email:</label>
+                            <input type="email" class="form-control" id="ReportErrorEmail" name="Email" value="@Model.EmailTo" />
+                        </div>
+                        <div class="form-group">
+                            <input id="IsPrivatePost" type="checkbox" checked="checked" value="true" />&nbsp;@Model.ReportPrivateLabel
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">@Model.ReportCloseButton</button>
+                    <button id="ErrorReportSubmitBtn" type="button" class="btn btn-primary">
+                        <span id="ErrorSubmitSpinner" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                        @Model.ReportSendButton
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="SucessfullyPublishedErrorModal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-success">@Model.ReportSuccessTitle</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="font-weight-bold font-italic">@Model.ReportSuccessText</p>
+                    <p>Click <a id="lnkForums" target="_blank">this link</a> to visit the forums.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">@Model.ReportOkButton</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="reveal">
+        <div class="slides">
+        </div>
+
+        <nav id="viewerHeader" class="navbar navbar-dark bg-dark">
+            <a class="navbar-brand viewer-header-item" href="/slides/viewer">
+                <img class="m-0" src="https://cms.admin.containerize.com/templates/aspose/App_Themes/V3/images/aspose-logo.png" alt="" loading="lazy">
+            </a>
+
+            <span class="navbar-text align-middle text-center text-truncate viewer-header-item d-none d-lg-block flex-grow-1">
+                @Model.FileName
+            </span>
+
+            <div class="d-lg-none flex-grow-1">
+            </div>
+
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-dark" title="@Model.FullscreenToggle" onclick="toggleFullScreen()">
+                    <i class="fa fa-expand"></i>
+                </button>
+                <button type="button" class="btn btn-dark" title="@Model.OverviewToggle" onclick="overview()">
+                    <i class="fa fa-eye"></i>
+                </button>
+                <div class="btn-group" role="group">
+                    <button class="btn btn-dark dropdown-toggle" title="@Model.AutoplayTimerButton" type="button" id="navbarSetDelayDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-clock-o"></i>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarSetDelayDropdown">
+                        <a class="dropdown-item" onclick="setDelay(null)">None</a>
+                        <a class="dropdown-item" onclick="setDelay(10000)">10 sec</a>
+                        <a class="dropdown-item" onclick="setDelay(30000)">30 sec</a>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-dark" title="@Model.OpenEditorButton" onclick="gotoEditor()">
+                    <i class="fa fa-edit"></i>
+                </button>
+                <div class="btn-group" role="group">
+                    <button class="btn btn-dark dropdown-toggle" title="@Model.DownloadButton" type="button" id="navbarDownloadDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-download"></i>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDownloadDropdown">
+                        <a class="dropdown-item download-item" data-format="pptx">PPTX</a>
+                        <a class="dropdown-item download-item" data-format="pdf">PDF</a>
+                        <a class="dropdown-item download-item" data-format="html">HTML</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+
+    <script src="~/slides/static/Scripts/viewer/reveal.js"></script>
+    <script src="~/slides/static/Scripts/viewer/plugin/notes/notes.js"></script>
+    <script src="~/slides/static/Scripts/viewer/plugin/zoom/zoom.js"></script>
+
+    @* Bootstrap 4.5 *@
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <script src="~/slides/static/Scripts/jquery.form.min.js"></script>
+    <script src="~/slides/static/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+
+    <script>
+    var resources = [];
+    resources["SuccessfullyUploaded"] = "@Model.SuccessfullyUploaded";
+    resources["FileSelectMessage"] = "@Model.FileSelectMessage";
+    resources["ValidateEmailMessage"] = "@Model.ValidateEmailMessage";
+    resources["InvalidFile"] = "@Model.InvalidFileTitle";
+    resources["WrongRegExpMessage"] = "@Model.WrongRegExpMessage";
+    resources["NoSearchResultsMessage"] = "@Model.NoSearchResultsMessage";
+    resources["UnlockInvalidPassword"] = "@Model.UnlockInvalidPassword";
+    window.Resources = resources;
+
+    function showLoader() {
+        $(".reveal").addClass("invisible");
+        $("#loading").removeClass("invisible");
+    }
+
+    function hideLoader() {
+        $("#loading").addClass("invisible");
+        $(".reveal").removeClass("invisible");
+    }
+
+    function hideProgress() {
+        $(".viewer-loader").addClass("invisible");
+    }
+
+    function overview() {
+        Reveal.toggleOverview();
+    }
+
+    function toggleFullScreen() {
+        if (!document.fullscreenElement) {
+            document.documentElement.requestFullscreen();
+        } else {
+            if (document.exitFullscreen) {
+                document.exitFullscreen();
+            }
+        }
+    }
+
+    function setDelay(delay) {
+        let config = Reveal.getConfig();
+        config.autoSlide = delay;
+        Reveal.configure(config);
+    }
+
+    function preparePresentation() {
+        showLoader();
+
+        function initReveal() {
+
+            Reveal.initialize({
+                hash: true,
+                plugins: [RevealNotes, RevealZoom],
+                slideNumber: 'c/t',
+                hashOneBasedIndex: true
+            });
+
+            document.documentElement.onfullscreenchange = () => {
+                if ($(".fa-expand").length) {
+                    $(".fa-expand").removeClass("fa-expand").addClass("fa-compress");
+                } else {
+                    $(".fa-compress").removeClass("fa-compress").addClass("fa-expand");
+                }
+            }
+
+            Reveal.on("overviewshown", event => { $(".fa-eye").removeClass("fa-eye").addClass("fa-eye-slash"); });
+            Reveal.on("overviewhidden", event => { $(".fa-eye-slash").removeClass("fa-eye-slash").addClass("fa-eye"); });
+
+        }
+
+        $.ajax({
+            type: "POST",
+            contentType: "application/json",
+            url: '@string.Format("{0}api/Slides/ViewerInfo", Model.APIBasePath)',
+            data: JSON.stringify({
+                FileNames: ["@Html.Raw(HttpUtility.JavaScriptStringEncode(Model.FileName))"],
+                FolderName: "@Model.FolderName"
+            }),
+            success: (data, status, xhr) => {
+                if (data.IsSuccess) {
+                    const slidesCount = data.info.count;
+                    const width = data.info.width;
+                    const height = data.info.height;
+
+                    for (let i = 1; i <= slidesCount; ++i) {
+                        const apiBase = "@Model.APIBasePath";
+                        const fileName = encodeURIComponent("@Html.Raw(HttpUtility.JavaScriptStringEncode(Model.FileName))");
+                        const url = `${apiBase}api/Slides/ViewerSlide/@Model.FolderName/?fileName=${fileName}&slide=${i}`;
+                        const sectionElem = $(`<section><svg class="stretch" viewbox="0 0 ${width} ${height}"><image xlink:href="${url}" width="${width}" height="${height}"></svg></section>`);
+                        $(".slides").append(sectionElem);
+                    }
+
+                    hideLoader();
+                    initReveal();
+
+                } else {
+                    handleProcessingError(data);
+                }
+            },
+            error: (xhr, error) => handleGenericError(xhr, error)
+        });
+    }
+
+    preparePresentation();
+
+    function gotoEditor() {
+        const fileName = encodeURIComponent("@Html.Raw(HttpUtility.JavaScriptStringEncode(Model.FileName))");
+        const editorLink = `/slides/storage/edit/?copy=processed&folder=@Model.FolderName&fileName=${fileName}`;
+        window.open(editorLink);
+    }
+
+    function download(format) {
+        showLoader();
+
+        const fileDownloadLink = '@string.Format("{0}api/Common/DownloadFile", Model.APIBasePath)';
+        $.ajax({
+            type: "POST",
+            url: '@string.Format("{0}api/Slides/Conversion", Model.APIBasePath)',
+            data: {
+                'id': "@Model.FolderName",
+                'FileName': "@Model.FileName",
+                'Format': format
+            },
+            success: (data, status, xhr) => {
+                if (data.IsSuccess) {
+                    window.location = `${fileDownloadLink}/${data.id}?file=${data.FileName}`;
+                } else {
+                    handleProcessingError(data);
+                }
+            },
+            error: (xhr, error) => handleGenericError(xhr, error),
+            complete: () => hideLoader()
+        });
+    }
+
+    $(".download-item").click(e => download($(e.target).data("format").toLocaleString()));
+
+    $(".btn-dark").focus(function() {
+        // workaround: resetting active button state
+        this.blur();
+    });
+
+    // error handling
+
+    function handleProcessingError(data) {
+        switch (data.idError) {
+        case "ProcessingTimeout":
+            showErrorReport("@Model.ProcessingTimeoutTitle", "@Model.ProcessingTimeoutText", data);
+            break;
+        case "InvalidFile":
+            showErrorReport("@Model.InvalidFileTitle", "@Model.InvalidFileText", data);
+            break;
+        case "BadRequest":
+            showErrorReport("@Model.BadRequestTitle", "@Model.BadRequestText", data);
+            break;
+        default:
+            showErrorReport(data.idError, "@Model.OtherErrorText", data);
+            break;
+        }
+    }
+
+    function handleGenericError(xhr, exception) {
+        var msg = '';
+        if (xhr.status === 0) {
+            msg = 'Not connect.\n Verify Network.';
+        } else if (xhr.status === 404) {
+            msg = 'Requested page not found. [404]';
+        } else if (xhr.status === 500) {
+            msg = 'Internal Server Error [500].';
+        } else if (exception === 'parsererror') {
+            msg = 'Requested JSON parse failed.';
+        } else if (exception === 'timeout') {
+            msg = 'Time out error.';
+        } else if (exception === 'abort') {
+            msg = 'Ajax request aborted.';
+        } else {
+            msg = 'Uncaught Error.\n' + xhr.responseText;
+        }
+
+        showErrorReport(msg, "@Model.ServerErrorText", exception, xhr);
+    }
+
+    var errorDetail = "";
+
+    function showErrorReport(msg, explanation, data1, data2) {
+        $('#pPopupMessage').text(msg);
+        $('#pPopupBody').text(explanation);
+        errorDetail = `${data1 ? JSON.stringify(data1) : ""}${data2 ? " \r\n" + JSON.stringify(data2) : ""}`;
+        $('#PublishErrorModal').modal('show');
+        $("#ErrorSubmitSpinner").hide();
+    }
+
+    function sendErrorReport() {
+        $("#ErrorSubmitSpinner").show();
+        $("#ErrorReportSubmitBtn").attr("disabled", "disabled");
+        const msg = $('#pPopupMessage').text();
+        if (!$("#ReportErrorEmail").val()) {
+            $('#ReportErrorEmail').addClass("alert-danger");
+            $('#ReportErrorEmail').fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100);
+            $("#ErrorSubmitSpinner").hide();
+            $('#ErrorReportSubmitBtn').removeAttr("disabled");
+            return;
+        }
+        $('#ReportErrorEmail').removeClass("alert-danger");
+
+
+        const url = '@string.Format("{0}api/Error2Forum/ReportError", Model.APIBasePath)';
+        $.ajax({
+            type: "POST",
+            url,
+            data: {
+                "id": "@Model.FolderName",
+                "App": "Viewer",
+                "Product": "slides",
+                "Email": $("#ReportErrorEmail").val(),
+                "Message": msg,
+                "Title": `Viewer issue - ${msg.substring(0, 50)} ${new Date().toISOString()}`,
+                "OriginalUrl": window.location.href,
+                "Detail": errorDetail,
+                "IsSendNotification": true,
+                "IsPrivatePost": ($("#IsPrivatePost").val() === "true")
+            },
+            dataType: "json",
+            success: (data, status, xhr) => {
+                if (data.IsSuccess) {
+                    //SEONavigate('errorReportSuccess');
+                    $('#PublishErrorModal').modal('hide');
+                    $('#lnkForums').attr("href", data.Url);
+                    $('#SucessfullyPublishedErrorModal').modal('show');
+                } else {
+                    handleProcessingError(data);
+                }
+            },
+            error: (xhr, error) => handleGenericError(xhr, error),
+            complete: (xhr, status) => {
+                $("#ErrorSubmitSpinner").hide();
+                $('#ErrorReportSubmitBtn').removeAttr("disabled");
+            }
+        });
+    }
+
+    $('#ErrorReportSubmitBtn').click(() => sendErrorReport());
+
+    </script>
+</body>
+</html>

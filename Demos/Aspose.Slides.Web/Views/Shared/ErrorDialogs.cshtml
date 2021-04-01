@@ -1,0 +1,186 @@
+﻿@model Aspose.Slides.Web.UI.Models.Interfaces.IBaseViewModel
+
+<script type="text/javascript">
+        window.dataErrorAlert = function (data) {
+        switch (data.idError) {
+            case "InvalidReg":
+                showAlert("@Model.WrongRegExpMessage");
+                break;
+            case "NotFound":
+                showAlert("@Model.NoSearchResultsMessage");
+                break;
+            case "InvalidPassword":
+                showAlert("@Model.UnlockInvalidPassword");
+                break;
+
+            case "ProcessingTimeout":
+                showReportWindow("@Model.ProcessingTimeoutTitle", "@Model.ProcessingTimeoutText", data);
+                break;
+            case "InvalidFile":
+                showReportWindow("@Model.InvalidFileTitle", "@Model.InvalidFileText", data);
+                break;
+            case "BadRequest":
+                showReportWindow("@Model.BadRequestTitle", "@Model.BadRequestText", data);
+                break;
+            default:
+                showReportWindow(data.idError, "@Model.OtherErrorText", data);
+                break;
+        }
+    };
+
+    window.handleWorkError = function (xhr, exception) {
+        hideLoader();
+        onShowProcessingButton();
+
+        var msg = '';
+        if (xhr.status === 0) {
+            msg = 'Not connect.\n Verify Network.';
+        } else if (xhr.status == 404) {
+            msg = 'Requested page not found. [404]';
+        } else if (xhr.status == 500) {
+            msg = 'Internal Server Error [500].';
+        } else if (exception === 'parsererror') {
+            msg = 'Requested JSON parse failed.';
+        } else if (exception === 'timeout') {
+            msg = 'Time out error.';
+        } else if (exception === 'abort') {
+            msg = 'Ajax request aborted.';
+        } else {
+            msg = 'Uncaught Error.\n' + xhr.responseText;
+        }
+
+        showReportWindow(msg, "@Model.OtherErrorText", exception, xhr);
+    };
+
+    window.showReportWindow = function (msg, explanation, data1, data2) {
+        showAlert(msg);
+        SEONavigate('errorReportForm');
+
+        $('#pPopupMessage').text(msg);
+        $('#pPopupBody').text(explanation);
+        $('#hdErrorMessage').val(msg);
+
+        $('#hdTitle').val(`@Model.App issue - ${msg.substring(0, 50)} ${new Date().toISOString()}`);
+        $('#hdOriginalUrl').val(window.location);
+        $('#hdErrorDetail').val(JSON.stringify(data1) + '\r\n' + JSON.stringify(data2));
+
+        $('#customerrorModal').modal('show');
+    };
+
+
+    window.onValidateReportError = function () {
+        if ($('input[id="ReportErrorEmail"]:isEmpty').length > 0) {
+            $('#ReportErrorEmail').addClass("alert-danger");
+            $('#ReportErrorEmail').fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100);
+            return false;
+        }
+
+        $('#ErrorReportSubmitBtn').hide();
+        return true;
+    }
+
+    window.handleReportError = function (xhr, exception) {
+        $('#ErrorReportSubmitBtn').show();
+        hideLoader();
+        onShowProcessingButton();
+
+        var msg = '';
+        if (xhr.status === 0) {
+            msg = 'Not connect.\n Verify Network.';
+        } else if (xhr.status == 404) {
+            msg = 'Requested page not found. [404]';
+        } else if (xhr.status == 500) {
+            msg = 'Internal Server Error [500].';
+        } else if (exception === 'parsererror') {
+            msg = 'Requested JSON parse failed.';
+        } else if (exception === 'timeout') {
+            msg = 'Time out error.';
+        } else if (exception === 'abort') {
+            msg = 'Ajax request aborted.';
+        } else {
+            msg = 'Uncaught Error.\n' + xhr.responseText;
+        }
+
+        alert(msg, exception, xhr);
+    };
+
+    window.reportErrorSuccess = function (data, textStatus, xhr) {
+        $('#ErrorReportSubmitBtn').show();
+        hideLoader();
+        if (data.IsSuccess) {
+            SEONavigate('errorReportSuccess');
+            $('#lnkForums').attr("href", data.Url);
+            $('#customerrorModal').modal('hide');
+            $('#customerrorModalSuccess').modal('show');
+        }
+        else {
+            alert(data.Error);
+        }
+    }
+
+</script>
+
+<div class="modal fade" style="padding-top: 10%;" id="customerrorModal" tabindex="-1" role="dialog" aria-labelledby="customerrorModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" style="color: red;" id="customerrorModalLabel">@Model.ReportTitle</h4>
+                <button type="button" class="close zero-line-height" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <p id="pPopupMessage"></p>
+            </div>
+            <form class="errorForm" method="POST">
+                <div class="modal-body">
+                    <p>
+                        <b><i id="pPopupBody"></i></b>
+                    </p>
+
+                    <div class="form-group">
+                        <label for="recipient-name" class="control-label">Email:</label>
+                        <input type="email" class="form-control" id="ReportErrorEmail" name="Email" value="@Model.EmailTo" />
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" name="IsPrivatePost" checked="checked" value="true" />&nbsp;@Model.ReportPrivateLabel
+
+                        <input type="hidden" name="Product" value="slides">
+                        <input type="hidden" name="App" value="@Model.App">
+                        <input type="hidden" id="hdTitle" name="Title">
+                        <input type="hidden" id="hdOriginalUrl" name="OriginalUrl">
+                        <input type="hidden" id="hdErrorMessage" name="Message">
+                        <input type="hidden" id="hdErrorDetail" name="Detail">
+                        <input type="hidden" id="hdErrorFolder" name="id">
+                        <input type="hidden" name="IsSendNotification" value="true">
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="ErrorReportCloseBtn" class="btn btn-default btn-lg" style="border-radius: 6px !important" data-dismiss="modal">@Model.ReportCloseButton</button>
+                    <button type="submit" id="ErrorReportSubmitBtn" class="btn btn-primary btn-lg" style="border-radius: 6px !important">@Model.ReportSendButton</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" style="padding-top: 10%;" id="customerrorModalSuccess" tabindex="-1" role="dialog" aria-labelledby="customerrorModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" style="color: green;" id="customerrorModalSuccessLabel">@Model.ReportSuccessTitle</h4>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        <b><i>@Model.ReportSuccessText</i></b>
+                        Click <a id="lnkForums" target="_blank">this link</a> to visit the forums.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">@Model.ReportOkButton</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,79 @@
+﻿@model Aspose.Slides.Web.UI.Models.Interfaces.IBaseViewModel;
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>@Model.PageTitle</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="@Model.MetaDescription" />
+    <meta name="generator" content="aspose.app" />
+
+    <link href="@Url.Content("~/slides/static/img/favicon.ico")" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+    <!-- Bootstrap & Font CSS -->
+
+    <link rel="stylesheet" href="/slides/static/css/cms.dynabic.com/templates/aspose/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="/slides/static/css/cms.dynabic.com/templates/aspose/css/common.css" type="text/css" />
+    <link rel="stylesheet" href="/slides/static/css/error404.css" type="text/css" />
+    <link rel="stylesheet" href="/slides/static/css/cms.admin.containerize.com/templates/aspose/css/font-awesome.css" type="text/css" />
+    <link rel="stylesheet" href="/slides/static/css/asposeapp.css" type="text/css" />
+    <link rel="stylesheet" href="/slides/static/css/cms.admin.containerize.com/templates/aspose/css/AsposePtyLtdMenu.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>(function (i, s, o, g, r, a, m) { i['ContainerizeMenuObject'] = r; i[r] = i[r] || function () { (i[r].q = i[r].q || []).push(arguments) }, i[r].l = 1 * new Date(); a = s.createElement(o), m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.append(a) })(window, document, 'script', 'https://menu-new.containerize.com/scripts/engine.min.js?v=1.0.1', 'aspose-en')</script>
+
+    <!-- Common CSS -->
+    <script src="/slides/static/Scripts/jquery.form.min.js"></script>
+    <script src="/slides/static/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+
+    <script src="/slides/static/Scripts/bootstrap.min.js"></script>
+
+</head>
+<body>
+    @RenderBody()
+
+    <partial name="ErrorDialogs" for="@Model" />
+
+    <script src="/slides/static/Scripts/Shared/SEO.js"></script>
+    <script src="/slides/static/Scripts/Shared/Alert.js"></script>
+    <script src="/slides/static/Scripts/Shared/DownloadResult.js"></script>
+    <script src="/slides/static/Scripts/Shared/Loader.js"></script>
+    <script src="/slides/static/Scripts/Shared/Metadata.js"></script>
+    <script src="/slides/static/Scripts/Shared/UploadFile.js"></script>
+    <script src="/slides/static/Scripts/Shared/MultiFileUploader.js"></script>
+    <script src="/slides/static/Scripts/Shared/Work.js"></script>
+
+    <script type="text/javascript">
+        window.APIBasePath = '@(Model.APIBasePath)';
+
+        var resources = [];
+        resources["SuccessfullyUploaded"] = "@Model.SuccessfullyUploaded";
+        resources["FileSelectMessage"] = "@Model.FileSelectMessage";
+        resources["ValidateEmailMessage"] = "@Model.ValidateEmailMessage";
+        resources["InvalidFile"] = "@Model.InvalidFileTitle";
+        resources["WrongRegExpMessage"] = "@Model.WrongRegExpMessage";
+        resources["NoSearchResultsMessage"] = "@Model.NoSearchResultsMessage";
+        resources["UnlockInvalidPassword"] = "@Model.UnlockInvalidPassword";
+        window.Resources = resources;
+
+        window.Product = "slides";
+        window.AllowedViewAfterProcesing = function (data) {
+            var name = data.FileName.toLowerCase();
+            return name.endsWith(".pptx")
+                || name.endsWith(".ppt")
+                || name.endsWith(".pptm")
+                || name.endsWith(".ppsx")
+                || name.endsWith(".pps")
+                || name.endsWith(".ppsm")
+                || name.endsWith(".potx")
+                || name.endsWith(".pot")
+                || name.endsWith(".potm")
+                || name.endsWith(".otp")
+                || name.endsWith(".odp");
+        };
+    </script>
+
+    @RenderSection("scripts", false)
+</body>
+</html>

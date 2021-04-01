@@ -1,0 +1,607 @@
+﻿@model Aspose.Slides.Web.UI.Models.Interfaces.IChartModel
+
+<div class="container-fluid asposetools pb5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 pt-5 pb-5">
+                <partial name="HeaderProduct" for="@Model" />
+                <br />
+                <div id="chartTabs">
+                    <div class="row">
+                        <h5 class="text-white">@Model.HelpStep1</h5>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <div class="convertbtn">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-pills" role="tablist">
+                                <li role="presentation" class="btn-left active"><a class="btn btn-success btn-lg" href="#collapseOnlineTable" aria-controls="collapseOnlineTable" role="tab" data-toggle="tab">@Model.OnlineTab</a></li>
+                                <li role="presentation" class="btn-right"><a class="btn btn-success btn-lg" href="#collapseUploadFile" aria-controls="collapseUploadFile" role="tab" data-toggle="tab">@Model.UploadTab</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane" id="collapseUploadFile">
+                            <div id="chartTemplate" class="row">
+                                <h5 class="text-white">@Model.HelpStep2Upload</h5>
+                                <br />
+                                <div class="convertbtn btn-template add-property">
+                                    <a class="btn btn-success btn-lg" href="@Url.Content(@"~/slides/static/templates/files/CommonDataTemplate.xlsx")">
+                                        <i class="fa fa-download">
+                                            &nbsp;
+                                        </i>
+                                        @Model.TemplateButtonText
+                                    </a>
+                                </div>
+                            </div>
+                            <br />
+                            <partial name="UploadFile" for="UploadFile" />
+                        </div>
+                        <div role="tabpanel" class="tab-pane active" id="collapseOnlineTable">
+                            <div class="row">
+                                <h5 class="text-white">@Model.HelpStep2Online</h5>
+                            </div>
+                            <br />
+                            <div class="chart-editor">
+                                <div class="chart-editor-menu">
+                                    <button id="add-row">Add Row</button>
+                                    <button id="del-row">Remove Row</button>
+                                    <button id="add-col">Add Column</button>
+                                    <button id="del-col">Remove Column</button>
+                                    <button id="clear">Empty the table</button>
+                                    <button id="reset">Reset</button>
+                                </div>
+                                <div id="chart-table"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <partial name="DownloadResult" for="@Model" />
+                <partial name="Alert" for="@Model" />
+                <partial name="Loader" for="@Model" />
+                <div id="WorkPlaceHolder">
+                    <form id="mainForm" class="workForm" method="POST">
+                        <div class="row">
+                            <h5 class="text-white">@Model.HelpStep3</h5>
+                        </div>
+                        <br />
+                        <div class="chart-preview">
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <div class="row">
+                                        <div class="add-property">
+                                            <em>Chart type</em>
+                                            <div class="btn-group saveformat">
+                                                <input type="hidden" name="chartType" id="chartType" value="@Model.ChartType.Item1">
+                                                <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split btn-chart" id="btnCharType" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    @Model.ChartType.Item2
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink" id="chartTypesDropDown">
+                                                @foreach (var chartType in Model.ChartTypes)
+                                                {
+                                                    <li><a onclick="changeChartType(this)" class="dropdown-item" data-chart-type="@chartType.Key">@chartType.Value</a></li>
+                                                }
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br />
+                                    <div class="row">
+                                        <div class="convertbtn">
+                                            <input type="button" class="btn btn-success btn-lg" id="btnChartPreview" value="@Model.PreviewButtonText" />
+                                        </div>
+                                    </div>
+                                    <input type="hidden" name="id" />
+                                    <input type="hidden" name="IsExternalData" id="isExternalData" />
+                                    <input type="hidden" name="JsonData" id="jsonData" />
+                                </div>
+
+                                <div class="col-12 col-md-6">
+                                    <img id="chartPreview" class="img-rounded img-responsive center-block" src="@Url.Content("~/slides/static/img/charts/chartPreviewDefault.png")" alt="@Model.PreviewAltText" />
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <h5 class="text-white">@Model.HelpStep4</h5>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="saveas">
+                                <em>Save as</em>
+                                <div class="btn-group saveformat">
+                                    <input type="hidden" name="saveFormat" id="saveFormat" value="@Model.SaveFormat">
+                                    <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" id="btnSaveAs" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        @Model.SaveFormat.ToUpper()
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    @foreach (var format in Model.Formats)
+                                    {
+                                        <a onclick="assignBtnToText(this)" class="dropdown-item">@format.ToUpper()</a>
+                                    }
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="convertbtn">
+                                <input type="submit" class="btn btn-success btn-lg" ID="workButton" value="@Model.WorkButtonText" />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts {
+    <link href="https://unpkg.com/tabulator-tables@4.8.0/dist/css/tabulator.min.css" rel="stylesheet"/>
+    <script type="text/javascript" src="https://unpkg.com/tabulator-tables@4.8.0/dist/js/tabulator.min.js"></script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            registerUploadHandlers();
+            registerFormHandlers();
+
+            let chartType = document.getElementById('chartType').value;
+
+            initOnlineTable(chartType);
+        });
+
+        window.Method = "Chart";
+        window.APIMethodWorkUrl = `${APIBasePath}api/Slides/Chart`;
+
+        window.afterUploadSuccess = function (data, textStatus, xhr) {
+            showInfo(window.Resources["SuccessfullyUploaded"]);
+        }
+
+        window.onWorkSuccess = function () {
+            document.getElementById('btnChartPreview').disabled = false;
+        };
+
+        function assignBtnToText(obj) {
+            let t = $(obj).text();
+
+            $("#btnSaveAs").html(t);
+            $("#saveFormat").val(t);
+
+            let formatTypeElem = document.getElementById("btnSaveAs");
+            if (formatTypeElem) {
+                let rect = formatTypeElem.getBoundingClientRect();
+                window.scrollTo(0, rect.top);
+            }
+        }
+
+        function changeChartType(obj) {
+            let chartTypeDesc = $(obj).text();
+            let chartType = $(obj).data('chart-type');
+
+            console.info('chart type: ', chartType);
+            $("#btnCharType").html(chartTypeDesc);
+            $("#chartType").val(chartType);
+            $("#chartTemplate").find("a").attr("href", getDataTemplateUrl(chartType));
+
+            if ($('#collapseOnlineTable').hasClass('active')) {
+                updateOnlineTable(chartType);
+            }
+
+            let chartTypeElem = document.getElementById("btnCharType");
+
+            if (chartTypeElem) {
+                window.scrollTo(0, 0);
+            }
+        }
+
+        $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+            document.getElementById("mainForm").reset();
+            
+            if ($('#collapseOnlineTable').hasClass('active')) {
+                window.hideAlert();
+
+                let chartType = document.getElementById('chartType').value;
+                let table = Tabulator.prototype.findTable("#chart-table")[0];
+
+                if (table === undefined) {
+                    initOnlineTable(chartType);
+                }
+                else {
+                    updateOnlineTable(chartType);
+                }
+            }
+            else {
+                window.hideAlert();
+            }
+        })
+
+        $('form.workForm').submit(function (event) {
+            document.getElementById('btnChartPreview').disabled = true;
+            updateForm();
+        });
+
+        $('#btnChartPreview').on('click', updatePreview);
+
+        function getDataTemplateUrl(chartType) {
+            if (chartType == "OpenHighLowClose" || chartType == "VolumeHighLowClose") {
+                return "@Url.Content(@"~/slides/static/templates/files/OpenHighLowCloseDataTemplate.xlsx")";
+            }
+            else if (chartType == "VolumeOpenHighLowClose") {
+                return "@Url.Content(@"~/slides/static/templates/files/VolumeOpenHighLowCloseDataTemplate.xlsx")";
+            }
+            else if (chartType == "Treemap" || chartType == "Sunburst") {
+                return "@Url.Content(@"~/slides/static/templates/files/TreemapDataTemplate.xlsx")";
+            }
+            else if (chartType == "Bubble" || chartType == "BubbleWith3D") {
+                return "@Url.Content(@"~/slides/static/templates/files/BubbleDataTemplate.xlsx")";
+            }
+            else {
+                return "@Url.Content(@"~/slides/static/templates/files/CommonDataTemplate.xlsx")";
+            }
+        }
+
+        function getDataTemplateOnlineTable(chartType) {
+            let tableData = {};
+
+            if (chartType == "OpenHighLowClose" || chartType == "VolumeHighLowClose") {
+                tableData.columns = [
+                    { title: "", field: "rowTitle", hozAlign: "center", editor: "input", editableTitle: true},
+                    { title: "Volume", field: "volume", hozAlign: "center", editor: "input", editableTitle: true},
+                    { title: "High", field: "high", hozAlign: "center", editor: "input", editableTitle: true},
+                    { title: "Low", field: "low", hozAlign: "center", editor: "input", editableTitle: true},
+                    { title: "Close", field: "close", hozAlign: "center", editor: "input", editableTitle: true}
+                ];
+
+                tableData.data = [
+                    { id: 1, rowTitle: "01.05.2002", volume: "70", high: "55", low: "11", close: "32" },
+                    { id: 2, rowTitle: "01.06.2002", volume: "120", high: "57", low: "12", close: "35" },
+                    { id: 3, rowTitle: "01.07.2002", volume: "150", high: "57", low: "13", close: "34" },
+                    { id: 4, rowTitle: "01.08.2002", volume: "135", high: "58", low: "11", close: "35" }
+                ];
+            }
+            else if (chartType == "VolumeOpenHighLowClose") {
+                tableData.columns = [
+                    { title: "", field: "rowTitle", hozAlign: "center", editor: "input", editableTitle: true},
+                    { title: "Volume", field: "volume", hozAlign: "center", editor: "input", editableTitle: true},
+                    { title: "Open", field: "open", hozAlign: "center", editor: "input", editableTitle: true},
+                    { title: "High", field: "high", hozAlign: "center", editor: "input", editableTitle: true},
+                    { title: "Low", field: "low", hozAlign: "center", editor: "input", editableTitle: true},
+                    { title: "Close", field: "close", hozAlign: "center", editor: "input", editableTitle: true}
+                ];
+
+                tableData.data = [
+                    { id: 1, rowTitle: "01.05.2002", volume: "70", open: "44", high: "55", low: "11", close: "25" },
+                    { id: 2, rowTitle: "01.06.2002", volume: "120", open: "25", high: "57", low: "12", close: "38" },
+                    { id: 3, rowTitle: "01.07.2002", volume: "150", open: "38", high: "57", low: "13", close: "50" },
+                    { id: 4, rowTitle: "01.08.2002", volume: "135", open: "50", high: "58", low: "11", close: "35" },
+                    { id: 5, rowTitle: "01.09.2002", volume: "148", open: "34", high: "58", low: "25", close: "43" }
+                ];
+            }
+            else if (chartType == "Treemap" || chartType == "Sunburst") {
+                tableData.columns = [
+                    { title: "", field: "branch", hozAlign: "center", editor: "input", editableTitle: true },
+                    { title: "", field: "stem", hozAlign: "center", editor: "input", editableTitle: true},
+                    { title: "", field: "leaf", hozAlign: "center", editor: "input", editableTitle: true},
+                    { title: "Data", field: "data", hozAlign: "center", editor: "input", editableTitle: true}
+                ];
+
+                tableData.data = [
+                    { id: 1, branch: "Branch1", stem: "Stem1", leaf: "Leaf1", data: "22" },
+                    { id: 2, branch: "Branch1", stem: "Stem1", leaf: "Leaf2", data: "12" },
+                    { id: 3, branch: "Branch1", stem: "Stem1", leaf: "Leaf3", data: "18" },
+                    { id: 4, branch: "Branch1", stem: "Stem2", leaf: "Leaf4", data: "87" },
+                    { id: 5, branch: "Branch1", stem: "Stem2", leaf: "Leaf5", data: "88" },
+                    { id: 6, branch: "Branch1", stem: "Stem2", leaf: "Leaf6", data: "17" },
+                    { id: 7, branch: "Branch1", stem: "Stem2", leaf: "Leaf7", data: "9" },
+                    { id: 8, branch: "Branch2", stem: "Stem3", leaf: "Leaf8", data: "25" },
+                    { id: 9, branch: "Branch2", stem: "Stem3", leaf: "Leaf9", data: "23" },
+                    { id: 10, branch: "Branch2", stem: "Stem4", leaf: "Leaf10", data: "24" },
+                    { id: 11, branch: "Branch2", stem: "Stem4", leaf: "Leaf11", data: "89" },
+                    { id: 12, branch: "Branch3", stem: "Stem5", leaf: "Leaf12", data: "16" },
+                    { id: 13, branch: "Branch3", stem: "Stem5", leaf: "Leaf13", data: "19" },
+                    { id: 14, branch: "Branch3", stem: "Stem6", leaf: "Leaf14", data: "86" },
+                    { id: 15, branch: "Branch3", stem: "Stem6", leaf: "Leaf15", data: "10" },
+                    { id: 16, branch: "Branch3", stem: "Stem6", leaf: "Leaf16", data: "11" }
+                ];
+            }
+            else if (chartType == "Bubble" || chartType == "BubbleWith3D") {
+                tableData.columns = [
+                    { title: "Day 1", field: "day1", hozAlign: "center", editor: "input", editableTitle: true },
+                    { title: "Day 2", field: "day2", hozAlign: "center", editor: "input", editableTitle: true},
+                    { title: "Day 3", field: "day3", hozAlign: "center", editor: "input", editableTitle: true}
+                ];
+
+                tableData.data = [
+                    { id: 1, day1: "10", day2: "5", day3: "15" },
+                    { id: 2, day1: "2", day2: "6", day3: "3" },
+                    { id: 3, day1: "5", day2: "15", day3: "9" }
+                ];
+            }
+            else {
+                tableData.columns = [
+                    { title: "", field: "rowTitle", hozAlign: "center", editor: "input", editableTitle: true },
+                    { title: "Day 1", field: "Day 1", hozAlign: "center", editor: "input", editableTitle: true },
+                    { title: "Day 2", field: "Day 2", hozAlign: "center", editor: "input", editableTitle: true},
+                    { title: "Day 3", field: "Day 3", hozAlign: "center", editor: "input", editableTitle: true}
+                ];
+
+                tableData.data = [
+                    { id: 1, rowTitle: "Seller 1", "Day 1": "10", "Day 2": "5", "Day 3": "15" },
+                    { id: 2, rowTitle: "Seller 2", "Day 1": "2", "Day 2": "6", "Day 3": "3" },
+                    { id: 3, rowTitle: "Seller 3", "Day 1": "5", "Day 2": "15", "Day 3": "9" }
+                ];
+            }
+
+            return tableData;
+        }
+
+        function initOnlineTable(chartType) {
+            let tableData = getOnlineTableFromStorage();
+            
+            if (tableData == null || chartType !== tableData.chartType) {
+                tableData = getDataTemplateOnlineTable(chartType);
+            }
+
+            //create Tabulator on DOM element with id "chart-table"
+            let table = new Tabulator("#chart-table", {
+                    //height: 400, // set height of table (in CSS or here), this enables the Virtual DOM and improves render speed dramatically (can be any valid css height value)
+                    data: tableData.data, //assign data to table
+                    //fit columns to width of table (optional)
+                    layout: "fitColumns",
+                    //Define Table Columns
+                    columns: tableData.columns,
+                    history: true,
+                    pagination: "local",
+                    paginationSize: 10,
+                    addRowPos: "bottom",
+                    columnTitleChanged: function (column) {
+                        column.getDefinition().field = column.getDefinition().title;
+                    }
+            });
+
+            //Add row on "Add Row" button click
+            document.getElementById("add-row").addEventListener("click", function () {
+                let index = table.getDataCount() + 1;
+                table.addRow({ id: index });
+            });
+
+            //Delete row on "Delete Row" button click
+            document.getElementById("del-row").addEventListener("click", function () {
+                table.deleteRow(table.getDataCount());
+            });
+
+            //Add column on "Add Column" button click
+            document.getElementById("add-col").addEventListener("click", function () {
+                table.addColumn({ title: "New Column", field: "newCol", editor: "input", editableTitle: true});
+            });
+
+            //Delete column on "Delete Column" button click
+            document.getElementById("del-col").addEventListener("click", function () {
+                let cols = table.getColumns(true);
+                let lastCol = cols[cols.length - 1];
+                lastCol.delete();
+            });
+
+            //Clear table on "Empty the table" button click
+            document.getElementById("clear").addEventListener("click", function () {
+                table.clearData();
+                document.getElementById("mainForm").reset();
+            });
+
+            //Reset table contents on "Reset the table" button click
+            document.getElementById("reset").addEventListener("click", function () {
+                table.setData(tableData.data);
+                window.hideAlert();
+            });
+        }
+
+        function updateOnlineTable(chartType) {
+            let tableData = getDataTemplateOnlineTable(chartType);
+            let table = Tabulator.prototype.findTable("#chart-table")[0];
+
+            table.setColumns(tableData.columns);
+            table.setData(tableData.data);
+        }
+
+        function getOnlineTableData(withId) {
+            let table = Tabulator.prototype.findTable("#chart-table")[0];
+            let data = table.getData();
+            let cols = table.getColumnDefinitions();
+            let newData = [];
+
+            for (let row of data) {
+                let keys = Object.keys(row);
+                let newRow = {};
+
+                for (let key of keys) {
+                    let val = row[key];
+
+                    if (key === 'id') {
+                        if (withId) {
+                            newRow[key] = val;
+                            continue;
+                        }
+                        else {
+                            continue;
+                        }
+                    }
+                    //debugger;
+
+                    let cellDef;
+
+                    for (let col of cols) {
+                        if (col.field === key) {
+                            cellDef = col;
+                            break;
+                        }
+                    }
+
+                    let newField = cellDef.title;
+
+                    if (newField == '') {
+                        newRow[cellDef.field] = val;
+                    }
+                    else {
+                        newRow[newField] = val;
+                    }
+                }
+
+                newData.push(newRow);
+            }
+
+            return newData;
+        }
+
+        function getOnlineTableColumns() {
+            let table = Tabulator.prototype.findTable("#chart-table")[0];
+            let cols = table.getColumnDefinitions();
+            let newCols = [];
+
+            for (let col of cols) {
+                let newCol = {};
+
+                newCol.title = col.title;
+
+                if (col.title == "") {
+                    newCol.field = col.field;
+                }
+                else {
+                    newCol.field = col.title;
+                }
+
+                newCol.hozAlign = col.hozAlign;
+                newCol.editor = col.editor;
+                newCol.editableTitle = col.editableTitle;
+
+                newCols.push(newCol);
+            }
+
+            return newCols;
+        }
+
+        function saveOnlineTableInStorage() {
+            let chartType = document.getElementById('chartType').value;
+            sessionStorage.setItem('chartType', chartType);
+
+            let data = getOnlineTableData(true);
+            
+            if (data.length > 0) {
+                sessionStorage.setItem("tableData", JSON.stringify(data));
+            }
+
+            let cols = getOnlineTableColumns();
+
+            if (cols.length > 0) {
+                sessionStorage.setItem("tableColumns", JSON.stringify(cols));
+            }
+        }
+
+        function getOnlineTableFromStorage() {
+            let data = JSON.parse(sessionStorage.getItem("tableData"));
+            let cols = JSON.parse(sessionStorage.getItem("tableColumns"));
+            let chartType = sessionStorage.getItem('chartType');
+
+            if (data != null && cols != null) {
+                let tableData = {};
+
+                tableData.data = data;
+                tableData.columns = cols;
+                tableData.chartType = chartType;
+
+                return tableData;
+            }
+
+            return null;
+        }
+
+        function updateForm() {
+            if ($('#collapseOnlineTable').hasClass('active')) {
+                $('input[name="id"]').val('@Guid.NewGuid().ToString()');
+
+                if ($('input[name="FileNames"]').length == 0) {
+                    const fileNames = $('<input type="hidden" name="FileNames"/>');
+                    $('input[name="id"]').after(fileNames);
+                }
+
+                $('input[name="FileNames"]').val('Chart');
+                $("#isExternalData").val(true);
+
+                let jsonTable = getOnlineTableData(false);
+
+                if (jsonTable.length != 0) {
+                    let jsonData = {};
+                    jsonData.Chart = jsonTable;
+                    $("#jsonData").val(JSON.stringify(jsonData));
+
+                    saveOnlineTableInStorage();
+                }
+            } else {
+                $("#isExternalData").val(false);
+            }
+        }
+
+        function updatePreview(e) {
+            e.stopPropagation();
+            e.target.disabled = true;
+            showLoader();
+            updateForm();
+
+            if (onValidatePreview()) {
+                let form = document.getElementById('mainForm');
+                let formData = new FormData(form);
+
+                formData.append('IsPreview', true);
+
+                let url = window.APIMethodWorkUrl;
+
+                fetch(url, {
+                    method: 'POST',
+                    body: formData,
+                })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.IsSuccess) {
+                            const imgUrl = new URL(`${data.id}`, `${APIBasePath}api/Common/DownloadFile/`);
+                            imgUrl.searchParams.set('file', data.FileName);
+                            imgUrl.searchParams.set('random', new Date().getTime());
+                            let img = document.getElementById('chartPreview');
+                            img.setAttribute('src', imgUrl);
+                            hideLoader();
+                            e.target.disabled = false;
+                        }
+                        else {
+                            hideLoader();
+                            e.target.disabled = false;
+                            console.log(data.message);
+                        }
+                    }).catch(error => {
+                        hideLoader();
+                        e.target.disabled = false;
+                        console.log(error);
+                    });
+            }
+        }
+
+        function onValidatePreview() {
+            if ($('#collapseOnlineTable').hasClass('active')) {
+
+                if ($("#jsonData").val().length == 0) {
+                    showAlert(window.Resources["ChartOnlineTableIsEmptyMessage"]);
+                    
+                    return false;
+                }
+
+                return true;
+            }
+
+            if ($('input[name="FileNames"]:isEmpty').length >= 0 &&
+                $('input[name="FileNames"]').length == 0) {
+                showAlert(window.Resources["FileSelectMessage"]);
+                
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+}

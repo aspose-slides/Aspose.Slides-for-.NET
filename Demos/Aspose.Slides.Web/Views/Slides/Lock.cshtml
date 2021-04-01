@@ -1,0 +1,58 @@
+﻿@model  Aspose.Slides.Web.UI.Models.Interfaces.ILockModel
+
+<div class="container-fluid asposetools pb5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 pt-5 pb-5">
+                <partial name="HeaderProduct" for="@Model" />
+                <partial name="UploadFile" for="UploadFile" />
+                <partial name="DownloadResult" for="@Model" />
+                <partial name="Alert" for="@Model" />
+                <partial name="Loader" for="@Model" />
+
+                <div id="WorkPlaceHolder">
+                    <form class="workForm" method="POST">
+                        <div class="search" style="margin-bottom:25px">
+                            <input type="password" name="PasswordEdit" class="form-control" placeholder="@Model.EditPassword" />
+                        </div>
+
+                        <div class="search" style="margin-bottom:25px;margin-top:40px;">
+                            <input type="password" name="PasswordView" class="form-control" placeholder="@Model.ViewPassword">
+                        </div>
+
+                        <div class="form-inline">
+                            <div class="form-group" style="margin-bottom:5px;">
+                                <p style="display: inline-block;margin-bottom:5px;"><label for="MarkAsFinal">&nbsp;&nbsp;@Model.MarkAsFinal</label></p>
+                                <input type="checkbox" name="MarkAsFinal" id="MarkAsFinal" value="true">
+                            </div>                           
+                        </div>
+
+
+                        <input type="hidden" name="id" />
+
+                        <div class="convertbtn">
+                            <input type="submit" class="btn btn-success btn-lg" ID="workButton" value="@Model.WorkButtonText" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts {
+    <script type="text/javascript">        
+
+        $(document).ready(function () {
+            registerUploadHandlers();
+            registerFormHandlers();
+        });
+
+        window.Method = "Lock";
+        window.APIMethodWorkUrl = `${APIBasePath}api/Slides/Lock`;
+
+        window.afterUploadSuccess = function (data, textStatus, xhr) {
+            showInfo(window.Resources["SuccessfullyUploaded"]);
+        }
+    </script>
+}

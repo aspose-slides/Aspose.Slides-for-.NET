@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Aspose.Slides.Web.API.Clients\Aspose.Slides.Web.API.Clients.csproj" />
+    <ProjectReference Include="..\Aspose.Slides.Web.Core\Aspose.Slides.Web.Core.csproj" />
+    <ProjectReference Include="..\Aspose.Slides.Web.Interfaces\Aspose.Slides.Web.Interfaces.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="API\" />
+  </ItemGroup>
+
+</Project>

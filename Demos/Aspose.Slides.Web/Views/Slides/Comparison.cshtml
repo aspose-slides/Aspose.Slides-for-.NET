@@ -1,0 +1,189 @@
+﻿@model  Aspose.Slides.Web.UI.Models.Interfaces.IComparisonModel
+
+<div class="container-fluid asposetools pb5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 pt-5 pb-5 comparison">
+                <partial name="HeaderProduct" for="@Model" />
+                <br />
+                <div class="col-md-6 comparison-side-desc side-left">
+                    <h2>@Model.LeftSideText</h2>
+                    <partial name="UploadFile" for="UploadFile" />
+                </div>
+
+                @if (Model.SecondUploadFile != null)
+                {
+                    <div class="col-md-6 comparison-side-desc side-right">
+                        <h2>@Model.RightSideText</h2>
+                        <partial name="UploadFile" for="SecondUploadFile" />
+                    </div>
+                }
+                
+                <partial name="DownloadResult" for="@Model" />
+                <partial name="Alert" for="@Model" />
+                <partial name="Loader" for="@Model" />
+                <div id="WorkPlaceHolder">
+                    <form class="workForm" method="POST">
+                        <div class="form-row hidden">
+                            <div class="add-property">
+                                <em>Comparison Method</em>
+                                <div class="btn-group saveformat">
+                                    <input type="hidden" name="comparisonMethod" id="comparisonMethod" value="@Model.ComparisonMethod">
+                                    <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split btn-chart" id="btnCharType" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        @Model.ComparisonMethod.ToUpper()
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" id="ComparisonMethodsDropDown">
+                                        @foreach (var comparisonMethod in Model.ComparisonMethods)
+                                        {
+                                            <a onclick="changeComparisonMethod(this)" class="dropdown-item">@comparisonMethod.ToUpper()</a>
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="saveas">
+                                <em>Save as</em>
+                                <div class="btn-group saveformat">
+                                    <input type="hidden" name="saveFormat" id="saveFormat" value="@Model.SaveFormat">
+                                    <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" id="btnSaveAs" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        @Model.SaveFormat.ToUpper()
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        @foreach (var format in Model.SaveFormats)
+                                        {
+                                            <a onclick="assignBtnToText(this)" class="dropdown-item">@format.ToUpper()</a>
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="convertbtn">
+                                <input type="submit" class="btn btn-success btn-lg" ID="workButton" value="@Model.WorkButtonText" />
+                            </div>
+                        </div>
+                        <input type="hidden" name="id" />
+                        <input type="hidden" name="IsExternalData" id="isExternalData" />
+                        <input type="hidden" name="JsonData" id="jsonData" />
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts {
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            registerErrorPublishingFormHandler();
+        });
+
+        window.Method = "Comparison";
+        window.APIMethodWorkUrl = `${APIBasePath}api/Slides/Comparison`;        
+
+        function assignBtnToText(obj) {
+            let t = $(obj).text();
+
+            $("#btnSaveAs").html(t);
+            $("#saveFormat").val(t);
+        }
+
+        function changeComparisonMethod(obj) {
+            let comparisonMethod = $(obj).text();
+
+            $("#btnComparisonMethod").html(comparisonMethod);
+            $("#comparisonMethod").val(comparisonMethod);
+        }        
+
+        function registerFileUpload(form, uploader) {
+            form.ajaxForm({
+                url: `${APIBasePath}api/Common/UploadFiles`,
+                dataType: "json",
+                beforeSend: () => {
+                    btnWork.addClass("hidden");
+                    showLoader();
+                },
+                success: (data, textStatus, xhr) => {
+                    hideLoader();                    
+
+                    // check errors
+                    const uploaded = data.filter(f => f.IsSuccess).map(f => f.FileName);                    
+                    uploader.replaceFiles(uploaded);                                                                            
+
+                    SEONavigate('uploaded');
+                    hideAlert();
+                    showInfo(window.Resources["SuccessfullyUploaded"]);
+                },
+                complete: () => btnWork.removeClass("hidden"),
+                error: handleError
+            });
+        }
+
+        const fileUploaderInput = $('#@string.Format("{0}-{1}", Model.UploadFile.UploadId, "input")');
+        const fileUploaderParent = $('#@string.Format("{0}-{1}", Model.UploadFile.UploadId, "parent")');
+        const fileUploaderForm = $('#@string.Format("{0}-{1}", Model.UploadFile.UploadId, "frm")');
+        const fileUploader = new $.FileUploader(fileUploaderInput, fileUploaderParent,
+            () => {
+                if (fileUploaderInput.get(0).files.length !== 0) {
+                    hideAlert();
+                    fileUploaderForm.submit();
+                }
+            });
+
+        registerFileUpload(fileUploaderForm, fileUploader);
+
+        const secondUploaderInput = $('#@string.Format("{0}-{1}", Model.SecondUploadFile.UploadId, "input")');
+        const secondUploaderParent = $('#@string.Format("{0}-{1}", Model.SecondUploadFile.UploadId, "parent")');
+        const secondUploaderForm = $('#@string.Format("{0}-{1}", Model.SecondUploadFile.UploadId, "frm")');
+        let secondUploader = new $.FileUploader(secondUploaderInput, secondUploaderParent,
+            () => {
+                if (secondUploaderInput.get(0).files.length !== 0) {
+                    hideAlert();
+                    secondUploaderForm.submit();
+                }
+            });
+
+        registerFileUpload(secondUploaderForm, secondUploader);
+
+        const btnWork = $("#workButton");
+
+        btnWork.click((event) => {
+
+            btnWork.addClass("hidden");
+
+            //stop submit the form, we will post it manually.
+            event.preventDefault();
+
+            if (fileUploader.files.length === 0 ||
+                secondUploader.files.length === 0) {
+                showAlert(window.Resources["FileSelectMessage"]);
+                btnWork.removeClass("hidden");
+                return;
+            }
+
+            showLoader();
+
+            $.ajax({
+                method: "POST",
+                url: `${APIBasePath}api/Slides/Comparison`,
+                data: {
+                    FirstFolderId: '@Model.UploadFile.UploadId',
+                    FirstFileName: fileUploader.files.length > 0 ? fileUploader.files[0] : null,
+                    SecondFolderId: '@Model.SecondUploadFile.UploadId',
+                    SecondFileName: secondUploader.files.length > 0 ? secondUploader.files[0] : null,
+                    ComparisonMethod: $('#comparisonMethod').val(),
+                    SaveFormat: $('#saveFormat').val()                    
+                },
+                dataType: "json",
+                timeout: 800000,
+                success: (data, textStatus, xhr) => {
+                    $('.comparison-side-desc').hide();
+                    window.workSuccess(data, textStatus, xhr);
+                },
+                error: handleError
+            });
+        });
+
+    </script>
+}
