@@ -1,0 +1,28 @@
+﻿@model Aspose.Slides.Web.UI.Models.Interfaces.IUploadFileModel
+
+<div class="UploadPlaceHolder" id="@Model.UploadId">
+    <div class="uploadfile">
+        <div class="filedropdown">
+            <form id="@($"{Model.UploadId}-frm")" class="uploadForm activeForm" method="POST" enctype="multipart/form-data">
+                <div id="@($"{Model.UploadId}-parent")" class="filedrop">
+                    <label class="dz-message needsclick">@Model.Label</label>
+                    <input type="hidden" name="idUpload" value="@Model.UploadId" />
+                    @if (Model.AcceptMultipleFiles)
+                    {
+                        <input id="@($"{Model.UploadId}-input")" type="file" class="uploadfileinput" name="UploadFileInput" accept="@Model.AcceptedExtensions" multiple /> 
+                    }
+                    else
+                    {
+                        <input id="@($"{Model.UploadId}-input")" type="file" class="uploadfileinput" name="UploadFileInput" accept="@Model.AcceptedExtensions" />
+                    }
+                </div>
+            </form>
+        </div>
+        <h6 class="text-white">* By uploading your files or using our service you agree with our <a class="text-white" href="https://about.aspose.app/legal/tos">Terms of Service</a> and <a class="text-white" href="https://about.aspose.app/legal/privacy-policy">Privacy Policy</a>.</h6>
+    </div>
+</div>
+
+
+@section scripts {
+
+}

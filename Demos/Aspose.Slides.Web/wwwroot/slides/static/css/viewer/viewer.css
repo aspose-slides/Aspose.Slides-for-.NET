@@ -1,0 +1,22 @@
+﻿.viewer-loader {
+    background: url("/slides/static/img/loader.gif");
+    background-size: contain;
+    width: 59px;
+    height: 59px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#viewerHeader {
+    z-index: 2;
+    height: 60px;
+}
+
+.viewer-header-item {
+    padding: 0 !important;
+    margin: 0;
+    font-size: 0.6em;
+    color: white !important;
+}

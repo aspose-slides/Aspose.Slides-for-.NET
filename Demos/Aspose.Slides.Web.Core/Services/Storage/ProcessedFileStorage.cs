@@ -1,0 +1,32 @@
+using System.IO;
+using System.Threading;
+using System.Threading.Tasks;
+using Aspose.Slides.Web.Interfaces.Services;
+
+namespace Aspose.Slides.Web.Core.Services.Storage
+{
+	internal class ProcessedFileStorage : IProcessedStorage
+	{
+		private readonly LocalFileStorage _fileStorage;
+
+		public ProcessedFileStorage(string root)
+		{
+			_fileStorage = new LocalFileStorage(root);
+		}
+
+		public Task<Stream> GetStreamAsync(string folder, string filename, CancellationToken cancellationToken = default)
+		{
+			return _fileStorage.GetStreamAsync(folder, filename, cancellationToken);
+		}
+
+		public Task UploadAsync(string folder, string filename, Stream stream, CancellationToken cancellationToken = default)
+		{
+			return _fileStorage.UploadAsync(folder, filename, stream, cancellationToken);
+		}
+
+		public Task<bool> IsExistAsync(string folder, string filename, CancellationToken cancellationToken = default)
+		{
+			return _fileStorage.IsExistAsync(folder, filename, cancellationToken);
+		}
+	}
+}

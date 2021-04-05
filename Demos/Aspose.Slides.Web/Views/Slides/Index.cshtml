@@ -1,0 +1,38 @@
+@model Aspose.Slides.Web.UI.Models.Interfaces.IShowroomModel
+
+<div class="container-fluid header1 header2 minify-header appfamily-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h1>@Model.IndexPageTitle</h1>
+                <h4>@Model.IndexPageSubTitle</h4>
+            </div>
+            <div class="col-md-4 tc">
+                <img class=" col-xs-12" src="~/slides/static/img/aspose-slides-app.png" alt="Aspose.Slides" width="320" />
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid productfamilypage bg-white pdb-5">
+    <div class="row">
+        <div class="container tc">
+            <div class="clearfix">&nbsp;</div>
+            <div class="clearfix">&nbsp;</div>
+            <h3>@(string.Format(Model.ProductFamilyInclude, Model.AsposeSlides))</h3>
+            <div class="clearfix">&nbsp;</div>
+            <div class="clearfix">&nbsp;</div>
+            @{
+                foreach (var showcase in @Model.Showcases)
+                {
+    <div class="col-lg-4 productfamily_box">
+        <div class="productfamilytitle">
+            <div class="imgblock">
+                <img src="~/slides/static/img/aspose_slides-for-net-min.png" alt="Aspose.Slides for .NET" />
+            </div>
+            <a href="/slides/@showcase.Url"><span class="spanclass">@Model.AsposeSlides <em>@showcase.Name</em></span><em>@showcase.Description</em></a>
+        </div>
+    </div> } }
+        </div>
+    </div>
+</div>
+<div class="spacer">&nbsp;</div>

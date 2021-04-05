@@ -1,0 +1,164 @@
+﻿@model Aspose.Slides.Web.UI.Models.Interfaces.IMergerViewModel
+
+<div class="container-fluid asposetools pb5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 pt-5 pb-5">
+                <partial name="HeaderProduct" for="@Model" />
+                <partial name="UploadFile" for="UploadFile" />
+                @if (Model.StyleMasterUploadFile != null)
+                {
+                    <div class="UploadPlaceHolder">
+                        <partial name="UploadFile" for="StyleMasterUploadFile" />
+                        <p>
+                            @Model.StyleMasterUploadText
+                        </p>
+                    </div>
+                }
+                <partial name="DownloadResult" for="@Model" />
+                <partial name="Alert" />
+                <partial name="Loader" />
+
+                <div id="WorkPlaceHolder">
+                    <form class="workForm" method="POST">
+
+                        <div class="saveas">
+                            <em>Save as</em>
+                            <div class="btn-group saveformat">
+                                <input type="hidden" name="format" id="format" value="@Model.ToFormat">
+                                <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" id="btnSaveAs" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    @Model.ToFormat.ToUpper()
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    @foreach (var format in Model.Formats)
+                                    {
+                                        <a onclick="AssignBtnToText(this)" class="dropdown-item">@format.ToUpper()</a>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="convertbtn">
+                            <input type="submit" class="btn btn-success btn-lg" ID="workButton" value="@Model.WorkButtonText" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts {
+    <script type="text/javascript">
+        window.Method = "Merger";
+
+        $(document).ready(function () {
+            registerErrorPublishingFormHandler();
+        });
+
+        function registerFileUpload(form, uploader) {
+            form.ajaxForm({
+                url: `${APIBasePath}api/Common/UploadFiles`,
+                dataType: "json",
+                beforeSend: () => {
+                    btnWork.addClass("hidden");
+                    showLoader();
+                },
+                success: (data, textStatus, xhr) => {
+                    hideLoader();
+                    // check errors
+                    const uploaded = data.filter(f => f.IsSuccess).map(f => f.FileName);
+                    const unUploaded = data.filter(f => !f.IsSuccess).map(f => f.FileName);
+
+                    if (uploaded.length > 0) {
+                        uploader.appendFiles(uploaded);
+                        SEONavigate('uploaded');
+                        hideAlert();
+                        showInfo(window.Resources["SuccessfullyUploaded"]);
+                    } 
+
+                    if (unUploaded.length > 0) {
+                        
+                        for (let upFile of data) {
+                            if (!upFile.IsSuccess) {
+                                uploader.remove(upFile.FileName);
+                                dataErrorAlert(upFile);
+                            }
+                        }
+                    }
+                },
+                complete: () => btnWork.removeClass("hidden"),
+                error: handleError
+            });
+        }
+
+        const fileUploaderInput = $('#@($"{Model.UploadFile.UploadId}-input")');
+        const fileUploaderParent = $('#@($"{Model.UploadFile.UploadId}-parent")');
+        const fileUploaderForm = $('#@($"{Model.UploadFile.UploadId}-frm")');
+        const fileUploader = new $.FileUploader(fileUploaderInput, fileUploaderParent,
+            () => {
+                if (fileUploaderInput.get(0).files.length !== 0) {
+                    hideAlert();
+                    fileUploaderForm.submit();
+                }
+            });
+
+        registerFileUpload(fileUploaderForm, fileUploader);
+
+        const styleUploaderInput = $('#@($"{Model.StyleMasterUploadFile.UploadId}-input")');
+        const styleUploaderParent = $('#@($"{Model.StyleMasterUploadFile.UploadId}-parent")');
+        const styleUploaderForm = $('#@($"{Model.StyleMasterUploadFile.UploadId}-frm")');
+        let styleUploader = new $.FileUploader(styleUploaderInput, styleUploaderParent,
+            () => {
+                if (styleUploaderInput.get(0).files.length !== 0) {
+                    hideAlert();
+                    styleUploaderForm.submit();
+                }
+            });
+
+        registerFileUpload(styleUploaderForm, styleUploader);
+
+        const btnWork = $("#workButton");
+        btnWork.click((event) => {
+
+            btnWork.addClass("hidden");
+
+            //stop submit the form, we will post it manually.
+            event.preventDefault();
+
+            if (fileUploader.files.length === 0) {
+                showAlert(window.Resources["FileSelectMessage"]);
+                btnWork.removeClass("hidden");
+                return;
+            }
+
+            showLoader();
+
+            $.ajax({
+                method: "POST",
+                url: `${APIBasePath}api/Slides/Merger`,
+                data: {
+                    id: '@Model.UploadFile.UploadId',
+                    FileNames: fileUploader.files,
+                    idStyleMaster: '@Model.StyleMasterUploadFile.UploadId',
+                    FileNameStyleMaster: styleUploader.files.length > 0 ? styleUploader.files[0] : null,
+                    Format: destinationFormat
+                },
+                dataType: "json",
+                timeout: 800000,
+                success: (data, textStatus, xhr) => {
+                    window.workSuccess(data, textStatus, xhr);
+                },
+                error: handleError
+            });
+        });
+
+        let destinationFormat = null;
+        function AssignBtnToText(obj) {
+            destinationFormat = $(obj).text();
+
+            $("#btnSaveAs").html(destinationFormat);
+            $("#format").val(destinationFormat);
+        }
+    </script>
+}

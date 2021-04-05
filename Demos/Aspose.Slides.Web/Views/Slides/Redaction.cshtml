@@ -1,0 +1,72 @@
+﻿@model  Aspose.Slides.Web.UI.Models.Interfaces.IRedactionModel
+
+<div class="container-fluid asposetools pb5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 pt-5 pb-5">
+                <partial name="HeaderProduct" for="@Model" />
+                <partial name="UploadFile" for="UploadFile" />
+                <partial name="DownloadResult" for="@Model" />
+                <partial name="Alert" for="@Model" />
+                <partial name="Loader" for="@Model" />
+
+                <div id="WorkPlaceHolder">
+                    <form class="workForm" method="POST">
+                        <div class="search" style="margin-bottom:25px">
+                            <input type="text" name="SearchQuery" class="form-control" placeholder="@Model.SearchQuery" />
+                        </div>
+
+                        <div class="search" style="margin-bottom:25px;margin-top:40px;">
+                            <input type="text" name="ReplaceText" class="form-control" placeholder="@Model.ReplaceText">
+                        </div>
+
+                        <div class="form-inline">
+                            <div class="form-group" style="margin-bottom:5px;">
+                                <p style="display: inline-block;margin-bottom:5px;"><label for="IsCaseSensitiveSearch">&nbsp;&nbsp;Case sensitive</label></p>
+                                <input type="checkbox" name="IsCaseSensitiveSearch" id="IsCaseSensitiveSearch" value="true">
+                            </div>
+
+                            <div class="form-group" style="margin-bottom:5px;">
+                                <p style="display: inline-block;margin-bottom:5px;"><label for="MustReplaceText">&nbsp;&nbsp;Text</label></p>
+                                <input type="checkbox" name="MustReplaceText" id="MustReplaceText" value="true" checked="checked">
+                            </div>
+
+                            <div class="form-group" style="margin-bottom:5px;">
+                                <p style="display: inline-block;margin-bottom:5px;"><label for="MustReplaceComments">&nbsp;&nbsp;Comments</label></p>
+                                <input type="checkbox" name="MustReplaceComments" id="MustReplaceComments" value="true" checked="checked">
+                            </div>
+
+                            <div class="form-group" style="margin-bottom:5px;">
+                                <p style="display: inline-block;margin-bottom:5px;"><label for="MustReplaceMetadata">&nbsp;&nbsp;Metadata</label></p>
+                                <input type="checkbox" name="MustReplaceMetadata" id="MustReplaceMetadata" value="true" checked="checked">
+                            </div>
+                        </div>
+
+
+                        <input type="hidden" name="id" />
+
+                        <div class="convertbtn">
+                            <input type="submit" class="btn btn-success btn-lg" ID="workButton" value="@Model.WorkButtonText" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts {
+    <script type="text/javascript">
+        $(document).ready(function () {
+            registerUploadHandlers();
+            registerFormHandlers();
+        });
+
+        window.Method = "Redaction";
+        window.APIMethodWorkUrl = `${APIBasePath}api/Slides/Redaction`;
+
+        window.afterUploadSuccess = function (data, textStatus, xhr) {
+            showInfo(window.Resources["SuccessfullyUploaded"]);
+        }
+    </script>
+}

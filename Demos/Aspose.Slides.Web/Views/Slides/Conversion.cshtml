@@ -1,0 +1,66 @@
+﻿@model Aspose.Slides.Web.UI.Models.Interfaces.IConversionModel
+
+<div class="container-fluid asposetools pb5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 pt-5 pb-5">
+                <partial name="HeaderProduct" for="@Model" />
+                <partial name="UploadFile" for="UploadFile" />
+                <partial name="DownloadResult" for="@Model" />
+                <partial name="Alert" for="@Model" />
+                <partial name="Loader" for="@Model" />
+
+                <div id="WorkPlaceHolder">
+                    <form class="workForm" method="POST">
+
+                        <div class="saveas">
+                            <em>Save as</em>
+                            <div class="btn-group saveformat">
+                                <input type="hidden" name="format" id="format" value="@Model.ToFormat">
+                                <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" id="btnSaveAs" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    @Model.ToFormat.ToUpper()
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    @foreach (var format in Model.Formats)
+                                    {
+                                        <a onclick="AssignBtnToText(this)" class="dropdown-item">@format.ToUpper()</a>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+
+                        <input type="hidden" name="id" />
+                        
+                        <div class="convertbtn">
+                            <input type="submit" class="btn btn-success btn-lg" ID="workButton" value="@Model.WorkButtonText" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts {
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            registerUploadHandlers();
+            registerFormHandlers();
+        });
+
+        window.Method = "Conversion";
+        window.APIMethodWorkUrl = `${APIBasePath}api/Slides/Conversion`;
+
+        window.afterUploadSuccess = function (data, textStatus, xhr) {
+            showInfo(window.Resources["SuccessfullyUploaded"]);
+        }
+
+        function AssignBtnToText(obj) {
+            var t = $(obj).text();
+
+            $("#btnSaveAs").html(t);
+            $("#format").val(t);
+        }
+    </script>
+}

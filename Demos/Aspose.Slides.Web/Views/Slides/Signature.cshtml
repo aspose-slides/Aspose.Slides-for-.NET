@@ -1,0 +1,264 @@
+@model  Aspose.Slides.Web.UI.Models.Interfaces.ISignatureModel
+
+<div class="container-fluid asposetools pb5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 pt-5 pb-5">
+                <partial name="HeaderProduct" for="@Model" />
+                <partial name="UploadFile" for="UploadFile" />
+                <partial name="DownloadResult" for="@Model" />
+                <partial name="Alert" for="@Model" />
+                <partial name="Loader" for="@Model" />
+
+                <div id="WorkPlaceHolder">
+                    <div class="saveas">
+                        <div class="saveformat dropdown">
+                            <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" id="signatureType" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                @Model.SignatureTypeDrawing
+                            </button>
+                            <div class="dropdown-menu dropdown-menu__signature" aria-labelledby="signatureType">
+                                <a id="signatureTypeDrawing" class="dropdown-item" href="#" onclick="setSignatureType(this)" data-val="drawing">@Model.SignatureTypeDrawing</a>
+                                <a id="signatureTypeText" class="dropdown-item" href="#" onclick="setSignatureType(this)" data-val="text">@Model.SignatureTypeText</a>
+                                <a id="signatureTypeImage" class="dropdown-item" href="#" onclick="setSignatureType(this)" data-val="image">@Model.SignatureTypeImage</a>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    <br />
+
+                    <div id="drawingSettings">
+                        <div class="colorpicker">
+                            <div class="color-wrapper">
+                                <input id="drawingColor" name="Color" type="text" placeholder="#000000" value="#000000" class="call-picker color-picker-text">
+                                <div class="color-holder call-picker"></div>
+                                <div class="color-picker" id="pickcolorDrawing" style="display: none;"></div>
+                            </div>
+                        </div>
+
+                        <div style="height: 200px;">
+                            <br />
+                            <div style="width: 350px; height: 150px; display: inline-block">
+                                <div style="position: relative; left: 354px; width: 12px; height: 12px; text-align: right; top: -22px; font-weight: bolder; cursor: pointer; font-size: 35px; border-radius: 15px;"
+                                     onclick="drawCanvas.clearSignature();">
+                                    &times;
+                                </div>
+                                <canvas id="signCanvas" width="350" height="150" style="background-color: white; border-radius: 15px; touch-action: none;"></canvas>
+                                <br />
+                            </div>
+                            <br />
+                        </div>
+                    </div>
+
+                    <div id="textSettings" style="display: none">
+                        <div class="colorpicker">
+                            <div class="color-wrapper">
+                                <input id="textColor" name="Color" type="text" placeholder="#000000" value="#000000" class="call-picker color-picker-text">
+                                <div class="color-holder call-picker"></div>
+                                <div class="color-picker" id="pickcolorText" style="display: none;"></div>
+                            </div>
+                        </div>
+                        <br />
+                        <br />
+                        <div class="watermark">
+                            <textarea id="signText" class="form-control" placeholder="@Model.AddSignatureText"></textarea>
+                            <br>
+                        </div>
+                    </div>
+
+                    <div id="imageSettings" style="display: none">
+                        <partial name="UploadFile" for="UploadSignatureImage" />
+                    </div>
+
+                    <div class="saveas">
+                        <em>Save as</em>
+                        <div class="btn-group saveformat">
+                            <input type="hidden" name="format" id="format" value="@Model.ToFormat">
+                            <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" id="btnSaveAs" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                @Model.ToFormat.ToUpper()
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                @foreach (var format in Model.Formats)
+                                {
+                                    <a onclick="AssignBtnToText(this)" class="dropdown-item">@format.ToUpper()</a>
+                                }
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="convertbtn">
+                        <input type="submit" class="btn btn-success btn-lg" ID="workButton" value="@Model.WorkButtonText" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="~/slides/static/Scripts/colorpicker.js"></script>
+<script src="~/slides/static/Scripts/Shared/SignatureCanvas.js"></script>
+
+@section scripts {
+    <script type="text/javascript">
+        const fileUploader = $('#@string.Format("{0}-{1}", Model.UploadFile.UploadId, "input")')[0];
+        const imageUploader = $('#@string.Format("{0}-{1}", Model.UploadSignatureImage.UploadId, "input")')[0];
+
+        let drawCanvas;
+
+        $(document).ready(function() {
+            registerUploadHandlers();
+            registerErrorPublishingFormHandler();
+
+            var picker = $("#pickcolorDrawing");
+            drawCanvas = new Canvas('#signCanvas', () => picker.parent().find('.color-picker-text').val());
+            picker.parent().find('.color-picker-text').change(() => drawCanvas.resetCanvasContext());
+
+            setSettings(signatureType);
+        });
+
+        colorPicker("#pickcolorDrawing");
+        colorPicker("#pickcolorText");
+
+        function setSignatureType(obj) {
+            var t = $(obj).text();
+            document.getElementById('signatureType').innerHTML = t;
+            signatureType = $(obj).data('val');
+            setSettings(signatureType);
+        }
+
+        function setSettings(kind) {
+            switch (kind) {
+            case "drawing":
+                $("#drawingSettings").show();
+                $("#textSettings").hide();
+                $("#imageSettings").hide();
+                break;
+            case "text":
+                $("#drawingSettings").hide();
+                $("#textSettings").show();
+                $("#imageSettings").hide();
+                break;
+            case "image":
+                $("#drawingSettings").hide();
+                $("#textSettings").hide();
+                $("#imageSettings").show();
+                break;
+            }
+        }
+
+        function validatePresentation() {
+            var files = fileUploader.files;
+            if (files == null || files.length === 0) {
+                showAlert("@Model.SelectFileText");
+                return false;
+            }
+            return true;
+        }
+
+        function validateSignature() {
+            switch (signatureType) {
+            case "drawing":
+                if (drawCanvas.isEmpty()) {
+                    showAlert("@Model.SignatureDrawingError");
+                    return false;
+                }
+                break;
+            case "text":
+                var t = $('#signText').val();
+                if (t.length === 0) {
+                    showAlert("@Model.SignatureTextError");
+                    return false;
+                }
+                break;
+            case "image":
+                var files = imageUploader.files;
+                if (files == null || files.length === 0) {
+                    showAlert("@Model.SelectFileText");
+                    return false;
+                }
+                break;
+            }
+            return true;
+        }
+
+        const btnWork = $("#workButton");
+        btnWork.click(
+            (event) => {
+                btnWork.addClass("hidden");
+
+                //stop submit the form, we will post it manually.
+                event.preventDefault();
+
+                if (!validatePresentation() || !validateSignature()) {
+                    btnWork.removeClass("hidden");
+                    return;
+                }
+
+                showLoader();
+
+                let color = null;
+                let drawing = null;
+                if (signatureType === "drawing") {
+                    drawing = $('#signCanvas')[0].toDataURL("image/png");
+                    drawing = drawing.replace('data:image/png;base64,', '');
+                } else if (signatureType === "text") {
+                    color = $("#textColor").val();
+                }
+
+                $.ajax({
+                    method: "POST",
+                    url: `${APIBasePath}api/Slides/Signature`,
+                    data: {
+                        id: fileUploadFolder,
+                        FileNames: [fileUploader.files[0].name],
+                        Text: $("#signText").val() ? $("#signText").val() : null,
+                        Color: color,
+                        idSignatureImage: imageUploadFolder,
+                        FileNameSignatureImage: imageUploader.files.length > 0 ? imageUploader.files[0].name : null,
+                        Drawing: drawing,
+                        Format: destinationFormat
+                    },
+                    dataType: "json",
+                    timeout: 800000,
+                    success: (data, textStatus, xhr) => {
+                        window.workSuccess(data, textStatus, xhr);
+                    },
+                    error: handleError
+                });
+
+            });
+
+        let signatureType = "drawing";
+        let destinationFormat = "@Model.ToFormat.ToUpper()";
+
+        function AssignBtnToText(obj) {
+            destinationFormat = $(obj).text();
+
+            $("#btnSaveAs").html(destinationFormat);
+            $("#format").val(destinationFormat);
+        }
+
+        let fileUploadFolder = null;
+        let imageUploadFolder = null;
+        window.afterUploadSuccess = function(dataSource, textStatus, xhr) {
+            showInfo(window.Resources["SuccessfullyUploaded"]);
+            let data = dataSource[0];
+            if (data.idUpload === "@Model.UploadFile.UploadId") {
+                fileUploadFolder = data.id;
+            } else if (data.idUpload === "@Model.UploadSignatureImage.UploadId") {
+                imageUploadFolder = data.id;
+            }
+        }
+
+        window.afterDataErrorAlert = function (data) {
+
+            for (let file of fileUploader.files) {
+                
+                if (file.name == data.FileName) {
+                    fileUploader.value = null;
+                }
+            }
+        };
+    </script>
+}
+
+<link rel="stylesheet" href="~/slides/static/css/colorpicker.css" />

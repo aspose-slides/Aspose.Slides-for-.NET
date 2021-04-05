@@ -1,0 +1,47 @@
+﻿@model  Aspose.Slides.Web.UI.Models.Interfaces.IBaseViewModel
+
+<div class="container-fluid asposetools pb5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 pt-5 pb-5">
+                <partial name="HeaderProduct" for="@Model" />
+                <partial name="UploadFile" for="UploadFile" />
+                <partial name="DownloadResult" for="@Model" />
+                <partial name="Alert" for="@Model" />
+                <partial name="Loader" for="@Model" />
+
+                <div id="WorkPlaceHolder">
+                    <form class="workForm" method="POST">
+
+                        <input type="hidden" name="id" />
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts {
+    <script type="text/javascript">
+
+        $(document).ready(function() {
+            registerUploadHandlers();
+            registerFormHandlers();
+        });
+
+        window.Method = "Viewer";
+        window.APIMethodWorkUrl = `${APIBasePath}api/Slides/Viewer`;
+
+        window.afterUploadSuccess = function (data, textStatus, xhr) {
+            @*
+                Query String is used here because escaped filename is not allowed in the Request Path and we will get
+                "A potentially dangerous Request.Path value was detected from the client."
+                see here: https://www.hanselman.com/blog/ExperimentsInWackinessAllowingPercentsAnglebracketsAndOtherNaughtyThingsInTheASPNETIISRequestURL.aspx
+            *@
+            const uploaded = Array.from(data.filter(f => f.IsSuccess), f => f.FileName)[0];
+            window.location = `/slides/storage/view/?folder=${data[0].id}&fileName=${encodeURIComponent(uploaded)}`;
+        }
+
+    </script>
+}

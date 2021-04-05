@@ -1,0 +1,238 @@
+@model  Aspose.Slides.Web.UI.Models.Interfaces.IWatermarkModel
+
+<div class="container-fluid asposetools pb5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 pt-5 pb-5">
+                <partial name="HeaderProduct" for="@Model" />
+                <div id="mainUpload">
+                    <partial name="UploadFile" for="UploadFile" />
+                </div>
+                <partial name="DownloadResult" for="@Model" />
+                <partial name="Alert" for="@Model" />
+                <partial name="Loader" for="@Model" />
+
+                <div id="TextPlaceHolder" class="hidden">
+                    <form class="workForm" method="POST">
+                        <div class="watermark" style="margin-bottom: 0px; margin-top: 30px;">
+                            <textarea name="Text" id="textWatermark" class="form-control" aria-describedby="basic-addon2" placeholder="Add Watermark Text"></textarea>
+                            <br>
+                        </div>
+                        <div class="colorpicker">
+                            <div class="form-inline">
+                                <div class="color-wrapper">
+                                    <input name="Color" type="text" placeholder="#99FF66" value="#99FF66" class="call-picker color-picker-text">
+                                    <div class="color-holder call-picker"></div>
+                                    <div class="color-picker" id="color-picker" style="display: none;"></div>
+                                    &nbsp;
+                                    <select name="FontName" id="fontFamily" class="form-control">
+                                        <option selected="selected" value="Arial">Arial</option>
+                                        <option value="Times New Roman">Times New Roman</option>
+                                        <option value="Courier">Courier</option>
+                                        <option value="Verdana">Verdana</option>
+                                        <option value="Helvetica">Helvetica</option>
+                                        <option value="Georgia">Georgia</option>
+                                        <option value="Comic Sans MS">Comic Sans MS</option>
+                                        <option value="Trebuchet MS">Trebuchet MS</option>
+                                        <option value="Calibri">Calibri</option>
+                                    </select>
+                                    &nbsp;
+                                    <input name="FontSize" type="number" value="72" id="fontSize" class="form-control" min="8" style="width: 60px">
+                                </div>
+                                <div class="form-inline">
+                                    <div class="color-wrapper">
+                                        <p style="display: inline-block">@Model.RotateAngle&nbsp;(-360&deg;&nbsp;..&nbsp;360&deg;)</p>
+                                        &nbsp;
+                                        <input name="RotationAngleDegrees" type="number" value="-45" id="textAngle" class="form-control" min="-360" max="360" step="45" style="display: inline-block">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="convertbtn">
+                            <input type="hidden" name="id" />
+                            
+                            <div class="convertbtn">
+                                <input type="submit" value="ADD TEXT WATERMARK" id="ProcessTextWatermarkButton" class="btn btn-success btn-lg">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div id="ImagePlaceHolder" class="hidden">
+                    <partial name="UploadFile" for="ImageUploadFile" />
+
+                    <form class="workForm" method="POST">
+                        <div class="watermark" style="margin-bottom: 0px;">
+                            <div class="form-inline">
+                                <div class="color-wrapper">
+                                    <p style="display: inline-block;"><label for="IsGrayScaled">@Model.Grayscaled</label></p>
+                                    &nbsp;
+                                    <input type="checkbox" name="IsGrayScaled" id="IsGrayScaled" value="true">
+                                </div>
+                                <div class="color-wrapper">
+                                    <p style="display: inline-block;">@Model.ZoomFactor&nbsp; (&#37;)</p>
+                                    &nbsp;
+                                    <input name="ZoomPercent" type="number" value="100" id="zoom" class="form-control" min="0" max="400">
+                                </div>
+                                <div class="color-wrapper">
+                                    <p style="display: inline-block;">@Model.RotateAngle&nbsp; (-360&deg;&nbsp;..&nbsp;360&deg;)</p>
+                                    &nbsp;
+                                    <input name="RotationAngleDegrees" type="number" value="0" id="imageAngle" class="form-control" min="-360" max="360">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="convertbtn">
+                            <input type="hidden" name="idMain" />
+                            
+                            <input type="hidden" name="id" />
+
+                            <div class="convertbtn">
+                                <input type="submit" value="ADD IMAGE WATERMARK" id="ProcessImageWatermarkButton" class="btn btn-success btn-lg">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div id="WorkPlaceHolder">
+                    <form class="workForm" method="POST">
+                        <input type="hidden" name="id" />
+                        
+                        <div class="convertbtn" style="padding: 10px;">
+                            <input type="button" class="btn btn-success btn-lg" id="TextWatermarkButton" value="ADD TEXT WATERMARK" />
+                        </div>
+                        <div class="convertbtn" style="padding: 10px;">
+                            <input type="button" class="btn btn-success btn-lg" id="ImageWatermarkButton" value="ADD IMAGE WATERMARK" />
+                        </div>
+                        <div class="convertbtn" style="padding: 10px;">
+                            <input type="submit" class="btn btn-success btn-lg" id="RemoveWatermarkButton" value="REMOVE WATERMARK" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts {
+    <script type="text/javascript">
+
+        $(document).ready(function() {
+            registerUploadHandlers();
+            registerFormHandlers();
+        });
+
+        colorPicker();
+
+        window.Method = "WatermarkRemoved";
+
+        window.APIMethodWorkUrl = `${APIBasePath}api/Slides/RemoveWatermark`;
+
+        window.afterUploadSuccess = function(data, textStatus, xhr) {
+            showInfo(window.Resources["SuccessfullyUploaded"]);
+            $('input[name="idMain"]').val(data[0].id);
+
+            for (let upFile of data) {
+                var fileName = $('<input type="hidden" name="MainFileNames"/>').val(upFile.FileName);
+                $('input[name="idMain"]').after(fileName);
+            }            
+        }
+
+        function validateTextWatermarkProcessing() {
+            $('#ProcessTextWatermarkButton').addClass("hidden");
+
+            return true;
+        }
+
+        function validateImageWatermarkProcessing() {
+            $('#ProcessImageWatermarkButton').addClass("hidden");
+
+            if ($('input[name="FileNames"]:isEmpty').length >= 0 &&
+                $('input[name="FileNames"]').length == 0) {
+                showAlert(Resources["FileSelectMessage"]);
+
+                $('#ProcessImageWatermarkButton').removeClass("hidden");
+                return false;
+            }
+
+            return true;
+        }
+
+        function showProcessImageWatermarkButton() {
+            $('#ProcessImageWatermarkButton').removeClass("hidden");
+        }
+
+        function showProcessTextWatermarkButton() {
+            $('#ProcessTextWatermarkButton').removeClass("hidden");
+        }
+
+        function prepareAdding() {
+            if ($('input[name="id"]:isEmpty').length > 0) {
+                showAlert(window.Resources["FileSelectMessage"]);
+                return false;
+            }
+            $('#SuccessMessage').text('@Model.AddedSuccessMessage');
+            $("#WorkPlaceHolder").addClass('hidden');
+            $("#mainUpload").addClass('hidden');
+            window.Method = "WatermarkAdded";
+        }
+
+        $(document).ready(function() {
+            $('#ImagePlaceHolder').find('.uploadForm.activeForm').removeClass("activeForm");
+
+            window.onWorkSuccess = function() {
+                $("#TextPlaceHolder").addClass('hidden');
+                $("#ImagePlaceHolder").addClass('hidden');
+            }
+
+            $('#TextWatermarkButton').click(
+                function() {
+                    if (prepareAdding() === false)
+                        return;
+
+                    $("#TextPlaceHolder").removeClass('hidden');
+                    $('#ProductTitleSub').text('@Model.TextTitleSub');
+
+                    window.APIMethodWorkUrl = `${APIBasePath}api/Slides/AddTextWatermark`;
+                    window.onValidateWork = validateTextWatermarkProcessing;
+                    window.onShowProcessingButton = showProcessTextWatermarkButton;
+                    registerFormHandlers();
+                    SEONavigate('text');
+                }
+            );
+
+            $('#ImageWatermarkButton').click(
+                function() {
+                    if (prepareAdding() === false)
+                        return;
+
+                    $("#ImagePlaceHolder").removeClass('hidden');
+                    $('#ProductTitleSub').text('@Model.ImageTitleSub');
+
+                    $('.uploadForm.activeForm').removeClass("activeForm");
+                    $('#ImagePlaceHolder').find('.uploadForm').addClass("activeForm");
+                    $('#ImagePlaceHolder').find('.uploadfileinput').attr('accept', '.jpg,.jpeg,.bmp,.png,.tiff');
+
+                    registerUploadHandlers();
+
+                    window.APIMethodWorkUrl = `${APIBasePath}api/Slides/AddImageWatermark`;
+                    window.onValidateWork = validateImageWatermarkProcessing;
+                    window.onShowProcessingButton = showProcessImageWatermarkButton;
+                    registerFormHandlers();
+
+                    $('input[name="id"]').val("");
+                    $('input[name="FileNames"]').remove();
+
+                    window.afterUploadSuccess = function(data, textStatus, xhr) {
+                        showInfo(window.Resources["SuccessfullyUploaded"]);
+                    }
+                    SEONavigate('image');
+                }
+            );
+        });
+    </script>
+}
+
+<link rel="stylesheet" href="~/slides/static/css/colorpicker.css" />
+<script src="~/slides/static/Scripts/colorpicker.js"></script>

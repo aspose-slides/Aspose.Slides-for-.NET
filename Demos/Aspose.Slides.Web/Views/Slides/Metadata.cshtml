@@ -1,0 +1,177 @@
+﻿@using Microsoft.AspNetCore.Http.Extensions
+@model  Aspose.Slides.Web.UI.Models.Interfaces.IMetadataModel
+
+<div class="container-fluid asposetools pb5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 pt-5 pb-5">
+                <partial name="HeaderProduct" for="@Model" />
+                <partial name="UploadFile" for="UploadFile" />
+                <partial name="DownloadResult" for="@Model" />
+                <partial name="Alert" for="@Model" />
+                <partial name="Loader" for="@Model" />
+                <partial name="MetadataControls" for="@Model" />
+
+                <div id="WorkPlaceHolder">
+                    <form class="workForm" method="POST">
+
+                        <input type="hidden" name="id" />
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts {
+    <script type="text/javascript">
+
+        $(document).ready(function() {
+            registerUploadHandlers();
+            registerFormHandlers();
+        });
+
+        function hideWorkButtons() {
+            $("#btn-save").addClass("hidden");
+            $("#btn-clear-all").addClass("hidden");
+            $("#btn-cancel").addClass("hidden");
+        }
+
+        function showWorkButtons() {
+            $("#btn-save").removeClass("hidden");
+            $("#btn-clear-all").removeClass("hidden");
+            $("#btn-cancel").removeClass("hidden");
+        }
+
+        window.Method = "Metadata";
+        window.APIMethodWorkUrl = `${APIBasePath}api/Slides/GetMetadata`;
+
+        window.afterUploadSuccess = function(data, textStatus, xhr) {
+            showInfo(window.Resources["SuccessfullyUploaded"]);
+
+            $('.workForm').ajaxSubmit({
+                url: APIMethodWorkUrl,
+                dataType: "json",
+                beforeSubmit: onValidateWork,
+                beforeSend: showLoader,
+                success: workSuccess,
+                complete: hideLoader,
+                error: handleError
+            });
+        }
+
+        window.nextStage = function(data) {
+            $('.UploadPlaceHolder').addClass("hidden");
+            $('#WorkPlaceHolder').addClass("hidden");
+
+            window.nextStage = null;
+
+            function getType(value) {
+                let type = typeof value;
+
+                if (type === "string") {
+                    return 4;
+                }
+                if (type === "number") {
+                    return 3;
+                }
+                if (type === "boolean") {
+                    return 0;
+                }
+
+                return 8;
+            }
+
+            const BuiltIn = Object.keys(data.Metadata).filter(key => key !== "CustomProperties").map(key => {
+                return {
+                    Name: key,
+                    Value: data.Metadata[key],
+                    Type: getType(data.Metadata[key])
+                };
+            });
+
+            const Custom = Object.keys(data.Metadata.CustomProperties).map(key => {
+                return {
+                    Name: key,
+                    Value: data.Metadata.CustomProperties[key],
+                    Type: getType(data.Metadata.CustomProperties[key])
+                };
+            });
+
+            const metadata = { BuiltIn, Custom };
+
+            const onSuccess = function(data, textStatus, xhr) {
+                $('#metadata-edit').addClass('hidden');
+                workSuccess(data, textStatus, xhr);
+                window.scrollTo(0, 0);
+            };
+
+            const onSave = function() {
+                hideWorkButtons();
+                showLoader();
+                const url = `${APIBasePath}api/Slides/UpdateMetadata`;
+
+                const props = metadata.BuiltIn.reduce((o, p) => Object.assign(o, { [p.Name]: p.Value }), {});
+                props.CustomProperties = metadata.Custom.reduce((o, p) => Object.assign(o, { [p.Name]: p.Value }), {});
+
+                $.ajax({
+                    method: 'POST',
+                    url: url,
+                    data: JSON.stringify({
+                        id: data.id,
+                        FileNames: [data.FileName],
+                        Metadata: props
+                    }),
+                    contentType: 'application/json',
+                    cache: false,
+                    timeout: 600000,
+                    success: onSuccess,
+                    error: (err) => {
+                        showWorkButtons();
+                        if (err.data !== undefined && err.data.Status !== undefined) {
+                            showAlert(err.data.Status);
+                        } else {
+                            showAlert("Error " + err.status + ": " + err.statusText);
+                        }
+                    }
+                });
+            };
+
+            const onClearAll = function() {
+                if (window.confirm('Are you sure you want to clear all metadata?')) {
+                    hideWorkButtons();
+                    showLoader();
+                    const url = `${APIBasePath}api/Slides/UpdateMetadata`;
+
+                    const props = metadata.BuiltIn.reduce((o, p) => Object.assign(o, { [p.Name]: null }), {});
+
+                    $.ajax({
+                        method: 'POST',
+                        url: url,
+                        data: JSON.stringify({
+                            id: data.id,
+                            FileNames: [data.FileName],
+                            Metadata: props
+                        }),
+                        contentType: 'application/json',
+                        cache: false,
+                        timeout: 600000,
+                        success: onSuccess,
+                        error: (err) => {
+                            showWorkButtons();
+                            if (err.data !== undefined && err.data.Status !== undefined) {
+                                showAlert(err.data.Status);
+                            } else {
+                                showAlert("Error " + err.status + ": " + err.statusText);
+                            }
+                        }
+                    });
+                }
+            };
+
+            $.displayMetadata(metadata, onSave, onClearAll, () => window.location.href = '@Context.Request.GetDisplayUrl()');
+        }
+
+    </script>
+}
