@@ -1,8 +1,9 @@
 
 using System.IO;
-
+using Aspose.Cells;
 using Aspose.Slides;
-using Aspose.Slides.Export;
+using Aspose.Slides.DOM.Ole;
+using SaveFormat = Aspose.Slides.Export.SaveFormat;
 
 namespace Aspose.Slides.Examples.CSharp.Shapes 
 {
@@ -31,14 +32,12 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
 
                 if (ole != null)
                 {
-                    // Reading object data in Workbook
-                    Aspose.Cells.Workbook Wb;
-
-                    using (System.IO.MemoryStream msln = new System.IO.MemoryStream(ole.ObjectData))
+                    using (MemoryStream msln = new MemoryStream(ole.EmbeddedData.EmbeddedFileData))
                     {
-                        Wb = new Aspose.Cells.Workbook(msln);
+                        // Reading object data in Workbook
+                        Workbook Wb = new Workbook(msln);
 
-                        using (System.IO.MemoryStream msout = new System.IO.MemoryStream())
+                        using (MemoryStream msout = new MemoryStream())
                         {
                             // Modifying the workbook data
                             Wb.Worksheets[0].Cells[0, 4].PutValue("E");
@@ -46,18 +45,15 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
                             Wb.Worksheets[0].Cells[2, 4].PutValue(14);
                             Wb.Worksheets[0].Cells[3, 4].PutValue(15);
 
-                            Aspose.Cells.OoxmlSaveOptions so1 =
-                                new Aspose.Cells.OoxmlSaveOptions(Aspose.Cells.SaveFormat.Xlsx);
-
+                            OoxmlSaveOptions so1 = new OoxmlSaveOptions(Aspose.Cells.SaveFormat.Xlsx);
                             Wb.Save(msout, so1);
 
                             // Changing Ole frame object data
-                            msout.Position = 0;
-                            ole.ObjectData = msout.ToArray();
+                            IOleEmbeddedDataInfo newData = new OleEmbeddedDataInfo(msout.ToArray(), ole.EmbeddedData.EmbeddedFileExtension);
+                            ole.SetEmbeddedData(newData);
                         }
                     }
                 }
-
                 pres.Save(dataDir + "OleEdit_out.pptx", SaveFormat.Pptx);
             }
 

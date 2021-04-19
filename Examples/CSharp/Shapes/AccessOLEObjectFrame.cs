@@ -24,10 +24,10 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
                 if (oleObjectFrame != null)
                 {
                     // Get embedded file data
-                    byte[] data = oleObjectFrame.EmbeddedFileData;
+                    byte[] data = oleObjectFrame.EmbeddedData.EmbeddedFileData;
 
                     // Get embedded file extention
-                    string fileExtention = oleObjectFrame.EmbeddedFileExtension;
+                    string fileExtention = oleObjectFrame.EmbeddedData.EmbeddedFileExtension;
 
                     // Create path for saving the extracted file
                     string extractedPath = dataDir + "excelFromOLE_out" + fileExtention;

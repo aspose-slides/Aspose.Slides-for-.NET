@@ -11,7 +11,7 @@ using Aspose.Slides.Export;
 using Aspose.Slides.MathText;
 
 /*
-This example demonstrates of using API for creation a mathematical expression for Pythagorean theorem.
+This example demonstrates of using SlideUtil.AlignShapes method.
 */
 namespace CSharp.Shapes
 {
@@ -24,22 +24,37 @@ namespace CSharp.Shapes
 
             using (Presentation pres = new Presentation())
             {
-                // Create some shapes
                 ISlide slide = pres.Slides[0];
-                IAutoShape shape1 = slide.Shapes.AddAutoShape(ShapeType.Rectangle, 100, 100, 100, 100);
-                IAutoShape shape2 = slide.Shapes.AddAutoShape(ShapeType.Rectangle, 250, 200, 100, 100);
-                IAutoShape shape3 = slide.Shapes.AddAutoShape(ShapeType.Rectangle, 400, 300, 100, 100);
+                // Create some shapes
+                slide.Shapes.AddAutoShape(ShapeType.Rectangle, 100, 100, 100, 100);
+                slide.Shapes.AddAutoShape(ShapeType.Rectangle, 200, 200, 100, 100);
+                slide.Shapes.AddAutoShape(ShapeType.Rectangle, 300, 300, 100, 100);
+                // Aligning all shapes within IBaseSlide.
+                SlideUtil.AlignShapes(ShapesAlignmentType.AlignBottom, true, pres.Slides[0]);
 
-                // Here we align two shapes using their indexes
-                SlideUtil.AlignShapes(ShapesAlignmentType.AlignMiddle, true, slide, new int[]
-                {
-                    slide.Shapes.IndexOf(shape1),
-                    slide.Shapes.IndexOf(shape2)
-                });
+                slide = pres.Slides.AddEmptySlide(slide.LayoutSlide);
+                // Add group shape
+                IGroupShape groupShape = slide.Shapes.AddGroupShape();
+                // Create some shapes to the group shape
+                groupShape.Shapes.AddAutoShape(ShapeType.Rectangle, 350, 50, 50, 50);
+                groupShape.Shapes.AddAutoShape(ShapeType.Rectangle, 450, 150, 50, 50);
+                groupShape.Shapes.AddAutoShape(ShapeType.Rectangle, 550, 250, 50, 50);
+                groupShape.Shapes.AddAutoShape(ShapeType.Rectangle, 650, 350, 50, 50);
+                // Aligning all shapes within IGroupShape.
+                SlideUtil.AlignShapes(ShapesAlignmentType.AlignLeft, false, groupShape);
 
-                // Here we aling all shapes int the slide
-                SlideUtil.AlignShapes(ShapesAlignmentType.AlignMiddle, true, pres.Slides[0].Shapes);
+                slide = pres.Slides.AddEmptySlide(slide.LayoutSlide);
+                // Add group shape
+                groupShape = slide.Shapes.AddGroupShape();
+                // Create some shapes to the group shape
+                groupShape.Shapes.AddAutoShape(ShapeType.Rectangle, 350, 50, 50, 50);
+                groupShape.Shapes.AddAutoShape(ShapeType.Rectangle, 450, 150, 50, 50);
+                groupShape.Shapes.AddAutoShape(ShapeType.Rectangle, 550, 250, 50, 50);
+                groupShape.Shapes.AddAutoShape(ShapeType.Rectangle, 650, 350, 50, 50);
+                // Aligning shapes with specified indexes within IGroupShape.
+                SlideUtil.AlignShapes(ShapesAlignmentType.AlignLeft, false, groupShape, new int[] { 0, 2 });
 
+                // Save presentation
                 pres.Save(outpptxFile, SaveFormat.Pptx);
             }
         }

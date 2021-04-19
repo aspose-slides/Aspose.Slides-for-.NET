@@ -30,8 +30,8 @@ namespace CSharp.Shapes
                         {
                             objectnum++;
                             OleObjectFrame oleFrame = shape as OleObjectFrame;
-                            byte[] data = oleFrame.EmbeddedFileData;
-                            string fileExtention = oleFrame.EmbeddedFileExtension;
+                            byte[] data = oleFrame.EmbeddedData.EmbeddedFileData;
+                            string fileExtention = oleFrame.EmbeddedData.EmbeddedFileExtension;
 
                             string extractedPath = dataDir +"ExtractedObject_out" + objectnum + fileExtention;
                             using (FileStream fs = new FileStream(extractedPath, FileMode.Create))

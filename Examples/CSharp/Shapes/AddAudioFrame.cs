@@ -29,11 +29,17 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
                 FileStream fstr = new FileStream(dataDir+ "sampleaudio.wav", FileMode.Open, FileAccess.Read);
 
                 // Add Audio Frame
-                IAudioFrame af = sld.Shapes.AddAudioFrameEmbedded(50, 150, 100, 100, fstr);
+                IAudioFrame audioFrame = sld.Shapes.AddAudioFrameEmbedded(50, 150, 100, 100, fstr);
 
+                // Set Audio to play across the slides
+                audioFrame.PlayAcrossSlides = true;
+
+                // Set Audio to automatically rewind to start after playing
+                audioFrame.RewindAudio = true;
+                
                 // Set Play Mode and Volume of the Audio
-                af.PlayMode = AudioPlayModePreset.Auto;
-                af.Volume = AudioVolumeMode.Loud;
+                audioFrame.PlayMode = AudioPlayModePreset.Auto;
+                audioFrame.Volume = AudioVolumeMode.Loud;
 
                 //Write the PPTX file to disk
                 pres.Save(dataDir + "AudioFrameEmbed_out.pptx", SaveFormat.Pptx);
