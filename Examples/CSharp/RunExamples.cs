@@ -219,6 +219,7 @@ namespace Aspose.Slides.Examples.CSharp
             //ReadOnlyRecommended.Run();
             //CheckPresentationProtection.Run();
             //CheckPasswordExample.Run();
+            //RootDirectoryClsId.Run();
 
             //// =====================================================
             ////            Presentations -   Saving
@@ -294,6 +295,8 @@ namespace Aspose.Slides.Examples.CSharp
             //GeometryShapeCreatesCustomGeometry.Run();
             //GeometryShapeCompositeObjects.Run();
             //GeometryShapeUsingShapeUtil.Run();
+            //CreateZoomFrame.Run();
+            //CreateSummaryZoom.Run();
 
             //// =====================================================
             ////                        Slides 
@@ -383,6 +386,7 @@ namespace Aspose.Slides.Examples.CSharp
             //// =====================================================
 
             //RemoveHyperlinks.Run();
+            //MacroHyperlink.Run();
 
             //// =====================================================
             ////                    Slides - Media
