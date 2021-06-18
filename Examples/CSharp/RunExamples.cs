@@ -185,6 +185,7 @@ namespace Aspose.Slides.Examples.CSharp
             //SvgFormattingController.Run();
             //MailMergeExample.Run();
             //PdfImportExample.Run();
+            //ConvertToXaml.Run();
 
             // =====================================================
             //// =====================================================
@@ -297,6 +298,7 @@ namespace Aspose.Slides.Examples.CSharp
             //GeometryShapeUsingShapeUtil.Run();
             //CreateZoomFrame.Run();
             //CreateSummaryZoom.Run();
+            //AnimationTargetShapes.Run();
 
             //// =====================================================
             ////                        Slides 
