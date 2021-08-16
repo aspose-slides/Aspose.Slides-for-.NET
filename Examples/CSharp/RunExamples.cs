@@ -142,6 +142,7 @@ namespace Aspose.Slides.Examples.CSharp
             //Chart_RecoverWorkbook.Run();
             //Chart_GetRange.Run();
             //MapChart.Run();
+            //CalculateFormulas.Run();
 
             //// =====================================================
             ////                    Presentations 
@@ -186,6 +187,7 @@ namespace Aspose.Slides.Examples.CSharp
             //MailMergeExample.Run();
             //PdfImportExample.Run();
             //ConvertToXaml.Run();
+            //ConvertToGif.Run();
 
             // =====================================================
             //// =====================================================
