@@ -143,6 +143,7 @@ namespace Aspose.Slides.Examples.CSharp
             //Chart_GetRange.Run();
             //MapChart.Run();
             //CalculateFormulas.Run();
+            //WorksheetsExample.Run();
 
             //// =====================================================
             ////                    Presentations 
@@ -188,6 +189,7 @@ namespace Aspose.Slides.Examples.CSharp
             //PdfImportExample.Run();
             //ConvertToXaml.Run();
             //ConvertToGif.Run();
+            //ConvertToHtml5.Run();
 
             // =====================================================
             //// =====================================================
@@ -301,6 +303,7 @@ namespace Aspose.Slides.Examples.CSharp
             //CreateZoomFrame.Run();
             //CreateSummaryZoom.Run();
             //AnimationTargetShapes.Run();
+            //DuotoneEffectsPVI.Run();
 
             //// =====================================================
             ////                        Slides 
