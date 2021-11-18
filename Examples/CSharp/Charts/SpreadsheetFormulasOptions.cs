@@ -33,6 +33,7 @@ namespace CSharp.Charts
                 
                 // Use the Formula property of the IChartDataCell interface to write a formula in a cell.
                 cell.Formula = "FINDB(\"ス\", \"テキスト\")";
+                workbook.CalculateFormulas();
 
                 //Check calculation.
                 if (Int32.Parse(cell.Value.ToString()) == 5)

@@ -15,8 +15,8 @@ namespace CSharp.Slides.Comments
         public static void Run() {
 
             //ExStart:AddParentComments
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir_Slides_Presentations_Comments();
+            // The path to the output directory.
+            string outPptxFile = RunExamples.OutPath;
 
             using (Presentation pres = new Presentation())
             {
@@ -59,12 +59,12 @@ namespace CSharp.Slides.Comments
                     Console.WriteLine();
                 }
 
-                pres.Save(dataDir + "parent_comment.pptx",SaveFormat.Pptx);
+                pres.Save(outPptxFile + "parent_comment.pptx", SaveFormat.Pptx);
 
                 // Remove comment1 and all its replies
                 comment1.Remove();
 
-                pres.Save(dataDir + "remove_comment.pptx", SaveFormat.Pptx);
+                pres.Save(outPptxFile + "remove_comment.pptx", SaveFormat.Pptx);
             }
             //ExEnd:AddParentComments
         }

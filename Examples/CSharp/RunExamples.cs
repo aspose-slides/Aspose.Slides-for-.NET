@@ -293,6 +293,7 @@ namespace Aspose.Slides.Examples.CSharp
             //SetFileTypeForAnEmbeddingObject.Run();
             //ExtractEmbeddedFileDataFromOLEObject.Run();
             //MathematicalShape.Run();
+            //MathShape_GetChildren.Run();
             //ShapesAlignment.Run();
             //SketchedShapes.Run();
             //GeometryShapeAddSegment.Run();
@@ -375,6 +376,7 @@ namespace Aspose.Slides.Examples.CSharp
             //AddSlideComments.Run();
             //AccessSlideComments.Run();
             //AddParentComments.Run();
+            //ModernComments.Run();
 
             //// =====================================================
             ////                    Slides - Layout

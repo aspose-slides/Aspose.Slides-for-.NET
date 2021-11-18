@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Drawing;
+using System.IO;
 using Aspose.Slides.Export;
 
 /*
@@ -17,10 +18,10 @@ namespace Aspose.Slides.Examples.CSharp.Slides.Comments
         public static void Run()
         {
             //ExStart:AddSlideComments
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir_Slides_Presentations_Comments();
-
+            // The path to the output file.
+            string outPptxFile = Path.Combine(RunExamples.OutPath, "Comments_out.pptx");
             // Instantiate Presentation class
+
             using (Presentation presentation = new Presentation())
             {
                 // Adding Empty slide
@@ -49,7 +50,7 @@ namespace Aspose.Slides.Examples.CSharp.Slides.Comments
                 // Accessin the comment at index 0 for slide 1
                 String str = Comments[0].Text;
 
-                presentation.Save(dataDir + "Comments_out.pptx", SaveFormat.Pptx);
+                presentation.Save(outPptxFile, SaveFormat.Pptx);
 
                 if (Comments.GetLength(0) > 0)
                 {

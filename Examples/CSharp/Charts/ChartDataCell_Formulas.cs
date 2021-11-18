@@ -30,6 +30,7 @@ namespace CSharp.Charts
 
                 IChartDataCell cell2 = workbook.GetCell(0, "C2");
                 cell2.R1C1Formula = "MAX(R2C6:R5C8) / 3";
+                workbook.CalculateFormulas();
 
                 presentation.Save(outpptxFile, SaveFormat.Pptx);
             }
