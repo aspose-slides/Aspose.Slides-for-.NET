@@ -25,7 +25,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
             using (Presentation pres = new Presentation(dataDir+"Presentation.pptx"))
             {
                 // exclude default presentation fonts
-                string[] fontNameExcludeList = { "Calibri", "Arial" };
+                string[] fontNameExcludeList = { "Arial" };
 
                 EmbedAllFontsHtmlController embedFontsController = new EmbedAllFontsHtmlController(fontNameExcludeList);
 

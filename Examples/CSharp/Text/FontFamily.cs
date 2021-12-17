@@ -5,7 +5,7 @@ using Aspose.Slides.Export;
 
 namespace Aspose.Slides.Examples.CSharp.Text
 {
-    public class FontFamily
+    public class FontFamilyExample
     {
         public static void Run()
         {

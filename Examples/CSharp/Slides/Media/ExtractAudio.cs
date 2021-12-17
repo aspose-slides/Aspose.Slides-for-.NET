@@ -17,7 +17,7 @@ namespace CSharp.Slides.Media
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Slides_Presentations_Media();
 
-            string presName = dataDir + "AudioSlide.pptx";
+            string presName = dataDir + "AudioSlide.ppt";
            
             // Instantiate Presentation class that represents the presentation file
             Presentation pres = new Presentation(presName);

@@ -303,6 +303,7 @@ namespace Aspose.Slides.Examples.CSharp
             //GeometryShapeUsingShapeUtil.Run();
             //CreateZoomFrame.Run();
             //CreateSummaryZoom.Run();
+            //CreateSectionZoom.Run();
             //AnimationTargetShapes.Run();
             //DuotoneEffectsPVI.Run();
 
@@ -475,7 +476,7 @@ namespace Aspose.Slides.Examples.CSharp
             //DefaultFonts.Run();
             //ExportingHTMLText.Run();
             //EmbedFontsInHtml.Run(); 
-            //FontFamily.Run();
+            //FontFamilyExample.Run();
             //EndParaGraphProperties.Run();
             //FontProperties.Run();
             //ImportingHTMLText.Run();
@@ -518,7 +519,7 @@ namespace Aspose.Slides.Examples.CSharp
             //FallBackRulesCollection.Run();
             //RenderingWithFallBackFont.Run();
             //AddCustomPromptText.Run();
-            //SaveWithDefaaultRegularFont.Run();
+//            SaveWithDefaaultRegularFont.Run();
             //PortionGetRect.Run();
             //BulletFillFormatEffective.Run();
             //WordArt.Run();

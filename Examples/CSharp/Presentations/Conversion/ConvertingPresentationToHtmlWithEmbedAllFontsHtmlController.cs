@@ -20,7 +20,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Conversion
             using (Presentation pres = new Presentation(dataDir+"presentation.pptx"))
             {
                 // exclude default presentation fonts
-                string[] fontNameExcludeList = { "Calibri", "Arial" };
+                string[] fontNameExcludeList = { };
 
 
                 Paragraph para = new Paragraph();
@@ -31,7 +31,6 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Conversion
 
                 HtmlOptions htmlOptionsEmbed = new HtmlOptions
                 {
-                    //                    HtmlFormatter = HtmlFormatter.CreateCustomFormatter(embedFontsController)
                     HtmlFormatter = HtmlFormatter.CreateCustomFormatter(linkcont)
                 };
 

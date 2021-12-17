@@ -17,7 +17,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
             string dataDir = RunExamples.GetDataDir_Text();
             string outPath = RunExamples.OutPath;
 
-            using (Presentation pres = new Presentation(dataDir + "SaveOptionsDefaultRegularFont.pptx"))
+            using (Presentation pres = new Presentation(dataDir + "DefaultFonts.pptx"))
             {
                 HtmlOptions htmlOpts = new HtmlOptions();
                 htmlOpts.DefaultRegularFont = "Arial Black";

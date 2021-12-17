@@ -20,34 +20,46 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
 
             using (Presentation pres = new Presentation())
             {
-                // Create slides array
-                for (int slideNumber = 0; slideNumber < 5; slideNumber++)
-                {
-                    //Add new slides to presentation
-                    ISlide slide = pres.Slides.AddEmptySlide(pres.Slides[0].LayoutSlide);
+                //Adds a new slide to the presentation
+                ISlide slide = pres.Slides.AddEmptySlide(pres.Slides[0].LayoutSlide);
+                slide.Background.FillFormat.FillType = FillType.Solid;
+                slide.Background.FillFormat.SolidFillColor.Color = Color.Brown;
+                slide.Background.Type = BackgroundType.OwnBackground;
 
-                    // Create a background for the slide
-                    slide.Background.Type = BackgroundType.OwnBackground;
-                    slide.Background.FillFormat.FillType = FillType.Solid;
-                    slide.Background.FillFormat.SolidFillColor.Color = Color.DarkKhaki;
+                // Adds a new section to the presentation
+                pres.Sections.AddSection("Section 1", slide);
 
-                    // Create a text box for the slide
-                    IAutoShape autoshape = slide.Shapes.AddAutoShape(ShapeType.Rectangle, 100, 200, 500, 200);
-                    autoshape.TextFrame.Text = String.Format("Slide - {0}", slideNumber + 2);
-                }
+                //Adds a new slide to the presentation
+                slide = pres.Slides.AddEmptySlide(pres.Slides[0].LayoutSlide);
+                slide.Background.FillFormat.FillType = FillType.Solid;
+                slide.Background.FillFormat.SolidFillColor.Color = Color.Aqua;
+                slide.Background.Type = BackgroundType.OwnBackground;
 
-                // Create zoom objects for all slides in the first slide
-                for (int slideNumber = 1; slideNumber < pres.Slides.Count; slideNumber++)
-                {
-                    int x = (slideNumber - 1) * 100;
-                    int y = (slideNumber - 1) * 100;
-                    IZoomFrame zoomFrame = pres.Slides[0].Shapes.AddZoomFrame(x, y, 150, 120, pres.Slides[slideNumber]);
+                // Adds a new section to the presentation
+                pres.Sections.AddSection("Section 2", slide);
 
-                    // Set the ReturnToParent property to return to the first slide
-                    zoomFrame.ReturnToParent = true;
-                }
+                //Adds a new slide to the presentation
+                slide = pres.Slides.AddEmptySlide(pres.Slides[0].LayoutSlide);
+                slide.Background.FillFormat.FillType = FillType.Solid;
+                slide.Background.FillFormat.SolidFillColor.Color = Color.Chartreuse;
+                slide.Background.Type = BackgroundType.OwnBackground;
 
-                // Save the presentation
+                // Adds a new section to the presentation
+                pres.Sections.AddSection("Section 3", slide);
+
+                //Adds a new slide to the presentation
+                slide = pres.Slides.AddEmptySlide(pres.Slides[0].LayoutSlide);
+                slide.Background.FillFormat.FillType = FillType.Solid;
+                slide.Background.FillFormat.SolidFillColor.Color = Color.DarkGreen;
+                slide.Background.Type = BackgroundType.OwnBackground;
+
+                // Adds a new section to the presentation
+                pres.Sections.AddSection("Section 4", slide);
+
+                // Adds a SummaryZoomFrame object
+                ISummaryZoomFrame summaryZoomFrame = pres.Slides[0].Shapes.AddSummaryZoomFrame(150, 50, 300, 200);
+
+                // Saves the presentation
                 pres.Save(resultPath, SaveFormat.Pptx);
             }
         }

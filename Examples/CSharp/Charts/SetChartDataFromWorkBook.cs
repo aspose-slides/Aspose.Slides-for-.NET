@@ -20,31 +20,33 @@ namespace CSharp.Charts
         public static void Run()
         {
             string dataDir = RunExamples.GetDataDir_Charts();
-            //ExStart:SetChartDataFromWorkBook
-         Presentation pres = new Presentation(dataDir+"Test.pptx");
 
-            IChart chart = pres.Slides[0].Shapes.AddChart(ChartType.Pie, 50, 50, 500, 400);
-            chart.ChartData.ChartDataWorkbook.Clear(0);
-
-            Workbook workbook = null;
-            try
+            using (Presentation pres = new Presentation(/*dataDir + "Test.pptx"*/))
             {
-                workbook = new Aspose.Cells.Workbook(dataDir + "book1.xlsx");
-            }
-            catch (Exception ex)
-            {
-                Console.Write(ex);
-            }
-            MemoryStream mem = new MemoryStream();
-            workbook.Save(mem, Aspose.Cells.SaveFormat.Xlsx);
+                IChart chart = pres.Slides[0].Shapes.AddChart(ChartType.Pie, 50, 50, 500, 400);
+                chart.ChartData.ChartDataWorkbook.Clear(0);
 
-            chart.ChartData.WriteWorkbookStream(mem);
+                Workbook workbook = null;
+                try
+                {
+                    workbook = new Aspose.Cells.Workbook(dataDir + "book1.xlsx");
+                }
+                catch (Exception ex)
+                {
+                    Console.Write(ex);
+                }
 
-            chart.ChartData.SetRange("Sheet1!$A$1:$B$9");
-            IChartSeries series = chart.ChartData.Series[0];
-            series.ParentSeriesGroup.IsColorVaried = true;
-            pres.Save(dataDir+"response2.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
-            //ExEnd:SetChartDataFromWorkBook
+                MemoryStream mem = new MemoryStream();
+                workbook.Save(mem, Aspose.Cells.SaveFormat.Xlsx);
+
+                mem.Position = 0;
+                chart.ChartData.WriteWorkbookStream(mem);
+
+                chart.ChartData.SetRange("Sheet2!$A$1:$B$3");
+                IChartSeries series = chart.ChartData.Series[0];
+                series.ParentSeriesGroup.IsColorVaried = true;
+                pres.Save(Path.Combine(RunExamples.OutPath, "response2.pptx"), Aspose.Slides.Export.SaveFormat.Pptx);
+            }
         }
     }
 }
