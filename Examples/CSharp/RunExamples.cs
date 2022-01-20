@@ -144,6 +144,7 @@ namespace Aspose.Slides.Examples.CSharp
             //MapChart.Run();
             //CalculateFormulas.Run();
             //WorksheetsExample.Run();
+            //TimeUnitTypeEnum.Run();
 
             //// =====================================================
             ////                    Presentations 
