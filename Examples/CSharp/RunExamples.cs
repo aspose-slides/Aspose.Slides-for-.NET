@@ -307,6 +307,7 @@ namespace Aspose.Slides.Examples.CSharp
             //CreateSectionZoom.Run();
             //AnimationTargetShapes.Run();
             //DuotoneEffectsPVI.Run();
+            //IsTextShape.Run();
 
             //// =====================================================
             ////                        Slides 
@@ -520,7 +521,7 @@ namespace Aspose.Slides.Examples.CSharp
             //FallBackRulesCollection.Run();
             //RenderingWithFallBackFont.Run();
             //AddCustomPromptText.Run();
-//            SaveWithDefaaultRegularFont.Run();
+            //SaveWithDefaaultRegularFont.Run();
             //PortionGetRect.Run();
             //BulletFillFormatEffective.Run();
             //WordArt.Run();
