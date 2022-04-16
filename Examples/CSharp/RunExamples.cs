@@ -392,6 +392,7 @@ namespace Aspose.Slides.Examples.CSharp
             //SetChildFooter.Run();
             //HeaderFooterManager.Run();
             //CheckSlidesComparison.Run();
+            //RemoveUnusedLayoutMaster.Run();
 
             //// =====================================================
             ////                    Slides - HyperLink
