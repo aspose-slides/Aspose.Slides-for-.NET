@@ -226,6 +226,7 @@ namespace Aspose.Slides.Examples.CSharp
             //CheckPresentationProtection.Run();
             //CheckPasswordExample.Run();
             //RootDirectoryClsId.Run();
+            //PresentationSlideShowSetup.Run();
 
             //// =====================================================
             ////            Presentations -   Saving
@@ -407,6 +408,7 @@ namespace Aspose.Slides.Examples.CSharp
 
             //ExtractVideo.Run();
             //ExtractAudio.Run(); //!! No source presentation
+            //ExtractAudioFromTimeline.Run();
 
             //// =====================================================
             ////            Rendering - Printing a Slide
