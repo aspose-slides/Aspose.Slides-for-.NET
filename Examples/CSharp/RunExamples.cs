@@ -364,6 +364,7 @@ namespace Aspose.Slides.Examples.CSharp
             //ManagingBetterSlideTransitions.Run();
             //SetTransitionEffects.Run();
             //SupportOfMorphTransition.Run();
+            //AnimationRepeatOnSlide.Run();
 
             //// =====================================================
             ////                    Slides - Thumbnail
@@ -529,6 +530,7 @@ namespace Aspose.Slides.Examples.CSharp
             //BulletFillFormatEffective.Run();
             //WordArt.Run();
             //KeepTextFlat.Run();
+            //GetFontsSubstitution.Run();
 
             //// =====================================================
             ////                    VBA Macros
