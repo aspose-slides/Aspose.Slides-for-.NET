@@ -54,11 +54,11 @@
     <StartupObject>Aspose.Slides.Examples.CSharp.RunExamples</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Cells, Version=22.9.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Cells.22.9.0\lib\net40\Aspose.Cells.dll</HintPath>
+    <Reference Include="Aspose.Cells, Version=22.10.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Cells.22.10.0\lib\net40\Aspose.Cells.dll</HintPath>
     </Reference>
-    <Reference Include="Aspose.Slides, Version=22.9.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Slides.NET.22.9.0\lib\net4.0-client\Aspose.Slides.dll</HintPath>
+    <Reference Include="Aspose.Slides, Version=22.10.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Slides.NET.22.10.0\lib\net4.0-client\Aspose.Slides.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -96,6 +96,7 @@
     <Compile Include="Charts\HistogramChart.cs" />
     <Compile Include="Charts\IActualLayoutAdded.cs" />
     <Compile Include="Charts\InvertIfNegativeForIndividualSeries.cs" />
+    <Compile Include="Charts\LeaderLineColor.cs" />
     <Compile Include="Charts\MapChart.cs" />
     <Compile Include="Charts\OrganizationChart.cs" />
     <Compile Include="Charts\RadarChartCreating.cs" />
@@ -125,6 +126,7 @@
     <Compile Include="Presentations\Conversion\ODPToPPTX.cs" />
     <Compile Include="Presentations\Conversion\Pdf1A_PdfUa_Conformance.cs" />
     <Compile Include="Presentations\Conversion\PdfImportExample.cs" />
+    <Compile Include="Presentations\Conversion\SvgConverttionOptions.cs" />
     <Compile Include="Presentations\Conversion\SvgFormattingController.cs" />
     <Compile Include="Presentations\Opening\SetAccessPermissionsToPDF.cs" />
     <Compile Include="Presentations\Properties\AccessLayoutFormats.cs" />
@@ -271,6 +273,7 @@
     <Compile Include="Text\AddingSuperscriptAndSubscriptTextInTextFrame.cs" />
     <Compile Include="Text\BulletFillFormatEffective.cs" />
     <Compile Include="Text\EffectTextBoxParagraph.cs" />
+    <Compile Include="Text\EmbeddedFontCompression.cs" />
     <Compile Include="Text\EmbedFontsInHtml.cs" />
     <Compile Include="Text\EndParaGraphProperties.cs" />
     <Compile Include="Text\FallBackRulesCollection.cs" />

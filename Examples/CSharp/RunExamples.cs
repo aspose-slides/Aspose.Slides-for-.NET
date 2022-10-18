@@ -145,6 +145,7 @@ namespace Aspose.Slides.Examples.CSharp
             //CalculateFormulas.Run();
             //WorksheetsExample.Run();
             //TimeUnitTypeEnum.Run();
+            //LeaderLineColor.Run();
 
             //// =====================================================
             ////                    Presentations 
@@ -191,6 +192,7 @@ namespace Aspose.Slides.Examples.CSharp
             //ConvertToXaml.Run();
             //ConvertToGif.Run();
             //ConvertToHtml5.Run();
+            //SvgConvertionOptions.Run();
 
             // =====================================================
             //// =====================================================
@@ -531,6 +533,7 @@ namespace Aspose.Slides.Examples.CSharp
             //WordArt.Run();
             //KeepTextFlat.Run();
             //GetFontsSubstitution.Run();
+            //EmbeddedFontCompression.Run();
 
             //// =====================================================
             ////                    VBA Macros
