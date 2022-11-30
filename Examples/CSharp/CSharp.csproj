@@ -54,11 +54,11 @@
     <StartupObject>Aspose.Slides.Examples.CSharp.RunExamples</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Cells, Version=22.10.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Cells.22.10.0\lib\net40\Aspose.Cells.dll</HintPath>
+    <Reference Include="Aspose.Cells, Version=22.11.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Cells.22.11.0\lib\net40\Aspose.Cells.dll</HintPath>
     </Reference>
-    <Reference Include="Aspose.Slides, Version=22.10.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Slides.NET.22.10.0\lib\net4.0-client\Aspose.Slides.dll</HintPath>
+    <Reference Include="Aspose.Slides, Version=22.11.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Slides.NET.22.11.0\lib\net4.0-client\Aspose.Slides.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -117,8 +117,10 @@
     <Compile Include="Charts\SpreadsheetFormulasOptions.cs" />
     <Compile Include="Charts\TimeUnitTypeEnum.cs" />
     <Compile Include="Charts\WorksheetsExample.cs" />
+    <Compile Include="Presentations\Conversion\ConvertToAnimation.cs" />
     <Compile Include="Presentations\Conversion\ConvertToGif.cs" />
     <Compile Include="Presentations\Conversion\ConvertToHtml5.cs" />
+    <Compile Include="Presentations\Conversion\ConvertToPdfCompliance.cs" />
     <Compile Include="Presentations\Conversion\ConvertToXaml.cs" />
     <Compile Include="Presentations\Conversion\ExportMathParagraphToMathML.cs" />
     <Compile Include="Presentations\Conversion\FodpFormatConvertion.cs" />
@@ -157,10 +159,13 @@
     <Compile Include="Slides\Comments\ModernComments.cs" />
     <Compile Include="Slides\CRUD\CloneSlideIntoSpecifiedSection.cs" />
     <Compile Include="Slides\Hyperlinks\MacroHyperLink.cs" />
+    <Compile Include="Slides\Layout\GetBasePlacehorderExample.cs" />
     <Compile Include="Slides\Layout\ManageHeaderFooterText.cs" />
     <Compile Include="Slides\Layout\RemoveUnusedLayoutMaster.cs" />
     <Compile Include="Slides\Media\ExtractAudio.cs" />
+    <Compile Include="Slides\Media\ExtractAudioFromHyperLink.cs" />
     <Compile Include="Slides\Media\ExtractAudioFromTimeline.cs" />
+    <Compile Include="Slides\Media\StopPreviousSoundExample.cs" />
     <Compile Include="Slides\Transitions\AnimationRepeatOnSlide.cs" />
     <Compile Include="Tables\CreateATableFromScratchInASlide.cs" />
     <Compile Include="Tables\SetFirstRowAsHeader.cs" />

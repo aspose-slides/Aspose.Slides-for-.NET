@@ -157,6 +157,7 @@ namespace Aspose.Slides.Examples.CSharp
 
             //ConvertingPresentationToHtmlWithEmbedAllFontsHtmlController.Run();
             //ConvertToPDF.Run();
+            //ConvertToPdfCompliance.Run();
             //ConvertToPDFWithHiddenSlides.Run();
             //CustomOptionsPDFConversion.Run();
             //ConvertPresentationToPasswordProtectedPDF.Run();
@@ -193,6 +194,7 @@ namespace Aspose.Slides.Examples.CSharp
             //ConvertToGif.Run();
             //ConvertToHtml5.Run();
             //SvgConvertionOptions.Run();
+            //ConvertToAnimation.Run();
 
             // =====================================================
             //// =====================================================
@@ -397,6 +399,7 @@ namespace Aspose.Slides.Examples.CSharp
             //HeaderFooterManager.Run();
             //CheckSlidesComparison.Run();
             //RemoveUnusedLayoutMaster.Run();
+            //GetBasePlacehorderExample.Run();
 
             //// =====================================================
             ////                    Slides - HyperLink
@@ -412,6 +415,8 @@ namespace Aspose.Slides.Examples.CSharp
             //ExtractVideo.Run();
             //ExtractAudio.Run(); //!! No source presentation
             //ExtractAudioFromTimeline.Run();
+            //ExtractAudioFromHyperLink.Run();
+            //StopPreviousSoundExample.Run();
 
             //// =====================================================
             ////            Rendering - Printing a Slide
