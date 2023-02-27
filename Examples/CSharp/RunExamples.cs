@@ -539,6 +539,7 @@ namespace Aspose.Slides.Examples.CSharp
             //KeepTextFlat.Run();
             //GetFontsSubstitution.Run();
             //EmbeddedFontCompression.Run();
+            //FindAndReplaceText.Run();
 
             //// =====================================================
             ////                    VBA Macros
