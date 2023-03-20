@@ -146,6 +146,7 @@ namespace Aspose.Slides.Examples.CSharp
             //WorksheetsExample.Run();
             //TimeUnitTypeEnum.Run();
             //LeaderLineColor.Run();
+            //ChartDataPointIndex.Run();
 
             //// =====================================================
             ////                    Presentations 
@@ -313,6 +314,7 @@ namespace Aspose.Slides.Examples.CSharp
             //AnimationTargetShapes.Run();
             //DuotoneEffectsPVI.Run();
             //IsTextShape.Run();
+            //SetVideoTrimFromEnd.Run();
 
             //// =====================================================
             ////                        Slides 
@@ -369,6 +371,7 @@ namespace Aspose.Slides.Examples.CSharp
             //SetTransitionEffects.Run();
             //SupportOfMorphTransition.Run();
             //AnimationRepeatOnSlide.Run();
+            //AnimationRewind.Run();
 
             //// =====================================================
             ////                    Slides - Thumbnail
