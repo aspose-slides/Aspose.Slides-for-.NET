@@ -30,7 +30,7 @@ namespace CSharp.Charts
                 IDataLabelCollection labels = series[0].Labels;
 
                 // Change color of all leader lines in the collection
-                labels.LeaderLinesColor = Color.FromArgb(255, 255, 0, 0);
+                labels.LeaderLinesFormat.Line.FillFormat.SolidFillColor.Color = Color.FromArgb(255, 255, 0, 0);
 
                 // Save result
                 pres.Save(outPath, SaveFormat.Pptx);

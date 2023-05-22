@@ -1,12 +1,12 @@
 using System;
 using System.Drawing;
 using System.IO;
-using Aspose.Cells.Drawing;
 using Aspose.Slides.Examples.CSharp.ActiveX;
 using Aspose.Slides.Examples.CSharp.Charts;
 using Aspose.Slides.Examples.CSharp.Conversion;
 using Aspose.Slides.Examples.CSharp.Presentations;
 using Aspose.Slides.Examples.CSharp.Presentations.Conversion;
+using Aspose.Slides.Examples.CSharp.Presentations.LowCode;
 using Aspose.Slides.Examples.CSharp.Presentations.Opening;
 using Aspose.Slides.Examples.CSharp.Presentations.Properties;
 using Aspose.Slides.Examples.CSharp.Presentations.Saving;
@@ -249,6 +249,13 @@ namespace Aspose.Slides.Examples.CSharp
             //AddBlobImageToPresentation.Run();
 
             //// =====================================================
+            ////            Presentations -   LowCode
+            //// =====================================================
+
+            //RemoveUnusedLayoutMaster.Run();
+            //ForEachPortion.Run();
+
+            //// =====================================================
             ////                    Shapes
             //// =====================================================
 
@@ -372,6 +379,7 @@ namespace Aspose.Slides.Examples.CSharp
             //SupportOfMorphTransition.Run();
             //AnimationRepeatOnSlide.Run();
             //AnimationRewind.Run();
+            //AfterAnimationTypeExample.Run();
 
             //// =====================================================
             ////                    Slides - Thumbnail
@@ -401,7 +409,6 @@ namespace Aspose.Slides.Examples.CSharp
             //SetChildFooter.Run();
             //HeaderFooterManager.Run();
             //CheckSlidesComparison.Run();
-            //RemoveUnusedLayoutMaster.Run();
             //GetBasePlacehorderExample.Run();
 
             //// =====================================================
@@ -605,6 +612,11 @@ namespace Aspose.Slides.Examples.CSharp
         public static String GetDataDir_PresentationOpening()
         {
             return Path.GetFullPath(GetDataDir_Data() + "Presentations/Opening/");
+        }
+
+        public static String GetDataDir_Slides_Presentations_LowCode()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "Presentations/LowCode/");
         }
 
         public static String GetDataDir_Rendering()

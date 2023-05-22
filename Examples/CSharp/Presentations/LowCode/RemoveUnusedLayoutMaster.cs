@@ -9,13 +9,13 @@ using Aspose.Slides.Effects;
 This code demonstrates removing unused layout and master slides. 
 */
 
-namespace Aspose.Slides.Examples.CSharp.Shapes
+namespace Aspose.Slides.Examples.CSharp.Presentations.LowCode
 {
     class RemoveUnusedLayoutMaster
     {
         public static void Run()
         {
-            string pptxFileName = Path.Combine(RunExamples.GetDataDir_Slides_Presentations_Layout(), "MultipleMaster.pptx");
+            string pptxFileName = Path.Combine(RunExamples.GetDataDir_Slides_Presentations_LowCode(), "MultipleMaster.pptx");
 
             using (Presentation pres = new Presentation(pptxFileName))
             {
