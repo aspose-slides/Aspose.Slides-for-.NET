@@ -196,6 +196,8 @@ namespace Aspose.Slides.Examples.CSharp
             //ConvertToHtml5.Run();
             //SvgConvertionOptions.Run();
             //ConvertToAnimation.Run();
+            //ConvertToMarkdown.Run();
+            //ConvertHTMLEmbeddingImages.Run();
 
             // =====================================================
             //// =====================================================

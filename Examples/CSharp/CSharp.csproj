@@ -56,11 +56,11 @@
     <StartupObject>Aspose.Slides.Examples.CSharp.RunExamples</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Cells, Version=23.6.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Cells.23.6.0\lib\net40\Aspose.Cells.dll</HintPath>
+    <Reference Include="Aspose.Cells, Version=23.7.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Cells.23.7.0\lib\net40\Aspose.Cells.dll</HintPath>
     </Reference>
-    <Reference Include="Aspose.Slides, Version=23.6.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Slides.NET.23.6.0\lib\net4.0-client\Aspose.Slides.dll</HintPath>
+    <Reference Include="Aspose.Slides, Version=23.7.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Slides.NET.23.7.0\lib\net4.0-client\Aspose.Slides.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -120,9 +120,11 @@
     <Compile Include="Charts\SpreadsheetFormulasOptions.cs" />
     <Compile Include="Charts\TimeUnitTypeEnum.cs" />
     <Compile Include="Charts\WorksheetsExample.cs" />
+    <Compile Include="Presentations\Conversion\ConvertHTMLEmbeddingImages.cs" />
     <Compile Include="Presentations\Conversion\ConvertToAnimation.cs" />
     <Compile Include="Presentations\Conversion\ConvertToGif.cs" />
     <Compile Include="Presentations\Conversion\ConvertToHtml5.cs" />
+    <Compile Include="Presentations\Conversion\ConvertToMarkdown.cs" />
     <Compile Include="Presentations\Conversion\ConvertToPdfCompliance.cs" />
     <Compile Include="Presentations\Conversion\ConvertToXaml.cs" />
     <Compile Include="Presentations\Conversion\ExportMathParagraphToMathML.cs" />
