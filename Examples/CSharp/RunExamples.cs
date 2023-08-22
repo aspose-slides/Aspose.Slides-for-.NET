@@ -234,6 +234,7 @@ namespace Aspose.Slides.Examples.CSharp
             //CheckPasswordExample.Run();
             //RootDirectoryClsId.Run();
             //PresentationSlideShowSetup.Run();
+            //SlideShowMediaControls.Run();
 
             //// =====================================================
             ////            Presentations -   Saving
