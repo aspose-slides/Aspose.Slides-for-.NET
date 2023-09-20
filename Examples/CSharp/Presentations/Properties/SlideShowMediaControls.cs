@@ -11,7 +11,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Conversion
     {
         public static void Run()
         {
-            // Path to HTML document
+            // Path to output document
             string outFilePath = Path.Combine(RunExamples.OutPath, "SlideShowMediaControl.pptx");
 
             using (Presentation pres = new Presentation())
@@ -19,7 +19,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Conversion
                 // Еnable media control display in slideshow mode. 
                 pres.SlideShowSettings.ShowMediaControls = true;
                 
-                // Save presentation in HTML5 format.
+                // Save presentation.
                 pres.Save(outFilePath, SaveFormat.Pptx);
             }
         }
