@@ -198,6 +198,7 @@ namespace Aspose.Slides.Examples.CSharp
             //ConvertToAnimation.Run();
             //ConvertToMarkdown.Run();
             //ConvertHTMLEmbeddingImages.Run();
+            //ConvertToBlackWiteTiff.Run();
 
             // =====================================================
             //// =====================================================
@@ -325,6 +326,7 @@ namespace Aspose.Slides.Examples.CSharp
             //DuotoneEffectsPVI.Run();
             //IsTextShape.Run();
             //SetVideoTrimFromEnd.Run();
+            //InkManagementExample.Run();
 
             //// =====================================================
             ////                        Slides 
@@ -554,7 +556,8 @@ namespace Aspose.Slides.Examples.CSharp
             //EmbeddedFontCompression.Run();
             //FindAndReplaceText.Run();
             //SpecifyDefaultTextLanguage.Run();
-            AnimateTextTypeExample.Run();
+            //AnimateTextTypeExample.Run();
+            //NumberlinesInParagraph.Run();
 
             //// =====================================================
             ////                    VBA Macros
