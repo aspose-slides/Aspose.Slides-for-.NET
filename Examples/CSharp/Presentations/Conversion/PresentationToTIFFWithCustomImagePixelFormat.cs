@@ -24,8 +24,9 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Conversion
                 TiffOptions options = new TiffOptions();
                
                 options.PixelFormat = ImagePixelFormat.Format8bppIndexed;
-                INotesCommentsLayoutingOptions notesOptions = options.NotesCommentsLayouting;
+                INotesCommentsLayoutingOptions notesOptions = new NotesCommentsLayoutingOptions();
                 notesOptions.NotesPosition = NotesPositions.BottomFull;
+                options.SlidesLayoutOptions = notesOptions;
                 /*
                 ImagePixelFormat contains the following values (as could be seen from documentation):
                 Format1bppIndexed; // 1 bits per pixel, indexed.

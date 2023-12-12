@@ -56,11 +56,11 @@
     <StartupObject>Aspose.Slides.Examples.CSharp.RunExamples</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Cells, Version=23.11.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Cells.23.11.0\lib\net40\Aspose.Cells.dll</HintPath>
+    <Reference Include="Aspose.Cells, Version=23.12.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Cells.23.12.0\lib\net40\Aspose.Cells.dll</HintPath>
     </Reference>
-    <Reference Include="Aspose.Slides, Version=23.11.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Slides.NET.23.11.0\lib\net4.0-client\Aspose.Slides.dll</HintPath>
+    <Reference Include="Aspose.Slides, Version=23.12.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Slides.NET.23.12.0\lib\net4.0-client\Aspose.Slides.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -124,10 +124,12 @@
     <Compile Include="Presentations\Conversion\ConvertToAnimation.cs" />
     <Compile Include="Presentations\Conversion\ConvertToBlackWiteTiff.cs" />
     <Compile Include="Presentations\Conversion\ConvertToGif.cs" />
+    <Compile Include="Presentations\Conversion\ConvertToHandout.cs" />
     <Compile Include="Presentations\Conversion\ConvertToHtml5.cs" />
     <Compile Include="Presentations\Conversion\ConvertToMarkdown.cs" />
     <Compile Include="Presentations\Conversion\ConvertToPdfCompliance.cs" />
     <Compile Include="Presentations\Conversion\ConvertToXaml.cs" />
+    <Compile Include="Presentations\Conversion\ExportInkExample.cs" />
     <Compile Include="Presentations\Conversion\ExportMathParagraphToMathML.cs" />
     <Compile Include="Presentations\Conversion\FodpFormatConvertion.cs" />
     <Compile Include="Presentations\Conversion\MailMergeExample.cs" />
@@ -152,6 +154,7 @@
     <Compile Include="Shapes\CreateSectionZoom.cs" />
     <Compile Include="Shapes\CreateSummaryZoom.cs" />
     <Compile Include="Shapes\CreateZoomFrame.cs" />
+    <Compile Include="Shapes\DeletePictureCroppedAreasExample.cs" />
     <Compile Include="Shapes\DuotoneEffectsPVI.cs" />
     <Compile Include="Shapes\ExtractEmbeddedFileDataFromOLEObject.cs" />
     <Compile Include="Shapes\GeometryShapeAddSegment.cs" />
@@ -164,6 +167,7 @@
     <Compile Include="Shapes\MathematicalShape.cs" />
     <Compile Include="Shapes\MathShape_GetChildren.cs" />
     <Compile Include="Shapes\SetVideoTrimFromEnd.cs" />
+    <Compile Include="Shapes\ShapeIsDecorativePropertyExample.cs" />
     <Compile Include="Shapes\ShapesAlignment.cs" />
     <Compile Include="Shapes\SketchedShapes.cs" />
     <Compile Include="Slides\Comments\ModernComments.cs" />

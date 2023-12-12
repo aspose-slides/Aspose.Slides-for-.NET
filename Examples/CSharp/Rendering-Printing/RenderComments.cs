@@ -27,10 +27,12 @@ namespace Aspose.Slides.Examples.CSharp.Rendering.Printing
             Bitmap bmp = new Bitmap(740, 960);
 
             IRenderingOptions renderOptions = new RenderingOptions();
-            renderOptions.NotesCommentsLayouting.CommentsAreaColor = Color.Red;
-            renderOptions.NotesCommentsLayouting.CommentsAreaWidth = 200;
-            renderOptions.NotesCommentsLayouting.CommentsPosition = CommentsPositions.Right;
-            renderOptions.NotesCommentsLayouting.NotesPosition = NotesPositions.BottomTruncated;
+            NotesCommentsLayoutingOptions notesOptions = new NotesCommentsLayoutingOptions();
+            notesOptions.CommentsAreaColor = Color.Red;
+            notesOptions.CommentsAreaWidth = 200;
+            notesOptions.CommentsPosition = CommentsPositions.Right;
+            notesOptions.NotesPosition = NotesPositions.BottomTruncated;
+            renderOptions.SlidesLayoutOptions = notesOptions;
 
             using (Graphics graphics = Graphics.FromImage(bmp))
             {

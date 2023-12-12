@@ -199,6 +199,8 @@ namespace Aspose.Slides.Examples.CSharp
             //ConvertToMarkdown.Run();
             //ConvertHTMLEmbeddingImages.Run();
             //ConvertToBlackWiteTiff.Run();
+            //ConvertToHandout.Run();
+            //ExportInkExample.Run();
 
             // =====================================================
             //// =====================================================
@@ -327,6 +329,8 @@ namespace Aspose.Slides.Examples.CSharp
             //IsTextShape.Run();
             //SetVideoTrimFromEnd.Run();
             //InkManagementExample.Run();
+            //DeletePictureCroppedAreasExample.Run();
+            //ShapeIsDecorativePropertyExample.Run();
 
             //// =====================================================
             ////                        Slides 

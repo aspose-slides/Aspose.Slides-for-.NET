@@ -29,8 +29,9 @@ namespace Aspose.Slides.Examples.CSharp.Conversion
                 // Setting compression type
                 opts.CompressionType = TiffCompressionTypes.Default;
 
-                INotesCommentsLayoutingOptions notesOptions = opts.NotesCommentsLayouting;
+                INotesCommentsLayoutingOptions notesOptions = new NotesCommentsLayoutingOptions();
                 notesOptions.NotesPosition = NotesPositions.BottomFull;
+                opts.SlidesLayoutOptions = notesOptions;
                 // Compression Types
 
                 // Default - Specifies the default compression scheme (LZW).

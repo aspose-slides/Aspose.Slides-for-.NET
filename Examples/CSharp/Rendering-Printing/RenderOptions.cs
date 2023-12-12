@@ -20,11 +20,13 @@ namespace Aspose.Slides.Examples.CSharp.Rendering.Printing
             using (Presentation pres = new Presentation(presPath))
             {
                 IRenderingOptions renderingOpts = new RenderingOptions();
-                renderingOpts.NotesCommentsLayouting.NotesPosition = NotesPositions.BottomTruncated;
+                NotesCommentsLayoutingOptions notesOptions = new NotesCommentsLayoutingOptions();
+                notesOptions.NotesPosition = NotesPositions.BottomTruncated;
+                renderingOpts.SlidesLayoutOptions = notesOptions;
 
                 pres.Slides[0].GetThumbnail(renderingOpts, 4 / 3f, 4 / 3f).Save(Path.Combine(RunExamples.OutPath, "RenderingOptions-Slide1-Original.png"), ImageFormat.Png);
 
-                renderingOpts.NotesCommentsLayouting.NotesPosition = NotesPositions.None;
+                renderingOpts.SlidesLayoutOptions = null;
                 renderingOpts.DefaultRegularFont = "Arial Black";
                 pres.Slides[0].GetThumbnail(renderingOpts, 4 / 3f, 4 / 3f).Save(Path.Combine(RunExamples.OutPath, "RenderingOptions-Slide1-ArialBlackDefault.png"), ImageFormat.Png);
 

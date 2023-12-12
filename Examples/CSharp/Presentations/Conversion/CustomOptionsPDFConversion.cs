@@ -36,9 +36,9 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Conversion
                 // Define the PDF standard
                 pdfOptions.Compliance = PdfCompliance.Pdf15;
 
-
-                INotesCommentsLayoutingOptions options = pdfOptions.NotesCommentsLayouting;
+                INotesCommentsLayoutingOptions options = new NotesCommentsLayoutingOptions();
                 options.NotesPosition = NotesPositions.BottomFull;
+                pdfOptions.SlidesLayoutOptions = options;
 
                 // Save the presentation to PDF with specified options
                 pres.Save(dataDir + "Custom_Option_Pdf_Conversion_out.pdf", SaveFormat.Pdf, pdfOptions);

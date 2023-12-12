@@ -25,8 +25,9 @@ namespace Aspose.Slides.Examples.CSharp.Conversion
                 HtmlOptions htmlOpt = new HtmlOptions();
                 htmlOpt.HtmlFormatter = HtmlFormatter.CreateDocumentFormatter("", false);
 
-                INotesCommentsLayoutingOptions notesOptions = htmlOpt.NotesCommentsLayouting;
+                INotesCommentsLayoutingOptions notesOptions = new NotesCommentsLayoutingOptions();
                 notesOptions.NotesPosition = NotesPositions.BottomFull;
+                htmlOpt.SlidesLayoutOptions = notesOptions;
 
                 // Saving the presentation to HTML
                 presentation.Save(dataDir + "ConvertWholePresentationToHTML_out.html", SaveFormat.Html, htmlOpt);

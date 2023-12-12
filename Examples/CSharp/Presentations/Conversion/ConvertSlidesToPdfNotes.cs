@@ -33,9 +33,9 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Conversion
 
 
             PdfOptions pdfOptions = new PdfOptions();
-            INotesCommentsLayoutingOptions options = pdfOptions.NotesCommentsLayouting;
+            INotesCommentsLayoutingOptions options = new NotesCommentsLayoutingOptions();
             options.NotesPosition = NotesPositions.BottomFull;
-
+            pdfOptions.SlidesLayoutOptions = options;
 
 
             auxPresentation.Save(dataDir + "PDFnotes_out.pdf", SaveFormat.Pdf, pdfOptions);

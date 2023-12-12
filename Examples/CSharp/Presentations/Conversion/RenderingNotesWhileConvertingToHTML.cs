@@ -23,8 +23,9 @@ namespace Aspose.Slides.Examples.CSharp.Conversion
             {
                 HtmlOptions opt = new HtmlOptions();
 
-                INotesCommentsLayoutingOptions options = opt.NotesCommentsLayouting;
+                INotesCommentsLayoutingOptions options = new NotesCommentsLayoutingOptions();
                 options.NotesPosition = NotesPositions.BottomFull;
+                opt.SlidesLayoutOptions = options;
 
                 // Saving notes pages
                 pres.Save(dataDir + "Output.html", SaveFormat.Html, opt);

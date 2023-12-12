@@ -22,8 +22,11 @@ namespace Aspose.Slides.Examples.CSharp.Conversion
             using (Presentation pres = new Presentation(dataDir + "ConvertWithNoteToTiff.pptx"))
             {
                 TiffOptions opts = new TiffOptions();
-                INotesCommentsLayoutingOptions notesOptions = opts.NotesCommentsLayouting;
+
+                INotesCommentsLayoutingOptions notesOptions = new NotesCommentsLayoutingOptions();
                 notesOptions.NotesPosition = NotesPositions.BottomFull;
+                opts.SlidesLayoutOptions = notesOptions;
+
                 // Saving the presentation to TIFF notes
                 pres.Save(dataDir + "TestNotes_out.tiff", SaveFormat.Tiff, opts);
             }

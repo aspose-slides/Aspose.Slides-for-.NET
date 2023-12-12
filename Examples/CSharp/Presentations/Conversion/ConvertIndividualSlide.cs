@@ -22,9 +22,9 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Conversion
                 
                 htmlOptions.HtmlFormatter = HtmlFormatter.CreateCustomFormatter(new CustomFormattingController());
 
-                INotesCommentsLayoutingOptions notesOptions = htmlOptions.NotesCommentsLayouting;
+                INotesCommentsLayoutingOptions notesOptions = new NotesCommentsLayoutingOptions();
                 notesOptions.NotesPosition = NotesPositions.BottomFull;
-
+                htmlOptions.SlidesLayoutOptions = notesOptions;
                 // Saving File              
                 for (int i = 0; i < presentation.Slides.Count; i++)
                     presentation.Save(dataDir + "Individual Slide" + (i + 1) + "_out.html", new[] { i + 1 }, SaveFormat.Html, htmlOptions);

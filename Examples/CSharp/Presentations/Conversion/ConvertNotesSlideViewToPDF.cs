@@ -22,9 +22,9 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Conversion
             using (Presentation presentation = new Presentation(dataDir + "NotesFile.pptx"))
             {
                 PdfOptions pdfOptions = new PdfOptions();
-                INotesCommentsLayoutingOptions options = pdfOptions.NotesCommentsLayouting;
+                INotesCommentsLayoutingOptions options = new NotesCommentsLayoutingOptions();
                 options.NotesPosition = NotesPositions.BottomFull;
-
+                pdfOptions.SlidesLayoutOptions = options;
                 
                 // Saving the presentation to PDF notes
                 presentation.Save(dataDir + "Pdf_Notes_out.pdf", SaveFormat.Pdf, pdfOptions);
