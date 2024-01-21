@@ -201,6 +201,7 @@ namespace Aspose.Slides.Examples.CSharp
             //ConvertToBlackWiteTiff.Run();
             //ConvertToHandout.Run();
             //ExportInkExample.Run();
+            //PdfImportTableExample.Run();
 
             // =====================================================
             //// =====================================================
