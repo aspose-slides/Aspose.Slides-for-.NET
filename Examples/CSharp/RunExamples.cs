@@ -202,6 +202,8 @@ namespace Aspose.Slides.Examples.CSharp
             //ConvertToHandout.Run();
             //ExportInkExample.Run();
             //PdfImportTableExample.Run();
+            //ExportMathParagraphToLatex.Run();
+            //ConvertToHtml5NotesComments.Run();
 
             // =====================================================
             //// =====================================================

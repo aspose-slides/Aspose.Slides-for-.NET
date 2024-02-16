@@ -19,7 +19,7 @@ namespace Aspose.Slides.Examples.CSharp.Conversion
             string dataDir = RunExamples.GetDataDir_Conversion();
 
             // Instantiate a Presentation object that represents a presentation file
-            using (Presentation pres = new Presentation(dataDir + "ConvertWithNoteToTiff.pptx"))
+            using (Presentation pres = new Presentation(dataDir + "ConvertWithNote.pptx"))
             {
                 TiffOptions opts = new TiffOptions();
 
