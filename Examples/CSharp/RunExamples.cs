@@ -429,6 +429,7 @@ namespace Aspose.Slides.Examples.CSharp
 
             //RemoveHyperlinks.Run();
             //MacroHyperlink.Run();
+            //ExternalUrlOriginal.Run();
 
             //// =====================================================
             ////                    Slides - Media
