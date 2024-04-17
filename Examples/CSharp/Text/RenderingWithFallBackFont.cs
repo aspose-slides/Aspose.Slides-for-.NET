@@ -46,7 +46,7 @@ namespace CSharp.Text
                 pres.FontsManager.FontFallBackRulesCollection = rulesList;
 
                 // Rendering of thumbnail with using of initialized rules collection and saving to PNG
-                pres.Slides[0].GetThumbnail(1f, 1f).Save(dataDir + "Slide_0.png", ImageFormat.Png);
+                pres.Slides[0].GetImage(1f, 1f).Save(dataDir + "Slide_0.png", Aspose.Slides.ImageFormat.Png);
             }
             //ExEnd:RenderingWithFallBackFont
 

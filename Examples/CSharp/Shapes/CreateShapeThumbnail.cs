@@ -24,7 +24,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
             using (Presentation presentation = new Presentation(dataDir + "HelloWorld.pptx"))
             {
                 // Create a full scale image
-                using (Bitmap bitmap = presentation.Slides[0].Shapes[0].GetThumbnail())
+                using (IImage bitmap = presentation.Slides[0].Shapes[0].GetImage())
                 {
                     // Save the image to disk in PNG format
                     bitmap.Save(dataDir + "Shape_thumbnail_out.png", ImageFormat.Png);

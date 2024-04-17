@@ -24,7 +24,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
             using (Presentation presentation = new Presentation(dataDir + "HelloWorld.pptx"))
             {
                 // Create a Appearance bound shape image
-                using (Bitmap bitmap = presentation.Slides[0].Shapes[0].GetThumbnail(ShapeThumbnailBounds.Appearance, 1, 1))
+                using (IImage bitmap = presentation.Slides[0].Shapes[0].GetImage(ShapeThumbnailBounds.Appearance, 1, 1))
                 {
                     // Save the image to disk in PNG format
                     bitmap.Save(dataDir + "Shape_thumbnail_Bound_Shape_out.png", ImageFormat.Png);

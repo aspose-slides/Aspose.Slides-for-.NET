@@ -31,7 +31,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
             ISmartArtNode node = smart.Nodes[1];
 
             // Get thumbnail
-            Bitmap bmp = node.Shapes[0].GetThumbnail();
+            IImage bmp = node.Shapes[0].GetImage();
 
             // Save thumbnail
             bmp.Save(dataDir + "SmartArt_ChildNote_Thumbnail_out.jpeg", ImageFormat.Jpeg);

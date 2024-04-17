@@ -24,7 +24,6 @@ namespace Aspose.Slides.Examples.CSharp.Rendering.Printing
             string resultPath = Path.Combine(RunExamples.OutPath, "OutPresBitmap_Comments.png");
 
             Presentation pres = new Presentation(dataDir + "presentation.pptx");
-            Bitmap bmp = new Bitmap(740, 960);
 
             IRenderingOptions renderOptions = new RenderingOptions();
             NotesCommentsLayoutingOptions notesOptions = new NotesCommentsLayoutingOptions();
@@ -34,12 +33,7 @@ namespace Aspose.Slides.Examples.CSharp.Rendering.Printing
             notesOptions.NotesPosition = NotesPositions.BottomTruncated;
             renderOptions.SlidesLayoutOptions = notesOptions;
 
-            using (Graphics graphics = Graphics.FromImage(bmp))
-            {
-                pres.Slides[0].RenderToGraphics(renderOptions, graphics);
-            }
-
-            bmp.Save(resultPath, ImageFormat.Png);
+            pres.Slides[0].GetImage(new Size(740, 960)).Save(resultPath, ImageFormat.Png);
             System.Diagnostics.Process.Start(resultPath);
 
         }

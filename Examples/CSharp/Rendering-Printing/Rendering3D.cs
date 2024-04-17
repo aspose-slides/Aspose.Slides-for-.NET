@@ -30,7 +30,7 @@ namespace Aspose.Slides.Examples.CSharp.Rendering.Printing
                 shape.ThreeDFormat.ExtrusionHeight = 100;
                 shape.ThreeDFormat.ExtrusionColor.Color = Color.Blue;
 
-                pres.Slides[0].GetThumbnail(2, 2).Save(outPngFile, ImageFormat.Png);
+                pres.Slides[0].GetImage(2, 2).Save(outPngFile, ImageFormat.Png);
                 pres.Save(outPptxFile, SaveFormat.Pptx);
             }
         }

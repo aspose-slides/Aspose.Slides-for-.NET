@@ -23,7 +23,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
             using (Presentation pptx = new Presentation(dataDir + "DefaultFonts.pptx", loadOptions))
             {
                 // Generate slide thumbnail
-                pptx.Slides[0].GetThumbnail(1, 1).Save(dataDir + "output_out.png", ImageFormat.Png);
+                pptx.Slides[0].GetImage(1, 1).Save(dataDir + "output_out.png", ImageFormat.Png);
 
                 // Generate PDF
                 pptx.Save(dataDir + "output_out.pdf", SaveFormat.Pdf);

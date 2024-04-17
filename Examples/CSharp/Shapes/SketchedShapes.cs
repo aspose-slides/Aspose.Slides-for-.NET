@@ -33,7 +33,7 @@ namespace CSharp.Shapes
                 // Transform shape to sketch of a freehand style
                 shape.LineFormat.SketchFormat.SketchType = LineSketchType.Scribble;
 
-                pres.Slides[0].GetThumbnail(4/3f, 4/3f).Save(outPngFile, ImageFormat.Png);
+                pres.Slides[0].GetImage(4/3f, 4/3f).Save(outPngFile, Aspose.Slides.ImageFormat.Png);
                 pres.Save(outPptxFile, SaveFormat.Pptx);
             }
         }

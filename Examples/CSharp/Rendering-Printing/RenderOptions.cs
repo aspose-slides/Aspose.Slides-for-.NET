@@ -24,14 +24,14 @@ namespace Aspose.Slides.Examples.CSharp.Rendering.Printing
                 notesOptions.NotesPosition = NotesPositions.BottomTruncated;
                 renderingOpts.SlidesLayoutOptions = notesOptions;
 
-                pres.Slides[0].GetThumbnail(renderingOpts, 4 / 3f, 4 / 3f).Save(Path.Combine(RunExamples.OutPath, "RenderingOptions-Slide1-Original.png"), ImageFormat.Png);
+                pres.Slides[0].GetImage(renderingOpts, 4 / 3f, 4 / 3f).Save(Path.Combine(RunExamples.OutPath, "RenderingOptions-Slide1-Original.png"), ImageFormat.Png);
 
                 renderingOpts.SlidesLayoutOptions = null;
                 renderingOpts.DefaultRegularFont = "Arial Black";
-                pres.Slides[0].GetThumbnail(renderingOpts, 4 / 3f, 4 / 3f).Save(Path.Combine(RunExamples.OutPath, "RenderingOptions-Slide1-ArialBlackDefault.png"), ImageFormat.Png);
+                pres.Slides[0].GetImage(renderingOpts, 4 / 3f, 4 / 3f).Save(Path.Combine(RunExamples.OutPath, "RenderingOptions-Slide1-ArialBlackDefault.png"), ImageFormat.Png);
 
                 renderingOpts.DefaultRegularFont = "Arial Narrow";
-                pres.Slides[0].GetThumbnail(renderingOpts, 4 / 3f, 4 / 3f).Save(Path.Combine(RunExamples.OutPath, "RenderingOptions-Slide1-ArialNarrowDefault.png"), ImageFormat.Png);
+                pres.Slides[0].GetImage(renderingOpts, 4 / 3f, 4 / 3f).Save(Path.Combine(RunExamples.OutPath, "RenderingOptions-Slide1-ArialNarrowDefault.png"), ImageFormat.Png);
             }
         }
     }

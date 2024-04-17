@@ -19,13 +19,14 @@ namespace CSharp.Charts
 			// The path to the documents directory.
 			string dataDir = RunExamples.GetDataDir_Charts();
 
-			using (Presentation pres = new Presentation(dataDir+"test.pptx"))
-            {
-            	IChart chart = pres.Slides[0].Shapes.AddChart(ChartType.ClusteredColumn, 50, 50, 600, 400);
-             	Image img = chart.GetThumbnail();
-             	img.Save(dataDir+"image.png", ImageFormat.Png);
-			}
-			//ExEnd:GetChartImage
+		    using (Presentation pres = new Presentation(dataDir + "test.pptx"))
+		    {
+		        IChart chart = pres.Slides[0].Shapes.AddChart(ChartType.ClusteredColumn, 50, 50, 600, 400);
+		        IImage img = chart.GetImage();
+		        img.Save(dataDir + "image.png", Aspose.Slides.ImageFormat.Png);
+		    }
+
+		    //ExEnd:GetChartImage
 		}
 	}
 }

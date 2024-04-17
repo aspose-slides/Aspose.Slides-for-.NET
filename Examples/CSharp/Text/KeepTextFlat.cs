@@ -33,7 +33,7 @@ namespace CSharp.Presentations.Conversion
                 shape1.TextFrame.TextFrameFormat.KeepTextFlat = false;
                 shape2.TextFrame.TextFrameFormat.KeepTextFlat = true;
 
-                pres.Slides[0].GetThumbnail(4 / 3f, 4 / 3f).Save(resultPath, ImageFormat.Png);
+                pres.Slides[0].GetImage(4 / 3f, 4 / 3f).Save(resultPath, Aspose.Slides.ImageFormat.Png);
             }
         }
     }
