@@ -204,6 +204,8 @@ namespace Aspose.Slides.Examples.CSharp
             //PdfImportTableExample.Run();
             //ExportMathParagraphToLatex.Run();
             //ConvertToHtml5NotesComments.Run();
+            //ConvertToPdfUnsupportedFontStyles.Run();
+            //ConvertToXml.Run();
 
             // =====================================================
             //// =====================================================
@@ -256,6 +258,7 @@ namespace Aspose.Slides.Examples.CSharp
             //AddImageFromSVGObject.Run();
             //ConvertSvgImageObjectIntoGroupOfShapes.Run();
             //AddBlobImageToPresentation.Run();
+            //SaveInZip64Mode.Run();
 
             //// =====================================================
             ////            Presentations -   LowCode
@@ -447,8 +450,6 @@ namespace Aspose.Slides.Examples.CSharp
 
             //SetZoom.Run();
             //SetSlideNumber.Run();
-            //DefaultPrinterPrinting.Run(); //
-            //SpecificPrinterPrinting.Run();
             //RenderComments.Run();
             //RenderingEmoji.Run();
             //SupportOfDigitalSignature.Run(); 

@@ -129,7 +129,9 @@
     <Compile Include="Presentations\Conversion\ConvertToHtml5NotesComments.cs" />
     <Compile Include="Presentations\Conversion\ConvertToMarkdown.cs" />
     <Compile Include="Presentations\Conversion\ConvertToPdfCompliance.cs" />
+    <Compile Include="Presentations\Conversion\ConvertToPdfUnsupportedFontStyles.cs" />
     <Compile Include="Presentations\Conversion\ConvertToXaml.cs" />
+    <Compile Include="Presentations\Conversion\ConvertToXml.cs" />
     <Compile Include="Presentations\Conversion\ExportInkExample.cs" />
     <Compile Include="Presentations\Conversion\ExportMathParagraphToLatex.cs" />
     <Compile Include="Presentations\Conversion\ExportMathParagraphToMathML.cs" />
@@ -150,6 +152,7 @@
     <Compile Include="Presentations\Properties\ReadOnlyRecommended.cs" />
     <Compile Include="Presentations\Properties\RootDirectoryClsId.cs" />
     <Compile Include="Presentations\Properties\SlideShowMediaControls.cs" />
+    <Compile Include="Presentations\Saving\SaveInZip64Mode.cs" />
     <Compile Include="Rendering-Printing\Rendering3D.cs" />
     <Compile Include="Rendering-Printing\RenderOptions.cs" />
     <Compile Include="Rendering-Printing\SupportOfDigitalSignature.cs" />
@@ -260,7 +263,6 @@
     <Compile Include="Presentations\Saving\AddImageFromSVGObject.cs" />
     <Compile Include="Presentations\Saving\AddImageFromSVGObjectFromExternalResource.cs" />
     <Compile Include="Presentations\Saving\ConvertSvgImageObjectIntoGroupOfShapes.cs" />
-    <Compile Include="Rendering-Printing\PrintPreview.cs" />
     <Compile Include="Rendering-Printing\RenderComments.cs" />
     <Compile Include="Rendering-Printing\RenderingEmoji.cs" />
     <Compile Include="Shapes\AddVideoFrameFromWebSource.cs" />
@@ -334,8 +336,6 @@
     <Compile Include="Rendering-Printing\SetSlideNumber.cs" />
     <Compile Include="Rendering-Printing\SetZoom.cs" />
     <Compile Include="Presentations\Opening\VerifyingPresentationWithoutloading.cs" />
-    <Compile Include="Rendering-Printing\DefaultPrinterPrinting.cs" />
-    <Compile Include="Rendering-Printing\SpecificPrinterPrinting.cs" />
     <Compile Include="Shapes\AccessingAltTextinGroupshapes.cs" />
     <Compile Include="Shapes\AddRelativeScaleHeightPictureFrame.cs" />
     <Compile Include="Shapes\ApplyBevelEffects.cs" />
