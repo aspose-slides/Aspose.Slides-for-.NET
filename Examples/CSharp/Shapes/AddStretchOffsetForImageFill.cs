@@ -26,7 +26,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
                 ISlide sld = pres.Slides[0];
 
                 // Instantiate the ImageEx class
-                System.Drawing.Image img = (System.Drawing.Image)new Bitmap(dataDir+ "aspose-logo.jpg");
+                IImage img = Images.FromFile(dataDir + "aspose-logo.jpg");
                 IPPImage imgx = pres.Images.AddImage(img);
 
                 // Add Picture Frame with height and width equivalent of Picture

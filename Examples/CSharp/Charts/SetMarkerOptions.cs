@@ -43,11 +43,11 @@ namespace Aspose.Slides.Examples.CSharp.Charts
             chart.ChartData.Series.Add(fact.GetCell(defaultWorksheetIndex, 1, 1, "Series 1"), chart.Type);
             
             // Set the picture
-            System.Drawing.Image image1 = (System.Drawing.Image)new Bitmap(dataDir + "aspose-logo.jpg");
+            IImage image1 = Images.FromFile(dataDir + "aspose-logo.jpg");
             IPPImage imgx1 = presentation.Images.AddImage(image1);
 
             // Set the picture
-            System.Drawing.Image image2 = (System.Drawing.Image)new Bitmap(dataDir + "Tulips.jpg");
+            IImage image2 = Images.FromFile(dataDir + "Tulips.jpg");
             IPPImage imgx2 = presentation.Images.AddImage(image2);
 
             // Take first chart series

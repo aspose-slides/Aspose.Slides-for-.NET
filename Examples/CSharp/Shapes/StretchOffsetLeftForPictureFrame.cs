@@ -26,7 +26,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
                 ISlide slide = pres.Slides[0];
 
                 // Instantiate the ImageEx class
-                System.Drawing.Image img = (System.Drawing.Image)new Bitmap(dataDir + "aspose-logo.jpg");
+                IImage img = Images.FromFile(dataDir + "aspose-logo.jpg");
                 IPPImage imgEx = pres.Images.AddImage(img);
 
                 // Add an AutoShape of Rectangle type

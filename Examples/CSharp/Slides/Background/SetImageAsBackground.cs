@@ -29,7 +29,7 @@ namespace Aspose.Slides.Examples.CSharp.Slides.Background
                 pres.Slides[0].Background.FillFormat.PictureFillFormat.PictureFillMode = PictureFillMode.Stretch;
 
                 // Set the picture
-                System.Drawing.Image img = (System.Drawing.Image)new Bitmap(dataDir + "Tulips.jpg");
+                IImage img = Images.FromFile(dataDir + "Tulips.jpg");
 
                 // Add image to presentation's images collection
                 IPPImage imgx = pres.Images.AddImage(img);

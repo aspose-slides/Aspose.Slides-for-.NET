@@ -36,7 +36,7 @@ namespace CSharp.Shapes
                 byte[] imgBuf = File.ReadAllBytes(oleIconFile);
                 using (MemoryStream ms = new MemoryStream(imgBuf))
                 {
-                    image = pres.Images.AddImage(new Bitmap(ms));
+                    image = pres.Images.AddImage(Images.FromStream(ms));
                 }
                 oof.SubstitutePictureFormat.Picture.Image = image;
 

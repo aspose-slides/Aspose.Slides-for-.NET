@@ -33,7 +33,7 @@ namespace Aspose.Slides.Examples.CSharp.Tables
             ITable tbl = islide.Shapes.AddTable(50, 50, dblCols, dblRows);
 
             // Creating a Bitmap Image object to hold the image file
-            Bitmap image = new Bitmap(dataDir + "aspose-logo.jpg");
+            IImage image = Images.FromFile(dataDir + "aspose-logo.jpg");
 
             // Create an IPPImage object using the bitmap object
             IPPImage imgx1 = presentation.Images.AddImage(image);

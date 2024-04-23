@@ -36,7 +36,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
                 shp.FillFormat.PictureFillFormat.PictureFillMode = PictureFillMode.Tile;
 
                 // Set the picture
-                System.Drawing.Image img = (System.Drawing.Image)new Bitmap(dataDir + "Tulips.jpg");
+                IImage img = Images.FromFile(dataDir + "Tulips.jpg");
                 IPPImage imgx = pres.Images.AddImage(img);
                 shp.FillFormat.PictureFillFormat.Picture.Image = imgx;
 

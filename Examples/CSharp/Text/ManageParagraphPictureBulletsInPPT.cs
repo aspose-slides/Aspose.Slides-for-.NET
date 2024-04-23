@@ -27,7 +27,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
             ISlide slide = presentation.Slides[0];
 
             // Instantiate the image for bullets
-            Image image = new Bitmap(dataDir + "bullets.png");
+            IImage image = Images.FromFile(dataDir + "bullets.png");
             IPPImage ippxImage = presentation.Images.AddImage(image);
 
             // Adding and accessing Autoshape

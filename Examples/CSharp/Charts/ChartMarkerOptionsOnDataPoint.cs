@@ -38,11 +38,11 @@ namespace CSharp.Charts
 
 			
 			//Set the picture
-			System.Drawing.Image img = (System.Drawing.Image)new Bitmap(dataDir + "aspose-logo.jpg");
+		    IImage img = Images.FromFile(dataDir + "aspose-logo.jpg");
 			IPPImage imgx1 = pres.Images.AddImage(img);
 
-			//Set the picture
-			System.Drawing.Image img2 = (System.Drawing.Image)new Bitmap(dataDir + "Tulips.jpg");
+            //Set the picture
+		    IImage img2 = Images.FromFile(dataDir + "Tulips.jpg");
 			IPPImage imgx2 = pres.Images.AddImage(img2);
 
 			//Take first chart series

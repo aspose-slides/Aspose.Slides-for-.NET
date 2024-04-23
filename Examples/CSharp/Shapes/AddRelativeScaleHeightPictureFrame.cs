@@ -25,7 +25,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
             {
 
                 // Load Image to be added in presentaiton image collection
-                Image img = new Bitmap(dataDir + "aspose-logo.jpg");
+                IImage img = Images.FromFile(dataDir + "aspose-logo.jpg");
                 IPPImage image = presentation.Images.AddImage(img);
 
                 // Add picture frame to slide
