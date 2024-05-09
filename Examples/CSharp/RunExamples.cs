@@ -505,6 +505,7 @@ namespace Aspose.Slides.Examples.CSharp
             //GetEffectiveValuesOfTable.Run();
             //CreateATableFromScratchInASlide.Run();
             //SetFirstRowAsHeader.Run();
+            //TableTransparency.Run();
 
             //// =====================================================
             //// Text
