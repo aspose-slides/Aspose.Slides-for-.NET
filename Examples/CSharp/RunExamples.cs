@@ -568,6 +568,7 @@ namespace Aspose.Slides.Examples.CSharp
             //SpecifyDefaultTextLanguage.Run();
             //AnimateTextTypeExample.Run();
             //NumberlinesInParagraph.Run();
+            //FindAndReplaceTextResult.Run();
 
             //// =====================================================
             ////                    VBA Macros
@@ -582,6 +583,7 @@ namespace Aspose.Slides.Examples.CSharp
             //// =====================================================
 
             //ManagePresenetationNormalViewState.Run();
+            //GradientStyleRendering.Run();
 
             // Stop before exiting
             Console.WriteLine("\n\nProgram Finished. Press any key to exit....");

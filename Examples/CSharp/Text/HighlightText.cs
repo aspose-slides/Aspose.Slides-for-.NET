@@ -20,10 +20,10 @@ namespace CSharp.Text
             string dataDir = RunExamples.GetDataDir_Text();
             Presentation presentation = new Presentation(dataDir +"SomePresentation.pptx");
             ((AutoShape)presentation.Slides[0].Shapes[0]).TextFrame.HighlightText("title", Color.LightBlue); // highlighting all words 'important'
-            ((AutoShape)presentation.Slides[0].Shapes[0]).TextFrame.HighlightText("to", Color.Violet, new TextHighlightingOptions()
+            ((AutoShape)presentation.Slides[0].Shapes[0]).TextFrame.HighlightText("to", Color.Violet, new TextSearchOptions()
             {
                 WholeWordsOnly = true
-            }); // highlighting all separate 'the' occurrences
+            }, null); // highlighting all separate 'the' occurrences
             presentation.Save(dataDir+ "SomePresentation-out2.pptx", SaveFormat.Pptx);
 
             //ExEnd:HighlightText
