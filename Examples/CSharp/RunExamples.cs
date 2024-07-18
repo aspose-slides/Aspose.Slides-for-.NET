@@ -206,6 +206,7 @@ namespace Aspose.Slides.Examples.CSharp
             //ConvertToHtml5NotesComments.Run();
             //ConvertToPdfUnsupportedFontStyles.Run();
             //ConvertToXml.Run();
+            //ExportOlekExample.Run();
 
             // =====================================================
             //// =====================================================
@@ -221,6 +222,7 @@ namespace Aspose.Slides.Examples.CSharp
             //GetRectangularCoordinatesofParagraph.Run();
             //GetPositionCoordinatesofPortion.Run();
             //SetAccessPermissionsToPDF.Run();
+            //DeleteEmbeddedBinaryObjects.Run();
 
             //// =====================================================
             ////            Presentations -   Properties
@@ -425,6 +427,7 @@ namespace Aspose.Slides.Examples.CSharp
             //HeaderFooterManager.Run();
             //CheckSlidesComparison.Run();
             //GetBasePlacehorderExample.Run();
+            //LayoutPlaceholderManagerExample.Run();
 
             //// =====================================================
             ////                    Slides - HyperLink

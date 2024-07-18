@@ -56,11 +56,11 @@
     <StartupObject>Aspose.Slides.Examples.CSharp.RunExamples</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Cells, Version=24.5.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Cells.24.5.0\lib\net40\Aspose.Cells.dll</HintPath>
+    <Reference Include="Aspose.Cells, Version=24.7.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Cells.24.7.0\lib\net40\Aspose.Cells.dll</HintPath>
     </Reference>
-    <Reference Include="Aspose.Slides, Version=24.6.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Slides.NET.24.6.0\lib\net4.0-client\Aspose.Slides.dll</HintPath>
+    <Reference Include="Aspose.Slides, Version=24.7.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Slides.NET.24.7.0\lib\net4.0-client\Aspose.Slides.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -135,6 +135,7 @@
     <Compile Include="Presentations\Conversion\ExportInkExample.cs" />
     <Compile Include="Presentations\Conversion\ExportMathParagraphToLatex.cs" />
     <Compile Include="Presentations\Conversion\ExportMathParagraphToMathML.cs" />
+    <Compile Include="Presentations\Conversion\ExportOleExample.cs" />
     <Compile Include="Presentations\Conversion\FodpFormatConvertion.cs" />
     <Compile Include="Presentations\Conversion\MailMergeExample.cs" />
     <Compile Include="Presentations\Conversion\ODPToPPTX.cs" />
@@ -144,6 +145,7 @@
     <Compile Include="Presentations\Conversion\SvgConverttionOptions.cs" />
     <Compile Include="Presentations\Conversion\SvgFormattingController.cs" />
     <Compile Include="Presentations\LowCode\ForEachPortion.cs" />
+    <Compile Include="Presentations\Opening\DeleteEmbeddedBinaryObjects.cs" />
     <Compile Include="Presentations\Opening\SetAccessPermissionsToPDF.cs" />
     <Compile Include="Presentations\Properties\AccessLayoutFormats.cs" />
     <Compile Include="Presentations\Properties\CheckPasswordExample.cs" />
@@ -181,6 +183,7 @@
     <Compile Include="Slides\Hyperlinks\ExternalUrlOriginal.cs" />
     <Compile Include="Slides\Hyperlinks\MacroHyperLink.cs" />
     <Compile Include="Slides\Layout\GetBasePlacehorderExample.cs" />
+    <Compile Include="Slides\Layout\LayoutPlaceholderManagerExample.cs" />
     <Compile Include="Slides\Layout\ManageHeaderFooterText.cs" />
     <Compile Include="Presentations\LowCode\RemoveUnusedLayoutMaster.cs" />
     <Compile Include="Slides\Media\ExtractAudio.cs" />
