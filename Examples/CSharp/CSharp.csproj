@@ -59,8 +59,8 @@
     <Reference Include="Aspose.Cells, Version=24.7.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
       <HintPath>..\packages\Aspose.Cells.24.7.0\lib\net40\Aspose.Cells.dll</HintPath>
     </Reference>
-    <Reference Include="Aspose.Slides, Version=24.7.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Slides.NET.24.7.0\lib\net4.0-client\Aspose.Slides.dll</HintPath>
+    <Reference Include="Aspose.Slides, Version=24.8.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Slides.NET.24.8.0\lib\net4.0-client\Aspose.Slides.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -178,6 +178,7 @@
     <Compile Include="Shapes\ShapeIsDecorativePropertyExample.cs" />
     <Compile Include="Shapes\ShapesAlignment.cs" />
     <Compile Include="Shapes\SketchedShapes.cs" />
+    <Compile Include="Shapes\TilePictureFillFormatExample.cs" />
     <Compile Include="Slides\Comments\ModernComments.cs" />
     <Compile Include="Slides\CRUD\CloneSlideIntoSpecifiedSection.cs" />
     <Compile Include="Slides\Hyperlinks\ExternalUrlOriginal.cs" />
@@ -312,6 +313,8 @@
     <Compile Include="Text\FallBackRulesCollection.cs" />
     <Compile Include="Text\FindAndReplaceText.cs" />
     <Compile Include="Text\FindAndReplaceTextResult.cs" />
+    <Compile Include="Text\FontBinaryDataExample.cs" />
+    <Compile Include="Text\FontEmbeddingLevelExample.cs" />
     <Compile Include="Text\GetEffectiveValues.cs" />
     <Compile Include="Text\GetFontsFolders.cs" />
     <Compile Include="Text\GetFontsSubstitution.cs" />

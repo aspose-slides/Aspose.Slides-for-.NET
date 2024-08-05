@@ -339,6 +339,7 @@ namespace Aspose.Slides.Examples.CSharp
             //InkManagementExample.Run();
             //DeletePictureCroppedAreasExample.Run();
             //ShapeIsDecorativePropertyExample.Run();
+            //TilePictureFillFormatExample.Run();
 
             //// =====================================================
             ////                        Slides 
@@ -572,6 +573,8 @@ namespace Aspose.Slides.Examples.CSharp
             //AnimateTextTypeExample.Run();
             //NumberlinesInParagraph.Run();
             //FindAndReplaceTextResult.Run();
+            //FontBinaryDataExample.Run();
+            //FontEmbeddingLevelExample.Run();
 
             //// =====================================================
             ////                    VBA Macros
