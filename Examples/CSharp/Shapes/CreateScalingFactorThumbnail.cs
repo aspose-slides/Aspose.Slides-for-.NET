@@ -24,10 +24,10 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
             using (Presentation p = new Presentation(dataDir + "HelloWorld.pptx"))
             {
                 // Create a full scale image
-                using (IImage bitmap = p.Slides[0].Shapes[0].GetImage(ShapeThumbnailBounds.Shape, 1, 1))
+                using (IImage img = p.Slides[0].Shapes[0].GetImage(ShapeThumbnailBounds.Shape, 1, 1))
                 {
                     // Save the image to disk in PNG format
-                    bitmap.Save(dataDir + "Scaling Factor Thumbnail_out.png", ImageFormat.Png);
+                    img.Save(dataDir + "Scaling Factor Thumbnail_out.png", ImageFormat.Png);
                 }
             }
             //ExEnd:CreateScalingFactorThumbnail

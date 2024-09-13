@@ -56,11 +56,11 @@
     <StartupObject>Aspose.Slides.Examples.CSharp.RunExamples</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Cells, Version=24.7.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Cells.24.7.0\lib\net40\Aspose.Cells.dll</HintPath>
+    <Reference Include="Aspose.Cells, Version=24.9.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Cells.24.9.0\lib\net40\Aspose.Cells.dll</HintPath>
     </Reference>
-    <Reference Include="Aspose.Slides, Version=24.8.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Slides.NET.24.8.0\lib\net4.0-client\Aspose.Slides.dll</HintPath>
+    <Reference Include="Aspose.Slides, Version=24.9.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Slides.NET.24.9.0\lib\net4.0-client\Aspose.Slides.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -158,7 +158,9 @@
     <Compile Include="Rendering-Printing\Rendering3D.cs" />
     <Compile Include="Rendering-Printing\RenderOptions.cs" />
     <Compile Include="Rendering-Printing\SupportOfDigitalSignature.cs" />
+    <Compile Include="Shapes\AnimationFloatUpDown.cs" />
     <Compile Include="Shapes\AnimationTargetShapes.cs" />
+    <Compile Include="Shapes\CompressImageExample.cs" />
     <Compile Include="Shapes\CreateSectionZoom.cs" />
     <Compile Include="Shapes\CreateSummaryZoom.cs" />
     <Compile Include="Shapes\CreateZoomFrame.cs" />
@@ -169,7 +171,6 @@
     <Compile Include="Shapes\GeometryShapeCompositeObjects.cs" />
     <Compile Include="Shapes\GeometryShapeCreatesCustomGeometry.cs" />
     <Compile Include="Shapes\GeometryShapeRemoveSegment.cs" />
-    <Compile Include="Shapes\GeometryShapeUsingShapeUtil.cs" />
     <Compile Include="Shapes\InkManagementExample.cs" />
     <Compile Include="Shapes\IsTextShape.cs" />
     <Compile Include="Shapes\MathematicalShape.cs" />
@@ -318,6 +319,7 @@
     <Compile Include="Text\GetEffectiveValues.cs" />
     <Compile Include="Text\GetFontsFolders.cs" />
     <Compile Include="Text\GetFontsSubstitution.cs" />
+    <Compile Include="Text\GetPresentationRowTextExample.cs" />
     <Compile Include="Text\GetTextFrameFormatEffectiveData.cs" />
     <Compile Include="Text\GetTextFromSmartArtNode.cs" />
     <Compile Include="Text\GetTextStyleEffectiveData.cs" />

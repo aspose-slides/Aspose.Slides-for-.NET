@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Drawing;
+using System.IO;
 using Aspose.Slides;
 
 /*
@@ -104,7 +105,12 @@ namespace Aspose.Slides.Examples.CSharp.ActiveX
                 graphics.DrawLines(pen,new System.Drawing.Point[] { new System.Drawing.Point(0, image.Height), new System.Drawing.Point(image.Width, image.Height), new System.Drawing.Point(image.Width, 0) });
                 pen.Dispose();
                 graphics.Dispose();
-                control.SubstitutePictureFormat.Picture.Image = presentation.Images.AddImage(image);
+                using (MemoryStream ms = new MemoryStream())
+                {
+                    image.Save(ms, System.Drawing.Imaging.ImageFormat.Png);
+                    IImage img = Images.FromStream(ms);
+                    control.SubstitutePictureFormat.Picture.Image = presentation.Images.AddImage(img);
+                }
             }
 
             // Moving ActiveX frames 100 points down

@@ -35,10 +35,10 @@ namespace Aspose.Slides.Examples.CSharp.Slides.Thumbnail
 
 
                 // Create a full scale image
-                Bitmap bmp = sld.GetThumbnail(ScaleX, ScaleY);
+                IImage img = sld.GetImage(ScaleX, ScaleY);
 
                 // Save the image to disk in JPEG format
-                bmp.Save(dataDir + "Thumbnail2_out.jpg", System.Drawing.Imaging.ImageFormat.Jpeg);
+                img.Save(dataDir + "Thumbnail2_out.jpg", ImageFormat.Jpeg);
             }
             //ExEnd:ThumbnailWithUserDefinedDimensions
         }

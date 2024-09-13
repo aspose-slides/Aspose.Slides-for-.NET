@@ -39,10 +39,10 @@ namespace Aspose.Slides.Examples.CSharp.Text
             presentation.FontsManager.FontSubstRuleList = fontSubstRuleCollection;
 
             // Arial font will be used instead of SomeRareFont when inaccessible
-            Bitmap bmp = presentation.Slides[0].GetThumbnail(1f, 1f);
+            IImage img = presentation.Slides[0].GetImage(1f, 1f);
 
             // Save the image to disk in JPEG format
-            bmp.Save(dataDir + "Thumbnail_out.jpg", System.Drawing.Imaging.ImageFormat.Jpeg);
+            img.Save(dataDir + "Thumbnail_out.jpg", ImageFormat.Jpeg);
             //ExEnd:RuleBasedFontsReplacement
         }
     }

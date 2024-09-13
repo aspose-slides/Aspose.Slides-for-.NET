@@ -328,7 +328,6 @@ namespace Aspose.Slides.Examples.CSharp
             //GeometryShapeRemoveSegment.Run();
             //GeometryShapeCreatesCustomGeometry.Run();
             //GeometryShapeCompositeObjects.Run();
-            //GeometryShapeUsingShapeUtil.Run();
             //CreateZoomFrame.Run();
             //CreateSummaryZoom.Run();
             //CreateSectionZoom.Run();
@@ -340,6 +339,8 @@ namespace Aspose.Slides.Examples.CSharp
             //DeletePictureCroppedAreasExample.Run();
             //ShapeIsDecorativePropertyExample.Run();
             //TilePictureFillFormatExample.Run();
+            //AnimationFloatUpDown.Run();
+            //CompressImageExample.Run();
 
             //// =====================================================
             ////                        Slides 
@@ -575,6 +576,7 @@ namespace Aspose.Slides.Examples.CSharp
             //FindAndReplaceTextResult.Run();
             //FontBinaryDataExample.Run();
             //FontEmbeddingLevelExample.Run();
+            //GetPresentationRowTextExample.Run();
 
             //// =====================================================
             ////                    VBA Macros
