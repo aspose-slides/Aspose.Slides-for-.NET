@@ -399,6 +399,7 @@ namespace Aspose.Slides.Examples.CSharp
             //AnimationRepeatOnSlide.Run();
             //AnimationRewind.Run();
             //AfterAnimationTypeExample.Run();
+            //AnimationFadedZoomSubtype.Run();
 
             //// =====================================================
             ////                    Slides - Thumbnail
