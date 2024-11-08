@@ -9,7 +9,7 @@ using Aspose.Slides;
 using Aspose.Slides.Examples.CSharp;
 
 /*
-This example demonstrates hao to get raw text of a presentation using PresentationFactory.Instance.GetPresentationText method.
+This example demonstrates how to get raw text of a presentation using PresentationFactory.Instance.GetPresentationText method.
 */
 
 namespace CSharp.Text

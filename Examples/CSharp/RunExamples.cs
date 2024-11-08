@@ -245,6 +245,8 @@ namespace Aspose.Slides.Examples.CSharp
             //RootDirectoryClsId.Run();
             //PresentationSlideShowSetup.Run();
             //SlideShowMediaControls.Run();
+            //GridProperties.Run();
+            //GuidesProperties.Run();
 
             //// =====================================================
             ////            Presentations -   Saving
