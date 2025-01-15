@@ -207,6 +207,8 @@ namespace Aspose.Slides.Examples.CSharp
             //ConvertToPdfUnsupportedFontStyles.Run();
             //ConvertToXml.Run();
             //ExportOlekExample.Run();
+            //ConvertToEmf.Run();
+            //ConvertSvgToEmf.Run();
 
             // =====================================================
             //// =====================================================
@@ -247,6 +249,7 @@ namespace Aspose.Slides.Examples.CSharp
             //SlideShowMediaControls.Run();
             //GridProperties.Run();
             //GuidesProperties.Run();
+            //ExtendedPresentationProperties.Run();
 
             //// =====================================================
             ////            Presentations -   Saving
@@ -263,6 +266,7 @@ namespace Aspose.Slides.Examples.CSharp
             //ConvertSvgImageObjectIntoGroupOfShapes.Run();
             //AddBlobImageToPresentation.Run();
             //SaveInZip64Mode.Run();
+            //RefreshThumbnailPresentation.Run();
 
             //// =====================================================
             ////            Presentations -   LowCode

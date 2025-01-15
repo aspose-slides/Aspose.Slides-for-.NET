@@ -1,0 +1,62 @@
+<svg viewBox='0 0 695 260' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xml:space='preserve'>
+
+<g font-family='Arial' font-size='11px' fill='none' fill-rule='evenodd' stroke-linecap='square'>
+
+<path id='b42' stroke-linecap='butt' d='M247.5,20.5 L247.5,130.5 L247.5,20.5 Z'    />
+<use xlink:href='#b42' fill='#ff9c7e' stroke='#ff9c7e'/>
+
+<path id='b43' stroke-linecap='butt' d='M205.405,28.873 A110,110 0 0 1 247.5,20.5 L247.5,130.5 L205.405,28.873 Z'    />
+<use xlink:href='#b43' fill='#ff7fb0' stroke='#ff7fb0'/>
+
+<path id='b44' stroke-linecap='butt' d='M247.5,20.5 A110,110 0 0 1 349.127,172.595 L247.5,130.5 L247.5,20.5 Z'    />
+<use xlink:href='#b44' fill='#889eff' stroke='#889eff'/>
+
+<path id='b45' stroke-linecap='butt' d='M349.127,172.595 A110,110 0 0 1 302.5,225.763 L247.5,130.5 L349.127,172.595 Z'    />
+<use xlink:href='#b45' fill='#a77fff' stroke='#a77fff'/>
+
+<path id='b46' stroke-linecap='butt' d='M302.5,225.763 A110,110 0 1 1 205.405,28.873 L247.5,130.5 L302.5,225.763 Z'  />
+<use xlink:href='#b46' fill='#e77fff' stroke='#e77fff'/>
+
+<text id='b47'>
+
+<tspan style='font:11px Arial;' x='294' y='93'>31.3%
+
+</tspan>
+
+</text>
+
+<use xlink:href='#b47' fill='#000000'/>
+
+<text id='b48'>
+
+<tspan style='font:11px Arial;' x='288' y='183'>10.4%
+
+</tspan>
+
+</text>
+
+<use xlink:href='#b48' fill='#000000'/>
+
+<text id='b49'>
+
+<tspan style='font:11px Arial;' x='166' y='167'>52.1%
+
+</tspan>
+
+</text>
+
+<use xlink:href='#b49' fill='#000000'/>
+
+<text id='b50'>
+
+<tspan style='font:11px Arial;' x='221' y='61'>6.3%
+
+</tspan>
+
+</text>
+
+<use xlink:href='#b50' fill='#000000'/>
+
+</g>
+
+</svg>
