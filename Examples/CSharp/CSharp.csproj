@@ -56,11 +56,11 @@
     <StartupObject>Aspose.Slides.Examples.CSharp.RunExamples</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Cells, Version=25.1.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Cells.25.1.0\lib\net40\Aspose.Cells.dll</HintPath>
+    <Reference Include="Aspose.Cells, Version=25.1.2.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Cells.25.1.2\lib\net40\Aspose.Cells.dll</HintPath>
     </Reference>
-    <Reference Include="Aspose.Slides, Version=25.1.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Slides.NET.25.1.0\lib\net4.0-client\Aspose.Slides.dll</HintPath>
+    <Reference Include="Aspose.Slides, Version=25.2.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Slides.NET.25.2.0\lib\net4.0-client\Aspose.Slides.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -197,7 +197,10 @@
     <Compile Include="Slides\Media\ExtractAudio.cs" />
     <Compile Include="Slides\Media\ExtractAudioFromHyperLink.cs" />
     <Compile Include="Slides\Media\ExtractAudioFromTimeline.cs" />
+    <Compile Include="Slides\Media\FadeInOutDurationAudioExample.cs" />
     <Compile Include="Slides\Media\StopPreviousSoundExample.cs" />
+    <Compile Include="Slides\Media\TrimmingTimeAudioExample.cs" />
+    <Compile Include="Slides\Media\VolumeAudioExample.cs" />
     <Compile Include="Slides\Transitions\AfterAnimationTypeExample.cs" />
     <Compile Include="Slides\Transitions\AnimationFadedZoomSubtype.cs" />
     <Compile Include="Slides\Transitions\AnimationRepeatOnSlide.cs" />
@@ -314,6 +317,7 @@
     <Compile Include="Text\AddEmbeddedFonts.cs" />
     <Compile Include="Text\AddingSuperscriptAndSubscriptTextInTextFrame.cs" />
     <Compile Include="Text\BulletFillFormatEffective.cs" />
+    <Compile Include="Text\DisableFontLigaturesExample.cs" />
     <Compile Include="Text\EffectTextBoxParagraph.cs" />
     <Compile Include="Text\EmbeddedFontCompression.cs" />
     <Compile Include="Text\EmbedFontsInHtml.cs" />

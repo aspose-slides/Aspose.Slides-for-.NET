@@ -455,6 +455,9 @@ namespace Aspose.Slides.Examples.CSharp
             //ExtractAudioFromTimeline.Run();
             //ExtractAudioFromHyperLink.Run();
             //StopPreviousSoundExample.Run();
+            //FadeInOutDurationAudioExample.Run();
+            //VolumeAudioExample.Run();
+            //TrimmingTimeAudioExample.Run();
 
             //// =====================================================
             ////            Rendering - Printing a Slide
@@ -584,6 +587,7 @@ namespace Aspose.Slides.Examples.CSharp
             //FontBinaryDataExample.Run();
             //FontEmbeddingLevelExample.Run();
             //GetPresentationRowTextExample.Run();
+            //DisableFontLigaturesExample.Run();
 
             //// =====================================================
             ////                    VBA Macros
