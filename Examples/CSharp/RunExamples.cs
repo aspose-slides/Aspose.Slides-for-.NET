@@ -267,6 +267,8 @@ namespace Aspose.Slides.Examples.CSharp
             //AddBlobImageToPresentation.Run();
             //SaveInZip64Mode.Run();
             //RefreshThumbnailPresentation.Run();
+            //JavaScriptLinkExample.Run();
+            //ImageQualityExample.Run();
 
             //// =====================================================
             ////            Presentations -   LowCode
@@ -458,6 +460,7 @@ namespace Aspose.Slides.Examples.CSharp
             //FadeInOutDurationAudioExample.Run();
             //VolumeAudioExample.Run();
             //TrimmingTimeAudioExample.Run();
+            //VideoCaptionsExample.Run();
 
             //// =====================================================
             ////            Rendering - Printing a Slide
@@ -588,6 +591,7 @@ namespace Aspose.Slides.Examples.CSharp
             //FontEmbeddingLevelExample.Run();
             //GetPresentationRowTextExample.Run();
             //DisableFontLigaturesExample.Run();
+            //SplitTextByColumnsExample.Run();
 
             //// =====================================================
             ////                    VBA Macros
