@@ -20,6 +20,7 @@ namespace Aspose.Slides.Examples.CSharp.Slides.Media
             //ExStart:ExtractVideo
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Slides_Presentations_Media();
+            string outMedia = Path.Combine(RunExamples.OutPath, "NewVideo_out.");
 
             // Instantiate a Presentation object that represents a presentation file 
             Presentation presentation = new Presentation(dataDir + "Video.pptx");
@@ -35,7 +36,7 @@ namespace Aspose.Slides.Examples.CSharp.Slides.Media
                         int ss = type.LastIndexOf('/');
                         type = type.Remove(0, type.LastIndexOf('/') + 1);
                         Byte[] buffer = vf.EmbeddedVideo.BinaryData;
-                        using (FileStream stream = new FileStream(dataDir + "NewVideo_out." + type, FileMode.Create, FileAccess.Write, FileShare.Read))
+                        using (FileStream stream = new FileStream(outMedia + type, FileMode.Create, FileAccess.Write, FileShare.Read))
                         {                                                     
                             stream.Write(buffer, 0, buffer.Length);
                         }

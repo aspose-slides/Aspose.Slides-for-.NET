@@ -1,6 +1,7 @@
 using System;
 using System.Drawing;
 using System.IO;
+using Aspose.CAD.Examples.CSharp.ApplyLicense;
 using Aspose.Slides.Examples.CSharp.ActiveX;
 using Aspose.Slides.Examples.CSharp.Charts;
 using Aspose.Slides.Examples.CSharp.Conversion;
@@ -349,6 +350,7 @@ namespace Aspose.Slides.Examples.CSharp
             //TilePictureFillFormatExample.Run();
             //AnimationFloatUpDown.Run();
             //CompressImageExample.Run();
+            //AdjustValueTypeExample.Run();
 
             //// =====================================================
             ////                        Slides 

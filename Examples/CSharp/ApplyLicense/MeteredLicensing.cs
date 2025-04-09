@@ -29,6 +29,8 @@ namespace Aspose.CAD.Examples.CSharp.ApplyLicense
             // Display information
             Console.WriteLine("Amount Consumed After: " + amountafter.ToString());
 
+            // Print status of a Metered license.
+            Console.WriteLine($"Is metered license accepted: {Aspose.Slides.Metered.IsMeteredLicensed()}");
             //ExEnd:MeteredLicensing
         }
 

@@ -21,7 +21,7 @@ namespace CSharp.Slides.Media
     {
         public static void Run()
         {
-            string mediaFile = Path.Combine(RunExamples.GetDataDir_Slides_Presentations_Media(), "NewVideo_out.mp4");
+            string mediaFile = Path.Combine(RunExamples.GetDataDir_Slides_Presentations_Media(), "sample_bunny.mp4");
             string trackFile = Path.Combine(RunExamples.GetDataDir_Slides_Presentations_Media(), "bunny.vtt");
             string outCaption = Path.Combine(RunExamples.OutPath, "Caption_out.vtt");
             string outAddPath = Path.Combine(RunExamples.OutPath, "VideoCaptionAdd_out.pptx");
