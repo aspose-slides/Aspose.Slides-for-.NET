@@ -210,6 +210,9 @@ namespace Aspose.Slides.Examples.CSharp
             //ExportOlekExample.Run();
             //ConvertToEmf.Run();
             //ConvertSvgToEmf.Run();
+            //ConvertToHtml5Handout.Run();
+            //ConvertToMarkdownOptions.Run();
+            //ImportHtmlSlideExample.Run();
 
             // =====================================================
             //// =====================================================
@@ -351,6 +354,7 @@ namespace Aspose.Slides.Examples.CSharp
             //AnimationFloatUpDown.Run();
             //CompressImageExample.Run();
             //AdjustValueTypeExample.Run();
+            //PictureFrameIsCameoExample.Run();
 
             //// =====================================================
             ////                        Slides 
