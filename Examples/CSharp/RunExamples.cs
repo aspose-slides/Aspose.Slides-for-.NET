@@ -355,6 +355,7 @@ namespace Aspose.Slides.Examples.CSharp
             //CompressImageExample.Run();
             //AdjustValueTypeExample.Run();
             //PictureFrameIsCameoExample.Run();
+            //InkEffectsExample.Run();
 
             //// =====================================================
             ////                        Slides 
