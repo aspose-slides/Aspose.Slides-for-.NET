@@ -56,11 +56,11 @@
     <StartupObject>Aspose.Slides.Examples.CSharp.RunExamples</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Cells, Version=25.6.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Cells.25.6.0\lib\net40\Aspose.Cells.dll</HintPath>
+    <Reference Include="Aspose.Cells, Version=25.7.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Cells.25.7.0\lib\net40\Aspose.Cells.dll</HintPath>
     </Reference>
-    <Reference Include="Aspose.Slides, Version=25.7.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Slides.NET.25.7.0\lib\net4.0-client\Aspose.Slides.dll</HintPath>
+    <Reference Include="Aspose.Slides, Version=25.8.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Slides.NET.25.8.0\lib\net4.0-client\Aspose.Slides.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -88,6 +88,7 @@
     <Compile Include="Charts\CreateExternalWorkbook.cs" />
     <Compile Include="Charts\DataSourceTypePropertyAdded.cs" />
     <Compile Include="Charts\EditChartDatainExternalWorkbook.cs" />
+    <Compile Include="Charts\ExtractExcelDataExample.cs" />
     <Compile Include="Charts\FonSizeLegend.cs" />
     <Compile Include="Charts\FontPropertiesForInvidualLegend.cs" />
     <Compile Include="Charts\FunnelChart.cs" />
@@ -98,6 +99,7 @@
     <Compile Include="Charts\HideInformationFromChart.cs" />
     <Compile Include="Charts\HistogramChart.cs" />
     <Compile Include="Charts\IActualLayoutAdded.cs" />
+    <Compile Include="Charts\ImportingChartsFromExcelExample.cs" />
     <Compile Include="Charts\InvertIfNegativeForIndividualSeries.cs" />
     <Compile Include="Charts\LeaderLineColor.cs" />
     <Compile Include="Charts\MapChart.cs" />
@@ -172,6 +174,7 @@
     <Compile Include="Shapes\AdjustValueTypeExample.cs" />
     <Compile Include="Shapes\AnimationFloatUpDown.cs" />
     <Compile Include="Shapes\AnimationTargetShapes.cs" />
+    <Compile Include="Shapes\BrightnessContrastEffectExample.cs" />
     <Compile Include="Shapes\CompressImageExample.cs" />
     <Compile Include="Shapes\CreateSectionZoom.cs" />
     <Compile Include="Shapes\CreateSummaryZoom.cs" />
@@ -202,6 +205,7 @@
     <Compile Include="Slides\Layout\LayoutPlaceholderManagerExample.cs" />
     <Compile Include="Slides\Layout\ManageHeaderFooterText.cs" />
     <Compile Include="Presentations\LowCode\RemoveUnusedLayoutMaster.cs" />
+    <Compile Include="Slides\Media\AudioCaptionsExample.cs" />
     <Compile Include="Slides\Media\ExtractAudio.cs" />
     <Compile Include="Slides\Media\ExtractAudioFromHyperLink.cs" />
     <Compile Include="Slides\Media\ExtractAudioFromTimeline.cs" />
@@ -339,6 +343,7 @@
     <Compile Include="Text\GetEffectiveValues.cs" />
     <Compile Include="Text\GetFontsFolders.cs" />
     <Compile Include="Text\GetFontsSubstitution.cs" />
+    <Compile Include="Text\GetPlaceholderTextExample.cs" />
     <Compile Include="Text\GetPresentationRowTextExample.cs" />
     <Compile Include="Text\GetTextFrameFormatEffectiveData.cs" />
     <Compile Include="Text\GetTextFromSmartArtNode.cs" />
@@ -415,6 +420,7 @@
     <Compile Include="Tables\StandardTables.cs" />
     <Compile Include="Tables\VerticallyAlignText.cs" />
     <Compile Include="Text\ManageParagraphPictureBulletsInPPT.cs" />
+    <Compile Include="Text\ManageScriptFontsExample.cs" />
     <Compile Include="Text\MutilevelBullets.cs" />
     <Compile Include="Text\NumberlinesInParagraph.cs" />
     <Compile Include="Text\PortionGetRect.cs" />

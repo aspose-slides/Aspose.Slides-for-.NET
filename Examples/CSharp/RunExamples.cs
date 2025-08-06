@@ -148,6 +148,8 @@ namespace Aspose.Slides.Examples.CSharp
             //TimeUnitTypeEnum.Run();
             //LeaderLineColor.Run();
             //ChartDataPointIndex.Run();
+            //ExtractExcelDataExample.Run();
+            //ImportingChartsFromExcelExample.Run();
 
             //// =====================================================
             ////                    Presentations 
@@ -356,6 +358,7 @@ namespace Aspose.Slides.Examples.CSharp
             //AdjustValueTypeExample.Run();
             //PictureFrameIsCameoExample.Run();
             //InkEffectsExample.Run();
+            //BrightnessContrastEffectExample.Run();
 
             //// =====================================================
             ////                        Slides 
@@ -468,6 +471,7 @@ namespace Aspose.Slides.Examples.CSharp
             //VolumeAudioExample.Run();
             //TrimmingTimeAudioExample.Run();
             //VideoCaptionsExample.Run();
+            //AudioCaptionsExample.Run();
 
             //// =====================================================
             ////            Rendering - Printing a Slide
@@ -599,6 +603,9 @@ namespace Aspose.Slides.Examples.CSharp
             //GetPresentationRowTextExample.Run();
             //DisableFontLigaturesExample.Run();
             //SplitTextByColumnsExample.Run();
+            //ManageScriptFontsExample.Run();
+            //GetPlaceholderTextExample.Run();
+
 
             //// =====================================================
             ////                    VBA Macros
