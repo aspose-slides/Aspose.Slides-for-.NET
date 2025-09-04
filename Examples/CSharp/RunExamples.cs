@@ -150,6 +150,7 @@ namespace Aspose.Slides.Examples.CSharp
             //ChartDataPointIndex.Run();
             //ExtractExcelDataExample.Run();
             //ImportingChartsFromExcelExample.Run();
+            //TitleLegendChartExample.Run();
 
             //// =====================================================
             ////                    Presentations 
