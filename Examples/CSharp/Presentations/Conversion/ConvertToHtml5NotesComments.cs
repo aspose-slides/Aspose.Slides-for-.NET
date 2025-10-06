@@ -21,8 +21,7 @@ namespace Aspose.Slides.Examples.CSharp.Conversion
                 pres.Save(resultPath, SaveFormat.Html5, new Html5Options()
                 {
                     OutputPath = RunExamples.OutPath,
-                    NotesCommentsLayouting = new NotesCommentsLayoutingOptions()
-                        { NotesPosition = NotesPositions.BottomTruncated }
+                    SlidesLayoutOptions = new NotesCommentsLayoutingOptions() { NotesPosition = NotesPositions.BottomTruncated }
                 });
             }
         }

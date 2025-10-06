@@ -24,7 +24,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Conversion
                 TiffOptions options = new TiffOptions();
                
                 options.PixelFormat = ImagePixelFormat.Format8bppIndexed;
-                INotesCommentsLayoutingOptions notesOptions = new NotesCommentsLayoutingOptions();
+                NotesCommentsLayoutingOptions notesOptions = new NotesCommentsLayoutingOptions();
                 notesOptions.NotesPosition = NotesPositions.BottomFull;
                 options.SlidesLayoutOptions = notesOptions;
                 /*

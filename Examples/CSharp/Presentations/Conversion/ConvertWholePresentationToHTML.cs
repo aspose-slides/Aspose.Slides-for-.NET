@@ -25,7 +25,7 @@ namespace Aspose.Slides.Examples.CSharp.Conversion
                 HtmlOptions htmlOpt = new HtmlOptions();
                 htmlOpt.HtmlFormatter = HtmlFormatter.CreateDocumentFormatter("", false);
 
-                INotesCommentsLayoutingOptions notesOptions = new NotesCommentsLayoutingOptions();
+                NotesCommentsLayoutingOptions notesOptions = new NotesCommentsLayoutingOptions();
                 notesOptions.NotesPosition = NotesPositions.BottomFull;
                 htmlOpt.SlidesLayoutOptions = notesOptions;
 

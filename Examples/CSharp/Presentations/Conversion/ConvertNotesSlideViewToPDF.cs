@@ -22,7 +22,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Conversion
             using (Presentation presentation = new Presentation(dataDir + "NotesFile.pptx"))
             {
                 PdfOptions pdfOptions = new PdfOptions();
-                INotesCommentsLayoutingOptions options = new NotesCommentsLayoutingOptions();
+                NotesCommentsLayoutingOptions options = new NotesCommentsLayoutingOptions();
                 options.NotesPosition = NotesPositions.BottomFull;
                 pdfOptions.SlidesLayoutOptions = options;
                 

@@ -25,7 +25,7 @@ namespace Aspose.Slides.Examples.CSharp.Text
                 IFontData[] fontDatas = pres.FontsManager.GetFonts();
 
                 // Get the byte array representing the regular style of the first font in the presentation
-                byte[] bytes = pres.FontsManager.GetFontBytes(fontDatas[0], FontStyle.Regular);
+                byte[] bytes = pres.FontsManager.GetFontBytes(fontDatas[0], FontStyleType.Regular);
 
                 // Determine the embedding level of the font
                 EmbeddingLevel embeddingLevel = pres.FontsManager.GetFontEmbeddingLevel(bytes, fontDatas[0].FontName);

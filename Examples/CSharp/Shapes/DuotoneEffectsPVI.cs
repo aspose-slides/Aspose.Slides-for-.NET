@@ -20,7 +20,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
                 string imagePath = RunExamples.GetDataDir_Shapes() + "aspose-logo.jpg";
 
                 // Add image to presentation
-                IPPImage backgroundImage = presentation.Images.AddImage(Image.FromFile(imagePath));
+                IPPImage backgroundImage = presentation.Images.AddImage(Images.FromFile(imagePath));
 
                 // Set background in first slide
                 presentation.Slides[0].Background.Type = BackgroundType.OwnBackground;

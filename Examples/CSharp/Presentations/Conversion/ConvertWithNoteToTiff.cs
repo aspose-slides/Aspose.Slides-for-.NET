@@ -23,7 +23,7 @@ namespace Aspose.Slides.Examples.CSharp.Conversion
             {
                 TiffOptions opts = new TiffOptions();
 
-                INotesCommentsLayoutingOptions notesOptions = new NotesCommentsLayoutingOptions();
+                NotesCommentsLayoutingOptions notesOptions = new NotesCommentsLayoutingOptions();
                 notesOptions.NotesPosition = NotesPositions.BottomFull;
                 opts.SlidesLayoutOptions = notesOptions;
 

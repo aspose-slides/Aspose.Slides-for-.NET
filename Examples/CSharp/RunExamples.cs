@@ -606,7 +606,7 @@ namespace Aspose.Slides.Examples.CSharp
             //SplitTextByColumnsExample.Run();
             //ManageScriptFontsExample.Run();
             //GetPlaceholderTextExample.Run();
-
+            //HighlightTextUsingRegx.Run();
 
             //// =====================================================
             ////                    VBA Macros

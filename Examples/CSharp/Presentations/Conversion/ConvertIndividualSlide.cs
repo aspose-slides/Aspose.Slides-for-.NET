@@ -22,7 +22,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Conversion
                 
                 htmlOptions.HtmlFormatter = HtmlFormatter.CreateCustomFormatter(new CustomFormattingController());
 
-                INotesCommentsLayoutingOptions notesOptions = new NotesCommentsLayoutingOptions();
+                NotesCommentsLayoutingOptions notesOptions = new NotesCommentsLayoutingOptions();
                 notesOptions.NotesPosition = NotesPositions.BottomFull;
                 htmlOptions.SlidesLayoutOptions = notesOptions;
                 // Saving File              

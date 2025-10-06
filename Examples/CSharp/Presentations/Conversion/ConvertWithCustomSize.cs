@@ -29,7 +29,7 @@ namespace Aspose.Slides.Examples.CSharp.Conversion
                 // Setting compression type
                 opts.CompressionType = TiffCompressionTypes.Default;
 
-                INotesCommentsLayoutingOptions notesOptions = new NotesCommentsLayoutingOptions();
+                NotesCommentsLayoutingOptions notesOptions = new NotesCommentsLayoutingOptions();
                 notesOptions.NotesPosition = NotesPositions.BottomFull;
                 opts.SlidesLayoutOptions = notesOptions;
                 // Compression Types

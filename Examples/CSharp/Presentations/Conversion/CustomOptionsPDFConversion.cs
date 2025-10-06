@@ -36,7 +36,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Conversion
                 // Define the PDF standard
                 pdfOptions.Compliance = PdfCompliance.Pdf15;
 
-                INotesCommentsLayoutingOptions options = new NotesCommentsLayoutingOptions();
+                NotesCommentsLayoutingOptions options = new NotesCommentsLayoutingOptions();
                 options.NotesPosition = NotesPositions.BottomFull;
                 pdfOptions.SlidesLayoutOptions = options;
 

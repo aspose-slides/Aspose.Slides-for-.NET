@@ -50,7 +50,7 @@ namespace Aspose.Slides.Examples.CSharp.Shapes
 
                 // Add ZoomFrame objects with custom image
                 // Create a new image for the zoom object
-                IPPImage image = pres.Images.AddImage(Image.FromFile(imagePath));
+                IPPImage image = pres.Images.AddImage(Images.FromFile(imagePath));
                 var zoomFrame2 = pres.Slides[0].Shapes.AddZoomFrame(200, 250, 250, 100, slide3, image);
 
                 // Set a zoom frame format for the zoomFrame2 object

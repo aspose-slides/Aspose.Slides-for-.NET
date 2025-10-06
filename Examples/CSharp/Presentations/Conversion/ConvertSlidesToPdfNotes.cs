@@ -33,7 +33,7 @@ namespace Aspose.Slides.Examples.CSharp.Presentations.Conversion
 
 
             PdfOptions pdfOptions = new PdfOptions();
-            INotesCommentsLayoutingOptions options = new NotesCommentsLayoutingOptions();
+            NotesCommentsLayoutingOptions options = new NotesCommentsLayoutingOptions();
             options.NotesPosition = NotesPositions.BottomFull;
             pdfOptions.SlidesLayoutOptions = options;
 
