@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>CSharp</RootNamespace>
     <AssemblyName>CSharp</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
     <PublishUrl>publish\</PublishUrl>
@@ -56,19 +56,47 @@
     <StartupObject>Aspose.Slides.Examples.CSharp.RunExamples</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Cells, Version=25.9.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Cells.25.9.0\lib\net40\Aspose.Cells.dll</HintPath>
+    <Reference Include="Aspose.Cells, Version=25.11.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Cells.25.11.0\lib\net461\Aspose.Cells.dll</HintPath>
     </Reference>
-    <Reference Include="Aspose.Slides, Version=25.10.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Slides.NET.25.10.0\lib\net4.0-client\Aspose.Slides.dll</HintPath>
+    <Reference Include="Aspose.Slides, Version=25.11.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Slides.NET.25.11.0\lib\net462\Aspose.Slides.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.6.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Data\lib\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=6.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.6.0.1\lib\net461\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=6.0.0.11, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Json.6.0.11\lib\net461\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net461\System.ValueTuple.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web" />
     <Reference Include="System.Xml" />
   </ItemGroup>
@@ -124,6 +152,7 @@
     <Compile Include="Charts\TitleLegendChartExample.cs" />
     <Compile Include="Charts\WorksheetsExample.cs" />
     <Compile Include="Presentations\Conversion\ConvertHTMLEmbeddingImages.cs" />
+    <Compile Include="Presentations\Conversion\ConvertImagesToMarkdown.cs" />
     <Compile Include="Presentations\Conversion\ConvertSvgToEmf.cs" />
     <Compile Include="Presentations\Conversion\ConvertToAnimation.cs" />
     <Compile Include="Presentations\Conversion\ConvertToBlackWiteTiff.cs" />
@@ -191,6 +220,7 @@
     <Compile Include="Shapes\InkManagementExample.cs" />
     <Compile Include="Shapes\IsTextShape.cs" />
     <Compile Include="Shapes\MathematicalShape.cs" />
+    <Compile Include="Shapes\MathPhantomExample.cs" />
     <Compile Include="Shapes\MathShape_GetChildren.cs" />
     <Compile Include="Shapes\PictureFrameIsCameoExample.cs" />
     <Compile Include="Shapes\SetVideoTrimFromEnd.cs" />
@@ -216,6 +246,7 @@
     <Compile Include="Slides\Media\VideoCaptionsExample.cs" />
     <Compile Include="Slides\Media\VolumeAudioExample.cs" />
     <Compile Include="Slides\Transitions\AfterAnimationTypeExample.cs" />
+    <Compile Include="Slides\Transitions\AnimadionDurationSlide.cs" />
     <Compile Include="Slides\Transitions\AnimationFadedZoomSubtype.cs" />
     <Compile Include="Slides\Transitions\AnimationRepeatOnSlide.cs" />
     <Compile Include="Slides\Transitions\AnimationRewind.cs" />
@@ -339,10 +370,12 @@
     <Compile Include="Text\FallBackRulesCollection.cs" />
     <Compile Include="Text\FindAndReplaceText.cs" />
     <Compile Include="Text\FindAndReplaceTextResult.cs" />
+    <Compile Include="Text\FindTextOptions.cs" />
     <Compile Include="Text\FontBinaryDataExample.cs" />
     <Compile Include="Text\FontEmbeddingLevelExample.cs" />
     <Compile Include="Text\GetEffectiveValues.cs" />
     <Compile Include="Text\GetFontsFolders.cs" />
+    <Compile Include="Text\GetFontsSlideSubstitution.cs" />
     <Compile Include="Text\GetFontsSubstitution.cs" />
     <Compile Include="Text\GetPlaceholderTextExample.cs" />
     <Compile Include="Text\GetPresentationRowTextExample.cs" />
@@ -354,7 +387,6 @@
     <Compile Include="Text\KeepTextFlat.cs" />
     <Compile Include="Text\LoadExternalFont.cs" />
     <Compile Include="Text\ManageEmbeddedFonts.cs" />
-    <Compile Include="Presentations\Conversion\ConvetToSWF.cs" />
     <Compile Include="Presentations\Conversion\CreateNewPresentation.cs" />
     <Compile Include="Presentations\Conversion\CustomOptionsPDFConversion.cs" />
     <Compile Include="Presentations\Conversion\ExportMediaFilestohtml.cs" />

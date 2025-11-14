@@ -65,7 +65,12 @@ namespace Aspose.Slides.Examples.CSharp.ActiveX
                 graphics.DrawLines(pen,new System.Drawing.Point[] { new System.Drawing.Point(0, image.Height), new System.Drawing.Point(image.Width, image.Height), new System.Drawing.Point(image.Width, 0) });
                 pen.Dispose();
                 graphics.Dispose();
-                control.SubstitutePictureFormat.Picture.Image = presentation.Images.AddImage(image);
+                using (MemoryStream ms = new MemoryStream())
+                {
+                    image.Save(ms, System.Drawing.Imaging.ImageFormat.Png);
+                    ms.Position = 0;
+                    control.SubstitutePictureFormat.Picture.Image = presentation.Images.AddImage(ms);
+                }
             }
 
             // changing Button caption

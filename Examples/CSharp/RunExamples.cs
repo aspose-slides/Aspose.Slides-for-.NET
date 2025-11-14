@@ -178,7 +178,6 @@ namespace Aspose.Slides.Examples.CSharp
             //ConvertNotesSlideView.Run();
             //ConvertWithoutXpsOptions.Run();
             //ConvertWithXpsOptions.Run();
-            //ConvetToSWF.Run();
             //ConversionToTIFFNotes.Run();
             //GeneratingSVGWithCustomShapeIDS.Run();
             //ConvertNotesSlideViewToPDF.Run();
@@ -216,6 +215,7 @@ namespace Aspose.Slides.Examples.CSharp
             //ConvertToHtml5Handout.Run();
             //ConvertToMarkdownOptions.Run();
             //ImportHtmlSlideExample.Run();
+            //ConvertImagesToMarkdown.Run();
 
             // =====================================================
             //// =====================================================
@@ -337,6 +337,7 @@ namespace Aspose.Slides.Examples.CSharp
             //ExtractEmbeddedFileDataFromOLEObject.Run();
             //MathematicalShape.Run();
             //MathShape_GetChildren.Run();
+            //MathPhantomExample.Run();
             //ShapesAlignment.Run();
             //SketchedShapes.Run();
             //GeometryShapeAddSegment.Run();
@@ -419,6 +420,7 @@ namespace Aspose.Slides.Examples.CSharp
             //AnimationRewind.Run();
             //AfterAnimationTypeExample.Run();
             //AnimationFadedZoomSubtype.Run();
+            //AnimationDurationSlide.Run();
 
             //// =====================================================
             ////                    Slides - Thumbnail
@@ -593,6 +595,7 @@ namespace Aspose.Slides.Examples.CSharp
             //WordArt.Run();
             //KeepTextFlat.Run();
             //GetFontsSubstitution.Run();
+            //GetFontsSlideSubstitution.Run();
             //EmbeddedFontCompression.Run();
             //FindAndReplaceText.Run();
             //SpecifyDefaultTextLanguage.Run();
@@ -607,6 +610,7 @@ namespace Aspose.Slides.Examples.CSharp
             //ManageScriptFontsExample.Run();
             //GetPlaceholderTextExample.Run();
             //HighlightTextUsingRegx.Run();
+            //FindTextOptions.Run();
 
             //// =====================================================
             ////                    VBA Macros
