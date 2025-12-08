@@ -283,6 +283,8 @@ namespace Aspose.Slides.Examples.CSharp
 
             //RemoveUnusedLayoutMaster.Run();
             //ForEachPortion.Run();
+            //ConvertToImage.Run();
+            //MergerExample.Run();
 
             //// =====================================================
             ////                    Shapes
@@ -611,6 +613,7 @@ namespace Aspose.Slides.Examples.CSharp
             //GetPlaceholderTextExample.Run();
             //HighlightTextUsingRegx.Run();
             //FindTextOptions.Run();
+            //SpellCheckExample.Run();
 
             //// =====================================================
             ////                    VBA Macros
