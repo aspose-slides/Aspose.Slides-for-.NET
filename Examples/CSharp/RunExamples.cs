@@ -257,6 +257,7 @@ namespace Aspose.Slides.Examples.CSharp
             //GridProperties.Run();
             //GuidesProperties.Run();
             //ExtendedPresentationProperties.Run();
+            //SensitivityLabelsExample.Run();
 
             //// =====================================================
             ////            Presentations -   Saving
@@ -363,6 +364,7 @@ namespace Aspose.Slides.Examples.CSharp
             //PictureFrameIsCameoExample.Run();
             //InkEffectsExample.Run();
             //BrightnessContrastEffectExample.Run();
+            //ShapePathPointsExample.Run();
 
             //// =====================================================
             ////                        Slides 
