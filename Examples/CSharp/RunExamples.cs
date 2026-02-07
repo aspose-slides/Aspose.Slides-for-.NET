@@ -277,6 +277,7 @@ namespace Aspose.Slides.Examples.CSharp
             //RefreshThumbnailPresentation.Run();
             //JavaScriptLinkExample.Run();
             //ImageQualityExample.Run();
+            //ToSaveFormatExample.Run();
 
             //// =====================================================
             ////            Presentations -   LowCode

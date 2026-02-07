@@ -59,8 +59,8 @@
     <Reference Include="Aspose.Cells, Version=26.1.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
       <HintPath>..\packages\Aspose.Cells.26.1.0\lib\net461\Aspose.Cells.dll</HintPath>
     </Reference>
-    <Reference Include="Aspose.Slides, Version=26.1.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Slides.NET.26.1.0\lib\net462\Aspose.Slides.dll</HintPath>
+    <Reference Include="Aspose.Slides, Version=26.2.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Slides.NET.26.2.0\lib\net462\Aspose.Slides.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=10.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.10.0.2\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
@@ -204,6 +204,7 @@
     <Compile Include="Presentations\Saving\JavaScriptLinkExample.cs" />
     <Compile Include="Presentations\Saving\RefreshThumbnailPresentation.cs" />
     <Compile Include="Presentations\Saving\SaveInZip64Mode.cs" />
+    <Compile Include="Presentations\Saving\ToSaveFormatExample.cs" />
     <Compile Include="Rendering-Printing\Rendering3D.cs" />
     <Compile Include="Rendering-Printing\RenderOptions.cs" />
     <Compile Include="Rendering-Printing\SupportOfDigitalSignature.cs" />
