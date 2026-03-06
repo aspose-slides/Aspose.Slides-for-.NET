@@ -366,6 +366,8 @@ namespace Aspose.Slides.Examples.CSharp
             //InkEffectsExample.Run();
             //BrightnessContrastEffectExample.Run();
             //ShapePathPointsExample.Run();
+            //ShapeVisualBoundsExample.Run();
+            //SolidFillSchemeColorExamole.Run();
 
             //// =====================================================
             ////                        Slides 
