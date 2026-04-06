@@ -56,11 +56,11 @@
     <StartupObject>Aspose.Slides.Examples.CSharp.RunExamples</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Cells, Version=26.2.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Cells.26.2.0\lib\net40\Aspose.Cells.dll</HintPath>
+    <Reference Include="Aspose.Cells, Version=26.3.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Cells.26.3.0\lib\net40\Aspose.Cells.dll</HintPath>
     </Reference>
-    <Reference Include="Aspose.Slides, Version=26.3.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Slides.NET.26.3.0\lib\net462\Aspose.Slides.dll</HintPath>
+    <Reference Include="Aspose.Slides, Version=26.4.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Slides.NET.26.4.0\lib\net462\Aspose.Slides.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=10.0.0.3, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.10.0.3\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
@@ -119,6 +119,7 @@
     <Compile Include="Charts\CreateExternalWorkbook.cs" />
     <Compile Include="Charts\DataSourceTypePropertyAdded.cs" />
     <Compile Include="Charts\EditChartDatainExternalWorkbook.cs" />
+    <Compile Include="Charts\EmbeddedWorkbookType.cs" />
     <Compile Include="Charts\ExtractExcelDataExample.cs" />
     <Compile Include="Charts\FonSizeLegend.cs" />
     <Compile Include="Charts\FontPropertiesForInvidualLegend.cs" />

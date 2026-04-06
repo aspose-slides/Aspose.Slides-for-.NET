@@ -151,6 +151,7 @@ namespace Aspose.Slides.Examples.CSharp
             //ExtractExcelDataExample.Run();
             //ImportingChartsFromExcelExample.Run();
             //TitleLegendChartExample.Run();
+            //EmbeddedWorkbookType.Run();
 
             //// =====================================================
             ////                    Presentations 
