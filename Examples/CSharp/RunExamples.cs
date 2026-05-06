@@ -546,6 +546,7 @@ namespace Aspose.Slides.Examples.CSharp
             //CreateATableFromScratchInASlide.Run();
             //SetFirstRowAsHeader.Run();
             //TableTransparency.Run();
+            //AddTableFromWorkbookExample.Run();
 
             //// =====================================================
             //// Text
