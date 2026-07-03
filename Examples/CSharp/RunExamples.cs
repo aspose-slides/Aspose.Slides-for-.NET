@@ -217,6 +217,7 @@ namespace Aspose.Slides.Examples.CSharp
             //ConvertToMarkdownOptions.Run();
             //ImportHtmlSlideExample.Run();
             //ConvertImagesToMarkdown.Run();
+            //Html5PicturesCompressionExample.Run();
 
             // =====================================================
             //// =====================================================
