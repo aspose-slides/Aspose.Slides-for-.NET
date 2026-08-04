@@ -623,6 +623,7 @@ namespace Aspose.Slides.Examples.CSharp
             //HighlightTextUsingRegx.Run();
             //FindTextOptions.Run();
             //SpellCheckExample.Run();
+            //RenderParagraphExample.Run();
 
             //// =====================================================
             ////                    VBA Macros
