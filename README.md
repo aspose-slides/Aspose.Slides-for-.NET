@@ -37,11 +37,11 @@ Directory | Description
 
 ## Platform Independence
 
-Aspose.Slides for .NET can be used to build any type of a 32-bit or 64-bit .NET application including ASP.NET, WCF & WinForms as well as via COM Interop while using diverse programming languages including C++, VBScript & classic ASP. The package provides assemblies to be used with Mono on various flavors of Linux, .NET Core, Xamarin.Android & Xamarin.Mac.
+Aspose.Slides for .NET can be used to build any type of a 32-bit or 64-bit .NET application including ASP.NET, WCF & WinForms as well as via COM Interop while using diverse programming languages including C++, VBScript & classic ASP. The [Aspose.Slides.NET](https://www.nuget.org/packages/Aspose.Slides.NET) package targets .NET Framework 4.6.2+, .NET 6+ (including .NET 8, .NET 9, and .NET 10) and .NET Standard 2.0, and runs on Windows, Linux and macOS. For rendering and conversion on Linux and macOS, use the dedicated [Aspose.Slides.NET6.CrossPlatform](https://www.nuget.org/packages/Aspose.Slides.NET6.CrossPlatform) package.
 
 ## Get Started with Aspose.Slides for .NET
 
-Let's give Aspose.Slides for .NET a try! Simply execute `Install-Package Aspose.Slides.NET` from Package Manager Console in Visual Studio to fetch the NuGet package. If you already have Aspose.Slides for .NET and want to upgrade the version, please execute `Update-Package Aspose.Slides.NET` to get the latest version.
+Let's give Aspose.Slides for .NET a try! Simply execute `Install-Package Aspose.Slides.NET` from Package Manager Console in Visual Studio, or run `dotnet add package Aspose.Slides.NET` via the .NET CLI, to fetch the NuGet package. If you already have Aspose.Slides for .NET and want to upgrade the version, please execute `Update-Package Aspose.Slides.NET` to get the latest version.
 
 ## Create a PPTX Presentation from Scratch
 
@@ -71,4 +71,4 @@ using (Presentation presentation = new Presentation(dir + "template.pptx"))
 }
 ```
 
-[Home](https://www.aspose.com/) | [Product Page](https://products.aspose.com/slides/net) | [Docs](https://docs.aspose.com/slides/net/) | [Demos](https://products.aspose.app/slides/family) | [API Reference](https://apireference.aspose.com/slides/net) | [Examples](https://github.com/aspose-slides/Aspose.Slides-for-.NET) | [Blog](https://blog.aspose.com/category/slides/) | [Search](https://search.aspose.com/) | [Free Support](https://forum.aspose.com/c/slides) | [Temporary License](https://purchase.aspose.com/temporary-license)
+[Home](https://www.aspose.com/) | [Product Page](https://products.aspose.com/slides/net) | [Docs](https://docs.aspose.com/slides/net/) | [Demos](https://products.aspose.app/slides/family) | [API Reference](https://reference.aspose.com/slides/net/) | [Examples](https://github.com/aspose-slides/Aspose.Slides-for-.NET) | [Blog](https://blog.aspose.com/category/slides/) | [Search](https://search.aspose.com/) | [Free Support](https://forum.aspose.com/c/slides) | [Temporary License](https://purchase.aspose.com/temporary-license)
