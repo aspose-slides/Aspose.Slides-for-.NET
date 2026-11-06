@@ -152,6 +152,10 @@ namespace Aspose.Slides.Examples.CSharp
             //ImportingChartsFromExcelExample.Run();
             //TitleLegendChartExample.Run();
             //EmbeddedWorkbookType.Run();
+            //CachedChartValueExample.Run();
+            //CachedValueExample.Run();
+            //LabelShapeTypeExample.Run();
+            //RefreshDataExample.Run();
 
             //// =====================================================
             ////                    Presentations 
@@ -290,6 +294,8 @@ namespace Aspose.Slides.Examples.CSharp
             //ForEachPortion.Run();
             //ConvertToImage.Run();
             //MergerExample.Run();
+            //CompressPresentation.Run();
+            CompressImages.Run();
 
             //// =====================================================
             ////                    Shapes
@@ -371,6 +377,7 @@ namespace Aspose.Slides.Examples.CSharp
             //ShapePathPointsExample.Run();
             //ShapeVisualBoundsExample.Run();
             //SolidFillSchemeColorExamole.Run();
+            //VideoVolumeValueExample.Run();
 
             //// =====================================================
             ////                        Slides 
@@ -624,6 +631,8 @@ namespace Aspose.Slides.Examples.CSharp
             //FindTextOptions.Run();
             //SpellCheckExample.Run();
             //RenderParagraphExample.Run();
+            //PreferRegisteredFontsOverEmbedded.Run();
+            //GetTextRectExample.Run();
 
             //// =====================================================
             ////                    VBA Macros
